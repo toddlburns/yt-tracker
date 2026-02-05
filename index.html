@@ -329,6 +329,7 @@ const DEFAULT_ARTISTS = [
     { name: "Tom Petty and the Heartbreakers", channelId: "UCvYomLPMwUr1FAXRMGhVfCQ" },
     { name: "Trisha Yearwood", channelId: "UCw0Nn2LTsXGB0rP53Z0ACWQ" },
     { name: "U2", channelId: "UC4gPNusMDwx2Xm-YI35AkCA" },
+    { name: "Vevo Footnotes", channelId: "UC2pmfLm7iq6Ov1UwYrWYkZA", filter: "Footnotes" },
     { name: "Weezer", channelId: "UC7JDBUzkcwRGtQGia3_mMgQ" }
 ];
 
@@ -431,10 +432,16 @@ function loadArtists() {
     if (stored) {
         artists = JSON.parse(stored);
         // Merge any new defaults the user doesn't already have
-        const existingIds = new Set(artists.map(a => a.channelId));
+        const existingMap = new Map(artists.map(a => [a.channelId, a]));
         let added = false;
         for (const def of DEFAULT_ARTISTS) {
-            if (!existingIds.has(def.channelId)) {
+            const existing = existingMap.get(def.channelId);
+            if (!existing) {
+                artists.push(def);
+                added = true;
+            } else if (def.filter && !existing.filter) {
+                // Default has a filter but stored version doesn't — this is a
+                // filtered variant (e.g. "Vevo Footnotes"), add it alongside
                 artists.push(def);
                 added = true;
             }
@@ -453,30 +460,36 @@ function saveArtists() {
     localStorage.setItem('yt_tracker_artists', JSON.stringify(artists));
 }
 
-function addArtist(name, channelId) {
+function addArtist(name, channelId, filter) {
     if (artists.length >= MAX_ARTISTS) return;
-    if (artists.some(a => a.channelId === channelId)) return;
-    artists.push({ name, channelId });
+    if (artists.some(a => a.channelId === channelId && (a.filter || '') === (filter || ''))) return;
+    const entry = { name, channelId };
+    if (filter) entry.filter = filter;
+    artists.push(entry);
     artists.sort((a, b) => a.name.localeCompare(b.name));
     saveArtists();
     renderArtistPills();
     updateSubtitle();
 }
 
-function removeArtist(channelId) {
-    artists = artists.filter(a => a.channelId !== channelId);
+function removeArtist(channelId, filter) {
+    artists = artists.filter(a => !(a.channelId === channelId && (a.filter || '') === (filter || '')));
     saveArtists();
     renderArtistPills();
     updateSubtitle();
-    allVideos = allVideos.filter(v => v.channelId !== channelId);
+    // Only remove videos if no other entry tracks this channel
+    if (!artists.some(a => a.channelId === channelId)) {
+        allVideos = allVideos.filter(v => v.channelId !== channelId);
+    }
     renderFeed();
 }
 
 function renderArtistPills() {
     const el = document.getElementById('artist-pills');
-    el.innerHTML = artists.map(a =>
-        `<span class="artist-pill">${esc(a.name)}<button class="remove-artist" onclick="event.stopPropagation();removeArtist('${a.channelId}')" title="Remove">&times;</button></span>`
-    ).join('');
+    el.innerHTML = artists.map(a => {
+        const filterAttr = a.filter ? `,'${esc(a.filter)}'` : '';
+        return `<span class="artist-pill">${esc(a.name)}<button class="remove-artist" onclick="event.stopPropagation();removeArtist('${a.channelId}'${filterAttr})" title="Remove">&times;</button></span>`;
+    }).join('');
 }
 
 function updateSubtitle() {
@@ -689,7 +702,12 @@ async function refreshFeed() {
             try {
                 const videos = await fetchChannelVideos(artist.channelId);
                 if (videos) {
-                    const recent = videos.filter(v => v.uploaded > cutoff && !(v.duration > 0 && v.duration <= 30));
+                    const recent = videos.filter(v => {
+                        if (v.uploaded <= cutoff) return false;
+                        if (v.duration > 0 && v.duration <= 30) return false;
+                        if (artist.filter && !v.title.toLowerCase().includes(artist.filter.toLowerCase())) return false;
+                        return true;
+                    });
                     results.push(...recent);
                 }
             } catch {}

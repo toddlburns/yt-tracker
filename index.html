@@ -248,10 +248,13 @@ const DEFAULT_ARTISTS = [
 ];
 
 // ─── Config ────────────────────────────────────────────────────
-const PIPED_INSTANCES = [
+let PIPED_INSTANCES = [
+    'api.piped.private.coffee',
     'pipedapi.kavin.rocks',
-    'pipedapi.adminforge.de',
-    'watchapi.whatever.social'
+    'pipedapi.leptons.xyz',
+    'pipedapi-libre.kavin.rocks',
+    'piped-api.codespace.cz',
+    'pipedapi.adminforge.de'
 ];
 const ALLORIGINS_PROXY = 'https://api.allorigins.win/raw?url=';
 const DAYS_WINDOW = 4;
@@ -328,11 +331,12 @@ document.getElementById('pw-input').addEventListener('keydown', e => {
 });
 
 // ─── Init ──────────────────────────────────────────────────────
-function init() {
+async function init() {
     loadArtists();
     loadDismissed();
     renderArtistPills();
     updateSubtitle();
+    await discoverInstances();
     refreshFeed();
 }
 
@@ -397,6 +401,10 @@ async function searchArtist() {
     el.innerHTML = '<div style="font-size:0.8rem;color:#555;padding:4px 0;">Searching...</div>';
     try {
         const data = await pipedFetch(`/search?q=${encodeURIComponent(q)}&filter=channels`);
+        if (!data) {
+            el.innerHTML = '<div style="font-size:0.8rem;color:#e54;padding:4px 0;">All API instances are down. Try again later.</div>';
+            return;
+        }
         const items = (data.items || []).slice(0, 5);
         if (!items.length) {
             el.innerHTML = '<div style="font-size:0.8rem;color:#555;padding:4px 0;">No channels found.</div>';
@@ -466,18 +474,32 @@ function isDismissed(videoId) {
 }
 
 // ─── Piped API ─────────────────────────────────────────────────
+async function discoverInstances() {
+    try {
+        const res = await fetch('https://piped-instances.kavin.rocks/');
+        if (res.ok) {
+            const list = await res.json();
+            const apis = list
+                .filter(i => i.api_url)
+                .map(i => new URL(i.api_url).host);
+            if (apis.length > 0) PIPED_INSTANCES = apis;
+        }
+    } catch {}
+}
+
 async function pipedFetch(path) {
+    const timeout = ms => new Promise((_, rej) => setTimeout(() => rej('timeout'), ms));
     // Try cached working instance first
     if (workingInstance) {
         try {
-            const res = await fetch(`https://${workingInstance}${path}`);
+            const res = await Promise.race([fetch(`https://${workingInstance}${path}`), timeout(8000)]);
             if (res.ok) return await res.json();
-        } catch {}
+        } catch { workingInstance = null; }
     }
     // Try all instances
     for (const inst of PIPED_INSTANCES) {
         try {
-            const res = await fetch(`https://${inst}${path}`);
+            const res = await Promise.race([fetch(`https://${inst}${path}`), timeout(8000)]);
             if (res.ok) {
                 workingInstance = inst;
                 return await res.json();

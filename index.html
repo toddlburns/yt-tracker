@@ -156,12 +156,17 @@
         .vc-channel { font-size: 0.82rem; color: #aaa; font-weight: 500; }
         .vc-time { font-size: 0.75rem; color: #555; }
         .vc-title { font-size: 0.92rem; color: #fff; margin-bottom: 3px; line-height: 1.3; }
+        .vc-title.official-mv { color: #e8b0ff; }
+        .vc-info-row { display: flex; gap: 10px; align-items: center; }
         .vc-duration { font-size: 0.78rem; color: #666; }
+        .vc-views-inline { font-size: 0.78rem; color: #666; }
+        .vc-views-inline.popular { color: #f5c542; }
 
         .vc-thumb {
             flex-shrink: 0; width: 100px; height: 56px; border-radius: 4px;
-            object-fit: cover; background: #222;
+            object-fit: cover; background: #222; cursor: pointer;
         }
+        .vc-thumb:hover { opacity: 0.8; }
 
         /* Expanded card */
         .video-card.expanded { background: #161616; flex-direction: column; }
@@ -684,7 +689,7 @@ async function refreshFeed() {
             try {
                 const videos = await fetchChannelVideos(artist.channelId);
                 if (videos) {
-                    const recent = videos.filter(v => v.uploaded > cutoff);
+                    const recent = videos.filter(v => v.uploaded > cutoff && !(v.duration > 0 && v.duration <= 30));
                     results.push(...recent);
                 }
             } catch {}
@@ -717,7 +722,12 @@ function renderFeed() {
         return;
     }
 
-    feedEl.innerHTML = visible.map(v => `
+    feedEl.innerHTML = visible.map(v => {
+        const isOfficialMV = /official\s+(music\s+)?video/i.test(v.title);
+        const isPopular = v.views >= 100000;
+        const titleClass = 'vc-title' + (isOfficialMV ? ' official-mv' : '');
+        const viewsClass = 'vc-views-inline' + (isPopular ? ' popular' : '');
+        return `
         <div class="video-card" data-video-id="${esc(v.videoId)}" onclick="toggleExpand(this, '${esc(v.videoId)}')">
             <div class="vc-row" style="display:flex;gap:10px;width:100%">
                 <div class="vc-check" onclick="event.stopPropagation();dismissVideo('${esc(v.videoId)}')" title="Dismiss"></div>
@@ -726,14 +736,19 @@ function renderFeed() {
                         <span class="vc-channel">${esc(v.channel)}</span>
                         <span class="vc-time">${timeAgo(v.uploaded)}</span>
                     </div>
-                    <div class="vc-title">${esc(v.title)}</div>
-                    <div class="vc-duration">${formatDuration(v.duration)}</div>
+                    <div class="${titleClass}">${esc(v.title)}</div>
+                    <div class="vc-info-row">
+                        <span class="vc-duration">${formatDuration(v.duration)}</span>
+                        <span class="${viewsClass}">${formatCount(v.views)} views</span>
+                    </div>
                 </div>
-                <img class="vc-thumb" src="${esc(v.thumbnail)}" alt="" loading="lazy" onerror="this.style.display='none'">
+                <img class="vc-thumb" src="${esc(v.thumbnail)}" alt="" loading="lazy" onerror="this.style.display='none'"
+                     onclick="event.stopPropagation();window.open('https://www.youtube.com/watch?v=${esc(v.videoId)}','_blank')"
+                     title="Watch on YouTube">
             </div>
             <div class="vc-expand-area" style="display:none"></div>
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
 }
 
 function updateFeedCount() {

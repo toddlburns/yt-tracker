@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Upload Tracker</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><radialGradient id='g' cx='50%25' cy='50%25' r='50%25'><stop offset='0%25' stop-color='%2300fff2'/><stop offset='60%25' stop-color='%230cc'/><stop offset='100%25' stop-color='%230aa' stop-opacity='0'/></radialGradient></defs><circle cx='50' cy='50' r='40' fill='url(%23g)'/></svg>">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+
+        /* Password Gate */
+        #gate {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        #gate h1 { font-size: 1.4rem; margin-bottom: 8px; color: #fff; }
+        #gate p { font-size: 0.85rem; color: #888; margin-bottom: 24px; }
+        #gate .input-row { display: flex; gap: 8px; }
+        #gate input {
+            padding: 10px 16px; font-size: 1rem; border: 1px solid #333;
+            border-radius: 6px; background: #1a1a1a; color: #fff;
+            outline: none; width: 260px;
+        }
+        #gate input:focus { border-color: #555; }
+        #gate button {
+            padding: 10px 20px; font-size: 1rem; border: none; border-radius: 6px;
+            background: #fff; color: #000; cursor: pointer; font-weight: 600;
+        }
+        #gate button:hover { background: #ddd; }
+        #gate .error { color: #e54; font-size: 0.85rem; margin-top: 12px; min-height: 20px; }
+
+        /* App */
+        #app { display: none; max-width: 720px; margin: 0 auto; padding: 16px; }
+
+        .app-header {
+            display: flex; justify-content: space-between; align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .app-header h1 { font-size: 1.3rem; color: #fff; }
+        .app-header .lock-btn {
+            background: none; border: 1px solid #333; color: #888; padding: 6px 12px;
+            border-radius: 6px; cursor: pointer; font-size: 0.8rem;
+        }
+        .app-header .lock-btn:hover { border-color: #555; color: #ccc; }
+
+        .subtitle { font-size: 0.8rem; color: #666; margin-bottom: 16px; }
+
+        /* Progress bar */
+        .progress-wrap {
+            width: 100%; height: 4px; background: #222; border-radius: 2px;
+            margin-bottom: 16px; overflow: hidden; display: none;
+        }
+        .progress-bar {
+            height: 100%; background: #0cc; border-radius: 2px;
+            transition: width 0.2s ease;
+        }
+
+        /* Manage Artists */
+        .manage-toggle {
+            background: none; border: 1px solid #333; color: #aaa; padding: 6px 14px;
+            border-radius: 6px; cursor: pointer; font-size: 0.82rem; margin-bottom: 12px;
+        }
+        .manage-toggle:hover { border-color: #555; color: #ccc; }
+        .manage-section { display: none; margin-bottom: 20px; padding: 16px; background: #161616; border-radius: 8px; border: 1px solid #222; }
+        .manage-section.open { display: block; }
+
+        .search-row { display: flex; gap: 8px; margin-bottom: 12px; }
+        .search-row input {
+            flex: 1; padding: 8px 12px; font-size: 0.9rem; border: 1px solid #333;
+            border-radius: 6px; background: #1a1a1a; color: #fff; outline: none;
+        }
+        .search-row input:focus { border-color: #555; }
+        .search-row button {
+            padding: 8px 16px; font-size: 0.9rem; border: none; border-radius: 6px;
+            background: #0cc; color: #000; cursor: pointer; font-weight: 600;
+        }
+        .search-row button:hover { background: #0aa; }
+
+        .search-results { margin-bottom: 12px; }
+        .search-result {
+            display: flex; align-items: center; gap: 10px; padding: 8px 10px;
+            border-radius: 6px; cursor: pointer; transition: background 0.15s;
+        }
+        .search-result:hover { background: #222; }
+        .search-result img {
+            width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #333;
+        }
+        .search-result .sr-info { flex: 1; }
+        .search-result .sr-name { font-size: 0.88rem; color: #fff; }
+        .search-result .sr-subs { font-size: 0.75rem; color: #666; }
+        .search-result .sr-add {
+            font-size: 0.8rem; color: #0cc; background: none; border: 1px solid #0cc;
+            padding: 4px 10px; border-radius: 4px; cursor: pointer;
+        }
+        .search-result .sr-add:hover { background: #0cc; color: #000; }
+
+        .artist-label { font-size: 0.8rem; color: #888; margin-bottom: 8px; }
+        .artist-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+        .artist-pill {
+            display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px;
+            background: #222; border-radius: 14px; font-size: 0.78rem; color: #ccc;
+        }
+        .artist-pill .remove-artist {
+            background: none; border: none; color: #666; cursor: pointer; font-size: 0.85rem;
+            padding: 0 2px; line-height: 1;
+        }
+        .artist-pill .remove-artist:hover { color: #e54; }
+
+        /* Feed */
+        .feed-header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 0; border-top: 1px solid #222; margin-bottom: 8px;
+        }
+        .feed-title { font-size: 0.85rem; color: #888; }
+        .refresh-btn {
+            background: none; border: 1px solid #333; color: #888; padding: 5px 12px;
+            border-radius: 6px; cursor: pointer; font-size: 0.78rem;
+        }
+        .refresh-btn:hover { border-color: #555; color: #ccc; }
+
+        .feed-empty {
+            text-align: center; color: #555; padding: 40px 0; font-size: 0.9rem;
+        }
+
+        /* Video card */
+        .video-card {
+            display: flex; gap: 10px; padding: 12px; border-radius: 8px;
+            cursor: pointer; transition: background 0.15s; border-bottom: 1px solid #1a1a1a;
+        }
+        .video-card:hover { background: #161616; }
+        .video-card.dismissed { display: none; }
+
+        .vc-check {
+            flex-shrink: 0; width: 20px; height: 20px; margin-top: 2px;
+            border: 2px solid #444; border-radius: 4px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: all 0.15s;
+        }
+        .vc-check:hover { border-color: #0cc; }
+        .vc-check.checked { border-color: #0cc; background: #0cc; }
+        .vc-check.checked::after { content: '\2713'; color: #000; font-size: 12px; font-weight: 700; }
+
+        .vc-body { flex: 1; min-width: 0; }
+        .vc-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 3px; }
+        .vc-channel { font-size: 0.82rem; color: #aaa; font-weight: 500; }
+        .vc-time { font-size: 0.75rem; color: #555; }
+        .vc-title { font-size: 0.92rem; color: #fff; margin-bottom: 3px; line-height: 1.3; }
+        .vc-duration { font-size: 0.78rem; color: #666; }
+
+        .vc-thumb {
+            flex-shrink: 0; width: 100px; height: 56px; border-radius: 4px;
+            object-fit: cover; background: #222;
+        }
+
+        /* Expanded card */
+        .video-card.expanded { background: #161616; flex-direction: column; }
+        .video-card.expanded .vc-row { display: flex; gap: 10px; }
+        .video-card.expanded .vc-thumb-large {
+            width: 100%; max-width: 400px; border-radius: 6px; margin: 10px 0;
+            aspect-ratio: 16/9; object-fit: cover; background: #222;
+        }
+        .vc-desc {
+            font-size: 0.82rem; color: #999; white-space: pre-wrap; word-break: break-word;
+            max-height: 200px; overflow-y: auto; margin: 8px 0; line-height: 1.5;
+            padding: 8px; background: #111; border-radius: 4px;
+        }
+        .vc-desc a { color: #0cc; }
+        .vc-watch {
+            display: inline-block; padding: 6px 14px; font-size: 0.82rem; color: #fff;
+            background: #c00; border-radius: 4px; text-decoration: none; margin-top: 6px;
+        }
+        .vc-watch:hover { background: #e00; }
+        .vc-views { font-size: 0.78rem; color: #666; margin-top: 6px; }
+        .vc-loading { font-size: 0.8rem; color: #555; padding: 8px 0; }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+    </style>
+</head>
+<body>
+
+<!-- Password Gate -->
+<div id="gate">
+    <h1 id="gate-title">Enter Password</h1>
+    <p id="gate-subtitle">Access is restricted.</p>
+    <div class="input-row">
+        <input type="password" id="pw-input" placeholder="Password" autocomplete="off">
+        <button id="pw-btn" onclick="handlePassword()">Go</button>
+    </div>
+    <div class="error" id="pw-error"></div>
+</div>
+
+<!-- Main App -->
+<div id="app">
+    <div class="app-header">
+        <div>
+            <h1>YouTube Upload Tracker</h1>
+            <div class="subtitle" id="subtitle">Tracking 0 artists &middot; 4-day window</div>
+        </div>
+        <button class="lock-btn" onclick="logout()">Lock</button>
+    </div>
+
+    <div class="progress-wrap" id="progress-wrap">
+        <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+    </div>
+
+    <button class="manage-toggle" id="manage-toggle" onclick="toggleManage()">&#9660; Manage Artists</button>
+
+    <div class="manage-section" id="manage-section">
+        <div class="search-row">
+            <input type="text" id="artist-search" placeholder="Search for an artist" autocomplete="off">
+            <button onclick="searchArtist()">Search</button>
+        </div>
+        <div class="search-results" id="search-results"></div>
+        <div class="artist-label">Currently tracking:</div>
+        <div class="artist-pills" id="artist-pills"></div>
+    </div>
+
+    <div class="feed-header">
+        <div class="feed-title" id="feed-title">Feed</div>
+        <button class="refresh-btn" onclick="refreshFeed()">Refresh</button>
+    </div>
+
+    <div id="feed"></div>
+</div>
+
+<script>
+// ─── Default Artists ───────────────────────────────────────────
+const DEFAULT_ARTISTS = [
+    { name: "Taylor Swift", channelId: "UCqECaJ8Gagnn7YCbPEzWH6g" },
+    { name: "Drake", channelId: "UCByOQJjav0CUDwxCk-jVNRQ" },
+    { name: "Coldplay", channelId: "UCDPM_n1atn2ijUwHd0NNRQw" },
+    { name: "Ed Sheeran", channelId: "UC0C-w0YjGpqDXGB8IHb662A" },
+    { name: "Eminem", channelId: "UCfM3zsQsOnfWNUppiycmBuw" }
+];
+
+// ─── Config ────────────────────────────────────────────────────
+const PIPED_INSTANCES = [
+    'pipedapi.kavin.rocks',
+    'pipedapi.adminforge.de',
+    'watchapi.whatever.social'
+];
+const ALLORIGINS_PROXY = 'https://api.allorigins.win/raw?url=';
+const DAYS_WINDOW = 4;
+const CONCURRENCY = 6;
+const MAX_ARTISTS = 200;
+
+// ─── State ─────────────────────────────────────────────────────
+let artists = [];
+let allVideos = [];
+let dismissed = [];
+let descCache = {};
+let workingInstance = null;
+
+// ─── Password Protection ──────────────────────────────────────
+async function sha256(str) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+const PW_HASH_KEY = 'yt_tracker_pw_hash';
+const AUTH_KEY = 'yt_tracker_auth';
+
+function getStoredHash() { return localStorage.getItem(PW_HASH_KEY); }
+
+async function handlePassword() {
+    const input = document.getElementById('pw-input').value;
+    if (!input) return;
+    const hash = await sha256(input);
+    const stored = getStoredHash();
+    if (!stored) {
+        localStorage.setItem(PW_HASH_KEY, hash);
+        sessionStorage.setItem(AUTH_KEY, 'true');
+        showApp();
+    } else if (hash === stored) {
+        sessionStorage.setItem(AUTH_KEY, 'true');
+        showApp();
+    } else {
+        document.getElementById('pw-error').textContent = 'Incorrect password.';
+        document.getElementById('pw-input').value = '';
+        document.getElementById('pw-input').focus();
+    }
+}
+
+function showApp() {
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    init();
+}
+
+function showGate() {
+    document.getElementById('gate').style.display = 'flex';
+    document.getElementById('app').style.display = 'none';
+    const stored = getStoredHash();
+    if (!stored) {
+        document.getElementById('gate-title').textContent = 'Create a Password';
+        document.getElementById('gate-subtitle').textContent = 'Set a password for this tool.';
+        document.getElementById('pw-btn').textContent = 'Set';
+    } else {
+        document.getElementById('gate-title').textContent = 'Enter Password';
+        document.getElementById('gate-subtitle').textContent = 'Access is restricted.';
+        document.getElementById('pw-btn').textContent = 'Go';
+    }
+}
+
+function logout() {
+    sessionStorage.removeItem(AUTH_KEY);
+    document.getElementById('pw-input').value = '';
+    document.getElementById('pw-error').textContent = '';
+    showGate();
+}
+
+document.getElementById('pw-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') handlePassword();
+});
+
+// ─── Init ──────────────────────────────────────────────────────
+function init() {
+    loadArtists();
+    loadDismissed();
+    renderArtistPills();
+    updateSubtitle();
+    refreshFeed();
+}
+
+// ─── Artist Management ────────────────────────────────────────
+function loadArtists() {
+    const stored = localStorage.getItem('yt_tracker_artists');
+    if (stored) {
+        artists = JSON.parse(stored);
+    } else {
+        artists = [...DEFAULT_ARTISTS];
+        saveArtists();
+    }
+}
+
+function saveArtists() {
+    localStorage.setItem('yt_tracker_artists', JSON.stringify(artists));
+}
+
+function addArtist(name, channelId) {
+    if (artists.length >= MAX_ARTISTS) return;
+    if (artists.some(a => a.channelId === channelId)) return;
+    artists.push({ name, channelId });
+    artists.sort((a, b) => a.name.localeCompare(b.name));
+    saveArtists();
+    renderArtistPills();
+    updateSubtitle();
+}
+
+function removeArtist(channelId) {
+    artists = artists.filter(a => a.channelId !== channelId);
+    saveArtists();
+    renderArtistPills();
+    updateSubtitle();
+    allVideos = allVideos.filter(v => v.channelId !== channelId);
+    renderFeed();
+}
+
+function renderArtistPills() {
+    const el = document.getElementById('artist-pills');
+    el.innerHTML = artists.map(a =>
+        `<span class="artist-pill">${esc(a.name)}<button class="remove-artist" onclick="event.stopPropagation();removeArtist('${a.channelId}')" title="Remove">&times;</button></span>`
+    ).join('');
+}
+
+function updateSubtitle() {
+    document.getElementById('subtitle').textContent =
+        `Tracking ${artists.length} artist${artists.length !== 1 ? 's' : ''} \u00b7 ${DAYS_WINDOW}-day window`;
+}
+
+function toggleManage() {
+    const section = document.getElementById('manage-section');
+    const btn = document.getElementById('manage-toggle');
+    const open = section.classList.toggle('open');
+    btn.innerHTML = (open ? '&#9650;' : '&#9660;') + ' Manage Artists';
+}
+
+// ─── Artist Search ─────────────────────────────────────────────
+async function searchArtist() {
+    const q = document.getElementById('artist-search').value.trim();
+    if (!q) return;
+    const el = document.getElementById('search-results');
+    el.innerHTML = '<div style="font-size:0.8rem;color:#555;padding:4px 0;">Searching...</div>';
+    try {
+        const data = await pipedFetch(`/search?q=${encodeURIComponent(q)}&filter=channels`);
+        const items = (data.items || []).slice(0, 5);
+        if (!items.length) {
+            el.innerHTML = '<div style="font-size:0.8rem;color:#555;padding:4px 0;">No channels found.</div>';
+            return;
+        }
+        el.innerHTML = items.map(ch => {
+            const id = ch.url ? ch.url.replace('/channel/', '') : '';
+            const subs = ch.subscribers >= 0 ? formatCount(ch.subscribers) + ' subscribers' : '';
+            const thumb = ch.thumbnail || '';
+            return `<div class="search-result">
+                <img src="${esc(thumb)}" alt="" onerror="this.style.display='none'">
+                <div class="sr-info">
+                    <div class="sr-name">${esc(ch.name || '')}</div>
+                    <div class="sr-subs">${esc(subs)}</div>
+                </div>
+                <button class="sr-add" onclick="event.stopPropagation();addArtistFromSearch('${esc(ch.name || '')}','${esc(id)}',this)">Add</button>
+            </div>`;
+        }).join('');
+    } catch (e) {
+        el.innerHTML = '<div style="font-size:0.8rem;color:#e54;padding:4px 0;">Search failed. Try again.</div>';
+    }
+}
+
+function addArtistFromSearch(name, channelId, btn) {
+    if (!channelId) return;
+    addArtist(name, channelId);
+    btn.textContent = 'Added';
+    btn.disabled = true;
+    btn.style.opacity = '0.5';
+}
+
+document.getElementById('artist-search').addEventListener('keydown', e => {
+    if (e.key === 'Enter') searchArtist();
+});
+
+// ─── Dismissed Videos ──────────────────────────────────────────
+function loadDismissed() {
+    const stored = localStorage.getItem('yt_tracker_dismissed');
+    if (stored) {
+        dismissed = JSON.parse(stored);
+        cleanDismissed();
+    }
+}
+
+function cleanDismissed() {
+    const cutoff = Date.now() - 5 * 24 * 60 * 60 * 1000;
+    dismissed = dismissed.filter(d => d.ts > cutoff);
+    saveDismissed();
+}
+
+function saveDismissed() {
+    localStorage.setItem('yt_tracker_dismissed', JSON.stringify(dismissed));
+}
+
+function dismissVideo(videoId) {
+    if (!dismissed.some(d => d.id === videoId)) {
+        dismissed.push({ id: videoId, ts: Date.now() });
+        saveDismissed();
+    }
+    const card = document.querySelector(`[data-video-id="${videoId}"]`);
+    if (card) card.classList.add('dismissed');
+    updateFeedCount();
+}
+
+function isDismissed(videoId) {
+    return dismissed.some(d => d.id === videoId);
+}
+
+// ─── Piped API ─────────────────────────────────────────────────
+async function pipedFetch(path) {
+    // Try cached working instance first
+    if (workingInstance) {
+        try {
+            const res = await fetch(`https://${workingInstance}${path}`);
+            if (res.ok) return await res.json();
+        } catch {}
+    }
+    // Try all instances
+    for (const inst of PIPED_INSTANCES) {
+        try {
+            const res = await fetch(`https://${inst}${path}`);
+            if (res.ok) {
+                workingInstance = inst;
+                return await res.json();
+            }
+        } catch {}
+    }
+    // Fallback: null (RSS fallback handled separately)
+    return null;
+}
+
+async function fetchChannelVideos(channelId) {
+    const data = await pipedFetch(`/channel/${channelId}`);
+    if (data && data.relatedStreams) {
+        return data.relatedStreams.map(v => ({
+            videoId: v.url ? v.url.replace('/watch?v=', '') : '',
+            title: v.title || '',
+            channel: data.name || v.uploaderName || '',
+            channelId,
+            thumbnail: v.thumbnail || '',
+            duration: v.duration || 0,
+            uploaded: v.uploaded || 0,
+            views: v.views || 0
+        }));
+    }
+    // Fallback: YouTube RSS via allorigins proxy
+    return await fetchRSS(channelId);
+}
+
+async function fetchRSS(channelId) {
+    try {
+        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+        const res = await fetch(ALLORIGINS_PROXY + encodeURIComponent(rssUrl));
+        if (!res.ok) return [];
+        const text = await res.text();
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(text, 'text/xml');
+        const entries = xml.querySelectorAll('entry');
+        const channelName = xml.querySelector('author > name')?.textContent || '';
+        return Array.from(entries).map(entry => {
+            const videoId = entry.querySelector('videoId')?.textContent || '';
+            const title = entry.querySelector('title')?.textContent || '';
+            const published = entry.querySelector('published')?.textContent || '';
+            const thumb = entry.querySelector('group > thumbnail')?.getAttribute('url') || '';
+            const views = parseInt(entry.querySelector('group > community > statistics')?.getAttribute('views') || '0');
+            return {
+                videoId, title, channel: channelName, channelId,
+                thumbnail: thumb, duration: 0, uploaded: new Date(published).getTime(),
+                views
+            };
+        });
+    } catch { return []; }
+}
+
+async function fetchDescription(videoId) {
+    if (descCache[videoId]) return descCache[videoId];
+    try {
+        const data = await pipedFetch(`/streams/${videoId}`);
+        if (data) {
+            descCache[videoId] = data.description || 'No description available.';
+            return descCache[videoId];
+        }
+    } catch {}
+    descCache[videoId] = 'Description unavailable.';
+    return descCache[videoId];
+}
+
+// ─── Feed Loading ──────────────────────────────────────────────
+async function refreshFeed() {
+    allVideos = [];
+    const feedEl = document.getElementById('feed');
+    feedEl.innerHTML = '<div class="feed-empty">Loading...</div>';
+
+    const progressWrap = document.getElementById('progress-wrap');
+    const progressBar = document.getElementById('progress-bar');
+    progressWrap.style.display = 'block';
+    progressBar.style.width = '0%';
+
+    const cutoff = Date.now() - DAYS_WINDOW * 24 * 60 * 60 * 1000;
+    let completed = 0;
+    const total = artists.length;
+
+    // Concurrency-limited fetching
+    const queue = [...artists];
+    const results = [];
+
+    async function worker() {
+        while (queue.length > 0) {
+            const artist = queue.shift();
+            try {
+                const videos = await fetchChannelVideos(artist.channelId);
+                if (videos) {
+                    const recent = videos.filter(v => v.uploaded > cutoff);
+                    results.push(...recent);
+                }
+            } catch {}
+            completed++;
+            progressBar.style.width = Math.round((completed / total) * 100) + '%';
+        }
+    }
+
+    const workers = [];
+    for (let i = 0; i < Math.min(CONCURRENCY, total); i++) {
+        workers.push(worker());
+    }
+    await Promise.all(workers);
+
+    allVideos = results;
+    allVideos.sort((a, b) => b.uploaded - a.uploaded);
+
+    progressWrap.style.display = 'none';
+    renderFeed();
+}
+
+// ─── Feed Rendering ────────────────────────────────────────────
+function renderFeed() {
+    const feedEl = document.getElementById('feed');
+    const visible = allVideos.filter(v => !isDismissed(v.videoId));
+    updateFeedCount();
+
+    if (!visible.length) {
+        feedEl.innerHTML = '<div class="feed-empty">No new videos in the last ' + DAYS_WINDOW + ' days.</div>';
+        return;
+    }
+
+    feedEl.innerHTML = visible.map(v => `
+        <div class="video-card" data-video-id="${esc(v.videoId)}" onclick="toggleExpand(this, '${esc(v.videoId)}')">
+            <div class="vc-row" style="display:flex;gap:10px;width:100%">
+                <div class="vc-check" onclick="event.stopPropagation();dismissVideo('${esc(v.videoId)}')" title="Dismiss"></div>
+                <div class="vc-body">
+                    <div class="vc-meta">
+                        <span class="vc-channel">${esc(v.channel)}</span>
+                        <span class="vc-time">${timeAgo(v.uploaded)}</span>
+                    </div>
+                    <div class="vc-title">${esc(v.title)}</div>
+                    <div class="vc-duration">${formatDuration(v.duration)}</div>
+                </div>
+                <img class="vc-thumb" src="${esc(v.thumbnail)}" alt="" loading="lazy" onerror="this.style.display='none'">
+            </div>
+            <div class="vc-expand-area" style="display:none"></div>
+        </div>
+    `).join('');
+}
+
+function updateFeedCount() {
+    const visible = allVideos.filter(v => !isDismissed(v.videoId));
+    document.getElementById('feed-title').textContent =
+        `Feed (${visible.length} video${visible.length !== 1 ? 's' : ''})`;
+}
+
+async function toggleExpand(card, videoId) {
+    if (card.classList.contains('expanded')) {
+        card.classList.remove('expanded');
+        card.querySelector('.vc-expand-area').style.display = 'none';
+        return;
+    }
+
+    // Collapse others
+    document.querySelectorAll('.video-card.expanded').forEach(c => {
+        c.classList.remove('expanded');
+        c.querySelector('.vc-expand-area').style.display = 'none';
+    });
+
+    card.classList.add('expanded');
+    const expandArea = card.querySelector('.vc-expand-area');
+    expandArea.style.display = 'block';
+
+    const video = allVideos.find(v => v.videoId === videoId);
+    if (!video) return;
+
+    expandArea.innerHTML = `
+        <img class="vc-thumb-large" src="${esc(video.thumbnail)}" alt="" onerror="this.style.display='none'">
+        <div class="vc-loading">Loading description...</div>
+    `;
+
+    const desc = await fetchDescription(videoId);
+    expandArea.innerHTML = `
+        <img class="vc-thumb-large" src="${esc(video.thumbnail)}" alt="" onerror="this.style.display='none'">
+        <div class="vc-desc">${linkify(esc(desc))}</div>
+        <div class="vc-views">${formatCount(video.views)} views</div>
+        <a class="vc-watch" href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener">Watch on YouTube</a>
+    `;
+}
+
+// ─── Helpers ───────────────────────────────────────────────────
+function esc(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+}
+
+function timeAgo(ts) {
+    const diff = Date.now() - ts;
+    const mins = Math.floor(diff / 60000);
+    if (mins < 1) return 'just now';
+    if (mins < 60) return mins + 'm ago';
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return hrs + 'h ago';
+    const days = Math.floor(hrs / 24);
+    if (days === 1) return 'yesterday';
+    return days + 'd ago';
+}
+
+function formatDuration(seconds) {
+    if (!seconds) return '\u2014';
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = seconds % 60;
+    if (h > 0) return `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    return `${m}:${String(s).padStart(2, '0')}`;
+}
+
+function formatCount(n) {
+    if (n >= 1e9) return (n / 1e9).toFixed(1) + 'B';
+    if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+    if (n >= 1e3) return (n / 1e3).toFixed(1) + 'K';
+    return String(n);
+}
+
+function linkify(text) {
+    return text.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+}
+
+// ─── Boot ──────────────────────────────────────────────────────
+if (sessionStorage.getItem(AUTH_KEY) === 'true' && getStoredHash()) {
+    showApp();
+} else {
+    showGate();
+}
+</script>
+</body>
+</html>

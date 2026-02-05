@@ -240,11 +240,91 @@
 <script>
 // ─── Default Artists ───────────────────────────────────────────
 const DEFAULT_ARTISTS = [
-    { name: "Taylor Swift", channelId: "UCqECaJ8Gagnn7YCbPEzWH6g" },
-    { name: "Drake", channelId: "UCByOQJjav0CUDwxCk-jVNRQ" },
+    { name: "Akon", channelId: "UC6IBMCQ6-d7p41KHxOsq4RA" },
+    { name: "Amy Winehouse", channelId: "UCWsQKPFHQdRMJZSAAzh1Qbg" },
+    { name: "Andrea Bocelli", channelId: "UCb4JB8-ZAeceuR7EPCPOPzg" },
+    { name: "Audioslave", channelId: "UCbJHfnWtshjo6zJg9Y8XzBw" },
+    { name: "Beastie Boys", channelId: "UCpRUSBcRWUQZIj3_jWF19Dg" },
+    { name: "Bee Gees", channelId: "UCD9sCcKXnFxMeuFoNayVxeQ" },
+    { name: "Billy Idol", channelId: "UCZAfHkJj43Lir2Id3GiGCjQ" },
+    { name: "Black Eyed Peas", channelId: "UCBFaOy1_APEXEyA6Gws_Y1g" },
+    { name: "Bob Marley", channelId: "UCAlTDckOOQ2jREOvuCShGbw" },
+    { name: "Bob Seger", channelId: "UComKJVf5rNLl_RfC_rbt7qg" },
+    { name: "Bon Jovi", channelId: "UCkBwnm7GOfYHsacwUjriC-w" },
+    { name: "Boyz II Men", channelId: "UCIP_rqrDBiovNIbHLve7nNA" },
+    { name: "Carpenters", channelId: "UCocF7enWc-JXxVyZxDjvewA" },
+    { name: "Cat Stevens / Yusuf Islam", channelId: "UCo0pv-U5bTDLlfdROjmCCGg" },
+    { name: "Chris Cornell", channelId: "UCf0pcytyiYVYy3UOs52nsQg" },
     { name: "Coldplay", channelId: "UCDPM_n1atn2ijUwHd0NNRQw" },
+    { name: "Common", channelId: "UCBGDlQIq1hx5nSTIpWTsGAQ" },
+    { name: "D'Angelo", channelId: "UCKCWQOVUfdlDYX2_238_AeQ" },
+    { name: "Def Leppard", channelId: "UCZjBqZjGsmI5OAVsLSroaWQ" },
+    { name: "DMX", channelId: "UCQcTmBevae2jDeFEZ6VEQPw" },
+    { name: "Donna Summer", channelId: "UC6dX999wO3gBsS1qzm4I-KA" },
+    { name: "Drake", channelId: "UCByOQJjav0CUDwxCk-jVNRQ" },
     { name: "Ed Sheeran", channelId: "UC0C-w0YjGpqDXGB8IHb662A" },
-    { name: "Eminem", channelId: "UCfM3zsQsOnfWNUppiycmBuw" }
+    { name: "Elton John", channelId: "UCcd0tBtip8YzdTCUw3OVv_Q" },
+    { name: "Elvis Costello", channelId: "UCntMV2RV-IrRzQ2v4obEJ5w" },
+    { name: "Eminem", channelId: "UCfM3zsQsOnfWNUppiycmBuw" },
+    { name: "Erykah Badu", channelId: "UCDOZs-fcPo0ab9mqUnyN4cw" },
+    { name: "Fall Out Boy", channelId: "UC2qWxZHgnlwDvcmLqP23jrA" },
+    { name: "Frank Sinatra", channelId: "UCJtvg6ZFwzdFdtcHBqetvwg" },
+    { name: "Frank Zappa", channelId: "UCj-Qb2d6dJJJtNL4rgr3FNw" },
+    { name: "Glen Campbell", channelId: "UCJXKFn_FtlA3eJ94Bp2dLlA" },
+    { name: "Godsmack", channelId: "UCe9rl8k6yymUeVzzXfFGWwA" },
+    { name: "Guns N' Roses", channelId: "UCIak6JLVOjqhStxrL1Lcytw" },
+    { name: "Heart", channelId: "UCsFPCqkPsesPa8XxN1pJx-w" },
+    { name: "Janet Jackson", channelId: "UCz8ZHx5wFQpXWywaL2uqevw" },
+    { name: "Jeremih", channelId: "UCBYpEIgqByL9n0VBnEC5SLQ" },
+    { name: "Jimmy Eat World", channelId: "UCFeCvEjX56ReS-O3QHdyjbA" },
+    { name: "Jodeci", channelId: "UCfPNbHJKbjxV3L1z5RYeDTQ" },
+    { name: "John Lennon", channelId: "UCYU4eunPInnHTNWfGvOgkbg" },
+    { name: "John Mellencamp", channelId: "UCzYJCeitN60eTc9UZvvRDoA" },
+    { name: "Johnny Cash", channelId: "UCLwdOhL6TKbmjRtZ8wIr-Bg" },
+    { name: "Juvenile", channelId: "UCSXRhf5E93q5bjELatiwk_w" },
+    { name: "Kenny Rogers", channelId: "UCKRlpS2Z3rHf8glxuGhblyQ" },
+    { name: "Keyshia Cole", channelId: "UCznrMQtAIr5-isdho4YQoMA" },
+    { name: "Kiss", channelId: "UCyOw2FDjfQOFQH7paKxNVvA" },
+    { name: "Lenny Kravitz", channelId: "UCdIs5dRqgZ1IWOdLZimHL_w" },
+    { name: "Lionel Richie", channelId: "UCM3iG_kXUM_9HHVIDI7vEtg" },
+    { name: "Little Big Town", channelId: "UCTtphRK-UT2pm4oPNy3GeGQ" },
+    { name: "LL Cool J", channelId: "UCDG8P-_qq4PuT0DtxzlQlsw" },
+    { name: "Mariah Carey", channelId: "UCurpiDXSkcUbgdMwHNZkrCg" },
+    { name: "Marvin Gaye", channelId: "UCV0Arhg2bZuyL6CutipMduw" },
+    { name: "Mary J. Blige", channelId: "UCj5CgwX_iJEqJsqUJyYjg4A" },
+    { name: "Neil Diamond", channelId: "UCtPHmTX4_qC_h5cerkmLThQ" },
+    { name: "Nelly", channelId: "UCOnzS9RKEhSvfUCsFbSrJ_A" },
+    { name: "Nelly Furtado", channelId: "UC5Y-gAeGpzgzu0ObzKnhPFA" },
+    { name: "Nirvana", channelId: "UCFMZHIQMgBXTSxsr86Caazw" },
+    { name: "OneRepublic", channelId: "UCi4EDAgjULwwNBHOg1aaCig" },
+    { name: "Paul McCartney", channelId: "UCvGnJy9RnXX0kGSnDPKCZzQ" },
+    { name: "Peggy Lee", channelId: "UCWfdzpDGBCOOWxWVR0fLVNw" },
+    { name: "Peter Frampton", channelId: "UCm3xsc3Bx3PB3dhsllSLoXA" },
+    { name: "Queens of the Stone Age", channelId: "UCAqa6dDmCH4XwipdfxoMo4Q" },
+    { name: "Ringo Starr", channelId: "UCqESxycliXwDheOseXqmq8w" },
+    { name: "Roger Hodgson", channelId: "UCiDWjCWCtmW41-I_xzOufIA" },
+    { name: "Rush", channelId: "UC5C-Asy_myoWCkLEtZR72SA" },
+    { name: "Sammy Davis Jr.", channelId: "UCQU-I6rhD2V48cI5_yKAFAw" },
+    { name: "Shania Twain", channelId: "UCadSacAVwG-QH6tWzjrmjxA" },
+    { name: "Smashing Pumpkins", channelId: "UCnGcjQlLO8x7jsfw3r6U9ww" },
+    { name: "Sonic Youth", channelId: "UCOWV89Ww70Uw4Jr8Rmc1GBA" },
+    { name: "Soundgarden", channelId: "UCHKSayVT2Ks-gQBXmMLGTag" },
+    { name: "Spice Girls", channelId: "UCnGcCZ0hZT6WJxTUZJqtOMA" },
+    { name: "Sting", channelId: "UCwERP8ZAI10RtZIAPsZQDDw" },
+    { name: "Supertramp", channelId: "UColTsKEMf0kaZjkoOx7-Cww" },
+    { name: "Taylor Swift", channelId: "UCqECaJ8Gagnn7YCbPEzWH6g" },
+    { name: "The Beach Boys", channelId: "UCUxNZEOdVy77QiiSTHk8bug" },
+    { name: "The Beatles", channelId: "UCc4K7bAqpdBP8jh1j9XZAww" },
+    { name: "The Black Crowes", channelId: "UC4ioqobfqRk8yawnN81ac5w" },
+    { name: "The Cranberries", channelId: "UCb0vzLwvr7xbJgdqMzejDhw" },
+    { name: "The Game", channelId: "UC3eKKASjWY-WAGRII9iKHsQ" },
+    { name: "The Rolling Stones", channelId: "UCB_Z6rBg3WW3NL4-QimhC2A" },
+    { name: "The Who", channelId: "UCUtwj-3S97bj3lYDVxDKtlQ" },
+    { name: "Toby Keith", channelId: "UCFGqp-AuKZQXAx95K8fPbAA" },
+    { name: "Tom Petty and the Heartbreakers", channelId: "UCvYomLPMwUr1FAXRMGhVfCQ" },
+    { name: "Trisha Yearwood", channelId: "UCw0Nn2LTsXGB0rP53Z0ACWQ" },
+    { name: "U2", channelId: "UC4gPNusMDwx2Xm-YI35AkCA" },
+    { name: "Weezer", channelId: "UC7JDBUzkcwRGtQGia3_mMgQ" }
 ];
 
 // ─── Config ────────────────────────────────────────────────────
@@ -345,6 +425,19 @@ function loadArtists() {
     const stored = localStorage.getItem('yt_tracker_artists');
     if (stored) {
         artists = JSON.parse(stored);
+        // Merge any new defaults the user doesn't already have
+        const existingIds = new Set(artists.map(a => a.channelId));
+        let added = false;
+        for (const def of DEFAULT_ARTISTS) {
+            if (!existingIds.has(def.channelId)) {
+                artists.push(def);
+                added = true;
+            }
+        }
+        if (added) {
+            artists.sort((a, b) => a.name.localeCompare(b.name));
+            saveArtists();
+        }
     } else {
         artists = [...DEFAULT_ARTISTS];
         saveArtists();

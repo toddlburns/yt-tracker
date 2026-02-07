@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Upload Tracker</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><radialGradient id='g' cx='50%25' cy='50%25' r='50%25'><stop offset='0%25' stop-color='%2300fff2'/><stop offset='60%25' stop-color='%230cc'/><stop offset='100%25' stop-color='%230aa' stop-opacity='0'/></radialGradient></defs><circle cx='50' cy='50' r='40' fill='url(%23g)'/></svg>">
+    <title>The Velvet Tube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23722F37'/><circle cx='50' cy='50' r='30' fill='%23C9A227'/><circle cx='50' cy='50' r='15' fill='%23F5E6D3'/></svg>">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0f0f0f;
-            color: #e0e0e0;
+            font-family: 'Lora', Georgia, serif;
+            background: linear-gradient(135deg, #1a1510 0%, #2a1f1a 50%, #1a1510 100%);
+            color: #F5E6D3;
             min-height: 100vh;
+        }
+
+        /* Retro texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
         }
 
         /* Password Gate */
@@ -23,187 +36,294 @@
             justify-content: center;
             min-height: 100vh;
             padding: 20px;
+            position: relative;
+            z-index: 1;
         }
-        #gate h1 { font-size: 1.4rem; margin-bottom: 8px; color: #fff; }
-        #gate p { font-size: 0.85rem; color: #888; margin-bottom: 24px; }
+        #gate h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: #C9A227;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+        #gate p { font-size: 0.9rem; color: #a89a8a; margin-bottom: 24px; font-style: italic; }
         #gate .input-row { display: flex; gap: 8px; }
         #gate input {
-            padding: 10px 16px; font-size: 1rem; border: 1px solid #333;
-            border-radius: 6px; background: #1a1a1a; color: #fff;
-            outline: none; width: 260px;
+            padding: 12px 18px; font-size: 1rem; border: 2px solid #5a4a3a;
+            border-radius: 4px; background: #2a1f1a; color: #F5E6D3;
+            outline: none; width: 260px; font-family: 'Lora', serif;
         }
-        #gate input:focus { border-color: #555; }
+        #gate input:focus { border-color: #C9A227; }
         #gate button {
-            padding: 10px 20px; font-size: 1rem; border: none; border-radius: 6px;
-            background: #fff; color: #000; cursor: pointer; font-weight: 600;
+            padding: 12px 24px; font-size: 1rem; border: none; border-radius: 4px;
+            background: linear-gradient(180deg, #C9A227 0%, #8B7355 100%);
+            color: #1a1510; cursor: pointer; font-weight: 600;
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        #gate button:hover { background: #ddd; }
-        #gate .error { color: #e54; font-size: 0.85rem; margin-top: 12px; min-height: 20px; }
+        #gate button:hover { background: linear-gradient(180deg, #D4AF37 0%, #9B8365 100%); }
+        #gate .error { color: #C75050; font-size: 0.85rem; margin-top: 12px; min-height: 20px; }
 
         /* App */
-        #app { display: none; max-width: 720px; margin: 0 auto; padding: 16px; }
+        #app { display: none; max-width: 760px; margin: 0 auto; padding: 20px; position: relative; z-index: 1; }
 
         .app-header {
             display: flex; justify-content: space-between; align-items: flex-start;
-            margin-bottom: 8px;
+            margin-bottom: 16px; padding-bottom: 16px;
+            border-bottom: 1px solid #4a3a2a;
         }
-        .app-header h1 { font-size: 1.3rem; color: #fff; }
+        .app-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #C9A227;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
         .app-header .lock-btn {
-            background: none; border: 1px solid #333; color: #888; padding: 6px 12px;
-            border-radius: 6px; cursor: pointer; font-size: 0.8rem;
+            background: none; border: 1px solid #5a4a3a; color: #a89a8a; padding: 8px 14px;
+            border-radius: 4px; cursor: pointer; font-size: 0.8rem;
+            font-family: 'Lora', serif;
         }
-        .app-header .lock-btn:hover { border-color: #555; color: #ccc; }
+        .app-header .lock-btn:hover { border-color: #C9A227; color: #C9A227; }
 
-        .subtitle { font-size: 0.8rem; color: #666; margin-bottom: 16px; }
+        .subtitle { font-size: 0.85rem; color: #8a7a6a; margin-top: 4px; font-style: italic; }
 
         /* Progress bar */
         .progress-wrap {
-            width: 100%; height: 4px; background: #222; border-radius: 2px;
+            width: 100%; height: 4px; background: #3a2a1a; border-radius: 2px;
             margin-bottom: 16px; overflow: hidden; display: none;
         }
         .progress-bar {
-            height: 100%; background: #0cc; border-radius: 2px;
-            transition: width 0.2s ease;
+            height: 100%; background: linear-gradient(90deg, #C9A227, #8B7355);
+            border-radius: 2px; transition: width 0.2s ease;
         }
 
-        /* Manage Artists */
+        /* Manage Channels */
         .manage-toggle {
-            background: none; border: 1px solid #333; color: #aaa; padding: 6px 14px;
-            border-radius: 6px; cursor: pointer; font-size: 0.82rem; margin-bottom: 12px;
+            background: none; border: 1px solid #5a4a3a; color: #C9A227; padding: 8px 16px;
+            border-radius: 4px; cursor: pointer; font-size: 0.85rem; margin-bottom: 16px;
+            font-family: 'Playfair Display', serif;
         }
-        .manage-toggle:hover { border-color: #555; color: #ccc; }
-        .manage-section { display: none; margin-bottom: 20px; padding: 16px; background: #161616; border-radius: 8px; border: 1px solid #222; }
+        .manage-toggle:hover { background: #2a1f1a; border-color: #C9A227; }
+        .manage-section {
+            display: none; margin-bottom: 24px; padding: 20px;
+            background: linear-gradient(180deg, #2a1f1a 0%, #1a1510 100%);
+            border-radius: 8px; border: 1px solid #4a3a2a;
+        }
         .manage-section.open { display: block; }
 
-        .search-row { display: flex; gap: 8px; margin-bottom: 12px; }
+        .search-row { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
         .search-row input {
-            flex: 1; padding: 8px 12px; font-size: 0.9rem; border: 1px solid #333;
-            border-radius: 6px; background: #1a1a1a; color: #fff; outline: none;
+            flex: 1; min-width: 200px; padding: 10px 14px; font-size: 0.9rem;
+            border: 1px solid #5a4a3a; border-radius: 4px; background: #1a1510;
+            color: #F5E6D3; outline: none; font-family: 'Lora', serif;
         }
-        .search-row input:focus { border-color: #555; }
+        .search-row input:focus { border-color: #C9A227; }
+        .search-row select {
+            padding: 10px 14px; font-size: 0.9rem; border: 1px solid #5a4a3a;
+            border-radius: 4px; background: #1a1510; color: #F5E6D3;
+            font-family: 'Lora', serif; cursor: pointer;
+        }
         .search-row button {
-            padding: 8px 16px; font-size: 0.9rem; border: none; border-radius: 6px;
-            background: #0cc; color: #000; cursor: pointer; font-weight: 600;
+            padding: 10px 20px; font-size: 0.9rem; border: none; border-radius: 4px;
+            background: linear-gradient(180deg, #C9A227 0%, #8B7355 100%);
+            color: #1a1510; cursor: pointer; font-weight: 600;
+            font-family: 'Playfair Display', serif;
         }
-        .search-row button:hover { background: #0aa; }
+        .search-row button:hover { background: linear-gradient(180deg, #D4AF37 0%, #9B8365 100%); }
 
-        .search-results { margin-bottom: 12px; }
+        .search-results { margin-bottom: 16px; }
         .search-result {
-            display: flex; align-items: center; gap: 10px; padding: 8px 10px;
+            display: flex; align-items: center; gap: 12px; padding: 10px 12px;
             border-radius: 6px; cursor: pointer; transition: background 0.15s;
+            border-bottom: 1px solid #3a2a1a;
         }
-        .search-result:hover { background: #222; }
+        .search-result:hover { background: #2a1f1a; }
         .search-result img {
-            width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #333;
+            width: 40px; height: 40px; border-radius: 50%; object-fit: cover;
+            background: #3a2a1a; border: 2px solid #5a4a3a;
         }
         .search-result .sr-info { flex: 1; }
-        .search-result .sr-name { font-size: 0.88rem; color: #fff; }
-        .search-result .sr-subs { font-size: 0.75rem; color: #666; }
+        .search-result .sr-name { font-size: 0.9rem; color: #F5E6D3; }
+        .search-result .sr-subs { font-size: 0.75rem; color: #8a7a6a; }
         .search-result .sr-add {
-            font-size: 0.8rem; color: #0cc; background: none; border: 1px solid #0cc;
-            padding: 4px 10px; border-radius: 4px; cursor: pointer;
+            font-size: 0.8rem; color: #C9A227; background: none; border: 1px solid #C9A227;
+            padding: 6px 12px; border-radius: 4px; cursor: pointer;
+            font-family: 'Playfair Display', serif;
         }
-        .search-result .sr-add:hover { background: #0cc; color: #000; }
+        .search-result .sr-add:hover { background: #C9A227; color: #1a1510; }
 
-        .artist-label { font-size: 0.8rem; color: #888; margin-bottom: 8px; }
-        .artist-pills { display: flex; flex-wrap: wrap; gap: 6px; }
-        .artist-pill {
-            display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px;
-            background: #222; border-radius: 14px; font-size: 0.78rem; color: #ccc;
+        .channel-section { margin-bottom: 16px; }
+        .channel-label {
+            font-size: 0.85rem; color: #C9A227; margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+            display: flex; align-items: center; gap: 8px;
         }
-        .artist-pill .remove-artist {
-            background: none; border: none; color: #666; cursor: pointer; font-size: 0.85rem;
-            padding: 0 2px; line-height: 1;
+        .channel-label .count {
+            background: #722F37; color: #F5E6D3; padding: 2px 8px;
+            border-radius: 10px; font-size: 0.75rem;
         }
-        .artist-pill .remove-artist:hover { color: #e54; }
+        .channel-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+        .channel-pill {
+            display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px;
+            background: #3a2a1a; border-radius: 20px; font-size: 0.8rem; color: #F5E6D3;
+            border: 1px solid #5a4a3a;
+        }
+        .channel-pill.omni {
+            background: #4a2a3a; border-color: #722F37;
+        }
+        .channel-pill .remove-channel {
+            background: none; border: none; color: #8a7a6a; cursor: pointer;
+            font-size: 0.9rem; padding: 0 2px; line-height: 1;
+        }
+        .channel-pill .remove-channel:hover { color: #C75050; }
 
         /* Feed */
         .feed-header {
             display: flex; justify-content: space-between; align-items: center;
-            padding: 10px 0; border-top: 1px solid #222; margin-bottom: 8px;
+            padding: 12px 0; border-top: 1px solid #4a3a2a; margin-bottom: 12px;
         }
-        .feed-title { font-size: 0.85rem; color: #888; }
+        .feed-title {
+            font-size: 0.9rem; color: #C9A227;
+            font-family: 'Playfair Display', serif;
+        }
         .refresh-btn {
-            background: none; border: 1px solid #333; color: #888; padding: 5px 12px;
-            border-radius: 6px; cursor: pointer; font-size: 0.78rem;
+            background: none; border: 1px solid #5a4a3a; color: #a89a8a; padding: 6px 14px;
+            border-radius: 4px; cursor: pointer; font-size: 0.8rem;
+            font-family: 'Lora', serif;
         }
-        .refresh-btn:hover { border-color: #555; color: #ccc; }
+        .refresh-btn:hover { border-color: #C9A227; color: #C9A227; }
 
         .feed-empty {
-            text-align: center; color: #555; padding: 40px 0; font-size: 0.9rem;
+            text-align: center; color: #6a5a4a; padding: 50px 0; font-size: 0.95rem;
+            font-style: italic;
         }
 
         /* Video card */
         .video-card {
-            display: flex; gap: 10px; padding: 12px; border-radius: 8px;
-            cursor: pointer; transition: background 0.15s; border-bottom: 1px solid #1a1a1a;
+            display: flex; gap: 12px; padding: 14px; border-radius: 8px;
+            cursor: pointer; transition: background 0.15s;
+            border-bottom: 1px solid #3a2a1a;
+            background: linear-gradient(180deg, transparent 0%, rgba(42,31,26,0.3) 100%);
         }
-        .video-card:hover { background: #161616; }
+        .video-card:hover { background: #2a1f1a; }
         .video-card.dismissed { display: none; }
 
         .vc-check {
-            flex-shrink: 0; width: 20px; height: 20px; margin-top: 2px;
-            border: 2px solid #444; border-radius: 4px; cursor: pointer;
+            flex-shrink: 0; width: 22px; height: 22px; margin-top: 2px;
+            border: 2px solid #5a4a3a; border-radius: 4px; cursor: pointer;
             display: flex; align-items: center; justify-content: center;
             transition: all 0.15s;
         }
-        .vc-check:hover { border-color: #0cc; }
-        .vc-check.checked { border-color: #0cc; background: #0cc; }
-        .vc-check.checked::after { content: '\2713'; color: #000; font-size: 12px; font-weight: 700; }
+        .vc-check:hover { border-color: #C9A227; }
+        .vc-check.checked { border-color: #C9A227; background: #C9A227; }
+        .vc-check.checked::after { content: '\2713'; color: #1a1510; font-size: 12px; font-weight: 700; }
 
         .vc-body { flex: 1; min-width: 0; }
-        .vc-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 3px; }
-        .vc-channel { font-size: 0.82rem; color: #aaa; font-weight: 500; }
-        .vc-time { font-size: 0.75rem; color: #555; }
-        .vc-title { font-size: 0.92rem; color: #fff; margin-bottom: 3px; line-height: 1.3; }
-        .vc-title.official-mv { color: #e8b0ff; }
-        .vc-info-row { display: flex; gap: 10px; align-items: center; }
-        .vc-duration { font-size: 0.78rem; color: #666; }
-        .vc-views-inline { font-size: 0.78rem; color: #666; }
-        .vc-views-inline.popular { color: #f5c542; }
+        .vc-meta { display: flex; gap: 10px; align-items: center; margin-bottom: 4px; flex-wrap: wrap; }
+        .vc-channel { font-size: 0.85rem; color: #C9A227; font-weight: 500; }
+        .vc-time { font-size: 0.75rem; color: #6a5a4a; }
+        .vc-omni-tag {
+            font-size: 0.65rem; background: #722F37; color: #F5E6D3;
+            padding: 2px 6px; border-radius: 3px; text-transform: uppercase;
+        }
+        .vc-title { font-size: 0.95rem; color: #F5E6D3; margin-bottom: 4px; line-height: 1.4; }
+        .vc-title.official-mv { color: #D4AF37; font-weight: 600; }
+        .vc-info-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+        .vc-duration { font-size: 0.8rem; color: #6a5a4a; }
+        .vc-views-inline { font-size: 0.8rem; color: #6a5a4a; }
+        .vc-views-inline.popular { color: #C9A227; }
+        .vc-artist-match {
+            font-size: 0.7rem; background: #4a6a4a; color: #c0e0c0;
+            padding: 2px 6px; border-radius: 3px;
+        }
 
         .vc-thumb {
-            flex-shrink: 0; width: 100px; height: 56px; border-radius: 4px;
-            object-fit: cover; background: #222; cursor: pointer;
+            flex-shrink: 0; width: 110px; height: 62px; border-radius: 4px;
+            object-fit: cover; background: #3a2a1a; cursor: pointer;
+            border: 1px solid #5a4a3a;
         }
-        .vc-thumb:hover { opacity: 0.8; }
+        .vc-thumb:hover { opacity: 0.85; border-color: #C9A227; }
 
         /* Expanded card */
-        .video-card.expanded { background: #161616; flex-direction: column; }
-        .video-card.expanded .vc-row { display: flex; gap: 10px; }
+        .video-card.expanded {
+            background: #2a1f1a;
+            flex-direction: column;
+            border: 1px solid #5a4a3a;
+        }
+        .video-card.expanded .vc-row { display: flex; gap: 12px; }
         .video-card.expanded .vc-thumb-large {
-            width: 100%; max-width: 400px; border-radius: 6px; margin: 10px 0;
-            aspect-ratio: 16/9; object-fit: cover; background: #222;
+            width: 100%; max-width: 420px; border-radius: 6px; margin: 12px 0;
+            aspect-ratio: 16/9; object-fit: cover; background: #3a2a1a;
+            border: 1px solid #5a4a3a;
         }
         .vc-desc {
-            font-size: 0.82rem; color: #999; white-space: pre-wrap; word-break: break-word;
-            max-height: 200px; overflow-y: auto; margin: 8px 0; line-height: 1.5;
-            padding: 8px; background: #111; border-radius: 4px;
+            font-size: 0.85rem; color: #a89a8a; white-space: pre-wrap; word-break: break-word;
+            max-height: 180px; overflow-y: auto; margin: 10px 0; line-height: 1.6;
+            padding: 12px; background: #1a1510; border-radius: 6px;
+            border: 1px solid #3a2a1a;
         }
-        .vc-desc a { color: #0cc; }
+        .vc-desc a { color: #C9A227; }
+        .vc-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
         .vc-watch {
-            display: inline-block; padding: 6px 14px; font-size: 0.82rem; color: #fff;
-            background: #c00; border-radius: 4px; text-decoration: none; margin-top: 6px;
+            display: inline-block; padding: 8px 16px; font-size: 0.85rem; color: #F5E6D3;
+            background: #722F37; border-radius: 4px; text-decoration: none;
+            font-family: 'Playfair Display', serif;
         }
-        .vc-watch:hover { background: #e00; }
-        .vc-views { font-size: 0.78rem; color: #666; margin-top: 6px; }
-        .vc-loading { font-size: 0.8rem; color: #555; padding: 8px 0; }
+        .vc-watch:hover { background: #8B3F47; }
+        .vc-transcript-btn {
+            padding: 8px 16px; font-size: 0.85rem; color: #C9A227;
+            background: none; border: 1px solid #C9A227; border-radius: 4px;
+            cursor: pointer; font-family: 'Playfair Display', serif;
+        }
+        .vc-transcript-btn:hover { background: #C9A227; color: #1a1510; }
+        .vc-transcript-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .vc-views { font-size: 0.8rem; color: #6a5a4a; margin-top: 8px; }
+        .vc-loading { font-size: 0.85rem; color: #6a5a4a; padding: 10px 0; font-style: italic; }
+
+        /* Transcript panel */
+        .transcript-panel {
+            margin-top: 12px; padding: 14px; background: #1a1510;
+            border-radius: 6px; border: 1px solid #4a3a2a;
+            max-height: 300px; overflow-y: auto;
+        }
+        .transcript-panel h4 {
+            font-family: 'Playfair Display', serif;
+            color: #C9A227; margin-bottom: 10px; font-size: 0.9rem;
+        }
+        .transcript-text {
+            font-size: 0.85rem; color: #a89a8a; line-height: 1.7;
+            white-space: pre-wrap;
+        }
+        .transcript-unavailable {
+            font-size: 0.85rem; color: #6a5a4a; font-style: italic;
+        }
 
         /* Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a1510; }
+        ::-webkit-scrollbar-thumb { background: #5a4a3a; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6a5a4a; }
+
+        /* Decorative elements */
+        .deco-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #C9A227, transparent);
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
 
 <!-- Password Gate -->
 <div id="gate">
-    <h1 id="gate-title">Enter Password</h1>
-    <p id="gate-subtitle">Access is restricted.</p>
+    <h1 id="gate-title">The Velvet Tube</h1>
+    <p id="gate-subtitle">Your private screening room awaits...</p>
     <div class="input-row">
         <input type="password" id="pw-input" placeholder="Password" autocomplete="off">
-        <button id="pw-btn" onclick="handlePassword()">Go</button>
+        <button id="pw-btn" onclick="handlePassword()">Enter</button>
     </div>
     <div class="error" id="pw-error"></div>
 </div>
@@ -212,30 +332,49 @@
 <div id="app">
     <div class="app-header">
         <div>
-            <h1>YouTube Upload Tracker</h1>
-            <div class="subtitle" id="subtitle">Tracking 0 artists &middot; 4-day window</div>
+            <h1>The Velvet Tube</h1>
+            <div class="subtitle" id="subtitle">Tracking 0 channels &middot; 6-day window</div>
         </div>
-        <button class="lock-btn" onclick="logout()">Lock</button>
+        <button class="lock-btn" onclick="logout()">Exit Lounge</button>
     </div>
 
     <div class="progress-wrap" id="progress-wrap">
         <div class="progress-bar" id="progress-bar" style="width:0%"></div>
     </div>
 
-    <button class="manage-toggle" id="manage-toggle" onclick="toggleManage()">&#9660; Manage Artists</button>
+    <button class="manage-toggle" id="manage-toggle" onclick="toggleManage()">&#9830; Manage Channels</button>
 
     <div class="manage-section" id="manage-section">
         <div class="search-row">
-            <input type="text" id="artist-search" placeholder="Search for an artist" autocomplete="off">
-            <button onclick="searchArtist()">Search</button>
+            <input type="text" id="channel-search" placeholder="Search for a channel..." autocomplete="off">
+            <select id="channel-type">
+                <option value="artist">Artist Channel</option>
+                <option value="omni">Omni Channel</option>
+            </select>
+            <button onclick="searchChannel()">Search</button>
         </div>
         <div class="search-results" id="search-results"></div>
-        <div class="artist-label">Currently tracking:</div>
-        <div class="artist-pills" id="artist-pills"></div>
+
+        <div class="channel-section">
+            <div class="channel-label">
+                Artist Channels <span class="count" id="artist-count">0</span>
+            </div>
+            <div class="channel-pills" id="artist-pills"></div>
+        </div>
+
+        <div class="channel-section">
+            <div class="channel-label">
+                Omni Channels <span class="count" id="omni-count">0</span>
+                <span style="font-size:0.75rem;color:#8a7a6a;font-style:italic;margin-left:8px;">
+                    (searches for artist names)
+                </span>
+            </div>
+            <div class="channel-pills" id="omni-pills"></div>
+        </div>
     </div>
 
     <div class="feed-header">
-        <div class="feed-title" id="feed-title">Feed</div>
+        <div class="feed-title" id="feed-title">The Reel</div>
         <button class="refresh-btn" onclick="refreshFeed()">Refresh</button>
     </div>
 
@@ -243,99 +382,99 @@
 </div>
 
 <script>
-// ─── Default Artists ───────────────────────────────────────────
-const DEFAULT_ARTISTS = [
-    { name: "Akon", channelId: "UC6IBMCQ6-d7p41KHxOsq4RA" },
-    { name: "Amy Winehouse", channelId: "UCWsQKPFHQdRMJZSAAzh1Qbg" },
-    { name: "Andrea Bocelli", channelId: "UCb4JB8-ZAeceuR7EPCPOPzg" },
-    { name: "Audioslave", channelId: "UCbJHfnWtshjo6zJg9Y8XzBw" },
-    { name: "Beastie Boys", channelId: "UCpRUSBcRWUQZIj3_jWF19Dg" },
-    { name: "Bee Gees", channelId: "UCD9sCcKXnFxMeuFoNayVxeQ" },
-    { name: "Billy Idol", channelId: "UCZAfHkJj43Lir2Id3GiGCjQ" },
-    { name: "Black Eyed Peas", channelId: "UCBFaOy1_APEXEyA6Gws_Y1g" },
-    { name: "Bob Marley", channelId: "UCAlTDckOOQ2jREOvuCShGbw" },
-    { name: "Bob Seger", channelId: "UComKJVf5rNLl_RfC_rbt7qg" },
-    { name: "Bon Jovi", channelId: "UCkBwnm7GOfYHsacwUjriC-w" },
-    { name: "Boyz II Men", channelId: "UCIP_rqrDBiovNIbHLve7nNA" },
-    { name: "Carpenters", channelId: "UCocF7enWc-JXxVyZxDjvewA" },
-    { name: "Cat Stevens / Yusuf Islam", channelId: "UCo0pv-U5bTDLlfdROjmCCGg" },
-    { name: "Chris Cornell", channelId: "UCf0pcytyiYVYy3UOs52nsQg" },
-    { name: "Coldplay", channelId: "UCDPM_n1atn2ijUwHd0NNRQw" },
-    { name: "Common", channelId: "UCBGDlQIq1hx5nSTIpWTsGAQ" },
-    { name: "D'Angelo", channelId: "UCKCWQOVUfdlDYX2_238_AeQ" },
-    { name: "Def Leppard", channelId: "UCZjBqZjGsmI5OAVsLSroaWQ" },
-    { name: "DMX", channelId: "UCQcTmBevae2jDeFEZ6VEQPw" },
-    { name: "Donna Summer", channelId: "UC6dX999wO3gBsS1qzm4I-KA" },
-    { name: "Drake", channelId: "UCByOQJjav0CUDwxCk-jVNRQ" },
-    { name: "Ed Sheeran", channelId: "UC0C-w0YjGpqDXGB8IHb662A" },
-    { name: "Elton John", channelId: "UCcd0tBtip8YzdTCUw3OVv_Q" },
-    { name: "Elvis Costello", channelId: "UCntMV2RV-IrRzQ2v4obEJ5w" },
-    { name: "Eminem", channelId: "UCfM3zsQsOnfWNUppiycmBuw" },
-    { name: "Erykah Badu", channelId: "UCDOZs-fcPo0ab9mqUnyN4cw" },
-    { name: "Fall Out Boy", channelId: "UC2qWxZHgnlwDvcmLqP23jrA" },
-    { name: "Frank Sinatra", channelId: "UCJtvg6ZFwzdFdtcHBqetvwg" },
-    { name: "Frank Zappa", channelId: "UCj-Qb2d6dJJJtNL4rgr3FNw" },
-    { name: "Glen Campbell", channelId: "UCJXKFn_FtlA3eJ94Bp2dLlA" },
-    { name: "Godsmack", channelId: "UCe9rl8k6yymUeVzzXfFGWwA" },
-    { name: "Guns N' Roses", channelId: "UCIak6JLVOjqhStxrL1Lcytw" },
-    { name: "Heart", channelId: "UCsFPCqkPsesPa8XxN1pJx-w" },
-    { name: "Janet Jackson", channelId: "UCz8ZHx5wFQpXWywaL2uqevw" },
-    { name: "Jeremih", channelId: "UCBYpEIgqByL9n0VBnEC5SLQ" },
-    { name: "Jimmy Eat World", channelId: "UCFeCvEjX56ReS-O3QHdyjbA" },
-    { name: "Jodeci", channelId: "UCfPNbHJKbjxV3L1z5RYeDTQ" },
-    { name: "John Lennon", channelId: "UCYU4eunPInnHTNWfGvOgkbg" },
-    { name: "John Mellencamp", channelId: "UCzYJCeitN60eTc9UZvvRDoA" },
-    { name: "Johnny Cash", channelId: "UCLwdOhL6TKbmjRtZ8wIr-Bg" },
-    { name: "Juvenile", channelId: "UCSXRhf5E93q5bjELatiwk_w" },
-    { name: "Kenny Rogers", channelId: "UCKRlpS2Z3rHf8glxuGhblyQ" },
-    { name: "Keyshia Cole", channelId: "UCznrMQtAIr5-isdho4YQoMA" },
-    { name: "Kiss", channelId: "UCyOw2FDjfQOFQH7paKxNVvA" },
-    { name: "Lenny Kravitz", channelId: "UCdIs5dRqgZ1IWOdLZimHL_w" },
-    { name: "Lionel Richie", channelId: "UCM3iG_kXUM_9HHVIDI7vEtg" },
-    { name: "Little Big Town", channelId: "UCTtphRK-UT2pm4oPNy3GeGQ" },
-    { name: "LL Cool J", channelId: "UCDG8P-_qq4PuT0DtxzlQlsw" },
-    { name: "Mariah Carey", channelId: "UCurpiDXSkcUbgdMwHNZkrCg" },
-    { name: "Marvin Gaye", channelId: "UCV0Arhg2bZuyL6CutipMduw" },
-    { name: "Mary J. Blige", channelId: "UCj5CgwX_iJEqJsqUJyYjg4A" },
-    { name: "Neil Diamond", channelId: "UCtPHmTX4_qC_h5cerkmLThQ" },
-    { name: "Nelly", channelId: "UCOnzS9RKEhSvfUCsFbSrJ_A" },
-    { name: "Nelly Furtado", channelId: "UC5Y-gAeGpzgzu0ObzKnhPFA" },
-    { name: "Nirvana", channelId: "UCFMZHIQMgBXTSxsr86Caazw" },
-    { name: "OneRepublic", channelId: "UCi4EDAgjULwwNBHOg1aaCig" },
-    { name: "Paul McCartney", channelId: "UCvGnJy9RnXX0kGSnDPKCZzQ" },
-    { name: "Peggy Lee", channelId: "UCWfdzpDGBCOOWxWVR0fLVNw" },
-    { name: "Peter Frampton", channelId: "UCm3xsc3Bx3PB3dhsllSLoXA" },
-    { name: "Queens of the Stone Age", channelId: "UCAqa6dDmCH4XwipdfxoMo4Q" },
-    { name: "Ringo Starr", channelId: "UCqESxycliXwDheOseXqmq8w" },
-    { name: "Roger Hodgson", channelId: "UCiDWjCWCtmW41-I_xzOufIA" },
-    { name: "Rush", channelId: "UC5C-Asy_myoWCkLEtZR72SA" },
-    { name: "Sammy Davis Jr.", channelId: "UCQU-I6rhD2V48cI5_yKAFAw" },
-    { name: "Shania Twain", channelId: "UCadSacAVwG-QH6tWzjrmjxA" },
-    { name: "Smashing Pumpkins", channelId: "UCnGcjQlLO8x7jsfw3r6U9ww" },
-    { name: "Sonic Youth", channelId: "UCOWV89Ww70Uw4Jr8Rmc1GBA" },
-    { name: "Soundgarden", channelId: "UCHKSayVT2Ks-gQBXmMLGTag" },
-    { name: "Spice Girls", channelId: "UCnGcCZ0hZT6WJxTUZJqtOMA" },
-    { name: "Sting", channelId: "UCwERP8ZAI10RtZIAPsZQDDw" },
-    { name: "Supertramp", channelId: "UColTsKEMf0kaZjkoOx7-Cww" },
-    { name: "Taylor Swift", channelId: "UCqECaJ8Gagnn7YCbPEzWH6g" },
-    { name: "The Beach Boys", channelId: "UCUxNZEOdVy77QiiSTHk8bug" },
-    { name: "The Beatles", channelId: "UCc4K7bAqpdBP8jh1j9XZAww" },
-    { name: "The Black Crowes", channelId: "UC4ioqobfqRk8yawnN81ac5w" },
-    { name: "The Cranberries", channelId: "UCb0vzLwvr7xbJgdqMzejDhw" },
-    { name: "The Game", channelId: "UC3eKKASjWY-WAGRII9iKHsQ" },
-    { name: "The Rolling Stones", channelId: "UCB_Z6rBg3WW3NL4-QimhC2A" },
-    { name: "The Who", channelId: "UCUtwj-3S97bj3lYDVxDKtlQ" },
-    { name: "Toby Keith", channelId: "UCFGqp-AuKZQXAx95K8fPbAA" },
-    { name: "Tom Petty and the Heartbreakers", channelId: "UCvYomLPMwUr1FAXRMGhVfCQ" },
-    { name: "Trisha Yearwood", channelId: "UCw0Nn2LTsXGB0rP53Z0ACWQ" },
-    { name: "U2", channelId: "UC4gPNusMDwx2Xm-YI35AkCA" },
-    { name: "Vevo Footnotes", channelId: "UC2pmfLm7iq6Ov1UwYrWYkZA", filter: "Footnotes" },
-    { name: "Weezer", channelId: "UC7JDBUzkcwRGtQGia3_mMgQ" }
+// ─── Default Channels ───────────────────────────────────────────
+const DEFAULT_CHANNELS = [
+    { name: "Akon", channelId: "UC6IBMCQ6-d7p41KHxOsq4RA", type: "artist" },
+    { name: "Amy Winehouse", channelId: "UCWsQKPFHQdRMJZSAAzh1Qbg", type: "artist" },
+    { name: "Andrea Bocelli", channelId: "UCb4JB8-ZAeceuR7EPCPOPzg", type: "artist" },
+    { name: "Audioslave", channelId: "UCbJHfnWtshjo6zJg9Y8XzBw", type: "artist" },
+    { name: "Beastie Boys", channelId: "UCpRUSBcRWUQZIj3_jWF19Dg", type: "artist" },
+    { name: "Bee Gees", channelId: "UCD9sCcKXnFxMeuFoNayVxeQ", type: "artist" },
+    { name: "Billy Idol", channelId: "UCZAfHkJj43Lir2Id3GiGCjQ", type: "artist" },
+    { name: "Black Eyed Peas", channelId: "UCBFaOy1_APEXEyA6Gws_Y1g", type: "artist" },
+    { name: "Bob Marley", channelId: "UCAlTDckOOQ2jREOvuCShGbw", type: "artist" },
+    { name: "Bob Seger", channelId: "UComKJVf5rNLl_RfC_rbt7qg", type: "artist" },
+    { name: "Bon Jovi", channelId: "UCkBwnm7GOfYHsacwUjriC-w", type: "artist" },
+    { name: "Boyz II Men", channelId: "UCIP_rqrDBiovNIbHLve7vNA", type: "artist" },
+    { name: "Carpenters", channelId: "UCocF7enWc-JXxVyZxDjvewA", type: "artist" },
+    { name: "Cat Stevens", channelId: "UCo0pv-U5bTDLlfdROjmCCGg", type: "artist" },
+    { name: "Chris Cornell", channelId: "UCf0pcytyiYVYy3UOs52nsQg", type: "artist" },
+    { name: "Coldplay", channelId: "UCDPM_n1atn2ijUwHd0NNRQw", type: "artist" },
+    { name: "Common", channelId: "UCBGDlQIq1hx5nSTIpWTsGAQ", type: "artist" },
+    { name: "D'Angelo", channelId: "UCKCWQOVUfdlDYX2_238_AeQ", type: "artist" },
+    { name: "Def Leppard", channelId: "UCZjBqZjGsmI5OAVsLSroaWQ", type: "artist" },
+    { name: "DMX", channelId: "UCQcTmBevae2jDeFEZ6VEQPw", type: "artist" },
+    { name: "Donna Summer", channelId: "UC6dX999wO3gBsS1qzm4I-KA", type: "artist" },
+    { name: "Drake", channelId: "UCByOQJjav0CUDwxCk-jVNRQ", type: "artist" },
+    { name: "Ed Sheeran", channelId: "UC0C-w0YjGpqDXGB8IHb662A", type: "artist" },
+    { name: "Elton John", channelId: "UCcd0tBtip8YzdTCUw3OVv_Q", type: "artist" },
+    { name: "Elvis Costello", channelId: "UCntMV2RV-IrRzQ2v4obEJ5w", type: "artist" },
+    { name: "Eminem", channelId: "UCfM3zsQsOnfWNUppiycmBuw", type: "artist" },
+    { name: "Erykah Badu", channelId: "UCDOZs-fcPo0ab9mqUnyN4cw", type: "artist" },
+    { name: "Fall Out Boy", channelId: "UC2qWxZHgnlwDvcmLqP23jrA", type: "artist" },
+    { name: "Frank Sinatra", channelId: "UCJtvg6ZFwzdFdtcHBqetvwg", type: "artist" },
+    { name: "Frank Zappa", channelId: "UCj-Qb2d6dJJJtNL4rgr3FNw", type: "artist" },
+    { name: "Glen Campbell", channelId: "UCJXKFn_FtlA3eJ94Bp2dLlA", type: "artist" },
+    { name: "Godsmack", channelId: "UCe9rl8k6yymUeVzzXfFGWwA", type: "artist" },
+    { name: "Guns N' Roses", channelId: "UCIak6JLVOjqhStxrL1Lcytw", type: "artist" },
+    { name: "Heart", channelId: "UCsFPCqkPsesPa8XxN1pJx-w", type: "artist" },
+    { name: "Janet Jackson", channelId: "UCz8ZHx5wFQpXWywaL2uqevw", type: "artist" },
+    { name: "Jeremih", channelId: "UCBYpEIgqByL9n0VBnEC5SLQ", type: "artist" },
+    { name: "Jimmy Eat World", channelId: "UCFeCvEjX56ReS-O3QHdyjbA", type: "artist" },
+    { name: "Jodeci", channelId: "UCfPNbHJKbjxV3L1z5RYeDTQ", type: "artist" },
+    { name: "John Lennon", channelId: "UCYU4eunPInnHTNWfGvOgkbg", type: "artist" },
+    { name: "John Mellencamp", channelId: "UCzYJCeitN60eTc9UZvvRDoA", type: "artist" },
+    { name: "Johnny Cash", channelId: "UCLwdOhL6TKbmjRtZ8wIr-Bg", type: "artist" },
+    { name: "Juvenile", channelId: "UCSXRhf5E93q5bjELatiwk_w", type: "artist" },
+    { name: "Kenny Rogers", channelId: "UCKRlpS2Z3rHf8glxuGhblyQ", type: "artist" },
+    { name: "Keyshia Cole", channelId: "UCznrMQtAIr5-isdho4YQoMA", type: "artist" },
+    { name: "Kiss", channelId: "UCyOw2FDjfQOFQH7paKxNVvA", type: "artist" },
+    { name: "Lenny Kravitz", channelId: "UCdIs5dRqgZ1IWOdLZimHL_w", type: "artist" },
+    { name: "Lionel Richie", channelId: "UCM3iG_kXUM_9HHVIDI7vEtg", type: "artist" },
+    { name: "Little Big Town", channelId: "UCTtphRK-UT2pm4oPNy3GeGQ", type: "artist" },
+    { name: "LL Cool J", channelId: "UCDG8P-_qq4PuT0DtxzlQlsw", type: "artist" },
+    { name: "Mariah Carey", channelId: "UCurpiDXSkcUbgdMwHNZkrCg", type: "artist" },
+    { name: "Marvin Gaye", channelId: "UCV0Arhg2bZuyL6CutipMduw", type: "artist" },
+    { name: "Mary J. Blige", channelId: "UCj5CgwX_iJEqJsqUJyYjg4A", type: "artist" },
+    { name: "Neil Diamond", channelId: "UCtPHmTX4_qC_h5cerkmLThQ", type: "artist" },
+    { name: "Nelly", channelId: "UCOnzS9RKEhSvfUCsFbSrJ_A", type: "artist" },
+    { name: "Nelly Furtado", channelId: "UC5Y-gAeGpzgzu0ObzKnhPFA", type: "artist" },
+    { name: "Nirvana", channelId: "UCFMZHIQMgBXTSxsr86Caazw", type: "artist" },
+    { name: "OneRepublic", channelId: "UCi4EDAgjULwwNBHOg1aaCig", type: "artist" },
+    { name: "Paul McCartney", channelId: "UCvGnJy9RnXX0kGSnDPKCZzQ", type: "artist" },
+    { name: "Peggy Lee", channelId: "UCWfdzpDGBCOOWxWVR0fLVNw", type: "artist" },
+    { name: "Peter Frampton", channelId: "UCm3xsc3Bx3PB3dhsllSLoXA", type: "artist" },
+    { name: "Queens of the Stone Age", channelId: "UCAqa6dDmCH4XwipdfxoMo4Q", type: "artist" },
+    { name: "Ringo Starr", channelId: "UCqESxycliXwDheOseXqmq8w", type: "artist" },
+    { name: "Roger Hodgson", channelId: "UCiDWjCWCtmW41-I_xzOufIA", type: "artist" },
+    { name: "Rush", channelId: "UC5C-Asy_myoWCkLEtZR72SA", type: "artist" },
+    { name: "Sammy Davis Jr.", channelId: "UCQU-I6rhD2V48cI5_yKAFAw", type: "artist" },
+    { name: "Shania Twain", channelId: "UCadSacAVwG-QH6tWzjrmjxA", type: "artist" },
+    { name: "Smashing Pumpkins", channelId: "UCnGcjQlLO8x7jsfw3r6U9ww", type: "artist" },
+    { name: "Sonic Youth", channelId: "UCOWV89Ww70Uw4Jr8Rmc1GBA", type: "artist" },
+    { name: "Soundgarden", channelId: "UCHKSayVT2Ks-gQBXmMLGTag", type: "artist" },
+    { name: "Spice Girls", channelId: "UCnGcCZ0hZT6WJxTUZJqtOMA", type: "artist" },
+    { name: "Sting", channelId: "UCwERP8ZAI10RtZIAPsZQDDw", type: "artist" },
+    { name: "Supertramp", channelId: "UColTsKEMf0kaZjkoOx7-Cww", type: "artist" },
+    { name: "Taylor Swift", channelId: "UCqECaJ8Gagnn7YCbPEzWH6g", type: "artist" },
+    { name: "The Beach Boys", channelId: "UCUxNZEOdVy77QiiSTHk8bug", type: "artist" },
+    { name: "The Beatles", channelId: "UCc4K7bAqpdBP8jh1j9XZAww", type: "artist" },
+    { name: "The Black Crowes", channelId: "UC4ioqobfqRk8yawnN81ac5w", type: "artist" },
+    { name: "The Cranberries", channelId: "UCb0vzLwvr7xbJgdqMzejDhw", type: "artist" },
+    { name: "The Game", channelId: "UC3eKKASjWY-WAGRII9iKHsQ", type: "artist" },
+    { name: "The Rolling Stones", channelId: "UCB_Z6rBg3WW3NL4-QimhC2A", type: "artist" },
+    { name: "The Who", channelId: "UCUtwj-3S97bj3lYDVxDKtlQ", type: "artist" },
+    { name: "Toby Keith", channelId: "UCFGqp-AuKZQXAx95K8fPbAA", type: "artist" },
+    { name: "Tom Petty", channelId: "UCvYomLPMwUr1FAXRMGhVfCQ", type: "artist" },
+    { name: "Trisha Yearwood", channelId: "UCw0Nn2LTsXGB0rP53Z0ACWQ", type: "artist" },
+    { name: "U2", channelId: "UC4gPNusMDwx2Xm-YI35AkCA", type: "artist" },
+    { name: "Weezer", channelId: "UC7JDBUzkcwRGtQGia3_mMgQ", type: "artist" },
+    // Omni channels
+    { name: "Vevo", channelId: "UC2pmfLm7iq6Ov1UwYrWYkZA", type: "omni" },
 ];
 
 // ─── Config ────────────────────────────────────────────────────
 let PIPED_INSTANCES = [
-    'api.piped.private.coffee',
     'pipedapi.kavin.rocks',
     'pipedapi.leptons.xyz',
     'pipedapi-libre.kavin.rocks',
@@ -343,15 +482,16 @@ let PIPED_INSTANCES = [
     'pipedapi.adminforge.de'
 ];
 const ALLORIGINS_PROXY = 'https://api.allorigins.win/raw?url=';
-const DAYS_WINDOW = 4;
+const DAYS_WINDOW = 6;
 const CONCURRENCY = 6;
-const MAX_ARTISTS = 200;
+const MAX_CHANNELS = 200;
 
 // ─── State ─────────────────────────────────────────────────────
-let artists = [];
+let channels = [];
 let allVideos = [];
 let dismissed = [];
 let descCache = {};
+let transcriptCache = {};
 let workingInstance = null;
 
 // ─── Password Protection ──────────────────────────────────────
@@ -378,7 +518,7 @@ async function handlePassword() {
         sessionStorage.setItem(AUTH_KEY, 'true');
         showApp();
     } else {
-        document.getElementById('pw-error').textContent = 'Incorrect password.';
+        document.getElementById('pw-error').textContent = 'Incorrect password, darling.';
         document.getElementById('pw-input').value = '';
         document.getElementById('pw-input').focus();
     }
@@ -395,13 +535,13 @@ function showGate() {
     document.getElementById('app').style.display = 'none';
     const stored = getStoredHash();
     if (!stored) {
-        document.getElementById('gate-title').textContent = 'Create a Password';
-        document.getElementById('gate-subtitle').textContent = 'Set a password for this tool.';
-        document.getElementById('pw-btn').textContent = 'Set';
+        document.getElementById('gate-title').textContent = 'Welcome to The Velvet Tube';
+        document.getElementById('gate-subtitle').textContent = 'Set a password for your private lounge.';
+        document.getElementById('pw-btn').textContent = 'Set Password';
     } else {
-        document.getElementById('gate-title').textContent = 'Enter Password';
-        document.getElementById('gate-subtitle').textContent = 'Access is restricted.';
-        document.getElementById('pw-btn').textContent = 'Go';
+        document.getElementById('gate-title').textContent = 'The Velvet Tube';
+        document.getElementById('gate-subtitle').textContent = 'Your private screening room awaits...';
+        document.getElementById('pw-btn').textContent = 'Enter';
     }
 }
 
@@ -418,107 +558,121 @@ document.getElementById('pw-input').addEventListener('keydown', e => {
 
 // ─── Init ──────────────────────────────────────────────────────
 async function init() {
-    loadArtists();
+    loadChannels();
     loadDismissed();
-    renderArtistPills();
+    renderChannelPills();
     updateSubtitle();
     await discoverInstances();
     refreshFeed();
 }
 
-// ─── Artist Management ────────────────────────────────────────
-function loadArtists() {
-    const stored = localStorage.getItem('yt_tracker_artists');
+// ─── Channel Management ────────────────────────────────────────
+function loadChannels() {
+    const stored = localStorage.getItem('yt_tracker_channels_v2');
     if (stored) {
-        artists = JSON.parse(stored);
-        // Merge any new defaults the user doesn't already have
-        const existingMap = new Map(artists.map(a => [a.channelId, a]));
+        channels = JSON.parse(stored);
+        // Merge any new defaults
+        const existingIds = new Set(channels.map(c => c.channelId));
         let added = false;
-        for (const def of DEFAULT_ARTISTS) {
-            const existing = existingMap.get(def.channelId);
-            if (!existing) {
-                artists.push(def);
-                added = true;
-            } else if (def.filter && !existing.filter) {
-                // Default has a filter but stored version doesn't — this is a
-                // filtered variant (e.g. "Vevo Footnotes"), add it alongside
-                artists.push(def);
+        for (const def of DEFAULT_CHANNELS) {
+            if (!existingIds.has(def.channelId)) {
+                channels.push(def);
                 added = true;
             }
         }
         if (added) {
-            artists.sort((a, b) => a.name.localeCompare(b.name));
-            saveArtists();
+            channels.sort((a, b) => a.name.localeCompare(b.name));
+            saveChannels();
         }
     } else {
-        artists = [...DEFAULT_ARTISTS];
-        saveArtists();
+        // Migrate from old format
+        const oldStored = localStorage.getItem('yt_tracker_artists');
+        if (oldStored) {
+            const oldChannels = JSON.parse(oldStored);
+            channels = oldChannels.map(c => ({
+                name: c.name,
+                channelId: c.channelId,
+                type: c.filter ? 'omni' : 'artist'
+            }));
+        } else {
+            channels = [...DEFAULT_CHANNELS];
+        }
+        saveChannels();
     }
 }
 
-function saveArtists() {
-    localStorage.setItem('yt_tracker_artists', JSON.stringify(artists));
+function saveChannels() {
+    localStorage.setItem('yt_tracker_channels_v2', JSON.stringify(channels));
 }
 
-function addArtist(name, channelId, filter) {
-    if (artists.length >= MAX_ARTISTS) return;
-    if (artists.some(a => a.channelId === channelId && (a.filter || '') === (filter || ''))) return;
-    const entry = { name, channelId };
-    if (filter) entry.filter = filter;
-    artists.push(entry);
-    artists.sort((a, b) => a.name.localeCompare(b.name));
-    saveArtists();
-    renderArtistPills();
+function getArtistNames() {
+    return channels.filter(c => c.type === 'artist').map(c => c.name);
+}
+
+function addChannel(name, channelId, type) {
+    if (channels.length >= MAX_CHANNELS) return;
+    if (channels.some(c => c.channelId === channelId)) return;
+    channels.push({ name, channelId, type });
+    channels.sort((a, b) => a.name.localeCompare(b.name));
+    saveChannels();
+    renderChannelPills();
     updateSubtitle();
 }
 
-function removeArtist(channelId, filter) {
-    artists = artists.filter(a => !(a.channelId === channelId && (a.filter || '') === (filter || '')));
-    saveArtists();
-    renderArtistPills();
+function removeChannel(channelId) {
+    channels = channels.filter(c => c.channelId !== channelId);
+    saveChannels();
+    renderChannelPills();
     updateSubtitle();
-    // Only remove videos if no other entry tracks this channel
-    if (!artists.some(a => a.channelId === channelId)) {
-        allVideos = allVideos.filter(v => v.channelId !== channelId);
-    }
+    allVideos = allVideos.filter(v => v.channelId !== channelId);
     renderFeed();
 }
 
-function renderArtistPills() {
-    const el = document.getElementById('artist-pills');
-    el.innerHTML = artists.map(a => {
-        const filterAttr = a.filter ? `,'${esc(a.filter)}'` : '';
-        return `<span class="artist-pill">${esc(a.name)}<button class="remove-artist" onclick="event.stopPropagation();removeArtist('${a.channelId}'${filterAttr})" title="Remove">&times;</button></span>`;
-    }).join('');
+function renderChannelPills() {
+    const artistChannels = channels.filter(c => c.type === 'artist');
+    const omniChannels = channels.filter(c => c.type === 'omni');
+
+    document.getElementById('artist-count').textContent = artistChannels.length;
+    document.getElementById('omni-count').textContent = omniChannels.length;
+
+    document.getElementById('artist-pills').innerHTML = artistChannels.map(c =>
+        `<span class="channel-pill">${esc(c.name)}<button class="remove-channel" onclick="event.stopPropagation();removeChannel('${c.channelId}')" title="Remove">&times;</button></span>`
+    ).join('');
+
+    document.getElementById('omni-pills').innerHTML = omniChannels.map(c =>
+        `<span class="channel-pill omni">${esc(c.name)}<button class="remove-channel" onclick="event.stopPropagation();removeChannel('${c.channelId}')" title="Remove">&times;</button></span>`
+    ).join('');
 }
 
 function updateSubtitle() {
+    const artistCount = channels.filter(c => c.type === 'artist').length;
+    const omniCount = channels.filter(c => c.type === 'omni').length;
     document.getElementById('subtitle').textContent =
-        `Tracking ${artists.length} artist${artists.length !== 1 ? 's' : ''} \u00b7 ${DAYS_WINDOW}-day window`;
+        `${artistCount} artists, ${omniCount} omni channels \u00b7 ${DAYS_WINDOW}-day window`;
 }
 
 function toggleManage() {
     const section = document.getElementById('manage-section');
     const btn = document.getElementById('manage-toggle');
     const open = section.classList.toggle('open');
-    btn.innerHTML = (open ? '&#9650;' : '&#9660;') + ' Manage Artists';
+    btn.innerHTML = (open ? '&#9830;' : '&#9830;') + ' Manage Channels';
 }
 
-// ─── Artist Search ─────────────────────────────────────────────
-async function searchArtist() {
-    const q = document.getElementById('artist-search').value.trim();
+// ─── Channel Search ─────────────────────────────────────────────
+async function searchChannel() {
+    const q = document.getElementById('channel-search').value.trim();
     if (!q) return;
     const el = document.getElementById('search-results');
-    el.innerHTML = '<div style="font-size:0.8rem;color:#555;padding:4px 0;">Searching...</div>';
+    el.innerHTML = '<div style="font-size:0.85rem;color:#6a5a4a;padding:8px 0;font-style:italic;">Searching the airwaves...</div>';
     try {
         const data = await pipedFetch(`/search?q=${encodeURIComponent(q)}&filter=channels`);
         if (!data) {
-            el.innerHTML = '<div style="font-size:0.8rem;color:#e54;padding:4px 0;">All API instances are down. Try again later.</div>';
+            el.innerHTML = '<div style="font-size:0.85rem;color:#C75050;padding:8px 0;">All stations are down. Try again later.</div>';
             return;
         }
         const items = (data.items || []).slice(0, 5);
         if (!items.length) {
-            el.innerHTML = '<div style="font-size:0.8rem;color:#555;padding:4px 0;">No channels found.</div>';
+            el.innerHTML = '<div style="font-size:0.85rem;color:#6a5a4a;padding:8px 0;font-style:italic;">No channels found.</div>';
             return;
         }
         el.innerHTML = items.map(ch => {
@@ -531,24 +685,25 @@ async function searchArtist() {
                     <div class="sr-name">${esc(ch.name || '')}</div>
                     <div class="sr-subs">${esc(subs)}</div>
                 </div>
-                <button class="sr-add" onclick="event.stopPropagation();addArtistFromSearch('${esc(ch.name || '')}','${esc(id)}',this)">Add</button>
+                <button class="sr-add" onclick="event.stopPropagation();addChannelFromSearch('${esc(ch.name || '')}','${esc(id)}',this)">Add</button>
             </div>`;
         }).join('');
     } catch (e) {
-        el.innerHTML = '<div style="font-size:0.8rem;color:#e54;padding:4px 0;">Search failed. Try again.</div>';
+        el.innerHTML = '<div style="font-size:0.85rem;color:#C75050;padding:8px 0;">Search failed. Try again.</div>';
     }
 }
 
-function addArtistFromSearch(name, channelId, btn) {
+function addChannelFromSearch(name, channelId, btn) {
     if (!channelId) return;
-    addArtist(name, channelId);
+    const type = document.getElementById('channel-type').value;
+    addChannel(name, channelId, type);
     btn.textContent = 'Added';
     btn.disabled = true;
     btn.style.opacity = '0.5';
 }
 
-document.getElementById('artist-search').addEventListener('keydown', e => {
-    if (e.key === 'Enter') searchArtist();
+document.getElementById('channel-search').addEventListener('keydown', e => {
+    if (e.key === 'Enter') searchChannel();
 });
 
 // ─── Dismissed Videos ──────────────────────────────────────────
@@ -561,7 +716,7 @@ function loadDismissed() {
 }
 
 function cleanDismissed() {
-    const cutoff = Date.now() - 5 * 24 * 60 * 60 * 1000;
+    const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
     dismissed = dismissed.filter(d => d.ts > cutoff);
     saveDismissed();
 }
@@ -590,9 +745,7 @@ async function discoverInstances() {
         const res = await fetch('https://piped-instances.kavin.rocks/');
         if (res.ok) {
             const list = await res.json();
-            const apis = list
-                .filter(i => i.api_url)
-                .map(i => new URL(i.api_url).host);
+            const apis = list.filter(i => i.api_url).map(i => new URL(i.api_url).host);
             if (apis.length > 0) PIPED_INSTANCES = apis;
         }
     } catch {}
@@ -600,14 +753,12 @@ async function discoverInstances() {
 
 async function pipedFetch(path) {
     const timeout = ms => new Promise((_, rej) => setTimeout(() => rej('timeout'), ms));
-    // Try cached working instance first
     if (workingInstance) {
         try {
             const res = await Promise.race([fetch(`https://${workingInstance}${path}`), timeout(8000)]);
             if (res.ok) return await res.json();
         } catch { workingInstance = null; }
     }
-    // Try all instances
     for (const inst of PIPED_INSTANCES) {
         try {
             const res = await Promise.race([fetch(`https://${inst}${path}`), timeout(8000)]);
@@ -617,31 +768,30 @@ async function pipedFetch(path) {
             }
         } catch {}
     }
-    // Fallback: null (RSS fallback handled separately)
     return null;
 }
 
-async function fetchChannelVideos(channelId) {
-    const data = await pipedFetch(`/channel/${channelId}`);
+async function fetchChannelVideos(channel) {
+    const data = await pipedFetch(`/channel/${channel.channelId}`);
     if (data && data.relatedStreams) {
         return data.relatedStreams.map(v => ({
             videoId: v.url ? v.url.replace('/watch?v=', '') : '',
             title: v.title || '',
             channel: data.name || v.uploaderName || '',
-            channelId,
+            channelId: channel.channelId,
+            channelType: channel.type,
             thumbnail: v.thumbnail || '',
             duration: v.duration || 0,
             uploaded: v.uploaded || 0,
             views: v.views || 0
         }));
     }
-    // Fallback: YouTube RSS via allorigins proxy
-    return await fetchRSS(channelId);
+    return await fetchRSS(channel);
 }
 
-async function fetchRSS(channelId) {
+async function fetchRSS(channel) {
     try {
-        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel.channelId}`;
         const res = await fetch(ALLORIGINS_PROXY + encodeURIComponent(rssUrl));
         if (!res.ok) return [];
         const text = await res.text();
@@ -656,9 +806,9 @@ async function fetchRSS(channelId) {
             const thumb = entry.querySelector('group > thumbnail')?.getAttribute('url') || '';
             const views = parseInt(entry.querySelector('group > community > statistics')?.getAttribute('views') || '0');
             return {
-                videoId, title, channel: channelName, channelId,
-                thumbnail: thumb, duration: 0, uploaded: new Date(published).getTime(),
-                views
+                videoId, title, channel: channelName, channelId: channel.channelId,
+                channelType: channel.type, thumbnail: thumb, duration: 0,
+                uploaded: new Date(published).getTime(), views
             };
         });
     } catch { return []; }
@@ -677,11 +827,44 @@ async function fetchDescription(videoId) {
     return descCache[videoId];
 }
 
+async function fetchTranscript(videoId) {
+    if (transcriptCache[videoId]) return transcriptCache[videoId];
+    try {
+        const data = await pipedFetch(`/streams/${videoId}`);
+        if (data && data.subtitles && data.subtitles.length > 0) {
+            // Find auto-generated or English subtitles
+            const sub = data.subtitles.find(s => s.autoGenerated || s.code === 'en') || data.subtitles[0];
+            if (sub && sub.url) {
+                const subRes = await fetch(sub.url);
+                if (subRes.ok) {
+                    const subText = await subRes.text();
+                    // Parse VTT/SRT format - extract just the text
+                    const lines = subText.split('\n');
+                    const textLines = [];
+                    for (const line of lines) {
+                        // Skip timestamps, WEBVTT header, and empty lines
+                        if (line.match(/^\d{2}:\d{2}/) || line.includes('-->') ||
+                            line.startsWith('WEBVTT') || line.match(/^\d+$/) || !line.trim()) continue;
+                        // Remove HTML tags
+                        const clean = line.replace(/<[^>]+>/g, '').trim();
+                        if (clean && !textLines.includes(clean)) textLines.push(clean);
+                    }
+                    const transcript = textLines.join(' ');
+                    transcriptCache[videoId] = { available: true, text: transcript };
+                    return transcriptCache[videoId];
+                }
+            }
+        }
+    } catch {}
+    transcriptCache[videoId] = { available: false };
+    return transcriptCache[videoId];
+}
+
 // ─── Feed Loading ──────────────────────────────────────────────
 async function refreshFeed() {
     allVideos = [];
     const feedEl = document.getElementById('feed');
-    feedEl.innerHTML = '<div class="feed-empty">Loading...</div>';
+    feedEl.innerHTML = '<div class="feed-empty">Tuning in...</div>';
 
     const progressWrap = document.getElementById('progress-wrap');
     const progressBar = document.getElementById('progress-bar');
@@ -689,23 +872,31 @@ async function refreshFeed() {
     progressBar.style.width = '0%';
 
     const cutoff = Date.now() - DAYS_WINDOW * 24 * 60 * 60 * 1000;
+    const artistNames = getArtistNames();
     let completed = 0;
-    const total = artists.length;
+    const total = channels.length;
 
-    // Concurrency-limited fetching
-    const queue = [...artists];
+    const queue = [...channels];
     const results = [];
 
     async function worker() {
         while (queue.length > 0) {
-            const artist = queue.shift();
+            const channel = queue.shift();
             try {
-                const videos = await fetchChannelVideos(artist.channelId);
+                const videos = await fetchChannelVideos(channel);
                 if (videos) {
                     const recent = videos.filter(v => {
                         if (v.uploaded <= cutoff) return false;
                         if (v.duration > 0 && v.duration <= 30) return false;
-                        if (artist.filter && !v.title.toLowerCase().includes(artist.filter.toLowerCase())) return false;
+                        // For omni channels, only include videos mentioning an artist
+                        if (channel.type === 'omni') {
+                            const titleLower = v.title.toLowerCase();
+                            const matchedArtist = artistNames.find(name =>
+                                titleLower.includes(name.toLowerCase())
+                            );
+                            if (!matchedArtist) return false;
+                            v.matchedArtist = matchedArtist;
+                        }
                         return true;
                     });
                     results.push(...recent);
@@ -736,7 +927,7 @@ function renderFeed() {
     updateFeedCount();
 
     if (!visible.length) {
-        feedEl.innerHTML = '<div class="feed-empty">No new videos in the last ' + DAYS_WINDOW + ' days.</div>';
+        feedEl.innerHTML = `<div class="feed-empty">No new performances in the last ${DAYS_WINDOW} days.</div>`;
         return;
     }
 
@@ -745,19 +936,25 @@ function renderFeed() {
         const isPopular = v.views >= 100000;
         const titleClass = 'vc-title' + (isOfficialMV ? ' official-mv' : '');
         const viewsClass = 'vc-views-inline' + (isPopular ? ' popular' : '');
+        const isOmni = v.channelType === 'omni';
+        const omniTag = isOmni ? `<span class="vc-omni-tag">Omni</span>` : '';
+        const artistTag = v.matchedArtist ? `<span class="vc-artist-match">${esc(v.matchedArtist)}</span>` : '';
+
         return `
         <div class="video-card" data-video-id="${esc(v.videoId)}" onclick="toggleExpand(this, '${esc(v.videoId)}')">
-            <div class="vc-row" style="display:flex;gap:10px;width:100%">
+            <div class="vc-row" style="display:flex;gap:12px;width:100%">
                 <div class="vc-check" onclick="event.stopPropagation();dismissVideo('${esc(v.videoId)}')" title="Dismiss"></div>
                 <div class="vc-body">
                     <div class="vc-meta">
                         <span class="vc-channel">${esc(v.channel)}</span>
+                        ${omniTag}
                         <span class="vc-time">${timeAgo(v.uploaded)}</span>
                     </div>
                     <div class="${titleClass}">${esc(v.title)}</div>
                     <div class="vc-info-row">
                         <span class="vc-duration">${formatDuration(v.duration)}</span>
                         <span class="${viewsClass}">${formatCount(v.views)} views</span>
+                        ${artistTag}
                     </div>
                 </div>
                 <img class="vc-thumb" src="${esc(v.thumbnail)}" alt="" loading="lazy" onerror="this.style.display='none'"
@@ -772,7 +969,7 @@ function renderFeed() {
 function updateFeedCount() {
     const visible = allVideos.filter(v => !isDismissed(v.videoId));
     document.getElementById('feed-title').textContent =
-        `Feed (${visible.length} video${visible.length !== 1 ? 's' : ''})`;
+        `The Reel (${visible.length} video${visible.length !== 1 ? 's' : ''})`;
 }
 
 async function toggleExpand(card, videoId) {
@@ -782,7 +979,6 @@ async function toggleExpand(card, videoId) {
         return;
     }
 
-    // Collapse others
     document.querySelectorAll('.video-card.expanded').forEach(c => {
         c.classList.remove('expanded');
         c.querySelector('.vc-expand-area').style.display = 'none';
@@ -797,7 +993,7 @@ async function toggleExpand(card, videoId) {
 
     expandArea.innerHTML = `
         <img class="vc-thumb-large" src="${esc(video.thumbnail)}" alt="" onerror="this.style.display='none'">
-        <div class="vc-loading">Loading description...</div>
+        <div class="vc-loading">Loading details...</div>
     `;
 
     const desc = await fetchDescription(videoId);
@@ -805,8 +1001,48 @@ async function toggleExpand(card, videoId) {
         <img class="vc-thumb-large" src="${esc(video.thumbnail)}" alt="" onerror="this.style.display='none'">
         <div class="vc-desc">${linkify(esc(desc))}</div>
         <div class="vc-views">${formatCount(video.views)} views</div>
-        <a class="vc-watch" href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener">Watch on YouTube</a>
+        <div class="vc-actions">
+            <a class="vc-watch" href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener">Watch on YouTube</a>
+            <button class="vc-transcript-btn" onclick="event.stopPropagation();loadTranscript('${esc(videoId)}', this)">View Transcript</button>
+        </div>
+        <div class="transcript-container" id="transcript-${esc(videoId)}"></div>
     `;
+}
+
+async function loadTranscript(videoId, btn) {
+    const container = document.getElementById(`transcript-${videoId}`);
+    if (!container) return;
+
+    if (container.innerHTML) {
+        container.innerHTML = '';
+        btn.textContent = 'View Transcript';
+        return;
+    }
+
+    btn.textContent = 'Loading...';
+    btn.disabled = true;
+
+    const transcript = await fetchTranscript(videoId);
+
+    btn.disabled = false;
+
+    if (transcript.available) {
+        btn.textContent = 'Hide Transcript';
+        container.innerHTML = `
+            <div class="transcript-panel">
+                <h4>Transcript</h4>
+                <div class="transcript-text">${esc(transcript.text)}</div>
+            </div>
+        `;
+    } else {
+        btn.textContent = 'View Transcript';
+        container.innerHTML = `
+            <div class="transcript-panel">
+                <div class="transcript-unavailable">No transcript available for this video.</div>
+            </div>
+        `;
+        setTimeout(() => { container.innerHTML = ''; }, 3000);
+    }
 }
 
 // ─── Helpers ───────────────────────────────────────────────────

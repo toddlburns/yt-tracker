@@ -751,9 +751,28 @@ async function discoverInstances() {
     } catch {}
 }
 
-async function pipedFetch(path) {
+async function pipedFetch(path, skipCache = false) {
     const timeout = ms => new Promise((_, rej) => setTimeout(() => rej('timeout'), ms));
-    if (workingInstance) {
+
+    // For stream requests, try multiple instances in parallel for speed
+    if (path.startsWith('/streams/')) {
+        const attempts = PIPED_INSTANCES.slice(0, 5).map(async inst => {
+            try {
+                const res = await Promise.race([fetch(`https://${inst}${path}`), timeout(6000)]);
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data) return data;
+                }
+            } catch {}
+            return null;
+        });
+        const results = await Promise.all(attempts);
+        const valid = results.find(r => r !== null);
+        if (valid) return valid;
+    }
+
+    // For other requests, use sequential approach with caching
+    if (workingInstance && !skipCache) {
         try {
             const res = await Promise.race([fetch(`https://${workingInstance}${path}`), timeout(8000)]);
             if (res.ok) return await res.json();
@@ -816,13 +835,43 @@ async function fetchRSS(channel) {
 
 async function fetchDescription(videoId) {
     if (descCache[videoId]) return descCache[videoId];
+
+    // Try Piped API first
     try {
         const data = await pipedFetch(`/streams/${videoId}`);
-        if (data) {
-            descCache[videoId] = data.description || 'No description available.';
+        if (data && data.description) {
+            descCache[videoId] = data.description;
             return descCache[videoId];
         }
     } catch {}
+
+    // Fallback: try fetching via oembed (gets basic info)
+    try {
+        const oembedUrl = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
+        const res = await fetch(ALLORIGINS_PROXY + encodeURIComponent(oembedUrl));
+        if (res.ok) {
+            const data = await res.json();
+            if (data && data.title) {
+                // oembed doesn't have description, but we can note it worked
+                descCache[videoId] = 'No description available (video exists).';
+                return descCache[videoId];
+            }
+        }
+    } catch {}
+
+    // Fallback: try noembed service
+    try {
+        const noembedUrl = `https://noembed.com/embed?url=https://www.youtube.com/watch?v=${videoId}`;
+        const res = await fetch(noembedUrl);
+        if (res.ok) {
+            const data = await res.json();
+            if (data && !data.error) {
+                descCache[videoId] = 'No description available.';
+                return descCache[videoId];
+            }
+        }
+    } catch {}
+
     descCache[videoId] = 'Description unavailable.';
     return descCache[videoId];
 }

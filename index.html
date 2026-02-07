@@ -251,69 +251,49 @@
             padding: 2px 6px; border-radius: 3px;
         }
 
+        .vc-thumb-wrap {
+            flex-shrink: 0; position: relative; width: 160px; height: 90px;
+        }
         .vc-thumb {
-            flex-shrink: 0; width: 110px; height: 62px; border-radius: 4px;
-            object-fit: cover; background: #3D1518; cursor: pointer;
+            width: 100%; height: 100%; border-radius: 6px;
+            object-fit: cover; background: #3D1518;
             border: 2px solid #4a3530;
         }
-        .vc-thumb:hover { opacity: 0.85; border-color: #C41E3A; }
+        .vc-thumb-wrap:hover .vc-thumb { border-color: #C41E3A; }
+        .vc-thumb-wrap:hover .vc-thumb-btns { opacity: 1; }
+        .vc-thumb-btns {
+            position: absolute; bottom: 6px; right: 6px;
+            display: flex; gap: 4px; opacity: 0; transition: opacity 0.2s;
+        }
+        .vc-thumb-btn {
+            width: 28px; height: 28px; border-radius: 4px;
+            background: rgba(0,0,0,0.75); border: 1px solid rgba(255,255,255,0.2);
+            color: #F5E8E0; cursor: pointer; display: flex;
+            align-items: center; justify-content: center; font-size: 14px;
+            transition: all 0.15s;
+        }
+        .vc-thumb-btn:hover { background: #C41E3A; border-color: #C41E3A; }
+        .vc-thumb-btn.yt-btn:hover { background: #2D5A3D; border-color: #2D5A3D; }
 
-        /* Expanded card */
-        .video-card.expanded {
-            background: linear-gradient(180deg, #2a1512 0%, #1a0a0a 100%);
-            flex-direction: column;
-            border: 2px solid #3D1518;
-            box-shadow: inset 0 0 30px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.4);
+        /* Image lightbox */
+        .lightbox {
+            display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.9); z-index: 1000;
+            align-items: center; justify-content: center; padding: 20px;
         }
-        .video-card.expanded .vc-row { display: flex; gap: 12px; }
-        .video-card.expanded .vc-thumb-large {
-            width: 100%; max-width: 420px; border-radius: 6px; margin: 12px 0;
-            aspect-ratio: 16/9; object-fit: cover; background: #3D1518;
-            border: 2px solid #4a3530;
+        .lightbox.open { display: flex; }
+        .lightbox img {
+            max-width: 90vw; max-height: 90vh; border-radius: 8px;
+            border: 3px solid #4a3530;
         }
-        .vc-desc {
-            font-size: 0.85rem; color: #a89a8a; white-space: pre-wrap; word-break: break-word;
-            max-height: 180px; overflow-y: auto; margin: 10px 0; line-height: 1.6;
-            padding: 12px; background: #1a0a0a; border-radius: 6px;
-            border: 1px solid #3D1518;
+        .lightbox-close {
+            position: absolute; top: 20px; right: 20px;
+            width: 40px; height: 40px; border-radius: 50%;
+            background: #C41E3A; border: none; color: #F5E8E0;
+            font-size: 24px; cursor: pointer;
         }
-        .vc-desc a { color: #3A7A50; }
-        .vc-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
-        .vc-watch {
-            display: inline-block; padding: 8px 16px; font-size: 0.85rem; color: #F5E8E0;
-            background: linear-gradient(180deg, #C41E3A 0%, #8B1528 100%);
-            border-radius: 4px; text-decoration: none;
-            font-family: 'Playfair Display', serif;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        .vc-watch:hover { background: linear-gradient(180deg, #D42E4A 0%, #9B2538 100%); }
-        .vc-transcript-btn {
-            padding: 8px 16px; font-size: 0.85rem; color: #3A7A50;
-            background: none; border: 1px solid #2D5A3D; border-radius: 4px;
-            cursor: pointer; font-family: 'Playfair Display', serif;
-        }
-        .vc-transcript-btn:hover { background: #2D5A3D; color: #F5E8E0; }
-        .vc-transcript-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-        .vc-views { font-size: 0.8rem; color: #6a5a4a; margin-top: 8px; }
-        .vc-loading { font-size: 0.85rem; color: #6a5a4a; padding: 10px 0; font-style: italic; }
+        .lightbox-close:hover { background: #D42E4A; }
 
-        /* Transcript panel */
-        .transcript-panel {
-            margin-top: 12px; padding: 14px; background: #1a0a0a;
-            border-radius: 6px; border: 1px solid #2D5A3D;
-            max-height: 300px; overflow-y: auto;
-        }
-        .transcript-panel h4 {
-            font-family: 'Playfair Display', serif;
-            color: #3A7A50; margin-bottom: 10px; font-size: 0.9rem;
-        }
-        .transcript-text {
-            font-size: 0.85rem; color: #a89a8a; line-height: 1.7;
-            white-space: pre-wrap;
-        }
-        .transcript-unavailable {
-            font-size: 0.85rem; color: #6a5a4a; font-style: italic;
-        }
 
         /* Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
@@ -393,6 +373,12 @@
     </div>
 
     <div id="feed"></div>
+</div>
+
+<!-- Image Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <img id="lightbox-img" src="" alt="Video thumbnail">
 </div>
 
 <script>
@@ -504,8 +490,6 @@ const MAX_CHANNELS = 200;
 let channels = [];
 let allVideos = [];
 let dismissed = [];
-let descCache = {};
-let transcriptCache = {};
 let workingInstance = null;
 
 // ─── Password Protection ──────────────────────────────────────
@@ -765,28 +749,10 @@ async function discoverInstances() {
     } catch {}
 }
 
-async function pipedFetch(path, skipCache = false) {
+async function pipedFetch(path) {
     const timeout = ms => new Promise((_, rej) => setTimeout(() => rej('timeout'), ms));
 
-    // For stream requests, try multiple instances in parallel for speed
-    if (path.startsWith('/streams/')) {
-        const attempts = PIPED_INSTANCES.slice(0, 5).map(async inst => {
-            try {
-                const res = await Promise.race([fetch(`https://${inst}${path}`), timeout(6000)]);
-                if (res.ok) {
-                    const data = await res.json();
-                    if (data) return data;
-                }
-            } catch {}
-            return null;
-        });
-        const results = await Promise.all(attempts);
-        const valid = results.find(r => r !== null);
-        if (valid) return valid;
-    }
-
-    // For other requests, use sequential approach with caching
-    if (workingInstance && !skipCache) {
+    if (workingInstance) {
         try {
             const res = await Promise.race([fetch(`https://${workingInstance}${path}`), timeout(8000)]);
             if (res.ok) return await res.json();
@@ -847,81 +813,30 @@ async function fetchRSS(channel) {
     } catch { return []; }
 }
 
-async function fetchDescription(videoId) {
-    if (descCache[videoId]) return descCache[videoId];
+// ─── Lightbox ───────────────────────────────────────────────────
+function openLightbox(maxresUrl, fallbackUrl) {
+    const img = document.getElementById('lightbox-img');
+    const lightbox = document.getElementById('lightbox');
 
-    // Try Piped API first
-    try {
-        const data = await pipedFetch(`/streams/${videoId}`);
-        if (data && data.description) {
-            descCache[videoId] = data.description;
-            return descCache[videoId];
-        }
-    } catch {}
-
-    // Fallback: try fetching via oembed (gets basic info)
-    try {
-        const oembedUrl = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
-        const res = await fetch(ALLORIGINS_PROXY + encodeURIComponent(oembedUrl));
-        if (res.ok) {
-            const data = await res.json();
-            if (data && data.title) {
-                // oembed doesn't have description, but we can note it worked
-                descCache[videoId] = 'No description available (video exists).';
-                return descCache[videoId];
-            }
-        }
-    } catch {}
-
-    // Fallback: try noembed service
-    try {
-        const noembedUrl = `https://noembed.com/embed?url=https://www.youtube.com/watch?v=${videoId}`;
-        const res = await fetch(noembedUrl);
-        if (res.ok) {
-            const data = await res.json();
-            if (data && !data.error) {
-                descCache[videoId] = 'No description available.';
-                return descCache[videoId];
-            }
-        }
-    } catch {}
-
-    descCache[videoId] = 'Description unavailable.';
-    return descCache[videoId];
+    // Try maxres first, fallback to hq if it fails
+    img.onerror = function() {
+        img.onerror = null;
+        img.src = fallbackUrl;
+    };
+    img.src = maxresUrl;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
 }
 
-async function fetchTranscript(videoId) {
-    if (transcriptCache[videoId]) return transcriptCache[videoId];
-    try {
-        const data = await pipedFetch(`/streams/${videoId}`);
-        if (data && data.subtitles && data.subtitles.length > 0) {
-            // Find auto-generated or English subtitles
-            const sub = data.subtitles.find(s => s.autoGenerated || s.code === 'en') || data.subtitles[0];
-            if (sub && sub.url) {
-                const subRes = await fetch(sub.url);
-                if (subRes.ok) {
-                    const subText = await subRes.text();
-                    // Parse VTT/SRT format - extract just the text
-                    const lines = subText.split('\n');
-                    const textLines = [];
-                    for (const line of lines) {
-                        // Skip timestamps, WEBVTT header, and empty lines
-                        if (line.match(/^\d{2}:\d{2}/) || line.includes('-->') ||
-                            line.startsWith('WEBVTT') || line.match(/^\d+$/) || !line.trim()) continue;
-                        // Remove HTML tags
-                        const clean = line.replace(/<[^>]+>/g, '').trim();
-                        if (clean && !textLines.includes(clean)) textLines.push(clean);
-                    }
-                    const transcript = textLines.join(' ');
-                    transcriptCache[videoId] = { available: true, text: transcript };
-                    return transcriptCache[videoId];
-                }
-            }
-        }
-    } catch {}
-    transcriptCache[videoId] = { available: false };
-    return transcriptCache[videoId];
+function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
 }
+
+// Close lightbox on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLightbox();
+});
 
 // ─── Feed Loading ──────────────────────────────────────────────
 async function refreshFeed() {
@@ -1002,29 +917,33 @@ function renderFeed() {
         const isOmni = v.channelType === 'omni';
         const omniTag = isOmni ? `<span class="vc-omni-tag">Omni</span>` : '';
         const artistTag = v.matchedArtist ? `<span class="vc-artist-match">${esc(v.matchedArtist)}</span>` : '';
+        // Get high-res thumbnail
+        const maxresThumbnail = `https://img.youtube.com/vi/${v.videoId}/maxresdefault.jpg`;
+        const hqThumbnail = `https://img.youtube.com/vi/${v.videoId}/hqdefault.jpg`;
 
         return `
-        <div class="video-card" data-video-id="${esc(v.videoId)}" onclick="toggleExpand(this, '${esc(v.videoId)}')">
-            <div class="vc-row" style="display:flex;gap:12px;width:100%">
-                <div class="vc-check" onclick="event.stopPropagation();dismissVideo('${esc(v.videoId)}')" title="Dismiss"></div>
-                <div class="vc-body">
-                    <div class="vc-meta">
-                        <span class="vc-channel">${esc(v.channel)}</span>
-                        ${omniTag}
-                        <span class="vc-time">${timeAgo(v.uploaded)}</span>
-                    </div>
-                    <div class="${titleClass}">${esc(v.title)}</div>
-                    <div class="vc-info-row">
-                        <span class="vc-duration">${formatDuration(v.duration)}</span>
-                        <span class="${viewsClass}">${formatCount(v.views)} views</span>
-                        ${artistTag}
-                    </div>
+        <div class="video-card" data-video-id="${esc(v.videoId)}">
+            <div class="vc-check" onclick="dismissVideo('${esc(v.videoId)}')" title="Dismiss"></div>
+            <div class="vc-body">
+                <div class="vc-meta">
+                    <span class="vc-channel">${esc(v.channel)}</span>
+                    ${omniTag}
+                    <span class="vc-time">${timeAgo(v.uploaded)}</span>
                 </div>
-                <img class="vc-thumb" src="${esc(v.thumbnail)}" alt="" loading="lazy" onerror="this.style.display='none'"
-                     onclick="event.stopPropagation();window.open('https://www.youtube.com/watch?v=${esc(v.videoId)}','_blank')"
-                     title="Watch on YouTube">
+                <div class="${titleClass}">${esc(v.title)}</div>
+                <div class="vc-info-row">
+                    <span class="vc-duration">${formatDuration(v.duration)}</span>
+                    <span class="${viewsClass}">${formatCount(v.views)} views</span>
+                    ${artistTag}
+                </div>
             </div>
-            <div class="vc-expand-area" style="display:none"></div>
+            <div class="vc-thumb-wrap">
+                <img class="vc-thumb" src="${esc(v.thumbnail)}" alt="" loading="lazy" onerror="this.src='${hqThumbnail}'">
+                <div class="vc-thumb-btns">
+                    <button class="vc-thumb-btn" onclick="openLightbox('${maxresThumbnail}', '${hqThumbnail}')" title="Enlarge image">&#x1F50D;</button>
+                    <button class="vc-thumb-btn yt-btn" onclick="window.open('https://www.youtube.com/watch?v=${esc(v.videoId)}','_blank')" title="Watch on YouTube">&#x25B6;</button>
+                </div>
+            </div>
         </div>`;
     }).join('');
 }
@@ -1035,78 +954,6 @@ function updateFeedCount() {
         `The Reel (${visible.length} video${visible.length !== 1 ? 's' : ''})`;
 }
 
-async function toggleExpand(card, videoId) {
-    if (card.classList.contains('expanded')) {
-        card.classList.remove('expanded');
-        card.querySelector('.vc-expand-area').style.display = 'none';
-        return;
-    }
-
-    document.querySelectorAll('.video-card.expanded').forEach(c => {
-        c.classList.remove('expanded');
-        c.querySelector('.vc-expand-area').style.display = 'none';
-    });
-
-    card.classList.add('expanded');
-    const expandArea = card.querySelector('.vc-expand-area');
-    expandArea.style.display = 'block';
-
-    const video = allVideos.find(v => v.videoId === videoId);
-    if (!video) return;
-
-    expandArea.innerHTML = `
-        <img class="vc-thumb-large" src="${esc(video.thumbnail)}" alt="" onerror="this.style.display='none'">
-        <div class="vc-loading">Loading details...</div>
-    `;
-
-    const desc = await fetchDescription(videoId);
-    expandArea.innerHTML = `
-        <img class="vc-thumb-large" src="${esc(video.thumbnail)}" alt="" onerror="this.style.display='none'">
-        <div class="vc-desc">${linkify(esc(desc))}</div>
-        <div class="vc-views">${formatCount(video.views)} views</div>
-        <div class="vc-actions">
-            <a class="vc-watch" href="https://www.youtube.com/watch?v=${esc(videoId)}" target="_blank" rel="noopener">Watch on YouTube</a>
-            <button class="vc-transcript-btn" onclick="event.stopPropagation();loadTranscript('${esc(videoId)}', this)">View Transcript</button>
-        </div>
-        <div class="transcript-container" id="transcript-${esc(videoId)}"></div>
-    `;
-}
-
-async function loadTranscript(videoId, btn) {
-    const container = document.getElementById(`transcript-${videoId}`);
-    if (!container) return;
-
-    if (container.innerHTML) {
-        container.innerHTML = '';
-        btn.textContent = 'View Transcript';
-        return;
-    }
-
-    btn.textContent = 'Loading...';
-    btn.disabled = true;
-
-    const transcript = await fetchTranscript(videoId);
-
-    btn.disabled = false;
-
-    if (transcript.available) {
-        btn.textContent = 'Hide Transcript';
-        container.innerHTML = `
-            <div class="transcript-panel">
-                <h4>Transcript</h4>
-                <div class="transcript-text">${esc(transcript.text)}</div>
-            </div>
-        `;
-    } else {
-        btn.textContent = 'View Transcript';
-        container.innerHTML = `
-            <div class="transcript-panel">
-                <div class="transcript-unavailable">No transcript available for this video.</div>
-            </div>
-        `;
-        setTimeout(() => { container.innerHTML = ''; }, 3000);
-    }
-}
 
 // ─── Helpers ───────────────────────────────────────────────────
 function esc(str) {
@@ -1143,9 +990,6 @@ function formatCount(n) {
     return String(n);
 }
 
-function linkify(text) {
-    return text.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
-}
 
 // ─── Boot ──────────────────────────────────────────────────────
 if (sessionStorage.getItem(AUTH_KEY) === 'true' && getStoredHash()) {

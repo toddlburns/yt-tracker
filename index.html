@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Tracker</title>
+    <title>Priority Artist Hub</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -74,7 +74,7 @@
         #gate .error { color: #E31C25; font-size: 0.85rem; margin-top: 12px; min-height: 20px; }
 
         /* App */
-        #app { display: none; max-width: 760px; margin: 0 auto; padding: 20px; position: relative; z-index: 1; }
+        #app { display: none; max-width: 900px; margin: 0 auto; padding: 20px; position: relative; z-index: 1; }
 
         .app-header {
             display: flex; justify-content: space-between; align-items: flex-start;
@@ -101,6 +101,33 @@
         .app-header .lock-btn:hover { background: linear-gradient(180deg, #555 0%, #444 100%); color: #fff; }
 
         .subtitle { font-size: 0.8rem; color: #888; margin-top: 6px; }
+
+        /* Tab Navigation */
+        .tab-nav {
+            display: flex; gap: 0; margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+        }
+        .tab-btn {
+            padding: 12px 24px; font-size: 0.9rem;
+            background: transparent; border: none; color: #888;
+            cursor: pointer; font-family: 'Inter', sans-serif;
+            font-weight: 500; position: relative;
+            transition: color 0.2s;
+        }
+        .tab-btn:hover { color: #ccc; }
+        .tab-btn.active { color: #50E3C2; }
+        .tab-btn.active::after {
+            content: '';
+            position: absolute; bottom: -2px; left: 0; right: 0;
+            height: 2px; background: #50E3C2;
+        }
+        .tab-btn .tab-badge {
+            background: #E31C25; color: #fff; font-size: 0.7rem;
+            padding: 2px 6px; border-radius: 10px; margin-left: 6px;
+            font-weight: 600;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
 
         /* Progress bar - chrome style */
         .progress-wrap {
@@ -197,6 +224,10 @@
         .channel-pill.omni {
             background: linear-gradient(180deg, #50E3C2 0%, #2BC4A8 100%);
             color: #111;
+        }
+        .channel-pill.tour-only {
+            background: linear-gradient(180deg, #9B59B6 0%, #7D3C98 100%);
+            color: #fff;
         }
         .channel-pill .remove-channel {
             background: none; border: none; color: rgba(255,255,255,0.7); cursor: pointer;
@@ -306,6 +337,116 @@
             color: #111;
         }
 
+        /* Tour Styles */
+        .tour-alerts {
+            display: grid; gap: 12px; margin-bottom: 20px;
+        }
+        .tour-alert {
+            padding: 16px; border-radius: 10px;
+            background: linear-gradient(180deg, #1e1e1e 0%, #151515 100%);
+            border-left: 4px solid;
+        }
+        .tour-alert.new { border-left-color: #50E3C2; }
+        .tour-alert.starting { border-left-color: #F1C40F; }
+        .tour-alert.ending { border-left-color: #E31C25; }
+        .tour-alert-header {
+            display: flex; align-items: center; gap: 10px; margin-bottom: 8px;
+        }
+        .tour-alert-icon {
+            width: 28px; height: 28px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 14px;
+        }
+        .tour-alert.new .tour-alert-icon { background: #50E3C2; color: #111; }
+        .tour-alert.starting .tour-alert-icon { background: #F1C40F; color: #111; }
+        .tour-alert.ending .tour-alert-icon { background: #E31C25; color: #fff; }
+        .tour-alert-title { font-weight: 600; font-size: 0.9rem; }
+        .tour-alert-subtitle { font-size: 0.8rem; color: #888; }
+        .tour-alert-artists { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tour-alert-artist {
+            padding: 4px 12px; background: #2a2a2a; border-radius: 15px;
+            font-size: 0.8rem; color: #F0F0F0; cursor: pointer;
+            transition: background 0.2s;
+        }
+        .tour-alert-artist:hover { background: #3a3a3a; }
+
+        .tour-list-container {
+            max-height: 600px; overflow-y: auto;
+            padding-right: 10px;
+        }
+        .tour-artist-section {
+            margin-bottom: 20px; padding: 16px;
+            background: linear-gradient(180deg, #1e1e1e 0%, #151515 100%);
+            border-radius: 10px;
+        }
+        .tour-artist-header {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid #333;
+        }
+        .tour-artist-name {
+            font-size: 1rem; font-weight: 600; color: #50E3C2;
+        }
+        .tour-date-count {
+            font-size: 0.8rem; color: #888;
+            background: #2a2a2a; padding: 4px 12px; border-radius: 15px;
+        }
+        .tour-dates-grid {
+            display: grid; gap: 8px;
+        }
+        .tour-date-item {
+            display: flex; align-items: center; gap: 12px;
+            padding: 10px 12px; background: #252525; border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .tour-date-item:hover { background: #2a2a2a; }
+        .tour-date-day {
+            min-width: 50px; text-align: center;
+        }
+        .tour-date-day .day { font-size: 1.1rem; font-weight: 600; color: #F0F0F0; }
+        .tour-date-day .month { font-size: 0.7rem; color: #888; text-transform: uppercase; }
+        .tour-date-info { flex: 1; }
+        .tour-date-venue { font-size: 0.9rem; color: #F0F0F0; }
+        .tour-date-location { font-size: 0.8rem; color: #888; }
+        .tour-date-badge {
+            font-size: 0.7rem; padding: 3px 8px; border-radius: 10px;
+            font-weight: 600;
+        }
+        .tour-date-badge.imminent { background: #F1C40F; color: #111; }
+        .tour-date-badge.final { background: #E31C25; color: #fff; }
+        .tour-date-badge.soon { background: #50E3C2; color: #111; }
+
+        /* Tour Artist Management */
+        .tour-manage-section {
+            margin-bottom: 24px; padding: 20px;
+            background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
+            border-radius: 12px; border: 2px solid #333;
+        }
+        .tour-add-row {
+            display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;
+        }
+        .tour-add-row input {
+            flex: 1; min-width: 200px; padding: 10px 16px; font-size: 0.9rem;
+            border: 2px solid #444; border-radius: 25px; background: #222;
+            color: #F0F0F0; outline: none; font-family: 'Inter', sans-serif;
+        }
+        .tour-add-row input:focus { border-color: #9B59B6; }
+        .tour-add-row button {
+            padding: 10px 20px; font-size: 0.9rem; border: none; border-radius: 25px;
+            background: linear-gradient(180deg, #9B59B6 0%, #7D3C98 100%);
+            color: #fff; cursor: pointer; font-weight: 600;
+        }
+        .tour-add-row button:hover { background: linear-gradient(180deg, #A86CC1 0%, #8E44AD 100%); }
+        .import-yt-btn {
+            padding: 10px 20px; font-size: 0.9rem; border: 2px solid #50E3C2;
+            border-radius: 25px; background: transparent; color: #50E3C2;
+            cursor: pointer; font-weight: 500;
+        }
+        .import-yt-btn:hover { background: #50E3C2; color: #111; }
+
+        .tour-artists-list {
+            display: flex; flex-wrap: wrap; gap: 8px;
+        }
+
         /* Image lightbox */
         .lightbox {
             display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -341,13 +482,31 @@
         ::-webkit-scrollbar-thumb:hover {
             background: linear-gradient(180deg, #555 0%, #444 100%);
         }
+
+        /* Loading spinner */
+        .loading-spinner {
+            display: flex; align-items: center; justify-content: center;
+            padding: 40px; color: #666;
+        }
+        .loading-spinner::before {
+            content: '';
+            width: 30px; height: 30px;
+            border: 3px solid #333;
+            border-top-color: #50E3C2;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 12px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .no-data { text-align: center; color: #666; padding: 40px; }
     </style>
 </head>
 <body>
 
 <!-- Password Gate -->
 <div id="gate">
-    <h1 id="gate-title">YouTube Tracker</h1>
+    <h1 id="gate-title">Priority Artist Hub</h1>
     <p id="gate-subtitle">Enter your password to continue</p>
     <div class="input-row">
         <input type="password" id="pw-input" placeholder="Password" autocomplete="off">
@@ -360,53 +519,95 @@
 <div id="app">
     <div class="app-header">
         <div>
-            <h1>YouTube Tracker</h1>
-            <div class="subtitle" id="subtitle">Tracking 0 channels &middot; 6-day window</div>
+            <h1>Priority Artist Hub</h1>
+            <div class="subtitle" id="subtitle">Loading...</div>
         </div>
         <button class="lock-btn" onclick="logout()">Log Out</button>
     </div>
 
-    <div class="progress-wrap" id="progress-wrap">
-        <div class="progress-bar" id="progress-bar" style="width:0%"></div>
+    <!-- Tab Navigation -->
+    <div class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab('youtube')" id="tab-youtube">
+            YouTube Tracker
+        </button>
+        <button class="tab-btn" onclick="switchTab('tours')" id="tab-tours">
+            Tour Dates <span class="tab-badge" id="tour-alert-count" style="display:none;">0</span>
+        </button>
     </div>
 
-    <button class="manage-toggle" id="manage-toggle" onclick="toggleManage()">&#9830; Manage Channels</button>
-
-    <div class="manage-section" id="manage-section">
-        <div class="search-row">
-            <input type="text" id="channel-search" placeholder="Search for a channel..." autocomplete="off">
-            <select id="channel-type">
-                <option value="artist">Artist Channel</option>
-                <option value="omni">Omni Channel</option>
-            </select>
-            <button onclick="searchChannel()">Search</button>
+    <!-- YouTube Tab -->
+    <div class="tab-content active" id="content-youtube">
+        <div class="progress-wrap" id="progress-wrap">
+            <div class="progress-bar" id="progress-bar" style="width:0%"></div>
         </div>
-        <div class="search-results" id="search-results"></div>
 
-        <div class="channel-section">
-            <div class="channel-label">
-                Artist Channels <span class="count" id="artist-count">0</span>
+        <button class="manage-toggle" id="manage-toggle" onclick="toggleManage()">&#9830; Manage Channels</button>
+
+        <div class="manage-section" id="manage-section">
+            <div class="search-row">
+                <input type="text" id="channel-search" placeholder="Search for a channel..." autocomplete="off">
+                <select id="channel-type">
+                    <option value="artist">Artist Channel</option>
+                    <option value="omni">Omni Channel</option>
+                </select>
+                <button onclick="searchChannel()">Search</button>
             </div>
-            <div class="channel-pills" id="artist-pills"></div>
-        </div>
+            <div class="search-results" id="search-results"></div>
 
-        <div class="channel-section">
-            <div class="channel-label">
-                Omni Channels <span class="count" id="omni-count">0</span>
-                <span style="font-size:0.75rem;color:#8a7a6a;font-style:italic;margin-left:8px;">
-                    (searches for artist names)
-                </span>
+            <div class="channel-section">
+                <div class="channel-label">
+                    Artist Channels <span class="count" id="artist-count">0</span>
+                </div>
+                <div class="channel-pills" id="artist-pills"></div>
             </div>
-            <div class="channel-pills" id="omni-pills"></div>
+
+            <div class="channel-section">
+                <div class="channel-label">
+                    Omni Channels <span class="count" id="omni-count">0</span>
+                    <span style="font-size:0.75rem;color:#8a7a6a;font-style:italic;margin-left:8px;">
+                        (searches for artist names)
+                    </span>
+                </div>
+                <div class="channel-pills" id="omni-pills"></div>
+            </div>
         </div>
+
+        <div class="feed-header">
+            <div class="feed-title" id="feed-title">The Reel</div>
+            <button class="refresh-btn" onclick="refreshFeed()">Refresh</button>
+        </div>
+
+        <div id="feed"></div>
     </div>
 
-    <div class="feed-header">
-        <div class="feed-title" id="feed-title">The Reel</div>
-        <button class="refresh-btn" onclick="refreshFeed()">Refresh</button>
-    </div>
+    <!-- Tours Tab -->
+    <div class="tab-content" id="content-tours">
+        <div class="tour-manage-section">
+            <div class="channel-label" style="margin-bottom: 12px;">
+                Tracking Tours For <span class="count" id="tour-artist-count">0</span>
+            </div>
+            <div class="tour-add-row">
+                <input type="text" id="tour-artist-input" placeholder="Add artist name for tour tracking..." autocomplete="off">
+                <button onclick="addTourArtist()">Add Artist</button>
+                <button class="import-yt-btn" onclick="importFromYouTube()">Import from YouTube List</button>
+            </div>
+            <div class="tour-artists-list" id="tour-artists-list"></div>
+        </div>
 
-    <div id="feed"></div>
+        <div class="feed-header">
+            <div class="feed-title">Tour Alerts</div>
+            <button class="refresh-btn" onclick="refreshTours()">Refresh Tours</button>
+        </div>
+
+        <!-- Tour Alerts Section -->
+        <div class="tour-alerts" id="tour-alerts"></div>
+
+        <!-- All Tour Dates -->
+        <div class="feed-header" style="margin-top: 20px;">
+            <div class="feed-title" id="tour-list-title">All Upcoming Dates</div>
+        </div>
+        <div class="tour-list-container" id="tour-list"></div>
+    </div>
 </div>
 
 <!-- Image Lightbox -->
@@ -437,7 +638,7 @@ const DEFAULT_CHANNELS = [
     { name: "Common", channelId: "UCBGDlQIq1hx5nSTIpWTsGAQ", type: "artist" },
     { name: "D'Angelo", channelId: "UCKCWQOVUfdlDYX2_238_AeQ", type: "artist" },
     { name: "Def Leppard", channelId: "UCZjBqZjGsmI5OAVsLSroaWQ", type: "artist" },
-    { name: "DMX", channelId: "UCQcTmBevae2jDeFEZ6VEQPw", type: "artist" },
+    { name: "DMX", channelId: "UCQcTmBevae2jDeFEZ6VEQPzw", type: "artist" },
     { name: "Donna Summer", channelId: "UC6dX999wO3gBsS1qzm4I-KA", type: "artist" },
     { name: "Drake", channelId: "UCByOQJjav0CUDwxCk-jVNRQ", type: "artist" },
     { name: "Ed Sheeran", channelId: "UC0C-w0YjGpqDXGB8IHb662A", type: "artist" },
@@ -520,11 +721,17 @@ const DAYS_WINDOW = 6;
 const CONCURRENCY = 6;
 const MAX_CHANNELS = 200;
 
+// Bandsintown API config
+const BANDSINTOWN_APP_ID = 'priority_artist_hub';
+
 // ─── State ─────────────────────────────────────────────────────
 let channels = [];
 let allVideos = [];
 let dismissed = [];
 let workingInstance = null;
+let tourArtists = [];
+let tourData = {};
+let currentTab = 'youtube';
 
 // ─── Password Protection ──────────────────────────────────────
 async function sha256(str) {
@@ -567,11 +774,11 @@ function showGate() {
     document.getElementById('app').style.display = 'none';
     const stored = getStoredHash();
     if (!stored) {
-        document.getElementById('gate-title').textContent = 'YouTube Tracker';
+        document.getElementById('gate-title').textContent = 'Priority Artist Hub';
         document.getElementById('gate-subtitle').textContent = 'Set a password to get started';
         document.getElementById('pw-btn').textContent = 'Set Password';
     } else {
-        document.getElementById('gate-title').textContent = 'YouTube Tracker';
+        document.getElementById('gate-title').textContent = 'Priority Artist Hub';
         document.getElementById('gate-subtitle').textContent = 'Enter your password to continue';
         document.getElementById('pw-btn').textContent = 'Enter';
     }
@@ -588,14 +795,26 @@ document.getElementById('pw-input').addEventListener('keydown', e => {
     if (e.key === 'Enter') handlePassword();
 });
 
+// ─── Tab Navigation ─────────────────────────────────────────────
+function switchTab(tab) {
+    currentTab = tab;
+    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+    document.getElementById(`tab-${tab}`).classList.add('active');
+    document.getElementById(`content-${tab}`).classList.add('active');
+}
+
 // ─── Init ──────────────────────────────────────────────────────
 async function init() {
     loadChannels();
+    loadTourArtists();
     loadDismissed();
     renderChannelPills();
+    renderTourArtistsList();
     updateSubtitle();
     await discoverInstances();
     refreshFeed();
+    refreshTours();
 }
 
 // ─── Channel Management ────────────────────────────────────────
@@ -679,8 +898,9 @@ function renderChannelPills() {
 function updateSubtitle() {
     const artistCount = channels.filter(c => c.type === 'artist').length;
     const omniCount = channels.filter(c => c.type === 'omni').length;
+    const tourCount = tourArtists.length;
     document.getElementById('subtitle').textContent =
-        `${artistCount} artists, ${omniCount} omni channels \u00b7 ${DAYS_WINDOW}-day window`;
+        `${artistCount} YT artists, ${omniCount} omni, ${tourCount} tour tracking`;
 }
 
 function toggleManage() {
@@ -689,6 +909,77 @@ function toggleManage() {
     const open = section.classList.toggle('open');
     btn.innerHTML = (open ? '&#9830;' : '&#9830;') + ' Manage Channels';
 }
+
+// ─── Tour Artist Management ─────────────────────────────────────
+function loadTourArtists() {
+    const stored = localStorage.getItem('priority_hub_tour_artists');
+    if (stored) {
+        tourArtists = JSON.parse(stored);
+    } else {
+        tourArtists = [];
+    }
+}
+
+function saveTourArtists() {
+    localStorage.setItem('priority_hub_tour_artists', JSON.stringify(tourArtists));
+}
+
+function addTourArtist() {
+    const input = document.getElementById('tour-artist-input');
+    const name = input.value.trim();
+    if (!name) return;
+    if (tourArtists.some(a => a.toLowerCase() === name.toLowerCase())) {
+        input.value = '';
+        return;
+    }
+    tourArtists.push(name);
+    tourArtists.sort((a, b) => a.localeCompare(b));
+    saveTourArtists();
+    renderTourArtistsList();
+    updateSubtitle();
+    input.value = '';
+    // Fetch tour data for new artist
+    fetchTourDataForArtist(name);
+}
+
+function removeTourArtist(name) {
+    tourArtists = tourArtists.filter(a => a !== name);
+    delete tourData[name];
+    saveTourArtists();
+    renderTourArtistsList();
+    updateSubtitle();
+    renderTourAlerts();
+    renderTourList();
+}
+
+function importFromYouTube() {
+    const ytArtists = channels.filter(c => c.type === 'artist').map(c => c.name);
+    let added = 0;
+    for (const name of ytArtists) {
+        if (!tourArtists.some(a => a.toLowerCase() === name.toLowerCase())) {
+            tourArtists.push(name);
+            added++;
+        }
+    }
+    if (added > 0) {
+        tourArtists.sort((a, b) => a.localeCompare(b));
+        saveTourArtists();
+        renderTourArtistsList();
+        updateSubtitle();
+        refreshTours();
+    }
+}
+
+function renderTourArtistsList() {
+    document.getElementById('tour-artist-count').textContent = tourArtists.length;
+    document.getElementById('tour-artists-list').innerHTML = tourArtists.map(name =>
+        `<span class="channel-pill tour-only">${esc(name)}<button class="remove-channel" onclick="event.stopPropagation();removeTourArtist('${esc(name)}')" title="Remove">&times;</button></span>`
+    ).join('');
+}
+
+document.getElementById('tour-artist-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter') addTourArtist();
+});
 
 // ─── Channel Search ─────────────────────────────────────────────
 async function searchChannel() {
@@ -845,6 +1136,248 @@ async function fetchRSS(channel) {
             };
         });
     } catch { return []; }
+}
+
+// ─── Tour Data Fetching ─────────────────────────────────────────
+async function fetchTourDataForArtist(artistName) {
+    try {
+        const encodedName = encodeURIComponent(artistName);
+        const url = `https://rest.bandsintown.com/artists/${encodedName}/events?app_id=${BANDSINTOWN_APP_ID}`;
+        const res = await fetch(url);
+        if (res.ok) {
+            const events = await res.json();
+            if (Array.isArray(events) && events.length > 0) {
+                tourData[artistName] = {
+                    events: events.map(e => ({
+                        id: e.id,
+                        date: e.datetime,
+                        venue: e.venue?.name || 'TBA',
+                        city: e.venue?.city || '',
+                        region: e.venue?.region || '',
+                        country: e.venue?.country || '',
+                        url: e.url,
+                        onSaleDate: e.on_sale_datetime
+                    })),
+                    fetchedAt: Date.now()
+                };
+            } else {
+                tourData[artistName] = { events: [], fetchedAt: Date.now() };
+            }
+        }
+    } catch (e) {
+        console.error(`Error fetching tour data for ${artistName}:`, e);
+        tourData[artistName] = { events: [], fetchedAt: Date.now() };
+    }
+}
+
+async function refreshTours() {
+    const listEl = document.getElementById('tour-list');
+    const alertsEl = document.getElementById('tour-alerts');
+
+    if (tourArtists.length === 0) {
+        alertsEl.innerHTML = '';
+        listEl.innerHTML = '<div class="no-data">No artists added for tour tracking. Add artists above or import from your YouTube list.</div>';
+        return;
+    }
+
+    alertsEl.innerHTML = '<div class="loading-spinner">Loading tour data...</div>';
+    listEl.innerHTML = '';
+
+    // Fetch tour data for all artists
+    const promises = tourArtists.map(name => fetchTourDataForArtist(name));
+    await Promise.all(promises);
+
+    renderTourAlerts();
+    renderTourList();
+}
+
+function renderTourAlerts() {
+    const alertsEl = document.getElementById('tour-alerts');
+    const now = new Date();
+    const alerts = { new: [], starting: [], ending: [] };
+
+    for (const artistName of tourArtists) {
+        const data = tourData[artistName];
+        if (!data || !data.events || data.events.length === 0) continue;
+
+        const events = data.events.filter(e => new Date(e.date) >= now);
+        if (events.length === 0) continue;
+
+        const firstDate = new Date(events[0].date);
+        const lastDate = new Date(events[events.length - 1].date);
+        const daysUntilFirst = Math.ceil((firstDate - now) / (1000 * 60 * 60 * 24));
+        const daysUntilLast = Math.ceil((lastDate - now) / (1000 * 60 * 60 * 24));
+
+        // Check for recently announced (on sale within 7 days)
+        const recentlyAnnounced = events.some(e => {
+            if (!e.onSaleDate) return false;
+            const onSale = new Date(e.onSaleDate);
+            const daysSinceOnSale = Math.ceil((now - onSale) / (1000 * 60 * 60 * 24));
+            return daysSinceOnSale >= 0 && daysSinceOnSale <= 7;
+        });
+
+        if (recentlyAnnounced) {
+            alerts.new.push(artistName);
+        }
+
+        // Check for tour starting soon (within 10 days)
+        if (daysUntilFirst >= 0 && daysUntilFirst <= 10) {
+            alerts.starting.push({ name: artistName, days: daysUntilFirst });
+        }
+
+        // Check for tour ending (10+ dates, last date within 30 days)
+        if (events.length >= 10 && daysUntilLast >= 0 && daysUntilLast <= 30) {
+            alerts.ending.push({ name: artistName, days: daysUntilLast, dates: events.length });
+        }
+    }
+
+    let html = '';
+
+    // Count total alerts for badge
+    const totalAlerts = alerts.new.length + alerts.starting.length + alerts.ending.length;
+    const badge = document.getElementById('tour-alert-count');
+    if (totalAlerts > 0) {
+        badge.textContent = totalAlerts;
+        badge.style.display = 'inline';
+    } else {
+        badge.style.display = 'none';
+    }
+
+    if (alerts.new.length > 0) {
+        html += `
+        <div class="tour-alert new">
+            <div class="tour-alert-header">
+                <div class="tour-alert-icon">&#x2605;</div>
+                <div>
+                    <div class="tour-alert-title">Recently Announced Tours</div>
+                    <div class="tour-alert-subtitle">New tour dates announced in the last 7 days</div>
+                </div>
+            </div>
+            <div class="tour-alert-artists">
+                ${alerts.new.map(name => `<span class="tour-alert-artist" onclick="scrollToArtist('${esc(name)}')">${esc(name)}</span>`).join('')}
+            </div>
+        </div>`;
+    }
+
+    if (alerts.starting.length > 0) {
+        html += `
+        <div class="tour-alert starting">
+            <div class="tour-alert-header">
+                <div class="tour-alert-icon">&#x23F0;</div>
+                <div>
+                    <div class="tour-alert-title">Tours Starting Soon</div>
+                    <div class="tour-alert-subtitle">First date within 10 days</div>
+                </div>
+            </div>
+            <div class="tour-alert-artists">
+                ${alerts.starting.map(a => `<span class="tour-alert-artist" onclick="scrollToArtist('${esc(a.name)}')">${esc(a.name)} (${a.days}d)</span>`).join('')}
+            </div>
+        </div>`;
+    }
+
+    if (alerts.ending.length > 0) {
+        html += `
+        <div class="tour-alert ending">
+            <div class="tour-alert-header">
+                <div class="tour-alert-icon">&#x26A0;</div>
+                <div>
+                    <div class="tour-alert-title">Tours Ending</div>
+                    <div class="tour-alert-subtitle">10+ date tours wrapping up within 30 days</div>
+                </div>
+            </div>
+            <div class="tour-alert-artists">
+                ${alerts.ending.map(a => `<span class="tour-alert-artist" onclick="scrollToArtist('${esc(a.name)}')">${esc(a.name)} (${a.dates} dates, ${a.days}d left)</span>`).join('')}
+            </div>
+        </div>`;
+    }
+
+    alertsEl.innerHTML = html || '<div class="no-data" style="padding: 20px;">No tour alerts at this time</div>';
+}
+
+function renderTourList() {
+    const listEl = document.getElementById('tour-list');
+    const now = new Date();
+    let totalDates = 0;
+
+    // Sort artists by next upcoming date
+    const artistsWithDates = tourArtists
+        .map(name => {
+            const data = tourData[name];
+            const events = data?.events?.filter(e => new Date(e.date) >= now) || [];
+            return { name, events };
+        })
+        .filter(a => a.events.length > 0)
+        .sort((a, b) => new Date(a.events[0].date) - new Date(b.events[0].date));
+
+    if (artistsWithDates.length === 0) {
+        listEl.innerHTML = '<div class="no-data">No upcoming tour dates found for tracked artists.</div>';
+        document.getElementById('tour-list-title').textContent = 'All Upcoming Dates (0)';
+        return;
+    }
+
+    let html = '';
+
+    for (const artist of artistsWithDates) {
+        totalDates += artist.events.length;
+        const events = artist.events.slice(0, 10); // Show max 10 per artist
+        const hasMore = artist.events.length > 10;
+
+        html += `
+        <div class="tour-artist-section" id="tour-artist-${esc(artist.name.replace(/\s+/g, '-').toLowerCase())}">
+            <div class="tour-artist-header">
+                <div class="tour-artist-name">${esc(artist.name)}</div>
+                <div class="tour-date-count">${artist.events.length} date${artist.events.length !== 1 ? 's' : ''}</div>
+            </div>
+            <div class="tour-dates-grid">
+                ${events.map((e, idx) => {
+                    const date = new Date(e.date);
+                    const daysUntil = Math.ceil((date - now) / (1000 * 60 * 60 * 24));
+                    const isFirst = idx === 0;
+                    const isLast = idx === artist.events.length - 1 && artist.events.length >= 10;
+
+                    let badge = '';
+                    if (daysUntil <= 5) {
+                        badge = '<span class="tour-date-badge imminent">Imminent</span>';
+                    } else if (daysUntil <= 10 && isFirst) {
+                        badge = '<span class="tour-date-badge soon">Starting</span>';
+                    } else if (isLast) {
+                        badge = '<span class="tour-date-badge final">Final</span>';
+                    }
+
+                    const location = [e.city, e.region, e.country].filter(Boolean).join(', ');
+
+                    return `
+                    <div class="tour-date-item" onclick="window.open('${esc(e.url)}', '_blank')">
+                        <div class="tour-date-day">
+                            <div class="day">${date.getDate()}</div>
+                            <div class="month">${date.toLocaleString('default', { month: 'short' })}</div>
+                        </div>
+                        <div class="tour-date-info">
+                            <div class="tour-date-venue">${esc(e.venue)}</div>
+                            <div class="tour-date-location">${esc(location)}</div>
+                        </div>
+                        ${badge}
+                    </div>`;
+                }).join('')}
+                ${hasMore ? `<div style="text-align: center; padding: 10px; color: #666; font-size: 0.85rem;">+ ${artist.events.length - 10} more dates</div>` : ''}
+            </div>
+        </div>`;
+    }
+
+    listEl.innerHTML = html;
+    document.getElementById('tour-list-title').textContent = `All Upcoming Dates (${totalDates})`;
+}
+
+function scrollToArtist(name) {
+    const id = 'tour-artist-' + name.replace(/\s+/g, '-').toLowerCase();
+    const el = document.getElementById(id);
+    if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        el.style.background = 'linear-gradient(180deg, #2a2a2a 0%, #1e1e1e 100%)';
+        setTimeout(() => {
+            el.style.background = '';
+        }, 2000);
+    }
 }
 
 // ─── Lightbox ───────────────────────────────────────────────────

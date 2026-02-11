@@ -69,17 +69,43 @@
             position: relative;
             z-index: 1;
         }
-        #gate h1 {
+        #gate h1, .app-header h1 {
             font-family: 'Righteous', cursive;
-            font-size: 2.4rem;
-            margin-bottom: 8px;
-            background: linear-gradient(135deg, #00FFFF 0%, #FF69B4 50%, #8B5CF6 100%);
+            letter-spacing: 3px;
+            position: relative;
+            background:
+                radial-gradient(circle at 20% 50%, #00FFFF 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, #FF69B4 0%, transparent 50%),
+                radial-gradient(circle at 50% 20%, #8B5CF6 0%, transparent 50%),
+                radial-gradient(circle at 30% 80%, #00CED1 0%, transparent 40%),
+                radial-gradient(circle at 70% 30%, #FF1493 0%, transparent 45%),
+                radial-gradient(circle at 50% 70%, #9370DB 0%, transparent 40%),
+                linear-gradient(135deg, #0a1628 0%, #1a0a20 100%);
+            background-size: 200% 200%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            text-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
-            letter-spacing: 3px;
-            filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.3));
+            animation: lavaLamp 8s ease-in-out infinite;
+            filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.4)) drop-shadow(0 0 40px rgba(255, 105, 180, 0.3));
+        }
+        #gate h1 { font-size: 2.4rem; margin-bottom: 8px; }
+
+        @keyframes lavaLamp {
+            0% {
+                background-position: 0% 50%, 100% 50%, 50% 0%, 0% 100%, 100% 0%, 50% 100%, 0% 0%;
+            }
+            25% {
+                background-position: 50% 0%, 50% 100%, 100% 50%, 100% 50%, 0% 100%, 0% 50%, 25% 25%;
+            }
+            50% {
+                background-position: 100% 50%, 0% 50%, 50% 100%, 50% 0%, 50% 50%, 100% 0%, 50% 50%;
+            }
+            75% {
+                background-position: 50% 100%, 50% 0%, 0% 50%, 0% 50%, 100% 0%, 50% 100%, 75% 75%;
+            }
+            100% {
+                background-position: 0% 50%, 100% 50%, 50% 0%, 0% 100%, 100% 0%, 50% 100%, 0% 0%;
+            }
         }
         #gate p { font-size: 0.9rem; color: #7DD3E8; margin-bottom: 24px; }
         #gate .input-row { display: flex; gap: 8px; }
@@ -122,16 +148,7 @@
             background: linear-gradient(180deg, rgba(0, 255, 255, 0.05) 0%, transparent 100%);
             padding: 16px; margin: -20px -20px 20px -20px;
         }
-        .app-header h1 {
-            font-family: 'Righteous', cursive;
-            font-size: 1.8rem;
-            background: linear-gradient(135deg, #00FFFF 0%, #FF69B4 50%, #8B5CF6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 2px;
-            filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.3));
-        }
+        .app-header h1 { font-size: 1.8rem; letter-spacing: 2px; }
         .app-header .lock-btn {
             background: rgba(0, 20, 40, 0.6);
             border: 2px solid rgba(0, 255, 255, 0.3);

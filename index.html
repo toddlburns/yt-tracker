@@ -582,7 +582,9 @@
 
     <!-- Tours Tab -->
     <div class="tab-content" id="content-tours">
-        <div class="tour-manage-section">
+        <button class="manage-toggle" id="tour-manage-toggle" onclick="toggleTourManage()">&#9830; Manage Tour Artists</button>
+
+        <div class="manage-section" id="tour-manage-section">
             <!-- API Key Section -->
             <div class="channel-label" style="margin-bottom: 8px;">
                 Ticketmaster API Key
@@ -922,6 +924,13 @@ function toggleManage() {
     btn.innerHTML = (open ? '&#9830;' : '&#9830;') + ' Manage Channels';
 }
 
+function toggleTourManage() {
+    const section = document.getElementById('tour-manage-section');
+    const btn = document.getElementById('tour-manage-toggle');
+    const open = section.classList.toggle('open');
+    btn.innerHTML = (open ? '&#9830;' : '&#9830;') + ' Manage Tour Artists';
+}
+
 // ─── Tour Artist Management ─────────────────────────────────────
 function loadTourArtists() {
     const stored = localStorage.getItem('priority_hub_tour_artists');
@@ -1172,6 +1181,56 @@ function updateApiKeyStatus() {
 }
 
 // ─── Tour Data Fetching ─────────────────────────────────────────
+// Words that indicate a tribute/cover band - exclude these
+const TRIBUTE_KEYWORDS = [
+    'tribute', 'experience', 'celebration', 'salute', 'legacy',
+    'music of', 'songs of', 'hits of', 'best of', 'ultimate',
+    'revisited', 'revival', 'remembered', 'forever', 'symphonic',
+    'orchestral', 'cover', 'tribute to', 'a tribute', 'the music of',
+    'celebrating', 'presents', 'featuring the music'
+];
+
+function isLikelyTributeBand(eventName, attractionName, artistName) {
+    const eventLower = (eventName || '').toLowerCase();
+    const attractionLower = (attractionName || '').toLowerCase();
+    const artistLower = artistName.toLowerCase();
+
+    // Check for tribute keywords in event or attraction name
+    for (const keyword of TRIBUTE_KEYWORDS) {
+        if (eventLower.includes(keyword) || attractionLower.includes(keyword)) {
+            return true;
+        }
+    }
+
+    // If attraction name is significantly longer than artist name and contains extra words, likely tribute
+    const artistWords = artistLower.split(/\s+/).length;
+    const attractionWords = attractionLower.split(/\s+/).length;
+    if (attractionWords > artistWords + 2) {
+        return true;
+    }
+
+    return false;
+}
+
+function isExactArtistMatch(attractionName, artistName) {
+    const attractionLower = (attractionName || '').toLowerCase().trim();
+    const artistLower = artistName.toLowerCase().trim();
+
+    // Exact match
+    if (attractionLower === artistLower) return true;
+
+    // Match with "The" prefix (e.g., "Beatles" matches "The Beatles")
+    if (attractionLower === 'the ' + artistLower) return true;
+    if ('the ' + attractionLower === artistLower) return true;
+
+    // Match ignoring "The" on both sides
+    const attractionNoThe = attractionLower.replace(/^the\s+/, '');
+    const artistNoThe = artistLower.replace(/^the\s+/, '');
+    if (attractionNoThe === artistNoThe) return true;
+
+    return false;
+}
+
 async function fetchTourDataForArtist(artistName) {
     if (!ticketmasterApiKey) {
         tourData[artistName] = { events: [], fetchedAt: Date.now(), error: 'No API key' };
@@ -1188,14 +1247,24 @@ async function fetchTourDataForArtist(artistName) {
             const events = data._embedded?.events || [];
 
             if (events.length > 0) {
-                // Filter events that match the artist name and sort by date
+                // Filter events - require exact artist match and exclude tribute bands
                 const artistEvents = events
                     .filter(e => {
                         const attractions = e._embedded?.attractions || [];
-                        return attractions.some(a =>
-                            a.name.toLowerCase().includes(artistName.toLowerCase()) ||
-                            artistName.toLowerCase().includes(a.name.toLowerCase())
-                        );
+                        const eventName = e.name || '';
+
+                        // Must have at least one attraction that exactly matches artist
+                        const hasExactMatch = attractions.some(a => isExactArtistMatch(a.name, artistName));
+                        if (!hasExactMatch) return false;
+
+                        // Check if it's a tribute band
+                        const matchingAttraction = attractions.find(a => isExactArtistMatch(a.name, artistName));
+                        if (isLikelyTributeBand(eventName, matchingAttraction?.name, artistName)) {
+                            console.log(`Filtered out tribute: "${eventName}" for ${artistName}`);
+                            return false;
+                        }
+
+                        return true;
                     })
                     .map(e => ({
                         id: e.id,

@@ -583,6 +583,17 @@
     <!-- Tours Tab -->
     <div class="tab-content" id="content-tours">
         <div class="tour-manage-section">
+            <!-- API Key Section -->
+            <div class="channel-label" style="margin-bottom: 8px;">
+                Ticketmaster API Key
+                <a href="https://developer.ticketmaster.com/" target="_blank" style="font-size: 0.7rem; color: #50E3C2; font-weight: normal; text-decoration: underline; margin-left: 8px;">Get Free Key</a>
+            </div>
+            <div class="tour-add-row" style="margin-bottom: 20px;">
+                <input type="password" id="tm-api-key-input" placeholder="Enter your Ticketmaster API key..." autocomplete="off" style="flex: 2;">
+                <button onclick="saveApiKey()" style="background: linear-gradient(180deg, #50E3C2 0%, #2BC4A8 100%); color: #111;">Save Key</button>
+            </div>
+            <div id="api-key-status" style="font-size: 0.8rem; color: #888; margin-bottom: 16px;"></div>
+
             <div class="channel-label" style="margin-bottom: 12px;">
                 Tracking Tours For <span class="count" id="tour-artist-count">0</span>
             </div>
@@ -721,8 +732,8 @@ const DAYS_WINDOW = 6;
 const CONCURRENCY = 6;
 const MAX_CHANNELS = 200;
 
-// Bandsintown API config
-const BANDSINTOWN_APP_ID = 'priority_artist_hub';
+// Ticketmaster API config - Get free key at: https://developer.ticketmaster.com/
+let ticketmasterApiKey = localStorage.getItem('priority_hub_tm_api_key') || '';
 
 // ─── State ─────────────────────────────────────────────────────
 let channels = [];
@@ -812,6 +823,7 @@ async function init() {
     renderChannelPills();
     renderTourArtistsList();
     updateSubtitle();
+    updateApiKeyStatus();
     await discoverInstances();
     refreshFeed();
     refreshTours();
@@ -1138,31 +1150,77 @@ async function fetchRSS(channel) {
     } catch { return []; }
 }
 
+// ─── API Key Management ─────────────────────────────────────────
+function saveApiKey() {
+    const input = document.getElementById('tm-api-key-input');
+    const key = input.value.trim();
+    if (!key) return;
+    ticketmasterApiKey = key;
+    localStorage.setItem('priority_hub_tm_api_key', key);
+    input.value = '';
+    updateApiKeyStatus();
+    refreshTours();
+}
+
+function updateApiKeyStatus() {
+    const statusEl = document.getElementById('api-key-status');
+    if (ticketmasterApiKey) {
+        statusEl.innerHTML = '<span style="color: #50E3C2;">&#10003;</span> API key saved. Ready to fetch tour data.';
+    } else {
+        statusEl.innerHTML = '<span style="color: #F1C40F;">&#9888;</span> No API key set. <a href="https://developer.ticketmaster.com/" target="_blank" style="color: #50E3C2;">Get a free key</a> to enable tour tracking.';
+    }
+}
+
 // ─── Tour Data Fetching ─────────────────────────────────────────
 async function fetchTourDataForArtist(artistName) {
+    if (!ticketmasterApiKey) {
+        tourData[artistName] = { events: [], fetchedAt: Date.now(), error: 'No API key' };
+        return;
+    }
+
     try {
         const encodedName = encodeURIComponent(artistName);
-        const url = `https://rest.bandsintown.com/artists/${encodedName}/events?app_id=${BANDSINTOWN_APP_ID}`;
+        const url = `https://app.ticketmaster.com/discovery/v2/events.json?keyword=${encodedName}&classificationName=music&size=50&apikey=${ticketmasterApiKey}`;
         const res = await fetch(url);
+
         if (res.ok) {
-            const events = await res.json();
-            if (Array.isArray(events) && events.length > 0) {
-                tourData[artistName] = {
-                    events: events.map(e => ({
+            const data = await res.json();
+            const events = data._embedded?.events || [];
+
+            if (events.length > 0) {
+                // Filter events that match the artist name and sort by date
+                const artistEvents = events
+                    .filter(e => {
+                        const attractions = e._embedded?.attractions || [];
+                        return attractions.some(a =>
+                            a.name.toLowerCase().includes(artistName.toLowerCase()) ||
+                            artistName.toLowerCase().includes(a.name.toLowerCase())
+                        );
+                    })
+                    .map(e => ({
                         id: e.id,
-                        date: e.datetime,
-                        venue: e.venue?.name || 'TBA',
-                        city: e.venue?.city || '',
-                        region: e.venue?.region || '',
-                        country: e.venue?.country || '',
+                        date: e.dates?.start?.dateTime || e.dates?.start?.localDate,
+                        venue: e._embedded?.venues?.[0]?.name || 'TBA',
+                        city: e._embedded?.venues?.[0]?.city?.name || '',
+                        region: e._embedded?.venues?.[0]?.state?.stateCode || '',
+                        country: e._embedded?.venues?.[0]?.country?.countryCode || '',
                         url: e.url,
-                        onSaleDate: e.on_sale_datetime
-                    })),
+                        onSaleDate: e.sales?.public?.startDateTime
+                    }))
+                    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+                tourData[artistName] = {
+                    events: artistEvents,
                     fetchedAt: Date.now()
                 };
             } else {
                 tourData[artistName] = { events: [], fetchedAt: Date.now() };
             }
+        } else if (res.status === 401) {
+            console.error('Invalid Ticketmaster API key');
+            tourData[artistName] = { events: [], fetchedAt: Date.now(), error: 'Invalid API key' };
+        } else {
+            tourData[artistName] = { events: [], fetchedAt: Date.now() };
         }
     } catch (e) {
         console.error(`Error fetching tour data for ${artistName}:`, e);
@@ -1174,6 +1232,14 @@ async function refreshTours() {
     const listEl = document.getElementById('tour-list');
     const alertsEl = document.getElementById('tour-alerts');
 
+    updateApiKeyStatus();
+
+    if (!ticketmasterApiKey) {
+        alertsEl.innerHTML = '';
+        listEl.innerHTML = '<div class="no-data">Please add your Ticketmaster API key above to enable tour tracking.<br><br><a href="https://developer.ticketmaster.com/" target="_blank" style="color: #50E3C2;">Get a free API key here</a> (5,000 calls/day free)</div>';
+        return;
+    }
+
     if (tourArtists.length === 0) {
         alertsEl.innerHTML = '';
         listEl.innerHTML = '<div class="no-data">No artists added for tour tracking. Add artists above or import from your YouTube list.</div>';
@@ -1183,9 +1249,16 @@ async function refreshTours() {
     alertsEl.innerHTML = '<div class="loading-spinner">Loading tour data...</div>';
     listEl.innerHTML = '';
 
-    // Fetch tour data for all artists
-    const promises = tourArtists.map(name => fetchTourDataForArtist(name));
-    await Promise.all(promises);
+    // Fetch tour data for all artists (with rate limiting)
+    for (let i = 0; i < tourArtists.length; i += 5) {
+        const batch = tourArtists.slice(i, i + 5);
+        const promises = batch.map(name => fetchTourDataForArtist(name));
+        await Promise.all(promises);
+        // Small delay between batches to avoid rate limiting
+        if (i + 5 < tourArtists.length) {
+            await new Promise(r => setTimeout(r, 200));
+        }
+    }
 
     renderTourAlerts();
     renderTourList();

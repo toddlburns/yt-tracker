@@ -1025,6 +1025,76 @@
             margin-top: 8px;
             text-align: center;
         }
+
+        /* Individual Store Buttons Grid */
+        .store-buttons-section {
+            margin: 20px 0;
+        }
+        .store-buttons-title {
+            font-size: 0.85rem;
+            color: #7DD3E8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .store-buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+        }
+        .store-btn-individual {
+            padding: 10px 12px;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 2px solid rgba(0, 255, 255, 0.25);
+            background: rgba(0, 20, 40, 0.6);
+            color: #E0F7FF;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+        .store-btn-individual:hover {
+            background: rgba(0, 255, 255, 0.1);
+            border-color: #00FFFF;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
+        }
+        .store-btn-individual:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        .store-btn-individual.scanning {
+            border-color: #8B5CF6;
+            animation: pulse-border 1s ease-in-out infinite;
+        }
+        .store-btn-individual.success {
+            border-color: #00FF88;
+            background: rgba(0, 255, 136, 0.1);
+        }
+        .store-btn-individual.error {
+            border-color: #FF6B6B;
+            background: rgba(255, 107, 107, 0.1);
+        }
+        .store-btn-status {
+            font-size: 0.65rem;
+            color: #7DD3E8;
+        }
+        .store-btn-individual.success .store-btn-status {
+            color: #00FF88;
+        }
+        .store-btn-individual.error .store-btn-status {
+            color: #FF6B6B;
+        }
+        @keyframes pulse-border {
+            0%, 100% { border-color: rgba(139, 92, 246, 0.5); }
+            50% { border-color: #8B5CF6; }
+        }
     </style>
 </head>
 <body>
@@ -1214,6 +1284,13 @@
             <div class="stores-progress-text" id="stores-progress-text">Scanning stores...</div>
         </div>
 
+        <div class="store-buttons-section">
+            <div class="store-buttons-title">Scan Individual Stores</div>
+            <div class="store-buttons-grid" id="store-buttons-grid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
         <div class="feed-header">
             <div class="feed-title">Sold Out Products</div>
         </div>
@@ -1329,6 +1406,11 @@ let PIPED_INSTANCES = [
     'pipedapi.adminforge.de'
 ];
 const ALLORIGINS_PROXY = 'https://api.allorigins.win/raw?url=';
+const CORS_PROXIES = [
+    'https://api.allorigins.win/raw?url=',
+    'https://corsproxy.io/?',
+    'https://api.codetabs.com/v1/proxy?quest=',
+];
 const DAYS_WINDOW = 6;
 const CONCURRENCY = 6;
 const MAX_CHANNELS = 200;
@@ -1425,10 +1507,21 @@ async function init() {
     renderTourArtistsList();
     updateSubtitle();
     updateApiKeyStatus();
+    populateStoreButtons();
     await discoverInstances();
-    refreshFeed();
-    refreshTours();
-    refreshBillions();
+    // Don't auto-load tabs - user must click Refresh
+    showInitialMessages();
+}
+
+function showInitialMessages() {
+    // YouTube tab
+    document.getElementById('feed').innerHTML = '<div class="no-data">Click <strong>Refresh</strong> to load videos.</div>';
+    // Billions tab
+    document.getElementById('billions-list').innerHTML = '<div class="no-data">Click <strong>Refresh</strong> to load Billions Club data.</div>';
+    // Tours tab
+    document.getElementById('tour-alerts').innerHTML = '';
+    document.getElementById('tour-list').innerHTML = '<div class="no-data">Click <strong>Refresh Tours</strong> to load tour dates.</div>';
+    // Stores tab already shows "Click Scan All Stores" message
 }
 
 // ─── Channel Management ────────────────────────────────────────
@@ -1734,29 +1827,51 @@ async function fetchChannelVideos(channel) {
     return await fetchRSS(channel);
 }
 
-async function fetchRSS(channel) {
+async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 10000) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
     try {
-        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel.channelId}`;
-        const res = await fetch(ALLORIGINS_PROXY + encodeURIComponent(rssUrl));
-        if (!res.ok) return [];
-        const text = await res.text();
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(text, 'text/xml');
-        const entries = xml.querySelectorAll('entry');
-        const channelName = xml.querySelector('author > name')?.textContent || '';
-        return Array.from(entries).map(entry => {
-            const videoId = entry.querySelector('videoId')?.textContent || '';
-            const title = entry.querySelector('title')?.textContent || '';
-            const published = entry.querySelector('published')?.textContent || '';
-            const thumb = entry.querySelector('group > thumbnail')?.getAttribute('url') || '';
-            const views = parseInt(entry.querySelector('group > community > statistics')?.getAttribute('views') || '0');
-            return {
-                videoId, title, channel: channelName, channelId: channel.channelId,
-                channelType: channel.type, thumbnail: thumb, duration: 0,
-                uploaded: new Date(published).getTime(), views
-            };
+        const res = await fetch(proxyUrl + encodeURIComponent(url), {
+            signal: controller.signal
         });
-    } catch { return []; }
+        clearTimeout(timeoutId);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return await res.text();
+    } catch (error) {
+        clearTimeout(timeoutId);
+        throw error;
+    }
+}
+
+async function fetchRSS(channel) {
+    const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel.channelId}`;
+
+    // Try each proxy until one works
+    for (let i = 0; i < CORS_PROXIES.length; i++) {
+        try {
+            const text = await fetchTextWithProxy(rssUrl, CORS_PROXIES[i]);
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(text, 'text/xml');
+            const entries = xml.querySelectorAll('entry');
+            const channelName = xml.querySelector('author > name')?.textContent || '';
+            return Array.from(entries).map(entry => {
+                const videoId = entry.querySelector('videoId')?.textContent || '';
+                const title = entry.querySelector('title')?.textContent || '';
+                const published = entry.querySelector('published')?.textContent || '';
+                const thumb = entry.querySelector('group > thumbnail')?.getAttribute('url') || '';
+                const views = parseInt(entry.querySelector('group > community > statistics')?.getAttribute('views') || '0');
+                return {
+                    videoId, title, channel: channelName, channelId: channel.channelId,
+                    channelType: channel.type, thumbnail: thumb, duration: 0,
+                    uploaded: new Date(published).getTime(), views
+                };
+            });
+        } catch {
+            // Continue to next proxy
+        }
+    }
+    return [];
 }
 
 // ─── API Key Management ─────────────────────────────────────────
@@ -2427,51 +2542,99 @@ const ARTIST_STORES = [
     { name: 'Aerosmith', url: 'https://store.aerosmith.com', handle: 'store.aerosmith.com' },
     { name: 'Amy Winehouse', url: 'https://us-store.amywinehouse.com', handle: 'us-store.amywinehouse.com' },
     { name: 'Andrea Bocelli', url: 'https://shopandreabocelli.com', handle: 'shopandreabocelli.com' },
+    { name: 'Beach Boys', url: 'https://shop.thebeachboys.com', handle: 'shop.thebeachboys.com' },
     { name: 'Beastie Boys', url: 'https://shopus.beastieboys.com', handle: 'shopus.beastieboys.com' },
+    { name: 'Beatles', url: 'https://usastore.thebeatles.com', handle: 'usastore.thebeatles.com' },
     { name: 'Bee Gees', url: 'https://shop.beegees.com', handle: 'shop.beegees.com' },
+    { name: 'Black Crowes', url: 'https://shop.theblackcrowes.com', handle: 'shop.theblackcrowes.com' },
     { name: 'Black Sabbath', url: 'https://blacksabbathapparelshop.com', handle: 'blacksabbathapparelshop.com' },
     { name: 'Bob Marley', url: 'https://shop.bobmarley.com', handle: 'shop.bobmarley.com' },
+    { name: 'Cam Sugar', url: 'https://usa.camsugarmusic.com', handle: 'usa.camsugarmusic.com' },
+    { name: 'Carpenters', url: 'https://shop.carpentersofficial.com', handle: 'shop.carpentersofficial.com' },
+    { name: 'Def Leppard', url: 'https://store.defleppard.com', handle: 'store.defleppard.com' },
+    { name: 'Drowning Pool', url: 'https://shop.drowningpool.live', handle: 'shop.drowningpool.live' },
+    { name: 'Elton John', url: 'https://us-store.eltonjohn.com', handle: 'us-store.eltonjohn.com' },
+    { name: 'Elvis Costello', url: 'https://shop.elviscostello.com', handle: 'shop.elviscostello.com' },
+    { name: 'Frank Zappa', url: 'https://store.zappa.com', handle: 'store.zappa.com' },
+    { name: 'Glen Campbell', url: 'https://store.glencampbell.com', handle: 'store.glencampbell.com' },
+    { name: 'Go-Go\'s', url: 'https://store.gogos.com', handle: 'store.gogos.com' },
+    { name: 'Guns N\' Roses', url: 'https://gnrmerch.com', handle: 'gnrmerch.com' },
+    { name: 'Janet Jackson', url: 'https://store.janetjackson.com', handle: 'store.janetjackson.com' },
+    { name: 'John Lennon', url: 'https://store.johnlennon.com', handle: 'store.johnlennon.com' },
+    { name: 'KISS', url: 'https://shopkissonline.com', handle: 'shopkissonline.com' },
+    { name: 'Loreena McKennitt', url: 'https://shoploreenamckennitt.com', handle: 'shoploreenamckennitt.com' },
+    { name: 'Neil Diamond', url: 'https://shop.neildiamond.com', handle: 'shop.neildiamond.com' },
+    { name: 'Paul McCartney', url: 'https://shop.paulmccartney.com', handle: 'shop.paulmccartney.com' },
+    { name: 'Poison', url: 'https://store.poisonofficial.com', handle: 'store.poisonofficial.com' },
+    { name: 'Ringo Starr', url: 'https://store.ringostarr.com', handle: 'store.ringostarr.com' },
+    { name: 'Rod Stewart', url: 'https://shop.rodstewart.com', handle: 'shop.rodstewart.com' },
+    { name: 'Rolling Stones', url: 'https://therollingstonesshop.com', handle: 'therollingstonesshop.com' },
+    { name: 'Scorpions', url: 'https://us.scorpions.shop', handle: 'us.scorpions.shop' },
+    { name: 'Spice Girls', url: 'https://storeus.thespicegirls.com', handle: 'storeus.thespicegirls.com' },
+    { name: 'Steve Miller Band', url: 'https://store.stevemillerband.com', handle: 'store.stevemillerband.com' },
+    { name: 'Temptations', url: 'https://shop.temptationsofficial.com', handle: 'shop.temptationsofficial.com' },
+    { name: 'The Who', url: 'https://shop.thewho.com', handle: 'shop.thewho.com' },
+    { name: 'Velvet Underground', url: 'https://shop.velvetundergroundmusic.com', handle: 'shop.velvetundergroundmusic.com' },
+    { name: 'XXXTentacion', url: 'https://shop.wakemewhenimfree.com', handle: 'shop.wakemewhenimfree.com' },
 ];
 
 let storesData = {};
 let allStoreProducts = [];
 
-async function fetchStoreProducts(store) {
+async function fetchWithProxy(url, proxyUrl, timeoutMs = 10000) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
     try {
-        // Use allorigins proxy to fetch products.json from Shopify stores
-        const productsUrl = `${store.url}/products.json?limit=250`;
-        const proxyUrl = `${ALLORIGINS_PROXY}${encodeURIComponent(productsUrl)}`;
-
-        const res = await fetch(proxyUrl, { timeout: 15000 });
-        if (!res.ok) throw new Error('Failed to fetch');
-
-        const data = await res.json();
-        const products = data.products || [];
-
-        return products.map(p => ({
-            id: p.id,
-            title: p.title,
-            vendor: p.vendor || store.name,
-            handle: p.handle,
-            url: `${store.url}/products/${p.handle}`,
-            image: p.images?.[0]?.src || '',
-            productType: p.product_type || '',
-            tags: p.tags || [],
-            variants: p.variants || [],
-            availableForSale: p.variants?.some(v => v.available) ?? true,
-            price: p.variants?.[0]?.price || '',
-            compareAtPrice: p.variants?.[0]?.compare_at_price || '',
-            sku: p.variants?.[0]?.sku || '',
-            barcode: p.variants?.[0]?.barcode || '',
-            storeName: store.name,
-            storeUrl: store.url,
-            createdAt: p.created_at || '',
-            updatedAt: p.updated_at || '',
-        }));
+        const res = await fetch(proxyUrl + encodeURIComponent(url), {
+            signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return await res.json();
     } catch (error) {
-        console.error(`Failed to fetch ${store.name}:`, error);
-        return [];
+        clearTimeout(timeoutId);
+        throw error;
     }
+}
+
+async function fetchStoreProducts(store) {
+    const productsUrl = `${store.url}/products.json?limit=250`;
+
+    // Try each proxy until one works
+    for (let i = 0; i < CORS_PROXIES.length; i++) {
+        try {
+            const data = await fetchWithProxy(productsUrl, CORS_PROXIES[i]);
+            const products = data.products || [];
+
+            return products.map(p => ({
+                id: p.id,
+                title: p.title,
+                vendor: p.vendor || store.name,
+                handle: p.handle,
+                url: `${store.url}/products/${p.handle}`,
+                image: p.images?.[0]?.src || '',
+                productType: p.product_type || '',
+                tags: p.tags || [],
+                variants: p.variants || [],
+                availableForSale: p.variants?.some(v => v.available) ?? true,
+                price: p.variants?.[0]?.price || '',
+                compareAtPrice: p.variants?.[0]?.compare_at_price || '',
+                sku: p.variants?.[0]?.sku || '',
+                barcode: p.variants?.[0]?.barcode || '',
+                storeName: store.name,
+                storeUrl: store.url,
+                createdAt: p.created_at || '',
+                updatedAt: p.updated_at || '',
+            }));
+        } catch (error) {
+            console.warn(`Proxy ${i + 1} failed for ${store.name}:`, error.message);
+            // Continue to next proxy
+        }
+    }
+
+    console.error(`All proxies failed for ${store.name}`);
+    return [];
 }
 
 async function refreshStores() {
@@ -2515,6 +2678,79 @@ async function refreshStores() {
 
     renderStoresStats();
     renderSoldOutList();
+    updateStoreButtonStates();
+}
+
+function populateStoreButtons() {
+    const grid = document.getElementById('store-buttons-grid');
+    grid.innerHTML = ARTIST_STORES.map((store, index) => `
+        <button class="store-btn-individual" id="store-btn-${index}" onclick="scanSingleStore(${index})">
+            <span class="store-btn-name">${store.name}</span>
+            <span class="store-btn-status">Click to scan</span>
+        </button>
+    `).join('');
+}
+
+async function scanSingleStore(index) {
+    const store = ARTIST_STORES[index];
+    const btn = document.getElementById(`store-btn-${index}`);
+    const statusEl = btn.querySelector('.store-btn-status');
+
+    // Update button state
+    btn.disabled = true;
+    btn.className = 'store-btn-individual scanning';
+    statusEl.textContent = 'Scanning...';
+
+    try {
+        const products = await fetchStoreProducts(store);
+
+        // Update store data
+        storesData[store.name] = {
+            products,
+            soldOut: products.filter(p => !p.availableForSale),
+            total: products.length,
+        };
+
+        // Rebuild allStoreProducts from storesData
+        allStoreProducts = [];
+        for (const storeName in storesData) {
+            allStoreProducts.push(...storesData[storeName].products);
+        }
+
+        // Update button state
+        btn.className = 'store-btn-individual success';
+        const soldOut = storesData[store.name].soldOut.length;
+        statusEl.textContent = `${products.length} products${soldOut > 0 ? `, ${soldOut} sold out` : ''}`;
+
+        // Update stats and list
+        renderStoresStats();
+        renderSoldOutList();
+
+        // Enable download if we have data
+        document.getElementById('download-csv-btn').disabled = allStoreProducts.length === 0;
+
+    } catch (error) {
+        btn.className = 'store-btn-individual error';
+        statusEl.textContent = 'Failed - try again';
+    }
+
+    btn.disabled = false;
+}
+
+function updateStoreButtonStates() {
+    ARTIST_STORES.forEach((store, index) => {
+        const btn = document.getElementById(`store-btn-${index}`);
+        if (!btn) return;
+
+        const data = storesData[store.name];
+        const statusEl = btn.querySelector('.store-btn-status');
+
+        if (data && data.products.length > 0) {
+            btn.className = 'store-btn-individual success';
+            const soldOut = data.soldOut.length;
+            statusEl.textContent = `${data.products.length} products${soldOut > 0 ? `, ${soldOut} sold out` : ''}`;
+        }
+    });
 }
 
 function renderStoresStats() {

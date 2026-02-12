@@ -983,6 +983,16 @@
             font-size: 0.75rem;
             color: #7DD3E8;
         }
+        .sold-out-upc {
+            font-size: 0.7rem;
+            color: #00FF88;
+            font-family: monospace;
+            background: rgba(0, 255, 136, 0.1);
+            padding: 1px 6px;
+            border-radius: 4px;
+            margin-top: 2px;
+            display: inline-block;
+        }
         .sold-out-badge {
             font-size: 0.65rem;
             background: #FF69B4;
@@ -2809,6 +2819,16 @@ function renderStoresStats() {
     }
 }
 
+// Check if SKU looks like a UPC (12-14 digit number)
+function getProductUPC(product) {
+    const sku = product.sku || '';
+    // UPCs are 12-14 digit numbers
+    if (/^[0-9]{12,14}$/.test(sku)) {
+        return sku;
+    }
+    return null;
+}
+
 // Classify product as Music or Merch based on type, title, and tags
 function classifyProduct(product) {
     const musicKeywords = [
@@ -2893,12 +2913,14 @@ function renderSoldOutList() {
 
         const renderProducts = (products) => products.map(p => {
             const category = classifyProduct(p);
+            const upc = getProductUPC(p);
             return `
             <div class="sold-out-item">
                 ${p.image ? `<img class="sold-out-thumb" src="${esc(p.image)}" alt="" loading="lazy">` : '<div class="sold-out-thumb"></div>'}
                 <div class="sold-out-info">
                     <div class="sold-out-title">${esc(p.title)}</div>
                     <div class="sold-out-vendor">${esc(p.productType || 'Product')}</div>
+                    ${upc ? `<div class="sold-out-upc">UPC: ${esc(upc)}</div>` : ''}
                 </div>
                 <span class="product-type-badge ${category}">${category === 'music' ? 'Music' : 'Merch'}</span>
                 <span class="sold-out-badge">Sold Out</span>

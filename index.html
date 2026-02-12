@@ -1008,6 +1008,28 @@
             background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
             color: #fff;
         }
+        .category-group-header {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 8px 12px;
+            margin: 8px 0 6px 0;
+            border-radius: 6px;
+        }
+        .category-group-header:first-child {
+            margin-top: 0;
+        }
+        .category-group-header.music {
+            background: rgba(139, 92, 246, 0.15);
+            color: #A78BFA;
+            border-left: 3px solid #8B5CF6;
+        }
+        .category-group-header.merch {
+            background: rgba(245, 158, 11, 0.15);
+            color: #FBBF24;
+            border-left: 3px solid #F59E0B;
+        }
         .sold-out-link {
             color: #00FFFF;
             text-decoration: none;
@@ -2857,6 +2879,34 @@ function renderSoldOutList() {
         const data = storesData[store.name];
         const soldOut = data.soldOut || [];
 
+        // Sort by category: Music first, then Merch
+        const sortedSoldOut = [...soldOut].sort((a, b) => {
+            const catA = classifyProduct(a);
+            const catB = classifyProduct(b);
+            if (catA === catB) return 0;
+            return catA === 'music' ? -1 : 1;
+        });
+
+        // Group products by category
+        const musicProducts = sortedSoldOut.filter(p => classifyProduct(p) === 'music');
+        const merchProducts = sortedSoldOut.filter(p => classifyProduct(p) === 'merch');
+
+        const renderProducts = (products) => products.map(p => {
+            const category = classifyProduct(p);
+            return `
+            <div class="sold-out-item">
+                ${p.image ? `<img class="sold-out-thumb" src="${esc(p.image)}" alt="" loading="lazy">` : '<div class="sold-out-thumb"></div>'}
+                <div class="sold-out-info">
+                    <div class="sold-out-title">${esc(p.title)}</div>
+                    <div class="sold-out-vendor">${esc(p.productType || 'Product')}</div>
+                </div>
+                <span class="product-type-badge ${category}">${category === 'music' ? 'Music' : 'Merch'}</span>
+                <span class="sold-out-badge">Sold Out</span>
+                <a href="${esc(p.url)}" target="_blank" rel="noopener" class="sold-out-link" title="View product">↗</a>
+            </div>
+            `;
+        }).join('');
+
         return `
             <div class="store-section" id="store-${store.handle.replace(/\./g, '-')}">
                 <div class="store-section-header" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">
@@ -2869,21 +2919,14 @@ function renderSoldOutList() {
                     </div>
                 </div>
                 <div class="store-section-body">
-                    ${soldOut.map(p => {
-                        const category = classifyProduct(p);
-                        return `
-                        <div class="sold-out-item">
-                            ${p.image ? `<img class="sold-out-thumb" src="${esc(p.image)}" alt="" loading="lazy">` : '<div class="sold-out-thumb"></div>'}
-                            <div class="sold-out-info">
-                                <div class="sold-out-title">${esc(p.title)}</div>
-                                <div class="sold-out-vendor">${esc(p.productType || 'Product')}</div>
-                            </div>
-                            <span class="product-type-badge ${category}">${category === 'music' ? 'Music' : 'Merch'}</span>
-                            <span class="sold-out-badge">Sold Out</span>
-                            <a href="${esc(p.url)}" target="_blank" rel="noopener" class="sold-out-link" title="View product">↗</a>
-                        </div>
-                        `;
-                    }).join('')}
+                    ${musicProducts.length > 0 ? `
+                        <div class="category-group-header music">Music (${musicProducts.length})</div>
+                        ${renderProducts(musicProducts)}
+                    ` : ''}
+                    ${merchProducts.length > 0 ? `
+                        <div class="category-group-header merch">Merch (${merchProducts.length})</div>
+                        ${renderProducts(merchProducts)}
+                    ` : ''}
                 </div>
             </div>
         `;

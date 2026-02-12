@@ -928,6 +928,25 @@
             padding: 4px 12px;
             border-radius: 15px;
         }
+        .store-copy-btn {
+            font-size: 0.7rem;
+            padding: 4px 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            background: rgba(0, 255, 255, 0.1);
+            color: #00FFFF;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .store-copy-btn:hover {
+            background: rgba(0, 255, 255, 0.2);
+            border-color: #00FFFF;
+        }
+        .store-copy-btn.copied {
+            background: rgba(0, 255, 136, 0.2);
+            border-color: #00FF88;
+            color: #00FF88;
+        }
         .store-section-body {
             padding: 12px;
             display: none;
@@ -2930,14 +2949,15 @@ function renderSoldOutList() {
         }).join('');
 
         return `
-            <div class="store-section" id="store-${store.handle.replace(/\./g, '-')}">
-                <div class="store-section-header" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">
-                    <div class="store-section-title">
+            <div class="store-section" id="store-${store.handle.replace(/\./g, '-')}" data-store-name="${esc(store.name)}" data-store-url="${esc(store.url)}">
+                <div class="store-section-header">
+                    <div class="store-section-title" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">
                         <span>${esc(store.name)}</span>
                     </div>
                     <div style="display: flex; align-items: center; gap: 12px;">
-                        <span class="store-section-count">${soldOut.length} sold out</span>
-                        <span class="chevron">▼</span>
+                        <button class="store-copy-btn" onclick="event.stopPropagation(); copyStoreProducts('${esc(store.name)}')">Copy All</button>
+                        <span class="store-section-count" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">${soldOut.length} sold out</span>
+                        <span class="chevron" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">▼</span>
                     </div>
                 </div>
                 <div class="store-section-body">
@@ -2960,6 +2980,56 @@ function toggleStoreSection(handle) {
     if (section) {
         section.classList.toggle('open');
     }
+}
+
+function copyStoreProducts(storeName) {
+    const store = ARTIST_STORES.find(s => s.name === storeName);
+    const data = storesData[storeName];
+
+    if (!store || !data || !data.soldOut || data.soldOut.length === 0) {
+        alert('No products to copy for this store.');
+        return;
+    }
+
+    // Build the text to copy
+    let text = `${storeName}\n${store.url}\n\n`;
+
+    // Sort products: Music first, then Merch
+    const sortedProducts = [...data.soldOut].sort((a, b) => {
+        const catA = classifyProduct(a);
+        const catB = classifyProduct(b);
+        if (catA === catB) return 0;
+        return catA === 'music' ? -1 : 1;
+    });
+
+    sortedProducts.forEach(p => {
+        text += `${p.title}\n`;
+        text += `${p.url}\n`;
+        const upc = getProductUPC(p);
+        if (upc) {
+            text += `UPC: ${upc}\n`;
+        }
+        text += '\n';
+    });
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(text.trim()).then(() => {
+        // Find and update the button to show "Copied!"
+        const buttons = document.querySelectorAll('.store-copy-btn');
+        buttons.forEach(btn => {
+            if (btn.onclick.toString().includes(storeName)) {
+                btn.textContent = 'Copied!';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.textContent = 'Copy All';
+                    btn.classList.remove('copied');
+                }, 2000);
+            }
+        });
+    }).catch(err => {
+        console.error('Failed to copy:', err);
+        alert('Failed to copy to clipboard');
+    });
 }
 
 function downloadStoresCSV() {

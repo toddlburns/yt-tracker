@@ -929,9 +929,9 @@
             border-radius: 15px;
         }
         .store-copy-btn {
-            font-size: 0.7rem;
-            padding: 4px 10px;
-            border-radius: 12px;
+            font-size: 0.6rem;
+            padding: 3px 7px;
+            border-radius: 10px;
             border: 1px solid rgba(0, 255, 255, 0.3);
             background: rgba(0, 255, 255, 0.1);
             color: #00FFFF;
@@ -942,10 +942,32 @@
             background: rgba(0, 255, 255, 0.2);
             border-color: #00FFFF;
         }
+        .store-copy-btn.music-btn {
+            border-color: rgba(139, 92, 246, 0.4);
+            background: rgba(139, 92, 246, 0.1);
+            color: #A78BFA;
+        }
+        .store-copy-btn.music-btn:hover {
+            background: rgba(139, 92, 246, 0.2);
+            border-color: #8B5CF6;
+        }
+        .store-copy-btn.merch-btn {
+            border-color: rgba(245, 158, 11, 0.4);
+            background: rgba(245, 158, 11, 0.1);
+            color: #FBBF24;
+        }
+        .store-copy-btn.merch-btn:hover {
+            background: rgba(245, 158, 11, 0.2);
+            border-color: #F59E0B;
+        }
         .store-copy-btn.copied {
             background: rgba(0, 255, 136, 0.2);
             border-color: #00FF88;
             color: #00FF88;
+        }
+        .store-copy-buttons {
+            display: flex;
+            gap: 4px;
         }
         .store-section-body {
             padding: 12px;
@@ -2954,8 +2976,12 @@ function renderSoldOutList() {
                     <div class="store-section-title" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">
                         <span>${esc(store.name)}</span>
                     </div>
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <button class="store-copy-btn" onclick="event.stopPropagation(); copyStoreProducts('${esc(store.name)}')">Copy All</button>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div class="store-copy-buttons">
+                            <button class="store-copy-btn" onclick="event.stopPropagation(); copyStoreProducts('${esc(store.name)}', 'all')" title="Copy all products">All</button>
+                            ${musicProducts.length > 0 ? `<button class="store-copy-btn music-btn" onclick="event.stopPropagation(); copyStoreProducts('${esc(store.name)}', 'music')" title="Copy music only">Music</button>` : ''}
+                            ${merchProducts.length > 0 ? `<button class="store-copy-btn merch-btn" onclick="event.stopPropagation(); copyStoreProducts('${esc(store.name)}', 'merch')" title="Copy merch only">Merch</button>` : ''}
+                        </div>
                         <span class="store-section-count" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">${soldOut.length} sold out</span>
                         <span class="chevron" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">▼</span>
                     </div>
@@ -2982,7 +3008,7 @@ function toggleStoreSection(handle) {
     }
 }
 
-function copyStoreProducts(storeName) {
+function copyStoreProducts(storeName, filter = 'all') {
     const store = ARTIST_STORES.find(s => s.name === storeName);
     const data = storesData[storeName];
 
@@ -2991,18 +3017,33 @@ function copyStoreProducts(storeName) {
         return;
     }
 
+    // Filter products based on selection
+    let products = [...data.soldOut];
+    if (filter === 'music') {
+        products = products.filter(p => classifyProduct(p) === 'music');
+    } else if (filter === 'merch') {
+        products = products.filter(p => classifyProduct(p) === 'merch');
+    }
+
+    if (products.length === 0) {
+        alert(`No ${filter} products to copy.`);
+        return;
+    }
+
+    // Sort products: Music first, then Merch (for 'all')
+    if (filter === 'all') {
+        products.sort((a, b) => {
+            const catA = classifyProduct(a);
+            const catB = classifyProduct(b);
+            if (catA === catB) return 0;
+            return catA === 'music' ? -1 : 1;
+        });
+    }
+
     // Build the text to copy
     let text = `${storeName}\n${store.url}\n\n`;
 
-    // Sort products: Music first, then Merch
-    const sortedProducts = [...data.soldOut].sort((a, b) => {
-        const catA = classifyProduct(a);
-        const catB = classifyProduct(b);
-        if (catA === catB) return 0;
-        return catA === 'music' ? -1 : 1;
-    });
-
-    sortedProducts.forEach(p => {
+    products.forEach(p => {
         text += `${p.title}\n`;
         text += `${p.url}\n`;
         const upc = getProductUPC(p);
@@ -3014,14 +3055,16 @@ function copyStoreProducts(storeName) {
 
     // Copy to clipboard
     navigator.clipboard.writeText(text.trim()).then(() => {
-        // Find and update the button to show "Copied!"
+        // Find the clicked button by matching store name and filter
         const buttons = document.querySelectorAll('.store-copy-btn');
         buttons.forEach(btn => {
-            if (btn.onclick.toString().includes(storeName)) {
+            const onclick = btn.getAttribute('onclick') || '';
+            if (onclick.includes(`'${storeName}'`) && onclick.includes(`'${filter}'`)) {
+                const originalText = btn.textContent;
                 btn.textContent = 'Copied!';
                 btn.classList.add('copied');
                 setTimeout(() => {
-                    btn.textContent = 'Copy All';
+                    btn.textContent = originalText;
                     btn.classList.remove('copied');
                 }, 2000);
             }

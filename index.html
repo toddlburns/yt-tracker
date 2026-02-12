@@ -1342,28 +1342,6 @@
         <div class="stores-header">
             <h2>Official Artist Stores</h2>
             <p>Track sold-out products across artist stores</p>
-            <div class="stores-stats">
-                <div class="stores-stat">
-                    <div class="number" id="stores-total-products">-</div>
-                    <div class="label">Total Products</div>
-                </div>
-                <div class="stores-stat">
-                    <div class="number sold-out" id="stores-total-sold-out">-</div>
-                    <div class="label">Sold Out</div>
-                </div>
-                <div class="stores-stat">
-                    <div class="number" id="stores-count">-</div>
-                    <div class="label">Stores</div>
-                </div>
-            </div>
-            <div class="stores-actions">
-                <button class="stores-btn primary" onclick="refreshStores()" id="refresh-stores-btn">
-                    Scan All Stores
-                </button>
-                <button class="stores-btn secondary" onclick="downloadStoresCSV()" id="download-csv-btn" disabled>
-                    Download CSV
-                </button>
-            </div>
         </div>
 
         <div class="stores-progress" id="stores-progress" style="display: none;">
@@ -2929,7 +2907,7 @@ function renderSoldOutList() {
 
     if (storesWithSoldOut.length === 0) {
         if (Object.keys(storesData).length === 0) {
-            listEl.innerHTML = '<div class="no-data">Click "Scan All Stores" to check for sold-out products.</div>';
+            listEl.innerHTML = '<div class="no-data">Click on individual stores above to check for sold-out products.</div>';
         } else {
             listEl.innerHTML = '<div class="no-data">No sold-out products found across all stores!</div>';
         }

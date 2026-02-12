@@ -802,6 +802,229 @@
         .billion-btn.watch:hover {
             box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
         }
+
+        /* Official Artist Stores Styles */
+        .stores-header {
+            text-align: center;
+            padding: 24px 20px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            border-radius: 16px;
+            border: 2px solid rgba(0, 255, 255, 0.3);
+        }
+        .stores-header h2 {
+            font-family: 'Righteous', cursive;
+            font-size: 1.8rem;
+            background: linear-gradient(135deg, #00FFFF 0%, #8B5CF6 50%, #FF69B4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        .stores-header p {
+            color: #7DD3E8;
+            font-size: 0.9rem;
+        }
+        .stores-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+        .stores-btn {
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .stores-btn.primary {
+            background: linear-gradient(135deg, #00FFFF 0%, #8B5CF6 100%);
+            color: #0a1628;
+        }
+        .stores-btn.primary:hover {
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+        .stores-btn.secondary {
+            background: rgba(0, 20, 40, 0.6);
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            color: #00FFFF;
+        }
+        .stores-btn.secondary:hover {
+            background: rgba(0, 255, 255, 0.1);
+            border-color: #00FFFF;
+        }
+        .stores-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+
+        .stores-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+        .stores-stat {
+            text-align: center;
+        }
+        .stores-stat .number {
+            font-family: 'Righteous', cursive;
+            font-size: 1.8rem;
+            color: #00FFFF;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+        }
+        .stores-stat .number.sold-out { color: #FF69B4; text-shadow: 0 0 15px rgba(255, 105, 180, 0.4); }
+        .stores-stat .label {
+            font-size: 0.75rem;
+            color: #7DD3E8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .store-section {
+            margin-bottom: 24px;
+            background: rgba(0, 20, 40, 0.5);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 255, 255, 0.15);
+            overflow: hidden;
+        }
+        .store-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px;
+            background: rgba(0, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+            cursor: pointer;
+        }
+        .store-section-header:hover {
+            background: rgba(0, 255, 255, 0.1);
+        }
+        .store-section-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #00FFFF;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .store-section-title .store-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+        .store-section-count {
+            font-size: 0.8rem;
+            color: #FF69B4;
+            background: rgba(255, 105, 180, 0.15);
+            padding: 4px 12px;
+            border-radius: 15px;
+        }
+        .store-section-body {
+            padding: 12px;
+            display: none;
+        }
+        .store-section.open .store-section-body {
+            display: block;
+        }
+        .store-section-header .chevron {
+            color: #7DD3E8;
+            transition: transform 0.3s;
+        }
+        .store-section.open .store-section-header .chevron {
+            transform: rotate(180deg);
+        }
+
+        .sold-out-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            background: rgba(255, 105, 180, 0.05);
+            border-radius: 8px;
+            margin-bottom: 8px;
+            transition: all 0.3s;
+        }
+        .sold-out-item:hover {
+            background: rgba(255, 105, 180, 0.12);
+        }
+        .sold-out-item:last-child {
+            margin-bottom: 0;
+        }
+        .sold-out-thumb {
+            width: 50px;
+            height: 50px;
+            border-radius: 6px;
+            object-fit: cover;
+            background: rgba(0, 20, 40, 0.8);
+            border: 2px solid rgba(255, 105, 180, 0.3);
+        }
+        .sold-out-info {
+            flex: 1;
+            min-width: 0;
+        }
+        .sold-out-title {
+            font-size: 0.9rem;
+            color: #E0F7FF;
+            margin-bottom: 2px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .sold-out-vendor {
+            font-size: 0.75rem;
+            color: #7DD3E8;
+        }
+        .sold-out-badge {
+            font-size: 0.65rem;
+            background: #FF69B4;
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .sold-out-link {
+            color: #00FFFF;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+        .sold-out-link:hover {
+            background: rgba(0, 255, 255, 0.15);
+        }
+
+        .stores-progress {
+            margin: 20px 0;
+        }
+        .stores-progress-bar {
+            height: 6px;
+            background: rgba(0, 20, 40, 0.6);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .stores-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00FFFF 0%, #8B5CF6 50%, #FF69B4 100%);
+            border-radius: 3px;
+            transition: width 0.3s;
+        }
+        .stores-progress-text {
+            font-size: 0.8rem;
+            color: #7DD3E8;
+            margin-top: 8px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -837,6 +1060,9 @@
         </button>
         <button class="tab-btn" onclick="switchTab('tours')" id="tab-tours">
             Tour Dates <span class="tab-badge" id="tour-alert-count" style="display:none;">0</span>
+        </button>
+        <button class="tab-btn" onclick="switchTab('stores')" id="tab-stores">
+            Artist Stores <span class="tab-badge" id="stores-sold-out-count" style="display:none;">0</span>
         </button>
     </div>
 
@@ -950,6 +1176,49 @@
             <div class="feed-title" id="tour-list-title">All Upcoming Dates</div>
         </div>
         <div class="tour-list-container" id="tour-list"></div>
+    </div>
+
+    <!-- Artist Stores Tab -->
+    <div class="tab-content" id="content-stores">
+        <div class="stores-header">
+            <h2>Official Artist Stores</h2>
+            <p>Track sold-out products across artist stores</p>
+            <div class="stores-stats">
+                <div class="stores-stat">
+                    <div class="number" id="stores-total-products">-</div>
+                    <div class="label">Total Products</div>
+                </div>
+                <div class="stores-stat">
+                    <div class="number sold-out" id="stores-total-sold-out">-</div>
+                    <div class="label">Sold Out</div>
+                </div>
+                <div class="stores-stat">
+                    <div class="number" id="stores-count">-</div>
+                    <div class="label">Stores</div>
+                </div>
+            </div>
+            <div class="stores-actions">
+                <button class="stores-btn primary" onclick="refreshStores()" id="refresh-stores-btn">
+                    Scan All Stores
+                </button>
+                <button class="stores-btn secondary" onclick="downloadStoresCSV()" id="download-csv-btn" disabled>
+                    Download CSV
+                </button>
+            </div>
+        </div>
+
+        <div class="stores-progress" id="stores-progress" style="display: none;">
+            <div class="stores-progress-bar">
+                <div class="stores-progress-fill" id="stores-progress-fill" style="width: 0%"></div>
+            </div>
+            <div class="stores-progress-text" id="stores-progress-text">Scanning stores...</div>
+        </div>
+
+        <div class="feed-header">
+            <div class="feed-title">Sold Out Products</div>
+        </div>
+
+        <div id="stores-sold-out-list"></div>
     </div>
 </div>
 
@@ -2148,6 +2417,248 @@ function formatBillionViews(n) {
         return (n / 1e9).toFixed(2) + ' BILLION';
     }
     return (n / 1e6).toFixed(0) + ' MILLION';
+}
+
+
+// ─── Official Artist Stores ────────────────────────────────────
+const ARTIST_STORES = [
+    { name: '2Pac', url: 'https://shop.2pac.com', handle: 'shop.2pac.com' },
+    { name: 'ABBA', url: 'https://abba-official-store.myshopify.com', handle: 'abba-official-store.myshopify.com' },
+    { name: 'Aerosmith', url: 'https://store.aerosmith.com', handle: 'store.aerosmith.com' },
+    { name: 'Amy Winehouse', url: 'https://us-store.amywinehouse.com', handle: 'us-store.amywinehouse.com' },
+    { name: 'Andrea Bocelli', url: 'https://shopandreabocelli.com', handle: 'shopandreabocelli.com' },
+    { name: 'Beastie Boys', url: 'https://shopus.beastieboys.com', handle: 'shopus.beastieboys.com' },
+    { name: 'Bee Gees', url: 'https://shop.beegees.com', handle: 'shop.beegees.com' },
+    { name: 'Black Sabbath', url: 'https://blacksabbathapparelshop.com', handle: 'blacksabbathapparelshop.com' },
+    { name: 'Bob Marley', url: 'https://shop.bobmarley.com', handle: 'shop.bobmarley.com' },
+];
+
+let storesData = {};
+let allStoreProducts = [];
+
+async function fetchStoreProducts(store) {
+    try {
+        // Use allorigins proxy to fetch products.json from Shopify stores
+        const productsUrl = `${store.url}/products.json?limit=250`;
+        const proxyUrl = `${ALLORIGINS_PROXY}${encodeURIComponent(productsUrl)}`;
+
+        const res = await fetch(proxyUrl, { timeout: 15000 });
+        if (!res.ok) throw new Error('Failed to fetch');
+
+        const data = await res.json();
+        const products = data.products || [];
+
+        return products.map(p => ({
+            id: p.id,
+            title: p.title,
+            vendor: p.vendor || store.name,
+            handle: p.handle,
+            url: `${store.url}/products/${p.handle}`,
+            image: p.images?.[0]?.src || '',
+            productType: p.product_type || '',
+            tags: p.tags || [],
+            variants: p.variants || [],
+            availableForSale: p.variants?.some(v => v.available) ?? true,
+            price: p.variants?.[0]?.price || '',
+            compareAtPrice: p.variants?.[0]?.compare_at_price || '',
+            sku: p.variants?.[0]?.sku || '',
+            barcode: p.variants?.[0]?.barcode || '',
+            storeName: store.name,
+            storeUrl: store.url,
+            createdAt: p.created_at || '',
+            updatedAt: p.updated_at || '',
+        }));
+    } catch (error) {
+        console.error(`Failed to fetch ${store.name}:`, error);
+        return [];
+    }
+}
+
+async function refreshStores() {
+    const refreshBtn = document.getElementById('refresh-stores-btn');
+    const downloadBtn = document.getElementById('download-csv-btn');
+    const progressEl = document.getElementById('stores-progress');
+    const progressFill = document.getElementById('stores-progress-fill');
+    const progressText = document.getElementById('stores-progress-text');
+
+    refreshBtn.disabled = true;
+    refreshBtn.textContent = 'Scanning...';
+    downloadBtn.disabled = true;
+    progressEl.style.display = 'block';
+
+    storesData = {};
+    allStoreProducts = [];
+
+    for (let i = 0; i < ARTIST_STORES.length; i++) {
+        const store = ARTIST_STORES[i];
+        progressText.textContent = `Scanning ${store.name}... (${i + 1}/${ARTIST_STORES.length})`;
+        progressFill.style.width = `${((i + 1) / ARTIST_STORES.length) * 100}%`;
+
+        const products = await fetchStoreProducts(store);
+        storesData[store.name] = {
+            products,
+            soldOut: products.filter(p => !p.availableForSale),
+            total: products.length,
+        };
+        allStoreProducts.push(...products);
+
+        // Small delay to avoid rate limiting
+        if (i < ARTIST_STORES.length - 1) {
+            await new Promise(r => setTimeout(r, 300));
+        }
+    }
+
+    progressEl.style.display = 'none';
+    refreshBtn.disabled = false;
+    refreshBtn.textContent = 'Scan All Stores';
+    downloadBtn.disabled = false;
+
+    renderStoresStats();
+    renderSoldOutList();
+}
+
+function renderStoresStats() {
+    const totalProducts = allStoreProducts.length;
+    const soldOutProducts = allStoreProducts.filter(p => !p.availableForSale);
+
+    document.getElementById('stores-total-products').textContent = totalProducts.toLocaleString();
+    document.getElementById('stores-total-sold-out').textContent = soldOutProducts.length.toLocaleString();
+    document.getElementById('stores-count').textContent = ARTIST_STORES.length;
+
+    // Update badge
+    const badge = document.getElementById('stores-sold-out-count');
+    if (soldOutProducts.length > 0) {
+        badge.textContent = soldOutProducts.length;
+        badge.style.display = 'inline';
+    } else {
+        badge.style.display = 'none';
+    }
+}
+
+function renderSoldOutList() {
+    const listEl = document.getElementById('stores-sold-out-list');
+
+    // Group sold out products by store
+    const storesWithSoldOut = ARTIST_STORES.filter(store =>
+        storesData[store.name]?.soldOut?.length > 0
+    );
+
+    if (storesWithSoldOut.length === 0) {
+        if (Object.keys(storesData).length === 0) {
+            listEl.innerHTML = '<div class="no-data">Click "Scan All Stores" to check for sold-out products.</div>';
+        } else {
+            listEl.innerHTML = '<div class="no-data">No sold-out products found across all stores!</div>';
+        }
+        return;
+    }
+
+    listEl.innerHTML = storesWithSoldOut.map(store => {
+        const data = storesData[store.name];
+        const soldOut = data.soldOut || [];
+
+        return `
+            <div class="store-section" id="store-${store.handle.replace(/\./g, '-')}">
+                <div class="store-section-header" onclick="toggleStoreSection('${store.handle.replace(/\./g, '-')}')">
+                    <div class="store-section-title">
+                        <span>${esc(store.name)}</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span class="store-section-count">${soldOut.length} sold out</span>
+                        <span class="chevron">▼</span>
+                    </div>
+                </div>
+                <div class="store-section-body">
+                    ${soldOut.map(p => `
+                        <div class="sold-out-item">
+                            ${p.image ? `<img class="sold-out-thumb" src="${esc(p.image)}" alt="" loading="lazy">` : '<div class="sold-out-thumb"></div>'}
+                            <div class="sold-out-info">
+                                <div class="sold-out-title">${esc(p.title)}</div>
+                                <div class="sold-out-vendor">${esc(p.productType || 'Product')}</div>
+                            </div>
+                            <span class="sold-out-badge">Sold Out</span>
+                            <a href="${esc(p.url)}" target="_blank" rel="noopener" class="sold-out-link" title="View product">↗</a>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+function toggleStoreSection(handle) {
+    const section = document.getElementById(`store-${handle}`);
+    if (section) {
+        section.classList.toggle('open');
+    }
+}
+
+function downloadStoresCSV() {
+    if (allStoreProducts.length === 0) {
+        alert('No products to export. Please scan stores first.');
+        return;
+    }
+
+    // Build CSV
+    const headers = [
+        'Store Name',
+        'Product Title',
+        'Vendor',
+        'Product Type',
+        'Handle',
+        'URL',
+        'Available',
+        'Price',
+        'Compare At Price',
+        'SKU',
+        'Barcode/UPC',
+        'Tags',
+        'Created At',
+        'Updated At',
+        'Image URL'
+    ];
+
+    const rows = allStoreProducts.map(p => [
+        p.storeName,
+        p.title,
+        p.vendor,
+        p.productType,
+        p.handle,
+        p.url,
+        p.availableForSale ? 'Yes' : 'No',
+        p.price,
+        p.compareAtPrice,
+        p.sku,
+        p.barcode,
+        Array.isArray(p.tags) ? p.tags.join('; ') : p.tags,
+        p.createdAt,
+        p.updatedAt,
+        p.image
+    ]);
+
+    // Escape CSV values
+    const escapeCSV = (val) => {
+        if (val === null || val === undefined) return '';
+        const str = String(val);
+        if (str.includes(',') || str.includes('"') || str.includes('\n')) {
+            return '"' + str.replace(/"/g, '""') + '"';
+        }
+        return str;
+    };
+
+    const csv = [
+        headers.join(','),
+        ...rows.map(row => row.map(escapeCSV).join(','))
+    ].join('\n');
+
+    // Download
+    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    const timestamp = new Date().toISOString().slice(0, 10);
+    link.download = `artist-stores-products-${timestamp}.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
 }
 
 

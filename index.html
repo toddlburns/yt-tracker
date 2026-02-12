@@ -3041,7 +3041,7 @@ function copyStoreProducts(storeName, filter = 'all') {
     }
 
     // Build the text to copy
-    let text = `${storeName}\n${store.url}\n\n`;
+    let text = `${storeName}\n${store.url}\n\nIt looks like the following products are sold out.\n\n`;
 
     products.forEach(p => {
         text += `${p.title}\n`;

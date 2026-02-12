@@ -2657,7 +2657,14 @@ async function fetchWithProxy(url, proxyUrl, timeoutMs = 10000) {
         });
         clearTimeout(timeoutId);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return await res.json();
+
+        const text = await res.text();
+        // Check if response looks like HTML (proxy error page)
+        if (text.trim().startsWith('<') || text.trim().startsWith('<!')) {
+            throw new Error('Received HTML instead of JSON');
+        }
+
+        return JSON.parse(text);
     } catch (error) {
         clearTimeout(timeoutId);
         throw error;
@@ -2671,7 +2678,13 @@ async function fetchStoreProducts(store) {
     for (let i = 0; i < CORS_PROXIES.length; i++) {
         try {
             const data = await fetchWithProxy(productsUrl, CORS_PROXIES[i], 15000);
-            const products = data.products || [];
+
+            // Validate response has products
+            if (!data || !Array.isArray(data.products)) {
+                throw new Error('Invalid response - no products array');
+            }
+
+            const products = data.products;
 
             return products.map(p => ({
                 id: p.id,
@@ -2730,6 +2743,11 @@ async function scanSingleStore(index) {
 
     try {
         const products = await fetchStoreProducts(store);
+
+        // If no products returned, treat as failure
+        if (products.length === 0) {
+            throw new Error('No products found');
+        }
 
         // Update store data
         storesData[store.name] = {

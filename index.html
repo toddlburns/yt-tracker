@@ -2704,47 +2704,8 @@ async function fetchStoreProducts(store) {
 }
 
 async function refreshStores() {
-    const refreshBtn = document.getElementById('refresh-stores-btn');
-    const downloadBtn = document.getElementById('download-csv-btn');
-    const progressEl = document.getElementById('stores-progress');
-    const progressFill = document.getElementById('stores-progress-fill');
-    const progressText = document.getElementById('stores-progress-text');
-
-    refreshBtn.disabled = true;
-    refreshBtn.textContent = 'Scanning...';
-    downloadBtn.disabled = true;
-    progressEl.style.display = 'block';
-
-    storesData = {};
-    allStoreProducts = [];
-
-    for (let i = 0; i < ARTIST_STORES.length; i++) {
-        const store = ARTIST_STORES[i];
-        progressText.textContent = `Scanning ${store.name}... (${i + 1}/${ARTIST_STORES.length})`;
-        progressFill.style.width = `${((i + 1) / ARTIST_STORES.length) * 100}%`;
-
-        const products = await fetchStoreProducts(store);
-        storesData[store.name] = {
-            products,
-            soldOut: products.filter(p => !p.availableForSale),
-            total: products.length,
-        };
-        allStoreProducts.push(...products);
-
-        // Small delay to avoid rate limiting
-        if (i < ARTIST_STORES.length - 1) {
-            await new Promise(r => setTimeout(r, 300));
-        }
-    }
-
-    progressEl.style.display = 'none';
-    refreshBtn.disabled = false;
-    refreshBtn.textContent = 'Scan All Stores';
-    downloadBtn.disabled = false;
-
-    renderStoresStats();
-    renderSoldOutList();
-    updateStoreButtonStates();
+    // This function is no longer used since we removed the "Scan All Stores" button
+    // Individual store scanning is done via scanSingleStore()
 }
 
 function populateStoreButtons() {
@@ -2788,12 +2749,8 @@ async function scanSingleStore(index) {
         const soldOut = storesData[store.name].soldOut.length;
         statusEl.textContent = `${products.length} products${soldOut > 0 ? `, ${soldOut} sold out` : ''}`;
 
-        // Update stats and list
-        renderStoresStats();
+        // Update list
         renderSoldOutList();
-
-        // Enable download if we have data
-        document.getElementById('download-csv-btn').disabled = allStoreProducts.length === 0;
 
     } catch (error) {
         btn.className = 'store-btn-individual error';
@@ -2820,20 +2777,16 @@ function updateStoreButtonStates() {
 }
 
 function renderStoresStats() {
-    const totalProducts = allStoreProducts.length;
+    // Stats section was removed - just update badge if it exists
     const soldOutProducts = allStoreProducts.filter(p => !p.availableForSale);
-
-    document.getElementById('stores-total-products').textContent = totalProducts.toLocaleString();
-    document.getElementById('stores-total-sold-out').textContent = soldOutProducts.length.toLocaleString();
-    document.getElementById('stores-count').textContent = ARTIST_STORES.length;
-
-    // Update badge
     const badge = document.getElementById('stores-sold-out-count');
-    if (soldOutProducts.length > 0) {
-        badge.textContent = soldOutProducts.length;
-        badge.style.display = 'inline';
-    } else {
-        badge.style.display = 'none';
+    if (badge) {
+        if (soldOutProducts.length > 0) {
+            badge.textContent = soldOutProducts.length;
+            badge.style.display = 'inline';
+        } else {
+            badge.style.display = 'none';
+        }
     }
 }
 

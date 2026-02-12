@@ -992,6 +992,22 @@
             font-weight: 600;
             text-transform: uppercase;
         }
+        .product-type-badge {
+            font-size: 0.6rem;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .product-type-badge.music {
+            background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 100%);
+            color: #fff;
+        }
+        .product-type-badge.merch {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: #fff;
+        }
         .sold-out-link {
             color: #00FFFF;
             text-decoration: none;
@@ -2771,6 +2787,55 @@ function renderStoresStats() {
     }
 }
 
+// Classify product as Music or Merch based on type, title, and tags
+function classifyProduct(product) {
+    const musicKeywords = [
+        'vinyl', 'lp', 'cd', 'cassette', 'album', 'record', 'box set', 'boxset',
+        'deluxe edition', 'limited edition', 'picture disc', 'colored vinyl',
+        '7"', '12"', '10"', 'single', 'ep', 'music', 'audio', 'soundtrack',
+        'remaster', 'reissue', 'pressing', 'gatefold', 'slipmat'
+    ];
+    const merchKeywords = [
+        't-shirt', 'tee', 'shirt', 'hoodie', 'sweatshirt', 'jacket', 'hat', 'cap',
+        'beanie', 'poster', 'print', 'mug', 'cup', 'bag', 'tote', 'backpack',
+        'keychain', 'pin', 'patch', 'sticker', 'flag', 'banner', 'blanket',
+        'socks', 'shorts', 'pants', 'dress', 'skirt', 'sweater', 'jersey',
+        'lanyard', 'wristband', 'necklace', 'bracelet', 'ring', 'earrings',
+        'apparel', 'clothing', 'wear', 'accessory', 'accessories', 'merch',
+        'collectible', 'figurine', 'plush', 'toy', 'game', 'puzzle', 'book',
+        'calendar', 'ornament', 'magnet', 'coaster', 'bottle', 'flask'
+    ];
+
+    const searchText = [
+        product.title || '',
+        product.productType || '',
+        ...(product.tags || [])
+    ].join(' ').toLowerCase();
+
+    // Check for music keywords
+    for (const keyword of musicKeywords) {
+        if (searchText.includes(keyword)) {
+            return 'music';
+        }
+    }
+
+    // Check for merch keywords
+    for (const keyword of merchKeywords) {
+        if (searchText.includes(keyword)) {
+            return 'merch';
+        }
+    }
+
+    // Default based on common product types
+    const type = (product.productType || '').toLowerCase();
+    if (type.includes('music') || type.includes('audio') || type.includes('vinyl') || type.includes('cd')) {
+        return 'music';
+    }
+
+    // Default to merch if unknown
+    return 'merch';
+}
+
 function renderSoldOutList() {
     const listEl = document.getElementById('stores-sold-out-list');
 
@@ -2804,17 +2869,21 @@ function renderSoldOutList() {
                     </div>
                 </div>
                 <div class="store-section-body">
-                    ${soldOut.map(p => `
+                    ${soldOut.map(p => {
+                        const category = classifyProduct(p);
+                        return `
                         <div class="sold-out-item">
                             ${p.image ? `<img class="sold-out-thumb" src="${esc(p.image)}" alt="" loading="lazy">` : '<div class="sold-out-thumb"></div>'}
                             <div class="sold-out-info">
                                 <div class="sold-out-title">${esc(p.title)}</div>
                                 <div class="sold-out-vendor">${esc(p.productType || 'Product')}</div>
                             </div>
+                            <span class="product-type-badge ${category}">${category === 'music' ? 'Music' : 'Merch'}</span>
                             <span class="sold-out-badge">Sold Out</span>
                             <a href="${esc(p.url)}" target="_blank" rel="noopener" class="sold-out-link" title="View product">↗</a>
                         </div>
-                    `).join('')}
+                        `;
+                    }).join('')}
                 </div>
             </div>
         `;
@@ -2838,6 +2907,7 @@ function downloadStoresCSV() {
     const headers = [
         'Store Name',
         'Product Title',
+        'Category',
         'Vendor',
         'Product Type',
         'Handle',
@@ -2856,6 +2926,7 @@ function downloadStoresCSV() {
     const rows = allStoreProducts.map(p => [
         p.storeName,
         p.title,
+        classifyProduct(p) === 'music' ? 'Music' : 'Merch',
         p.vendor,
         p.productType,
         p.handle,

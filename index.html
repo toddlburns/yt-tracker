@@ -1475,6 +1475,8 @@ let PIPED_INSTANCES = [
 const ALLORIGINS_PROXY = 'https://api.allorigins.win/raw?url=';
 const CORS_PROXIES = [
     'https://api.allorigins.win/raw?url=',
+    'https://api.allorigins.win/get?url=',  // Alternative endpoint, returns JSON wrapper
+    'https://corsproxy.io/?',
 ];
 const DAYS_WINDOW = 6;
 const CONCURRENCY = 6;
@@ -2659,12 +2661,25 @@ async function fetchWithProxy(url, proxyUrl, timeoutMs = 10000) {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
         const text = await res.text();
+
         // Check if response looks like HTML (proxy error page)
         if (text.trim().startsWith('<') || text.trim().startsWith('<!')) {
             throw new Error('Received HTML instead of JSON');
         }
 
-        return JSON.parse(text);
+        // Check for common error messages
+        if (text.includes('403 Forbidden') || text.includes('Request forbidden')) {
+            throw new Error('Proxy returned 403 Forbidden');
+        }
+
+        let parsed = JSON.parse(text);
+
+        // Handle allorigins /get endpoint which wraps content in {contents: "..."}
+        if (parsed.contents && typeof parsed.contents === 'string') {
+            parsed = JSON.parse(parsed.contents);
+        }
+
+        return parsed;
     } catch (error) {
         clearTimeout(timeoutId);
         throw error;
@@ -2674,10 +2689,10 @@ async function fetchWithProxy(url, proxyUrl, timeoutMs = 10000) {
 async function fetchStoreProducts(store) {
     const productsUrl = `${store.url}/products.json?limit=250`;
 
-    // Try each proxy until one works (with 15 second timeout)
+    // Try each proxy until one works (with 20 second timeout)
     for (let i = 0; i < CORS_PROXIES.length; i++) {
         try {
-            const data = await fetchWithProxy(productsUrl, CORS_PROXIES[i], 15000);
+            const data = await fetchWithProxy(productsUrl, CORS_PROXIES[i], 20000);
 
             // Validate response has products
             if (!data || !Array.isArray(data.products)) {

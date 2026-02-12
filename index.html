@@ -1475,8 +1475,9 @@ let PIPED_INSTANCES = [
 const ALLORIGINS_PROXY = 'https://api.allorigins.win/raw?url=';
 const CORS_PROXIES = [
     'https://api.allorigins.win/raw?url=',
-    'https://corsproxy.io/?',
+    'https://corsproxy.io/?url=',
     'https://api.codetabs.com/v1/proxy?quest=',
+    'https://cors-anywhere.herokuapp.com/',
 ];
 const DAYS_WINDOW = 6;
 const CONCURRENCY = 6;
@@ -2669,10 +2670,10 @@ async function fetchWithProxy(url, proxyUrl, timeoutMs = 10000) {
 async function fetchStoreProducts(store) {
     const productsUrl = `${store.url}/products.json?limit=250`;
 
-    // Try each proxy until one works
+    // Try each proxy until one works (with 15 second timeout)
     for (let i = 0; i < CORS_PROXIES.length; i++) {
         try {
-            const data = await fetchWithProxy(productsUrl, CORS_PROXIES[i]);
+            const data = await fetchWithProxy(productsUrl, CORS_PROXIES[i], 15000);
             const products = data.products || [];
 
             return products.map(p => ({

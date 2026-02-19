@@ -1377,7 +1377,7 @@ async function init() {
     renderChannelPills();
     updateSubtitle();
     populateStoreButtons();
-    await discoverInstances();
+    discoverInstances(); // non-blocking, RSS is primary now
     // Don't auto-load tabs - user must click Refresh
     showInitialMessages();
 }
@@ -1577,7 +1577,10 @@ async function discoverInstances() {
     } catch {}
 
     try {
-        const res = await fetch('https://piped-instances.kavin.rocks/');
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+        const res = await fetch('https://piped-instances.kavin.rocks/', { signal: controller.signal });
+        clearTimeout(timeoutId);
         if (res.ok) {
             const list = await res.json();
             const apis = list.filter(i => i.api_url).map(i => new URL(i.api_url).host);
@@ -1600,20 +1603,28 @@ async function pipedFetch(path) {
 
     if (workingInstance) {
         try {
-            const res = await Promise.race([fetch(`https://${workingInstance}${path}`), timeout(8000)]);
-            if (res.ok) return await res.json();
+            const res = await Promise.race([fetch(`https://${workingInstance}${path}`), timeout(3000)]);
+            if (res.ok) {
+                const data = await res.json();
+                if (data && data.relatedStreams) return data;
+                throw new Error('bad response');
+            }
         } catch {
             workingInstance = null;
             localStorage.removeItem('piped_working_instance');
         }
     }
-    for (const inst of PIPED_INSTANCES) {
+    // Only try 3 instances max to avoid long waits
+    for (const inst of PIPED_INSTANCES.slice(0, 3)) {
         try {
-            const res = await Promise.race([fetch(`https://${inst}${path}`), timeout(8000)]);
+            const res = await Promise.race([fetch(`https://${inst}${path}`), timeout(3000)]);
             if (res.ok) {
-                workingInstance = inst;
-                localStorage.setItem('piped_working_instance', inst);
-                return await res.json();
+                const data = await res.json();
+                if (data && data.relatedStreams) {
+                    workingInstance = inst;
+                    localStorage.setItem('piped_working_instance', inst);
+                    return data;
+                }
             }
         } catch {}
     }
@@ -1621,6 +1632,11 @@ async function pipedFetch(path) {
 }
 
 async function fetchChannelVideos(channel) {
+    // Try RSS first (direct YouTube feed, more reliable)
+    const rssResult = await fetchRSS(channel);
+    if (rssResult && rssResult.length > 0) return rssResult;
+
+    // Fall back to Piped API if RSS fails
     const data = await pipedFetch(`/channel/${channel.channelId}`);
     if (data && data.relatedStreams) {
         return data.relatedStreams.map(v => ({
@@ -1635,7 +1651,7 @@ async function fetchChannelVideos(channel) {
             views: v.views || 0
         }));
     }
-    return await fetchRSS(channel);
+    return [];
 }
 
 async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 10000) {

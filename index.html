@@ -1285,11 +1285,12 @@ let PIPED_INSTANCES = [
 const ALLORIGINS_PROXY = 'https://api.allorigins.win/raw?url=';
 const CORS_PROXIES = [
     'https://api.allorigins.win/raw?url=',
-    'https://api.allorigins.win/get?url=',  // Alternative endpoint, returns JSON wrapper
     'https://corsproxy.io/?',
+    'https://api.codetabs.com/v1/proxy?quest=',
 ];
 const DAYS_WINDOW = 6;
-const CONCURRENCY = 6;
+const CONCURRENCY = 8;
+const RSS_CACHE_TTL = 10 * 60 * 1000; // 10 minute cache for RSS results
 const MAX_CHANNELS = 200;
 
 // ─── State ─────────────────────────────────────────────────────
@@ -1654,7 +1655,7 @@ async function fetchChannelVideos(channel) {
     return [];
 }
 
-async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 10000) {
+async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 5000) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
 
@@ -1664,41 +1665,93 @@ async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 10000) {
         });
         clearTimeout(timeoutId);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return await res.text();
+        const text = await res.text();
+        // Validate it's actually XML, not an error page
+        if (text.length < 100 || !text.includes('<feed')) throw new Error('Not valid RSS');
+        return text;
     } catch (error) {
         clearTimeout(timeoutId);
         throw error;
     }
 }
 
+function parseRSSXml(text, channel) {
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(text, 'text/xml');
+    const entries = xml.querySelectorAll('entry');
+    if (entries.length === 0) return null;
+    const channelName = xml.querySelector('author > name')?.textContent || '';
+    return Array.from(entries).map(entry => {
+        const videoId = entry.querySelector('videoId')?.textContent || '';
+        const title = entry.querySelector('title')?.textContent || '';
+        const published = entry.querySelector('published')?.textContent || '';
+        const thumb = entry.querySelector('group > thumbnail')?.getAttribute('url') || '';
+        const views = parseInt(entry.querySelector('group > community > statistics')?.getAttribute('views') || '0');
+        return {
+            videoId, title, channel: channelName, channelId: channel.channelId,
+            channelType: channel.type, thumbnail: thumb, duration: 0,
+            uploaded: new Date(published).getTime(), views
+        };
+    });
+}
+
+function getRSSCache(channelId) {
+    try {
+        const cached = localStorage.getItem(`rss_cache_${channelId}`);
+        if (!cached) return null;
+        const { data, ts } = JSON.parse(cached);
+        if (Date.now() - ts > RSS_CACHE_TTL) {
+            localStorage.removeItem(`rss_cache_${channelId}`);
+            return null;
+        }
+        return data;
+    } catch { return null; }
+}
+
+function setRSSCache(channelId, data) {
+    try {
+        localStorage.setItem(`rss_cache_${channelId}`, JSON.stringify({ data, ts: Date.now() }));
+    } catch {} // localStorage full, ignore
+}
+
 async function fetchRSS(channel) {
+    // Check cache first
+    const cached = getRSSCache(channel.channelId);
+    if (cached) return cached;
+
     const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel.channelId}`;
 
-    // Try each proxy until one works
-    for (let i = 0; i < CORS_PROXIES.length; i++) {
-        try {
-            const text = await fetchTextWithProxy(rssUrl, CORS_PROXIES[i]);
-            const parser = new DOMParser();
-            const xml = parser.parseFromString(text, 'text/xml');
-            const entries = xml.querySelectorAll('entry');
-            const channelName = xml.querySelector('author > name')?.textContent || '';
-            return Array.from(entries).map(entry => {
-                const videoId = entry.querySelector('videoId')?.textContent || '';
-                const title = entry.querySelector('title')?.textContent || '';
-                const published = entry.querySelector('published')?.textContent || '';
-                const thumb = entry.querySelector('group > thumbnail')?.getAttribute('url') || '';
-                const views = parseInt(entry.querySelector('group > community > statistics')?.getAttribute('views') || '0');
-                return {
-                    videoId, title, channel: channelName, channelId: channel.channelId,
-                    channelType: channel.type, thumbnail: thumb, duration: 0,
-                    uploaded: new Date(published).getTime(), views
-                };
+    // Race all proxies in parallel — first valid response wins
+    try {
+        const result = await new Promise((resolve, reject) => {
+            let settled = false;
+            let failures = 0;
+            CORS_PROXIES.forEach(proxy => {
+                fetchTextWithProxy(rssUrl, proxy, 5000)
+                    .then(text => {
+                        if (settled) return;
+                        const parsed = parseRSSXml(text, channel);
+                        if (parsed && parsed.length > 0) {
+                            settled = true;
+                            resolve(parsed);
+                        } else {
+                            throw new Error('Empty RSS');
+                        }
+                    })
+                    .catch(() => {
+                        failures++;
+                        if (failures === CORS_PROXIES.length && !settled) {
+                            settled = true;
+                            resolve([]);
+                        }
+                    });
             });
-        } catch {
-            // Continue to next proxy
-        }
+        });
+        if (result.length > 0) setRSSCache(channel.channelId, result);
+        return result;
+    } catch {
+        return [];
     }
-    return [];
 }
 
 // ─── Lightbox ───────────────────────────────────────────────────

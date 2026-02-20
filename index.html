@@ -3153,9 +3153,19 @@ function auditStop() {
 const pageAuditResults = {};
 let pageAuditRunning = false;
 
+function getArtistPageUrl(artist) {
+    if (typeof ARTIST_PAGES === 'undefined') return null;
+    if (ARTIST_PAGES[artist]) return ARTIST_PAGES[artist];
+    const lower = artist.toLowerCase();
+    for (const [name, url] of Object.entries(ARTIST_PAGES)) {
+        if (name.toLowerCase() === lower) return url;
+    }
+    return null;
+}
+
 function pageAuditInlineHtml(artist, dedupSet) {
-    // Get artist page URL — check item-level first, then global lookup
-    const pageUrl = artistPageUrl(artist);
+    // Get artist page URL
+    const pageUrl = getArtistPageUrl(artist);
     if (!pageUrl) return '';
     const dedupKey = 'page|' + artist;
     if (dedupSet && dedupSet.has(dedupKey)) {
@@ -3204,7 +3214,7 @@ async function pageAuditCheckOne(artist) {
     resultEl.innerHTML = '<span class="audit-result-loading">Checking page...</span>';
     if (btnEl) btnEl.disabled = true;
 
-    const url = artistPageUrl(artist);
+    const url = getArtistPageUrl(artist);
     if (!url) {
         resultEl.innerHTML = '<span class="audit-result-error">No page URL</span>';
         return;

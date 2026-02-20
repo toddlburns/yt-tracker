@@ -382,6 +382,53 @@
         .editorial-toggle-done.active { background: rgba(0, 255, 255, 0.2); border-color: #00FFFF; color: #00FFFF; }
         .editorial-no-data { text-align: center; padding: 40px; color: #5a8a9a; font-size: 0.9rem; }
 
+        /* Article Audit */
+        .audit-controls { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+        .audit-btn {
+            font-size: 0.75rem; padding: 5px 14px; border-radius: 8px; cursor: pointer;
+            border: 1px solid rgba(0, 255, 255, 0.2); background: rgba(0, 255, 255, 0.08);
+            color: #7DD3E8; transition: all 0.2s;
+        }
+        .audit-btn:hover { background: rgba(0, 255, 255, 0.15); border-color: #00FFFF; }
+        .audit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .audit-progress { font-size: 0.7rem; color: #5a8a9a; }
+        .audit-row {
+            display: flex; gap: 10px; padding: 7px 10px; border-radius: 6px;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.06);
+            background: rgba(0, 20, 40, 0.4); align-items: center; transition: all 0.2s;
+        }
+        .audit-row:hover { background: rgba(0, 255, 255, 0.06); }
+        .audit-artist { font-size: 0.8rem; font-weight: 600; color: #E0F7FF; min-width: 160px; }
+        .audit-article-link {
+            font-size: 0.65rem; color: #B794F6; text-decoration: none; white-space: nowrap;
+        }
+        .audit-article-link:hover { color: #D4BBFF; }
+        .audit-check-btn {
+            font-size: 0.6rem; padding: 2px 8px; border-radius: 6px; cursor: pointer;
+            border: 1px solid rgba(0, 255, 255, 0.2); background: rgba(0, 255, 255, 0.06);
+            color: #7DD3E8; transition: all 0.2s; white-space: nowrap;
+        }
+        .audit-check-btn:hover { background: rgba(0, 255, 255, 0.15); }
+        .audit-check-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .audit-result { font-size: 0.65rem; flex: 1; min-width: 0; }
+        .audit-result-loading { color: #5a8a9a; font-style: italic; }
+        .audit-result-fresh { color: #4ADE80; }
+        .audit-result-stale { color: #FBBF24; }
+        .audit-result-outdated { color: #FF6B6B; }
+        .audit-result-error { color: #FF6B6B; font-style: italic; }
+        .audit-year-pill {
+            display: inline-block; font-size: 0.6rem; font-weight: 600;
+            padding: 1px 6px; border-radius: 8px; margin-right: 4px;
+        }
+        .audit-year-article { background: rgba(139, 92, 246, 0.25); color: #D4BBFF; }
+        .audit-year-latest { background: rgba(0, 255, 255, 0.2); color: #B0FFFF; }
+        .audit-sort-btn {
+            font-size: 0.65rem; padding: 2px 8px; border-radius: 6px; cursor: pointer;
+            border: 1px solid rgba(0, 255, 255, 0.15); background: transparent;
+            color: #5a8a9a; transition: all 0.2s;
+        }
+        .audit-sort-btn:hover, .audit-sort-btn.active { color: #00FFFF; border-color: #00FFFF; }
+
         /* Progress bar */
         .progress-wrap {
             width: 100%; height: 6px;
@@ -1205,8 +1252,22 @@
             <button class="editorial-filter-btn" onclick="filterEditorial('chart')">Chart Milestones</button>
             <button class="editorial-filter-btn" onclick="filterEditorial('video')">Videos Available</button>
             <button class="editorial-toggle-done" id="toggle-done-btn" onclick="toggleHideDone()">Hide completed</button>
+            <button class="editorial-filter-btn" onclick="filterEditorial('audit')">Article Audit</button>
         </div>
         <div id="editorial-feed"></div>
+        <div id="audit-view" style="display:none;">
+            <div class="audit-controls">
+                <button class="audit-btn" id="audit-all-btn" onclick="auditCheckAll()">Check All</button>
+                <button class="audit-btn" id="audit-stop-btn" onclick="auditStop()" style="display:none;">Stop</button>
+                <span class="audit-progress" id="audit-progress"></span>
+                <span style="margin-left:auto; display:flex; gap:4px;">
+                    <button class="audit-sort-btn active" id="sort-alpha" onclick="auditSort('alpha')">A-Z</button>
+                    <button class="audit-sort-btn" id="sort-stale" onclick="auditSort('stale')">Most Stale</button>
+                    <button class="audit-sort-btn" id="sort-unchecked" onclick="auditSort('unchecked')">Unchecked</button>
+                </span>
+            </div>
+            <div id="audit-list"></div>
+        </div>
     </div>
 </div>
 
@@ -2813,7 +2874,317 @@ function filterEditorial(filter) {
     editorialFilter = filter;
     document.querySelectorAll('.editorial-filter-btn').forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
-    renderEditorial();
+    const feedEl = document.getElementById('editorial-feed');
+    const auditEl = document.getElementById('audit-view');
+    if (filter === 'audit') {
+        feedEl.style.display = 'none';
+        auditEl.style.display = 'block';
+        renderAuditList();
+    } else {
+        feedEl.style.display = 'block';
+        auditEl.style.display = 'none';
+        renderEditorial();
+    }
+}
+
+// ─── Article Audit ──────────────────────────────────────────────
+const auditResults = {}; // artist -> { articleYear, latestYear, latestWork, status, detail }
+let auditRunning = false;
+let auditAbort = false;
+let auditSortMode = 'alpha';
+
+function renderAuditList() {
+    if (typeof BESTOF_ARTICLES === 'undefined') return;
+    const list = document.getElementById('audit-list');
+    let artists = Object.entries(BESTOF_ARTICLES);
+
+    if (auditSortMode === 'stale') {
+        artists.sort((a, b) => {
+            const ra = auditResults[a[0]], rb = auditResults[b[0]];
+            const ga = ra ? (ra.latestYear - ra.articleYear) : -999;
+            const gb = rb ? (rb.latestYear - rb.articleYear) : -999;
+            return gb - ga;
+        });
+    } else if (auditSortMode === 'unchecked') {
+        artists.sort((a, b) => {
+            const ra = auditResults[a[0]] ? 1 : 0;
+            const rb = auditResults[b[0]] ? 1 : 0;
+            return ra - rb || a[0].localeCompare(b[0]);
+        });
+    } else {
+        artists.sort((a, b) => a[0].localeCompare(b[0]));
+    }
+
+    let html = '';
+    for (const [artist, url] of artists) {
+        const result = auditResults[artist];
+        let resultHtml = '';
+        if (result) {
+            resultHtml = formatAuditResult(result);
+        }
+        const escapedArtist = artist.replace(/'/g, "\\'");
+        html += `<div class="audit-row" id="audit-${css_id(artist)}">
+            <span class="audit-artist">${esc(artist)}</span>
+            <a class="audit-article-link" href="${esc(url)}" target="_blank" rel="noopener">
+                <img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"> article
+            </a>
+            <button class="audit-check-btn" id="abtn-${css_id(artist)}" onclick="auditCheckOne('${escapedArtist}')"${result ? ' disabled' : ''}>
+                ${result ? 'Done' : 'Check'}
+            </button>
+            <span class="audit-result" id="ares-${css_id(artist)}">${resultHtml}</span>
+        </div>`;
+    }
+    list.innerHTML = html;
+}
+
+function css_id(s) {
+    return s.replace(/[^a-zA-Z0-9]/g, '_');
+}
+
+function formatAuditResult(r) {
+    if (r.error) return `<span class="audit-result-error">${esc(r.error)}</span>`;
+    const gap = r.latestYear - r.articleYear;
+    let cls, verdict;
+    if (gap <= 1) {
+        cls = 'audit-result-fresh';
+        verdict = 'Looks current';
+    } else if (gap <= 3) {
+        cls = 'audit-result-stale';
+        verdict = `${gap} years behind — may need update`;
+    } else {
+        cls = 'audit-result-outdated';
+        verdict = `${gap} years behind — likely needs update`;
+    }
+    const latestWorkHtml = r.latestWork ? ` (${esc(r.latestWork)})` : '';
+    return `<span class="${cls}">
+        <span class="audit-year-pill audit-year-article">Article: ${r.articleYear}</span>
+        <span class="audit-year-pill audit-year-latest">Latest: ${r.latestYear}${latestWorkHtml}</span>
+        ${verdict}
+    </span>`;
+}
+
+async function auditFetchArticle(url) {
+    // Try CORS proxies to fetch the article
+    for (const proxy of CORS_PROXIES) {
+        try {
+            const needsEncode = proxy.includes('allorigins') || proxy.includes('corsproxy');
+            const fullUrl = proxy + (needsEncode ? encodeURIComponent(url) : url);
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 12000);
+            const res = await fetch(fullUrl, { signal: controller.signal });
+            clearTimeout(timeoutId);
+            if (!res.ok) continue;
+            const html = await res.text();
+            if (html.length < 200) continue;
+            return html;
+        } catch {}
+    }
+    return null;
+}
+
+function extractMaxYearFromArticle(html) {
+    // Strip HTML tags, get text content
+    const text = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+                     .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+                     .replace(/<[^>]+>/g, ' ')
+                     .replace(/&\w+;/g, ' ');
+
+    // Find all 4-digit years in article body (1950-2026)
+    const years = [];
+    const yearRegex = /\b(19[5-9]\d|20[0-2]\d)\b/g;
+    let match;
+    while ((match = yearRegex.exec(text)) !== null) {
+        years.push(parseInt(match[1]));
+    }
+    if (years.length === 0) return null;
+    return Math.max(...years);
+}
+
+async function auditFetchWikipediaLatest(artist) {
+    // Use Wikipedia API to get the artist's page, look for latest release year
+    const searchQuery = encodeURIComponent(artist + ' discography');
+    const apiUrl = `https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${searchQuery}&format=json&origin=*&srlimit=1`;
+
+    try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+        const pages = data.query?.search;
+        if (!pages || pages.length === 0) return null;
+
+        // Get the page content (extract)
+        const pageTitle = encodeURIComponent(pages[0].title);
+        const contentUrl = `https://en.wikipedia.org/w/api.php?action=parse&page=${pageTitle}&prop=text&format=json&origin=*`;
+        const res2 = await fetch(contentUrl);
+        const data2 = await res2.json();
+        const pageHtml = data2.parse?.text?.['*'] || '';
+
+        // Extract years from the page
+        const text = pageHtml.replace(/<[^>]+>/g, ' ').replace(/&\w+;/g, ' ');
+        const years = [];
+        const yearRegex = /\b(19[5-9]\d|20[0-2]\d)\b/g;
+        let m;
+        while ((m = yearRegex.exec(text)) !== null) {
+            years.push(parseInt(m[1]));
+        }
+        if (years.length === 0) return { year: null, work: null };
+
+        const maxYear = Math.max(...years);
+
+        // Try to find an album/work name near the latest year
+        // Look for patterns like "Album Name (YYYY)" or "YYYY ... Album Name"
+        let work = null;
+        const workRegex = new RegExp(`([A-Z][\\w\\s'':&!?.-]{2,30})\\s*\\(${maxYear}\\)`, 'g');
+        const workMatch = workRegex.exec(text);
+        if (workMatch) {
+            work = workMatch[1].trim();
+        }
+
+        return { year: maxYear, work };
+    } catch {
+        return null;
+    }
+}
+
+// Alternative: also try the main artist page for latest album
+async function auditFetchArtistWiki(artist) {
+    const searchQuery = encodeURIComponent(artist);
+    const apiUrl = `https://en.wikipedia.org/w/api.php?action=opensearch&search=${searchQuery}&limit=1&format=json&origin=*`;
+
+    try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+        if (!data[1] || data[1].length === 0) return null;
+
+        const pageTitle = encodeURIComponent(data[1][0]);
+        const contentUrl = `https://en.wikipedia.org/w/api.php?action=parse&page=${pageTitle}&prop=text&format=json&origin=*`;
+        const res2 = await fetch(contentUrl);
+        const data2 = await res2.json();
+        const pageHtml = data2.parse?.text?.['*'] || '';
+
+        const text = pageHtml.replace(/<[^>]+>/g, ' ').replace(/&\w+;/g, ' ');
+        const years = [];
+        const yearRegex = /\b(19[5-9]\d|20[0-2]\d)\b/g;
+        let m;
+        while ((m = yearRegex.exec(text)) !== null) {
+            years.push(parseInt(m[1]));
+        }
+
+        return years.length > 0 ? Math.max(...years) : null;
+    } catch {
+        return null;
+    }
+}
+
+async function auditCheckOne(artist) {
+    const resultEl = document.getElementById('ares-' + css_id(artist));
+    const btnEl = document.getElementById('abtn-' + css_id(artist));
+    if (!resultEl) return;
+
+    resultEl.innerHTML = '<span class="audit-result-loading">Checking article...</span>';
+    if (btnEl) btnEl.disabled = true;
+
+    const url = BESTOF_ARTICLES[artist];
+    if (!url) {
+        resultEl.innerHTML = '<span class="audit-result-error">No article URL</span>';
+        return;
+    }
+
+    try {
+        // Step 1: Fetch and analyze the article
+        const articleHtml = await auditFetchArticle(url);
+        if (!articleHtml) {
+            auditResults[artist] = { error: 'Could not fetch article' };
+            resultEl.innerHTML = formatAuditResult(auditResults[artist]);
+            return;
+        }
+
+        const articleYear = extractMaxYearFromArticle(articleHtml);
+        if (!articleYear) {
+            auditResults[artist] = { error: 'No years found in article' };
+            resultEl.innerHTML = formatAuditResult(auditResults[artist]);
+            return;
+        }
+
+        resultEl.innerHTML = `<span class="audit-result-loading">Article covers through ${articleYear}. Checking Wikipedia...</span>`;
+
+        // Step 2: Check Wikipedia for latest release
+        const discoResult = await auditFetchWikipediaLatest(artist);
+        const artistWikiYear = await auditFetchArtistWiki(artist);
+
+        let latestYear = articleYear;
+        let latestWork = null;
+
+        if (discoResult && discoResult.year) {
+            latestYear = Math.max(latestYear, discoResult.year);
+            if (discoResult.work && discoResult.year === latestYear) {
+                latestWork = discoResult.work;
+            }
+        }
+        if (artistWikiYear && artistWikiYear > latestYear) {
+            latestYear = artistWikiYear;
+            latestWork = null; // couldn't extract work name from main page
+        }
+
+        auditResults[artist] = {
+            articleYear,
+            latestYear,
+            latestWork,
+            status: latestYear - articleYear <= 1 ? 'fresh' : latestYear - articleYear <= 3 ? 'stale' : 'outdated'
+        };
+        resultEl.innerHTML = formatAuditResult(auditResults[artist]);
+        if (btnEl) btnEl.textContent = 'Done';
+    } catch (err) {
+        auditResults[artist] = { error: 'Check failed: ' + err.message };
+        resultEl.innerHTML = formatAuditResult(auditResults[artist]);
+    }
+}
+
+async function auditCheckAll() {
+    if (auditRunning) return;
+    auditRunning = true;
+    auditAbort = false;
+    document.getElementById('audit-all-btn').disabled = true;
+    document.getElementById('audit-stop-btn').style.display = '';
+
+    const artists = Object.keys(BESTOF_ARTICLES).filter(a => !auditResults[a]);
+    const total = artists.length;
+    let completed = 0;
+
+    const progressEl = document.getElementById('audit-progress');
+    progressEl.textContent = `0 / ${total}`;
+
+    const queue = [...artists];
+    async function worker() {
+        while (queue.length > 0 && !auditAbort) {
+            const artist = queue.shift();
+            await auditCheckOne(artist);
+            completed++;
+            progressEl.textContent = `${completed} / ${total}`;
+            // Small delay to be nice to APIs
+            await new Promise(r => setTimeout(r, 300));
+        }
+    }
+
+    // Run 3 concurrent workers
+    const workers = [];
+    for (let i = 0; i < 3; i++) workers.push(worker());
+    await Promise.all(workers);
+
+    auditRunning = false;
+    document.getElementById('audit-all-btn').disabled = false;
+    document.getElementById('audit-stop-btn').style.display = 'none';
+    progressEl.textContent = auditAbort ? 'Stopped' : 'Done!';
+}
+
+function auditStop() {
+    auditAbort = true;
+}
+
+function auditSort(mode) {
+    auditSortMode = mode;
+    document.querySelectorAll('.audit-sort-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('sort-' + mode).classList.add('active');
+    renderAuditList();
 }
 
 function getOrdinal(n) {

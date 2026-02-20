@@ -2941,13 +2941,40 @@ async function auditFetchArticle(url) {
 }
 
 function extractMaxYearFromArticle(html) {
-    // Strip HTML tags, get text content
-    const text = html.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
-                     .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
-                     .replace(/<[^>]+>/g, ' ')
-                     .replace(/&\w+;/g, ' ');
+    // Try to isolate the main editorial content area to avoid
+    // picking up years from footers (© 2026), sidebars, nav, related articles
+    let contentHtml = html;
 
-    // Find all 4-digit years in article body (1950-2026)
+    // 1. Try to extract just the entry-content div (WordPress/MVP theme)
+    const entryMatch = html.match(/<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*(?:<\/article>|<div[^>]*class="[^"]*(?:mvp-|infinite-|widget))/i);
+    if (entryMatch) {
+        contentHtml = entryMatch[1];
+    } else {
+        // 2. Fallback: try <article> tag
+        const articleMatch = html.match(/<article[^>]*>([\s\S]*?)<\/article>/i);
+        if (articleMatch) {
+            contentHtml = articleMatch[1];
+        } else {
+            // 3. Last resort: strip known boilerplate sections
+            contentHtml = html;
+        }
+        // Strip footer, nav, sidebar, related articles
+        contentHtml = contentHtml.replace(/<footer[\s\S]*?<\/footer>/gi, '')
+                                 .replace(/<nav[\s\S]*?<\/nav>/gi, '')
+                                 .replace(/<div[^>]*id="mvp-foot[^"]*"[\s\S]*?<\/div>/gi, '')
+                                 .replace(/<div[^>]*class="[^"]*infinite-content[^"]*"[\s\S]*?<\/div>/gi, '')
+                                 .replace(/<div[^>]*class="[^"]*mvp-tab-col[^"]*"[\s\S]*?<\/div>/gi, '');
+    }
+
+    // Strip scripts, styles, iframes, JSON-LD
+    const text = contentHtml
+        .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+        .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+        .replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/&\w+;/g, ' ');
+
+    // Find all 4-digit years in content (1950-2026)
     const years = [];
     const yearRegex = /\b(19[5-9]\d|20[0-2]\d)\b/g;
     let match;

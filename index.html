@@ -495,169 +495,6 @@
 
         .no-data { text-align: center; color: #7DD3E8; padding: 40px; }
 
-        /* Billions Club Styles */
-        .billions-header {
-            text-align: center;
-            padding: 30px 20px;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 105, 180, 0.1) 50%, rgba(0, 255, 255, 0.1) 100%);
-            border-radius: 16px;
-            border: 2px solid rgba(255, 215, 0, 0.3);
-        }
-        .billions-header h2 {
-            font-family: 'Righteous', cursive;
-            font-size: 2rem;
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 30%, #FF69B4 60%, #00FFFF 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 8px;
-            animation: goldShimmer 3s ease-in-out infinite;
-            background-size: 200% 200%;
-        }
-        @keyframes goldShimmer {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-        }
-        .billions-header p {
-            color: #FFD700;
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-        .billions-stats {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 16px;
-        }
-        .billions-stat {
-            text-align: center;
-        }
-        .billions-stat .number {
-            font-family: 'Righteous', cursive;
-            font-size: 2rem;
-            color: #FFD700;
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-        }
-        .billions-stat .label {
-            font-size: 0.75rem;
-            color: #7DD3E8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .billions-grid {
-            display: grid;
-            gap: 16px;
-        }
-        .billion-card {
-            display: flex;
-            gap: 16px;
-            padding: 16px;
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.08) 0%, rgba(0, 20, 40, 0.6) 100%);
-            border-radius: 12px;
-            border: 2px solid rgba(255, 215, 0, 0.2);
-            transition: all 0.3s;
-            position: relative;
-            overflow: hidden;
-        }
-        .billion-card::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .billion-card:hover {
-            border-color: #FFD700;
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
-        }
-        .billion-card:hover::before { opacity: 1; }
-
-        .billion-rank {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            border-radius: 50%;
-            font-family: 'Righteous', cursive;
-            font-size: 1.2rem;
-            color: #0a1628;
-            flex-shrink: 0;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
-        }
-        .billion-thumb {
-            width: 180px;
-            height: 100px;
-            border-radius: 8px;
-            object-fit: cover;
-            flex-shrink: 0;
-            border: 3px solid rgba(255, 215, 0, 0.3);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .billion-thumb:hover {
-            border-color: #FFD700;
-            box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
-        }
-        .billion-info {
-            flex: 1;
-            min-width: 0;
-            position: relative;
-            z-index: 1;
-        }
-        .billion-artist {
-            font-size: 0.85rem;
-            color: #FFD700;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-        .billion-title {
-            font-size: 1rem;
-            color: #E0F7FF;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-        .billion-views {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 14px;
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: #0a1628;
-        }
-        .billion-views::before {
-            content: '👑';
-        }
-        .billion-actions {
-            display: flex;
-            gap: 8px;
-            margin-top: 10px;
-        }
-        .billion-btn {
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            border: none;
-            cursor: pointer;
-            font-family: 'Inter', sans-serif;
-            transition: all 0.3s;
-        }
-        .billion-btn.watch {
-            background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
-            color: #fff;
-        }
-        .billion-btn.watch:hover {
-            box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
-        }
-
         /* Official Artist Stores Styles */
         .stores-header {
             text-align: center;
@@ -1069,9 +906,6 @@
         <button class="tab-btn active" onclick="switchTab('youtube')" id="tab-youtube">
             YouTube Tracker
         </button>
-        <button class="tab-btn" onclick="switchTab('billions')" id="tab-billions">
-            YT Billions Club <span class="tab-badge" id="billions-count" style="display:none;">0</span>
-        </button>
         <button class="tab-btn" onclick="switchTab('stores')" id="tab-stores">
             Artist Stores <span class="tab-badge" id="stores-sold-out-count" style="display:none;">0</span>
         </button>
@@ -1120,31 +954,6 @@
         </div>
 
         <div id="feed"></div>
-    </div>
-
-    <!-- YouTube Billions Club Tab -->
-    <div class="tab-content" id="content-billions">
-        <div class="billions-header">
-            <h2>YouTube Billions Club</h2>
-            <p>Videos approaching or just crossing 1 billion views (985M - 1.2B)</p>
-            <div class="billions-stats">
-                <div class="billions-stat">
-                    <div class="number" id="billions-total">-</div>
-                    <div class="label">Videos Tracked</div>
-                </div>
-                <div class="billions-stat">
-                    <div class="number" id="billions-crossed">-</div>
-                    <div class="label">Crossed 1B</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="feed-header">
-            <div class="feed-title">Milestone Tracker</div>
-            <button class="refresh-btn" onclick="refreshBillions()">Refresh</button>
-        </div>
-
-        <div id="billions-list" class="billions-grid"></div>
     </div>
 
     <!-- Artist Stores Tab -->
@@ -1374,7 +1183,7 @@ function switchTab(tab) {
 // ─── Init ──────────────────────────────────────────────────────
 async function init() {
     loadChannels();
-    loadDismissed();
+    await loadDismissed();
     renderChannelPills();
     updateSubtitle();
     populateStoreButtons();
@@ -1386,8 +1195,6 @@ async function init() {
 function showInitialMessages() {
     // YouTube tab
     document.getElementById('feed').innerHTML = '<div class="no-data">Click <strong>Refresh</strong> to load videos.</div>';
-    // YouTube Billions tab
-    document.getElementById('billions-list').innerHTML = '<div class="no-data">Click <strong>Refresh</strong> to load Billions Club data.</div>';
     // Stores tab already shows individual store buttons
 }
 
@@ -1532,29 +1339,42 @@ document.getElementById('channel-search').addEventListener('keydown', e => {
     if (e.key === 'Enter') searchChannel();
 });
 
-// ─── Dismissed Videos ──────────────────────────────────────────
-function loadDismissed() {
-    const stored = localStorage.getItem('yt_tracker_dismissed');
-    if (stored) {
-        dismissed = JSON.parse(stored);
-        cleanDismissed();
+// ─── Dismissed Videos (Cloud-synced) ─────────────────────────
+const DISMISSED_API = 'https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/dismissed?key=racine456';
+
+async function loadDismissed() {
+    // Load from localStorage cache first for instant display
+    const cached = localStorage.getItem('yt_tracker_dismissed_ids');
+    if (cached) {
+        try { dismissed = JSON.parse(cached).map(id => ({ id, ts: 0 })); } catch {}
     }
+    // Then sync from cloud
+    try {
+        const res = await fetch(DISMISSED_API);
+        if (res.ok) {
+            const ids = await res.json();
+            dismissed = ids.map(id => ({ id, ts: 0 }));
+            localStorage.setItem('yt_tracker_dismissed_ids', JSON.stringify(ids));
+        }
+    } catch {}
 }
 
-function cleanDismissed() {
-    const cutoff = Date.now() - 7 * 24 * 60 * 60 * 1000;
-    dismissed = dismissed.filter(d => d.ts > cutoff);
-    saveDismissed();
-}
-
-function saveDismissed() {
-    localStorage.setItem('yt_tracker_dismissed', JSON.stringify(dismissed));
+function saveDismissedToCloud(videoId, action) {
+    fetch(DISMISSED_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ videoId, action })
+    }).catch(() => {});
 }
 
 function dismissVideo(videoId) {
     if (!dismissed.some(d => d.id === videoId)) {
         dismissed.push({ id: videoId, ts: Date.now() });
-        saveDismissed();
+        // Update local cache
+        const ids = dismissed.map(d => d.id);
+        localStorage.setItem('yt_tracker_dismissed_ids', JSON.stringify(ids));
+        // Sync to cloud
+        saveDismissedToCloud(videoId, 'dismiss');
     }
     const card = document.querySelector(`[data-video-id="${videoId}"]`);
     if (card) card.classList.add('dismissed');
@@ -1939,125 +1759,6 @@ function formatCount(n) {
 
 
 // ─── Billions Club ─────────────────────────────────────────────
-let billionsVideos = [];
-const BILLIONS_MIN = 985000000;  // 985 million
-const BILLIONS_MAX = 1200000000; // 1.2 billion
-
-async function refreshBillions() {
-    const listEl = document.getElementById('billions-list');
-    const artistChannels = channels.filter(c => c.type === 'artist');
-
-    if (artistChannels.length === 0) {
-        listEl.innerHTML = '<div class="no-data">No artist channels added. Add artists in the YouTube Tracker tab.</div>';
-        return;
-    }
-
-    listEl.innerHTML = '<div class="loading-spinner">Scanning for billion-view videos...</div>';
-
-    const results = [];
-
-    // Fetch videos from each artist channel
-    for (let i = 0; i < artistChannels.length; i += CONCURRENCY) {
-        const batch = artistChannels.slice(i, i + CONCURRENCY);
-        const promises = batch.map(async (channel) => {
-            try {
-                // Use Piped API to get channel videos sorted by popularity
-                const data = await pipedFetch(`/channel/${channel.channelId}`);
-                if (data && data.relatedStreams) {
-                    const billionVideos = data.relatedStreams
-                        .filter(v => v.views >= BILLIONS_MIN && v.views <= BILLIONS_MAX)
-                        .map(v => ({
-                            videoId: v.url ? v.url.replace('/watch?v=', '') : '',
-                            title: v.title || '',
-                            channel: data.name || channel.name,
-                            channelId: channel.channelId,
-                            thumbnail: v.thumbnail || '',
-                            views: v.views || 0
-                        }));
-                    return billionVideos;
-                }
-            } catch (e) {
-                console.log(`Failed to fetch ${channel.name}:`, e);
-            }
-            return [];
-        });
-
-        const batchResults = await Promise.all(promises);
-        batchResults.forEach(vids => results.push(...vids));
-
-        // Small delay between batches
-        if (i + CONCURRENCY < artistChannels.length) {
-            await new Promise(r => setTimeout(r, 100));
-        }
-    }
-
-    // Sort by views descending
-    billionsVideos = results.sort((a, b) => b.views - a.views);
-
-    renderBillions();
-}
-
-function renderBillions() {
-    const listEl = document.getElementById('billions-list');
-    const totalEl = document.getElementById('billions-total');
-    const crossedEl = document.getElementById('billions-crossed');
-    const badgeEl = document.getElementById('billions-count');
-
-    const crossed = billionsVideos.filter(v => v.views >= 1000000000);
-    const approaching = billionsVideos.filter(v => v.views < 1000000000);
-
-    totalEl.textContent = billionsVideos.length;
-    crossedEl.textContent = crossed.length;
-
-    if (billionsVideos.length > 0) {
-        badgeEl.textContent = billionsVideos.length;
-        badgeEl.style.display = 'inline';
-    } else {
-        badgeEl.style.display = 'none';
-    }
-
-    if (billionsVideos.length === 0) {
-        listEl.innerHTML = '<div class="no-data">No videos found in the 985M - 1.2B range yet.<br><br>Keep tracking your artists!</div>';
-        return;
-    }
-
-    listEl.innerHTML = billionsVideos.map((v, i) => {
-        const maxresThumbnail = `https://img.youtube.com/vi/${v.videoId}/maxresdefault.jpg`;
-        const hqThumbnail = `https://img.youtube.com/vi/${v.videoId}/hqdefault.jpg`;
-        const hasCrossed = v.views >= 1000000000;
-        const viewsFormatted = formatBillionViews(v.views);
-
-        return `
-        <div class="billion-card">
-            <div class="billion-rank">${i + 1}</div>
-            <img class="billion-thumb"
-                 src="${esc(v.thumbnail)}"
-                 alt=""
-                 loading="lazy"
-                 onerror="this.src='${hqThumbnail}'"
-                 onclick="openLightbox('${maxresThumbnail}', '${hqThumbnail}')">
-            <div class="billion-info">
-                <div class="billion-artist">${esc(v.channel)}</div>
-                <div class="billion-title">${esc(v.title)}</div>
-                <div class="billion-views">${viewsFormatted}</div>
-                <div class="billion-actions">
-                    <button class="billion-btn watch" onclick="window.open('https://www.youtube.com/watch?v=${esc(v.videoId)}','_blank')">
-                        ▶ Watch
-                    </button>
-                </div>
-            </div>
-        </div>`;
-    }).join('');
-}
-
-function formatBillionViews(n) {
-    if (n >= 1e9) {
-        return (n / 1e9).toFixed(2) + ' BILLION';
-    }
-    return (n / 1e6).toFixed(0) + ' MILLION';
-}
-
-
 // ─── Official Artist Stores ────────────────────────────────────
 const ARTIST_STORES = [
     { name: '2Pac', url: 'https://shop.2pac.com', handle: 'shop.2pac.com' },

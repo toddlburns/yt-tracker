@@ -373,7 +373,131 @@ def filter_chart_events(events, videos):
     return filtered
 
 
+def discover_bestof_artists():
+    """Scan XLSX for all artists that have a 'best of' article on uDiscover.
+    Returns dict: artist_name -> best article URL."""
+    wb = openpyxl.load_workbook(XLSX_PATH, read_only=True)
+    ws = wb.active
+
+    # Words that indicate a non-artist "best of" list
+    skip_words = [
+        'jazz', 'rock', 'pop', 'soul', 'blues', 'country', 'metal', 'punk',
+        'hip-hop', 'hip hop', 'r&b', 'christmas', 'halloween', 'wedding',
+        'workout', 'summer', 'winter', 'spring', 'fall', '80s', '90s', '70s', '60s',
+        'of all time', 'concept', 'cover', 'movie', 'film', 'festival',
+        'brit', 'new wave', 'alternative', 'indie', 'latin', 'classical',
+        'motown', 'electric guitar', 'acoustic', 'psychedelic', 'protest',
+        'one-hit', 'debut', 'romantic', 'love', 'sad', 'happy', 'karaoke',
+        'breakup', 'best of', 'soundtrack', 'duet', 'reggae', 'dance',
+        'power ballad', 'road trip', 'driving', 'running', 'birthday',
+        'july', 'earth day', 'thanksgiving', 'hannukah', 'biking',
+        'homecoming', 'graduation', 'new jack swing', 'glastonbury',
+        'grammy', 'woodstock', 'def jam', 'fania', 'musart', 'ecm',
+        'solo piano', 'ambient', 'biopic', 'break-up', 'live album',
+        'boy band', 'girl group', 'funk', 'grunge', 'emo', 'opera',
+        'k-pop', 'disco', 'synth', 'gospel', 'spoken word', 'anime',
+    ]
+
+    results = {}  # artist_name -> (url, score)
+
+    for row in ws.iter_rows(min_row=4, values_only=True):
+        name = str(row[0] or '').strip()
+        feat_link = str(row[10] or '').strip()
+        if not feat_link or feat_link in ('', '...', 'None') or 'udiscovermusic.com' not in feat_link:
+            continue
+
+        name_lower = name.lower()
+        artist = None
+        score = 0
+
+        # Pattern 1: 'Best ARTIST Songs/Albums/Tracks:' or 'The Best ARTIST Songs...'
+        m = re.match(r'(?:The )?Best (.+?) (?:Songs|Albums|Tracks|Pieces|Performances|Vocal Performances|Hits|Live Albums|Collaborations|Deep Cuts)(?:\s*[:\-]|$)', name, re.IGNORECASE)
+        if m:
+            artist = m.group(1).strip()
+            score = 80
+
+        # Pattern 2: 'ARTIST In 20 Songs/Quotes'
+        if not artist:
+            m = re.match(r'(.+?) In 20 (?:Songs|Quotes)', name, re.IGNORECASE)
+            if m:
+                candidate = m.group(1).strip()
+                if ':' in candidate:
+                    candidate = candidate.split(':')[-1].strip()
+                artist = candidate
+                score = 100
+
+        # Pattern 3: 'Essential ARTIST ...'
+        if not artist:
+            m = re.match(r'Essential (.+?)(?:\s+(?:Songs|Albums|Tracks|Guide))?\s*[:\-]', name, re.IGNORECASE)
+            if m:
+                artist = m.group(1).strip()
+                score = 70
+
+        # Pattern 4: 'Things You Never Knew About ARTIST'
+        if not artist:
+            m = re.search(r'(?:Things You (?:Never |Didn.t )?Know|Facts) (?:About )?(.+?)(?:\.|$)', name, re.IGNORECASE)
+            if m:
+                artist = m.group(1).strip()
+                score = 60
+
+        # Pattern 5: 'Greatest ARTIST Songs/Albums/Hits'
+        if not artist:
+            m = re.match(r'(?:The )?Greatest (.+?) (?:Songs|Albums|Hits)', name, re.IGNORECASE)
+            if m:
+                artist = m.group(1).strip()
+                score = 50
+
+        if not artist:
+            continue
+
+        # Skip generic/non-artist entries
+        if any(w in artist.lower() for w in skip_words):
+            continue
+        if re.match(r'^\d{4}', artist) or re.match(r'^[\d\s]+$', artist):
+            continue
+        if len(artist) < 2 or len(artist) > 50:
+            continue
+
+        if artist not in results or score > results[artist][1]:
+            results[artist] = (feat_link, score)
+
+    wb.close()
+
+    # Canonical name mapping for near-duplicates of tracked artists
+    canonical = {
+        'Beach Boys': 'The Beach Boys',
+        'Mary J Blige': 'Mary J. Blige',
+        'Yusuf / Cat Stevens': 'Cat Stevens',
+        'Queen Of The Stone Age': 'Queens of the Stone Age',
+        'The Carpenters': 'Carpenters',
+    }
+    cleaned = {}
+    for artist, val in results.items():
+        canon = canonical.get(artist, artist)
+        if canon not in cleaned or val[1] > cleaned[canon][1]:
+            cleaned[canon] = val
+
+    return {a: url for a, (url, _) in cleaned.items()}
+
+
 def main():
+    # Step 0: Discover all artists with "best of" articles
+    print("Discovering artists with 'best of' articles on uDiscover...")
+    bestof_artists = discover_bestof_artists()
+    print(f"  Found {len(bestof_artists)} artists with best-of articles")
+
+    # Expand tracked artists to include best-of artists
+    global TRACKED_ARTISTS, SHORT_NAMES, ARTIST_PATTERNS
+    new_artists = [a for a in bestof_artists if a not in set(TRACKED_ARTISTS)]
+    print(f"  {len(new_artists)} are new (not in the 77 tracked)")
+    TRACKED_ARTISTS = TRACKED_ARTISTS + new_artists
+
+    # Expand short names set for new short names
+    for a in new_artists:
+        if len(a.split()) == 1 and len(a) <= 5:
+            SHORT_NAMES.add(a)
+    ARTIST_PATTERNS = build_artist_patterns()
+
     print("Extracting editorial events from XLSX...")
     events, birthdays = extract_editorial_events()
     print(f"  Found {len(events)} events, {len(birthdays)} birthdays")
@@ -395,8 +519,17 @@ def main():
     social_posts = extract_social_posts()
     print(f"  Found {len(social_posts)} artist+date combos with social posts")
 
-    # Find "best of" / overview articles for birthday artists missing articleUrl
-    print("Finding overview articles for birthday artists...")
+    # Attach best-of article URLs to birthday entries and as overview articles
+    print("Attaching best-of articles to birthdays...")
+    added_bestof = 0
+    for artist, url in bestof_artists.items():
+        if artist in birthdays and 'articleUrl' not in birthdays[artist]:
+            birthdays[artist]['articleUrl'] = url
+            added_bestof += 1
+    print(f"  Attached best-of articles to {added_bestof} birthdays")
+
+    # Also do the existing second-pass for more specific article matching
+    print("Finding additional overview articles for birthday artists...")
     wb2 = openpyxl.load_workbook(XLSX_PATH, read_only=True)
     ws2 = wb2.active
     best_articles = {}  # artist -> (url, score)
@@ -428,14 +561,15 @@ def main():
         if 'articleUrl' not in birthdays[artist]:
             birthdays[artist]['articleUrl'] = url
             added += 1
-    print(f"  Added overview articles to {added} birthdays")
+    print(f"  Added additional overview articles to {added} birthdays")
 
     # Write JS file
     js = "// Auto-generated by extract_data.py — do not edit manually\n"
     js += f"const EDITORIAL_EVENTS = {json.dumps(events, indent=2)};\n\n"
     js += f"const ARTIST_BIRTHDAYS = {json.dumps(birthdays, indent=2)};\n\n"
     js += f"const MUSIC_VIDEO_ANNIVERSARIES = {json.dumps(videos, indent=2)};\n\n"
-    js += f"const SOCIAL_POSTS = {json.dumps(social_posts, indent=2)};\n"
+    js += f"const SOCIAL_POSTS = {json.dumps(social_posts, indent=2)};\n\n"
+    js += f"const BESTOF_ARTICLES = {json.dumps(bestof_artists, indent=2)};\n"
 
     with open(OUTPUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
@@ -445,6 +579,7 @@ def main():
     print(f"  {len(birthdays)} artist birthdays")
     print(f"  {len(videos)} music video anniversaries")
     print(f"  {len(social_posts)} social post groups")
+    print(f"  {len(bestof_artists)} best-of article links")
 
 
 if __name__ == "__main__":

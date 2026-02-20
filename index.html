@@ -2916,6 +2916,11 @@ function renderEditorial() {
         return diff;
     }
 
+    // Best-of article fallback lookup
+    function bestofUrl(artist) {
+        return (typeof BESTOF_ARTICLES !== 'undefined' && BESTOF_ARTICLES[artist]) || null;
+    }
+
     // 1. Birthdays
     if (typeof ARTIST_BIRTHDAYS !== 'undefined') {
         for (const [artist, info] of Object.entries(ARTIST_BIRTHDAYS)) {
@@ -2932,7 +2937,7 @@ function renderEditorial() {
                     origYear: info.birthYear,
                     daysUntil: days,
                     icon: '\uD83C\uDF82',
-                    articleUrl: info.articleUrl || null
+                    articleUrl: info.articleUrl || bestofUrl(artist) || null
                 });
             }
         }
@@ -2962,7 +2967,7 @@ function renderEditorial() {
                     origYear: ev.origYear,
                     daysUntil: days,
                     icon: icon,
-                    articleUrl: ev.articleUrl || null,
+                    articleUrl: ev.articleUrl || bestofUrl(ev.artist) || null,
                     socialAssetUrl: ev.socialAssetUrl || null
                 });
             }
@@ -2992,7 +2997,8 @@ function renderEditorial() {
                     daysUntil: days,
                     icon: '\u25B6\uFE0F',
                     youtubeId: vid.youtubeId,
-                    views: vid.views
+                    views: vid.views,
+                    articleUrl: bestofUrl(vid.artist) || null
                 });
             }
         }

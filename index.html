@@ -3678,11 +3678,16 @@ function renderEditorial() {
                 const primaryIcon = items.find(i => i.type === 'birthday') ? '\uD83C\uDF82' : items[0].icon;
                 const groupAuditHtml = auditInlineHtml(artist, auditRendered);
                 const groupPageAuditHtml = pageAuditInlineHtml(artist, auditRendered);
+                const groupPageUrl = items[0].artistPageUrl || artistPageUrl(artist);
+                const groupArticleUrl = bestofUrl(artist);
+                const groupPageLinkHtml = groupPageUrl ? `<a class="editorial-page-link" href="${groupPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page" onclick="event.stopPropagation()">👤</a>` : '';
+                const groupArticleLinkHtml = groupArticleUrl ? `<a class="editorial-article-link" href="${groupArticleUrl}" target="_blank" rel="noopener" title="uDiscover best-of article" onclick="event.stopPropagation()"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
                 html += `<div class="editorial-artist-group" id="${gid}">
                     <div class="editorial-group-header" onclick="document.getElementById('${gid}').classList.toggle('open')">
                         <div class="editorial-card-icon">${primaryIcon}</div>
                         <span class="editorial-card-artist">${artist}</span>
                         <span class="editorial-group-count">${items.length} events</span>
+                        <span class="editorial-card-links" onclick="event.stopPropagation()">${groupPageLinkHtml}${groupArticleLinkHtml}</span>
                         ${groupAuditHtml}${groupPageAuditHtml}
                         <span class="editorial-group-chevron">\u25B6</span>
                     </div>

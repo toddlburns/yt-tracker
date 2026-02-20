@@ -2941,38 +2941,34 @@ async function auditFetchArticle(url) {
 }
 
 function extractMaxYearFromArticle(html) {
-    // Try to isolate the main editorial content area to avoid
-    // picking up years from footers (© 2026), sidebars, nav, related articles
-    let contentHtml = html;
+    // Use DOMParser to properly parse HTML and strip boilerplate
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
 
-    // 1. Try to extract just the entry-content div (WordPress/MVP theme)
-    const entryMatch = html.match(/<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>([\s\S]*?)<\/div>\s*(?:<\/article>|<div[^>]*class="[^"]*(?:mvp-|infinite-|widget))/i);
-    if (entryMatch) {
-        contentHtml = entryMatch[1];
-    } else {
-        // 2. Fallback: try <article> tag
-        const articleMatch = html.match(/<article[^>]*>([\s\S]*?)<\/article>/i);
-        if (articleMatch) {
-            contentHtml = articleMatch[1];
-        } else {
-            // 3. Last resort: strip known boilerplate sections
-            contentHtml = html;
-        }
-        // Strip footer, nav, sidebar, related articles
-        contentHtml = contentHtml.replace(/<footer[\s\S]*?<\/footer>/gi, '')
-                                 .replace(/<nav[\s\S]*?<\/nav>/gi, '')
-                                 .replace(/<div[^>]*id="mvp-foot[^"]*"[\s\S]*?<\/div>/gi, '')
-                                 .replace(/<div[^>]*class="[^"]*infinite-content[^"]*"[\s\S]*?<\/div>/gi, '')
-                                 .replace(/<div[^>]*class="[^"]*mvp-tab-col[^"]*"[\s\S]*?<\/div>/gi, '');
+    // Remove all boilerplate elements that pollute year extraction
+    const removeSelectors = [
+        'script', 'style', 'iframe', 'noscript',
+        'footer', 'nav', 'header',
+        // uDiscover MVP theme: footer sections
+        '[id^="mvp-foot"]',
+        // Sidebar widgets (features, latest news with current dates)
+        '[id^="mvp_tabber"]', '[id^="mvp-tabber"]',
+        '[id="mvp-tab-col2"]', '[id="mvp-tab-col3"]',
+        '.mvp-tabber-widget',
+        // Navigation
+        '[id^="mvp-main-nav"]', '.mvp-fly-nav-menu', '.mvp-drop-nav-title',
+        // Related articles
+        '.infinite-content',
+        // Social sharing, ads
+        '.mvp-soc-share', '.mvp-org-wrap',
+    ];
+    for (const sel of removeSelectors) {
+        doc.querySelectorAll(sel).forEach(el => el.remove());
     }
 
-    // Strip scripts, styles, iframes, JSON-LD
-    const text = contentHtml
-        .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
-        .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
-        .replace(/<iframe[^>]*>[\s\S]*?<\/iframe>/gi, '')
-        .replace(/<[^>]+>/g, ' ')
-        .replace(/&\w+;/g, ' ');
+    // Try to get just the entry-content (articles) or fall back to body
+    const content = doc.querySelector('.entry-content') || doc.querySelector('article') || doc.body;
+    const text = (content ? content.textContent : doc.body.textContent) || '';
 
     // Find all 4-digit years in content (1950-2026)
     const years = [];

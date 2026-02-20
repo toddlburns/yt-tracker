@@ -3252,22 +3252,27 @@ function renderEditorial() {
 
     // 1. Birthdays
     if (typeof ARTIST_BIRTHDAYS !== 'undefined') {
-        for (const [artist, info] of Object.entries(ARTIST_BIRTHDAYS)) {
+        for (const [key, info] of Object.entries(ARTIST_BIRTHDAYS)) {
             const days = daysUntil(info.month, info.day);
             if (days >= 0 && days <= 30) {
                 const age = currentYear - info.birthYear + (days === 0 ? 0 : (info.month > todayMonth || (info.month === todayMonth && info.day >= todayDay) ? 0 : 1));
+                // For band members, artist = band name for grouping; display shows member
+                const isBandMember = !!info.bandName;
+                const displayArtist = isBandMember ? info.bandName : key;
+                const memberLabel = isBandMember ? info.memberName : key;
+                const descLabel = isBandMember ? `${info.memberName} — Birthday` : 'Birthday';
                 upcoming.push({
                     type: 'birthday',
-                    artist: artist,
-                    description: `Birthday`,
+                    artist: displayArtist,
+                    description: descLabel,
                     detail: `${getOrdinal(age)} Birthday (born ${info.birthYear})`,
                     month: info.month,
                     day: info.day,
                     origYear: info.birthYear,
                     daysUntil: days,
                     icon: '\uD83C\uDF82',
-                    articleUrl: info.articleUrl || bestofUrl(artist) || null,
-                    artistPageUrl: info.artistPageUrl || artistPageUrl(artist) || null
+                    articleUrl: info.articleUrl || bestofUrl(displayArtist) || null,
+                    artistPageUrl: info.artistPageUrl || artistPageUrl(displayArtist) || null
                 });
             }
         }

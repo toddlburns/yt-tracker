@@ -13680,6 +13680,4141 @@ const ARTIST_BIRTHDAYS = {
     "day": 31,
     "articleUrl": "https://www.udiscovermusic.com/stories/best-the-police-songs/",
     "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
+  },
+  "2Pac": {
+    "birthYear": 1971,
+    "month": 6,
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/2pac"
+  },
+  "50 Cent": {
+    "birthYear": 1975,
+    "month": 7,
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/50-cent",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-50-cent-songs/"
+  },
+  "ABBA \u2014 Agnetha F\u00e4ltskog": {
+    "birthYear": 1950,
+    "month": 4,
+    "day": 5,
+    "bandName": "ABBA",
+    "memberName": "Agnetha F\u00e4ltskog",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/abba"
+  },
+  "ABBA \u2014 Bj\u00f6rn Ulvaeus": {
+    "birthYear": 1945,
+    "month": 4,
+    "day": 25,
+    "bandName": "ABBA",
+    "memberName": "Bj\u00f6rn Ulvaeus",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/abba"
+  },
+  "ABBA \u2014 Benny Andersson": {
+    "birthYear": 1946,
+    "month": 12,
+    "day": 16,
+    "bandName": "ABBA",
+    "memberName": "Benny Andersson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/abba"
+  },
+  "Aerosmith \u2014 Steven Tyler": {
+    "birthYear": 1948,
+    "month": 3,
+    "day": 26,
+    "bandName": "Aerosmith",
+    "memberName": "Steven Tyler",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/aerosmith",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-aerosmith-songs-feature/"
+  },
+  "Aerosmith \u2014 Joe Perry": {
+    "birthYear": 1950,
+    "month": 9,
+    "day": 10,
+    "bandName": "Aerosmith",
+    "memberName": "Joe Perry",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/aerosmith",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-aerosmith-songs-feature/"
+  },
+  "Aerosmith \u2014 Tom Hamilton": {
+    "birthYear": 1951,
+    "month": 12,
+    "day": 31,
+    "bandName": "Aerosmith",
+    "memberName": "Tom Hamilton",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/aerosmith",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-aerosmith-songs-feature/"
+  },
+  "Alan Jackson": {
+    "birthYear": 1958,
+    "month": 10,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/alan-jackson"
+  },
+  "Albert King": {
+    "birthYear": 1923,
+    "month": 4,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/albert-king"
+  },
+  "Alice Cooper": {
+    "birthYear": 1948,
+    "month": 2,
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Alice-Cooper"
+  },
+  "Alison Krauss": {
+    "birthYear": 1971,
+    "month": 7,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/alison-krauss"
+  },
+  "Andre Rieu": {
+    "birthYear": 1949,
+    "month": 10,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/andre-rieu"
+  },
+  "Andrea Bocelli": {
+    "birthYear": 1958,
+    "month": 9,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/andrea-bocelli"
+  },
+  "Andrew W.K.": {
+    "birthYear": 1979,
+    "month": 5,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/andrew-w-k"
+  },
+  "Anna-Frid Lyngstad": {
+    "birthYear": 1945,
+    "month": 11,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/frida-lyngstad"
+  },
+  "Anthrax \u2014 Joey Belladonna": {
+    "birthYear": 1960,
+    "month": 10,
+    "day": 13,
+    "bandName": "Anthrax",
+    "memberName": "Joey Belladonna",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/anthrax"
+  },
+  "Apache Indian": {
+    "birthYear": 1967,
+    "month": 5,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/apache-indian"
+  },
+  "Arcade Fire \u2014 Win Butler": {
+    "birthYear": 1980,
+    "month": 4,
+    "day": 14,
+    "bandName": "Arcade Fire",
+    "memberName": "Win Butler",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/arcade-fire"
+  },
+  "Arcade Fire \u2014 R\u00e9gine Chassagne": {
+    "birthYear": 1976,
+    "month": 8,
+    "day": 19,
+    "bandName": "Arcade Fire",
+    "memberName": "R\u00e9gine Chassagne",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/arcade-fire"
+  },
+  "Arcade Fire \u2014 Richard Parry": {
+    "birthYear": 1977,
+    "month": 10,
+    "day": 4,
+    "bandName": "Arcade Fire",
+    "memberName": "Richard Parry",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/arcade-fire"
+  },
+  "Arrested Development \u2014 Speech": {
+    "birthYear": 1968,
+    "month": 10,
+    "day": 25,
+    "bandName": "Arrested Development",
+    "memberName": "Speech",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/arrested-development"
+  },
+  "Ashley Campbell": {
+    "birthYear": 1986,
+    "month": 12,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ashley-campbell"
+  },
+  "Astrud Gilberto": {
+    "birthYear": 1940,
+    "month": 3,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/astrud-gilberto"
+  },
+  "Audioslave \u2014 Tom Morello": {
+    "birthYear": 1964,
+    "month": 5,
+    "day": 30,
+    "bandName": "Audioslave",
+    "memberName": "Tom Morello",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/audioslave"
+  },
+  "Audioslave \u2014 Tim Commerford": {
+    "birthYear": 1968,
+    "month": 2,
+    "day": 26,
+    "bandName": "Audioslave",
+    "memberName": "Tim Commerford",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/audioslave"
+  },
+  "B.B. King": {
+    "birthYear": 1925,
+    "month": 9,
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/b-b-king"
+  },
+  "Badfinger \u2014 Peter Hamm": {
+    "birthYear": 1966,
+    "month": 1,
+    "day": 1,
+    "bandName": "Badfinger",
+    "memberName": "Peter Hamm",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/badfinger"
+  },
+  "Badfinger \u2014 Joey Molland": {
+    "birthYear": 1947,
+    "month": 6,
+    "day": 21,
+    "bandName": "Badfinger",
+    "memberName": "Joey Molland",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/badfinger"
+  },
+  "Badfinger \u2014 Tom Evans": {
+    "birthYear": 1947,
+    "month": 6,
+    "day": 5,
+    "bandName": "Badfinger",
+    "memberName": "Tom Evans",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/badfinger"
+  },
+  "Barclay James Harvest \u2014 Mel Pritchard": {
+    "birthYear": 1948,
+    "month": 1,
+    "day": 20,
+    "bandName": "Barclay James Harvest",
+    "memberName": "Mel Pritchard",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/barclay-james-harvest"
+  },
+  "Beastie Boys \u2014 Mike D": {
+    "birthYear": 1965,
+    "month": 11,
+    "day": 20,
+    "bandName": "Beastie Boys",
+    "memberName": "Mike D",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys",
+    "articleUrl": "https://www.udiscovermusic.com/stories/beastie-boys-in-20-songs/"
+  },
+  "Beastie Boys \u2014 Adam Yauch": {
+    "birthYear": 1964,
+    "month": 8,
+    "day": 5,
+    "bandName": "Beastie Boys",
+    "memberName": "Adam Yauch",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys",
+    "articleUrl": "https://www.udiscovermusic.com/stories/beastie-boys-in-20-songs/"
+  },
+  "Beastie Boys \u2014 Ad-Rock": {
+    "birthYear": 1966,
+    "month": 10,
+    "day": 31,
+    "bandName": "Beastie Boys",
+    "memberName": "Ad-Rock",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys",
+    "articleUrl": "https://www.udiscovermusic.com/stories/beastie-boys-in-20-songs/"
+  },
+  "Beck": {
+    "birthYear": 1970,
+    "month": 7,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Beck"
+  },
+  "Bee Gees \u2014 Barry Gibb": {
+    "birthYear": 1946,
+    "month": 9,
+    "day": 1,
+    "bandName": "Bee Gees",
+    "memberName": "Barry Gibb",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees",
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-bee-gees-in-20-songs/"
+  },
+  "Bee Gees \u2014 Robin Gibb": {
+    "birthYear": 1949,
+    "month": 12,
+    "day": 22,
+    "bandName": "Bee Gees",
+    "memberName": "Robin Gibb",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees",
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-bee-gees-in-20-songs/"
+  },
+  "Bee Gees \u2014 Maurice Gibb": {
+    "birthYear": 1949,
+    "month": 12,
+    "day": 22,
+    "bandName": "Bee Gees",
+    "memberName": "Maurice Gibb",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees",
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-bee-gees-in-20-songs/"
+  },
+  "Belinda Carlisle": {
+    "birthYear": 1958,
+    "month": 8,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/belinda-carlisle"
+  },
+  "Ben Harper": {
+    "birthYear": 1969,
+    "month": 10,
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ben-harper"
+  },
+  "Ben Howard": {
+    "birthYear": 1987,
+    "month": 4,
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/?post_type=artists&p=29929"
+  },
+  "Big Country \u2014 Stuart Adamson": {
+    "birthYear": 1958,
+    "month": 4,
+    "day": 11,
+    "bandName": "Big Country",
+    "memberName": "Stuart Adamson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/big-country"
+  },
+  "Billie Holiday": {
+    "birthYear": 1915,
+    "month": 4,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/billie-holiday"
+  },
+  "Billy Fury": {
+    "birthYear": 1940,
+    "month": 4,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/billy-fury"
+  },
+  "Billy Preston": {
+    "birthYear": 1946,
+    "month": 9,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/billy-preston"
+  },
+  "Bj\u00f6rk": {
+    "birthYear": 1965,
+    "month": 11,
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bjork"
+  },
+  "Black Eyed Peas \u2014 will.i.am": {
+    "birthYear": 1975,
+    "month": 3,
+    "day": 15,
+    "bandName": "Black Eyed Peas",
+    "memberName": "will.i.am",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/black-eyed-peas",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-black-eyed-peas-songs/"
+  },
+  "Black Eyed Peas \u2014 apl.de.ap": {
+    "birthYear": 1974,
+    "month": 11,
+    "day": 28,
+    "bandName": "Black Eyed Peas",
+    "memberName": "apl.de.ap",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/black-eyed-peas",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-black-eyed-peas-songs/"
+  },
+  "Black Eyed Peas \u2014 Taboo Nawasha": {
+    "birthYear": 1975,
+    "month": 7,
+    "day": 14,
+    "bandName": "Black Eyed Peas",
+    "memberName": "Taboo Nawasha",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/black-eyed-peas",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-black-eyed-peas-songs/"
+  },
+  "Black Sabbath": {
+    "birthYear": 1983,
+    "month": 9,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/black-sabbath"
+  },
+  "Black Uhuru \u2014 Michael Rose": {
+    "birthYear": 1957,
+    "month": 7,
+    "day": 11,
+    "bandName": "Black Uhuru",
+    "memberName": "Michael Rose",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/black-uhuru"
+  },
+  "Black Uhuru \u2014 Duckie Simpson": {
+    "birthYear": 1950,
+    "month": 6,
+    "day": 24,
+    "bandName": "Black Uhuru",
+    "memberName": "Duckie Simpson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/black-uhuru"
+  },
+  "Black Uhuru \u2014 Don Carlos": {
+    "birthYear": 1952,
+    "month": 6,
+    "day": 29,
+    "bandName": "Black Uhuru",
+    "memberName": "Don Carlos",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/black-uhuru"
+  },
+  "Blind Faith \u2014 Eric Clapton": {
+    "birthYear": 1945,
+    "month": 3,
+    "day": 30,
+    "bandName": "Blind Faith",
+    "memberName": "Eric Clapton",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blind-faith"
+  },
+  "Blind Faith \u2014 Ric Grech": {
+    "birthYear": 1946,
+    "month": 11,
+    "day": 1,
+    "bandName": "Blind Faith",
+    "memberName": "Ric Grech",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blind-faith"
+  },
+  "Blink 182 \u2014 Mark Hoppus": {
+    "birthYear": 1972,
+    "month": 3,
+    "day": 15,
+    "bandName": "Blink 182",
+    "memberName": "Mark Hoppus",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blink-182"
+  },
+  "Blink 182 \u2014 Travis Barker": {
+    "birthYear": 1975,
+    "month": 11,
+    "day": 14,
+    "bandName": "Blink 182",
+    "memberName": "Travis Barker",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blink-182"
+  },
+  "Blink 182 \u2014 Matt Skiba": {
+    "birthYear": 1976,
+    "month": 2,
+    "day": 24,
+    "bandName": "Blink 182",
+    "memberName": "Matt Skiba",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blink-182"
+  },
+  "Bo Diddley": {
+    "birthYear": 1928,
+    "month": 12,
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bo-diddley"
+  },
+  "Bon Jovi \u2014 Jon Bon Jovi": {
+    "birthYear": 1962,
+    "month": 3,
+    "day": 2,
+    "bandName": "Bon Jovi",
+    "memberName": "Jon Bon Jovi",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
+  },
+  "Bon Jovi \u2014 David Bryan": {
+    "birthYear": 1962,
+    "month": 2,
+    "day": 7,
+    "bandName": "Bon Jovi",
+    "memberName": "David Bryan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
+  },
+  "Bon Jovi \u2014 Tico Torres": {
+    "birthYear": 1953,
+    "month": 10,
+    "day": 7,
+    "bandName": "Bon Jovi",
+    "memberName": "Tico Torres",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
+  },
+  "Booker T": {
+    "birthYear": 1856,
+    "month": 4,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/booker-t"
+  },
+  "Brantley Gilbert": {
+    "birthYear": 1963,
+    "month": 1,
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brantley-gilbert"
+  },
+  "Brenda Holloway": {
+    "birthYear": 1946,
+    "month": 6,
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brenda-holloway"
+  },
+  "Bruce Springsteen": {
+    "birthYear": 1949,
+    "month": 9,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bruce-Springsteen"
+  },
+  "Bryan Adams": {
+    "birthYear": 1959,
+    "month": 11,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bryan-adams"
+  },
+  "Buddy Holly": {
+    "birthYear": 1936,
+    "month": 9,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/buddy-holly"
+  },
+  "Burning Spear": {
+    "birthYear": 1948,
+    "month": 3,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/burning-spear"
+  },
+  "Burt Bacharach": {
+    "birthYear": 1928,
+    "month": 5,
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/burt-bacharach"
+  },
+  "Canned Heat \u2014 Dale Spalding": {
+    "birthYear": 1949,
+    "month": 4,
+    "day": 16,
+    "bandName": "Canned Heat",
+    "memberName": "Dale Spalding",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/canned-heat"
+  },
+  "Canned Heat \u2014 Bob Hite": {
+    "birthYear": 1943,
+    "month": 2,
+    "day": 26,
+    "bandName": "Canned Heat",
+    "memberName": "Bob Hite",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/canned-heat"
+  },
+  "Canned Heat \u2014 Alan Wilson": {
+    "birthYear": 1943,
+    "month": 7,
+    "day": 4,
+    "bandName": "Canned Heat",
+    "memberName": "Alan Wilson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/canned-heat"
+  },
+  "Captain Beefheart": {
+    "birthYear": 1941,
+    "month": 1,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/captain-beefheart"
+  },
+  "Caravan \u2014 Pye Hastings": {
+    "birthYear": 1947,
+    "month": 1,
+    "day": 21,
+    "bandName": "Caravan",
+    "memberName": "Pye Hastings",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/caravan"
+  },
+  "Caravan \u2014 Dave Sinclair": {
+    "birthYear": 1947,
+    "month": 11,
+    "day": 24,
+    "bandName": "Caravan",
+    "memberName": "Dave Sinclair",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/caravan"
+  },
+  "Charlie Parker": {
+    "birthYear": 1920,
+    "month": 8,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Charlie-Parker"
+  },
+  "Cheap Trick \u2014 Rick Nielsen": {
+    "birthYear": 1948,
+    "month": 12,
+    "day": 22,
+    "bandName": "Cheap Trick",
+    "memberName": "Rick Nielsen",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cheap-trick"
+  },
+  "Cheap Trick \u2014 Bun E. Carlos": {
+    "birthYear": 1950,
+    "month": 6,
+    "day": 12,
+    "bandName": "Cheap Trick",
+    "memberName": "Bun E. Carlos",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cheap-trick"
+  },
+  "Cheap Trick \u2014 Tom Petersson": {
+    "birthYear": 1950,
+    "month": 5,
+    "day": 9,
+    "bandName": "Cheap Trick",
+    "memberName": "Tom Petersson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cheap-trick"
+  },
+  "Cher": {
+    "birthYear": 1946,
+    "month": 5,
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cher"
+  },
+  "Chris Stapleton": {
+    "birthYear": 1978,
+    "month": 4,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chris-stapleton"
+  },
+  "Commodores \u2014 Walter Orange": {
+    "birthYear": 1946,
+    "month": 12,
+    "day": 10,
+    "bandName": "Commodores",
+    "memberName": "Walter Orange",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/commodores"
+  },
+  "Corinne Bailey Rae": {
+    "birthYear": 1979,
+    "month": 2,
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/corinne-bailey-rae"
+  },
+  "Counting Crows \u2014 Adam Duritz": {
+    "birthYear": 1964,
+    "month": 8,
+    "day": 1,
+    "bandName": "Counting Crows",
+    "memberName": "Adam Duritz",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/counting-crows",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-counting-crows-songs-feature/"
+  },
+  "Counting Crows \u2014 David Bryson": {
+    "birthYear": 1961,
+    "month": 11,
+    "day": 5,
+    "bandName": "Counting Crows",
+    "memberName": "David Bryson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/counting-crows",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-counting-crows-songs-feature/"
+  },
+  "Counting Crows \u2014 Charlie Gillingham": {
+    "birthYear": 1960,
+    "month": 1,
+    "day": 26,
+    "bandName": "Counting Crows",
+    "memberName": "Charlie Gillingham",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/counting-crows",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-counting-crows-songs-feature/"
+  },
+  "Craig Armstrong": {
+    "birthYear": 1975,
+    "month": 5,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/craig-armstrong"
+  },
+  "Cream \u2014 Jack Bruce": {
+    "birthYear": 1943,
+    "month": 5,
+    "day": 14,
+    "bandName": "Cream",
+    "memberName": "Jack Bruce",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cream"
+  },
+  "Crowded House \u2014 Neil Finn": {
+    "birthYear": 1958,
+    "month": 5,
+    "day": 27,
+    "bandName": "Crowded House",
+    "memberName": "Neil Finn",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-crowded-house-songs/"
+  },
+  "Crowded House \u2014 Nick Seymour": {
+    "birthYear": 1958,
+    "month": 12,
+    "day": 9,
+    "bandName": "Crowded House",
+    "memberName": "Nick Seymour",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-crowded-house-songs/"
+  },
+  "Crowded House \u2014 Mitchell Froom": {
+    "birthYear": 1953,
+    "month": 6,
+    "day": 29,
+    "bandName": "Crowded House",
+    "memberName": "Mitchell Froom",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-crowded-house-songs/"
+  },
+  "Culture Club \u2014 Boy George": {
+    "birthYear": 1961,
+    "month": 6,
+    "day": 14,
+    "bandName": "Culture Club",
+    "memberName": "Boy George",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/culture-club"
+  },
+  "Culture Club \u2014 Mikey Craig": {
+    "birthYear": 1960,
+    "month": 2,
+    "day": 15,
+    "bandName": "Culture Club",
+    "memberName": "Mikey Craig",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/culture-club"
+  },
+  "Culture Club \u2014 Roy Hay": {
+    "birthYear": 1961,
+    "month": 8,
+    "day": 12,
+    "bandName": "Culture Club",
+    "memberName": "Roy Hay",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/culture-club"
+  },
+  "Cutting Crew \u2014 Nick Van Eede": {
+    "birthYear": 1958,
+    "month": 6,
+    "day": 14,
+    "bandName": "Cutting Crew",
+    "memberName": "Nick Van Eede",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cutting-crew"
+  },
+  "D'Angelo": {
+    "birthYear": 1974,
+    "month": 2,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dangelo"
+  },
+  "DMX": {
+    "birthYear": 1970,
+    "month": 12,
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dmx",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-dmx-songs/"
+  },
+  "Daniel Hope": {
+    "birthYear": 1973,
+    "month": 8,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/daniel-hope"
+  },
+  "Darren Hayes": {
+    "birthYear": 1972,
+    "month": 5,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/darren-hayes"
+  },
+  "David Bowie": {
+    "birthYear": 1947,
+    "month": 1,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/david-bowie"
+  },
+  "Dean Martin": {
+    "birthYear": 1917,
+    "month": 6,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dean-martin",
+    "articleUrl": "https://www.udiscovermusic.com/stories/dean-martin-best-songs-feature/"
+  },
+  "Debarge \u2014 Bunny DeBarge": {
+    "birthYear": 1955,
+    "month": 3,
+    "day": 10,
+    "bandName": "Debarge",
+    "memberName": "Bunny DeBarge",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/debarge"
+  },
+  "Debarge \u2014 Mark DeBarge": {
+    "birthYear": 1959,
+    "month": 6,
+    "day": 19,
+    "bandName": "Debarge",
+    "memberName": "Mark DeBarge",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/debarge"
+  },
+  "Debarge \u2014 Randy DeBarge": {
+    "birthYear": 1958,
+    "month": 8,
+    "day": 6,
+    "bandName": "Debarge",
+    "memberName": "Randy DeBarge",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/debarge"
+  },
+  "Def Leppard \u2014 Joe Elliott": {
+    "birthYear": 1959,
+    "month": 8,
+    "day": 1,
+    "bandName": "Def Leppard",
+    "memberName": "Joe Elliott",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-def-leppard-songs-playlist/"
+  },
+  "Def Leppard \u2014 Rick Savage": {
+    "birthYear": 1960,
+    "month": 12,
+    "day": 2,
+    "bandName": "Def Leppard",
+    "memberName": "Rick Savage",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-def-leppard-songs-playlist/"
+  },
+  "Def Leppard \u2014 Rick Allen": {
+    "birthYear": 1963,
+    "month": 11,
+    "day": 1,
+    "bandName": "Def Leppard",
+    "memberName": "Rick Allen",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-def-leppard-songs-playlist/"
+  },
+  "Demis Roussos": {
+    "birthYear": 1946,
+    "month": 6,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/demis-roussos"
+  },
+  "Desmond Dekker": {
+    "birthYear": 1941,
+    "month": 7,
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/desmond-dekker"
+  },
+  "Dinah Washington": {
+    "birthYear": 1924,
+    "month": 8,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Dinah-Washington"
+  },
+  "Dio": {
+    "birthYear": 1968,
+    "month": 3,
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dio"
+  },
+  "Dire Straits \u2014 Mark Knopfler": {
+    "birthYear": 1949,
+    "month": 8,
+    "day": 12,
+    "bandName": "Dire Straits",
+    "memberName": "Mark Knopfler",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Dire-Straits"
+  },
+  "Dire Straits \u2014 David Knopfler": {
+    "birthYear": 1952,
+    "month": 12,
+    "day": 27,
+    "bandName": "Dire Straits",
+    "memberName": "David Knopfler",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Dire-Straits"
+  },
+  "Dire Straits \u2014 John Illsley": {
+    "birthYear": 1949,
+    "month": 6,
+    "day": 24,
+    "bandName": "Dire Straits",
+    "memberName": "John Illsley",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Dire-Straits"
+  },
+  "Dr Dre": {
+    "birthYear": 1965,
+    "month": 2,
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dr-dre"
+  },
+  "Duke Ellington": {
+    "birthYear": 1899,
+    "month": 4,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/duke-ellington"
+  },
+  "Dusty Springfield": {
+    "birthYear": 1939,
+    "month": 4,
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Dusty-Springfield"
+  },
+  "Eagles \u2014 Glenn Frey": {
+    "birthYear": 1948,
+    "month": 11,
+    "day": 6,
+    "bandName": "Eagles",
+    "memberName": "Glenn Frey",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eagles"
+  },
+  "Eagles \u2014 Timothy B. Schmit": {
+    "birthYear": 1947,
+    "month": 10,
+    "day": 30,
+    "bandName": "Eagles",
+    "memberName": "Timothy B. Schmit",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eagles"
+  },
+  "Eagles of Death Metal \u2014 Josh Homme": {
+    "birthYear": 1973,
+    "month": 5,
+    "day": 17,
+    "bandName": "Eagles of Death Metal",
+    "memberName": "Josh Homme",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/eagles-of-death-metal"
+  },
+  "Eagles of Death Metal \u2014 Jesse Hughes": {
+    "birthYear": 1972,
+    "month": 9,
+    "day": 24,
+    "bandName": "Eagles of Death Metal",
+    "memberName": "Jesse Hughes",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/eagles-of-death-metal"
+  },
+  "Eazy-E": {
+    "birthYear": 1964,
+    "month": 9,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eazy-E"
+  },
+  "Eddie Cochran": {
+    "birthYear": 1938,
+    "month": 10,
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eddie-Cochran"
+  },
+  "Eddie Kendricks": {
+    "birthYear": 1939,
+    "month": 12,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eddie-Kendrick"
+  },
+  "Eels \u2014 Mark Oliver Everett": {
+    "birthYear": 1963,
+    "month": 4,
+    "day": 10,
+    "bandName": "Eels",
+    "memberName": "Mark Oliver Everett",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/eels",
+    "articleUrl": "https://www.udiscovermusic.com/stories/eels-in-20-songs/"
+  },
+  "Elbow \u2014 Guy Garvey": {
+    "birthYear": 1974,
+    "month": 3,
+    "day": 6,
+    "bandName": "Elbow",
+    "memberName": "Guy Garvey",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/elbow"
+  },
+  "Elbow \u2014 Pete Turner": {
+    "birthYear": 1974,
+    "month": 1,
+    "day": 1,
+    "bandName": "Elbow",
+    "memberName": "Pete Turner",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/elbow"
+  },
+  "Ella Fitzgerald": {
+    "birthYear": 1917,
+    "month": 4,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-ella-fitzgerald-songs/"
+  },
+  "Elvis Presley": {
+    "birthYear": 1935,
+    "month": 1,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Presley"
+  },
+  "Emeli Sand\u00e9": {
+    "birthYear": 1987,
+    "month": 3,
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/emeli-sande"
+  },
+  "Etta James": {
+    "birthYear": 1938,
+    "month": 1,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Etta-James"
+  },
+  "Eva Cassidy": {
+    "birthYear": 1963,
+    "month": 2,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/eva-cassidy"
+  },
+  "Evanescence \u2014 Amy Lee": {
+    "birthYear": 1981,
+    "month": 12,
+    "day": 13,
+    "bandName": "Evanescence",
+    "memberName": "Amy Lee",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/evanescence"
+  },
+  "Evanescence \u2014 Ben Moody": {
+    "birthYear": 1981,
+    "month": 1,
+    "day": 22,
+    "bandName": "Evanescence",
+    "memberName": "Ben Moody",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/evanescence"
+  },
+  "Evanescence \u2014 David Hodges": {
+    "birthYear": 1978,
+    "month": 12,
+    "day": 5,
+    "bandName": "Evanescence",
+    "memberName": "David Hodges",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/evanescence"
+  },
+  "Fairport Convention \u2014 Sandy Denny": {
+    "birthYear": 1947,
+    "month": 1,
+    "day": 6,
+    "bandName": "Fairport Convention",
+    "memberName": "Sandy Denny",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fairport-convention"
+  },
+  "Fairport Convention \u2014 Richard Thompson": {
+    "birthYear": 1949,
+    "month": 4,
+    "day": 3,
+    "bandName": "Fairport Convention",
+    "memberName": "Richard Thompson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fairport-convention"
+  },
+  "Fairport Convention \u2014 Ashley Hutchings": {
+    "birthYear": 1945,
+    "month": 1,
+    "day": 26,
+    "bandName": "Fairport Convention",
+    "memberName": "Ashley Hutchings",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fairport-convention"
+  },
+  "Fall Out Boy \u2014 Patrick Stump": {
+    "birthYear": 1984,
+    "month": 4,
+    "day": 27,
+    "bandName": "Fall Out Boy",
+    "memberName": "Patrick Stump",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fall-out-boy"
+  },
+  "Fall Out Boy \u2014 Joe Trohman": {
+    "birthYear": 1984,
+    "month": 9,
+    "day": 1,
+    "bandName": "Fall Out Boy",
+    "memberName": "Joe Trohman",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fall-out-boy"
+  },
+  "Fall Out Boy \u2014 Pete Wentz": {
+    "birthYear": 1979,
+    "month": 6,
+    "day": 5,
+    "bandName": "Fall Out Boy",
+    "memberName": "Pete Wentz",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fall-out-boy"
+  },
+  "Faust": {
+    "birthYear": 1969,
+    "month": 11,
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/faust"
+  },
+  "Fergie": {
+    "birthYear": 1975,
+    "month": 3,
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fergie"
+  },
+  "Florence and the Machine \u2014 Florence Welch": {
+    "birthYear": 1986,
+    "month": 8,
+    "day": 28,
+    "bandName": "Florence and the Machine",
+    "memberName": "Florence Welch",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/florence-and-the-machine"
+  },
+  "Florence and the Machine \u2014 Isabella Summers": {
+    "birthYear": 1980,
+    "month": 10,
+    "day": 31,
+    "bandName": "Florence and the Machine",
+    "memberName": "Isabella Summers",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/florence-and-the-machine"
+  },
+  "Foo Fighters \u2014 Franz Stahl": {
+    "birthYear": 1962,
+    "month": 10,
+    "day": 30,
+    "bandName": "Foo Fighters",
+    "memberName": "Franz Stahl",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/foo-fighter"
+  },
+  "Foo Fighters \u2014 Dave Grohl": {
+    "birthYear": 1969,
+    "month": 1,
+    "day": 14,
+    "bandName": "Foo Fighters",
+    "memberName": "Dave Grohl",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/foo-fighter"
+  },
+  "Foo Fighters \u2014 William Goldsmith": {
+    "birthYear": 1972,
+    "month": 7,
+    "day": 4,
+    "bandName": "Foo Fighters",
+    "memberName": "William Goldsmith",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/foo-fighter"
+  },
+  "Frankie Goes To Hollywood \u2014 Holly Johnson": {
+    "birthYear": 1960,
+    "month": 2,
+    "day": 9,
+    "bandName": "Frankie Goes To Hollywood",
+    "memberName": "Holly Johnson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/frankie-goes-to-hollywood",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-frankie-goes-to-hollywood-songs/"
+  },
+  "Frankie Goes To Hollywood \u2014 Peter Gill": {
+    "birthYear": 1964,
+    "month": 3,
+    "day": 8,
+    "bandName": "Frankie Goes To Hollywood",
+    "memberName": "Peter Gill",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/frankie-goes-to-hollywood",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-frankie-goes-to-hollywood-songs/"
+  },
+  "Frankie Goes To Hollywood \u2014 Mark O'Toole": {
+    "birthYear": 1964,
+    "month": 1,
+    "day": 6,
+    "bandName": "Frankie Goes To Hollywood",
+    "memberName": "Mark O'Toole",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/frankie-goes-to-hollywood",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-frankie-goes-to-hollywood-songs/"
+  },
+  "Gary Clark": {
+    "birthYear": 1984,
+    "month": 2,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/danny-wilson-gary-clark"
+  },
+  "Gaz Coombe": {
+    "birthYear": 1976,
+    "month": 3,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gaz-coombe"
+  },
+  "Gene Vincent": {
+    "birthYear": 1935,
+    "month": 2,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gene-vincent"
+  },
+  "Gentle Giant \u2014 Martin Smith": {
+    "birthYear": 1946,
+    "month": 12,
+    "day": 17,
+    "bandName": "Gentle Giant",
+    "memberName": "Martin Smith",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gentle-giant"
+  },
+  "George Benson": {
+    "birthYear": 1943,
+    "month": 3,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/george-benson"
+  },
+  "George Gershwin": {
+    "birthYear": 1898,
+    "month": 9,
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/george-gershwi"
+  },
+  "George Michael": {
+    "birthYear": 1963,
+    "month": 6,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/george-michael"
+  },
+  "George Strait": {
+    "birthYear": 1952,
+    "month": 5,
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Strait"
+  },
+  "George Thorogood": {
+    "birthYear": 1950,
+    "month": 2,
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Thorogood"
+  },
+  "Georgie Fame": {
+    "birthYear": 1943,
+    "month": 6,
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Georgie-Fame"
+  },
+  "Ghostface Killah": {
+    "birthYear": 1970,
+    "month": 5,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ghostface-killah"
+  },
+  "Gong": {
+    "birthYear": 1965,
+    "month": 12,
+    "day": 31,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gong"
+  },
+  "Grace Jones": {
+    "birthYear": 1948,
+    "month": 5,
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Grace-Jones"
+  },
+  "Graham Parker": {
+    "birthYear": 1950,
+    "month": 11,
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/graham-parker"
+  },
+  "Grand Funk Railroad \u2014 Don Brewer": {
+    "birthYear": 1948,
+    "month": 9,
+    "day": 3,
+    "bandName": "Grand Funk Railroad",
+    "memberName": "Don Brewer",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/grand-funk-railroad"
+  },
+  "Gregory Isaacs": {
+    "birthYear": 1951,
+    "month": 7,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gregory-isaacs"
+  },
+  "Gregory Porter": {
+    "birthYear": 1971,
+    "month": 11,
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gregory-porter"
+  },
+  "Guns N Roses \u2014 Axl Rose": {
+    "birthYear": 1962,
+    "month": 2,
+    "day": 6,
+    "bandName": "Guns N Roses",
+    "memberName": "Axl Rose",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Guns-N-Roses"
+  },
+  "Guns N Roses \u2014 Duff McKagan": {
+    "birthYear": 1964,
+    "month": 2,
+    "day": 5,
+    "bandName": "Guns N Roses",
+    "memberName": "Duff McKagan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Guns-N-Roses"
+  },
+  "Guns N Roses \u2014 Richard Fortus": {
+    "birthYear": 1966,
+    "month": 11,
+    "day": 17,
+    "bandName": "Guns N Roses",
+    "memberName": "Richard Fortus",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Guns-N-Roses"
+  },
+  "Haddaway": {
+    "birthYear": 1965,
+    "month": 1,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/haddawa"
+  },
+  "Heaven 17 \u2014 Ian Craig Marsh": {
+    "birthYear": 1956,
+    "month": 11,
+    "day": 11,
+    "bandName": "Heaven 17",
+    "memberName": "Ian Craig Marsh",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Heaven-17"
+  },
+  "Helmet": {
+    "birthYear": 1930,
+    "month": 4,
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/helmet"
+  },
+  "Hoobastank \u2014 Markku Lappalainen": {
+    "birthYear": 1973,
+    "month": 4,
+    "day": 6,
+    "bandName": "Hoobastank",
+    "memberName": "Markku Lappalainen",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hoobastank"
+  },
+  "Hoobastank \u2014 Doug Robb": {
+    "birthYear": 1975,
+    "month": 1,
+    "day": 2,
+    "bandName": "Hoobastank",
+    "memberName": "Doug Robb",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hoobastank"
+  },
+  "Howlin Wolf": {
+    "birthYear": 1910,
+    "month": 6,
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Howlin-Wolf"
+  },
+  "Hoyt Axton": {
+    "birthYear": 1938,
+    "month": 3,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hoyt-axton"
+  },
+  "Huey Lewis & The News \u2014 Huey Lewis": {
+    "birthYear": 1950,
+    "month": 7,
+    "day": 5,
+    "bandName": "Huey Lewis & The News",
+    "memberName": "Huey Lewis",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/huey-lewis-and-the-news"
+  },
+  "Huey Lewis & The News \u2014 Johnny Colla": {
+    "birthYear": 1952,
+    "month": 7,
+    "day": 2,
+    "bandName": "Huey Lewis & The News",
+    "memberName": "Johnny Colla",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/huey-lewis-and-the-news"
+  },
+  "Huey Lewis & The News \u2014 Sean Hopper": {
+    "birthYear": 1953,
+    "month": 3,
+    "day": 31,
+    "bandName": "Huey Lewis & The News",
+    "memberName": "Sean Hopper",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/huey-lewis-and-the-news"
+  },
+  "Human League \u2014 Philip Oakey": {
+    "birthYear": 1955,
+    "month": 10,
+    "day": 2,
+    "bandName": "Human League",
+    "memberName": "Philip Oakey",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/human-league"
+  },
+  "Human League \u2014 Joanne Catherall": {
+    "birthYear": 1962,
+    "month": 9,
+    "day": 18,
+    "bandName": "Human League",
+    "memberName": "Joanne Catherall",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/human-league"
+  },
+  "Humble Pie \u2014 Steve Marriott": {
+    "birthYear": 1947,
+    "month": 1,
+    "day": 30,
+    "bandName": "Humble Pie",
+    "memberName": "Steve Marriott",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Humble-Pie"
+  },
+  "INXS \u2014 Michael Hutchence": {
+    "birthYear": 1960,
+    "month": 1,
+    "day": 22,
+    "bandName": "INXS",
+    "memberName": "Michael Hutchence",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/inxs"
+  },
+  "INXS \u2014 Garry Gary Beers": {
+    "birthYear": 1957,
+    "month": 6,
+    "day": 22,
+    "bandName": "INXS",
+    "memberName": "Garry Gary Beers",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/inxs"
+  },
+  "INXS \u2014 Andrew Farriss": {
+    "birthYear": 1959,
+    "month": 3,
+    "day": 27,
+    "bandName": "INXS",
+    "memberName": "Andrew Farriss",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/inxs"
+  },
+  "Ice Cube": {
+    "birthYear": 1969,
+    "month": 6,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ice-cube"
+  },
+  "Iggy Pop": {
+    "birthYear": 1947,
+    "month": 4,
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Iggy-Pop"
+  },
+  "Imagine Dragons \u2014 Dan Reynolds": {
+    "birthYear": 1987,
+    "month": 7,
+    "day": 14,
+    "bandName": "Imagine Dragons",
+    "memberName": "Dan Reynolds",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Imagine-Dragons"
+  },
+  "Imagine Dragons \u2014 Daniel Wayne Serm\u00f3n": {
+    "birthYear": 1984,
+    "month": 6,
+    "day": 15,
+    "bandName": "Imagine Dragons",
+    "memberName": "Daniel Wayne Serm\u00f3n",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Imagine-Dragons"
+  },
+  "Imagine Dragons \u2014 Ben McKee": {
+    "birthYear": 1985,
+    "month": 4,
+    "day": 7,
+    "bandName": "Imagine Dragons",
+    "memberName": "Ben McKee",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Imagine-Dragons"
+  },
+  "Iron Maiden \u2014 Bruce Dickinson": {
+    "birthYear": 1958,
+    "month": 8,
+    "day": 7,
+    "bandName": "Iron Maiden",
+    "memberName": "Bruce Dickinson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/iron-maiden"
+  },
+  "Iron Maiden \u2014 Steve Harris": {
+    "birthYear": 1956,
+    "month": 3,
+    "day": 12,
+    "bandName": "Iron Maiden",
+    "memberName": "Steve Harris",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/iron-maiden"
+  },
+  "Iron Maiden \u2014 Dave Murray": {
+    "birthYear": 1956,
+    "month": 12,
+    "day": 23,
+    "bandName": "Iron Maiden",
+    "memberName": "Dave Murray",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/iron-maiden"
+  },
+  "J.J. Cale": {
+    "birthYear": 1938,
+    "month": 12,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/j-j-cale"
+  },
+  "Jack Johnson": {
+    "birthYear": 1878,
+    "month": 3,
+    "day": 31,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jack-johnson"
+  },
+  "Jackie Wilson": {
+    "birthYear": 1934,
+    "month": 6,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jackie-wilson"
+  },
+  "Jacques Brel": {
+    "birthYear": 1929,
+    "month": 4,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jacques-brel"
+  },
+  "James": {
+    "birthYear": 1984,
+    "month": 12,
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james"
+  },
+  "James Bay": {
+    "birthYear": 1990,
+    "month": 9,
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-bay"
+  },
+  "James Blake": {
+    "birthYear": 1988,
+    "month": 9,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-blake"
+  },
+  "James Morrison": {
+    "birthYear": 1962,
+    "month": 11,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-morrison"
+  },
+  "James Taylor": {
+    "birthYear": 1948,
+    "month": 3,
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-taylor"
+  },
+  "Jane's Addiction \u2014 Eric Avery": {
+    "birthYear": 1965,
+    "month": 4,
+    "day": 25,
+    "bandName": "Jane's Addiction",
+    "memberName": "Eric Avery",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/janes-addiction"
+  },
+  "Jay Z": {
+    "birthYear": 1969,
+    "month": 12,
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jay-z"
+  },
+  "Jeff Buckley": {
+    "birthYear": 1966,
+    "month": 11,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jeffbuckley"
+  },
+  "Jeru The Damaja": {
+    "birthYear": 1972,
+    "month": 2,
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jeru-the-damaja"
+  },
+  "Jethro Tull \u2014 Ian Anderson": {
+    "birthYear": 1947,
+    "month": 8,
+    "day": 10,
+    "bandName": "Jethro Tull",
+    "memberName": "Ian Anderson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jethro-tul"
+  },
+  "Jethro Tull \u2014 Jeffrey Hammond": {
+    "birthYear": 1946,
+    "month": 7,
+    "day": 30,
+    "bandName": "Jethro Tull",
+    "memberName": "Jeffrey Hammond",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jethro-tul"
+  },
+  "Jethro Tull \u2014 Martin Barre": {
+    "birthYear": 1946,
+    "month": 11,
+    "day": 17,
+    "bandName": "Jethro Tull",
+    "memberName": "Martin Barre",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jethro-tul"
+  },
+  "Jimi Hendrix": {
+    "birthYear": 1942,
+    "month": 11,
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jimi-hendrix"
+  },
+  "Jimmy Buffett": {
+    "birthYear": 1946,
+    "month": 12,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jimmy-buffett"
+  },
+  "Jimmy Cliff": {
+    "birthYear": 1944,
+    "month": 7,
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jimmy-cliff"
+  },
+  "Jimmy Eat World \u2014 Jim Adkins": {
+    "birthYear": 1975,
+    "month": 11,
+    "day": 10,
+    "bandName": "Jimmy Eat World",
+    "memberName": "Jim Adkins",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jimmy-eat-world"
+  },
+  "Jimmy Ruffin": {
+    "birthYear": 1939,
+    "month": 5,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jimmy-ruffin"
+  },
+  "Jimmy Smith": {
+    "birthYear": 1988,
+    "month": 7,
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jimmy-smith"
+  },
+  "Joan Armatrading": {
+    "birthYear": 1950,
+    "month": 12,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/joan-armatrading"
+  },
+  "Joan Baez": {
+    "birthYear": 1941,
+    "month": 1,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/joan-baez"
+  },
+  "Joe Cocker": {
+    "birthYear": 1944,
+    "month": 5,
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/joe-cocker"
+  },
+  "Joe Jackson": {
+    "birthYear": 1928,
+    "month": 7,
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/joe-jackson"
+  },
+  "Joe Sample": {
+    "birthYear": 1939,
+    "month": 2,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/joe-sample"
+  },
+  "Joe Walsh": {
+    "birthYear": 1947,
+    "month": 11,
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/joe-walsh-the-james-gang"
+  },
+  "John Coltrane": {
+    "birthYear": 1926,
+    "month": 9,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/john-coltrane/"
+  },
+  "John Fogerty": {
+    "birthYear": 1945,
+    "month": 5,
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-fogerty"
+  },
+  "John Martyn": {
+    "birthYear": 1948,
+    "month": 9,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-martyn",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-john-martyn-songs/"
+  },
+  "John Mayall": {
+    "birthYear": 1933,
+    "month": 11,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-mayall"
+  },
+  "John Williams": {
+    "birthYear": 1932,
+    "month": 2,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-williams"
+  },
+  "Johnny Gill": {
+    "birthYear": 1966,
+    "month": 5,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/johnny-gill"
+  },
+  "Joni Mitchell": {
+    "birthYear": 1943,
+    "month": 11,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/joni-mitchell"
+  },
+  "Jonny Lang": {
+    "birthYear": 1981,
+    "month": 1,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jonny-lang"
+  },
+  "Jorge Ben": {
+    "birthYear": 1942,
+    "month": 3,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jorge-ben"
+  },
+  "Joss Stone": {
+    "birthYear": 1987,
+    "month": 4,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/joss-stone"
+  },
+  "Jr. Walker & the All-Stars": {
+    "birthYear": 1931,
+    "month": 6,
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jr-walker-the-all-stars"
+  },
+  "Julie London": {
+    "birthYear": 1926,
+    "month": 9,
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/julie-london"
+  },
+  "Kaiser Chiefs \u2014 Ricky Wilson": {
+    "birthYear": 1978,
+    "month": 1,
+    "day": 17,
+    "bandName": "Kaiser Chiefs",
+    "memberName": "Ricky Wilson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kaiser-chiefs"
+  },
+  "Kaiser Chiefs \u2014 Andrew White": {
+    "birthYear": 1974,
+    "month": 8,
+    "day": 28,
+    "bandName": "Kaiser Chiefs",
+    "memberName": "Andrew White",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kaiser-chiefs"
+  },
+  "Kaiser Chiefs \u2014 Nick Hodgson": {
+    "birthYear": 1977,
+    "month": 10,
+    "day": 20,
+    "bandName": "Kaiser Chiefs",
+    "memberName": "Nick Hodgson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kaiser-chiefs"
+  },
+  "Kate Bush": {
+    "birthYear": 1958,
+    "month": 7,
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kate-bush"
+  },
+  "Keane": {
+    "birthYear": 1980,
+    "month": 7,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keane"
+  },
+  "Keith Jarrett": {
+    "birthYear": 1945,
+    "month": 5,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-jarrett",
+    "articleUrl": "https://www.udiscovermusic.com/stories/keith-jarrett-best-pieces/"
+  },
+  "Keith Richards": {
+    "birthYear": 1943,
+    "month": 12,
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-richards"
+  },
+  "Kenny Burrell": {
+    "birthYear": 1931,
+    "month": 7,
+    "day": 31,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kenny-burrell"
+  },
+  "Kevin Coyne": {
+    "birthYear": 1944,
+    "month": 1,
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kevin-coyne"
+  },
+  "Killing Joke \u2014 Paul Raven": {
+    "birthYear": 1961,
+    "month": 1,
+    "day": 16,
+    "bandName": "Killing Joke",
+    "memberName": "Paul Raven",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/killing-joke",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-killing-joke-20-post-punk-essentials/"
+  },
+  "Killing Joke \u2014 Jaz Coleman": {
+    "birthYear": 1960,
+    "month": 2,
+    "day": 26,
+    "bandName": "Killing Joke",
+    "memberName": "Jaz Coleman",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/killing-joke",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-killing-joke-20-post-punk-essentials/"
+  },
+  "Killing Joke \u2014 Geordie Walker": {
+    "birthYear": 1958,
+    "month": 12,
+    "day": 18,
+    "bandName": "Killing Joke",
+    "memberName": "Geordie Walker",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/killing-joke",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-killing-joke-20-post-punk-essentials/"
+  },
+  "Kim Carnes": {
+    "birthYear": 1945,
+    "month": 7,
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kim-carnes"
+  },
+  "Kip Moore": {
+    "birthYear": 1980,
+    "month": 4,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kip-moore"
+  },
+  "Kool and the Gang \u2014 Dennis Thomas": {
+    "birthYear": 1951,
+    "month": 2,
+    "day": 9,
+    "bandName": "Kool and the Gang",
+    "memberName": "Dennis Thomas",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kool-and-the-gang"
+  },
+  "Kool and the Gang \u2014 Ronald Bell": {
+    "birthYear": 1951,
+    "month": 11,
+    "day": 1,
+    "bandName": "Kool and the Gang",
+    "memberName": "Ronald Bell",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kool-and-the-gang"
+  },
+  "Lady A \u2014 Hillary Scott": {
+    "birthYear": 1986,
+    "month": 4,
+    "day": 1,
+    "bandName": "Lady A",
+    "memberName": "Hillary Scott",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-antebellum"
+  },
+  "Lady A \u2014 Charles Kelley": {
+    "birthYear": 1981,
+    "month": 9,
+    "day": 11,
+    "bandName": "Lady A",
+    "memberName": "Charles Kelley",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-antebellum"
+  },
+  "Lady A \u2014 Dave Haywood": {
+    "birthYear": 1982,
+    "month": 7,
+    "day": 5,
+    "bandName": "Lady A",
+    "memberName": "Dave Haywood",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-antebellum"
+  },
+  "Laura Marling": {
+    "birthYear": 1990,
+    "month": 2,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/laura-marling"
+  },
+  "Led Zeppelin \u2014 Robert Plant": {
+    "birthYear": 1948,
+    "month": 8,
+    "day": 20,
+    "bandName": "Led Zeppelin",
+    "memberName": "Robert Plant",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/led-zeppelin"
+  },
+  "Led Zeppelin \u2014 Jimmy Page": {
+    "birthYear": 1944,
+    "month": 1,
+    "day": 9,
+    "bandName": "Led Zeppelin",
+    "memberName": "Jimmy Page",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/led-zeppelin"
+  },
+  "Led Zeppelin \u2014 John Bonham": {
+    "birthYear": 1948,
+    "month": 5,
+    "day": 31,
+    "bandName": "Led Zeppelin",
+    "memberName": "John Bonham",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/led-zeppelin"
+  },
+  "Lee Scratch Perry": {
+    "birthYear": 1936,
+    "month": 3,
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lee-scratch-perry"
+  },
+  "Leon Russell": {
+    "birthYear": 1942,
+    "month": 4,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/leon-russell"
+  },
+  "Lester Young": {
+    "birthYear": 1909,
+    "month": 8,
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lester-young"
+  },
+  "Level 42 \u2014 Mark King": {
+    "birthYear": 1958,
+    "month": 10,
+    "day": 20,
+    "bandName": "Level 42",
+    "memberName": "Mark King",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/level-42"
+  },
+  "Level 42 \u2014 Mike Lindup": {
+    "birthYear": 1959,
+    "month": 3,
+    "day": 17,
+    "bandName": "Level 42",
+    "memberName": "Mike Lindup",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/level-42"
+  },
+  "Level 42 \u2014 Nathan King": {
+    "birthYear": 1970,
+    "month": 8,
+    "day": 29,
+    "bandName": "Level 42",
+    "memberName": "Nathan King",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/level-42"
+  },
+  "Lightnin' Hopkins": {
+    "birthYear": 1912,
+    "month": 3,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lightnin-hopkins"
+  },
+  "Linton Kwesi Johnson": {
+    "birthYear": 1952,
+    "month": 8,
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/linton-kwesi-johnson"
+  },
+  "Little Richard": {
+    "birthYear": 1932,
+    "month": 12,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/little-richard"
+  },
+  "Lloyd Cole": {
+    "birthYear": 1961,
+    "month": 1,
+    "day": 31,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lloyd-cole"
+  },
+  "Lorde": {
+    "birthYear": 1996,
+    "month": 11,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lorde"
+  },
+  "Loreena McKennitt": {
+    "birthYear": 1957,
+    "month": 2,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/loreena-mckennit"
+  },
+  "Louis Armstrong": {
+    "birthYear": 1901,
+    "month": 8,
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/louis-armstrong"
+  },
+  "Lucinda Williams": {
+    "birthYear": 1953,
+    "month": 1,
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lucinda-williams"
+  },
+  "Ludovico Einaudi": {
+    "birthYear": 1955,
+    "month": 11,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ludovico-einaudi"
+  },
+  "Luke Bryan": {
+    "birthYear": 1976,
+    "month": 7,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/luke-bryan"
+  },
+  "Lulu": {
+    "birthYear": 1948,
+    "month": 11,
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lulu"
+  },
+  "Lynyrd Skynyrd \u2014 Gary Rossington": {
+    "birthYear": 1951,
+    "month": 12,
+    "day": 4,
+    "bandName": "Lynyrd Skynyrd",
+    "memberName": "Gary Rossington",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lynyrd-skynyrd"
+  },
+  "Lynyrd Skynyrd \u2014 Michael Cartellone": {
+    "birthYear": 1962,
+    "month": 6,
+    "day": 7,
+    "bandName": "Lynyrd Skynyrd",
+    "memberName": "Michael Cartellone",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lynyrd-skynyrd"
+  },
+  "Lynyrd Skynyrd \u2014 Johnny Van Zant": {
+    "birthYear": 1960,
+    "month": 2,
+    "day": 27,
+    "bandName": "Lynyrd Skynyrd",
+    "memberName": "Johnny Van Zant",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lynyrd-skynyrd"
+  },
+  "Maddie & Tae": {
+    "birthYear": 1995,
+    "month": 6,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/maddie-and-tae"
+  },
+  "Madonna": {
+    "birthYear": 1958,
+    "month": 8,
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/madonna"
+  },
+  "Marc Almond": {
+    "birthYear": 1957,
+    "month": 7,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/marc-almond"
+  },
+  "Marilyn Manson": {
+    "birthYear": 1969,
+    "month": 1,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marilyn-Manson"
+  },
+  "Martha Reeves & The Vandellas \u2014 Martha Reeves": {
+    "birthYear": 1941,
+    "month": 7,
+    "day": 18,
+    "bandName": "Martha Reeves & The Vandellas",
+    "memberName": "Martha Reeves",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/martha-reeves-the-vandellas/"
+  },
+  "Mary Hopkin": {
+    "birthYear": 1950,
+    "month": 5,
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mary-hopkin"
+  },
+  "Mary J Blige": {
+    "birthYear": 1971,
+    "month": 1,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Mary-J-Blige"
+  },
+  "Mary Wells": {
+    "birthYear": 1943,
+    "month": 5,
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mary-wells"
+  },
+  "Massive Attack \u2014 Robert Del Naja": {
+    "birthYear": 1965,
+    "month": 1,
+    "day": 21,
+    "bandName": "Massive Attack",
+    "memberName": "Robert Del Naja",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/massive-attack",
+    "articleUrl": "https://www.udiscovermusic.com/stories/massive-attack-in-20-songs/"
+  },
+  "Massive Attack \u2014 Daddy G": {
+    "birthYear": 1959,
+    "month": 12,
+    "day": 18,
+    "bandName": "Massive Attack",
+    "memberName": "Daddy G",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/massive-attack",
+    "articleUrl": "https://www.udiscovermusic.com/stories/massive-attack-in-20-songs/"
+  },
+  "Master P": {
+    "birthYear": 1970,
+    "month": 4,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/master-p"
+  },
+  "Maxi Priest": {
+    "birthYear": 1961,
+    "month": 6,
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/maxi-priest"
+  },
+  "Meat Loaf": {
+    "birthYear": 1947,
+    "month": 9,
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/meat-loaf"
+  },
+  "Mel Torme": {
+    "birthYear": 1925,
+    "month": 9,
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mel-torm"
+  },
+  "Melody Gardot": {
+    "birthYear": 1985,
+    "month": 2,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Melody-Gardot"
+  },
+  "Metallica \u2014 Lars Ulrich": {
+    "birthYear": 1963,
+    "month": 12,
+    "day": 26,
+    "bandName": "Metallica",
+    "memberName": "Lars Ulrich",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Metallica"
+  },
+  "Metallica \u2014 James Hetfield": {
+    "birthYear": 1963,
+    "month": 8,
+    "day": 3,
+    "bandName": "Metallica",
+    "memberName": "James Hetfield",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Metallica"
+  },
+  "Metallica \u2014 Robert Trujillo": {
+    "birthYear": 1964,
+    "month": 10,
+    "day": 23,
+    "bandName": "Metallica",
+    "memberName": "Robert Trujillo",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Metallica"
+  },
+  "Method Man": {
+    "birthYear": 1971,
+    "month": 3,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/method-man",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-method-man-songs/"
+  },
+  "Michael Jackson": {
+    "birthYear": 1958,
+    "month": 8,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Michael-Jackson"
+  },
+  "Michael Nyman": {
+    "birthYear": 1944,
+    "month": 3,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/michael-nyman"
+  },
+  "Mike Oldfield": {
+    "birthYear": 1953,
+    "month": 5,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mike-oldfield"
+  },
+  "Mike and the Mechanics \u2014 Mike Rutherford": {
+    "birthYear": 1950,
+    "month": 10,
+    "day": 2,
+    "bandName": "Mike and the Mechanics",
+    "memberName": "Mike Rutherford",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mike-and-the-mechanics"
+  },
+  "Mike and the Mechanics \u2014 Gary Wallis": {
+    "birthYear": 1964,
+    "month": 6,
+    "day": 10,
+    "bandName": "Mike and the Mechanics",
+    "memberName": "Gary Wallis",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mike-and-the-mechanics"
+  },
+  "Mike and the Mechanics \u2014 Adrian Lee": {
+    "birthYear": 1957,
+    "month": 9,
+    "day": 9,
+    "bandName": "Mike and the Mechanics",
+    "memberName": "Adrian Lee",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mike-and-the-mechanics"
+  },
+  "Miles Davis": {
+    "birthYear": 1926,
+    "month": 5,
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Miles-Davis"
+  },
+  "Minnie Riperton": {
+    "birthYear": 1947,
+    "month": 11,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/minnie-riperton"
+  },
+  "Morrissey": {
+    "birthYear": 1959,
+    "month": 5,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Morrissey"
+  },
+  "Motorhead \u2014 Lemmy": {
+    "birthYear": 1945,
+    "month": 12,
+    "day": 24,
+    "bandName": "Motorhead",
+    "memberName": "Lemmy",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Motorhead"
+  },
+  "Motorhead \u2014 Phil Campbell": {
+    "birthYear": 1961,
+    "month": 5,
+    "day": 7,
+    "bandName": "Motorhead",
+    "memberName": "Phil Campbell",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Motorhead"
+  },
+  "Mumford & Sons \u2014 Marcus Mumford": {
+    "birthYear": 1987,
+    "month": 1,
+    "day": 31,
+    "bandName": "Mumford & Sons",
+    "memberName": "Marcus Mumford",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Mumford-And-Sons"
+  },
+  "N.W.A \u2014 MC Ren": {
+    "birthYear": 1969,
+    "month": 6,
+    "day": 14,
+    "bandName": "N.W.A",
+    "memberName": "MC Ren",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/NWA"
+  },
+  "N.W.A \u2014 Arabian Prince": {
+    "birthYear": 1965,
+    "month": 6,
+    "day": 17,
+    "bandName": "N.W.A",
+    "memberName": "Arabian Prince",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/NWA"
+  },
+  "Nancy Griffith": {
+    "birthYear": 1953,
+    "month": 7,
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nanci-Griffith"
+  },
+  "Nazareth \u2014 Dan McCafferty": {
+    "birthYear": 1946,
+    "month": 10,
+    "day": 14,
+    "bandName": "Nazareth",
+    "memberName": "Dan McCafferty",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/nazareth"
+  },
+  "Neil Young": {
+    "birthYear": 1945,
+    "month": 11,
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/neil-young"
+  },
+  "Nelly": {
+    "birthYear": 1974,
+    "month": 11,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/nelly",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-nelly-songs/"
+  },
+  "Neneh Cherry": {
+    "birthYear": 1964,
+    "month": 3,
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/neneh-cherry"
+  },
+  "New Edition \u2014 Ricky Bell": {
+    "birthYear": 1967,
+    "month": 9,
+    "day": 18,
+    "bandName": "New Edition",
+    "memberName": "Ricky Bell",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/new-edition"
+  },
+  "New Edition \u2014 Michael Bivins": {
+    "birthYear": 1968,
+    "month": 8,
+    "day": 10,
+    "bandName": "New Edition",
+    "memberName": "Michael Bivins",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/new-edition"
+  },
+  "New Edition \u2014 Bobby Brown": {
+    "birthYear": 1969,
+    "month": 2,
+    "day": 5,
+    "bandName": "New Edition",
+    "memberName": "Bobby Brown",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/new-edition"
+  },
+  "New York Dolls \u2014 Johnny Thunders": {
+    "birthYear": 1952,
+    "month": 7,
+    "day": 15,
+    "bandName": "New York Dolls",
+    "memberName": "Johnny Thunders",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/New-York-Dolls"
+  },
+  "Nick Drake": {
+    "birthYear": 1948,
+    "month": 6,
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nick-Drake"
+  },
+  "Nik Kershaw": {
+    "birthYear": 1958,
+    "month": 3,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/nik-kershaw"
+  },
+  "Nina Simone": {
+    "birthYear": 1933,
+    "month": 2,
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nina-Simone"
+  },
+  "Nine Inch Nails \u2014 Atticus Ross": {
+    "birthYear": 1968,
+    "month": 1,
+    "day": 16,
+    "bandName": "Nine Inch Nails",
+    "memberName": "Atticus Ross",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nine-Inch-Nails",
+    "articleUrl": "https://www.udiscovermusic.com/stories/20-best-nine-inch-nails-songs/"
+  },
+  "Nirvana \u2014 Kurt Cobain": {
+    "birthYear": 1967,
+    "month": 2,
+    "day": 20,
+    "bandName": "Nirvana",
+    "memberName": "Kurt Cobain",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-nirvana-songs/"
+  },
+  "Nirvana \u2014 Krist Novoselic": {
+    "birthYear": 1965,
+    "month": 5,
+    "day": 16,
+    "bandName": "Nirvana",
+    "memberName": "Krist Novoselic",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-nirvana-songs/"
+  },
+  "Nitty Gritty Dirt Band \u2014 Jeff Hanna": {
+    "birthYear": 1947,
+    "month": 7,
+    "day": 11,
+    "bandName": "Nitty Gritty Dirt Band",
+    "memberName": "Jeff Hanna",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nitty-Gritty-Dirt-Band"
+  },
+  "Nitty Gritty Dirt Band \u2014 Ross Holmes": {
+    "birthYear": 1984,
+    "month": 6,
+    "day": 14,
+    "bandName": "Nitty Gritty Dirt Band",
+    "memberName": "Ross Holmes",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nitty-Gritty-Dirt-Band"
+  },
+  "No Doubt \u2014 Tony Kanal": {
+    "birthYear": 1970,
+    "month": 8,
+    "day": 27,
+    "bandName": "No Doubt",
+    "memberName": "Tony Kanal",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/No-Doubt"
+  },
+  "No Doubt \u2014 Tom Dumont": {
+    "birthYear": 1968,
+    "month": 1,
+    "day": 11,
+    "bandName": "No Doubt",
+    "memberName": "Tom Dumont",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/No-Doubt"
+  },
+  "Ocean Colour Scene \u2014 Simon Fowler": {
+    "birthYear": 1965,
+    "month": 5,
+    "day": 25,
+    "bandName": "Ocean Colour Scene",
+    "memberName": "Simon Fowler",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ocean-Colour-Scene"
+  },
+  "OneRepublic \u2014 Ryan Tedder": {
+    "birthYear": 1979,
+    "month": 6,
+    "day": 26,
+    "bandName": "OneRepublic",
+    "memberName": "Ryan Tedder",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/onerepublic/"
+  },
+  "OneRepublic \u2014 Zach Filkins": {
+    "birthYear": 1978,
+    "month": 9,
+    "day": 15,
+    "bandName": "OneRepublic",
+    "memberName": "Zach Filkins",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/onerepublic/"
+  },
+  "OneRepublic \u2014 Eddie Fisher": {
+    "birthYear": 1928,
+    "month": 8,
+    "day": 10,
+    "bandName": "OneRepublic",
+    "memberName": "Eddie Fisher",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/onerepublic/"
+  },
+  "Onyx \u2014 Fredro Starr": {
+    "birthYear": 1971,
+    "month": 4,
+    "day": 18,
+    "bandName": "Onyx",
+    "memberName": "Fredro Starr",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/onyx"
+  },
+  "Onyx \u2014 Sticky Fingaz": {
+    "birthYear": 1973,
+    "month": 11,
+    "day": 3,
+    "bandName": "Onyx",
+    "memberName": "Sticky Fingaz",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/onyx"
+  },
+  "Onyx \u2014 Sonny Seeza": {
+    "birthYear": 1970,
+    "month": 11,
+    "day": 13,
+    "bandName": "Onyx",
+    "memberName": "Sonny Seeza",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/onyx"
+  },
+  "Oscar Peterson": {
+    "birthYear": 1925,
+    "month": 8,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Oscar-Peterson"
+  },
+  "Otis Redding": {
+    "birthYear": 1941,
+    "month": 9,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Otis-Redding"
+  },
+  "PJ Harvey": {
+    "birthYear": 1969,
+    "month": 10,
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/pj-harvey"
+  },
+  "Papa Roach \u2014 Tobin Esperance": {
+    "birthYear": 1979,
+    "month": 11,
+    "day": 14,
+    "bandName": "Papa Roach",
+    "memberName": "Tobin Esperance",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/papa-roach"
+  },
+  "Pato Banton": {
+    "birthYear": 1961,
+    "month": 1,
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/pato-banton"
+  },
+  "Patty Griffin": {
+    "birthYear": 1964,
+    "month": 3,
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/patty-griffin"
+  },
+  "Paul McCartney and Wings \u2014 Laurence Juber": {
+    "birthYear": 1952,
+    "month": 11,
+    "day": 12,
+    "bandName": "Paul McCartney and Wings",
+    "memberName": "Laurence Juber",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/paul-mccartney-and-wings"
+  },
+  "Paul McCartney and Wings \u2014 Denny Seiwell": {
+    "birthYear": 1943,
+    "month": 7,
+    "day": 10,
+    "bandName": "Paul McCartney and Wings",
+    "memberName": "Denny Seiwell",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/paul-mccartney-and-wings"
+  },
+  "Paul Simon": {
+    "birthYear": 1941,
+    "month": 10,
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/paul-simon"
+  },
+  "Paul Weller": {
+    "birthYear": 1958,
+    "month": 5,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/paul-weller"
+  },
+  "Peaches & Herb": {
+    "birthYear": 1941,
+    "month": 10,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/peaches-and-herb"
+  },
+  "Pearl Jam \u2014 Eddie Vedder": {
+    "birthYear": 1964,
+    "month": 12,
+    "day": 23,
+    "bandName": "Pearl Jam",
+    "memberName": "Eddie Vedder",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/pearl-jam"
+  },
+  "Pearl Jam \u2014 Stone Gossard": {
+    "birthYear": 1966,
+    "month": 7,
+    "day": 20,
+    "bandName": "Pearl Jam",
+    "memberName": "Stone Gossard",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/pearl-jam"
+  },
+  "Pearl Jam \u2014 Mike McCready": {
+    "birthYear": 1966,
+    "month": 4,
+    "day": 5,
+    "bandName": "Pearl Jam",
+    "memberName": "Mike McCready",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/pearl-jam"
+  },
+  "Pete Townshend": {
+    "birthYear": 1945,
+    "month": 5,
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Pete-Townshend"
+  },
+  "Peter Gabriel": {
+    "birthYear": 1950,
+    "month": 2,
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/peter-gabriel"
+  },
+  "Phil Collins": {
+    "birthYear": 1951,
+    "month": 1,
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Phil-Collins"
+  },
+  "Phil Manzanera": {
+    "birthYear": 1951,
+    "month": 1,
+    "day": 31,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/phil-manzanera"
+  },
+  "PiL \u2014 Keith Levene": {
+    "birthYear": 1957,
+    "month": 7,
+    "day": 18,
+    "bandName": "PiL",
+    "memberName": "Keith Levene",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/pil"
+  },
+  "Pink Floyd \u2014 Syd Barrett": {
+    "birthYear": 1946,
+    "month": 1,
+    "day": 6,
+    "bandName": "Pink Floyd",
+    "memberName": "Syd Barrett",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Pink-Floyd"
+  },
+  "Pink Floyd \u2014 David Gilmour": {
+    "birthYear": 1946,
+    "month": 3,
+    "day": 6,
+    "bandName": "Pink Floyd",
+    "memberName": "David Gilmour",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Pink-Floyd"
+  },
+  "Pink Floyd \u2014 Q192936": {
+    "birthYear": 1944,
+    "month": 1,
+    "day": 27,
+    "bandName": "Pink Floyd",
+    "memberName": "Q192936",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Pink-Floyd"
+  },
+  "Placebo \u2014 Brian Molko": {
+    "birthYear": 1972,
+    "month": 12,
+    "day": 10,
+    "bandName": "Placebo",
+    "memberName": "Brian Molko",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/placebo"
+  },
+  "Placebo \u2014 Stefan Olsdal": {
+    "birthYear": 1974,
+    "month": 3,
+    "day": 31,
+    "bandName": "Placebo",
+    "memberName": "Stefan Olsdal",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/placebo"
+  },
+  "Placebo \u2014 Steve Forrest": {
+    "birthYear": 1986,
+    "month": 9,
+    "day": 25,
+    "bandName": "Placebo",
+    "memberName": "Steve Forrest",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/placebo"
+  },
+  "Portishead \u2014 Geoff Barrow": {
+    "birthYear": 1971,
+    "month": 12,
+    "day": 9,
+    "bandName": "Portishead",
+    "memberName": "Geoff Barrow",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/portishead"
+  },
+  "Prince": {
+    "birthYear": 1958,
+    "month": 6,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Prince"
+  },
+  "Public Enemy \u2014 Flavor Flav": {
+    "birthYear": 1959,
+    "month": 3,
+    "day": 16,
+    "bandName": "Public Enemy",
+    "memberName": "Flavor Flav",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Public-Enemy"
+  },
+  "Public Enemy \u2014 Chuck D": {
+    "birthYear": 1960,
+    "month": 8,
+    "day": 1,
+    "bandName": "Public Enemy",
+    "memberName": "Chuck D",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Public-Enemy"
+  },
+  "Public Enemy \u2014 DJ Lord": {
+    "birthYear": 1962,
+    "month": 9,
+    "day": 27,
+    "bandName": "Public Enemy",
+    "memberName": "DJ Lord",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Public-Enemy"
+  },
+  "Queens of the Stone Age \u2014 Mark Lanegan": {
+    "birthYear": 1964,
+    "month": 11,
+    "day": 25,
+    "bandName": "Queens of the Stone Age",
+    "memberName": "Mark Lanegan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queens-Of-The-Stone-Age",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-queens-of-the-stone-age-songs/"
+  },
+  "Queens of the Stone Age \u2014 Troy Van Leeuwen": {
+    "birthYear": 1970,
+    "month": 1,
+    "day": 5,
+    "bandName": "Queens of the Stone Age",
+    "memberName": "Troy Van Leeuwen",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queens-Of-The-Stone-Age",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-queens-of-the-stone-age-songs/"
+  },
+  "Quicksilver Messenger Service \u2014 John Cipollina": {
+    "birthYear": 1943,
+    "month": 8,
+    "day": 24,
+    "bandName": "Quicksilver Messenger Service",
+    "memberName": "John Cipollina",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/quicksilver-messenger-service"
+  },
+  "Quicksilver Messenger Service \u2014 David Freiberg": {
+    "birthYear": 1938,
+    "month": 8,
+    "day": 24,
+    "bandName": "Quicksilver Messenger Service",
+    "memberName": "David Freiberg",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/quicksilver-messenger-service"
+  },
+  "Quicksilver Messenger Service \u2014 Gary Duncan": {
+    "birthYear": 1946,
+    "month": 9,
+    "day": 4,
+    "bandName": "Quicksilver Messenger Service",
+    "memberName": "Gary Duncan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/quicksilver-messenger-service"
+  },
+  "R.E.M. \u2014 Michael Stipe": {
+    "birthYear": 1960,
+    "month": 1,
+    "day": 4,
+    "bandName": "R.E.M.",
+    "memberName": "Michael Stipe",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/r-e-m/",
+    "articleUrl": "https://www.udiscovermusic.com/stories/rem-in-20-songs/"
+  },
+  "R.E.M. \u2014 Peter Buck": {
+    "birthYear": 1956,
+    "month": 12,
+    "day": 6,
+    "bandName": "R.E.M.",
+    "memberName": "Peter Buck",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/r-e-m/",
+    "articleUrl": "https://www.udiscovermusic.com/stories/rem-in-20-songs/"
+  },
+  "R.E.M. \u2014 Mike Mills": {
+    "birthYear": 1958,
+    "month": 12,
+    "day": 17,
+    "bandName": "R.E.M.",
+    "memberName": "Mike Mills",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/r-e-m/",
+    "articleUrl": "https://www.udiscovermusic.com/stories/rem-in-20-songs/"
+  },
+  "Rammstein \u2014 Till Lindemann": {
+    "birthYear": 1963,
+    "month": 1,
+    "day": 4,
+    "bandName": "Rammstein",
+    "memberName": "Till Lindemann",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rammstein",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-rammstein-songs/"
+  },
+  "Rammstein \u2014 Richard Kruspe": {
+    "birthYear": 1967,
+    "month": 6,
+    "day": 24,
+    "bandName": "Rammstein",
+    "memberName": "Richard Kruspe",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rammstein",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-rammstein-songs/"
+  },
+  "Rammstein \u2014 Paul Landers": {
+    "birthYear": 1964,
+    "month": 12,
+    "day": 9,
+    "bandName": "Rammstein",
+    "memberName": "Paul Landers",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rammstein",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-rammstein-songs/"
+  },
+  "Ray Charles": {
+    "birthYear": 1930,
+    "month": 9,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ray-charles"
+  },
+  "Red Hot Chili Peppers \u2014 Flea": {
+    "birthYear": 1962,
+    "month": 10,
+    "day": 16,
+    "bandName": "Red Hot Chili Peppers",
+    "memberName": "Flea",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/red-hot-chili-peppers"
+  },
+  "Red Hot Chili Peppers \u2014 John Frusciante": {
+    "birthYear": 1970,
+    "month": 3,
+    "day": 5,
+    "bandName": "Red Hot Chili Peppers",
+    "memberName": "John Frusciante",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/red-hot-chili-peppers"
+  },
+  "Red Hot Chili Peppers \u2014 Anthony Kiedis": {
+    "birthYear": 1962,
+    "month": 11,
+    "day": 1,
+    "bandName": "Red Hot Chili Peppers",
+    "memberName": "Anthony Kiedis",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/red-hot-chili-peppers"
+  },
+  "Richie Havens": {
+    "birthYear": 1941,
+    "month": 1,
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/richie-havens"
+  },
+  "Rick James": {
+    "birthYear": 1948,
+    "month": 2,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-james"
+  },
+  "Rick Nelson": {
+    "birthYear": 1940,
+    "month": 5,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-nelson"
+  },
+  "Rick Ross": {
+    "birthYear": 1976,
+    "month": 1,
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-ross",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-rick-ross-songs/"
+  },
+  "Rise Against \u2014 Tim McIlrath": {
+    "birthYear": 1979,
+    "month": 11,
+    "day": 3,
+    "bandName": "Rise Against",
+    "memberName": "Tim McIlrath",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rise-against"
+  },
+  "Robbie Williams": {
+    "birthYear": 1974,
+    "month": 2,
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robbie-williams"
+  },
+  "Robert Cray": {
+    "birthYear": 1953,
+    "month": 8,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-cray"
+  },
+  "Robert Glasper": {
+    "birthYear": 1978,
+    "month": 4,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-glasper"
+  },
+  "Rod Stewart": {
+    "birthYear": 1945,
+    "month": 1,
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rod-stewart"
+  },
+  "Ronnie Lane": {
+    "birthYear": 1946,
+    "month": 4,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ronnie-lane"
+  },
+  "Rory Gallagher": {
+    "birthYear": 1948,
+    "month": 3,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rory-gallagher"
+  },
+  "Rosanne Cash": {
+    "birthYear": 1955,
+    "month": 5,
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rosanne-cash"
+  },
+  "Roxy Music \u2014 Andy Mackay": {
+    "birthYear": 1946,
+    "month": 7,
+    "day": 23,
+    "bandName": "Roxy Music",
+    "memberName": "Andy Mackay",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/roxy-music"
+  },
+  "Roy Orbison": {
+    "birthYear": 1936,
+    "month": 4,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/roy-orbison"
+  },
+  "Rufus Wainwright": {
+    "birthYear": 1973,
+    "month": 7,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rufus-wainwright"
+  },
+  "Ryan Adams": {
+    "birthYear": 1974,
+    "month": 11,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ryan-adams"
+  },
+  "Salt-n-Pepa \u2014 Cheryl James": {
+    "birthYear": 1966,
+    "month": 3,
+    "day": 28,
+    "bandName": "Salt-n-Pepa",
+    "memberName": "Cheryl James",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/salt-n-pepa"
+  },
+  "Salt-n-Pepa \u2014 Sandra Denton": {
+    "birthYear": 1969,
+    "month": 11,
+    "day": 9,
+    "bandName": "Salt-n-Pepa",
+    "memberName": "Sandra Denton",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/salt-n-pepa"
+  },
+  "Salt-n-Pepa \u2014 DJ Spinderella": {
+    "birthYear": 1971,
+    "month": 8,
+    "day": 3,
+    "bandName": "Salt-n-Pepa",
+    "memberName": "DJ Spinderella",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/salt-n-pepa"
+  },
+  "Sam Hunt": {
+    "birthYear": 1984,
+    "month": 12,
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-hunt"
+  },
+  "Schiller": {
+    "birthYear": 1759,
+    "month": 11,
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/schiller/"
+  },
+  "Scorpions \u2014 Rudolf Schenker": {
+    "birthYear": 1948,
+    "month": 8,
+    "day": 31,
+    "bandName": "Scorpions",
+    "memberName": "Rudolf Schenker",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/scorpions"
+  },
+  "Scorpions \u2014 Klaus Meine": {
+    "birthYear": 1948,
+    "month": 5,
+    "day": 25,
+    "bandName": "Scorpions",
+    "memberName": "Klaus Meine",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/scorpions"
+  },
+  "Scorpions \u2014 Matthias Jabs": {
+    "birthYear": 1955,
+    "month": 10,
+    "day": 25,
+    "bandName": "Scorpions",
+    "memberName": "Matthias Jabs",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/scorpions"
+  },
+  "Serge Gainsbourg": {
+    "birthYear": 1928,
+    "month": 4,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/serge-gainsbourg"
+  },
+  "Sex Pistols \u2014 John Lydon": {
+    "birthYear": 1956,
+    "month": 1,
+    "day": 31,
+    "bandName": "Sex Pistols",
+    "memberName": "John Lydon",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sex-pistols"
+  },
+  "Sex Pistols \u2014 Glen Matlock": {
+    "birthYear": 1956,
+    "month": 8,
+    "day": 27,
+    "bandName": "Sex Pistols",
+    "memberName": "Glen Matlock",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sex-pistols"
+  },
+  "Sex Pistols \u2014 Steve Jones": {
+    "birthYear": 1955,
+    "month": 9,
+    "day": 3,
+    "bandName": "Sex Pistols",
+    "memberName": "Steve Jones",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sex-pistols"
+  },
+  "Shaggy": {
+    "birthYear": 1968,
+    "month": 10,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/shagg"
+  },
+  "Simple Minds \u2014 Jim Kerr": {
+    "birthYear": 1959,
+    "month": 7,
+    "day": 9,
+    "bandName": "Simple Minds",
+    "memberName": "Jim Kerr",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/simple-minds"
+  },
+  "Simple Minds \u2014 Mick MacNeil": {
+    "birthYear": 1958,
+    "month": 7,
+    "day": 20,
+    "bandName": "Simple Minds",
+    "memberName": "Mick MacNeil",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/simple-minds"
+  },
+  "Simple Minds \u2014 Charlie Burchill": {
+    "birthYear": 1959,
+    "month": 11,
+    "day": 27,
+    "bandName": "Simple Minds",
+    "memberName": "Charlie Burchill",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/simple-minds"
+  },
+  "Siouxsie & The Banshees \u2014 Siouxsie Sioux": {
+    "birthYear": 1957,
+    "month": 5,
+    "day": 27,
+    "bandName": "Siouxsie & The Banshees",
+    "memberName": "Siouxsie Sioux",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/siouxsie-and-the-banshees"
+  },
+  "Siouxsie & The Banshees \u2014 Steven Severin": {
+    "birthYear": 1955,
+    "month": 9,
+    "day": 25,
+    "bandName": "Siouxsie & The Banshees",
+    "memberName": "Steven Severin",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/siouxsie-and-the-banshees"
+  },
+  "Siouxsie & The Banshees \u2014 Budgie": {
+    "birthYear": 1957,
+    "month": 8,
+    "day": 21,
+    "bandName": "Siouxsie & The Banshees",
+    "memberName": "Budgie",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/siouxsie-and-the-banshees"
+  },
+  "Small Faces \u2014 Ian McLagan": {
+    "birthYear": 1945,
+    "month": 5,
+    "day": 12,
+    "bandName": "Small Faces",
+    "memberName": "Ian McLagan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/small-faces"
+  },
+  "Smokey Robinson & The Miracles": {
+    "birthYear": 1940,
+    "month": 2,
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/smokey-robinson-the-miracles"
+  },
+  "Snoop Dogg": {
+    "birthYear": 1971,
+    "month": 10,
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/snoop-dogg",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-snoop-dogg-songs/"
+  },
+  "Snow Patrol \u2014 Gary Lightbody": {
+    "birthYear": 1976,
+    "month": 6,
+    "day": 15,
+    "bandName": "Snow Patrol",
+    "memberName": "Gary Lightbody",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/snow-patrol"
+  },
+  "Snow Patrol \u2014 Nathan Connolly": {
+    "birthYear": 1981,
+    "month": 1,
+    "day": 6,
+    "bandName": "Snow Patrol",
+    "memberName": "Nathan Connolly",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/snow-patrol"
+  },
+  "Snow Patrol \u2014 Johnny McDaid": {
+    "birthYear": 1976,
+    "month": 7,
+    "day": 24,
+    "bandName": "Snow Patrol",
+    "memberName": "Johnny McDaid",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/snow-patrol"
+  },
+  "Sonny Boy Williamson": {
+    "birthYear": 1912,
+    "month": 12,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sonny-boy-williamson"
+  },
+  "Soul II Soul \u2014 Jazzie B": {
+    "birthYear": 1963,
+    "month": 1,
+    "day": 26,
+    "bandName": "Soul II Soul",
+    "memberName": "Jazzie B",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soul-ii-soul"
+  },
+  "Soul II Soul \u2014 Simon Law": {
+    "birthYear": 1961,
+    "month": 5,
+    "day": 28,
+    "bandName": "Soul II Soul",
+    "memberName": "Simon Law",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soul-ii-soul"
+  },
+  "Soundgarden \u2014 Kim Thayil": {
+    "birthYear": 1960,
+    "month": 9,
+    "day": 4,
+    "bandName": "Soundgarden",
+    "memberName": "Kim Thayil",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-soundgarden-songs-20-essential-tracks/"
+  },
+  "Soundgarden \u2014 Ben Shepherd": {
+    "birthYear": 1968,
+    "month": 9,
+    "day": 20,
+    "bandName": "Soundgarden",
+    "memberName": "Ben Shepherd",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-soundgarden-songs-20-essential-tracks/"
+  },
+  "Sparks": {
+    "birthYear": 1989,
+    "month": 12,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sparks",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-sparks-songs/"
+  },
+  "Stan Getz": {
+    "birthYear": 1927,
+    "month": 2,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/stan-getz"
+  },
+  "Status Quo \u2014 John Coghlan": {
+    "birthYear": 1946,
+    "month": 9,
+    "day": 19,
+    "bandName": "Status Quo",
+    "memberName": "John Coghlan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/status-quo"
+  },
+  "Status Quo \u2014 Alan Lancaster": {
+    "birthYear": 1949,
+    "month": 2,
+    "day": 7,
+    "bandName": "Status Quo",
+    "memberName": "Alan Lancaster",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/status-quo"
+  },
+  "Status Quo \u2014 Francis Rossi": {
+    "birthYear": 1949,
+    "month": 5,
+    "day": 29,
+    "bandName": "Status Quo",
+    "memberName": "Francis Rossi",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/status-quo"
+  },
+  "Steely Dan \u2014 Donald Fagen": {
+    "birthYear": 1948,
+    "month": 1,
+    "day": 10,
+    "bandName": "Steely Dan",
+    "memberName": "Donald Fagen",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steely-dan"
+  },
+  "Steely Dan \u2014 Walter Becker": {
+    "birthYear": 1950,
+    "month": 2,
+    "day": 20,
+    "bandName": "Steely Dan",
+    "memberName": "Walter Becker",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steely-dan"
+  },
+  "Steely Dan \u2014 Jeff Baxter": {
+    "birthYear": 1948,
+    "month": 12,
+    "day": 13,
+    "bandName": "Steely Dan",
+    "memberName": "Jeff Baxter",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steely-dan"
+  },
+  "Stereophonics \u2014 Stuart Cable": {
+    "birthYear": 1970,
+    "month": 5,
+    "day": 19,
+    "bandName": "Stereophonics",
+    "memberName": "Stuart Cable",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/stereophonics"
+  },
+  "Steve Earle": {
+    "birthYear": 1955,
+    "month": 1,
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Steve-Earle"
+  },
+  "Steve Hackett": {
+    "birthYear": 1950,
+    "month": 2,
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-hackett"
+  },
+  "Steve Hillage": {
+    "birthYear": 1951,
+    "month": 8,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-hillage"
+  },
+  "Steve Miller Band \u2014 Steve Miller": {
+    "birthYear": 1943,
+    "month": 10,
+    "day": 5,
+    "bandName": "Steve Miller Band",
+    "memberName": "Steve Miller",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-miller-band",
+    "articleUrl": "https://www.udiscovermusic.com/stories/steve-miller-band-guide-the-best-albums/"
+  },
+  "Steve Miller Band \u2014 Joseph Wooten": {
+    "birthYear": 1961,
+    "month": 12,
+    "day": 15,
+    "bandName": "Steve Miller Band",
+    "memberName": "Joseph Wooten",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-miller-band",
+    "articleUrl": "https://www.udiscovermusic.com/stories/steve-miller-band-guide-the-best-albums/"
+  },
+  "Steve Miller Band \u2014 Boz Scaggs": {
+    "birthYear": 1944,
+    "month": 6,
+    "day": 8,
+    "bandName": "Steve Miller Band",
+    "memberName": "Boz Scaggs",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-miller-band",
+    "articleUrl": "https://www.udiscovermusic.com/stories/steve-miller-band-guide-the-best-albums/"
+  },
+  "Stevie Wonder": {
+    "birthYear": 1950,
+    "month": 5,
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/stevie-wonder"
+  },
+  "Styx \u2014 Chuck Panozzo": {
+    "birthYear": 1948,
+    "month": 9,
+    "day": 20,
+    "bandName": "Styx",
+    "memberName": "Chuck Panozzo",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/styx",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-styx-songs/"
+  },
+  "Sublime \u2014 Eric Wilson": {
+    "birthYear": 1970,
+    "month": 2,
+    "day": 21,
+    "bandName": "Sublime",
+    "memberName": "Eric Wilson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sublime"
+  },
+  "Sublime \u2014 Bud Gaugh": {
+    "birthYear": 1967,
+    "month": 10,
+    "day": 2,
+    "bandName": "Sublime",
+    "memberName": "Bud Gaugh",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sublime"
+  },
+  "Sum 41 \u2014 Steve Jocz": {
+    "birthYear": 1981,
+    "month": 7,
+    "day": 23,
+    "bandName": "Sum 41",
+    "memberName": "Steve Jocz",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sum-41"
+  },
+  "Sum 41 \u2014 Deryck Whibley": {
+    "birthYear": 1980,
+    "month": 3,
+    "day": 21,
+    "bandName": "Sum 41",
+    "memberName": "Deryck Whibley",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sum-41"
+  },
+  "Sum 41 \u2014 Jason McCaslin": {
+    "birthYear": 1980,
+    "month": 9,
+    "day": 3,
+    "bandName": "Sum 41",
+    "memberName": "Jason McCaslin",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sum-41"
+  },
+  "Suzanne Vega": {
+    "birthYear": 1959,
+    "month": 7,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/suzanne-vega"
+  },
+  "S\u00e9rgio Mendes": {
+    "birthYear": 1941,
+    "month": 2,
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sergio-mendes"
+  },
+  "T. Bone Walker": {
+    "birthYear": 1910,
+    "month": 5,
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/t-bone-walker"
+  },
+  "T. Rex \u2014 Jack Green": {
+    "birthYear": 1951,
+    "month": 3,
+    "day": 12,
+    "bandName": "T. Rex",
+    "memberName": "Jack Green",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/t-rex"
+  },
+  "Tammi Terrell": {
+    "birthYear": 1945,
+    "month": 4,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tammi-terrell"
+  },
+  "Tangerine Dream \u2014 Thorsten Quaeschning": {
+    "birthYear": 1977,
+    "month": 2,
+    "day": 23,
+    "bandName": "Tangerine Dream",
+    "memberName": "Thorsten Quaeschning",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tangerine-dream"
+  },
+  "Tangerine Dream \u2014 Hoshiko Yamane": {
+    "birthYear": 1981,
+    "month": 4,
+    "day": 4,
+    "bandName": "Tangerine Dream",
+    "memberName": "Hoshiko Yamane",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tangerine-dream"
+  },
+  "Tangerine Dream \u2014 Ulrich Schnauss": {
+    "birthYear": 1977,
+    "month": 1,
+    "day": 1,
+    "bandName": "Tangerine Dream",
+    "memberName": "Ulrich Schnauss",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tangerine-dream"
+  },
+  "Teena Marie": {
+    "birthYear": 1956,
+    "month": 3,
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/teena-marie"
+  },
+  "Temple Of The Dog \u2014 Jeff Ament": {
+    "birthYear": 1963,
+    "month": 3,
+    "day": 10,
+    "bandName": "Temple Of The Dog",
+    "memberName": "Jeff Ament",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/temple-of-the-dog"
+  },
+  "Texas": {
+    "birthYear": 2007,
+    "month": 5,
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/texas"
+  },
+  "The All-American Rejects \u2014 Tyson Ritter": {
+    "birthYear": 1984,
+    "month": 4,
+    "day": 24,
+    "bandName": "The All-American Rejects",
+    "memberName": "Tyson Ritter",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-all-american-rejects"
+  },
+  "The Allman Brothers Band \u2014 Gregg Allman": {
+    "birthYear": 1947,
+    "month": 12,
+    "day": 8,
+    "bandName": "The Allman Brothers Band",
+    "memberName": "Gregg Allman",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-allman-brothers-band"
+  },
+  "The Allman Brothers Band \u2014 Jai Johanny Johanson": {
+    "birthYear": 1944,
+    "month": 7,
+    "day": 8,
+    "bandName": "The Allman Brothers Band",
+    "memberName": "Jai Johanny Johanson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-allman-brothers-band"
+  },
+  "The Allman Brothers Band \u2014 Dickey Betts": {
+    "birthYear": 1943,
+    "month": 12,
+    "day": 12,
+    "bandName": "The Allman Brothers Band",
+    "memberName": "Dickey Betts",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-allman-brothers-band"
+  },
+  "The Beatles \u2014 John Lennon": {
+    "birthYear": 1940,
+    "month": 10,
+    "day": 9,
+    "bandName": "The Beatles",
+    "memberName": "John Lennon",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
+  },
+  "The Brothers Johnson \u2014 George Johnson": {
+    "birthYear": 1953,
+    "month": 5,
+    "day": 17,
+    "bandName": "The Brothers Johnson",
+    "memberName": "George Johnson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-brothers-johnson/"
+  },
+  "The Cadillac Three \u2014 Jaren Johnston": {
+    "birthYear": 1980,
+    "month": 10,
+    "day": 4,
+    "bandName": "The Cadillac Three",
+    "memberName": "Jaren Johnston",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cadillac-three"
+  },
+  "The Clash \u2014 Joe Strummer": {
+    "birthYear": 1952,
+    "month": 8,
+    "day": 21,
+    "bandName": "The Clash",
+    "memberName": "Joe Strummer",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-clash"
+  },
+  "The Clash \u2014 Mick Jones": {
+    "birthYear": 1955,
+    "month": 6,
+    "day": 26,
+    "bandName": "The Clash",
+    "memberName": "Mick Jones",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-clash"
+  },
+  "The Clash \u2014 Paul Simonon": {
+    "birthYear": 1955,
+    "month": 12,
+    "day": 15,
+    "bandName": "The Clash",
+    "memberName": "Paul Simonon",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-clash"
+  },
+  "The Common Linnets \u2014 Ilse DeLange": {
+    "birthYear": 1977,
+    "month": 5,
+    "day": 13,
+    "bandName": "The Common Linnets",
+    "memberName": "Ilse DeLange",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-common-linnets"
+  },
+  "The Common Linnets \u2014 Waylon": {
+    "birthYear": 1980,
+    "month": 4,
+    "day": 20,
+    "bandName": "The Common Linnets",
+    "memberName": "Waylon",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-common-linnets"
+  },
+  "The Cranberries \u2014 Dolores O'Riordan": {
+    "birthYear": 1971,
+    "month": 9,
+    "day": 6,
+    "bandName": "The Cranberries",
+    "memberName": "Dolores O'Riordan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cranberries"
+  },
+  "The Cranberries \u2014 Mike Hogan": {
+    "birthYear": 1973,
+    "month": 4,
+    "day": 29,
+    "bandName": "The Cranberries",
+    "memberName": "Mike Hogan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cranberries"
+  },
+  "The Cranberries \u2014 Noel Hogan": {
+    "birthYear": 1971,
+    "month": 12,
+    "day": 25,
+    "bandName": "The Cranberries",
+    "memberName": "Noel Hogan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cranberries"
+  },
+  "The Cure \u2014 Robert Smith": {
+    "birthYear": 1959,
+    "month": 4,
+    "day": 21,
+    "bandName": "The Cure",
+    "memberName": "Robert Smith",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cure/"
+  },
+  "The Cure \u2014 Simon Gallup": {
+    "birthYear": 1960,
+    "month": 6,
+    "day": 1,
+    "bandName": "The Cure",
+    "memberName": "Simon Gallup",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cure/"
+  },
+  "The Cure \u2014 Roger O'Donnell": {
+    "birthYear": 1955,
+    "month": 10,
+    "day": 29,
+    "bandName": "The Cure",
+    "memberName": "Roger O'Donnell",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cure/"
+  },
+  "The Damned \u2014 David Vanian": {
+    "birthYear": 1956,
+    "month": 10,
+    "day": 12,
+    "bandName": "The Damned",
+    "memberName": "David Vanian",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-damned"
+  },
+  "The Damned \u2014 Captain Sensible": {
+    "birthYear": 1954,
+    "month": 4,
+    "day": 24,
+    "bandName": "The Damned",
+    "memberName": "Captain Sensible",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-damned"
+  },
+  "The Doors \u2014 Robby Krieger": {
+    "birthYear": 1946,
+    "month": 1,
+    "day": 8,
+    "bandName": "The Doors",
+    "memberName": "Robby Krieger",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-doors"
+  },
+  "The Doors \u2014 Ray Manzarek": {
+    "birthYear": 1939,
+    "month": 2,
+    "day": 12,
+    "bandName": "The Doors",
+    "memberName": "Ray Manzarek",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-doors"
+  },
+  "The Doors \u2014 John Densmore": {
+    "birthYear": 1944,
+    "month": 12,
+    "day": 1,
+    "bandName": "The Doors",
+    "memberName": "John Densmore",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-doors"
+  },
+  "The Jackson 5 \u2014 Q2831": {
+    "birthYear": 1958,
+    "month": 8,
+    "day": 29,
+    "bandName": "The Jackson 5",
+    "memberName": "Q2831",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jackson-5"
+  },
+  "The Jackson 5 \u2014 Jackie Jackson": {
+    "birthYear": 1951,
+    "month": 5,
+    "day": 4,
+    "bandName": "The Jackson 5",
+    "memberName": "Jackie Jackson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jackson-5"
+  },
+  "The Jackson 5 \u2014 Tito Jackson": {
+    "birthYear": 1953,
+    "month": 10,
+    "day": 15,
+    "bandName": "The Jackson 5",
+    "memberName": "Tito Jackson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jackson-5"
+  },
+  "The Jam \u2014 Bruce Foxton": {
+    "birthYear": 1955,
+    "month": 9,
+    "day": 1,
+    "bandName": "The Jam",
+    "memberName": "Bruce Foxton",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-jam"
+  },
+  "The Jam \u2014 Rick Buckler": {
+    "birthYear": 1955,
+    "month": 12,
+    "day": 6,
+    "bandName": "The Jam",
+    "memberName": "Rick Buckler",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-jam"
+  },
+  "The Killers \u2014 Brandon Flowers": {
+    "birthYear": 1981,
+    "month": 6,
+    "day": 21,
+    "bandName": "The Killers",
+    "memberName": "Brandon Flowers",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-killers",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-the-killers-songs/"
+  },
+  "The Killers \u2014 Dave Keuning": {
+    "birthYear": 1976,
+    "month": 3,
+    "day": 28,
+    "bandName": "The Killers",
+    "memberName": "Dave Keuning",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-killers",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-the-killers-songs/"
+  },
+  "The Killers \u2014 Ronnie Vannucci": {
+    "birthYear": 1976,
+    "month": 2,
+    "day": 15,
+    "bandName": "The Killers",
+    "memberName": "Ronnie Vannucci",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-killers",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-the-killers-songs/"
+  },
+  "The Kinks \u2014 Dave Davies": {
+    "birthYear": 1947,
+    "month": 2,
+    "day": 3,
+    "bandName": "The Kinks",
+    "memberName": "Dave Davies",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-kinks"
+  },
+  "The Kinks \u2014 Ray Davies": {
+    "birthYear": 1944,
+    "month": 6,
+    "day": 21,
+    "bandName": "The Kinks",
+    "memberName": "Ray Davies",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-kinks"
+  },
+  "The Kinks \u2014 Mick Avory": {
+    "birthYear": 1944,
+    "month": 2,
+    "day": 15,
+    "bandName": "The Kinks",
+    "memberName": "Mick Avory",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-kinks"
+  },
+  "The Kooks \u2014 Luke Pritchard": {
+    "birthYear": 1985,
+    "month": 3,
+    "day": 2,
+    "bandName": "The Kooks",
+    "memberName": "Luke Pritchard",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-kooks"
+  },
+  "The Libertines \u2014 Carl Bar\u00e2t": {
+    "birthYear": 1978,
+    "month": 6,
+    "day": 6,
+    "bandName": "The Libertines",
+    "memberName": "Carl Bar\u00e2t",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-libertines"
+  },
+  "The Lumineers \u2014 Wesley Schultz": {
+    "birthYear": 1982,
+    "month": 12,
+    "day": 30,
+    "bandName": "The Lumineers",
+    "memberName": "Wesley Schultz",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-lumineers"
+  },
+  "The Lumineers \u2014 Neyla Pekarek": {
+    "birthYear": 1986,
+    "month": 9,
+    "day": 4,
+    "bandName": "The Lumineers",
+    "memberName": "Neyla Pekarek",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-lumineers"
+  },
+  "The Lumineers \u2014 Jeremiah Fraites": {
+    "birthYear": 1986,
+    "month": 1,
+    "day": 17,
+    "bandName": "The Lumineers",
+    "memberName": "Jeremiah Fraites",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-lumineers"
+  },
+  "The Marvelettes": {
+    "birthYear": 2023,
+    "month": 9,
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-marvelettes"
+  },
+  "The Moody Blues \u2014 Ray Thomas": {
+    "birthYear": 1941,
+    "month": 12,
+    "day": 29,
+    "bandName": "The Moody Blues",
+    "memberName": "Ray Thomas",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-moody-blues"
+  },
+  "The Moody Blues \u2014 Graeme Edge": {
+    "birthYear": 1941,
+    "month": 3,
+    "day": 30,
+    "bandName": "The Moody Blues",
+    "memberName": "Graeme Edge",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-moody-blues"
+  },
+  "The Moody Blues \u2014 Justin Hayward": {
+    "birthYear": 1946,
+    "month": 10,
+    "day": 14,
+    "bandName": "The Moody Blues",
+    "memberName": "Justin Hayward",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-moody-blues"
+  },
+  "The Roots \u2014 Questlove": {
+    "birthYear": 1971,
+    "month": 1,
+    "day": 20,
+    "bandName": "The Roots",
+    "memberName": "Questlove",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-roots"
+  },
+  "The Roots \u2014 Black Thought": {
+    "birthYear": 1972,
+    "month": 10,
+    "day": 3,
+    "bandName": "The Roots",
+    "memberName": "Black Thought",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-roots"
+  },
+  "The Roots \u2014 Malik B.": {
+    "birthYear": 1972,
+    "month": 11,
+    "day": 14,
+    "bandName": "The Roots",
+    "memberName": "Malik B.",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-roots"
+  },
+  "The Smashing Pumpkins \u2014 Kiki Wong": {
+    "birthYear": 1989,
+    "month": 4,
+    "day": 15,
+    "bandName": "The Smashing Pumpkins",
+    "memberName": "Kiki Wong",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-smashing-pumpkins"
+  },
+  "The Smashing Pumpkins \u2014 Billy Corgan": {
+    "birthYear": 1967,
+    "month": 3,
+    "day": 17,
+    "bandName": "The Smashing Pumpkins",
+    "memberName": "Billy Corgan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-smashing-pumpkins"
+  },
+  "The Smashing Pumpkins \u2014 James Iha": {
+    "birthYear": 1968,
+    "month": 3,
+    "day": 26,
+    "bandName": "The Smashing Pumpkins",
+    "memberName": "James Iha",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-smashing-pumpkins"
+  },
+  "The Statler Brothers \u2014 Lew DeWitt": {
+    "birthYear": 1938,
+    "month": 3,
+    "day": 12,
+    "bandName": "The Statler Brothers",
+    "memberName": "Lew DeWitt",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-statler-brothers"
+  },
+  "The Style Council \u2014 Mick Talbot": {
+    "birthYear": 1958,
+    "month": 9,
+    "day": 11,
+    "bandName": "The Style Council",
+    "memberName": "Mick Talbot",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-style-council"
+  },
+  "The Style Council \u2014 Steve White": {
+    "birthYear": 1965,
+    "month": 5,
+    "day": 31,
+    "bandName": "The Style Council",
+    "memberName": "Steve White",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-style-council"
+  },
+  "The Supremes \u2014 Mary Wilson": {
+    "birthYear": 1944,
+    "month": 3,
+    "day": 6,
+    "bandName": "The Supremes",
+    "memberName": "Mary Wilson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-supremes"
+  },
+  "The Supremes \u2014 Florence Ballard": {
+    "birthYear": 1943,
+    "month": 6,
+    "day": 30,
+    "bandName": "The Supremes",
+    "memberName": "Florence Ballard",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-supremes"
+  },
+  "The Temptations \u2014 Otis Williams": {
+    "birthYear": 1941,
+    "month": 10,
+    "day": 30,
+    "bandName": "The Temptations",
+    "memberName": "Otis Williams",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-temptations"
+  },
+  "The Temptations \u2014 Dennis Edwards": {
+    "birthYear": 1943,
+    "month": 2,
+    "day": 3,
+    "bandName": "The Temptations",
+    "memberName": "Dennis Edwards",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-temptations"
+  },
+  "The Tubes \u2014 Vince Welnick": {
+    "birthYear": 1951,
+    "month": 2,
+    "day": 21,
+    "bandName": "The Tubes",
+    "memberName": "Vince Welnick",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-tubes"
+  },
+  "The Tubes \u2014 Michele Gray": {
+    "birthYear": 1956,
+    "month": 11,
+    "day": 11,
+    "bandName": "The Tubes",
+    "memberName": "Michele Gray",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-tubes"
+  },
+  "The Velvet Underground \u2014 Lou Reed": {
+    "birthYear": 1942,
+    "month": 3,
+    "day": 2,
+    "bandName": "The Velvet Underground",
+    "memberName": "Lou Reed",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-velvet-underground"
+  },
+  "The Velvet Underground \u2014 John Cale": {
+    "birthYear": 1942,
+    "month": 3,
+    "day": 9,
+    "bandName": "The Velvet Underground",
+    "memberName": "John Cale",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-velvet-underground"
+  },
+  "The Velvet Underground \u2014 Maureen Tucker": {
+    "birthYear": 1944,
+    "month": 8,
+    "day": 26,
+    "bandName": "The Velvet Underground",
+    "memberName": "Maureen Tucker",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-velvet-underground"
+  },
+  "The Verve \u2014 Richard Ashcroft": {
+    "birthYear": 1971,
+    "month": 9,
+    "day": 11,
+    "bandName": "The Verve",
+    "memberName": "Richard Ashcroft",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-verve"
+  },
+  "The Verve \u2014 Nick McCabe": {
+    "birthYear": 1972,
+    "month": 7,
+    "day": 14,
+    "bandName": "The Verve",
+    "memberName": "Nick McCabe",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-verve"
+  },
+  "The Verve \u2014 Simon Jones": {
+    "birthYear": 1972,
+    "month": 7,
+    "day": 29,
+    "bandName": "The Verve",
+    "memberName": "Simon Jones",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-verve"
+  },
+  "The Who \u2014 John Entwistle": {
+    "birthYear": 1944,
+    "month": 10,
+    "day": 9,
+    "bandName": "The Who",
+    "memberName": "John Entwistle",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-the-who-songs/"
+  },
+  "Thelma Houston": {
+    "birthYear": 1946,
+    "month": 5,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thelma-houston"
+  },
+  "Thomas Rhett": {
+    "birthYear": 1990,
+    "month": 3,
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thomas-rhett"
+  },
+  "Three Dog Night \u2014 Danny Hutton": {
+    "birthYear": 1942,
+    "month": 9,
+    "day": 10,
+    "bandName": "Three Dog Night",
+    "memberName": "Danny Hutton",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/three-dog-night"
+  },
+  "Three Dog Night \u2014 Michael Allsup": {
+    "birthYear": 1947,
+    "month": 3,
+    "day": 8,
+    "bandName": "Three Dog Night",
+    "memberName": "Michael Allsup",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/three-dog-night"
+  },
+  "Three Dog Night \u2014 Jimmy Greenspoon": {
+    "birthYear": 1948,
+    "month": 2,
+    "day": 7,
+    "bandName": "Three Dog Night",
+    "memberName": "Jimmy Greenspoon",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/three-dog-night"
+  },
+  "Tim McGraw": {
+    "birthYear": 1967,
+    "month": 5,
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tim-mcgraw"
+  },
+  "Tom Jones": {
+    "birthYear": 1940,
+    "month": 6,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-jones"
+  },
+  "Tom Waits": {
+    "birthYear": 1949,
+    "month": 12,
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-waits"
+  },
+  "Tori Amos": {
+    "birthYear": 1963,
+    "month": 8,
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tori-amos"
+  },
+  "Traveling Wilburys \u2014 Jeff Lynne": {
+    "birthYear": 1947,
+    "month": 12,
+    "day": 30,
+    "bandName": "Traveling Wilburys",
+    "memberName": "Jeff Lynne",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/traveling-wilburys"
+  },
+  "UB40 \u2014 Earl Falconer": {
+    "birthYear": 1957,
+    "month": 1,
+    "day": 23,
+    "bandName": "UB40",
+    "memberName": "Earl Falconer",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ub40"
+  },
+  "UB40 \u2014 Norman Hassan": {
+    "birthYear": 1958,
+    "month": 1,
+    "day": 26,
+    "bandName": "UB40",
+    "memberName": "Norman Hassan",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ub40"
+  },
+  "UB40 \u2014 Duncan Campbell": {
+    "birthYear": 1958,
+    "month": 4,
+    "day": 3,
+    "bandName": "UB40",
+    "memberName": "Duncan Campbell",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ub40"
+  },
+  "Ultravox \u2014 Midge Ure": {
+    "birthYear": 1953,
+    "month": 10,
+    "day": 10,
+    "bandName": "Ultravox",
+    "memberName": "Midge Ure",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ultravox"
+  },
+  "Underworld \u2014 Karl Hyde": {
+    "birthYear": 1957,
+    "month": 5,
+    "day": 10,
+    "bandName": "Underworld",
+    "memberName": "Karl Hyde",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/underworld"
+  },
+  "Underworld \u2014 Darren Emerson": {
+    "birthYear": 1971,
+    "month": 4,
+    "day": 30,
+    "bandName": "Underworld",
+    "memberName": "Darren Emerson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/underworld"
+  },
+  "Underworld \u2014 Rick Smith": {
+    "birthYear": 1959,
+    "month": 5,
+    "day": 25,
+    "bandName": "Underworld",
+    "memberName": "Rick Smith",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/underworld"
+  },
+  "Van der Graaf Generator \u2014 David Jackson": {
+    "birthYear": 1947,
+    "month": 4,
+    "day": 15,
+    "bandName": "Van der Graaf Generator",
+    "memberName": "David Jackson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/van-der-graaf-generator"
+  },
+  "Van der Graaf Generator \u2014 Peter Hammill": {
+    "birthYear": 1948,
+    "month": 11,
+    "day": 5,
+    "bandName": "Van der Graaf Generator",
+    "memberName": "Peter Hammill",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/van-der-graaf-generator"
+  },
+  "Weezer \u2014 Rivers Cuomo": {
+    "birthYear": 1970,
+    "month": 6,
+    "day": 13,
+    "bandName": "Weezer",
+    "memberName": "Rivers Cuomo",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/weezer",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-weezer-songs/"
+  },
+  "Weezer \u2014 Patrick Wilson": {
+    "birthYear": 1969,
+    "month": 2,
+    "day": 1,
+    "bandName": "Weezer",
+    "memberName": "Patrick Wilson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/weezer",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-weezer-songs/"
+  },
+  "Weezer \u2014 Brian Bell": {
+    "birthYear": 1968,
+    "month": 12,
+    "day": 9,
+    "bandName": "Weezer",
+    "memberName": "Brian Bell",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/weezer",
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-weezer-songs/"
+  },
+  "Whitesnake \u2014 David Coverdale": {
+    "birthYear": 1951,
+    "month": 9,
+    "day": 22,
+    "bandName": "Whitesnake",
+    "memberName": "David Coverdale",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/whitesnake"
+  },
+  "Whitesnake \u2014 Michele Luppi": {
+    "birthYear": 1974,
+    "month": 4,
+    "day": 7,
+    "bandName": "Whitesnake",
+    "memberName": "Michele Luppi",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/whitesnake"
+  },
+  "Whitesnake \u2014 Micky Moody": {
+    "birthYear": 1950,
+    "month": 8,
+    "day": 30,
+    "bandName": "Whitesnake",
+    "memberName": "Micky Moody",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/whitesnake"
+  },
+  "William Orbit": {
+    "birthYear": 1956,
+    "month": 12,
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/william-orbit"
+  },
+  "Willie Nelson": {
+    "birthYear": 1933,
+    "month": 4,
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/willie-nelson"
+  },
+  "Wilson Pickett": {
+    "birthYear": 1941,
+    "month": 3,
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/wilson-pickett"
+  },
+  "Wishbone Ash \u2014 Andy Powell": {
+    "birthYear": 1950,
+    "month": 2,
+    "day": 19,
+    "bandName": "Wishbone Ash",
+    "memberName": "Andy Powell",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/wishbone-ash"
+  },
+  "Wishbone Ash \u2014 Ted Turner": {
+    "birthYear": 1950,
+    "month": 8,
+    "day": 2,
+    "bandName": "Wishbone Ash",
+    "memberName": "Ted Turner",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/wishbone-ash"
+  },
+  "Wishbone Ash \u2014 Martin Turner": {
+    "birthYear": 1947,
+    "month": 10,
+    "day": 1,
+    "bandName": "Wishbone Ash",
+    "memberName": "Martin Turner",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/wishbone-ash"
+  },
+  "Yeah Yeah Yeahs \u2014 Karen O": {
+    "birthYear": 1978,
+    "month": 11,
+    "day": 22,
+    "bandName": "Yeah Yeah Yeahs",
+    "memberName": "Karen O",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/yeah-yeah-yeahs"
+  },
+  "Yeah Yeah Yeahs \u2014 Nick Zinner": {
+    "birthYear": 1974,
+    "month": 12,
+    "day": 8,
+    "bandName": "Yeah Yeah Yeahs",
+    "memberName": "Nick Zinner",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/yeah-yeah-yeahs"
+  },
+  "Yeah Yeah Yeahs \u2014 Brian Chase": {
+    "birthYear": 1978,
+    "month": 2,
+    "day": 12,
+    "bandName": "Yeah Yeah Yeahs",
+    "memberName": "Brian Chase",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/yeah-yeah-yeahs"
+  },
+  "Yes \u2014 Jon Anderson": {
+    "birthYear": 1944,
+    "month": 10,
+    "day": 25,
+    "bandName": "Yes",
+    "memberName": "Jon Anderson",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/yes"
+  },
+  "Yes \u2014 Steve Howe": {
+    "birthYear": 1947,
+    "month": 4,
+    "day": 8,
+    "bandName": "Yes",
+    "memberName": "Steve Howe",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/yes"
+  },
+  "Young Jeezy": {
+    "birthYear": 1977,
+    "month": 9,
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/young-jeezy"
+  },
+  "Zucchero": {
+    "birthYear": 1955,
+    "month": 9,
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/zucchero"
   }
 };
 

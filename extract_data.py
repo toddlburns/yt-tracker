@@ -19,6 +19,7 @@ SOCIAL_XLSX_PATH = os.path.expanduser("~/Desktop/UMe_O_O_Social_Calendar_1771213
 ARTIST_PAGES_CSV = os.path.expanduser("~/Desktop/uDiscover Artist Pages - artist pages.csv")
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "editorial_data.js")
 MISSING_BIRTHDAYS_PATH = os.path.join(os.path.dirname(__file__), "artists_missing_birthdays.csv")
+STILL_MISSING_PATH = os.path.expanduser("~/Desktop/artists_still_missing_birthdays.csv")
 
 # The 77 tracked artists (must match DEFAULT_CHANNELS in index.html)
 TRACKED_ARTISTS = [
@@ -257,6 +258,41 @@ def load_artist_pages():
             if name and url and url.startswith('http'):
                 pages[name] = url
     return pages
+
+
+def load_scraped_birthdays():
+    """Load scraped birthdays from artists_missing_birthdays.csv.
+    Returns:
+      - scraped: list of dicts with artistName, memberName, artistPageUrl, birthday
+      - still_missing: list of (artistName, artistPageUrl) for entries with no birthday
+    """
+    scraped = []
+    still_missing = []
+    if not os.path.exists(MISSING_BIRTHDAYS_PATH):
+        return scraped, still_missing
+
+    with open(MISSING_BIRTHDAYS_PATH, newline='', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            artist_name = row.get('ARTIST NAME', '').strip()
+            member_name = row.get('MEMBER NAME', '').strip()
+            page_url = row.get('ARTIST PAGE URL', '').strip()
+            birthday = row.get('BIRTHDAY (YYYY-MM-DD)', '').strip()
+
+            if not artist_name:
+                continue
+
+            if birthday:
+                scraped.append({
+                    'artistName': artist_name,
+                    'memberName': member_name,
+                    'artistPageUrl': page_url,
+                    'birthday': birthday,
+                })
+            else:
+                still_missing.append((artist_name, page_url))
+
+    return scraped, still_missing
 
 
 def clean_social_title(name, artist):
@@ -624,32 +660,83 @@ def main():
     for name, url in artist_pages.items():
         artist_pages_js[name] = url
 
-    # Find artists with artist pages but NO birthday in the editorial schedule
-    # and write them to a separate CSV for manual addition later
-    print("Finding artists with pages but no birthday in editorial schedule...")
-    birthday_artists_lower = {a.lower() for a in birthdays}
-    missing = []
-    for name, url in sorted(artist_pages.items()):
-        name_lower = name.lower()
-        # Check if this artist has a birthday entry (direct or via alias)
-        has_birthday = name_lower in birthday_artists_lower
-        if not has_birthday:
-            for alias, canon in page_name_aliases.items():
-                if alias == name_lower and canon.lower() in birthday_artists_lower:
-                    has_birthday = True
-                    break
-        if not has_birthday:
-            missing.append((name, url))
+    # Integrate scraped birthdays from artists_missing_birthdays.csv
+    print("Loading scraped birthdays from Wikipedia...")
+    scraped, still_missing = load_scraped_birthdays()
+    print(f"  Found {len(scraped)} scraped birthdays, {len(still_missing)} still missing")
 
-    if missing:
-        with open(MISSING_BIRTHDAYS_PATH, 'w', newline='', encoding='utf-8') as f:
+    # Track which birthday keys we've already seen (to deduplicate)
+    seen_birthdays = set()  # (member_name_lower, birthday)
+    for artist, info in birthdays.items():
+        bday_str = f"{info['birthYear']:04d}-{info['month']:02d}-{info['day']:02d}"
+        seen_birthdays.add((artist.lower(), bday_str))
+
+    added_scraped = 0
+    for entry in scraped:
+        artist_name = entry['artistName']
+        member_name = entry['memberName']
+        page_url = entry['artistPageUrl']
+        birthday = entry['birthday']
+
+        # Parse birthday
+        m = re.match(r'(\d{4})-(\d{2})-(\d{2})', birthday)
+        if not m:
+            continue
+        birth_year = int(m.group(1))
+        month = int(m.group(2))
+        day = int(m.group(3))
+
+        # Skip if already in birthdays (same person, same date)
+        dedup_key = (member_name.lower(), birthday)
+        if dedup_key in seen_birthdays:
+            continue
+        seen_birthdays.add(dedup_key)
+
+        is_band_member = member_name and member_name != artist_name
+
+        if is_band_member:
+            # Band member: key = "BandName — MemberName"
+            key = f"{artist_name} — {member_name}"
+            birthdays[key] = {
+                "birthYear": birth_year,
+                "month": month,
+                "day": day,
+                "bandName": artist_name,
+                "memberName": member_name,
+            }
+        else:
+            # Solo artist
+            key = artist_name
+            if key in birthdays:
+                continue  # Already has a birthday from editorial schedule
+            birthdays[key] = {
+                "birthYear": birth_year,
+                "month": month,
+                "day": day,
+            }
+
+        # Attach artist page URL
+        if page_url and page_url.startswith('http'):
+            birthdays[key]['artistPageUrl'] = page_url
+
+        # Attach best-of article if available
+        bo = bestof_artists.get(artist_name)
+        if bo:
+            birthdays[key]['articleUrl'] = bo
+
+        added_scraped += 1
+
+    print(f"  Added {added_scraped} new birthday entries from scraped data")
+    print(f"  Total birthdays now: {len(birthdays)}")
+
+    # Write still-missing birthdays to Desktop CSV
+    if still_missing:
+        with open(STILL_MISSING_PATH, 'w', newline='', encoding='utf-8') as f:
             writer = csv.writer(f)
-            writer.writerow(['ARTIST NAME', 'ARTIST PAGE URL', 'BIRTHDAY (YYYY-MM-DD)'])
-            for name, url in missing:
-                writer.writerow([name, url, ''])
-        print(f"  Wrote {len(missing)} artists missing birthdays to {MISSING_BIRTHDAYS_PATH}")
-    else:
-        print("  All artist page artists have birthdays in the editorial schedule!")
+            writer.writerow(['ARTIST NAME', 'ARTIST PAGE URL'])
+            for name, url in still_missing:
+                writer.writerow([name, url])
+        print(f"  Wrote {len(still_missing)} still-missing artists to {STILL_MISSING_PATH}")
 
     # Write JS file
     js = "// Auto-generated by extract_data.py — do not edit manually\n"

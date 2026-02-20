@@ -1039,8 +1039,8 @@
             <button class="refresh-btn" onclick="refreshNews()">Refresh</button>
         </div>
         <div class="news-filters">
-            <button class="news-filter-btn active" onclick="filterNews('all')">All</button>
-            <button class="news-filter-btn" onclick="filterNews('artists')">Our Artists</button>
+            <button class="news-filter-btn" onclick="filterNews('all')">All</button>
+            <button class="news-filter-btn active" onclick="filterNews('artists')">Our Artists</button>
             <button class="news-filter-btn" onclick="filterNews('billboard')">Billboard</button>
             <button class="news-filter-btn" onclick="filterNews('variety')">Variety</button>
             <button class="news-filter-btn" onclick="filterNews('rollingstone')">Rolling Stone</button>
@@ -2341,7 +2341,7 @@ const NEWS_FEEDS = [
 ];
 const NEWS_CACHE_TTL = 15 * 60 * 1000; // 15 min cache
 let newsArticles = [];
-let newsFilter = 'all';
+let newsFilter = 'artists';
 const TRACKED_ARTISTS = [
     'Aerosmith','Akon','Amy Winehouse','Andrea Bocelli','Audioslave','Beastie Boys',
     'Bee Gees','Billy Idol','Black Eyed Peas','Bob Marley','Bob Seger','Bon Jovi',
@@ -2383,7 +2383,7 @@ async function fetchNewsFeed(feed) {
             let settled = false;
             let failures = 0;
             proxies.forEach(proxy => {
-                fetchTextWithProxy(feed.url, proxy, 8000)
+                fetchTextWithProxy(feed.url, proxy, 5000)
                     .then(text => {
                         if (settled) return;
                         if (!text || !text.includes('<item>')) throw new Error('Invalid RSS');
@@ -2427,9 +2427,20 @@ function parseNewsRSS(xml, feed) {
 async function refreshNews() {
     const feedEl = document.getElementById('news-feed');
     feedEl.innerHTML = '<div class="no-data">Loading news...</div>';
-    const results = await Promise.all(NEWS_FEEDS.map(f => fetchNewsFeed(f)));
-    newsArticles = results.flat().sort((a, b) => b.date - a.date);
-    renderNews();
+    newsArticles = [];
+    let loaded = 0;
+    const promises = NEWS_FEEDS.map(f => fetchNewsFeed(f).then(articles => {
+        newsArticles.push(...articles);
+        loaded++;
+        newsArticles.sort((a, b) => b.date - a.date);
+        renderNews();
+        if (loaded < NEWS_FEEDS.length) {
+            feedEl.insertAdjacentHTML('beforeend', `<div class="no-data" id="news-loading-more" style="padding:12px;font-size:0.8rem;">Loading ${NEWS_FEEDS.length - loaded} more source${loaded < NEWS_FEEDS.length - 1 ? 's' : ''}...</div>`);
+        }
+    }));
+    await Promise.all(promises);
+    const loadingMore = document.getElementById('news-loading-more');
+    if (loadingMore) loadingMore.remove();
 }
 
 function renderNews() {

@@ -196,6 +196,43 @@
         .tab-content { display: none; }
         .tab-content.active { display: block; }
 
+        /* Music News Tab */
+        .news-filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+        .news-filter-btn {
+            padding: 6px 14px; font-size: 0.8rem; border-radius: 20px;
+            border: 1px solid rgba(0, 255, 255, 0.3); background: transparent;
+            color: #7DD3E8; cursor: pointer; font-family: 'Inter', sans-serif;
+            transition: all 0.3s;
+        }
+        .news-filter-btn:hover { border-color: #00FFFF; color: #00FFFF; }
+        .news-filter-btn.active { background: rgba(0, 255, 255, 0.15); border-color: #00FFFF; color: #00FFFF; }
+        .news-card {
+            display: flex; gap: 14px; padding: 14px; border-radius: 10px;
+            transition: all 0.3s;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+            background: rgba(0, 20, 40, 0.4);
+            text-decoration: none; color: inherit;
+        }
+        .news-card:hover {
+            background: rgba(0, 255, 255, 0.08);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+        }
+        .news-card-body { flex: 1; min-width: 0; }
+        .news-card-title {
+            font-weight: 600; font-size: 0.95rem; color: #E0F7FF;
+            margin-bottom: 4px; line-height: 1.3;
+        }
+        .news-card-meta {
+            font-size: 0.75rem; color: #5a8a9a; display: flex; gap: 10px; flex-wrap: wrap;
+        }
+        .news-card-source {
+            padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; font-weight: 600;
+            display: inline-block;
+        }
+        .news-source-billboard { background: rgba(255, 59, 48, 0.2); color: #FF6B6B; }
+        .news-source-variety { background: rgba(139, 92, 246, 0.2); color: #B794F6; }
+        .news-source-rollingstone { background: rgba(255, 105, 180, 0.2); color: #FF69B4; }
+
         /* Progress bar */
         .progress-wrap {
             width: 100%; height: 6px;
@@ -909,6 +946,9 @@
         <button class="tab-btn" onclick="switchTab('stores')" id="tab-stores">
             Artist Stores <span class="tab-badge" id="stores-sold-out-count" style="display:none;">0</span>
         </button>
+        <button class="tab-btn" onclick="switchTab('news')" id="tab-news">
+            Music News
+        </button>
     </div>
 
     <!-- YouTube Tab -->
@@ -982,6 +1022,21 @@
         </div>
 
         <div id="stores-sold-out-list"></div>
+    </div>
+
+    <!-- Music News Tab -->
+    <div class="tab-content" id="content-news">
+        <div class="feed-header">
+            <div class="feed-title">Music News</div>
+            <button class="refresh-btn" onclick="refreshNews()">Refresh</button>
+        </div>
+        <div class="news-filters">
+            <button class="news-filter-btn active" onclick="filterNews('all')">All</button>
+            <button class="news-filter-btn" onclick="filterNews('billboard')">Billboard</button>
+            <button class="news-filter-btn" onclick="filterNews('variety')">Variety</button>
+            <button class="news-filter-btn" onclick="filterNews('rollingstone')">Rolling Stone</button>
+        </div>
+        <div id="news-feed"></div>
     </div>
 </div>
 
@@ -1196,6 +1251,8 @@ function showInitialMessages() {
     // YouTube tab
     document.getElementById('feed').innerHTML = '<div class="no-data">Click <strong>Refresh</strong> to load videos.</div>';
     // Stores tab already shows individual store buttons
+    // News tab
+    document.getElementById('news-feed').innerHTML = '<div class="no-data">Click <strong>Refresh</strong> to load news.</div>';
 }
 
 // ─── Channel Management ────────────────────────────────────────
@@ -2266,6 +2323,127 @@ function downloadStoresCSV() {
     URL.revokeObjectURL(url);
 }
 
+
+// ─── Music News ─────────────────────────────────────────────────
+const NEWS_FEEDS = [
+    { id: 'billboard', name: 'Billboard', url: 'https://www.billboard.com/feed/' },
+    { id: 'variety', name: 'Variety', url: 'https://variety.com/v/music/feed/' },
+    { id: 'rollingstone', name: 'Rolling Stone', url: 'https://www.rollingstone.com/music/feed/' },
+];
+const NEWS_CACHE_TTL = 15 * 60 * 1000; // 15 min cache
+let newsArticles = [];
+let newsFilter = 'all';
+
+async function fetchNewsFeed(feed) {
+    const cacheKey = `news_cache_${feed.id}`;
+    try {
+        const cached = localStorage.getItem(cacheKey);
+        if (cached) {
+            const { data, ts } = JSON.parse(cached);
+            if (Date.now() - ts < NEWS_CACHE_TTL) return data;
+        }
+    } catch {}
+
+    const proxies = [...CORS_PROXIES];
+    try {
+        const result = await new Promise((resolve, reject) => {
+            let settled = false;
+            let failures = 0;
+            proxies.forEach(proxy => {
+                fetchTextWithProxy(feed.url, proxy, 8000)
+                    .then(text => {
+                        if (settled) return;
+                        if (!text || !text.includes('<item>')) throw new Error('Invalid RSS');
+                        settled = true;
+                        resolve(text);
+                    })
+                    .catch(() => {
+                        failures++;
+                        if (failures === proxies.length && !settled) { settled = true; reject(new Error('All proxies failed')); }
+                    });
+            });
+        });
+        const articles = parseNewsRSS(result, feed);
+        localStorage.setItem(cacheKey, JSON.stringify({ data: articles, ts: Date.now() }));
+        return articles;
+    } catch { return []; }
+}
+
+function parseNewsRSS(xml, feed) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(xml, 'text/xml');
+    const items = doc.querySelectorAll('item');
+    const articles = [];
+    items.forEach(item => {
+        const title = item.querySelector('title')?.textContent?.trim() || '';
+        const link = item.querySelector('link')?.textContent?.trim() || '';
+        const pubDate = item.querySelector('pubDate')?.textContent?.trim() || '';
+        const creator = item.querySelector('creator')?.textContent?.trim() || '';
+        const desc = item.querySelector('description')?.textContent?.trim() || '';
+        // Strip HTML tags from description
+        const cleanDesc = desc.replace(/<[^>]*>/g, '').slice(0, 200);
+        articles.push({
+            title, link, pubDate, creator, description: cleanDesc,
+            source: feed.id, sourceName: feed.name,
+            date: new Date(pubDate)
+        });
+    });
+    return articles;
+}
+
+async function refreshNews() {
+    const feedEl = document.getElementById('news-feed');
+    feedEl.innerHTML = '<div class="no-data">Loading news...</div>';
+    const results = await Promise.all(NEWS_FEEDS.map(f => fetchNewsFeed(f)));
+    newsArticles = results.flat().sort((a, b) => b.date - a.date);
+    renderNews();
+}
+
+function renderNews() {
+    const feedEl = document.getElementById('news-feed');
+    const filtered = newsFilter === 'all' ? newsArticles : newsArticles.filter(a => a.source === newsFilter);
+    if (filtered.length === 0) {
+        feedEl.innerHTML = '<div class="no-data">No articles found. Click <strong>Refresh</strong> to load news.</div>';
+        return;
+    }
+    feedEl.innerHTML = filtered.map(a => {
+        const ago = timeAgo(a.date);
+        return `<a class="news-card" href="${a.link}" target="_blank" rel="noopener">
+            <div class="news-card-body">
+                <div class="news-card-title">${escapeHtml(a.title)}</div>
+                <div style="font-size:0.82rem;color:#8aacba;margin-bottom:6px;line-height:1.4;">${escapeHtml(a.description)}</div>
+                <div class="news-card-meta">
+                    <span class="news-card-source news-source-${a.source}">${a.sourceName}</span>
+                    ${a.creator ? `<span>${escapeHtml(a.creator)}</span>` : ''}
+                    <span>${ago}</span>
+                </div>
+            </div>
+        </a>`;
+    }).join('');
+}
+
+function escapeHtml(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+}
+
+function timeAgo(date) {
+    const diff = Date.now() - date.getTime();
+    const mins = Math.floor(diff / 60000);
+    if (mins < 60) return `${mins}m ago`;
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return `${hrs}h ago`;
+    const days = Math.floor(hrs / 24);
+    return `${days}d ago`;
+}
+
+function filterNews(filter) {
+    newsFilter = filter;
+    document.querySelectorAll('.news-filter-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    renderNews();
+}
 
 // ─── Boot ──────────────────────────────────────────────────────
 if (sessionStorage.getItem(AUTH_KEY) === 'true' && getStoredHash()) {

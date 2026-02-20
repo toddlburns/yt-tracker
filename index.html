@@ -2358,15 +2358,13 @@ const TRACKED_ARTISTS = [
     'The Beatles','The Black Crowes','The Cranberries','The Game','The Rolling Stones',
     'The Who','Toby Keith','Tom Petty','Heartbreakers','Trisha Yearwood','U2','Weezer','Nelly'
 ];
-const _artistRegex = new RegExp('\\b(' + TRACKED_ARTISTS.map(a => a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b', 'i');
+const _artistRegex = new RegExp('\\b(' + TRACKED_ARTISTS.map(a => a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b', 'gi');
 function matchArtists(text) {
-    const matches = [];
-    for (const artist of TRACKED_ARTISTS) {
-        if (new RegExp('\\b' + artist.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i').test(text)) {
-            matches.push(artist);
-        }
-    }
-    return matches;
+    _artistRegex.lastIndex = 0;
+    const found = new Set();
+    let m;
+    while ((m = _artistRegex.exec(text)) !== null) found.add(m[1]);
+    return [...found];
 }
 
 async function fetchNewsFeed(feed) {

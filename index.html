@@ -412,6 +412,21 @@
             border: 1px solid rgba(139, 92, 246, 0.3); background: rgba(139, 92, 246, 0.08);
             color: #B794F6; transition: all 0.2s; margin-left: auto;
         }
+        /* Page Audit (green-tinted) */
+        .page-audit-btn {
+            font-size: 0.55rem; padding: 1px 6px; border-radius: 5px; cursor: pointer;
+            border: 1px solid rgba(74, 222, 128, 0.3); background: rgba(74, 222, 128, 0.1);
+            color: #4ADE80; transition: all 0.2s; white-space: nowrap;
+        }
+        .page-audit-btn:hover { background: rgba(74, 222, 128, 0.25); border-color: #4ADE80; }
+        .page-audit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+        .page-audit-check-all-btn {
+            font-size: 0.65rem; padding: 2px 10px; border-radius: 8px; cursor: pointer;
+            border: 1px solid rgba(74, 222, 128, 0.3); background: rgba(74, 222, 128, 0.08);
+            color: #4ADE80; transition: all 0.2s;
+        }
+        .page-audit-check-all-btn:hover { background: rgba(74, 222, 128, 0.2); }
+        .page-audit-check-all-btn:disabled { opacity: 0.4; cursor: not-allowed; }
         .audit-check-all-btn:hover { background: rgba(139, 92, 246, 0.2); border-color: #B794F6; }
         .audit-check-all-btn:disabled { opacity: 0.4; cursor: not-allowed; }
         .audit-progress-inline { font-size: 0.6rem; color: #5a8a9a; margin-left: 6px; }
@@ -1234,6 +1249,7 @@
                 <p style="margin:2px 0 0;">Upcoming anniversaries for priority artists (next 30 days)</p>
             </div>
             <button class="audit-check-all-btn" id="audit-all-btn" onclick="auditCheckAllVisible()">Check All Articles</button>
+            <button class="page-audit-check-all-btn" id="page-audit-all-btn" onclick="pageAuditCheckAllVisible()">Check All Pages</button>
             <span class="audit-progress-inline" id="audit-progress"></span>
         </div>
         <div class="editorial-filters">
@@ -3133,6 +3149,166 @@ function auditStop() {
     auditAbort = true;
 }
 
+// ─── Artist Page Audit ──────────────────────────────────────────
+const pageAuditResults = {};
+let pageAuditRunning = false;
+
+function pageAuditInlineHtml(artist, dedupSet) {
+    // Get artist page URL — check item-level first, then global lookup
+    const pageUrl = artistPageUrl(artist);
+    if (!pageUrl) return '';
+    const dedupKey = 'page|' + artist;
+    if (dedupSet && dedupSet.has(dedupKey)) {
+        const result = pageAuditResults[artist];
+        if (result) return `<span class="audit-result-inline">${formatPageAuditResult(result)}</span>`;
+        return '';
+    }
+    if (dedupSet) dedupSet.add(dedupKey);
+    const escapedArtist = artist.replace(/'/g, "\\'");
+    const result = pageAuditResults[artist];
+    const resultHtml = result ? formatPageAuditResult(result) : '';
+    return `<span class="audit-inline">
+        <button class="page-audit-btn" id="pbtn-${css_id(artist)}" onclick="event.stopPropagation(); pageAuditCheckOne('${escapedArtist}')"${result ? ' disabled' : ''}>
+            ${result ? '✓' : 'Page'}
+        </button>
+        <span class="audit-result-inline" id="pres-${css_id(artist)}">${resultHtml}</span>
+    </span>`;
+}
+
+function formatPageAuditResult(r) {
+    if (r.error) return `<span class="audit-result-error">${esc(r.error)}</span>`;
+    const gap = r.latestYear - r.pageYear;
+    let cls, verdict;
+    if (gap <= 1) {
+        cls = 'audit-result-fresh';
+        verdict = 'Current';
+    } else if (gap <= 3) {
+        cls = 'audit-result-stale';
+        verdict = `${gap}yr gap`;
+    } else {
+        cls = 'audit-result-outdated';
+        verdict = `${gap}yr gap!`;
+    }
+    const latestWorkHtml = r.latestWork ? ` (${esc(r.latestWork)})` : '';
+    return `<span class="${cls}">
+        <span class="audit-year-pill" style="background:rgba(74,222,128,0.25);color:#B0FFD0;">${r.pageYear}</span>→<span class="audit-year-pill audit-year-latest">${r.latestYear}${latestWorkHtml}</span>
+        ${verdict}
+    </span>`;
+}
+
+async function pageAuditCheckOne(artist) {
+    const resultEl = document.getElementById('pres-' + css_id(artist));
+    const btnEl = document.getElementById('pbtn-' + css_id(artist));
+    if (!resultEl) return;
+
+    resultEl.innerHTML = '<span class="audit-result-loading">Checking page...</span>';
+    if (btnEl) btnEl.disabled = true;
+
+    const url = artistPageUrl(artist);
+    if (!url) {
+        resultEl.innerHTML = '<span class="audit-result-error">No page URL</span>';
+        return;
+    }
+
+    try {
+        // Step 1: Fetch and analyze the artist page
+        const pageHtml = await auditFetchArticle(url);
+        if (!pageHtml) {
+            pageAuditResults[artist] = { error: 'Could not fetch page' };
+            resultEl.innerHTML = formatPageAuditResult(pageAuditResults[artist]);
+            return;
+        }
+
+        const pageYear = extractMaxYearFromArticle(pageHtml);
+        if (!pageYear) {
+            pageAuditResults[artist] = { error: 'No years found on page' };
+            resultEl.innerHTML = formatPageAuditResult(pageAuditResults[artist]);
+            return;
+        }
+
+        resultEl.innerHTML = `<span class="audit-result-loading">Page covers through ${pageYear}. Checking Wikipedia...</span>`;
+
+        // Step 2: Check Wikipedia for latest release
+        const discoResult = await auditFetchWikipediaLatest(artist);
+        const artistWikiYear = await auditFetchArtistWiki(artist);
+
+        let latestYear = pageYear;
+        let latestWork = null;
+
+        if (discoResult && discoResult.year) {
+            latestYear = Math.max(latestYear, discoResult.year);
+            if (discoResult.work && discoResult.year === latestYear) {
+                latestWork = discoResult.work;
+            }
+        }
+        if (artistWikiYear && artistWikiYear > latestYear) {
+            latestYear = artistWikiYear;
+            latestWork = null;
+        }
+
+        pageAuditResults[artist] = {
+            pageYear,
+            latestYear,
+            latestWork,
+            status: latestYear - pageYear <= 1 ? 'fresh' : latestYear - pageYear <= 3 ? 'stale' : 'outdated'
+        };
+        resultEl.innerHTML = formatPageAuditResult(pageAuditResults[artist]);
+        if (btnEl) btnEl.textContent = '✓';
+    } catch (err) {
+        pageAuditResults[artist] = { error: 'Check failed: ' + err.message };
+        resultEl.innerHTML = formatPageAuditResult(pageAuditResults[artist]);
+    }
+}
+
+async function pageAuditCheckAllVisible() {
+    if (pageAuditRunning) return;
+    pageAuditRunning = true;
+    auditAbort = false;
+    const btn = document.getElementById('page-audit-all-btn');
+    if (btn) btn.disabled = true;
+
+    const btns = document.querySelectorAll('.page-audit-btn:not([disabled])');
+    const artists = [];
+    btns.forEach(b => {
+        const m = b.id.match(/^pbtn-(.+)$/);
+        if (m) {
+            // Reverse css_id to find artist name
+            if (typeof ARTIST_PAGES !== 'undefined') {
+                for (const a of Object.keys(ARTIST_PAGES)) {
+                    if (css_id(a) === m[1] && !pageAuditResults[a]) {
+                        artists.push(a);
+                        break;
+                    }
+                }
+            }
+        }
+    });
+
+    const total = artists.length;
+    let completed = 0;
+    const progressEl = document.getElementById('audit-progress');
+    if (progressEl) progressEl.textContent = `Pages: 0 / ${total}`;
+
+    const queue = [...artists];
+    async function worker() {
+        while (queue.length > 0 && !auditAbort) {
+            const artist = queue.shift();
+            await pageAuditCheckOne(artist);
+            completed++;
+            if (progressEl) progressEl.textContent = `Pages: ${completed} / ${total}`;
+            await new Promise(r => setTimeout(r, 300));
+        }
+    }
+
+    const workers = [];
+    for (let i = 0; i < 3; i++) workers.push(worker());
+    await Promise.all(workers);
+
+    pageAuditRunning = false;
+    if (btn) btn.disabled = false;
+    if (progressEl) progressEl.textContent = auditAbort ? 'Stopped' : 'Done!';
+}
+
 function getOrdinal(n) {
     const s = ['th','st','nd','rd'];
     const v = n % 100;
@@ -3448,6 +3624,7 @@ function renderEditorial() {
                 const ck2 = editorialItemKey(item).replace(/'/g, "\\'");
                 const isChecked2 = editorialCheckedSet.has(editorialItemKey(item));
                 const auditHtml2 = auditInlineHtml(artist, auditRendered);
+                const pageAuditHtml2 = pageAuditInlineHtml(artist, auditRendered);
                 html += `<div class="editorial-card${birthdayClass}${roundClass(item)}${isChecked2 ? ' checked-off' : ''}">
                     <div class="editorial-check${isChecked2 ? ' checked' : ''}" onclick="toggleEditorialCheck('${ck2}', this)">${isChecked2 ? '✓' : ''}</div>
                     <div class="editorial-card-icon">${item.icon}</div>
@@ -3459,7 +3636,7 @@ function renderEditorial() {
                             <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq2}', event)">\uD83C\uDF10</a>
                             ${videoHtml}
                         </span>
-                        ${auditHtml2}
+                        ${auditHtml2}${pageAuditHtml2}
                     </div>
                 </div>`;
             } else {
@@ -3467,12 +3644,13 @@ function renderEditorial() {
                 const gid = `eg-${groupId++}`;
                 const primaryIcon = items.find(i => i.type === 'birthday') ? '\uD83C\uDF82' : items[0].icon;
                 const groupAuditHtml = auditInlineHtml(artist, auditRendered);
+                const groupPageAuditHtml = pageAuditInlineHtml(artist, auditRendered);
                 html += `<div class="editorial-artist-group" id="${gid}">
                     <div class="editorial-group-header" onclick="document.getElementById('${gid}').classList.toggle('open')">
                         <div class="editorial-card-icon">${primaryIcon}</div>
                         <span class="editorial-card-artist">${artist}</span>
                         <span class="editorial-group-count">${items.length} events</span>
-                        ${groupAuditHtml}
+                        ${groupAuditHtml}${groupPageAuditHtml}
                         <span class="editorial-group-chevron">\u25B6</span>
                     </div>
                     <div class="editorial-group-body">`;

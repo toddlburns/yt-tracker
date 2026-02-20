@@ -1544,7 +1544,7 @@ async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 5000) {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const text = await res.text();
         // Validate it's actually XML, not an error page
-        if (text.length < 100 || !text.includes('<feed')) throw new Error('Not valid RSS');
+        if (text.length < 100 || (!text.includes('<feed') && !text.includes('<rss'))) throw new Error('Not valid RSS');
         return text;
     } catch (error) {
         clearTimeout(timeoutId);

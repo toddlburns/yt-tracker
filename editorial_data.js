@@ -7,7 +7,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 4,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-and-then-there-were-three/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-and-then-there-were-three/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Taylor Swift released 'Fearless'",
@@ -16,7 +17,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2008,
     "month": 11,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/fearless-taylor-swift-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/fearless-taylor-swift-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   {
     "name": "[11-03] Juvenile - 400 Degreez",
@@ -33,7 +35,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 1,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/a-new-year-breaks-for-cat-stevens/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/a-new-year-breaks-for-cat-stevens/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "James Brown enters Hot 100 with 'Get Up, Get Into It, Get Involved'",
@@ -42,7 +45,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 1,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-get-up-get-into-it-get-involved-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-get-up-get-into-it-get-involved-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Brian Eno released \u201eHere Come The Warm Jets\u201d",
@@ -51,7 +55,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 1,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-here-come-the-warm-jets/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-here-come-the-warm-jets/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brian-eno"
   },
   {
     "name": "David Ruffin's 'Walk Away From Love' tops R&B chart",
@@ -77,7 +82,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1986,
     "month": 1,
-    "day": 4
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thin-lizzy"
   },
   {
     "name": "Frank Sinatra released 'Songs For Young Lovers' album",
@@ -86,7 +92,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1955,
     "month": 1,
     "day": 4,
-    "socialAssetUrl": "https://umusic.box.com/s/g1qss6ia3vexl8lblue5asu9vhh8ub9l"
+    "socialAssetUrl": "https://umusic.box.com/s/g1qss6ia3vexl8lblue5asu9vhh8ub9l",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Aerosmith released 'Aerosmith'",
@@ -95,7 +102,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 1,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/aerosmith-self-titled-debut-album-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/aerosmith-self-titled-debut-album-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/aerosmith"
   },
   {
     "name": "Carpenters' 'Singles 1969-1973' album makes No.1 in US",
@@ -104,7 +112,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 1,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/capenters-greatest-hits/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/capenters-greatest-hits/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Creedence Clearwater Revival's 'Bayou Country' album released",
@@ -113,7 +122,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 1,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-bayou-country/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-bayou-country/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Creedence-Clearwater-Revival"
   },
   {
     "name": "Ella Fitzgerald records some of the 'Sings George And Ira Gershwin Songbook' album",
@@ -122,7 +132,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1959,
     "month": 1,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-ella-fitzgerald-sings-the-george-and-ira-gershwin-song-book/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Elvis Costello releases 'Armed Forces'",
@@ -131,7 +142,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 1,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-armed-forces/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-armed-forces/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Costello"
   },
   {
     "name": "Hank Williams Jr enters US album chart with 'All For The Love Of Sunshine'",
@@ -140,7 +152,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 1,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-jr-spreads-the-sunshine/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-jr-spreads-the-sunshine/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Peggy Lee enters Hot 100 with 'I'm A Woman'",
@@ -149,7 +162,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 1,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-im-a-woman-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-im-a-woman-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Dizzy Gillespie died",
@@ -166,7 +180,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1987,
     "month": 1,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/some-call-it-the-royal-eric-hall/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/some-call-it-the-royal-eric-hall/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   {
     "name": "Frank Sinatra's 'Come Fly With Me' released",
@@ -175,7 +190,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1958,
     "month": 1,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/come-fly-with-me/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/come-fly-with-me/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "The Rolling Stones start first headlining UK tour",
@@ -183,7 +199,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1964,
     "month": 1,
-    "day": 6
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Police released 'King of Pain' in the UK as a single",
@@ -192,7 +209,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 1,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-police-king-of-pain-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-police-king-of-pain-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
   },
   {
     "name": "James Brown enters Hot 100 with 'Bring It Up'",
@@ -201,7 +219,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 1,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-bring-it-up-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-bring-it-up-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Muddy Waters recorded 'Hoochie Coochie Man'",
@@ -210,7 +229,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1954,
     "month": 1,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-hoochie-coochie-man/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-hoochie-coochie-man/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "Carpenters' 'Live At Palladium' enters UK chart",
@@ -219,7 +239,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 1,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/carpenters-ruled-london-stage/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/carpenters-ruled-london-stage/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Nicolai Gedda died",
@@ -237,7 +258,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 1,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-holland/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-holland/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Sam Cooke's 'Shake' enters Hot 100 to become his first posthumous hit",
@@ -246,7 +268,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 1,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sam-cookes-shaken-fans-give-him-a-posthumous-hit/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sam-cookes-shaken-fans-give-him-a-posthumous-hit/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-cooke"
   },
   {
     "name": "George Harrison released 'The Concert For Bangla Desh' in the UK",
@@ -254,7 +277,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": null,
     "month": 1,
-    "day": 10
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Howlin' Wolf died",
@@ -271,7 +295,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 1,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/steve-winwood-refuels-80s/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/steve-winwood-refuels-80s/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-winwood"
   },
   {
     "name": "The Rolling Stones' release their debut EP, 'The Rolling Stones'",
@@ -279,7 +304,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1964,
     "month": 1,
-    "day": 10
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Vangelis' 'Heaven And Hell' becomes his UK album chart debut",
@@ -288,7 +314,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 1,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/vangelis-makes-his-uk-chart-debut/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/vangelis-makes-his-uk-chart-debut/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vangelis"
   },
   {
     "name": "Keith Jarrett, Gary Peacock, Jack DeJohnette recorded Standards, Vol. 1",
@@ -297,7 +324,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 1,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/keith-jarrett-gary-peacock-jack-dejohnette-standards-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/keith-jarrett-gary-peacock-jack-dejohnette-standards-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-jarrett"
   },
   {
     "name": "Nirvana's 'Nevermind' tops the US album chart",
@@ -305,7 +333,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1992,
     "month": 1,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "Patsy Cline enters country chart posthumously with 'When You Need A Laugh'",
@@ -314,7 +343,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 1,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/another-posthumous-chart-entry-for-patsy-cline/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/another-posthumous-chart-entry-for-patsy-cline/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "The Beatles' 'Please Please Me' single",
@@ -323,7 +353,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 1,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/please-please-me-2/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/please-please-me-2/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Steve Miller Band's 'The Joker' makes No.1 in US",
@@ -332,7 +363,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 1,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/funny-story-joker/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/funny-story-joker/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-miller-band"
   },
   {
     "name": "Carpenters' 'Lovelines' album enters UK chart",
@@ -341,7 +373,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1990,
     "month": 1,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-trace-lovelines/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-trace-lovelines/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Eric Clapton performs Rainbow comeback concert",
@@ -350,7 +383,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 1,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/clapton-comes-back-life/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/clapton-comes-back-life/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   {
     "name": "Diana Ross performs with The Supremes for the last time",
@@ -359,7 +393,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 1,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/diana-ross-says-farewell-to-the-supremes/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/diana-ross-says-farewell-to-the-supremes/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Ross"
   },
   {
     "name": "Keith Urban's 'Blue Ain't Your Color' becomes 21st country airplay No.1",
@@ -368,7 +403,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 1,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/21-counting-for-keith-urban/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/21-counting-for-keith-urban/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-urban"
   },
   {
     "name": "Nat King Cole recorded 'Nat King Cole At The Sands'",
@@ -378,7 +414,8 @@ const EDITORIAL_EVENTS = [
     "month": 1,
     "day": 14,
     "articleUrl": "https://www.udiscovermusic.com/?p=2148207&preview=true",
-    "socialAssetUrl": "https://umusic.box.com/s/zxwoipjj99pan1yu905rpxlpjckwja1n"
+    "socialAssetUrl": "https://umusic.box.com/s/zxwoipjj99pan1yu905rpxlpjckwja1n",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nat-King-Cole"
   },
   {
     "name": "Natalie Cole enters Hot 100 with 'Our Love'",
@@ -387,7 +424,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 1,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/natalie-cole-strikes-gold-smoothly-soulful-love/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/natalie-cole-strikes-gold-smoothly-soulful-love/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/natalie"
   },
   {
     "name": "Rush's 'Permanent Waves' album released",
@@ -396,7 +434,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 1,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rush-create-permanent-waves/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rush-create-permanent-waves/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "Camel released 'Harbour Of Tears'",
@@ -405,7 +444,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 1,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-harbour-of-tears/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-harbour-of-tears/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Genesis' 'Wind And Wuthering' enters UK chart",
@@ -414,7 +454,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 1,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/wuthering-reaches-top-ten-heights-genesis/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/wuthering-reaches-top-ten-heights-genesis/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "John Lee Hooker and Canned Heat released 'Hooker 'N Heat'",
@@ -423,7 +464,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 1,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/canned-heat-john-lee-hooker-n-heat/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/canned-heat-john-lee-hooker-n-heat/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lee-hooker"
   },
   {
     "name": "Marvin Gaye released 'In Our Lifetime'",
@@ -433,7 +475,8 @@ const EDITORIAL_EVENTS = [
     "month": 1,
     "day": 15,
     "articleUrl": "https://www.udiscovermusic.com/stories/troubled-tantalising-soul-marvin-gayes-lifetime/",
-    "socialAssetUrl": "https://umusic.box.com/s/rmv5y4nbonq6fj54r7h5szqyrhmcb5k5"
+    "socialAssetUrl": "https://umusic.box.com/s/rmv5y4nbonq6fj54r7h5szqyrhmcb5k5",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "The Rolling Stones appear on 'The Ed Sullivan Show', change the lyrics to 'Let's Spend The Night Together'",
@@ -442,7 +485,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 1,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-controversial-start-to-1967/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-controversial-start-to-1967/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones released 'The Rolling Stones No.2'",
@@ -451,7 +495,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 1,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-no2-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-no2-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Gang Starr released 'Step in the Arena'",
@@ -460,7 +505,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 1,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/gang-starr-step-in-the-arena-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/gang-starr-step-in-the-arena-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gang-starr"
   },
   {
     "name": "Peter Frampton's 'Frampton Comes Alive!' released",
@@ -469,7 +515,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 1,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/peter-frampton-frampton-comes-alive-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/peter-frampton-frampton-comes-alive-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peter-Frampton"
   },
   {
     "name": "Queen released 'Radio Ga Ga'",
@@ -478,7 +525,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 1,
     "day": 23,
-    "socialAssetUrl": "https://umusic.box.com/s/o2mjm3rbzs6mtlslas6uwugkifnccxup"
+    "socialAssetUrl": "https://umusic.box.com/s/o2mjm3rbzs6mtlslas6uwugkifnccxup",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Little Big Town released \u2018Nightfall\u2019",
@@ -487,7 +535,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2020,
     "month": 1,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/little-big-town-nightfall-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/little-big-town-nightfall-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/little-big-town"
   },
   {
     "name": "Sting released 'The Soul Cages'",
@@ -497,7 +546,8 @@ const EDITORIAL_EVENTS = [
     "month": 1,
     "day": 17,
     "articleUrl": "https://www.udiscovermusic.com/stories/sting-the-soul-cages-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/7yagkgpfwk0dqcb62c8f1ajx37f485lt"
+    "socialAssetUrl": "https://umusic.box.com/s/7yagkgpfwk0dqcb62c8f1ajx37f485lt",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   {
     "name": "Quincy Jones' 'Q's Jook Joint' album goes gold in the US",
@@ -506,7 +556,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 1,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/quincy-goes-gold-in-his-all-star-jook-joint/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/quincy-goes-gold-in-his-all-star-jook-joint/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Quincy-Jones"
   },
   {
     "name": "Rick Wakeman recorded 'Journey To The Centre Of The Earth'",
@@ -515,7 +566,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 1,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-journey-to-the-centre-of-the-earth/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-journey-to-the-centre-of-the-earth/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-wakeman"
   },
   {
     "name": "Frank Zappa released 'Sleep Dirt'",
@@ -524,7 +576,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 1,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-sleep-dirt-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-sleep-dirt-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Megadeth released 'So Far, So Good... So What!'",
@@ -534,7 +587,8 @@ const EDITORIAL_EVENTS = [
     "month": 1,
     "day": 19,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-so-far-so-good-so-what/",
-    "socialAssetUrl": "https://umusic.box.com/s/8484sb7kn8799u04tv7r6vp275bvftqx"
+    "socialAssetUrl": "https://umusic.box.com/s/8484sb7kn8799u04tv7r6vp275bvftqx",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "Patsy Cline\u2019s 'Sweet Dreams' compilation becomes her first ever UK album chart entry, 28 years after her death",
@@ -543,7 +597,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 1,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsys-posthumous-performance/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsys-posthumous-performance/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Charles Mingus recorded The Black Saint and the Sinner Lady",
@@ -562,7 +617,8 @@ const EDITORIAL_EVENTS = [
     "month": 1,
     "day": 20,
     "articleUrl": "https://www.udiscovermusic.com/stories/pyromania-def-leppard/",
-    "socialAssetUrl": "https://umusic.box.com/s/t4fz3q3u1kt3g4lqd6x1qukdi8y0b5q2"
+    "socialAssetUrl": "https://umusic.box.com/s/t4fz3q3u1kt3g4lqd6x1qukdi8y0b5q2",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Marvin Gaye  - \"What's Going On\" single released",
@@ -570,7 +626,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1971,
     "month": 1,
-    "day": 20
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "The Beatles' 'Meet The Beatles' album released in the US",
@@ -579,7 +636,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 1,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/america-meets-beatles-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/america-meets-beatles-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones released 'Between The Buttons'",
@@ -588,7 +646,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 1,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-go-between-the-buttons/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-go-between-the-buttons/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bon Jovi release 'Bon Jovi'",
@@ -597,7 +656,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 1,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-arrive-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-arrive-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Enrique Iglesias released 'Vivir'",
@@ -614,7 +674,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2002,
     "month": 1,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Megadeth released 'Dystopia'",
@@ -623,7 +684,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 1,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-dystopia-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-dystopia-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "The Rolling Stones appear on 'Sunday Night At The London Palladium'",
@@ -631,7 +693,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1967,
     "month": 1,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Rick Wakeman released 'The Six Wives Of Henry VIII'",
@@ -640,7 +703,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 1,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rick-wakeman-six-wives-of-henry-viii/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rick-wakeman-six-wives-of-henry-viii/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-wakeman"
   },
   {
     "name": "Temptations released 'The Way You Do The Things You Do'",
@@ -658,7 +722,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 1,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-spirits-having-flown/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-spirits-having-flown/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Keith Jarrett recorded 'The K\u00f6ln Concert'",
@@ -667,7 +732,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 1,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/koln-concert-keith-jarrett/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/koln-concert-keith-jarrett/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-jarrett"
   },
   {
     "name": "Loretta Lynn enters country chart with 'I Lie,' which becomes her last top ten hit",
@@ -685,7 +751,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 1,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-is-that-all-there-is/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-is-that-all-there-is/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "D'Angelo releases 'Voodoo'",
@@ -694,7 +761,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2000,
     "month": 1,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-voodoo/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-voodoo/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dangelo"
   },
   {
     "name": "Ella Fitzgerald's first ever recording session for Verve",
@@ -703,7 +771,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1956,
     "month": 1,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ella-and-verve-how-it-all-began/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ella-and-verve-how-it-all-began/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Carpenters' 'Please Mr Postman' tops the US singles chart",
@@ -711,7 +780,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1975,
     "month": 1,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Elton John released 'Don't Shoot Me I'm Only The Piano Player'",
@@ -720,7 +790,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 1,
     "day": 26,
-    "socialAssetUrl": "https://umusic.box.com/s/6g6d7djluekgmm66lars70qy8bx31l51"
+    "socialAssetUrl": "https://umusic.box.com/s/6g6d7djluekgmm66lars70qy8bx31l51",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Frank Sinatra started recording 'Sinatra At The Sands'",
@@ -729,7 +800,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 1,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-at-the-sands-live-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-at-the-sands-live-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Norah Jones' 'Come Away With Me' album tops the US chart",
@@ -737,7 +809,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 2003,
     "month": 1,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "John Lennon wrote and recorded 'Instant Karma!'",
@@ -746,7 +819,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 1,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/instant-karma-got-us/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/instant-karma-got-us/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Patsy Cline's 'She's Got You' single enters the Hot 100",
@@ -755,7 +829,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 1,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-follow-crazy/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-follow-crazy/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Rihanna released 'Anti'",
@@ -764,7 +839,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 1,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-anti-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-anti-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "John Martyn died",
@@ -772,7 +848,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2009,
     "month": 1,
-    "day": 29
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-martyn"
   },
   {
     "name": "Justin Bieber released 'Believe Acoustic'",
@@ -781,7 +858,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 1,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/justin-bieber-believe-acoustic-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/justin-bieber-believe-acoustic-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/justin-bieber"
   },
   {
     "name": "Steppenwolf release self-titled debut",
@@ -790,7 +868,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 1,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-steppenwolf/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-steppenwolf/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steppenwolf"
   },
   {
     "name": "The Who make their debut on 'Ready Steady Go!'",
@@ -799,7 +878,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 1,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ready-steady-who/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ready-steady-who/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Norah Jones released 'Not Too Late'",
@@ -808,7 +888,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 1,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/not-too-late-for-three-time-winner-norah-jones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/not-too-late-for-three-time-winner-norah-jones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "The Beatles perform Apple rooftop concert",
@@ -817,7 +898,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 1,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-on-the-apple-roof/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-on-the-apple-roof/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Glen Campbell makes UK album chart debut with 'Live'",
@@ -826,7 +908,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 1,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/glen-campbells-uk-album-chart-arrival/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/glen-campbells-uk-album-chart-arrival/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "Styx's 'Paradise Theatre' abum enters the US chart",
@@ -835,7 +918,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 1,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/styx-take-fans-to-paradise/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/styx-take-fans-to-paradise/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/styx"
   },
   {
     "name": "John Martyn released 'Solid Air' this month",
@@ -844,7 +928,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 2,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-john-martyn-solid-air-half-speed-master/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-john-martyn-solid-air-half-speed-master/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-martyn"
   },
   {
     "name": "Genesis' 'A Trick Of The Tail' released",
@@ -853,7 +938,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 2,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-a-trick-of-the-tail/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-a-trick-of-the-tail/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Hank Williams song 'Cold, Cold Heart' and 'Dear John' released",
@@ -861,7 +947,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1951,
     "month": 2,
-    "day": 2
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Lil Wayne released 'Rebirth'",
@@ -870,7 +957,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 2,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lil-wayne-rebirth-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lil-wayne-rebirth-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lil-wayne"
   },
   {
     "name": "Rob Zombie released 'Hellbilly Deluxe 2'",
@@ -879,7 +967,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 2,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hellbilly-deluxe-2-rob-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hellbilly-deluxe-2-rob-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "The Mamas And The Papas' 'Deliver' released",
@@ -896,7 +985,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1979,
     "month": 2,
-    "day": 3
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blondie"
   },
   {
     "name": "Taylor Swift released 'Picture To Burn'",
@@ -905,7 +995,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2008,
     "month": 2,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/taylor-swift-picture-to-burn-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/taylor-swift-picture-to-burn-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   {
     "name": "The Beatles' 'Sgt Pepper' returns to No.1 in the UK",
@@ -913,7 +1004,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1968,
     "month": 2,
-    "day": 3
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Beach Boys released the single 'Fun, Fun, Fun'",
@@ -922,7 +1014,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 2,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/fun-fun-fun-california-dream/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/fun-fun-fun-california-dream/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Bee Gees' 'Stayin' Alive' starts a run at No.1 in the US Hot 100",
@@ -930,7 +1023,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1978,
     "month": 2,
-    "day": 4
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Elton John released 'Candle In The Wind'",
@@ -939,7 +1033,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 2,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/candle-in-the-wind-elton-john-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/candle-in-the-wind-elton-john-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "James Brown released 'The Payback' single",
@@ -948,7 +1043,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 2,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-the-payback-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-the-payback-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Janet Jackson released 'Control'",
@@ -957,7 +1053,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1986,
     "month": 2,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/control-janet-jackson-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/control-janet-jackson-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/janet-jackson"
   },
   {
     "name": "John Lee Hooker's 'House Of The Blues' becomes first ever UK album entry",
@@ -966,7 +1063,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 2,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/john-lees-album-arrival-in-his-50th-year/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/john-lees-album-arrival-in-his-50th-year/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lee-hooker"
   },
   {
     "name": "John Martyn's 'One World' becomes his first ever UK album entry",
@@ -975,7 +1073,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 2,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/chart-debut-took-john-martyn-decade/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/chart-debut-took-john-martyn-decade/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-martyn"
   },
   {
     "name": "Queen released 'Innuendo' album",
@@ -984,7 +1083,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 2,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-innuendo/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-innuendo/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Dean Martin released - Dino: Italian Love Songs",
@@ -993,7 +1093,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 2,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-dino-italian-love-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-dino-italian-love-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dean-martin"
   },
   {
     "name": "Elton John released 'Wonderful Crazy Night'",
@@ -1002,7 +1103,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 2,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-wonderful-crazy-night-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-wonderful-crazy-night-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Loretta Lynn enters country chart with 'Dear Uncle Sam'",
@@ -1020,7 +1122,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2003,
     "month": 2,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/50-cent-get-rich-or-die-tryin-review/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/50-cent-get-rich-or-die-tryin-review/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/50-cent"
   },
   {
     "name": "Fall Out Boy released 'Infinity On High'",
@@ -1029,7 +1132,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 2,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/infinity-on-high-fall-out-boy-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/infinity-on-high-fall-out-boy-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fall-out-boy"
   },
   {
     "name": "Gary Moore died",
@@ -1037,7 +1141,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2011,
     "month": 2,
-    "day": 6
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gary-moore"
   },
   {
     "name": "Paul McCartney released 'Kisses On The Bottom'",
@@ -1053,7 +1158,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1998,
     "month": 2,
-    "day": 6
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Rolling Stones' 'No.2' album makes No.1 on the UK chart",
@@ -1061,7 +1167,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1965,
     "month": 2,
-    "day": 6
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Ella Fitzgerald begins recording the Cole Porter songbook",
@@ -1070,7 +1177,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1956,
     "month": 2,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-ella-fitzgerald-sings-the-cole-porter-songbook/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-ella-fitzgerald-sings-the-cole-porter-songbook/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Shania Twain released 'The Woman In Me'",
@@ -1079,7 +1187,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1995,
     "month": 2,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/shania-twain-the-woman-in-me/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/shania-twain-the-woman-in-me/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/shania-twain"
   },
   {
     "name": "The Who record 'Pinball Wizard'",
@@ -1088,7 +1197,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 2,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/how-tommy-very-nearly-wasnt-a-wizard/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/how-tommy-very-nearly-wasnt-a-wizard/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Ariana Grande released 'thank u, next'",
@@ -1096,7 +1206,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2019,
     "month": 2,
-    "day": 8
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ariana-Grande"
   },
   {
     "name": "The Rolling Stones' first EP makes No.1 on the UK EP chart",
@@ -1105,7 +1216,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 2,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-first-no-1/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-first-no-1/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Barry White's Love Unlimited Orchestra's 'Love's Theme' makes No.1 in the US",
@@ -1114,7 +1226,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 2,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/barry-white-conducts-instrumental-smash/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/barry-white-conducts-instrumental-smash/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/barry-white"
   },
   {
     "name": "Frank Zappa released 'Burnt Weenie Sandwich'",
@@ -1124,7 +1237,8 @@ const EDITORIAL_EVENTS = [
     "month": 2,
     "day": 9,
     "articleUrl": "https://www.udiscovermusic.com/stories/burnt-weeny-sandwich-frank-zappa-mothers/",
-    "socialAssetUrl": "https://umusic.box.com/s/6kdahve2n0ux60pru13pgvfaorulllmz"
+    "socialAssetUrl": "https://umusic.box.com/s/6kdahve2n0ux60pru13pgvfaorulllmz",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Erykah Badu's 'Baduizm' released",
@@ -1134,7 +1248,8 @@ const EDITORIAL_EVENTS = [
     "month": 2,
     "day": 11,
     "articleUrl": "https://www.udiscovermusic.com/stories/erykah-badus-baduizm/",
-    "socialAssetUrl": "https://umusic.box.com/s/8wg9od24lih9pfbviujee97zgptkec8s"
+    "socialAssetUrl": "https://umusic.box.com/s/8wg9od24lih9pfbviujee97zgptkec8s",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/erykah-badu"
   },
   {
     "name": "The Beatles play their first US concert for a general audience (not TV)",
@@ -1142,7 +1257,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1964,
     "month": 2,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Beatles record songs for their first LP, 'Please Please Me'",
@@ -1151,7 +1267,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 2,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/history-one-day-beatles-record-please-please-me/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/history-one-day-beatles-record-please-please-me/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones released 'Between The Buttons' in the US",
@@ -1159,7 +1276,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1967,
     "month": 2,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Rush released 'Moving Pictures'",
@@ -1169,7 +1287,8 @@ const EDITORIAL_EVENTS = [
     "month": 2,
     "day": 12,
     "articleUrl": "https://www.udiscovermusic.com/stories/moving-pictures-rush-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/kuj4io2sihvmqnro2etwetxd1d4q75sa"
+    "socialAssetUrl": "https://umusic.box.com/s/kuj4io2sihvmqnro2etwetxd1d4q75sa",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "The Beatles play Carnegie Hall",
@@ -1177,7 +1296,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1964,
     "month": 2,
-    "day": 12
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Drake released 'If You're Reading This It's Too Late'",
@@ -1186,7 +1306,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2015,
     "month": 2,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/drake-if-youre-reading-this-its-too-late-mixtape/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/drake-if-youre-reading-this-its-too-late-mixtape/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Drake released 'So Far So Gone' mixtape",
@@ -1195,7 +1316,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2009,
     "month": 2,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/so-far-gone-drake-mixtape/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/so-far-gone-drake-mixtape/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Frank Sinatra unveils his Reprise label with a new single, 'The Second Time Around'",
@@ -1204,7 +1326,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1961,
     "month": 2,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/second-time-around-frank-sinatra/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/second-time-around-frank-sinatra/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Drake released 'Room For Improvement' mixtape",
@@ -1213,7 +1336,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 2,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/drake-room-for-improvement-mixtape/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/drake-room-for-improvement-mixtape/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Heart released 'Dreamboat Annie' this month",
@@ -1223,7 +1347,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 1,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-dreamboat-annie/",
-    "socialAssetUrl": "https://umusic.box.com/s/7sg09a8y37tbvrqmni2v4d5toexxcjmg"
+    "socialAssetUrl": "https://umusic.box.com/s/7sg09a8y37tbvrqmni2v4d5toexxcjmg",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/heart"
   },
   {
     "name": "Kanye West released 'The Life Of Pablo'",
@@ -1232,7 +1357,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 2,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-life-of-pablo-kanye-west-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-life-of-pablo-kanye-west-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "The Who perform the Leeds concert that will become 'The Who Live At Leeds'",
@@ -1241,7 +1367,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 2,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-live-at-leeds-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-live-at-leeds-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Rush released 'Fly by Night'",
@@ -1250,7 +1377,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 2,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rush-fly-by-night-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rush-fly-by-night-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "Nat King Cole died",
@@ -1258,7 +1386,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1965,
     "month": 2,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nat-King-Cole"
   },
   {
     "name": "The Beatles' 'Meet The Beatles' album makes No.1 in the US",
@@ -1266,7 +1395,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1964,
     "month": 2,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Cranberries released the single 'Linger'",
@@ -1275,7 +1405,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 2,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-cranberries-linger-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-cranberries-linger-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cranberries"
   },
   {
     "name": "Elvis Costello plays solo/acoustic country music at the Palamino Club in Hollywood",
@@ -1284,7 +1415,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 2,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/how-elvis-costello-revealed-country-side/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/how-elvis-costello-revealed-country-side/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Costello"
   },
   {
     "name": "Kenny Rogers' 'Coward Of The County' single makes No.1 in the UK",
@@ -1301,7 +1433,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1979,
     "month": 2,
-    "day": 17
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blondie"
   },
   {
     "name": "John Lennon releases his 'Rock'n'Roll' album",
@@ -1310,7 +1443,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 2,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-rock-n-roll/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-rock-n-roll/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Norah Jones' 'Not Too Late' album makes No.1 in the US",
@@ -1319,7 +1453,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 2,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/not-too-late-for-three-time-winner-norah-jones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/not-too-late-for-three-time-winner-norah-jones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "Thelonious Monk died",
@@ -1327,7 +1462,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1982,
     "month": 2,
-    "day": 17
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thelonious-monk"
   },
   {
     "name": "Carpenters make their only US country chart entry with 'Sweet, Sweet Smile'",
@@ -1336,7 +1472,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 2,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/carpenters-go-country-sweet-sweet-smile/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/carpenters-go-country-sweet-sweet-smile/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Guns N' Roses released 'November Rain'",
@@ -1355,7 +1492,8 @@ const EDITORIAL_EVENTS = [
     "month": 2,
     "day": 18,
     "articleUrl": "https://www.udiscovermusic.com/stories/kiss-self-titled-debut-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/7yxjn84xvun66dcpmf9iewcilvlk4vdk"
+    "socialAssetUrl": "https://umusic.box.com/s/7yxjn84xvun66dcpmf9iewcilvlk4vdk",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kiss"
   },
   {
     "name": "Muddy Waters' 'Hard Again' album enters US chart",
@@ -1363,7 +1501,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1977,
     "month": 2,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "George Harrison released 'George Harrison' album",
@@ -1372,7 +1511,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 2,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-george-harrison/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-george-harrison/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Hank Williams' 'Kaw-Liga'/'Your Cheatin' Heart' makes No.1 in the country charts",
@@ -1381,7 +1521,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1953,
     "month": 2,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/fans-mourn-hank-williams-with-a-double-sided-smash/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/fans-mourn-hank-williams-with-a-double-sided-smash/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "The Rolling Stones' 'Not Fade Away' released in the UK",
@@ -1390,7 +1531,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 2,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-do-diddley-via-holly/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-do-diddley-via-holly/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Massive Attack enter UK chart at No. 1 with '100th Window'",
@@ -1398,7 +1540,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 2003,
     "month": 2,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/massive-attack"
   },
   {
     "name": "Natalie Cole releases 'Unpredictable'",
@@ -1407,7 +1550,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 2,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-unpredictable/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-unpredictable/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/natalie"
   },
   {
     "name": "Spice Girls' 'Wannabe' makes No.1 in the US",
@@ -1415,7 +1559,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1997,
     "month": 2,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/spice-girls"
   },
   {
     "name": "Eminem released 'Slim Shady'",
@@ -1425,7 +1570,8 @@ const EDITORIAL_EVENTS = [
     "month": 2,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/stories/the-slim-shady-lp-eminem-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/ierr14zii3shvg2jro03n3yf8985od6t"
+    "socialAssetUrl": "https://umusic.box.com/s/ierr14zii3shvg2jro03n3yf8985od6t",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "Horace Silver has first recording session for 'Serenade to a Soul Sister'",
@@ -1434,7 +1580,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 2,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/horace-silver-serenade-to-a-soul-sister-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/horace-silver-serenade-to-a-soul-sister-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Horace-Silve"
   },
   {
     "name": "Bob Seger released 'Against The Wind'",
@@ -1452,7 +1599,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1956,
     "month": 2,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-gets-dream-car-no-money/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-gets-dream-car-no-money/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Elliott Smith's 'Either/Or' released",
@@ -1461,7 +1609,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 2,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-elliott-smith-eitheror/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-elliott-smith-eitheror/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elliott-Smith"
   },
   {
     "name": "George Harrison In 20 Songs",
@@ -1470,7 +1619,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2001,
     "month": 2,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-george-harrison-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-george-harrison-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "The Beatles' first US album is released on Vee Jay",
@@ -1479,7 +1629,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 2,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-us-invasion/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-us-invasion/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Eric Dolphy recorded 'Out to Lunch'",
@@ -1496,7 +1647,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2011,
     "month": 2,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jessie-j"
   },
   {
     "name": "Johnny Cash Mercury Years",
@@ -1505,7 +1657,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 6,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/johnny-cash-mercury-albums/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/johnny-cash-mercury-albums/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/johnny-cash"
   },
   {
     "name": "Norah Jones release 'Come Away With Me'",
@@ -1515,7 +1668,8 @@ const EDITORIAL_EVENTS = [
     "month": 2,
     "day": 26,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-come-away-with-me/",
-    "socialAssetUrl": "https://umusic.box.com/s/63snncbyn0kj6dpmbyci78h7074rjdr4"
+    "socialAssetUrl": "https://umusic.box.com/s/63snncbyn0kj6dpmbyci78h7074rjdr4",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "The Beach Boys enter the UK chart with 'I Can Hear Music'",
@@ -1524,7 +1678,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 2,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-head-for-uk-top-ten-with-ronettes-tribute/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-head-for-uk-top-ten-with-ronettes-tribute/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Queen's 'The Works' album released",
@@ -1534,7 +1689,8 @@ const EDITORIAL_EVENTS = [
     "month": 2,
     "day": 27,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-the-works/",
-    "socialAssetUrl": "https://umusic.box.com/s/un7tqjgl3n7tol67w6cmnwcade23d63x"
+    "socialAssetUrl": "https://umusic.box.com/s/un7tqjgl3n7tol67w6cmnwcade23d63x",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "The Beatles' 'Beatles For Sale' album makes No.1 on the UK album chart",
@@ -1542,7 +1698,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1965,
     "month": 2,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Camel's self-titled debut album released",
@@ -1551,7 +1708,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 2,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-camel-the-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-camel-the-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Norah Jones' 'Feels Like Home' album makes No.1 in the US",
@@ -1559,7 +1717,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 2004,
     "month": 2,
-    "day": 28
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "U2 Release 'War' album",
@@ -1568,7 +1727,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 2,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-war/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-war/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Chuck Berry releases 'Nadine'",
@@ -1577,7 +1737,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 2,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-breaks-out-with-nadine/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-breaks-out-with-nadine/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Smashing Pumpkins released 'Machina/The Machines of God'",
@@ -1596,7 +1757,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 1,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-camel-mirage/",
-    "socialAssetUrl": "https://umusic.box.com/s/6fn2ipdxxxpt3soxnz4w3bjfxbb20aij"
+    "socialAssetUrl": "https://umusic.box.com/s/6fn2ipdxxxpt3soxnz4w3bjfxbb20aij",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Frank Sinatra staged a residency at Caesar's Palace in March 1982",
@@ -1605,7 +1767,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 3,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/caesars-palace-frank-sinatra/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/caesars-palace-frank-sinatra/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Peggy Lee released 'Jump For Joy'",
@@ -1614,7 +1777,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1958,
     "month": 3,
     "day": 1,
-    "socialAssetUrl": "https://umusic.box.com/s/wv5j945s01gy2x47ry8l082t17a41wws"
+    "socialAssetUrl": "https://umusic.box.com/s/wv5j945s01gy2x47ry8l082t17a41wws",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Peggy Lee released 'Sugar'n'Spice' album",
@@ -1623,7 +1787,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 3,
     "day": 1,
-    "socialAssetUrl": "https://umusic.box.com/s/dls042cprv97d7vvtnfxnaywfjhsp56o"
+    "socialAssetUrl": "https://umusic.box.com/s/dls042cprv97d7vvtnfxnaywfjhsp56o",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Robert Palmer released 'Double Fun'",
@@ -1632,7 +1797,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 3,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-robert-palmers-double-fun/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-robert-palmers-double-fun/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "The Cranberries\tEverybody Else Is Doing It, So Why Can't We?",
@@ -1641,7 +1807,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 10,
     "day": 19,
-    "socialAssetUrl": "https://umusic.box.com/s/1plwx5uyl0v9264hf7rnuqaskn4f431i"
+    "socialAssetUrl": "https://umusic.box.com/s/1plwx5uyl0v9264hf7rnuqaskn4f431i",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cranberries"
   },
   {
     "name": "The Cranberries released 'Everybody Else Is Doing It, So Why Can't We?'",
@@ -1650,7 +1817,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 3,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/noel-hogan-cranberries-everybody-else-interview/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/noel-hogan-cranberries-everybody-else-interview/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cranberries"
   },
   {
     "name": "Shania Twain released 'Man I Feel Like a Woman' as a single this month",
@@ -1659,7 +1827,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1999,
     "month": 3,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/shania-twain-man-i-feel-like-a-woman-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/shania-twain-man-i-feel-like-a-woman-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/shania-twain"
   },
   {
     "name": "Styx released 'Too Much Time On My Hands' this month as a single",
@@ -1668,7 +1837,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 3,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/too-much-time-on-my-hands-the-story-of-styxs-classic-hit/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/too-much-time-on-my-hands-the-story-of-styxs-classic-hit/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/styx"
   },
   {
     "name": "The Beach Boys' 'Shut Down Volume 2' album released",
@@ -1677,7 +1847,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 3,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-shape-up-shut-down/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-shape-up-shut-down/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Bon Jovi released 'Wanted Dead or Alive' as a single",
@@ -1686,7 +1857,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1987,
     "month": 3,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-wanted-dead-or-alive-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-wanted-dead-or-alive-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Bob Seger released 'Old Time Rock & Roll' single",
@@ -1704,7 +1876,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 3,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-say-goodbye/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-say-goodbye/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Patsy Cline died",
@@ -1713,7 +1886,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 3,
     "day": 5,
-    "socialAssetUrl": "https://umusic.box.com/s/nbq2qp5mjofaqr39aytitk8g2lfyq22c"
+    "socialAssetUrl": "https://umusic.box.com/s/nbq2qp5mjofaqr39aytitk8g2lfyq22c",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "McCoy Tyner died",
@@ -1721,7 +1895,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2020,
     "month": 3,
-    "day": 6
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mccoy-tyner"
   },
   {
     "name": "Robert Palmer's 'Every Kinda People (Remix)' single enters UK chart",
@@ -1730,7 +1905,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 3,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/every-kinda-remix-from-robert-palmer-2/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/every-kinda-remix-from-robert-palmer-2/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "Steppenwolf's 'At Your Birthday Party' album released",
@@ -1740,7 +1916,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 7,
     "articleUrl": "https://www.udiscovermusic.com/stories/steppenwolf-show-up-at-your-birthday-party/",
-    "socialAssetUrl": "https://umusic.box.com/s/431kehrwifcy347sr82l9xjwhqf68wud"
+    "socialAssetUrl": "https://umusic.box.com/s/431kehrwifcy347sr82l9xjwhqf68wud",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steppenwolf"
   },
   {
     "name": "The Who' 'Pinball Wizard' released in the UK",
@@ -1748,7 +1925,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1969,
     "month": 3,
-    "day": 7
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Frank Sinatra first stood before a microphone in Capitol Studios",
@@ -1757,7 +1935,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1956,
     "month": 3,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-capitol-studios-recording-history/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-capitol-studios-recording-history/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Gang Starr released 'Hard To Earn'",
@@ -1766,7 +1945,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 3,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/gang-starr-hard-to-earn-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/gang-starr-hard-to-earn-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gang-starr"
   },
   {
     "name": "Nine Inch Nails released 'The Downward Spiral'",
@@ -1775,7 +1955,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 3,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/downward-spiral-nine-inch-nails/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/downward-spiral-nine-inch-nails/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nine-Inch-Nails"
   },
   {
     "name": "Norah Jones' 'Come Away With Me' makes No.1 on the UK album chart",
@@ -1783,7 +1964,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 2003,
     "month": 3,
-    "day": 8
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "Queen's 'Queen II' released",
@@ -1793,7 +1975,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 8,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-queen-2/",
-    "socialAssetUrl": "https://umusic.box.com/s/maqcch379dnnobrpkunkaum27sztrhwc"
+    "socialAssetUrl": "https://umusic.box.com/s/maqcch379dnnobrpkunkaum27sztrhwc",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Soundgarden's 'Superunknown' released",
@@ -1802,7 +1985,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 3,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/when-soundgarden-became-super-well-known/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/when-soundgarden-became-super-well-known/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "The Beach Boys' 'Today!' album is released",
@@ -1812,7 +1996,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 8,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-beach-boys-today/",
-    "socialAssetUrl": "https://umusic.box.com/s/2yzpktq0wmlphv30tgyrul03eg4uyego"
+    "socialAssetUrl": "https://umusic.box.com/s/2yzpktq0wmlphv30tgyrul03eg4uyego",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Lenny Kravitz released 'Are You Gonna Go My Way'",
@@ -1821,7 +2006,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 3,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/are-you-gonna-go-my-way-lenny-kravitz/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/are-you-gonna-go-my-way-lenny-kravitz/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lenny-kravitz"
   },
   {
     "name": "Sting releases 'Ten Summoner's Tales' album",
@@ -1830,7 +2016,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 3,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sting-ten-summoners-tales-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sting-ten-summoners-tales-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   {
     "name": "U2 release 'The Joshua Tree'",
@@ -1839,7 +2026,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1987,
     "month": 3,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/u2-the-joshua-tree-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/u2-the-joshua-tree-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Bee Gees released 'Still Waters'",
@@ -1848,7 +2036,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 3,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-still-waters-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-still-waters-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Cat Stevens released 'Matthew And Son'",
@@ -1857,7 +2046,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 3,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/in-1971-60s-echo-for-cat-stevens/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/in-1971-60s-echo-for-cat-stevens/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Chris Cornell released 'Scream'",
@@ -1866,7 +2056,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2009,
     "month": 3,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/chris-cornell-scream-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/chris-cornell-scream-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chris-cornell"
   },
   {
     "name": "Rick Ross released 'Trilla'",
@@ -1875,7 +2066,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2008,
     "month": 3,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rick-ross-trilla/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rick-ross-trilla/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-ross"
   },
   {
     "name": "John Lennon's 'Power To The People' released in the UK",
@@ -1884,7 +2076,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 3,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/power-to-the-people/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/power-to-the-people/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "The Mamas And The Papas' 'If You Can Believe Your Eyes And Ears' makes the US chart",
@@ -1901,7 +2094,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1993,
     "month": 3,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lenny-kravitz"
   },
   {
     "name": "Chick Corea begins recording 'Now He Sings, Now He Sobs'",
@@ -1919,7 +2113,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 3,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/def-leppard-on-through-the-night-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/def-leppard-on-through-the-night-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "George Harrison's 'Within You Without You' for The Beatles' 'Sgt Pepper' starts recording",
@@ -1928,7 +2123,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 3,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/within-you-without-you/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/within-you-without-you/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Kendrick Lamar released 'To Pimp A Butterfly'",
@@ -1937,7 +2133,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2015,
     "month": 3,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/to-pimp-a-butterfly-kendrick-lamar-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/to-pimp-a-butterfly-kendrick-lamar-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kendrick-lamar"
   },
   {
     "name": "KISS released 'Destroyer'",
@@ -1946,7 +2143,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 3,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kiss-destroyer-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kiss-destroyer-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kiss"
   },
   {
     "name": "The Beatles' 'Lady Madonna' released",
@@ -1955,7 +2153,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 3,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-record-lady-madonna-in-a-rush/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-record-lady-madonna-in-a-rush/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones record choir for 'You Can't Always Get What You Want'",
@@ -1963,7 +2162,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1969,
     "month": 3,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Who's John Entwistle on solo tour in US",
@@ -1972,7 +2172,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 3,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/entwistle-solo-in-75/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/entwistle-solo-in-75/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Ella Fitzgerald's 'Sings The Rodgers And Hart Songbook' makes the US album charts",
@@ -1980,7 +2181,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1957,
     "month": 3,
-    "day": 16
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Marvin Gaye released 'I Want You'",
@@ -1990,7 +2192,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 16,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-i-want-you/",
-    "socialAssetUrl": "https://umusic.box.com/s/290g6e3lqptj2mkwl4san399v9muu193"
+    "socialAssetUrl": "https://umusic.box.com/s/290g6e3lqptj2mkwl4san399v9muu193",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Elton John released 'Made In England'",
@@ -1999,7 +2202,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1995,
     "month": 3,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-made-in-england-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-made-in-england-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Elvis Costello released 'This Year's Model'",
@@ -2008,7 +2212,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 3,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/costello-models-the-sound-of-1978/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/costello-models-the-sound-of-1978/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Costello"
   },
   {
     "name": "Glen Campbell's 'Galveston' single and album released on Capitol",
@@ -2017,7 +2222,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 3,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/galvestons-sea-winds-take-glen-campbell-to-the-top/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/galvestons-sea-winds-take-glen-campbell-to-the-top/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "Herbie Hancock records 'Maiden Voyage' album",
@@ -2025,7 +2231,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1965,
     "month": 3,
-    "day": 17
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Herbie-Hancock"
   },
   {
     "name": "Chuck Berry died",
@@ -2033,7 +2240,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2017,
     "month": 3,
-    "day": 18
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Drake released 'More Life'",
@@ -2042,7 +2250,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 3,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/6-samples-you-didnt-realize-were-on-drakes-more-life-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/6-samples-you-didnt-realize-were-on-drakes-more-life-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "The Mamas And The Papas' 'Deliver' album makes the US charts",
@@ -2060,7 +2269,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 1,
     "articleUrl": "https://www.udiscovermusic.com/stories/debut-rush-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/xy7yexrmz6nbq5xm3sdv5pmdahd919d7"
+    "socialAssetUrl": "https://umusic.box.com/s/xy7yexrmz6nbq5xm3sdv5pmdahd919d7",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "Cat Stevens' 'Buddha And The Chocolate Box' album released",
@@ -2069,7 +2279,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 3,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-opens-his-chocolate-box/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-opens-his-chocolate-box/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Herbie Hancock (and Grant Green) records for 'My Point Of View' album for Blue Note",
@@ -2077,7 +2288,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1953,
     "month": 3,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Herbie-Hancock"
   },
   {
     "name": "Justin Bieber released 'My World 2.0'",
@@ -2086,7 +2298,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 3,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/justin-bieber-my-world-2-0-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/justin-bieber-my-world-2-0-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/justin-bieber"
   },
   {
     "name": "KISS released 'Dressed To Kill'",
@@ -2095,7 +2308,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 3,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kiss-dressed-to-kill-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kiss-dressed-to-kill-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kiss"
   },
   {
     "name": "Elton John enters UK singles chart with 'Pinball Wizard'",
@@ -2104,7 +2318,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 3,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-sure-played-mean-cover-pinball-wizard/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-sure-played-mean-cover-pinball-wizard/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Genesis' 'A Trick Of The Tail' album makes the US chart",
@@ -2112,7 +2327,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1976,
     "month": 3,
-    "day": 20
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "The Rolling Stones' 'The Last Time' makes No.1 on the UK singles chart",
@@ -2121,7 +2337,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 3,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-last-time-is-the-first-time/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-last-time-is-the-first-time/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Who released 'The Seeker' as a single in the United Kingdom",
@@ -2130,7 +2347,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 3,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-the-seeker-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-the-seeker-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Bonnie Raitt's 'Nick Of Time' album (produced by Don Was) released",
@@ -2139,7 +2357,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 3,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bonnie-raitt-nick-of-time-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bonnie-raitt-nick-of-time-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bonnie-raitt"
   },
   {
     "name": "Queens Of The Stone Age's 'Lullabies To Paralyze' album released",
@@ -2148,7 +2367,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2005,
     "month": 3,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queens-of-the-stone-age-lullabies-to-paralyze-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queens-of-the-stone-age-lullabies-to-paralyze-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "The Beatles' 'Please Please Me' album released in the UK",
@@ -2156,7 +2376,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1963,
     "month": 3,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Frank Zappa - Apostrophe (') review",
@@ -2165,7 +2386,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 3,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-apostrophe-album-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-apostrophe-album-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Bob Marley releases 'Kaya\"",
@@ -2175,7 +2397,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-kaya/",
-    "socialAssetUrl": "https://umusic.box.com/s/uxc71pu83z92lggmztujzvzyeizyz978"
+    "socialAssetUrl": "https://umusic.box.com/s/uxc71pu83z92lggmztujzvzyeizyz978",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Lionel Richie's 'Hello' single makes No.1 in the UK",
@@ -2184,7 +2407,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 3,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/it-was-lionel-we-were-looking-for/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/it-was-lionel-we-were-looking-for/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lionel-richie"
   },
   {
     "name": "The Rolling Stones released 'Dirty Work'",
@@ -2194,7 +2418,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 24,
     "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-dirty-work-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/mb8yjnsnsw9of6ieumzn2odhu3v9h9up"
+    "socialAssetUrl": "https://umusic.box.com/s/mb8yjnsnsw9of6ieumzn2odhu3v9h9up",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bee Gees released 'High Civilization' in the UK",
@@ -2203,7 +2428,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 3,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-high-civilization-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-high-civilization-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "OneRepublic released 'Native'",
@@ -2212,7 +2438,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 3,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/onerepublic-native-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/onerepublic-native-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/onerepublic/"
   },
   {
     "name": "Scott Walker died",
@@ -2220,7 +2447,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2019,
     "month": 3,
-    "day": 25
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/scott-walker"
   },
   {
     "name": "The Beach Boys released 'Surfin USA' album",
@@ -2229,7 +2457,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 3,
     "day": 25,
-    "socialAssetUrl": "https://umusic.box.com/s/q9s6flarh34enzganpkgorhin0ezmc0a"
+    "socialAssetUrl": "https://umusic.box.com/s/q9s6flarh34enzganpkgorhin0ezmc0a",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Who and Cream made their US concert debut in New York's RKO Theatre",
@@ -2238,7 +2467,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 3,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-cream-and-the-who-begin-their-seduction-of-america/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-cream-and-the-who-begin-their-seduction-of-america/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Donna Summer released 'She Works Hard for the Money' single",
@@ -2247,7 +2477,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 5,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/donna-summer-she-works-hard-for-the-money-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/donna-summer-she-works-hard-for-the-money-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/donna-summer"
   },
   {
     "name": "Camel's 'Moonmadness' album released",
@@ -2256,7 +2487,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lunar-ticks-camels-moonmadness/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lunar-ticks-camels-moonmadness/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Frank Zappa\u00a0released 'Just Another Band From LA'",
@@ -2264,7 +2496,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1972,
     "month": 3,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Gary Moore's 'Still Got The Blues' album released",
@@ -2273,7 +2506,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1990,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/gary-moore-gets-the-blues/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/gary-moore-gets-the-blues/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gary-moore"
   },
   {
     "name": "Smokey Robinson released 'A Quiet Storm'",
@@ -2282,7 +2516,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/smokey-robinson-a-quiet-storm-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/smokey-robinson-a-quiet-storm-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/smokey-robinson"
   },
   {
     "name": "The Beatles' 'Yesterday' EP tops the UK EP chart",
@@ -2291,7 +2526,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-ep-that-coincided-with-controversy/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-ep-that-coincided-with-controversy/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones film a concert at The Marquee, London",
@@ -2300,7 +2536,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-play-londons-marquee-in-1971/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-play-londons-marquee-in-1971/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones released 'Fool to Cry'",
@@ -2309,7 +2546,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-fool-to-cry-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-fool-to-cry-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Tom Petty's 'Southern Accents' album released",
@@ -2318,7 +2556,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/tom-petty-heartbreakers-speak-in-southern-accents/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/tom-petty-heartbreakers-speak-in-southern-accents/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   {
     "name": "Heart released 'Brigade'",
@@ -2327,7 +2566,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1990,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/heart-brigade-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/heart-brigade-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/heart"
   },
   {
     "name": "Barry White released 'I've Got So Much To Give'",
@@ -2337,7 +2577,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 27,
     "articleUrl": "https://www.udiscovermusic.com/stories/americas-first-night-with-barry-white/",
-    "socialAssetUrl": "https://umusic.box.com/s/2zlfua8drx93dm8609ju6ycztt0scf4t"
+    "socialAssetUrl": "https://umusic.box.com/s/2zlfua8drx93dm8609ju6ycztt0scf4t",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/barry-white"
   },
   {
     "name": "Bon Jovi's '7800\u00b0 Fahrenheit' album released",
@@ -2346,7 +2587,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 3,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-reach-7800-fahrenheit/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-reach-7800-fahrenheit/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Loretta Lynn enters country chart with 'I Wanna Be Free'",
@@ -2364,7 +2606,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 3,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ringos-sentimental-journey/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ringos-sentimental-journey/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ringo-starr"
   },
   {
     "name": "The Beach Boys' 'The Beach Boys Today!' makes the US album chart",
@@ -2372,7 +2615,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1965,
     "month": 3,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Common released 'Like Water For Chocolate'",
@@ -2381,7 +2625,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2000,
     "month": 3,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/common-like-water-for-chocolate-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/common-like-water-for-chocolate-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/common"
   },
   {
     "name": "Genesis's 'Duke' album released in the UK",
@@ -2390,7 +2635,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 3,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/genesis-turn-it-on-again-with-duke/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/genesis-turn-it-on-again-with-duke/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Lady Gaga\u2019s Music For Film and TV: A Comprehensive Overview",
@@ -2399,7 +2645,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 3,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lady-gaga-music-film-tv-comprehensive-overview/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lady-gaga-music-film-tv-comprehensive-overview/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-gaga"
   },
   {
     "name": "Rob Zombie released 'Educated Horses'",
@@ -2408,7 +2655,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 3,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/educated-horses-rob-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/educated-horses-rob-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "Carpenters' 'Only Yesterday' single makes the US Hot 100",
@@ -2416,7 +2664,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1974,
     "month": 3,
-    "day": 29
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Marvin Gaye released 'You're The Man'",
@@ -2425,7 +2674,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 3,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-youre-the-man-lost-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-youre-the-man-lost-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Supertramp release 'Breakfast In America'",
@@ -2435,7 +2685,8 @@ const EDITORIAL_EVENTS = [
     "month": 3,
     "day": 29,
     "articleUrl": "https://www.udiscovermusic.com/stories/supertramp-dine-at-rocks-top-table-with-breakfast-in-america/",
-    "socialAssetUrl": "https://umusic.box.com/s/wa9nxyupn7j784vdrrmmsxvcjhltvcrf"
+    "socialAssetUrl": "https://umusic.box.com/s/wa9nxyupn7j784vdrrmmsxvcjhltvcrf",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/supertramp"
   },
   {
     "name": "Bee Gees released 'Odessa'",
@@ -2444,7 +2695,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 3,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-odessa-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-odessa-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Chuck Berry's 'Almost Grown' enters US Hot 100",
@@ -2453,7 +2705,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1959,
     "month": 3,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/another-great-chess-piece-from-chuck/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/another-great-chess-piece-from-chuck/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Erykah Badu released 'New Amerykah Part Two: Return Of The Ankh'",
@@ -2462,7 +2715,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 3,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/erykah-badu-new-amerykah-part-two-return-of-the-ankh/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/erykah-badu-new-amerykah-part-two-return-of-the-ankh/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/erykah-badu"
   },
   {
     "name": "Glen Campbell enters country album chart with 'Hey, Little One'",
@@ -2471,7 +2725,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 3,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/glen-campbell-continues-hot-album-streak-hey-little-one/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/glen-campbell-continues-hot-album-streak-hey-little-one/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "LL Cool J releases '14 Shots to the Dome'",
@@ -2480,7 +2735,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 3,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ll-cool-j-14-shots-to-the-dome/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ll-cool-j-14-shots-to-the-dome/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ll-cool-j"
   },
   {
     "name": "Amy Winehouse's 'Back To Black' enters the US album charts",
@@ -2489,7 +2745,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 3,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/amy-winehouse-cracks-america/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/amy-winehouse-cracks-america/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Amy-Winehouse"
   },
   {
     "name": "Def Leppard released 'Adrenalize'",
@@ -2498,7 +2755,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 3,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/adrenalize-def-leppard-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/adrenalize-def-leppard-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Elton John released 'Rocket Man' single",
@@ -2507,7 +2765,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 3,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-little-big-town-many-missions-rocket-man/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-little-big-town-many-missions-rocket-man/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Patsy Cline's 'Showcase' album enters the US chart",
@@ -2516,7 +2775,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 3,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-clines-album-chart-debut/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-clines-album-chart-debut/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Selena died; Selena Day in Texas",
@@ -2533,7 +2793,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 4,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-snow-goose/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-snow-goose/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Elvis Costello released 'Green Shirt'",
@@ -2542,7 +2803,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 10,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elvis-costello-green-shirt-story/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elvis-costello-green-shirt-story/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Costello"
   },
   {
     "name": "Marvin Gaye died",
@@ -2550,7 +2812,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1984,
     "month": 4,
-    "day": 1
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "James Brown released 'Soul On Top' this month",
@@ -2559,7 +2822,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 4,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-soul-on-top-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-soul-on-top-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Rush releases '2112' this month",
@@ -2568,7 +2832,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 4,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rush-2112-album-explained/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rush-2112-album-explained/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "Beastie Boys released 'The In Sound From Way Out!'",
@@ -2577,7 +2842,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 4,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beastie-boys-the-in-sound-from-way-out-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beastie-boys-the-in-sound-from-way-out-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "Nicki Minaj released 'Pink Friday: Roman Reloaded The Re-Up\u2019",
@@ -2586,7 +2852,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2012,
     "month": 4,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nicki-minaj-pink-friday-roman-reloaded-the-re-up/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nicki-minaj-pink-friday-roman-reloaded-the-re-up/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nicki-Minaj"
   },
   {
     "name": "The Who made their first radio appearance on the BBC's 'Joe Loss Pop Show'",
@@ -2594,7 +2861,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1965,
     "month": 4,
-    "day": 2
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Deep Purple recorded first date to appear on 'Made In Europe' live album",
@@ -2603,7 +2871,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 4,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/made-in-europe-deep-purple-live-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/made-in-europe-deep-purple-live-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Deep-Purple"
   },
   {
     "name": "Loretta Lynn's 'I Remember Patsy' released",
@@ -2620,7 +2889,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1981,
     "month": 4,
-    "day": 4
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/styx"
   },
   {
     "name": "The Who 'Face Dances' enters the US album chart",
@@ -2629,7 +2899,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 4,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-face-life-after-moon/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-face-life-after-moon/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Bon Jovi released 'I\u2019ll Be There for You' as a single",
@@ -2638,7 +2909,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 4,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-ill-be-there-for-you-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-ill-be-there-for-you-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Scott Walker's 'Scott 3' makes the UK charts",
@@ -2647,7 +2919,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 4,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/scott-walker-makes-it-3-out-of-3/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/scott-walker-makes-it-3-out-of-3/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/scott-walker"
   },
   {
     "name": "Genesis' 'I Know What I Like (In Your Wardrobe)' makes the UK chart",
@@ -2656,7 +2929,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 4,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/genesis-in-1974-hit-single-shock/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/genesis-in-1974-hit-single-shock/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Isaac Hayes released 'The Isaac Hayes Movement'",
@@ -2665,7 +2939,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 4,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-isaac-hayes-movement/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-isaac-hayes-movement/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/isaac-hayes"
   },
   {
     "name": "The Beatles record 'Tomorrow Never Knows' at Abbey Road, the first song recorded for 'Revolver'",
@@ -2674,7 +2949,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 4,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-open-the-door-marked-tomorrow/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-open-the-door-marked-tomorrow/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Jeremih released 'Birthday Sex'",
@@ -2701,7 +2977,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 4,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-5-4-3-2-1/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-5-4-3-2-1/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Massive Attack released 'Blue Lines'",
@@ -2710,7 +2987,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 4,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/massive-attack-blue-lines-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/massive-attack-blue-lines-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/massive-attack"
   },
   {
     "name": "Aerosmith releases 'Toys In The Attic'",
@@ -2719,7 +2997,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 4,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/aerosmith-toys-in-the-attic-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/aerosmith-toys-in-the-attic-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/aerosmith"
   },
   {
     "name": "Supertramp released 'Even in the Quietest\u2026'",
@@ -2728,7 +3007,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 4,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/supertramp-even-in-the-quietest-moments-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/supertramp-even-in-the-quietest-moments-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/supertramp"
   },
   {
     "name": "Queen played a showcase gig at the Marquee Club, shortly after signing to EMI",
@@ -2737,7 +3017,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 4,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queens-marquee-launch-of-73/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queens-marquee-launch-of-73/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Elton John released his self-titled debut album",
@@ -2746,7 +3027,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 4,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-self-titled-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-self-titled-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "The Beatles' 'The Beatles' Second Album' released in the US",
@@ -2755,7 +3037,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 4,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-second-coming/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-second-coming/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Rihanna released 'A Girl Like Me'",
@@ -2764,7 +3047,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 4,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-a-girl-like-me-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-a-girl-like-me-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "Chuck Berry's first single back on Chess, 'Tulane,' advertised in Billboard",
@@ -2773,7 +3057,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 4,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-returns-chess-tale-tulane-johnny/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-returns-chess-tale-tulane-johnny/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Fall Out Boy released 'Save Rock And Roll'",
@@ -2782,7 +3067,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 4,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/fall-out-boy-save-rock-and-roll-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/fall-out-boy-save-rock-and-roll-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/fall-out-boy"
   },
   {
     "name": "Mariah Carey released 'The Emancipation Of Mimi'",
@@ -2800,7 +3086,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 4,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/norah-jones-begin-again-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/norah-jones-begin-again-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "R.E.M. releases Murmur",
@@ -2809,7 +3096,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 4,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/r-e-m-murmur/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/r-e-m-murmur/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/r-e-m/"
   },
   {
     "name": "Rush released 'Grace Under Pressure'",
@@ -2819,7 +3107,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 12,
     "articleUrl": "https://www.udiscovermusic.com/stories/rush-grace-under-pressure-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/ima212t48zy7nc1tnw5ig1fduvpczy0k"
+    "socialAssetUrl": "https://umusic.box.com/s/ima212t48zy7nc1tnw5ig1fduvpczy0k",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "The Rolling Stones' 'Dirty Work' enters the US album chart",
@@ -2827,7 +3116,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1986,
     "month": 4,
-    "day": 12
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bob Marley releases 'Catch A Fire'",
@@ -2837,7 +3127,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 13,
     "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-catch-a-fire/",
-    "socialAssetUrl": "https://umusic.box.com/s/ic8h78g2g2osha9wu7fiy93hk2kfn1sx"
+    "socialAssetUrl": "https://umusic.box.com/s/ic8h78g2g2osha9wu7fiy93hk2kfn1sx",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Camel released 'Stationary Traveller'",
@@ -2847,7 +3138,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 13,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-stationary-traveller/",
-    "socialAssetUrl": "https://umusic.box.com/s/ilnf07bkzl79ifusf9xay4riz271m1xa"
+    "socialAssetUrl": "https://umusic.box.com/s/ilnf07bkzl79ifusf9xay4riz271m1xa",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Cat Stevens' 'Buddha And The Chocolate Box' makes the US album chart",
@@ -2855,7 +3147,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1974,
     "month": 4,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Kanye West - Stronger - Story Behind The Song",
@@ -2864,7 +3157,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 4,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-stronger-history/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-stronger-history/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Neil Diamond enters Hot 100 with original 'Red, Red Wine'",
@@ -2873,7 +3167,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 4,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-red-red-wine-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-red-red-wine-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "Thin Lizzy's 'Black Rose: A Rock Legend' released",
@@ -2882,7 +3177,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 4,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/thin-lizzy-pick-a-black-rose-in-paris/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/thin-lizzy-pick-a-black-rose-in-paris/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thin-lizzy"
   },
   {
     "name": "Kendrick Lamar released 'DAMN.'",
@@ -2891,7 +3187,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 4,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kendrick-lamar-damn-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kendrick-lamar-damn-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kendrick-lamar"
   },
   {
     "name": "Muddy Waters ' 'Long Distance Call' enters US R&B chart",
@@ -2900,7 +3197,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1951,
     "month": 4,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-makes-long-distance-call/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-makes-long-distance-call/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "Sam Smith released 'Stay With Me' in the US",
@@ -2909,7 +3207,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2014,
     "month": 4,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sam-smith-stay-with-me-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sam-smith-stay-with-me-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-smith"
   },
   {
     "name": "The Rolling Stones - Tumbling Dice released",
@@ -2918,7 +3217,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 4,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-tumbling-dice-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-tumbling-dice-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Eric Clapton enters US chart with first compilation in his own name, 'History Of Eric Clapton'",
@@ -2927,7 +3227,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 4,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/eric-clapton-history-lesson-ecs-first-compilation/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/eric-clapton-history-lesson-ecs-first-compilation/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   {
     "name": "The Beatles' 'Ticket To Ride' enters the UK chart",
@@ -2936,7 +3237,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 4,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beatles-travel-fast-ticket-to-ride/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beatles-travel-fast-ticket-to-ride/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones release 'Aftermath' in the UK",
@@ -2946,7 +3248,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 15,
     "articleUrl": "https://www.udiscovermusic.com/stories/aftermath-at-the-dawning-of-rock/",
-    "socialAssetUrl": "https://umusic.box.com/s/xgu6yacoxx9kny07yd9rs90ga8sl94os + https://umusic.box.com/s/itrajlt1ekc8xk9jihjzp5g8xtfn36md"
+    "socialAssetUrl": "https://umusic.box.com/s/xgu6yacoxx9kny07yd9rs90ga8sl94os + https://umusic.box.com/s/itrajlt1ekc8xk9jihjzp5g8xtfn36md",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Queen plays their first ever US concert",
@@ -2955,7 +3258,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 4,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-make-us-live-debut/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-make-us-live-debut/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "The Rolling Stones' 'Brown Sugar' single released",
@@ -2963,7 +3267,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1971,
     "month": 4,
-    "day": 16
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones' debut album released in the UK",
@@ -2972,7 +3277,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 4,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-pay-homage/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-pay-homage/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Donald Byrd recorded 'Chant'",
@@ -2990,7 +3296,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 4,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-muddy-waters-the-folk-singer/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-muddy-waters-the-folk-singer/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "Paul McCartney released 'McCartney'",
@@ -3008,7 +3315,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 4,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/vangeliss-film-score-tops-billboard-charts/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/vangeliss-film-score-tops-billboard-charts/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vangelis"
   },
   {
     "name": "Elliott Smith released 'Figure 8'",
@@ -3017,7 +3325,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2000,
     "month": 4,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elliott-smith-figure-8-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elliott-smith-figure-8-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elliott-Smith"
   },
   {
     "name": "Frank Sinatra performed at the Budokan Town Hall, Tokyo",
@@ -3026,7 +3335,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 4,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sinatra-at-budokan-hall-tokyo-1985/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sinatra-at-budokan-hall-tokyo-1985/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Aerosmith released 'Get A Grip'",
@@ -3036,7 +3346,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 20,
     "articleUrl": "https://www.udiscovermusic.com/stories/get-a-grip-aerosmith/",
-    "socialAssetUrl": "https://umusic.box.com/s/8ez2v96rqdlvdp69ye6mizkosspx4rcv"
+    "socialAssetUrl": "https://umusic.box.com/s/8ez2v96rqdlvdp69ye6mizkosspx4rcv",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/aerosmith"
   },
   {
     "name": "Massive Attack released 'Mezzanine'",
@@ -3046,7 +3357,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 20,
     "articleUrl": "https://www.udiscovermusic.com/stories/massive-attack-mezzanine-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/u5ktm4548fkp69sqn7le6zbrb2cfc6m6"
+    "socialAssetUrl": "https://umusic.box.com/s/u5ktm4548fkp69sqn7le6zbrb2cfc6m6",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/massive-attack"
   },
   {
     "name": "Sting And Shaggy released '44/876'",
@@ -3055,7 +3367,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 4,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sting-and-shaggy-facts/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sting-and-shaggy-facts/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   {
     "name": "The Beatles recorded basic track of 'Oh! Darling'",
@@ -3064,7 +3377,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 4,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-oh-darling-abbey-road-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-oh-darling-abbey-road-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones' 'Flashpoint' album enters the UK chart",
@@ -3073,7 +3387,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 4,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/1991-flashpoint-rolling-stones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/1991-flashpoint-rolling-stones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Beastie Boys' 'Check Your Head' released",
@@ -3082,7 +3397,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 4,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-beastie-boys-check-your-head/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-beastie-boys-check-your-head/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "Hank Williams records 'Move It on Over'",
@@ -3090,7 +3406,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1947,
     "month": 4,
-    "day": 21
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Rick Ross released 'Deeper Than Rap'",
@@ -3099,7 +3416,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2009,
     "month": 4,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rick-ross-deeper-than-rap/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rick-ross-deeper-than-rap/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-ross"
   },
   {
     "name": "Glen Campbell In His Own Words",
@@ -3108,7 +3426,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 4,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/glen-campbell-20-quotes/?"
+    "articleUrl": "https://www.udiscovermusic.com/stories/glen-campbell-20-quotes/?",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "The Who performed 'Tommy' for the first time",
@@ -3116,7 +3435,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1969,
     "month": 4,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Heart released authorized version of 'Magazine'",
@@ -3125,7 +3445,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 4,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/?p=2736412&preview=true"
+    "articleUrl": "https://www.udiscovermusic.com/?p=2736412&preview=true",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/heart"
   },
   {
     "name": "Rob Zombie released 'Venomous Rat Regeneration Vendor'",
@@ -3134,7 +3455,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 4,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/venomous-rat-regeneration-vendor-rob-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/venomous-rat-regeneration-vendor-rob-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "The Rolling Stones' 'Sticky Fingers' album released",
@@ -3144,7 +3466,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-sticky-fingers-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/c32tls2u5vewwk04ez1y0svey48el4vr + https://umusic.box.com/s/e0inyqb897hnctc6jhm7xc6phi6ha10m"
+    "socialAssetUrl": "https://umusic.box.com/s/c32tls2u5vewwk04ez1y0svey48el4vr + https://umusic.box.com/s/e0inyqb897hnctc6jhm7xc6phi6ha10m",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Diana Ross' 'Diana!' album enters the US chart",
@@ -3153,7 +3476,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 4,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/showtime-71-diana-ross-diana/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/showtime-71-diana-ross-diana/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Ross"
   },
   {
     "name": "Glen Campbell plays his last show as a stand-in Beach Boy",
@@ -3162,7 +3486,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 4,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/glen-campbell-plays-last-show-beach-boy/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/glen-campbell-plays-last-show-beach-boy/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "Kanye West released 'Live Orchestration'",
@@ -3171,7 +3496,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 4,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-late-orchestration-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-late-orchestration-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Peggy Lee - Norma Deloris Egstrom Of Jamestown, North Dakota review",
@@ -3180,7 +3506,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 4,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-norma-deloris-egstrom-from-jamestown-north-dakota-review/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-norma-deloris-egstrom-from-jamestown-north-dakota-review/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Tom Petty released 'Full Moon Fever'",
@@ -3189,7 +3516,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 4,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-full-moon-fever/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-full-moon-fever/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   {
     "name": "Cat Stevens released 'Mona Bone Jakon'",
@@ -3198,7 +3526,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 4,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-mona-bone-jakon-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-mona-bone-jakon-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Def Leppard released 'Songs From The Sparkle Lounge'",
@@ -3207,7 +3536,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2008,
     "month": 4,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/songs-sparkle-lounge-def-leppard/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/songs-sparkle-lounge-def-leppard/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Norah Jones released 'Little Broken Hearts'",
@@ -3216,7 +3546,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2012,
     "month": 4,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/norah-jones-little-broken-hearts-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/norah-jones-little-broken-hearts-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "Donna Summer released 'Bad Girls' album",
@@ -3225,7 +3556,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 4,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/donna-summer-bad-girls-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/donna-summer-bad-girls-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/donna-summer"
   },
   {
     "name": "Frank Sinatra released 'In The Wee Small Hours' album",
@@ -3235,7 +3567,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 1,
     "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-in-the-wee-small-hours-feature/",
-    "socialAssetUrl": "https://umusic.box.com/s/6wxlxq7sifbnm9cjh0vigc2ibdl9zc33"
+    "socialAssetUrl": "https://umusic.box.com/s/6wxlxq7sifbnm9cjh0vigc2ibdl9zc33",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Genesis' 'Duke' album makes the US chart",
@@ -3243,7 +3576,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1980,
     "month": 4,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Reba McEntire released 'Read My Mind'",
@@ -3252,7 +3586,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 4,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/reba-mcentire-read-my-mind-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/reba-mcentire-read-my-mind-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/reba-mcentire"
   },
   {
     "name": "Bob Seger released 'Ramblin\u2019 Gamblin\u2019 Man'",
@@ -3271,7 +3606,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 27,
     "articleUrl": "https://www.udiscovermusic.com/stories/hot-sauce-committee-part-two-beastie-boys/",
-    "socialAssetUrl": "https://umusic.box.com/s/p80k8v201e7j1xg0c85phxxrzzk0q4ut"
+    "socialAssetUrl": "https://umusic.box.com/s/p80k8v201e7j1xg0c85phxxrzzk0q4ut",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "The Mamas And The Papas' 'California Dreamin'' single makes the UK chart",
@@ -3290,7 +3626,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 29,
     "articleUrl": "https://www.udiscovermusic.com/stories/drake-views-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/r7vl80yz6uwmmd9wg2g4me7viz1vc23l"
+    "socialAssetUrl": "https://umusic.box.com/s/r7vl80yz6uwmmd9wg2g4me7viz1vc23l",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Rob Zombie released 'The Electric Warlock\u00a0Acid Witch Satanic Orgy Celebration Dispenser'",
@@ -3299,7 +3636,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 4,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/electric-warlock-rob-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/electric-warlock-rob-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "Bob Marley released 'Rastaman Vibration'",
@@ -3309,7 +3647,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 30,
     "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-rastaman-vibration/",
-    "socialAssetUrl": "https://umusic.box.com/s/ekybnedc13dlm3p7ynao925s4qtmr7cd"
+    "socialAssetUrl": "https://umusic.box.com/s/ekybnedc13dlm3p7ynao925s4qtmr7cd",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Boyz II Men released 'Cooleyhighharmony'",
@@ -3319,7 +3658,8 @@ const EDITORIAL_EVENTS = [
     "month": 4,
     "day": 30,
     "articleUrl": "https://www.udiscovermusic.com/stories/cooleyhihharmony-hip-hop-doo-wop-genius-boyz-ii-men/",
-    "socialAssetUrl": "https://umusic.box.com/s/99gy2rvdrixzqoacsq9744rq30uv8bi2"
+    "socialAssetUrl": "https://umusic.box.com/s/99gy2rvdrixzqoacsq9744rq30uv8bi2",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Boyz-II-Men"
   },
   {
     "name": "Ella Fitzgerald enters UK singles chart with 'Can't Buy Me Love'",
@@ -3328,7 +3668,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 4,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ella-fitzgerald-cant-buy-me-love-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ella-fitzgerald-cant-buy-me-love-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Muddy Waters died",
@@ -3336,7 +3677,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1983,
     "month": 4,
-    "day": 30
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "Peggy Lee starts recording 'Black Coffee' album",
@@ -3345,7 +3687,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1953,
     "month": 4,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-black-coffee-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-black-coffee-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Billy Idol released 'Charmed Life'",
@@ -3362,7 +3705,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1973,
     "month": 5,
-    "day": 1
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "James Brown releases 'Live At The Apollo' this month",
@@ -3371,7 +3715,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 5,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-live-at-the-apollo/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-live-at-the-apollo/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Sparks release 'Kimono My House' this month",
@@ -3380,7 +3725,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 5,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sparks-kimono-my-house-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sparks-kimono-my-house-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sparks"
   },
   {
     "name": "Steve Miller Band releases 'Fly Like An Eagle' album this month",
@@ -3389,7 +3735,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 5,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-fly-like-an-eagle/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-fly-like-an-eagle/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-miller-band"
   },
   {
     "name": "Chuck Berry records 'Carol'",
@@ -3398,7 +3745,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1958,
     "month": 5,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/carol-stole-their-hearts-away/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/carol-stole-their-hearts-away/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Live Cream enters the US chart",
@@ -3415,7 +3763,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1998,
     "month": 5,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/massive-attack-make-no-1-with-mezzanine/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/massive-attack-make-no-1-with-mezzanine/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/massive-attack"
   },
   {
     "name": "Tom Petty And The Heartbreakers release 'You're Gonna Get It!'",
@@ -3425,7 +3774,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 2,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-youre-gonna-get-it/",
-    "socialAssetUrl": "https://umusic.box.com/s/ssuszjc51vulkejyicxl6h3q0pdphzsy"
+    "socialAssetUrl": "https://umusic.box.com/s/ssuszjc51vulkejyicxl6h3q0pdphzsy",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   {
     "name": "Frank Zappa released 'Ship Arriving Too Late to Save a Drowning Witch'",
@@ -3434,7 +3784,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 5,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-ship-arriving-too-late-to-save-a-drowning-witch-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-ship-arriving-too-late-to-save-a-drowning-witch-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Rick Wakeman released 'Journey To The Centre Of The Earth'",
@@ -3442,7 +3793,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1974,
     "month": 5,
-    "day": 3
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-wakeman"
   },
   {
     "name": "Robert Palmer's 'Addicted To Love' tops US chart",
@@ -3451,7 +3803,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1986,
     "month": 5,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/when-america-got-addicted-to-robert-palmer/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/when-america-got-addicted-to-robert-palmer/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "Sonic Youth released 'Experimental Jet Set Trash And No Star'",
@@ -3461,7 +3814,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 3,
     "articleUrl": "https://www.udiscovermusic.com/stories/sonic-youth-experimental-jet-set-trash-and-no-star/",
-    "socialAssetUrl": "https://umusic.box.com/s/to7gsrh94of6etmlbi1vt7azcom95pt5"
+    "socialAssetUrl": "https://umusic.box.com/s/to7gsrh94of6etmlbi1vt7azcom95pt5",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sonic-youth"
   },
   {
     "name": "Brian Eno released 'Music For Installations'",
@@ -3470,7 +3824,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 5,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/music-for-installations-brian-eno/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/music-for-installations-brian-eno/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brian-eno"
   },
   {
     "name": "Soundgarden released 'Black Hole Sun' single",
@@ -3479,7 +3834,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 5,
     "day": 4,
-    "socialAssetUrl": "https://umusic.box.com/s/h2c9bedkorzu0m8fk8jjp8dqi1g3fs0e"
+    "socialAssetUrl": "https://umusic.box.com/s/h2c9bedkorzu0m8fk8jjp8dqi1g3fs0e",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "Frank Sinatra performed at Caesar's Palace; released as DVD on 'Vegas' box set",
@@ -3488,7 +3844,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 5,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/caesars-palace-frank-sinatra-1978/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/caesars-palace-frank-sinatra-1978/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Gang Starr - Daily Operation released",
@@ -3496,7 +3853,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1992,
     "month": 5,
-    "day": 5
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gang-starr"
   },
   {
     "name": "Paul McCartney's 'Flaming Pie' album released in the UK",
@@ -3514,7 +3872,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 5,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-single-factor/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-single-factor/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Frank Zappa enters UK chart with 'Zappa In New York'",
@@ -3523,7 +3882,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 5,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-plays-new-york-and-wins/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-plays-new-york-and-wins/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Neil Diamond released 'Home Before Dark' album",
@@ -3532,7 +3892,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2008,
     "month": 5,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-home-before-dark-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-home-before-dark-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "Hank Williams gets first country No.1 with 'Lovesick Blues'",
@@ -3541,7 +3902,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1949,
     "month": 5,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/first-of-11-hank-williams-lovesick-blues/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/first-of-11-hank-williams-lovesick-blues/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Katy Perry released 'California Gurls'",
@@ -3549,7 +3911,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2020,
     "month": 5,
-    "day": 7
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   {
     "name": "The Rolling Stones release Paint It, Black",
@@ -3558,7 +3921,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 5,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-paint-it-black-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-paint-it-black-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Freddie Hubbard recorded 'Breaking Point!'",
@@ -3577,7 +3941,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 8,
     "articleUrl": "https://www.udiscovermusic.com/stories/bob-marley-wailers-legend-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/49b52msc49mg54x0epty11grnqsn3pl9"
+    "socialAssetUrl": "https://umusic.box.com/s/49b52msc49mg54x0epty11grnqsn3pl9",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Supremes enter US LP chart with 'We Remember Sam Cooke'",
@@ -3595,7 +3960,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 5,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-let-it-be-final-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-let-it-be-final-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Vangelis's 'Chariots Of Fire' single tops US chart again",
@@ -3603,7 +3969,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1982,
     "month": 5,
-    "day": 8
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vangelis"
   },
   {
     "name": "Sam Cooke's 'Wonderful World' debuts on 'Billboard' chart",
@@ -3612,7 +3979,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1960,
     "month": 5,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-wonderful-world-of-sam-cooke/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-wonderful-world-of-sam-cooke/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-cooke"
   },
   {
     "name": "The Rolling Stones record Chuck Berry's 'Come On' at Olympic Studios",
@@ -3621,7 +3989,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 5,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/come-on-rolling-stones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/come-on-rolling-stones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones' 'Satisfaction' recorded",
@@ -3629,7 +3998,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1965,
     "month": 5,
-    "day": 10
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Weezer released 'Weezer (Blue Album)'",
@@ -3638,7 +4008,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 5,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/weezer-blue-album-power-pop/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/weezer-blue-album-power-pop/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/weezer"
   },
   {
     "name": "Bob Marley died",
@@ -3646,7 +4017,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1981,
     "month": 5,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Genesis' 'Nursery Cryme' makes UK chart",
@@ -3655,7 +4027,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 5,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-genesis-nursery-cryme/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-genesis-nursery-cryme/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Queen played three sold-out nights at Wembley Arena",
@@ -3664,7 +4037,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 5,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-arrive-at-wembley/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-arrive-at-wembley/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Snoop Dogg released 'No Limit Top Dogg'",
@@ -3673,7 +4047,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1999,
     "month": 5,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/snoop-dogg-no-limit-top-dogg-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/snoop-dogg-no-limit-top-dogg-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/snoop-dogg"
   },
   {
     "name": "Lionel Richie's 'Hello' went to No.1 in the US",
@@ -3681,7 +4056,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1984,
     "month": 5,
-    "day": 12
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lionel-richie"
   },
   {
     "name": "Roy Ayers released 'Everybody Loves the Sunshine'",
@@ -3706,7 +4082,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1991,
     "month": 5,
-    "day": 14
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Carpenters' self-titled third album released",
@@ -3716,7 +4093,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 14,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-carpenters-carpenters/",
-    "socialAssetUrl": "https://umusic.box.com/s/wce8q6y4yi6mf3esatt367os2s3rbu4m"
+    "socialAssetUrl": "https://umusic.box.com/s/wce8q6y4yi6mf3esatt367os2s3rbu4m",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Def Leppard released 'Slang'",
@@ -3725,7 +4103,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 5,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/slang-def-leppard/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/slang-def-leppard/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Frank Sinatra died",
@@ -3733,7 +4112,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1998,
     "month": 5,
-    "day": 14
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Sidney Bechet died",
@@ -3750,7 +4130,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 5,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/not-such-a-rainy-day/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/not-such-a-rainy-day/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Eminem released 'Relapse'",
@@ -3760,7 +4141,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 15,
     "articleUrl": "https://www.udiscovermusic.com/stories/eminem-relapse/",
-    "socialAssetUrl": "https://umusic.box.com/s/fxcz4x74r1p7pc34lr962epf5a3uslu4"
+    "socialAssetUrl": "https://umusic.box.com/s/fxcz4x74r1p7pc34lr962epf5a3uslu4",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "Maroon 5 released 'It Won't Be Soon Before Long'",
@@ -3770,7 +4152,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 16,
     "articleUrl": "https://www.udiscovermusic.com/stories/it-wont-be-soon-before-long-maroon-5/",
-    "socialAssetUrl": "https://umusic.box.com/s/kjdhumxqaq6a7q4xnii5oh6uxpp7u2s8 + https://umusic.box.com/s/6w15vk2pgdxtb2t0adb8ai8yc122pskw"
+    "socialAssetUrl": "https://umusic.box.com/s/kjdhumxqaq6a7q4xnii5oh6uxpp7u2s8 + https://umusic.box.com/s/6w15vk2pgdxtb2t0adb8ai8yc122pskw",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Maroon-5"
   },
   {
     "name": "The Beach Boys 'Pet Sounds' released",
@@ -3780,7 +4163,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 16,
     "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-pet-sounds-remains-work-art/",
-    "socialAssetUrl": "https://umusic.box.com/s/u3z94upvio7ju73qkhx1q8cv85zebf8w"
+    "socialAssetUrl": "https://umusic.box.com/s/u3z94upvio7ju73qkhx1q8cv85zebf8w",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Who 'Live At Leeds' released",
@@ -3788,7 +4172,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1970,
     "month": 5,
-    "day": 16
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Style Council enter UK album chart with 'Home & Abroad'",
@@ -3806,7 +4191,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 5,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-jive-talkin-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-jive-talkin-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Chris Cornell died",
@@ -3814,7 +4200,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2017,
     "month": 5,
-    "day": 18
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chris-cornell"
   },
   {
     "name": "Janet Jackson released 'Janet'",
@@ -3823,7 +4210,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 5,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/janet-jackson-jam-lewis/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/janet-jackson-jam-lewis/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/janet-jackson"
   },
   {
     "name": "Sam Smith released 'Stay With Me' in the UK",
@@ -3831,7 +4219,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2014,
     "month": 5,
-    "day": 18
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-smith"
   },
   {
     "name": "Scott Walker's 'Scott 2' makes No.1 in the UK",
@@ -3840,7 +4229,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 5,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-scott-walkers-scott-2/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-scott-walkers-scott-2/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/scott-walker"
   },
   {
     "name": "Coleman Hawkins died",
@@ -3848,7 +4238,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1969,
     "month": 5,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/coleman-hawkin"
   },
   {
     "name": "DMX's 'It Dark And Hell Is Hot' album released",
@@ -3857,7 +4248,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1998,
     "month": 5,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/its-dark-and-hell-is-hot-dmx-album-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/its-dark-and-hell-is-hot-dmx-album-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dmx"
   },
   {
     "name": "Elton John released\u00a0'Honky Ch\u00e2teau'",
@@ -3867,7 +4259,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 19,
     "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-honky-chateau-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/o1ozsk5xrbye745lshtvto0kaa7wlh5l"
+    "socialAssetUrl": "https://umusic.box.com/s/o1ozsk5xrbye745lshtvto0kaa7wlh5l",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "The Who's 'Tommy' album released",
@@ -3877,7 +4270,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/stories/tommy-a-masterpiece/",
-    "socialAssetUrl": "https://umusic.box.com/s/7hwff8w0ob78s8xd51ki0z7kfjdzhg4c"
+    "socialAssetUrl": "https://umusic.box.com/s/7hwff8w0ob78s8xd51ki0z7kfjdzhg4c",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Ariana Grande released 'Dangerous Woman'",
@@ -3887,7 +4281,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 20,
     "articleUrl": "https://www.udiscovermusic.com/stories/ariana-grande-dangerous-woman-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/sixj0gyat5rrnom8558jykfvhwoc1dir"
+    "socialAssetUrl": "https://umusic.box.com/s/sixj0gyat5rrnom8558jykfvhwoc1dir",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ariana-Grande"
   },
   {
     "name": "The Police released 'Every Breath You Take'",
@@ -3896,7 +4291,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 5,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/every-breath-you-take-sting-police-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/every-breath-you-take-sting-police-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
   },
   {
     "name": "Marvin Gaye's 'What's Going On' album released (album review)",
@@ -3906,7 +4302,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 21,
     "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-unveils-masterful-whats-going-on/",
-    "socialAssetUrl": "https://umusic.box.com/s/vfjoh1ae69zcd4dvkgsy81183xgv1u9q"
+    "socialAssetUrl": "https://umusic.box.com/s/vfjoh1ae69zcd4dvkgsy81183xgv1u9q",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Queen's Hot Space album released",
@@ -3915,7 +4312,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 5,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-hot-space/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-hot-space/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Soundgarden released 'Down On The Upside'",
@@ -3925,7 +4323,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 21,
     "articleUrl": "https://www.udiscovermusic.com/stories/soundgarden-down-on-the-upside-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/qjpdo0ydvcen3s9jefjts1oy1wrqkowl"
+    "socialAssetUrl": "https://umusic.box.com/s/qjpdo0ydvcen3s9jefjts1oy1wrqkowl",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "Tame Impala releases 'Innerspeaker'",
@@ -3944,7 +4343,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 22,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-the-miracle/",
-    "socialAssetUrl": "https://umusic.box.com/s/t6l65wfhrnsguy8g2e0ysi3yn4x92loh"
+    "socialAssetUrl": "https://umusic.box.com/s/t6l65wfhrnsguy8g2e0ysi3yn4x92loh",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Audioslave released 'Out Of Exile'",
@@ -3954,7 +4354,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/stories/audioslave-out-of-exile-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/tjxg9q5oawzs75jkt1xyg1tnt0smpyps"
+    "socialAssetUrl": "https://umusic.box.com/s/tjxg9q5oawzs75jkt1xyg1tnt0smpyps",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/audioslave"
   },
   {
     "name": "Bob Marley released 'Confrontation'",
@@ -3964,7 +4365,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-the-wailers-confrontation/",
-    "socialAssetUrl": "https://umusic.box.com/s/kjfj6ghucwljewond3bfejeuct32ft8r"
+    "socialAssetUrl": "https://umusic.box.com/s/kjfj6ghucwljewond3bfejeuct32ft8r",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Def Leppard released 'Yeah!'",
@@ -3973,7 +4375,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 5,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/def-leppard-covers-album-yeah/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/def-leppard-covers-album-yeah/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Eminem released 'The Marshall Mathers' LP",
@@ -3983,7 +4386,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/stories/eminem-the-marshall-mathers-lp/",
-    "socialAssetUrl": "https://umusic.box.com/s/3t9tcsdooe9oepb3wbfocb8e7q68ygzf"
+    "socialAssetUrl": "https://umusic.box.com/s/3t9tcsdooe9oepb3wbfocb8e7q68ygzf",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "Lady Gaga released 'Born This Way'",
@@ -3993,7 +4397,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/stories/lady-gaga-born-this-way-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/vdf0g46qgcc3g4adoz16dl9hyg1qvj0o"
+    "socialAssetUrl": "https://umusic.box.com/s/vdf0g46qgcc3g4adoz16dl9hyg1qvj0o",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-gaga"
   },
   {
     "name": "Common releases 'Be'",
@@ -4002,7 +4407,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2005,
     "month": 5,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-be/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-be/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/common"
   },
   {
     "name": "Sting releases 'My Songs'",
@@ -4011,7 +4417,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 5,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sting-my-songs-album-track-by-track/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sting-my-songs-album-track-by-track/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   {
     "name": "The Beatles' 'Get Back' tops the US charts",
@@ -4019,7 +4426,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1969,
     "month": 5,
-    "day": 24
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Kanye West releases 'Jesus Walks'",
@@ -4028,7 +4436,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 5,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-jesus-walks/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-jesus-walks/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Rick Wakeman's 'Journey To The Centre Of The Earth' makes No.1 in the UK",
@@ -4036,7 +4445,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1974,
     "month": 5,
-    "day": 25
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-wakeman"
   },
   {
     "name": "Slick Rick released 'The Art Of Storytelling'",
@@ -4045,7 +4455,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1999,
     "month": 5,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/slick-rick-art-of-storytelling/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/slick-rick-art-of-storytelling/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/slick-rick"
   },
   {
     "name": "Eminem released 'The Eminem Show'",
@@ -4055,7 +4466,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 26,
     "articleUrl": "https://www.udiscovermusic.com/stories/how-the-eminem-show-cemented-eminems-rap-legacy/",
-    "socialAssetUrl": "https://umusic.box.com/s/fdwrk9sagb12v5a0e9tv4pvlg4iask5d"
+    "socialAssetUrl": "https://umusic.box.com/s/fdwrk9sagb12v5a0e9tv4pvlg4iask5d",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "Peggy Lee: The Life And Legacy Of A Pioneering Jazz Singer - Interview with Tish Oney",
@@ -4064,7 +4476,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 7,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-jazz-singer-life-legacy/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-jazz-singer-life-legacy/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Peter Frampton's 'Wind Of Change' album released",
@@ -4073,7 +4486,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 5,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/peter-frampton-welcomes-wind-of-change/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/peter-frampton-welcomes-wind-of-change/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peter-Frampton"
   },
   {
     "name": "Sam Smith released 'In The Lonely Hour'",
@@ -4083,7 +4497,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 26,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-in-the-lonely-hour/",
-    "socialAssetUrl": "https://umusic.box.com/s/2c4yum6duxmiy8g4nfpga0cw5ibwyzvp"
+    "socialAssetUrl": "https://umusic.box.com/s/2c4yum6duxmiy8g4nfpga0cw5ibwyzvp",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-smith"
   },
   {
     "name": "The Beatles released 'Sgt Pepper's Lonely Hearts Club Band'",
@@ -4092,7 +4507,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 5,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-sgt-peppers-lonely-hearts-club-band/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-sgt-peppers-lonely-hearts-club-band/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Peggy Lee as songwriter feature",
@@ -4101,7 +4517,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 5,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-the-songwriter-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/peggy-lee-the-songwriter-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Dierks Bentley releases 'Black'",
@@ -4110,7 +4527,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 5,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/news/dierks-bentley-talks-to-udiscover/"
+    "articleUrl": "https://www.udiscovermusic.com/news/dierks-bentley-talks-to-udiscover/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Dierks-Bentley"
   },
   {
     "name": "Nat King Cole's 'Love Is The Thing' Makes No.1 in the US",
@@ -4118,7 +4536,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1957,
     "month": 5,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nat-King-Cole"
   },
   {
     "name": "Patsy Cline records 'Today, Tomorrow And Forever'",
@@ -4127,7 +4546,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1957,
     "month": 5,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-follows-her-debut-hit-with-a-miss/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-follows-her-debut-hit-with-a-miss/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "The Rolling Stones' 'Miss You' enters the Hot 100",
@@ -4135,7 +4555,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1978,
     "month": 5,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Elton John records 'Live From Moscow'",
@@ -4144,7 +4565,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 5,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-live-from-moscow-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-live-from-moscow-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Genesis 'Spot The Pigeon' EP makes the UK chart",
@@ -4153,7 +4575,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 5,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/how-genesis-spent-their-saturdays/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/how-genesis-spent-their-saturdays/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Peter Frampton's I'm In You released",
@@ -4162,7 +4585,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 5,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-peter-framptons-im/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-peter-framptons-im/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peter-Frampton"
   },
   {
     "name": "Florence + The Machine\tHow Big, How Blue, How Beautiful",
@@ -4181,7 +4605,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 30,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-living-in-the-material-world/",
-    "socialAssetUrl": "https://umusic.box.com/s/tm7zd3k4wskv5wb1wv2o8bws8zhcqg7b"
+    "socialAssetUrl": "https://umusic.box.com/s/tm7zd3k4wskv5wb1wv2o8bws8zhcqg7b",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "The Beatles start recording 'Revolution #1' and 'Revolution #9' at Abbey Road",
@@ -4190,7 +4615,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 5,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/revolution-story-behind-song-beatles/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/revolution-story-behind-song-beatles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones - England's Newest Hitmakers released in the US",
@@ -4199,7 +4625,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 5,
     "day": 30,
-    "socialAssetUrl": "https://umusic.box.com/s/s26np4w3rsfzcozh9xbr0o7tg22m6931"
+    "socialAssetUrl": "https://umusic.box.com/s/s26np4w3rsfzcozh9xbr0o7tg22m6931",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Beastie Boys released 'Ill Communication'",
@@ -4208,7 +4635,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 5,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ill-communication-beastie-boys-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ill-communication-beastie-boys-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "The Beatles' 'Love Me Do' tops the US chart",
@@ -4217,7 +4645,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 5,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beatles-long-climb-to-top-love-me-do/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beatles-long-climb-to-top-love-me-do/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Rihanna released 'Good Girl Gone Bad'",
@@ -4227,7 +4656,8 @@ const EDITORIAL_EVENTS = [
     "month": 5,
     "day": 31,
     "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-good-girl-gone-bad/",
-    "socialAssetUrl": "https://umusic.box.com/s/hic74yclooyrzpmpt7fomaidhj8gmiop"
+    "socialAssetUrl": "https://umusic.box.com/s/hic74yclooyrzpmpt7fomaidhj8gmiop",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "Frank Sinatra played London's Royal Festival Hall",
@@ -4236,7 +4666,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 6,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-royal-festival-hall-london-1962/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-royal-festival-hall-london-1962/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "George Harrison releases 'Somewhere In England'",
@@ -4245,7 +4676,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 6,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-somewhere-in-england/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-somewhere-in-england/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Howlin' Wolf released 'Spoonful' this month",
@@ -4263,7 +4695,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 6,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-it-serve-you-right-to-suffer/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-it-serve-you-right-to-suffer/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lee-hooker"
   },
   {
     "name": "Kanye West released 'Ye'",
@@ -4272,7 +4705,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 6,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/yanye-west-ye-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/yanye-west-ye-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Roger Daltrey released 'As Long As I Have You'",
@@ -4281,7 +4715,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 6,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/roger-daltrey-shows-soul-long/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/roger-daltrey-shows-soul-long/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/roger-daltrey"
   },
   {
     "name": "Diana Ross - I'm Coming Out - Story Behind The Song",
@@ -4290,7 +4725,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 8,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/diana-ross-im-coming-out-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/diana-ross-im-coming-out-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Ross"
   },
   {
     "name": "Billy Idol released 'Eyes Without a Face' this month",
@@ -4309,7 +4745,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 2,
     "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-combine-now-then/",
-    "socialAssetUrl": "https://umusic.box.com/s/ticsctut0muo9lhpyagiitvyuucp2imr"
+    "socialAssetUrl": "https://umusic.box.com/s/ticsctut0muo9lhpyagiitvyuucp2imr",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Halsey: Hopeless Fountain Kingdom",
@@ -4335,7 +4772,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1986,
     "month": 6,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-a-kind-of-magic/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-a-kind-of-magic/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Thin Lizzy's 'Live And Dangerous' released",
@@ -4344,7 +4782,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 6,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/thin-lizzy-live-and-dangerous/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/thin-lizzy-live-and-dangerous/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thin-lizzy"
   },
   {
     "name": "Bob Marley released 'Exodus'",
@@ -4354,7 +4793,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 3,
     "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-exodus/",
-    "socialAssetUrl": "https://umusic.box.com/s/pktvesor9fggl2gaqt77hqset9fw6n77"
+    "socialAssetUrl": "https://umusic.box.com/s/pktvesor9fggl2gaqt77hqset9fw6n77",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Megadeth released 'Super Collider'",
@@ -4363,7 +4803,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 6,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-super-collider-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-super-collider-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "Mel Torm\u00e9 records original verson of 'Born To Be Blue'",
@@ -4381,7 +4822,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 6,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queens-extended-play/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queens-extended-play/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Carpenters' self-titled third album enters US charts for the first time",
@@ -4389,7 +4831,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1971,
     "month": 6,
-    "day": 5
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Mel Torm\u00e9 died",
@@ -4417,7 +4860,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 6,
     "articleUrl": "https://www.udiscovermusic.com/stories/another-hit-carpenters-album-on-the-horizon/",
-    "socialAssetUrl": "https://umusic.box.com/s/2pozlao7fkz9v7h11z67x3mdv6ytk6ja"
+    "socialAssetUrl": "https://umusic.box.com/s/2pozlao7fkz9v7h11z67x3mdv6ytk6ja",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Don Williams enters country chart with 'I'll Never Be In Love Again'",
@@ -4435,7 +4879,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 6,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-elton-john-empty-sky/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-elton-john-empty-sky/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Hank Williams song '(Last Night) I Heard You Crying in Your Sleep' and 'Move It on Over' released",
@@ -4444,7 +4889,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1947,
     "month": 6,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-move-it-on-over-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-move-it-on-over-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Queens Of The Stone Age released 'Rated R'",
@@ -4454,7 +4900,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 6,
     "articleUrl": "https://www.udiscovermusic.com/stories/queens-of-the-stone-age-rated-r-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/40gkkt3bhmqxya7afz2ot8yeytjivz1x"
+    "socialAssetUrl": "https://umusic.box.com/s/40gkkt3bhmqxya7afz2ot8yeytjivz1x",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "The Rolling Stones release Metamorphosis",
@@ -4463,7 +4910,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 6,
     "day": 6,
-    "socialAssetUrl": "https://umusic.box.com/s/rcyi7nm5cpz86z2j8mz5fdabapn01xiu"
+    "socialAssetUrl": "https://umusic.box.com/s/rcyi7nm5cpz86z2j8mz5fdabapn01xiu",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Black Eyed Peas - Monkey Business released",
@@ -4472,7 +4920,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2005,
     "month": 6,
     "day": 7,
-    "socialAssetUrl": "https://umusic.box.com/s/h4rw3bttxezabyi1iia7z17vciqp5npp"
+    "socialAssetUrl": "https://umusic.box.com/s/h4rw3bttxezabyi1iia7z17vciqp5npp",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/black-eyed-peas"
   },
   {
     "name": "Elvis Costello enters UK singles chart with 'New Amsterdam'",
@@ -4481,7 +4930,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 6,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elvis-costello-new-amsterdam/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elvis-costello-new-amsterdam/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Costello"
   },
   {
     "name": "Muddy Waters records 'Tiger In Your Tank' and 'Meanest Woman'",
@@ -4490,7 +4940,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1960,
     "month": 6,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-gets-a-tiger-in-his-tank/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-gets-a-tiger-in-his-tank/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "Tears For Fears released 'Elemental'",
@@ -4499,7 +4950,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 6,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/tears-for-fears-elemental-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/tears-for-fears-elemental-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tears-for-fears"
   },
   {
     "name": "The Killers released 'Hot Fuss'",
@@ -4509,7 +4961,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 7,
     "articleUrl": "https://www.udiscovermusic.com/stories/the-killers-debut-album-hot-fuss/",
-    "socialAssetUrl": "https://umusic.box.com/s/01a2p3timkrshsyza2nsfm8aqoj7xkcd"
+    "socialAssetUrl": "https://umusic.box.com/s/01a2p3timkrshsyza2nsfm8aqoj7xkcd",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-killers"
   },
   {
     "name": "Def Leppard released 'Euphoria'",
@@ -4519,7 +4972,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 8,
     "articleUrl": "https://www.udiscovermusic.com/stories/euphoria-def-leppard/",
-    "socialAssetUrl": "https://umusic.box.com/s/9fyeor37j4toccn0cewnrdbjd119s2r6"
+    "socialAssetUrl": "https://umusic.box.com/s/9fyeor37j4toccn0cewnrdbjd119s2r6",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Kanye West and Kid Cudi released 'I SEE GHOSTS'",
@@ -4528,7 +4982,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 6,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-kid-cudi-kids-see-ghosts/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-kid-cudi-kids-see-ghosts/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Tears For Fears start two-week run at No.1 with 'Everybody Wants To Rule The World'",
@@ -4537,7 +4992,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 6,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/tears-for-fears-rule-america-second-british-invasion/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/tears-for-fears-rule-america-second-british-invasion/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tears-for-fears"
   },
   {
     "name": "The Beach Boys released 'With The Royal Philharmonic Orchestra'",
@@ -4546,7 +5002,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 6,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-royal-philharmonic-orchestra-review/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-royal-philharmonic-orchestra-review/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Diana Krall released 'When I Look In Your Eyes'",
@@ -4555,7 +5012,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1999,
     "month": 6,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/diana-krall-when-i-look-in-your-eyes-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/diana-krall-when-i-look-in-your-eyes-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Krall"
   },
   {
     "name": "Katy Perry released 'Witness'",
@@ -4565,7 +5023,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 9,
     "articleUrl": "https://www.udiscovermusic.com/stories/witness-katy-perry-fifth-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/9wa55rft439eomnj4kccsvvc43v7iuiu"
+    "socialAssetUrl": "https://umusic.box.com/s/9wa55rft439eomnj4kccsvvc43v7iuiu",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   {
     "name": "LL Cool J released \u2018Walking With A Panther\u2019 album",
@@ -4574,7 +5033,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 6,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ll-cool-j-walking-with-a-panther-album-cover/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ll-cool-j-walking-with-a-panther-album-cover/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ll-cool-j"
   },
   {
     "name": "Paul McCartney and Wings enter UK chart with 'Live And Let Die'",
@@ -4593,7 +5053,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 9,
     "articleUrl": "https://www.udiscovermusic.com/stories/some-girls-record-breaking-run-for-rolling-stones/",
-    "socialAssetUrl": "https://umusic.box.com/s/5twwyzllnf9nfmx1mi5aau5d8gk36pi4"
+    "socialAssetUrl": "https://umusic.box.com/s/5twwyzllnf9nfmx1mi5aau5d8gk36pi4",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bob Marley released 'Uprising'",
@@ -4603,7 +5064,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 10,
     "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-the-wailers-uprising/",
-    "socialAssetUrl": "https://umusic.box.com/s/9oe44535d3s0u3fxr5sb14z8da1k9b7y"
+    "socialAssetUrl": "https://umusic.box.com/s/9oe44535d3s0u3fxr5sb14z8da1k9b7y",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Lil Wayne \u2014 Tha Carter III released",
@@ -4611,7 +5073,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2008,
     "month": 6,
-    "day": 10
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lil-wayne"
   },
   {
     "name": "Queen released 'You're My Best Friend' in the US",
@@ -4620,7 +5083,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 5,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-youre-my-best-friend-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-youre-my-best-friend-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "The Beatles' 'Sgt Pepper' makes No.1 in the UK",
@@ -4628,7 +5092,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1967,
     "month": 6,
-    "day": 10
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "U2's 'Wide Awake In America' EP released",
@@ -4637,7 +5102,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 6,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/u2-wide-awake-in-85/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/u2-wide-awake-in-85/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Carpenters release 'A Kind Of Hush'",
@@ -4647,7 +5113,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 11,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-a-kind-of-hush/",
-    "socialAssetUrl": "https://umusic.box.com/s/6il50qhhbs5ml092hzl4141bug4ezt34"
+    "socialAssetUrl": "https://umusic.box.com/s/6il50qhhbs5ml092hzl4141bug4ezt34",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Crowded House released 'Intriguer'",
@@ -4656,7 +5123,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 6,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-intriguer/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-intriguer/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house"
   },
   {
     "name": "The Beatles recorded 'Blackbird' at Abbey Road",
@@ -4665,7 +5133,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 6,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/blackbird-story-behind-song-beatles/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/blackbird-story-behind-song-beatles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "John Lennon releases Sometime in New York City",
@@ -4674,7 +5143,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 6,
     "day": 12,
-    "socialAssetUrl": "https://umusic.box.com/s/z3t7bacu0q2s4ohghvdy6nhvth2ncv51"
+    "socialAssetUrl": "https://umusic.box.com/s/z3t7bacu0q2s4ohghvdy6nhvth2ncv51",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Megadeth released 'Killing Is My Business... And Business Is Good!'",
@@ -4683,7 +5153,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 6,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-killing-is-my-business-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-killing-is-my-business-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "Bon Jovi released 'Crush'",
@@ -4693,7 +5164,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 13,
     "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-crush-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/2uahg4vj9xhiapf9qh8g2kxr33rjrnuf"
+    "socialAssetUrl": "https://umusic.box.com/s/2uahg4vj9xhiapf9qh8g2kxr33rjrnuf",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "George Harrison's Somewhere in England makes the UK album chart",
@@ -4701,7 +5173,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1981,
     "month": 6,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Lana Del Rey released 'Ultraviolence'",
@@ -4710,7 +5183,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2014,
     "month": 6,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ultraviolence-lana-del-rey-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ultraviolence-lana-del-rey-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lana-del-rey"
   },
   {
     "name": "Peter Frampton played first of two nights at Winterland Ballroom; recordings used for 'Frampton Comes Alive!'",
@@ -4718,7 +5192,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1975,
     "month": 6,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peter-Frampton"
   },
   {
     "name": "Frank Sinatra performed in Monte Carlo",
@@ -4727,7 +5202,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1958,
     "month": 6,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-monte-carlo-june-1958/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-monte-carlo-june-1958/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Hank Williams records 'They'll Never Take Her Love From Me'",
@@ -4736,7 +5212,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1950,
     "month": 6,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-flips-b-side-hit-theyll-never-take-love/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-flips-b-side-hit-theyll-never-take-love/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Horace Silver died",
@@ -4744,7 +5221,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": null,
     "month": 6,
-    "day": 14
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Horace-Silve"
   },
   {
     "name": "The Beatles: The Beatles VI",
@@ -4752,7 +5230,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1965,
     "month": 6,
-    "day": 14
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Loretta Lynn: Blue Kentucky Girl",
@@ -4769,7 +5248,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 6,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/to-the-5-boroughs-beastie-boys-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/to-the-5-boroughs-beastie-boys-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "Drake released 'Thank Me Later'",
@@ -4778,7 +5258,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 6,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/why-drakes-thank-me-later-predicted-his-future/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/why-drakes-thank-me-later-predicted-his-future/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Ella Fitzgerald died",
@@ -4786,7 +5267,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1996,
     "month": 6,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Nirvana released 'Bleach'",
@@ -4795,7 +5277,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 6,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bleach-nirvana-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bleach-nirvana-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "Wes Montgomery died",
@@ -4803,7 +5286,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1968,
     "month": 6,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/wes-montgomery"
   },
   {
     "name": "2 Chainz - Pretty Girls Like Trap Music released",
@@ -4821,7 +5305,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 6,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/empyrean-isles-herbie-hancock/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/empyrean-isles-herbie-hancock/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Herbie-Hancock"
   },
   {
     "name": "Katy Perry releases 'One Of The Boys'",
@@ -4831,7 +5316,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 17,
     "articleUrl": "https://www.udiscovermusic.com/stories/one-of-the-boys-katy-perry/",
-    "socialAssetUrl": "https://umusic.box.com/s/31yokg3xwg4j4tgiifkkfixw0tpg2k48"
+    "socialAssetUrl": "https://umusic.box.com/s/31yokg3xwg4j4tgiifkkfixw0tpg2k48",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   {
     "name": "Megadeth released 'Cryptic Writings'",
@@ -4840,7 +5326,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 6,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-cryptic-writings-seventh-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-cryptic-writings-seventh-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "The Police release 'Synchronicity'",
@@ -4850,7 +5337,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 17,
     "articleUrl": "https://www.udiscovermusic.com/stories/the-polices-final-studio-album-hits-the-heights/",
-    "socialAssetUrl": "https://umusic.box.com/s/0gteamr2ru5oubxrdnfdcxp7rtkuk6vn"
+    "socialAssetUrl": "https://umusic.box.com/s/0gteamr2ru5oubxrdnfdcxp7rtkuk6vn",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
   },
   {
     "name": "Elton John released 'Breaking Hearts'",
@@ -4859,7 +5347,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 6,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-breaking-hearts-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-breaking-hearts-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Eminem released 'Recovery'",
@@ -4867,7 +5356,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2010,
     "month": 6,
-    "day": 18
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "Kanye West released 'Yeezus'",
@@ -4876,7 +5366,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 6,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-yeezus-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-yeezus-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Robert Palmer enters US Hot 100 with 'You Are In My System'",
@@ -4885,7 +5376,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 6,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-comes-up-with-a-system/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-comes-up-with-a-system/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "Bon Jovi released 'Lost Highway'",
@@ -4895,7 +5387,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 19,
     "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-lost-highway-country-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/ihcywx2a7vfctyzb70cqztfhm76n44rk"
+    "socialAssetUrl": "https://umusic.box.com/s/ihcywx2a7vfctyzb70cqztfhm76n44rk",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Guns N' Roses make UK live debut at sold out Marquee Club",
@@ -4913,7 +5406,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 6,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-live-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-live-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Carpenters release 'Goodbye to Love'",
@@ -4922,7 +5416,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 7,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-power-ballad/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-power-ballad/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Freddie Mercury released 'Time Waits For No One'",
@@ -4931,7 +5426,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 6,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/time-waits-for-no-one-freddie-mercury/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/time-waits-for-no-one-freddie-mercury/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/freddie-mercury"
   },
   {
     "name": "The Rolling Stones release 'Emotional Rescue'",
@@ -4941,7 +5437,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 20,
     "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-emotional-arrival-in-the-80s/",
-    "socialAssetUrl": "https://umusic.box.com/s/ur1f0pm4sbz4ixyab4omro98l3lasi83"
+    "socialAssetUrl": "https://umusic.box.com/s/ur1f0pm4sbz4ixyab4omro98l3lasi83",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Demi Lovato released 'Cool for the Summer'",
@@ -4950,7 +5447,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2015,
     "month": 6,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/demi-lovato-cool-for-the-summer-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/demi-lovato-cool-for-the-summer-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/demi-lovato"
   },
   {
     "name": "Elton John, Beach Boys, Joe Walsh, Rufus and Eagles play at Wembley Stadium",
@@ -4959,7 +5457,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 6,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-triumph-at-elton-johns-wembley-extravaganza/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-triumph-at-elton-johns-wembley-extravaganza/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Guns N' Roses release 'Sweet Child O' Mine'",
@@ -4977,7 +5476,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 6,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/john-mellencamp-dance-naked-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/john-mellencamp-dance-naked-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-mellencamp"
   },
   {
     "name": "Frank Zappa recorded 'Cheaper Than Cheep'",
@@ -4986,7 +5486,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 6,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-cheaper-than-cheep-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-cheaper-than-cheep-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Carpenters released 'A Song For You'",
@@ -4996,7 +5497,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 22,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-carpenters-song-for-you/",
-    "socialAssetUrl": "https://umusic.box.com/s/ui74ke7j8juz1a0pd672gibl6s0b57fj"
+    "socialAssetUrl": "https://umusic.box.com/s/ui74ke7j8juz1a0pd672gibl6s0b57fj",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Elton John released 'The One'",
@@ -5004,7 +5506,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1992,
     "month": 6,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Queen release 'Live Killers'",
@@ -5013,7 +5516,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 6,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-became-live-killers/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-became-live-killers/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Jadakiss released 'Kiss Of Death'",
@@ -5022,7 +5526,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 6,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/jadakiss-kiss-of-death-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/jadakiss-kiss-of-death-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jadakiss"
   },
   {
     "name": "Kacey Musgraves released 'Pageant Material'",
@@ -5031,7 +5536,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2015,
     "month": 6,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kacey-musgraves-pageant-material-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kacey-musgraves-pageant-material-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kacey-musgraves"
   },
   {
     "name": "Elton John released 'Reg Strikes Back'",
@@ -5039,7 +5545,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1998,
     "month": 6,
-    "day": 24
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Genesis perform at Knebworth",
@@ -5048,7 +5555,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 6,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/genesis-knebworth-midsummer-madness/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/genesis-knebworth-midsummer-madness/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Liz Phair released 'Liz Phair'",
@@ -5066,7 +5574,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 6,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-miss-top-100-make-new-friends/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-miss-top-100-make-new-friends/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Elton John releases 'Caribou' in the US",
@@ -5075,7 +5584,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 6,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-caribou-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-caribou-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Bob Marley recorded first of three shows included on 'Babylon By Bus'",
@@ -5085,7 +5595,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 10,
     "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-babylon-by-bus/",
-    "socialAssetUrl": "https://umusic.box.com/s/wx1gg5iko7xnsagplb2jyfi8r4wfk2rp"
+    "socialAssetUrl": "https://umusic.box.com/s/wx1gg5iko7xnsagplb2jyfi8r4wfk2rp",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Frank Zappa - 'One Size Fits All' released",
@@ -5094,7 +5605,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 6,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-the-mothers-of-invention-one-size-fits-all/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-the-mothers-of-invention-one-size-fits-all/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Maroon 5 released 'Songs About Jane'",
@@ -5103,7 +5615,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2002,
     "month": 6,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/songs-about-jane-maroon-5/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/songs-about-jane-maroon-5/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Maroon-5"
   },
   {
     "name": "The Who release 'Won't Get Fooled Again'",
@@ -5112,7 +5625,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 6,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/wont-get-fooled-again-takes-bow-for-who/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/wont-get-fooled-again-takes-bow-for-who/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Tom Petty/Heartbreakers make UK singles chart debut (ahead of US) with 'Anything That's Rock 'n' Roll'",
@@ -5121,7 +5635,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 6,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/tom-petty-heartbreakers-get-early-uk-approval/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/tom-petty-heartbreakers-get-early-uk-approval/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   {
     "name": "Natalie Cole released 'Natalie Cole En Espanol' album",
@@ -5130,7 +5645,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 6,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/natalie-cole-en-espanol-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/natalie-cole-en-espanol-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/natalie"
   },
   {
     "name": "Beastie Boys released 'The Mix-Up'",
@@ -5139,7 +5655,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 6,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/exclusives/the-mix-up-beastie-boys-album/"
+    "articleUrl": "https://www.udiscovermusic.com/exclusives/the-mix-up-beastie-boys-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "Sonic Youth released 'Goo'",
@@ -5149,7 +5666,8 @@ const EDITORIAL_EVENTS = [
     "month": 6,
     "day": 26,
     "articleUrl": "https://www.udiscovermusic.com/stories/sonic-youth-goo-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/11y0edkicgstuthjhlsyu9megi3pe383"
+    "socialAssetUrl": "https://umusic.box.com/s/11y0edkicgstuthjhlsyu9megi3pe383",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sonic-youth"
   },
   {
     "name": "The Beatles start recording 'Everybody's Got Something To Hide Except Me And My Monkey' at Abbey Road",
@@ -5158,7 +5676,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 6,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/everybodys-got-something-hide-story-behind-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/everybodys-got-something-hide-story-behind-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Bon Jovi released 'These Days'",
@@ -5167,7 +5686,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1995,
     "month": 6,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-these-days-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-these-days-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Don Henley releases 'The End Of The Innocence'",
@@ -5176,7 +5696,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 6,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/innocence-excellence-from-don-henley/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/innocence-excellence-from-don-henley/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/don-henley"
   },
   {
     "name": "Nelly released Country Grammar",
@@ -5184,7 +5705,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2000,
     "month": 6,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/nelly"
   },
   {
     "name": "Carpenters' 'Horizon' album enters US chart",
@@ -5192,7 +5714,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1975,
     "month": 6,
-    "day": 28
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Crowded House released 'Time On Earth'",
@@ -5201,7 +5724,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 6,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-time-on-earth/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-time-on-earth/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house"
   },
   {
     "name": "Drake released 'Scorpion'",
@@ -5210,7 +5734,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 6,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/drake-scorpion-double-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/drake-scorpion-double-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Florence + The Machine released 'High As Hope'",
@@ -5228,7 +5753,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 6,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lil-wayne-tha-carter-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lil-wayne-tha-carter-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lil-wayne"
   },
   {
     "name": "Akon released 'Trouble'",
@@ -5245,7 +5771,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1977,
     "month": 6,
-    "day": 30
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kiss"
   },
   {
     "name": "Queen released 'The Game'",
@@ -5254,7 +5781,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 6,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-the-game/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-the-game/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "The Who release covers of 'The Last Time' and 'Under My Thumb' in support of The Rolling Stones",
@@ -5263,7 +5791,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 6,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/when-the-who-campaigned-for-mick-keith/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/when-the-who-campaigned-for-mick-keith/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Bee Gees release 'Bee Gees 1st' this month",
@@ -5272,7 +5801,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 7,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-bee-gees-bee-gees-1st/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-bee-gees-bee-gees-1st/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Crowded House released 'Temple Of Low Men'",
@@ -5281,7 +5811,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 7,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-temple-of-low-men/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-temple-of-low-men/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house"
   },
   {
     "name": "Crowded House released 'Woodface' in the UK",
@@ -5290,7 +5821,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 7,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-woodface/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-woodface/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house"
   },
   {
     "name": "Queen enter UK singles chart with 'Breakthru'",
@@ -5299,7 +5831,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 7,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-make-breakthru/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-make-breakthru/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Cat Stevens / Yusuf released 'Foreigner' this month",
@@ -5308,7 +5841,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 7,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-foreigner-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-foreigner-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Robert Palmer releases 'Secrets' album",
@@ -5317,7 +5851,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 7,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-shares-secrets/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-shares-secrets/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "Slick Rick released 'The Ruler\u2019s Back'",
@@ -5326,7 +5861,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 7,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/slick-rick-the-rulers-back-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/slick-rick-the-rulers-back-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/slick-rick"
   },
   {
     "name": "Tom Petty released 'Into The Great Wide Open'",
@@ -5335,7 +5871,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 7,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/tom-petty-into-the-great-wide-open/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/tom-petty-into-the-great-wide-open/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   {
     "name": "Florence + The Machine released 'Lungs'",
@@ -5353,7 +5890,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1969,
     "month": 7,
-    "day": 4
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Beach Boys' 'I Get Around' reaches No.1 in US",
@@ -5362,7 +5900,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 7,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beach-boys-and-the-spirit-of-independence/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beach-boys-and-the-spirit-of-independence/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Rolling Stones released 'You Can't Always Get What You Want' as B-side to 'Honky Tonk Women'",
@@ -5371,7 +5910,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 7,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-you-cant-always-get-what-you-want-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-you-cant-always-get-what-you-want-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bryan Ferry enters UK chart with 'You Go To My Head'",
@@ -5380,7 +5920,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 7,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/romantic-classic-links-billie-holiday-bryan-ferry-chuck-berry/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/romantic-classic-links-billie-holiday-bryan-ferry-chuck-berry/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bryan-ferry"
   },
   {
     "name": "Slayer's 'South Of Heaven' album released",
@@ -5390,7 +5931,8 @@ const EDITORIAL_EVENTS = [
     "month": 7,
     "day": 5,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-slayer-south-of-heaven/",
-    "socialAssetUrl": "https://umusic.box.com/s/kqopqxfxcd84xsz66db5n2m2ixd010s9"
+    "socialAssetUrl": "https://umusic.box.com/s/kqopqxfxcd84xsz66db5n2m2ixd010s9",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/slayer"
   },
   {
     "name": "The Rolling Stones play free Hyde Park concert",
@@ -5399,7 +5941,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 7,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/5-25-pm-hyde-park-5-july-1969-a-moment-that-defined-a-band/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/5-25-pm-hyde-park-5-july-1969-a-moment-that-defined-a-band/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Beach Boys release Summer Days (And Summer Nights!!)",
@@ -5408,7 +5951,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 6,
     "day": 28,
-    "socialAssetUrl": "https://umusic.box.com/s/st9i9hnk5dceqkth82ga3o3r1k1cwiey"
+    "socialAssetUrl": "https://umusic.box.com/s/st9i9hnk5dceqkth82ga3o3r1k1cwiey",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Heart released 'Heart'",
@@ -5417,7 +5961,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 7,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/heart-1985-classic-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/heart-1985-classic-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/heart"
   },
   {
     "name": "Peggy Lee records Ray Davies' 'I Go To Sleep'",
@@ -5426,7 +5971,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 7,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/when-peggy-lee-sang-ray-davies/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/when-peggy-lee-sang-ray-davies/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Styx released 'The Grand Illusion'",
@@ -5436,7 +5982,8 @@ const EDITORIAL_EVENTS = [
     "month": 7,
     "day": 7,
     "articleUrl": "https://www.udiscovermusic.com/stories/styx-grand-illusion-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/le3dhb36is3ic4l0j7bkdlm2vb0tswr6"
+    "socialAssetUrl": "https://umusic.box.com/s/le3dhb36is3ic4l0j7bkdlm2vb0tswr6",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/styx"
   },
   {
     "name": "The Beatles start recording 'Here Comes The Sun'",
@@ -5445,7 +5992,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 7,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-here-comes-the-sun-abbey-road-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-here-comes-the-sun-abbey-road-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones record their first ever TV appearance",
@@ -5454,7 +6002,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 7,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/thank-your-lucky-stars-its-the-stones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/thank-your-lucky-stars-its-the-stones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "U2 released 'Zooropa'",
@@ -5463,7 +6012,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 7,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-zooropa/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-zooropa/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Hank Williams' 'Weary Blues From Waitin'' released posthumously",
@@ -5472,7 +6022,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1953,
     "month": 7,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/even-death-hank-williams-country-reign-continues/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/even-death-hank-williams-country-reign-continues/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Four Tops release 'It's The Same Old Song'",
@@ -5481,7 +6032,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 7,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/summer-1965-race-time-four-tops/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/summer-1965-race-time-four-tops/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Four-Tops"
   },
   {
     "name": "Coldplay release 'Parachutes'",
@@ -5499,7 +6051,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 7,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/four-tops-baby-i-need-your-loving-song-story/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/four-tops-baby-i-need-your-loving-song-story/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Four-Tops"
   },
   {
     "name": "The Beatles released 'A Hard Day's Night' album in the UK",
@@ -5508,7 +6061,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 7,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-a-hard-days-night-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-a-hard-days-night-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Def Leppard released 'High N Dry'",
@@ -5518,7 +6072,8 @@ const EDITORIAL_EVENTS = [
     "month": 7,
     "day": 11,
     "articleUrl": "https://www.udiscovermusic.com/stories/highndry-def-leppard/",
-    "socialAssetUrl": "https://umusic.box.com/s/70ntjb013cb5lpxltklt3e1m9jcc5geg"
+    "socialAssetUrl": "https://umusic.box.com/s/70ntjb013cb5lpxltklt3e1m9jcc5geg",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Demi Lovato released 'Sorry Not Sorry'",
@@ -5527,7 +6082,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 7,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/demi-lovato-sorry-not-sorry-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/demi-lovato-sorry-not-sorry-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/demi-lovato"
   },
   {
     "name": "Hank Williams records 'You Win Again'",
@@ -5536,7 +6092,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1952,
     "month": 7,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-wins-again/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-wins-again/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Sam Cooke's 'Good Times' top US R&B chart",
@@ -5545,7 +6102,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 7,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sam-cookes-good-times/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sam-cookes-good-times/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-cooke"
   },
   {
     "name": "Sting - The Dream Of The Blue Turtles (Sting interview)",
@@ -5554,7 +6112,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 7,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sting-the-dream-of-the-blue-turtlles-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sting-the-dream-of-the-blue-turtlles-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   {
     "name": "The Rolling Stones make their live debut at the Marquee Jazz Club in London\tRH",
@@ -5563,7 +6122,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 7,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-first-ever-gig/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-first-ever-gig/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "George Harrison's 'Live In Japan' album released",
@@ -5572,7 +6132,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 7,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-live-in-japan/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-live-in-japan/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Queen performed at Live Aid",
@@ -5581,7 +6142,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 7,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-live-aid-concert-performance/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-live-aid-concert-performance/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Queen relased 'Queen' (debut album)",
@@ -5590,7 +6152,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 7,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-queen/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-queen/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Sting released 'Symphonicities'",
@@ -5598,7 +6161,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2010,
     "month": 7,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   {
     "name": "Beastie Boys released 'Hello Nasty'",
@@ -5607,7 +6171,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1998,
     "month": 7,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-beastie-boys-hello-nasty/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-beastie-boys-hello-nasty/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "Elliott Smith released 'Roman Candle'",
@@ -5616,7 +6181,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 7,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/roman-candle-elliott-smith/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/roman-candle-elliott-smith/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elliott-Smith"
   },
   {
     "name": "Elvis Costello And The Attractions make live debut supporting Wayne County at The Garden, Penzance",
@@ -5624,7 +6190,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1977,
     "month": 7,
-    "day": 14
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Costello"
   },
   {
     "name": "Megadeth released 'Countdown To Extinction'",
@@ -5633,7 +6200,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 7,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/countdown-to-extinction-megadeth-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/countdown-to-extinction-megadeth-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "Elton John starts a five-week run at No.1 on the US album chart with 'Honky Chateau', his first US chart-topper",
@@ -5641,7 +6209,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1972,
     "month": 7,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Billy Idol released 'Billy Idol'",
@@ -5659,7 +6228,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 7,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-ccrs-cosmos-factory/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-ccrs-cosmos-factory/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Creedence-Clearwater-Revival"
   },
   {
     "name": "Keith Jarrett recorded 'Munich 2016'",
@@ -5667,7 +6237,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 2016,
     "month": 7,
-    "day": 16
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-jarrett"
   },
   {
     "name": "The Rolling Stones' release 'Sticky Fingers' in Spain, with a different cover",
@@ -5676,7 +6247,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 7,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/general-franco-vs-the-rolling-stones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/general-franco-vs-the-rolling-stones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Tame Impala released 'Currents'",
@@ -5695,7 +6267,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 7,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-live/"
+    "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-live/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Nico (The Velvet Underground) died",
@@ -5721,7 +6294,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2002,
     "month": 7,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-a-nod-and-a-wink/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-a-nod-and-a-wink/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Howlin' Wolf records 'The Natchez Burnin'",
@@ -5738,7 +6312,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 2006,
     "month": 7,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-jarrett"
   },
   {
     "name": "Brian Eno released 'Apollo' this month",
@@ -5747,7 +6322,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 7,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-apollo-atmospheres-and-soundtracks/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-apollo-atmospheres-and-soundtracks/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brian-eno"
   },
   {
     "name": "Soundgarden\u2019s Chris Cornell: A Tribute To A Singular Talent",
@@ -5756,7 +6332,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 7,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/soundgardens-chris-cornell-a-tribute-to-a-singular-talent/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/soundgardens-chris-cornell-a-tribute-to-a-singular-talent/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "Elliott Smith released 'Elliott Smith'",
@@ -5765,7 +6342,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1995,
     "month": 7,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elliott-smith-self-titled-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elliott-smith-self-titled-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elliott-Smith"
   },
   {
     "name": "Guns N' Roses release 'Appetite For Destruction'",
@@ -5783,7 +6361,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 7,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rick-ross-teflon-don/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rick-ross-teflon-don/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-ross"
   },
   {
     "name": "Sonic Youth released 'Dirty'",
@@ -5792,7 +6371,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 7,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-dirty/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-dirty/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sonic-youth"
   },
   {
     "name": "The Beatles started recording 'Come Together'",
@@ -5800,7 +6380,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1969,
     "month": 7,
-    "day": 21
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Elvis Costello's 'My Aim Is True' released",
@@ -5809,7 +6390,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 7,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elvis-costello-aims-high/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elvis-costello-aims-high/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Costello"
   },
   {
     "name": "Johnny Cash debuts at No.1 in US with 'American V'",
@@ -5818,7 +6400,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 7,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/johnny-cashs-first-posthumous-1/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/johnny-cashs-first-posthumous-1/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/johnny-cash"
   },
   {
     "name": "Katy Perry released 'MTV Unplugged'",
@@ -5827,7 +6410,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2009,
     "month": 7,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/katy-perry-mtv-unplugged-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/katy-perry-mtv-unplugged-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   {
     "name": "Amy Winehouse died",
@@ -5835,7 +6419,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2011,
     "month": 7,
-    "day": 23
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Amy-Winehouse"
   },
   {
     "name": "Ella Fitzgerald and Louis Armstrong hold first recording session for 'Ella And Louis Again'",
@@ -5844,7 +6429,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1957,
     "month": 7,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/louis-armstrong/ella-and-louis-again/"
+    "articleUrl": "https://www.udiscovermusic.com/louis-armstrong/ella-and-louis-again/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Jimmy Eat World released 'Bleed American'",
@@ -5853,7 +6439,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2001,
     "month": 7,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/jimmy-eat-world-bleed-american-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/jimmy-eat-world-bleed-american-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jimmy-eat-world"
   },
   {
     "name": "Peggy Lee's 'Fever' hits the charts",
@@ -5862,7 +6449,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1958,
     "month": 7,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/fever-peggy-lee/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/fever-peggy-lee/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   {
     "name": "Beastie Boys released 'Paul's Boutique'",
@@ -5872,7 +6460,8 @@ const EDITORIAL_EVENTS = [
     "month": 7,
     "day": 25,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-pauls-boutique/",
-    "socialAssetUrl": "https://umusic.box.com/s/fp2tekvazadqu1vj1mpms93peh1kydga"
+    "socialAssetUrl": "https://umusic.box.com/s/fp2tekvazadqu1vj1mpms93peh1kydga",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "Carpenters' '(They Long To Be) Close To You' tops Hot 100",
@@ -5880,7 +6469,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1970,
     "month": 7,
-    "day": 25
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Eric Clapton's self-titled debut makes US album charts",
@@ -5889,7 +6479,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 7,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-solo-spotlight-falls-on-eric-clapton/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-solo-spotlight-falls-on-eric-clapton/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   {
     "name": "Eric B And Rakim released 'Follow The Leader'",
@@ -5898,7 +6489,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 7,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/follow-the-leader-eric-b-rakim/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/follow-the-leader-eric-b-rakim/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/eric-b-and-rakim"
   },
   {
     "name": "The Rolling Stones' released 'It's Only Rock And Roll' in the UK",
@@ -5907,7 +6499,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 7,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/its-only-rock-n-roll-its-way-more-important-than-that/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/its-only-rock-n-roll-its-way-more-important-than-that/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Smashing Pumpkins released 'Siamese Dream'",
@@ -5926,7 +6519,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 7,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-do-it-again-with-some-surfing-nostalgia/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-do-it-again-with-some-surfing-nostalgia/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Who released 'Magic Bus' as a single in the UK",
@@ -5935,7 +6529,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 7,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-magic-bus-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-magic-bus-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Ariana Grande, Nicki Minaj, Jessie J released 'Bang Bang'",
@@ -5944,7 +6539,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2014,
     "month": 7,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/jessie-j-ariana-grande-nicki-minaj-bang-bang/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/jessie-j-ariana-grande-nicki-minaj-bang-bang/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ariana-Grande"
   },
   {
     "name": "The Mamas And The Papas' 'I Saw Her Again' enters UK chart",
@@ -5962,7 +6558,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1961,
     "month": 7,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-tells-fans-how-she-nearly-died/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-tells-fans-how-she-nearly-died/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Carpenters release 'Solitaire'",
@@ -5971,7 +6568,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 7,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-the-only-game-in-town/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-the-only-game-in-town/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Def Leppard released 'X'",
@@ -5980,7 +6578,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2002,
     "month": 7,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/x-def-leppard-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/x-def-leppard-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "The Rolling Stones released 'Out Of Our Heads' in the US",
@@ -5990,7 +6589,8 @@ const EDITORIAL_EVENTS = [
     "month": 7,
     "day": 30,
     "articleUrl": "https://www.udiscovermusic.com/stories/out-of-our-heads-were-no-1/",
-    "socialAssetUrl": "https://umusic.box.com/s/e1gxsyqnn6ckozlio89gremhjcr0iqgn"
+    "socialAssetUrl": "https://umusic.box.com/s/e1gxsyqnn6ckozlio89gremhjcr0iqgn",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bud Powell died",
@@ -6007,7 +6607,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 7,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/scarecrow-john-cougar-mellencamps-mid-80s-masterpiece/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/scarecrow-john-cougar-mellencamps-mid-80s-masterpiece/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-mellencamp"
   },
   {
     "name": "Crowded House released 'Crowded House'",
@@ -6016,7 +6617,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1986,
     "month": 8,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-crowded-house/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-crowded-house/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house"
   },
   {
     "name": "Eric Clapton joined on stage by Pete Townshend and Keith Moon",
@@ -6025,7 +6627,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 8,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/three-nights-clapton-townshend-moon/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/three-nights-clapton-townshend-moon/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   {
     "name": "George Harrison stages The Concert For Bangladesh",
@@ -6034,7 +6637,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 8,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-the-concert-for-bangladesh/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-the-concert-for-bangladesh/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Nat King Cole released 'Cole Espa\u00f1ol' this month",
@@ -6043,7 +6647,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1958,
     "month": 8,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nat-king-cole-cole-espanol-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nat-king-cole-cole-espanol-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nat-King-Cole"
   },
   {
     "name": "Paul McCartney and Wings recorded 'One Hand Clapping' this month",
@@ -6061,7 +6666,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 9,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bryan-ferry-the-bride-stripped-bare-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bryan-ferry-the-bride-stripped-bare-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bryan-ferry"
   },
   {
     "name": "Frank Sinatra released 'LA Is My Lady' this month",
@@ -6070,7 +6676,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 8,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-la-is-my-lady-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-la-is-my-lady-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Camel sign to MCA records",
@@ -6078,7 +6685,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1972,
     "month": 8,
-    "day": 2
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Chuck Berry records 'Come On'",
@@ -6087,7 +6695,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1961,
     "month": 8,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-sings-rolling-stones-listen/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-sings-rolling-stones-listen/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Def Leppard released 'Hysteria'",
@@ -6097,7 +6706,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 3,
     "articleUrl": "https://www.udiscovermusic.com/stories/hysteria-def-leppard-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/a58i1xzr85u8etqb38trvgwg599644ft"
+    "socialAssetUrl": "https://umusic.box.com/s/a58i1xzr85u8etqb38trvgwg599644ft",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "The Beach Boys' 'Surfer Girl' single enter US Hot 100",
@@ -6106,7 +6716,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 8,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-ride-hot-100-with-surfer-girl/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-ride-hot-100-with-surfer-girl/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Rolling Stones' 'It's Only Rock'n'Roll (But I Like It) enters US Hot 100 and UK singles chart",
@@ -6114,7 +6725,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1974,
     "month": 8,
-    "day": 3
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Snoop Dogg \u2018Da Game Is To Be Sold\u2026\u2019 released",
@@ -6123,7 +6735,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1998,
     "month": 8,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/snoop-dogg-da-game-is-to-be-sold-not-to-be-told-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/snoop-dogg-da-game-is-to-be-sold-not-to-be-told-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/snoop-dogg"
   },
   {
     "name": "Kenny Rogers records 'Lucille'",
@@ -6141,7 +6754,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 8,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/revolver-50-years-on/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/revolver-50-years-on/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones' 'Miss You' makes No.1 in the US",
@@ -6150,7 +6764,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 8,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-miss-you/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-miss-you/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Guns N' Roses' 'Appetite For Destruction' makes No.1 in the US",
@@ -6168,7 +6783,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2012,
     "month": 8,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/mondo-sex-head-rob-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/mondo-sex-head-rob-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "Frank Zappa released 'Lumpy Gravy'",
@@ -6177,7 +6793,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 8,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-frank-zappas-lumpy-gravy/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-frank-zappas-lumpy-gravy/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Jadakiss released 'Kiss Tha Game Goodbye'",
@@ -6186,7 +6803,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2001,
     "month": 8,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/jadakiss-kiss-tha-game-goodbye-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/jadakiss-kiss-tha-game-goodbye-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jadakiss"
   },
   {
     "name": "Patsy Cline released 'Sentimentally Yours' album",
@@ -6195,7 +6813,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 8,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sentimentally-yours/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sentimentally-yours/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Patsy Cline's 'I Fall To Pieces' reaches No.1 on the Billboard Country Chart",
@@ -6204,7 +6823,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1961,
     "month": 8,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-classic-six-months-no-1/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-classic-six-months-no-1/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Creedence Clearwater Revival enter Hot 100 with \u2018Lookin\u2019 Out My Back Door\u2019/'Long As I Can See The Light'",
@@ -6213,7 +6833,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 8,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/another-double-sided-winner-creedence-clearwater-revival/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/another-double-sided-winner-creedence-clearwater-revival/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Creedence-Clearwater-Revival"
   },
   {
     "name": "Glen Campbell died",
@@ -6221,7 +6842,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2017,
     "month": 8,
-    "day": 8
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "Kanye West and Jay Z released 'Watch The Throne'",
@@ -6231,7 +6853,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 8,
     "articleUrl": "https://www.udiscovermusic.com/stories/jay-z-kanye-west-watch-the-throne-album/",
-    "socialAssetUrl": "https://umusic.app.box.com/s/2zm4io5j63496ayaixj4dd6cyrnd8bmq"
+    "socialAssetUrl": "https://umusic.app.box.com/s/2zm4io5j63496ayaixj4dd6cyrnd8bmq",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Hank Williams misses an appearance on the 'Grand Ole Opry'",
@@ -6240,7 +6863,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1952,
     "month": 8,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/when-the-opry-fired-hank-williams/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/when-the-opry-fired-hank-williams/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "The Beatles start recording 'Mother Nature's Son' at Abbey Road",
@@ -6249,7 +6873,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 8,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/mother-natures-son-story-behind-song-beatles/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/mother-natures-son-story-behind-song-beatles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Isaac Hayes died",
@@ -6257,7 +6882,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2008,
     "month": 8,
-    "day": 10
+    "day": 10,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/isaac-hayes"
   },
   {
     "name": "Nicki Minaj released 'Queen'",
@@ -6266,7 +6892,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 8,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nicki-minaj-queen-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nicki-minaj-queen-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nicki-Minaj"
   },
   {
     "name": "Hank Williams hits No.1 on the 'Billboard' Country Chart with 'Hey Good Lookin''",
@@ -6275,7 +6902,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1951,
     "month": 8,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-cooks-up-a-good-lookin-hit/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-cooks-up-a-good-lookin-hit/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Liz Phair releases whitechocolatespaceegg",
@@ -6292,7 +6920,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 8,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kendrick-lamar-control-verse/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kendrick-lamar-control-verse/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kendrick-lamar"
   },
   {
     "name": "Supremes enter Hot 100 with first single credited to Diana Ross & the Supremes, 'Reflections'",
@@ -6310,7 +6939,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2003,
     "month": 8,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/blues-chuck-berry-covers-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/blues-chuck-berry-covers-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Chuck Berry plays first recording session, under the name Charles Berryn",
@@ -6319,7 +6949,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1954,
     "month": 8,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/young-chuck-berry-went-incognito-charles-berryn/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/young-chuck-berry-went-incognito-charles-berryn/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "The Rolling Stones' 'Aftermath' peaks at No.2 on the US album charts",
@@ -6327,7 +6958,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1966,
     "month": 8,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Boyz II Men's 'End Of The Road' makes No.1",
@@ -6336,7 +6968,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 8,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/end-of-road-begins-boyz-ii-men/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/end-of-road-begins-boyz-ii-men/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Boyz-II-Men"
   },
   {
     "name": "James Brown's 'Out Of Sight' enters Hot 100",
@@ -6345,7 +6978,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 8,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-sight/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-sight/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Ella Fitzgerald and Louis Armstrong record the 'Ella And Louis' album",
@@ -6353,7 +6987,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1956,
     "month": 8,
-    "day": 16
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Eric Clapton enters UK chart with Knockin' On Heaven's Door",
@@ -6362,7 +6997,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 8,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/eric-clapton-knockin-on-heavens-door-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/eric-clapton-knockin-on-heavens-door-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   {
     "name": "Max Roach died",
@@ -6379,7 +7015,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 8,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ariana-grande-redefined-pop-sweetener-thank-u/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ariana-grande-redefined-pop-sweetener-thank-u/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ariana-Grande"
   },
   {
     "name": "Creedence Clearwater Revival perform at Woodstock",
@@ -6388,7 +7025,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 8,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ccr-they-really-did-get-to-woodstock/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ccr-they-really-did-get-to-woodstock/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Creedence-Clearwater-Revival"
   },
   {
     "name": "Eric Clapton's 461 Ocean Boulevard makes No.1 in the US",
@@ -6397,7 +7035,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 8,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/eric-claptons-461-ocean-boulevard-floridas-most-famous-address/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/eric-claptons-461-ocean-boulevard-floridas-most-famous-address/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   {
     "name": "Bon Jovi's 'Slippery When Wet' released",
@@ -6407,7 +7046,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 18,
     "articleUrl": "https://www.udiscovermusic.com/stories/the-bon-jovi-album-that-changed-their-lives/",
-    "socialAssetUrl": "https://umusic.box.com/s/1qz7poktxvj7s35koqn4yvrp85c3sfsv"
+    "socialAssetUrl": "https://umusic.box.com/s/1qz7poktxvj7s35koqn4yvrp85c3sfsv",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Ella Fitzgerald And Louis Armstrong record 'Porgy And Bess'",
@@ -6415,7 +7055,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1957,
     "month": 8,
-    "day": 18
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Four Tops release 'Reach Out I'll Be There'",
@@ -6424,7 +7065,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 8,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/four-tops-reach-world-reach-out-ill-be-there/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/four-tops-reach-world-reach-out-ill-be-there/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Four-Tops"
   },
   {
     "name": "The Who released the 'Who Are You' album",
@@ -6434,7 +7076,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 18,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-who-are-you/",
-    "socialAssetUrl": "https://umusic.box.com/s/ltbts21t8nan4mme85xhchfw51hapgv4"
+    "socialAssetUrl": "https://umusic.box.com/s/ltbts21t8nan4mme85xhchfw51hapgv4",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Lady Gaga released 'The Fame'",
@@ -6444,7 +7087,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 19,
     "articleUrl": "https://www.udiscovermusic.com/stories/the-fame-lady-gaga-debut-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/ole9t6a3hcuwx4ehwofeiu0w598qo6tk"
+    "socialAssetUrl": "https://umusic.box.com/s/ole9t6a3hcuwx4ehwofeiu0w598qo6tk",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-gaga"
   },
   {
     "name": "The Beach Boys Stack-O-Tracks released",
@@ -6454,7 +7098,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 19,
     "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-stack-o-tracks-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/jmsj5d2gkwsd9xp3stgt3sv1ve120w7r"
+    "socialAssetUrl": "https://umusic.box.com/s/jmsj5d2gkwsd9xp3stgt3sv1ve120w7r",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Chuck Berry's 'Maybellene' makes 'Billboard' chart",
@@ -6463,7 +7108,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1955,
     "month": 8,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/maybellene-gives-chuck-berry-debut-smash/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/maybellene-gives-chuck-berry-debut-smash/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Frank Sinatra performed at Concert For The Americas in the Dominican Republic",
@@ -6472,7 +7118,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 8,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/concert-for-the-americas-frank-sinatra/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/concert-for-the-americas-frank-sinatra/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Steve Winwood's 'Roll With It' makes the US No.1",
@@ -6481,7 +7128,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 8,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/steve-winwood-outgunned-guns-n-roses/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/steve-winwood-outgunned-guns-n-roses/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-winwood"
   },
   {
     "name": "Patsy Cline records 'Crazy'",
@@ -6490,7 +7138,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1961,
     "month": 8,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-creates-crazy-legend/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-creates-crazy-legend/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "The Beach Boys' 'It's OK' makes the Hot 100, taken from '15 Big Ones'",
@@ -6499,7 +7148,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 8,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/one-of-those-15-big-ones-for-the-beach-boys/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/one-of-those-15-big-ones-for-the-beach-boys/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Rolling Stones play Knebworth Park Festival",
@@ -6508,7 +7158,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 8,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/knebworth-1976-a-marathon-affair/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/knebworth-1976-a-marathon-affair/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones' 'Out Of Our Heads' makes No.1 in the US (stays there for three weeks)",
@@ -6516,7 +7167,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1965,
     "month": 8,
-    "day": 21
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Beatles start recording 'Back In The USSR' at Abbey Road",
@@ -6525,7 +7177,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 8,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/back-in-the-ussr-story-behind-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/back-in-the-ussr-story-behind-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones' 'Start Me Up' single makes Hot 100",
@@ -6533,7 +7186,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1981,
     "month": 8,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "McCoy Tyner released 'Expansions'",
@@ -6542,7 +7196,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 8,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/expansions-mccoy-tyner-blue-note-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/expansions-mccoy-tyner-blue-note-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mccoy-tyner"
   },
   {
     "name": "Taylor Swift released 'Lover'",
@@ -6551,7 +7206,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 8,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/taylor-swift-lover-seventh-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/taylor-swift-lover-seventh-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   {
     "name": "Cat Stevens enters UK chart with his cover of Sam Cooke's 'Another Saturday Night'",
@@ -6560,7 +7216,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 8,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-sings-sam-cookes-story-woeful-weekend/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-sings-sam-cookes-story-woeful-weekend/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Katy Perry released 'Teenage Dream'",
@@ -6570,7 +7227,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 24,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-teenage-dream/",
-    "socialAssetUrl": "https://umusic.app.box.com/s/2wpvxx8fqwiami1wmmbcymk0ut6sm85e/folder/114749172274"
+    "socialAssetUrl": "https://umusic.app.box.com/s/2wpvxx8fqwiami1wmmbcymk0ut6sm85e/folder/114749172274",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   {
     "name": "Neil Diamond \u2018Hot August Night\u2019 Quiz",
@@ -6579,7 +7237,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 8,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/quizzes/neil-diamond-hot-august-night-quiz/"
+    "articleUrl": "https://www.udiscovermusic.com/quizzes/neil-diamond-hot-august-night-quiz/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "The Rolling Stones' 'Tattoo You' released",
@@ -6588,7 +7247,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 8,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/when-tattoo-you-made-its-mark-for-the-stones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/when-tattoo-you-made-its-mark-for-the-stones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Who play 'Tommy' and more in Los Angeles with Phil Collins, Steve Winwood, Elton John etc",
@@ -6597,7 +7257,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 8,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/1989-tommy-much/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/1989-tommy-much/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Ariana Grande released 'My Everything'",
@@ -6607,7 +7268,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 25,
     "articleUrl": "https://www.udiscovermusic.com/stories/ariana-grande-my-everything-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/ljsk0cfuyz3n8d80af5ot4i7icd5fstn"
+    "socialAssetUrl": "https://umusic.box.com/s/ljsk0cfuyz3n8d80af5ot4i7icd5fstn",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ariana-Grande"
   },
   {
     "name": "Elliott Smith released 'XO'",
@@ -6616,7 +7278,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1998,
     "month": 8,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-xo/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-xo/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elliott-Smith"
   },
   {
     "name": "Elton John performed at the Troubadour, Los Angeles",
@@ -6625,7 +7288,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 8,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nights-changed-elton-johns-life/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nights-changed-elton-johns-life/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Patsy Cline enters pop and country charts with 'So Wrong'",
@@ -6634,7 +7298,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 8,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-so-wrong-yet-so-right/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-so-wrong-yet-so-right/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Rob Zombie released 'Hellbilly Deluxe'",
@@ -6643,7 +7308,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1998,
     "month": 8,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hellbilly-deluxe-rob-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hellbilly-deluxe-rob-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "The Rolling Stones: Street Fighting Man - Story Behind The Song",
@@ -6652,7 +7318,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 9,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-street-fighting-man/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-street-fighting-man/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Eric Clapton's 'No Reason To Cry' released in the UK",
@@ -6661,7 +7328,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 8,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-eric-claptons-no-reason-to-cry/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-eric-claptons-no-reason-to-cry/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   {
     "name": "Peter Frampton enters Hot 100 with 'Signed, Sealed, Delivered I'm Yours'",
@@ -6669,7 +7337,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1977,
     "month": 8,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peter-Frampton"
   },
   {
     "name": "The Who release 'Who's Next' in the UK",
@@ -6679,7 +7348,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 14,
     "articleUrl": "https://www.udiscovermusic.com/stories/whos-next-takes-who-new-heights/",
-    "socialAssetUrl": "https://umusic.box.com/s/mqcolbrt1nx1o6ng54ad69hcd195khhz"
+    "socialAssetUrl": "https://umusic.box.com/s/mqcolbrt1nx1o6ng54ad69hcd195khhz",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Marvin Gaye released 'Let's Get It On'",
@@ -6689,7 +7359,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 28,
     "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gayes-gets-to-romantic-soul-landmark/",
-    "socialAssetUrl": "https://umusic.box.com/s/dbcekx3cj2pmpjymr0c17zw1cuy0ycmm"
+    "socialAssetUrl": "https://umusic.box.com/s/dbcekx3cj2pmpjymr0c17zw1cuy0ycmm",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "The Beatles start recording 'Dear Prudence' at Trident Studios",
@@ -6698,7 +7369,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 8,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/dear-prudence-story-behind-song-beatles/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/dear-prudence-story-behind-song-beatles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones release 'Beast of Burden' in the US",
@@ -6707,7 +7379,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 8,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-beast-of-burden-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-beast-of-burden-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Halsey - Gasoline - Story Behind The Song feature",
@@ -6725,7 +7398,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 8,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-johns-sleeping-giant-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-johns-sleeping-giant-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Maroon 5 released 'V'",
@@ -6735,7 +7409,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 29,
     "articleUrl": "https://www.udiscovermusic.com/stories/maroon-5-v-fifth-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/9ysrk8xqg45599fo3t0dvkf79gbv25gh"
+    "socialAssetUrl": "https://umusic.box.com/s/9ysrk8xqg45599fo3t0dvkf79gbv25gh",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Maroon-5"
   },
   {
     "name": "The Rolling Stones hit No.1 with 'Five By Five'",
@@ -6745,7 +7420,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 29,
     "articleUrl": "https://www.udiscovermusic.com/stories/five-by-five-or-is-that-six/",
-    "socialAssetUrl": "https://umusic.box.com/s/jdyhugsmooy4gd8wlsd1heoq3gd5rerh"
+    "socialAssetUrl": "https://umusic.box.com/s/jdyhugsmooy4gd8wlsd1heoq3gd5rerh",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Rihanna released 'Music Of The Sun'",
@@ -6755,7 +7431,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 29,
     "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-music-of-the-sun/",
-    "socialAssetUrl": "https://umusic.box.com/s/bjahaja3w8m240e5zp9t1nmdh7i0pkww"
+    "socialAssetUrl": "https://umusic.box.com/s/bjahaja3w8m240e5zp9t1nmdh7i0pkww",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "Rush released 'A Farewell To Kings'",
@@ -6764,7 +7441,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 9,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rush-farewell-kings/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rush-farewell-kings/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "Frank Zappa - Valley Girl released on 7-inch",
@@ -6773,7 +7451,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 8,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-valley-girl-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-valley-girl-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Hank Williams records 'I'm So Lonesome I Could Cry'",
@@ -6782,7 +7461,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1949,
     "month": 8,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-high-lonesome-sound/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-high-lonesome-sound/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "John Lennon recorded 'Live In New York City' album",
@@ -6791,7 +7471,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 8,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/live-in-new-york-city/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/live-in-new-york-city/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Kanye West released 'Late Registration'",
@@ -6800,7 +7481,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2005,
     "month": 8,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/late-registration-kanye-west-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/late-registration-kanye-west-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Natalie Cole enters the Hot 100 with 'This Will Be'",
@@ -6809,7 +7491,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 8,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/this-will-be-jazz-soul-breakthrough-natalie-cole/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/this-will-be-jazz-soul-breakthrough-natalie-cole/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/natalie"
   },
   {
     "name": "Sheryl Crow released 'Threads'",
@@ -6818,7 +7501,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 8,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/threads-everything-we-loved-about-sheryl-crow-and-more/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/threads-everything-we-loved-about-sheryl-crow-and-more/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sheryl-crow"
   },
   {
     "name": "The Beach Boys' 'Surf's Up' released",
@@ -6828,7 +7512,8 @@ const EDITORIAL_EVENTS = [
     "month": 8,
     "day": 30,
     "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-surf-70s/",
-    "socialAssetUrl": "https://umusic.box.com/s/whrpx0iyxsjnl5tsdajeqzqtdzhncqai"
+    "socialAssetUrl": "https://umusic.box.com/s/whrpx0iyxsjnl5tsdajeqzqtdzhncqai",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Boyz II Men released 'II'",
@@ -6837,7 +7522,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 8,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/boyz-ii-men-ii-album-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/boyz-ii-men-ii-album-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Boyz-II-Men"
   },
   {
     "name": "Lionel Hampton died",
@@ -6854,7 +7540,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1999,
     "month": 8,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-risk-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-risk-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "Sam Smith released 'I'm Not The Only One'",
@@ -6863,7 +7550,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2014,
     "month": 8,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sam-smith-im-not-the-only-one-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sam-smith-im-not-the-only-one-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-smith"
   },
   {
     "name": "The Beach Boys released 'Sunflower'",
@@ -6872,7 +7560,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 8,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beach-boys-slow-blooming-sunflower/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beach-boys-slow-blooming-sunflower/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Rolling Stones released 'Goats Head Soup'",
@@ -6881,7 +7570,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 8,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/stones-soup-73/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/stones-soup-73/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bee Gees released 'ESP' this month",
@@ -6890,7 +7580,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 9,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-esp-1987-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-esp-1987-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Brian Eno released 'Another Green World' this month",
@@ -6899,7 +7590,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 9,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-another-green-world-new-sound/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-another-green-world-new-sound/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brian-eno"
   },
   {
     "name": "Drake released 'Comeback Season' mixtape",
@@ -6908,7 +7600,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 9,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/drake-comeback-season-second-mixtape/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/drake-comeback-season-second-mixtape/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Muddy Waters records 'I'm Ready'",
@@ -6917,7 +7610,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1954,
     "month": 9,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/when-muddy-waters-was-drinkin-tnt/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/when-muddy-waters-was-drinkin-tnt/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "The Rolling Stones record 'Little Red Rooster'",
@@ -6926,7 +7620,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 9,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/little-red-rooster/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/little-red-rooster/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Audioslave released 'Revelations'",
@@ -6935,7 +7630,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 9,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/revelations-audioslave-final-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/revelations-audioslave-final-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/audioslave"
   },
   {
     "name": "Carpenters' 'Superstar' is the highest new entry in the US chart",
@@ -6944,7 +7640,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 9,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/karen-carpenter-sings-superstar-becomes-one/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/karen-carpenter-sings-superstar-becomes-one/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Paul McCartney tops Hot 100 with 'Uncle Albert'/'Admiral Halsey'",
@@ -6961,7 +7658,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1970,
     "month": 9,
-    "day": 4
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Soundgarden released 'Louder Than Love'",
@@ -6970,7 +7668,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 9,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/louder-than-love-soundgarden-second-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/louder-than-love-soundgarden-second-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "The Beatles start recording 'While My Guitar Gently Weeps' at Abbey Road",
@@ -6979,7 +7678,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 9,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/while-my-guitar-gently-weeps-story-behind-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/while-my-guitar-gently-weeps-story-behind-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Diana Ross makes US No.1 with 'Upside Down'",
@@ -6988,7 +7688,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 9,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/diana-ross-got-chic-makeover/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/diana-ross-got-chic-makeover/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Ross"
   },
   {
     "name": "Hank Williams' 'Jambalaya' makes the Hot 100",
@@ -6997,7 +7698,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1952,
     "month": 9,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-creates-a-classic-on-the-bayou/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-creates-a-classic-on-the-bayou/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Robert Palmer charts with 'Clues' album and 'Johnny And Mary' single",
@@ -7006,7 +7708,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 9,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-gives-us-some-clues/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-gives-us-some-clues/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "Ariana Grande\tYours Truly",
@@ -7015,7 +7718,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 9,
     "day": 7,
-    "socialAssetUrl": "https://umusic.box.com/s/extokda328dfiylo23544a55fprgxkyy"
+    "socialAssetUrl": "https://umusic.box.com/s/extokda328dfiylo23544a55fprgxkyy",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ariana-Grande"
   },
   {
     "name": "Bee Gees released 'One Night Only'",
@@ -7025,7 +7729,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 7,
     "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-one-night-only-live-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/iwpcbsjdaurit13jhpepq6aele6a5rde"
+    "socialAssetUrl": "https://umusic.box.com/s/iwpcbsjdaurit13jhpepq6aele6a5rde",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Fats Domino has his last Hot 100 entry with 'Lady Madonna'",
@@ -7034,7 +7739,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 9,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lady-madonna/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lady-madonna/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Fats-Domino"
   },
   {
     "name": "Frank Sinatra released 'Sings For Only The Lonely'",
@@ -7043,7 +7749,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 9,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sings-for-only-the-lonely/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sings-for-only-the-lonely/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "James Brown's 'Say It Loud - I'm Black And I'm Proud' is the highest new entry of the week on US chart",
@@ -7052,7 +7759,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 9,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-browns-says-it-loud-and-proud/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-browns-says-it-loud-and-proud/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Keith Moon died",
@@ -7069,7 +7777,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1987,
     "month": 9,
     "day": 8,
-    "socialAssetUrl": "https://umusic.box.com/s/a8z6ndmdvcw25r3fvj82ls46ten4x5ln"
+    "socialAssetUrl": "https://umusic.box.com/s/a8z6ndmdvcw25r3fvj82ls46ten4x5ln",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "Sam Smith released 'Too Good At Goodbyes'",
@@ -7078,7 +7787,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 9,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sam-smith-too-good-at-goodbyes-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sam-smith-too-good-at-goodbyes-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-smith"
   },
   {
     "name": "John Lennon released 'Imagine'",
@@ -7088,7 +7798,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 9,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-imagine/",
-    "socialAssetUrl": "https://umusic.box.com/s/2muhblfz6ht0ugf6glb8ghz2ho9exbyp"
+    "socialAssetUrl": "https://umusic.box.com/s/2muhblfz6ht0ugf6glb8ghz2ho9exbyp",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Muddy Waters released 'The London Muddy Waters Sessions' this year (date/months unknown)",
@@ -7097,7 +7808,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 9,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-london-muddy-waters-sessions/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-london-muddy-waters-sessions/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "The Beatles start recording 'Helter Skelter' at Abbey Road",
@@ -7106,7 +7818,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 9,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/helter-skelter-story-behind-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/helter-skelter-story-behind-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Rush - Signals review",
@@ -7115,7 +7828,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 9,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rush-signals-album-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rush-signals-album-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "2 Chainz releases \u2018B.O.A.T.S. II: Me Time\u2019",
@@ -7133,7 +7847,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 9,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/dust-and-dreams-camel/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/dust-and-dreams-camel/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Neil Diamond's 'Cherry Cherry' makes the Hot 100",
@@ -7142,7 +7857,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 9,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/first-bite-top-40-cherry-neil-diamond/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/first-bite-top-40-cherry-neil-diamond/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "Kanye West released 'Graduation'",
@@ -7151,7 +7867,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 9,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/graduation-kanye-west-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/graduation-kanye-west-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "The Beach Boys' 'Surf's Up' makes US album chart",
@@ -7160,7 +7877,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 9,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-surfs-up-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-surfs-up-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Beatles start recording 'Glass Onion' at Abbey Road Studios",
@@ -7169,7 +7887,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 9,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/glass-onion-story-behind-song-beatles/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/glass-onion-story-behind-song-beatles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones' 'Satisfaction' makes No.1 in the UK",
@@ -7177,7 +7896,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1965,
     "month": 9,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Who tour the US without Keith Moon",
@@ -7186,7 +7906,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 9,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-stateside-without-keith-moon/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-stateside-without-keith-moon/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Johnny Cash died",
@@ -7194,7 +7915,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2003,
     "month": 9,
-    "day": 12
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/johnny-cash"
   },
   {
     "name": "Bee Gees released 'Size Isn't Everything' in the UK",
@@ -7203,7 +7925,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 9,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-size-isnt-everything-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bee-gees-size-isnt-everything-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Elton John released 'Candle In The Wind 1997'",
@@ -7212,7 +7935,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 9,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/candle-in-the-wind-elton-john-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/candle-in-the-wind-elton-john-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Elton John released 'The Diving Board'",
@@ -7221,7 +7945,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 9,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-the-diving-board-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-the-diving-board-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "The Beatles released 'Yesterday' in the US",
@@ -7229,7 +7954,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1965,
     "month": 9,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Beatles start recording 'Yer Blues' at Abbey Road",
@@ -7238,7 +7964,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 9,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/yer-blues-story-behind-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/yer-blues-story-behind-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Counting Crows\tAugust And Everything After",
@@ -7247,7 +7974,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 9,
     "day": 14,
-    "socialAssetUrl": "https://umusic.box.com/s/b46rhe73cqeulkjxvb1wohvkfql4tzb2"
+    "socialAssetUrl": "https://umusic.box.com/s/b46rhe73cqeulkjxvb1wohvkfql4tzb2",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/counting-crows"
   },
   {
     "name": "LL Cool J - Mama Said Knock You Out released",
@@ -7256,7 +7984,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1990,
     "month": 9,
     "day": 14,
-    "socialAssetUrl": "https://ume.cimediacloud.com/r/tOIeqcGzlgiU"
+    "socialAssetUrl": "https://ume.cimediacloud.com/r/tOIeqcGzlgiU",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ll-cool-j"
   },
   {
     "name": "LL Cool J released 'Mama Said Knock You Out'",
@@ -7265,7 +7994,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1990,
     "month": 9,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ll-cool-j-mama-said-knock-you-out-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ll-cool-j-mama-said-knock-you-out-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ll-cool-j"
   },
   {
     "name": "Patsy Cline posthumous Decca release of 'He Called Me Baby'",
@@ -7274,7 +8004,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 9,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-clines-posthumous-harlan-howard-hit/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-clines-posthumous-harlan-howard-hit/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Supertramp\tCrisis? What Crisis?",
@@ -7283,7 +8014,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 9,
     "day": 14,
-    "socialAssetUrl": "https://umusic.box.com/s/krvpihc4slix9ieylj3m8blstpkoc2y9"
+    "socialAssetUrl": "https://umusic.box.com/s/krvpihc4slix9ieylj3m8blstpkoc2y9",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/supertramp"
   },
   {
     "name": "Bill Evans died",
@@ -7291,7 +8023,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1980,
     "month": 9,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bill-evans"
   },
   {
     "name": "Kenny Rogers enters country chart with 'You Decorated My Life'",
@@ -7318,7 +8051,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 9,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hands-all-over-maroon-5/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hands-all-over-maroon-5/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Maroon-5"
   },
   {
     "name": "Bobby Womack releases 'Communication'",
@@ -7344,7 +8078,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 9,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-last-hit-of-sam-cookes-life/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-last-hit-of-sam-cookes-life/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-cooke"
   },
   {
     "name": "The Beach Boys\tSurfer Girl",
@@ -7354,7 +8089,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 16,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-surfer-girl/",
-    "socialAssetUrl": "https://umusic.box.com/s/ffugc6qr6rxll0hrhjn36wfm575hzt0c"
+    "socialAssetUrl": "https://umusic.box.com/s/ffugc6qr6rxll0hrhjn36wfm575hzt0c",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Erykah Badu released 'Worldwide Underground'",
@@ -7363,7 +8099,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2003,
     "month": 9,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/worldwide-underground-erykah-badus-stunning-third-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/worldwide-underground-erykah-badus-stunning-third-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/erykah-badu"
   },
   {
     "name": "Chris Cornell released 'Higher Truth'",
@@ -7372,7 +8109,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2015,
     "month": 9,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/higher-truth-chris-cornell-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/higher-truth-chris-cornell-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chris-cornell"
   },
   {
     "name": "Diana Krall released 'The Look Of Love'",
@@ -7381,7 +8119,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2001,
     "month": 9,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/diana-krall-the-look-of-love/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/diana-krall-the-look-of-love/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Krall"
   },
   {
     "name": "Elton John released 'The Captain And The Kid'",
@@ -7390,7 +8129,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 9,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-the-captain-and-the-kid-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-the-captain-and-the-kid-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Four Tops enter US R&B chart with 'MacArthur Park'",
@@ -7399,7 +8139,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 9,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/four-tops-take-stroll-macarthur-park/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/four-tops-take-stroll-macarthur-park/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Four-Tops"
   },
   {
     "name": "KISS\tCrazy Nights",
@@ -7408,7 +8149,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1987,
     "month": 9,
     "day": 18,
-    "socialAssetUrl": "https://umusic.box.com/s/rjjbabeh9vl7mjlahmzggwpjxyi4yoi5"
+    "socialAssetUrl": "https://umusic.box.com/s/rjjbabeh9vl7mjlahmzggwpjxyi4yoi5",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kiss"
   },
   {
     "name": "Rob Zombie performed 'Astro Creep: 2000: Live'",
@@ -7417,7 +8159,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 9,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/astro-creep-2000-live-rob-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/astro-creep-2000-live-rob-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "The Beach Boys released 'Smiley Smile'",
@@ -7426,7 +8169,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 9,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-beach-boys-smiley-smile/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-beach-boys-smiley-smile/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Bon Jovi released 'New Jersey'",
@@ -7435,7 +8179,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 9,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-new-jersey-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-new-jersey-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Diana Ross' version of 'Aint No Mountain High Enough' makes No.1 on the US singles",
@@ -7444,7 +8189,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 9,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/diana-ross-climbs-every-mountain/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/diana-ross-climbs-every-mountain/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Ross"
   },
   {
     "name": "Janet Jackson released 'Rhythm Nation 1814'",
@@ -7453,7 +8199,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 9,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-rhythm-nation-1814/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-rhythm-nation-1814/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/janet-jackson"
   },
   {
     "name": "Megadeth release 'Peace Sells... But Who's Buying?'",
@@ -7462,7 +8209,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1986,
     "month": 9,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-peace-sells-but-whos-buying/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-peace-sells-but-whos-buying/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "The Cranberries released 'Zombie'",
@@ -7471,7 +8219,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 9,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-cranberries-zombie-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-cranberries-zombie-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-cranberries"
   },
   {
     "name": "The Rolling Stones' 'Get Yer Ya'Ya's Out!' makes No.1 on UK chart",
@@ -7479,7 +8228,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1970,
     "month": 9,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones' 'Tattoo You' makes No.1 in the US",
@@ -7487,7 +8237,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1981,
     "month": 9,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones' Bridges To Babylon tour ended in Instanbul",
@@ -7495,7 +8246,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1998,
     "month": 9,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Barry White's Can't Get Enough of Your Love Babe No.1 on the Hot 100",
@@ -7503,7 +8255,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1974,
     "month": 9,
-    "day": 21
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/barry-white"
   },
   {
     "name": "Chris Cornell released 'Euphoria Morning'",
@@ -7513,7 +8266,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 21,
     "articleUrl": "https://www.udiscovermusic.com/stories/euphoria-morning-chris-cornell-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/qwgizmcar5bxkjl5g9hmdc351bbspjop"
+    "socialAssetUrl": "https://umusic.box.com/s/qwgizmcar5bxkjl5g9hmdc351bbspjop",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chris-cornell"
   },
   {
     "name": "Donald Byrd recorded 'Royal Flush'",
@@ -7530,7 +8284,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 2005,
     "month": 9,
-    "day": 21
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Nine Inch Nails released 'The Fragile'",
@@ -7540,7 +8295,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 21,
     "articleUrl": "https://www.udiscovermusic.com/stories/fragile-nine-inch-nails/",
-    "socialAssetUrl": "https://umusic.box.com/s/45zvxtx4zi54tg4r52pmrzub78d816qn"
+    "socialAssetUrl": "https://umusic.box.com/s/45zvxtx4zi54tg4r52pmrzub78d816qn",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nine-Inch-Nails"
   },
   {
     "name": "Nirvana released 'In Utero'",
@@ -7550,7 +8306,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 21,
     "articleUrl": "https://www.udiscovermusic.com/stories/utero-takes-bow-nirvana/",
-    "socialAssetUrl": "https://umusic.box.com/s/fh0ep3py3yxrnzpcy1nxop29a0kmds6a"
+    "socialAssetUrl": "https://umusic.box.com/s/fh0ep3py3yxrnzpcy1nxop29a0kmds6a",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "Thin Lizzy released 'Vagabonds of the Western World'",
@@ -7559,7 +8316,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 9,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/thin-lizzy-vagabonds-of-the-western-world-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/thin-lizzy-vagabonds-of-the-western-world-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thin-lizzy"
   },
   {
     "name": "Camel released 'Breathless'",
@@ -7568,7 +8326,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 9,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/camels-breathless-chart-entry/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/camels-breathless-chart-entry/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Elton John released 'The Big Picture'",
@@ -7577,7 +8336,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 9,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-the-big-picture-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-the-big-picture-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "George Harrison released 'Extra Texture'",
@@ -7587,7 +8347,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 22,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-extra-texture/",
-    "socialAssetUrl": "https://umusic.box.com/s/3yazrf4k9giiqmvf0xhnw1wsdssvhynw"
+    "socialAssetUrl": "https://umusic.box.com/s/3yazrf4k9giiqmvf0xhnw1wsdssvhynw",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Nat King Cole's 'Ramblin' Rose' makes the US album chart",
@@ -7595,7 +8356,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1962,
     "month": 9,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nat-King-Cole"
   },
   {
     "name": "Nine Inch Nails - Broken released",
@@ -7604,7 +8366,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 9,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nine-inch-nails-broken/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nine-inch-nails-broken/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nine-Inch-Nails"
   },
   {
     "name": "Redman released 'Whut? Thee Album'",
@@ -7613,7 +8376,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 9,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/redman-whut-thee-album-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/redman-whut-thee-album-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/redman"
   },
   {
     "name": "The Rolling Stones' 'Goats Head Soup' makes No.1 on UK album chart",
@@ -7621,7 +8385,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1973,
     "month": 9,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Blondie released 'Parallel Lines'",
@@ -7631,7 +8396,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/stories/parallel-lines-blondie-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/j3135y60p7whuridci83wxtdnm5lqlrs"
+    "socialAssetUrl": "https://umusic.box.com/s/j3135y60p7whuridci83wxtdnm5lqlrs",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blondie"
   },
   {
     "name": "Hank Williams records 'Take These Chains From My Heart' during his final recording session in Castle Studio, Nashville",
@@ -7640,7 +8406,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1952,
     "month": 9,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-tapes-his-last-country-no-1/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-tapes-his-last-country-no-1/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Isaac Hayes releases 'Hot Buttered Soul' album",
@@ -7649,7 +8416,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 9,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-classic-isaac-hayess-hot-buttered-soul/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-classic-isaac-hayess-hot-buttered-soul/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/isaac-hayes"
   },
   {
     "name": "Lady Gaga released 'Cheek To Cheek'",
@@ -7659,7 +8427,8 @@ const EDITORIAL_EVENTS = [
     "month": 9,
     "day": 23,
     "articleUrl": "https://www.udiscovermusic.com/stories/cheek-to-cheek-lady-gaga-tony-bennett/",
-    "socialAssetUrl": "https://umusic.box.com/s/9yj3bvybvkl3pnjwhuzbm0leoqo1ho9x"
+    "socialAssetUrl": "https://umusic.box.com/s/9yj3bvybvkl3pnjwhuzbm0leoqo1ho9x",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-gaga"
   },
   {
     "name": "Deep Purple record Concerto For Group And Orchestra at Royal Albert Hall",
@@ -7668,7 +8437,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 9,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rock-classical-married-deep-purple/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rock-classical-married-deep-purple/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Deep-Purple"
   },
   {
     "name": "Drake released 'Nothing Was The Same'",
@@ -7677,7 +8447,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 9,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nothing-was-the-same-drake-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nothing-was-the-same-drake-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Live released 'Lightning Crashes'",
@@ -7695,7 +8466,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1990,
     "month": 9,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-rust-in-peace-fourth-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-rust-in-peace-fourth-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "Nirvana released 'Nevermind'",
@@ -7704,7 +8476,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 9,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nirvana-quiet-debut-nevermind/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nirvana-quiet-debut-nevermind/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "Weezer released 'Pinkerton'",
@@ -7713,7 +8486,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 9,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/weezer-pinkerton-second-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/weezer-pinkerton-second-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/weezer"
   },
   {
     "name": "Nirvana's 'In Utero' makes No.1 in the UK",
@@ -7721,7 +8495,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1993,
     "month": 9,
-    "day": 25
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "Tears For Fears released 'The Seeds Of Love' album",
@@ -7730,7 +8505,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 9,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/tears-for-fears-grow-success-from-seed/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/tears-for-fears-grow-success-from-seed/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tears-for-fears"
   },
   {
     "name": "The Beach Boys' 'Surfin' USA' album is their first to make the UK chart",
@@ -7739,7 +8515,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 9,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-surf-the-uk-two-years-late/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-surf-the-uk-two-years-late/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Rolling Stones 'Get Off Of My Cloud\u2019' released",
@@ -7748,7 +8525,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 9,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-get-off-of-my-cloud-song-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-get-off-of-my-cloud-song-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Robert Palmer died",
@@ -7756,7 +8534,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2003,
     "month": 9,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "The Beatles released 'Abbey Road'",
@@ -7765,7 +8544,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 9,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beatles-abbey-road-streets-ahead-time/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beatles-abbey-road-streets-ahead-time/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Bob Marley makes UK singles chart debut with 'No Woman No Cry'",
@@ -7773,7 +8553,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1975,
     "month": 9,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Muddy Waters, 'Fathers And Sons' album charted",
@@ -7781,7 +8562,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1969,
     "month": 9,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "Rihanna released 'Diamonds'",
@@ -7790,7 +8572,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2012,
     "month": 9,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/benny-blanco-rihanna-diamonds/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/benny-blanco-rihanna-diamonds/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "Blondie's 'Eat To The Beat' released",
@@ -7799,7 +8582,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 10,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/platinum-blondie-eat-to-the-beat/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/platinum-blondie-eat-to-the-beat/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blondie"
   },
   {
     "name": "Guns N' Roses release 'Welcome To The Jungle' for the first time",
@@ -7817,7 +8601,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1999,
     "month": 9,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/method-man-redman-blackout-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/method-man-redman-blackout-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/method-man"
   },
   {
     "name": "Bill Evans and Claus Ogerman begin recording the 'With Symphony Orchestra' album",
@@ -7826,7 +8611,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 9,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-bill-evans-with-symphony-orchestra/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-bill-evans-with-symphony-orchestra/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bill-evans"
   },
   {
     "name": "Patsy Cline's Rarest Record?",
@@ -7835,7 +8621,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1957,
     "month": 9,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-clines-rarest-record/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-clines-rarest-record/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Shania Twain released 'Now'",
@@ -7844,7 +8631,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 9,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/shania-twain-interview-now-album-highlights/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/shania-twain-interview-now-album-highlights/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/shania-twain"
   },
   {
     "name": "The Rolling Stones first tour",
@@ -7853,7 +8641,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 9,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-first-tour/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-first-tour/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Beach Boys' 'Smiley Smile' makes US album chart",
@@ -7862,7 +8651,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 9,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/in-67-the-beach-boys-still-raised-a-smile/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/in-67-the-beach-boys-still-raised-a-smile/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Bob Marley released 'Redemption Song' this month",
@@ -7871,7 +8661,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bob-marley-redemption-song-story/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bob-marley-redemption-song-story/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Elton John released 'Songs From The West Coast'",
@@ -7880,7 +8671,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2001,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-songs-from-the-west-coat-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-songs-from-the-west-coat-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Frank Sinatra tops first UK top 20 singles chart with 'Three Coins In The Fountain'",
@@ -7889,7 +8681,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1954,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sinatra-tops-first-uk-top-20/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sinatra-tops-first-uk-top-20/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Hank Williams enters country chart with 'You're Gonna Change (Or I'm Gonna Leave)'",
@@ -7898,7 +8691,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1949,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/a-musical-ultimatum-from-hank-williams/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/a-musical-ultimatum-from-hank-williams/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Horace Silver records 'The Cape Verdean Blues' for Blue Note",
@@ -7907,7 +8701,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-horace-silver-cape-verdean-blues/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-horace-silver-cape-verdean-blues/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Horace-Silve"
   },
   {
     "name": "James Brown recorded 'Live At Home With His Bad Self'",
@@ -7916,7 +8711,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-live-at-home-with-his-bad-self-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-live-at-home-with-his-bad-self-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "John Martyn released 'Grace And Danger' this month",
@@ -7925,7 +8721,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-grace-and-danger/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-grace-and-danger/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-martyn"
   },
   {
     "name": "Nirvana released 'From The Muddy Banks Of The Wishkah'",
@@ -7934,7 +8731,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nirvana-from-the-muddy-banks-of-the-wishkah-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nirvana-from-the-muddy-banks-of-the-wishkah-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "Sparks released 'Indiscreet' this month",
@@ -7943,7 +8741,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sparks-indiscreet-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sparks-indiscreet-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sparks"
   },
   {
     "name": "The Who released 'Baba O'Riley' this month",
@@ -7952,7 +8751,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-baba-oriley-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-baba-oriley-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "U2 release 'The Unforgettable Fire'",
@@ -7961,7 +8761,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-unforgettable-fire/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-unforgettable-fire/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Cat Stevens released 'Teaser and the Firecat'",
@@ -7970,7 +8771,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-teaser-and-the-firecat-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-teaser-and-the-firecat-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Quincy Jones released 'You\u2019ve Got It Bad Girl' this month",
@@ -7979,7 +8781,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/quincy-jones-youve-got-it-bad-girl-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/quincy-jones-youve-got-it-bad-girl-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Quincy-Jones"
   },
   {
     "name": "Bob Marley released 'Survival'",
@@ -7988,7 +8791,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 10,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-the-wailers-survival/"
+    "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-the-wailers-survival/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Frank Zappa and Captain Beefheart release 'Bongo Fury'",
@@ -7997,7 +8801,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 10,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/zappa-and-beefheart-marching-to-their-own-drum/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/zappa-and-beefheart-marching-to-their-own-drum/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "The Police's 'Ghost In The Machine' released",
@@ -8007,7 +8812,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 2,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-ghost-in-the-machine/",
-    "socialAssetUrl": "https://umusic.box.com/s/nmguoyyvamx2uarrj4d9vmm80x6cnmfk"
+    "socialAssetUrl": "https://umusic.box.com/s/nmguoyyvamx2uarrj4d9vmm80x6cnmfk",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
   },
   {
     "name": "Tom Petty died",
@@ -8015,7 +8821,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2017,
     "month": 10,
-    "day": 2
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   {
     "name": "James Brown enters Hot 100 with 'Super Bad'",
@@ -8024,7 +8831,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 10,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/soul-brother-no-1-james-brown-was-super-bad/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/soul-brother-no-1-james-brown-was-super-bad/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Loretta Lynn released 'Don't Come Home A-Drinkin'",
@@ -8042,7 +8850,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 10,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/us-platinum-for-police-with-zenyatta-mondatta/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/us-platinum-for-police-with-zenyatta-mondatta/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
   },
   {
     "name": "Frank Zappa released '200 Motels'",
@@ -8051,7 +8860,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 10,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/200-motels-frank-zappa-mothers-of-invention-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/200-motels-frank-zappa-mothers-of-invention-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Howlin' Wolf released 'Moanin' In The Moonlight' this year (exact date unknown)",
@@ -8069,7 +8879,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 10,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-walls-and-bridges/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-walls-and-bridges/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Chuck Berry 'On Stage' makes the UK album chart",
@@ -8078,7 +8889,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 10,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/a-taste-of-chuck-berry-live/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/a-taste-of-chuck-berry-live/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Def Leppard released 'Retro Active'",
@@ -8087,7 +8899,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 10,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/retro-active-def-leppard-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/retro-active-def-leppard-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Elton John released 'Goodbye Yellow Brick Road'",
@@ -8097,7 +8910,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 5,
     "articleUrl": "https://www.udiscovermusic.com/stories/elton-walks-yellow-brick-road-1/",
-    "socialAssetUrl": "https://umusic.box.com/s/zcjdowza6bvle2oyc2hl9qoxktqrm6sw"
+    "socialAssetUrl": "https://umusic.box.com/s/zcjdowza6bvle2oyc2hl9qoxktqrm6sw",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Mazzy Star released 'So Tonight That I Might See'",
@@ -8116,7 +8930,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 5,
     "articleUrl": "https://www.udiscovermusic.com/stories/wading-in-electric-mud/",
-    "socialAssetUrl": "https://umusic.box.com/s/y8jc3bpk1xgy3ztunv3qebhlgg4x24ic"
+    "socialAssetUrl": "https://umusic.box.com/s/y8jc3bpk1xgy3ztunv3qebhlgg4x24ic",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "Tame Impala released 'Lonerism'",
@@ -8133,7 +8948,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1962,
     "month": 10,
-    "day": 5
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Police released 'Reggatta De Blanc'",
@@ -8143,7 +8959,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 2,
     "articleUrl": "https://www.udiscovermusic.com/stories/regatta-de-blanc-police-second-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/45z6qlng9dx0zxnlvngx3sk6egjzb15i"
+    "socialAssetUrl": "https://umusic.box.com/s/45z6qlng9dx0zxnlvngx3sk6egjzb15i",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
   },
   {
     "name": "Wes Montgomery's first recording session leading his own band",
@@ -8152,7 +8969,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1959,
     "month": 10,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-wes-montgomery-trio/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-the-wes-montgomery-trio/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/wes-montgomery"
   },
   {
     "name": "Chuck Berry's 'Too Much Monkey Business' makes the Billboard R&B chart",
@@ -8161,7 +8979,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1956,
     "month": 10,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/monkey-business-as-usual-for-chuck-berry/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/monkey-business-as-usual-for-chuck-berry/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Ginger Baker died",
@@ -8169,7 +8988,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2019,
     "month": 10,
-    "day": 6
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ginger-baker"
   },
   {
     "name": "Lionel Richie's debut solo album, 'Lionel Richie', is released",
@@ -8178,7 +8998,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 10,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/commodore-lionel-richie-makes-solo-statement/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/commodore-lionel-richie-makes-solo-statement/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lionel-richie"
   },
   {
     "name": "Ringo Starr enters Hot 100 with 'Photograph'",
@@ -8187,7 +9008,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ringo-starr-photograph-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ringo-starr-photograph-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ringo-starr"
   },
   {
     "name": "The Beatles released 'Come Together'",
@@ -8196,7 +9018,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 10,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-come-together-abbey-road-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-come-together-abbey-road-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Cat Stevens' 'Catch Bull At Four' enters UK chart",
@@ -8205,7 +9028,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 11,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-catches-a-us-no-1/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-catches-a-us-no-1/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Frank Sinatra played Philadelphia",
@@ -8214,7 +9038,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 10,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-live-in-philadelphia-1974/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-live-in-philadelphia-1974/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Janet Jackson released 'The Velvet Rope'",
@@ -8223,7 +9048,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 10,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-velvet-rope-janet-jackson-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-velvet-rope-janet-jackson-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/janet-jackson"
   },
   {
     "name": "Ludacris released 'Chicken-n-Beer'",
@@ -8232,7 +9058,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2003,
     "month": 10,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ludacris-chicken-n-beer/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ludacris-chicken-n-beer/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ludacris"
   },
   {
     "name": "Norah Jones released 'Day Breaks'",
@@ -8241,7 +9068,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 10,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/day-breaks-deluxe-norah-jones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/day-breaks-deluxe-norah-jones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "The Beatles start recording 'Long, Long, Long' at Abbey Road",
@@ -8250,7 +9078,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 10,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/long-long-long-story-behind-song-beatles/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/long-long-long-story-behind-song-beatles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Weezer released 'Everything Will Be Alright In The End'",
@@ -8259,7 +9088,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2014,
     "month": 10,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/weezer-everything-will-be-alright-in-the-end/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/weezer-everything-will-be-alright-in-the-end/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/weezer"
   },
   {
     "name": "Barry White's 'Put Me In Your Mix' album released",
@@ -8268,7 +9098,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 10,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/barry-white-mixes-with-a-new-generation/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/barry-white-mixes-with-a-new-generation/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/barry-white"
   },
   {
     "name": "Carpenters' 'Calling Occupants Of Interplanetary Craft' enters both the Hot 100 and UK singles chart",
@@ -8276,7 +9107,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1977,
     "month": 10,
-    "day": 8
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Soundgarden released 'Badmotorfinger'",
@@ -8286,7 +9118,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 8,
     "articleUrl": "https://www.udiscovermusic.com/stories/badmotorfinger-soundgarden-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/qqkflob241u26m99ukbol96pn57ukail"
+    "socialAssetUrl": "https://umusic.box.com/s/qqkflob241u26m99ukbol96pn57ukail",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "Elton John released autobiography, 'Me'",
@@ -8295,7 +9128,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 10,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-me-autobiography/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-me-autobiography/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Horace Silver's first recording as bandleader",
@@ -8303,7 +9137,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1952,
     "month": 10,
-    "day": 9
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Horace-Silve"
   },
   {
     "name": "Tears For Fears' 'The Seeds Of Love' album makes No.1 in UK",
@@ -8311,7 +9146,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1989,
     "month": 10,
-    "day": 9
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tears-for-fears"
   },
   {
     "name": "Vangelis' 'Albedo 0.39' enters UK album chart",
@@ -8320,7 +9156,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 10,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/0-39-magic-number-vangelis/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/0-39-magic-number-vangelis/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vangelis"
   },
   {
     "name": "Carpenters' debut hit, '(They Long To Be) Close To You' peaks at No.6 on UK singles chart",
@@ -8330,7 +9167,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 10,
     "articleUrl": "https://www.udiscovermusic.com/stories/close-to-you/",
-    "socialAssetUrl": "https://umusic.box.com/s/603eqds5szbcksakt6i5x1vjekhbnm1w"
+    "socialAssetUrl": "https://umusic.box.com/s/603eqds5szbcksakt6i5x1vjekhbnm1w",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Frank Zappa releases 'Hot Rats'",
@@ -8339,7 +9177,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 10,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-catches-hot-rats/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-catches-hot-rats/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Freddie Hubbard records 'Hub-Tones' album",
@@ -8356,7 +9195,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 10,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-clines-last-solo-country-top-tenner/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-clines-last-solo-country-top-tenner/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Sting released 'Songs From The Labyrinth'",
@@ -8365,7 +9205,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 10,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/back-labyrinth-sting-classical-music/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/back-labyrinth-sting-classical-music/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   {
     "name": "U2's 'Rattle and Hum' released",
@@ -8374,7 +9215,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 10,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/u2-rattle-and-hum-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/u2-rattle-and-hum-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Bon Jovi released 'Cross Road'",
@@ -8383,7 +9225,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 10,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-cross-road-greatest-hits-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-cross-road-greatest-hits-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Camel released 'Rajaz'",
@@ -8392,7 +9235,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1999,
     "month": 10,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-rajaz/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-rajaz/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/camel"
   },
   {
     "name": "Carpenters released 'Voice Of The Heart'",
@@ -8402,7 +9246,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 11,
     "articleUrl": "https://www.udiscovermusic.com/stories/voice-of-the-heart/",
-    "socialAssetUrl": "https://umusic.box.com/s/shifasnenlpfqtg9imu4r0muzd1ptsuz"
+    "socialAssetUrl": "https://umusic.box.com/s/shifasnenlpfqtg9imu4r0muzd1ptsuz",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Crowded House released 'Together Alone'",
@@ -8411,7 +9256,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1993,
     "month": 10,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-together-alone/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-together-alone/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/crowded-house"
   },
   {
     "name": "Donna Summer's 'Four Seasons Of Love' released",
@@ -8420,7 +9266,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 10,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/donna-summer-the-four-seasons/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/donna-summer-the-four-seasons/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/donna-summer"
   },
   {
     "name": "Hank Williams' 'Settin' The Woods On Fire' enters Billboard country chart",
@@ -8429,7 +9276,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1952,
     "month": 10,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/what-hank-cooked-up-after-jambalaya/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/what-hank-cooked-up-after-jambalaya/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "John Lennon released 'Imagine'",
@@ -8438,7 +9286,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 10,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/imagine-john-lennons-provocative-anthem-became-hymn-peace/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/imagine-john-lennons-provocative-anthem-became-hymn-peace/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Robert Palmer's 'Clues' makes the US album chart",
@@ -8446,7 +9295,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1980,
     "month": 10,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "Rush released 'Power Windows'",
@@ -8455,7 +9305,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 10,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rush-power-windows-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rush-power-windows-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "Donald Byrd began recording 'Stepping Into Tomorrow'",
@@ -8472,7 +9323,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1963,
     "month": 10,
-    "day": 12
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Genesis release 'Selling England by The Pound'",
@@ -8481,7 +9333,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/genesis-break-america-pound/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/genesis-break-america-pound/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Nirvana's 'Nevermind' album enters the US chart",
@@ -8489,7 +9342,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1991,
     "month": 10,
-    "day": 12
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "U2 release 'October'",
@@ -8498,7 +9352,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 10,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-october/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-october/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Bing Crosby and Louis Armstrong's 'Now You Has Jazz' makes US chart",
@@ -8515,7 +9370,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 2007,
     "month": 10,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Herbie-Hancock"
   },
   {
     "name": "The Beatles appear on 'Sunday Night At The London Palladium'",
@@ -8523,7 +9379,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1963,
     "month": 10,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Who record 'My Generation' at Pye studios in London",
@@ -8532,7 +9389,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 10,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/who-record-my-generation/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/who-record-my-generation/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Vangelis 'Soil Festivities' enters the UK album chart",
@@ -8541,7 +9399,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 10,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/vangelis-records-life-earth/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/vangelis-records-life-earth/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vangelis"
   },
   {
     "name": "Bing Crosby died",
@@ -8557,7 +9416,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1967,
     "month": 10,
-    "day": 14
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/scott-walker"
   },
   {
     "name": "Four Tops' 'Reach Out I'll Be There' makes No.1 on the Hot 100",
@@ -8565,7 +9425,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1966,
     "month": 10,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Four-Tops"
   },
   {
     "name": "Loretta Lynn makes her first appearance on the Grand Ole Opry",
@@ -8583,7 +9444,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 10,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nirvanas-girl-gets-unplugged/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nirvanas-girl-gets-unplugged/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "Thelonious Monk recorded first Prestige Records session",
@@ -8592,7 +9454,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1953,
     "month": 10,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/thelonious-monk-prestige-recordings/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/thelonious-monk-prestige-recordings/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thelonious-monk"
   },
   {
     "name": "Thelonious Monk records his first Blue Note session",
@@ -8600,7 +9463,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1947,
     "month": 10,
-    "day": 15
+    "day": 15,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thelonious-monk"
   },
   {
     "name": "Carpenters' 'Voice Of The Heart' album enters UK chart",
@@ -8608,7 +9472,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1983,
     "month": 10,
-    "day": 16
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Coleman Hawkins records 'The Genius Of Coleman Hawkins' and 'Coleman Hawkins Encounters Ben Webster' albums",
@@ -8617,7 +9482,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1957,
     "month": 10,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hawkins-webster-genius-at-work/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hawkins-webster-genius-at-work/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/coleman-hawkin"
   },
   {
     "name": "Muddy Waters plays first UK show, in Leeds",
@@ -8626,7 +9492,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1958,
     "month": 10,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-first-uk-tour/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-first-uk-tour/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   {
     "name": "The Rolling Stones' 'It's Only Rock'n' Roll' album released",
@@ -8635,7 +9502,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 10,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/stones-stick-pen-heart/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/stones-stick-pen-heart/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Thin Lizzy's 'Johnny The Fox' released",
@@ -8644,7 +9512,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 10,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-johnny-the-fox/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-johnny-the-fox/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thin-lizzy"
   },
   {
     "name": "Sheryl Crow's 'The Globe Sessions' makes the US album chart",
@@ -8653,7 +9522,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1998,
     "month": 10,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/from-the-globe-around-the-globe-with-sheryl-crow/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/from-the-globe-around-the-globe-with-sheryl-crow/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sheryl-crow"
   },
   {
     "name": "Smokey Robinson and the Miracles' 'Tears Of A Clown' enters the US Hot 100",
@@ -8662,7 +9532,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 10,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/smokeys-clown-goes-back-across-atlantic/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/smokeys-clown-goes-back-across-atlantic/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/smokey-robinson"
   },
   {
     "name": "The Rolling Stones' '12 x 5' album released in the US",
@@ -8670,7 +9541,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1964,
     "month": 10,
-    "day": 17
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Beatles recorded 'I Want To Hold Your Hand'",
@@ -8679,7 +9551,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 10,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-i-want-to-hold-your-hand-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-i-want-to-hold-your-hand-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Elliott Smith released 'From A Basement On A Hill'",
@@ -8688,7 +9561,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 10,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elliott-smith-from-a-basement-on-the-hill/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elliott-smith-from-a-basement-on-the-hill/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elliott-Smith"
   },
   {
     "name": "Frank Sinatra 'That's Life' recorded",
@@ -8697,7 +9571,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 10,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-thats-life-frank-sinatra/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-thats-life-frank-sinatra/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Katy Perry released 'Prism'",
@@ -8706,7 +9581,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 10,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/prism-katy-perry-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/prism-katy-perry-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   {
     "name": "KISS release 'Hot In The Shade'",
@@ -8715,7 +9591,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 10,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kiss-hot-in-the-shade-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kiss-hot-in-the-shade-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kiss"
   },
   {
     "name": "Sonic Youth released 'Daydream Nation'",
@@ -8723,7 +9600,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1988,
     "month": 10,
-    "day": 18
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sonic-youth"
   },
   {
     "name": "The Rolling Stones\tIt's Only Rock'n'Roll",
@@ -8732,7 +9610,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 10,
     "day": 18,
-    "socialAssetUrl": "https://umusic.box.com/s/u6fl69ua2k4ml0em8qz4k9mji2yre5io"
+    "socialAssetUrl": "https://umusic.box.com/s/u6fl69ua2k4ml0em8qz4k9mji2yre5io",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bob Marley released 'Burnin''",
@@ -8741,7 +9620,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-burnin/"
+    "articleUrl": "https://www.udiscovermusic.com/bob-marley/bob-marley-burnin/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Ella Fitzgerald and Count Basie's 'Ella & Basie' album makes US chart",
@@ -8749,7 +9629,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1963,
     "month": 10,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald"
   },
   {
     "name": "Keith Jarrett released 'La Fenice'",
@@ -8758,7 +9639,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 10,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/la-fenice-keith-jarrett-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/la-fenice-keith-jarrett-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-jarrett"
   },
   {
     "name": "Smokey Robinson and the Miracles' 'I Second That Emotion' released",
@@ -8767,7 +9649,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 10,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/miraculous-smokey-lyric/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/miraculous-smokey-lyric/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/smokey-robinson"
   },
   {
     "name": "Tom Petty And The Heartbreakers release 'Damn The Torpedoes'",
@@ -8776,7 +9659,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 10,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-damn-the-torpedoes/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-damn-the-torpedoes/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   {
     "name": "Amy Winehouse released 'Frank'",
@@ -8785,7 +9669,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2003,
     "month": 10,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-amy-winehouse-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-amy-winehouse-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Amy-Winehouse"
   },
   {
     "name": "Frank Zappa released 'Zoot Allures'",
@@ -8794,7 +9679,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 10,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/zoot-allures-frank-zappa/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/zoot-allures-frank-zappa/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Marvin Gaye's first hit, 'Stubborn Kind Of Fellow', makes US chart",
@@ -8803,7 +9689,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 10,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gates-stubborn-streak/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gates-stubborn-streak/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Nine Inch Nails release 'Pretty Hate Machine'",
@@ -8812,7 +9699,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 10,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-pretty-hate-machine/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-pretty-hate-machine/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nine-Inch-Nails"
   },
   {
     "name": "Peter Frampton releases 'Frampton's Camel'",
@@ -8821,7 +9709,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-framptons-camel-1973/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-framptons-camel-1973/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peter-Frampton"
   },
   {
     "name": "The Rolling Stones' 'Angie' is No.1 on the Hot 100",
@@ -8830,7 +9719,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/angie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/angie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "U2 release 'Boy'",
@@ -8839,7 +9729,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 10,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-boy/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-boy/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Billy Idol released 'Whiplash Smile'",
@@ -8857,7 +9748,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 10,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/a-no-1-for-chuck-berry-at-last/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/a-no-1-for-chuck-berry-at-last/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Elliott Smith died",
@@ -8865,7 +9757,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2003,
     "month": 10,
-    "day": 21
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elliott-Smith"
   },
   {
     "name": "Lady Gaga released 'Joanne'",
@@ -8875,7 +9768,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 21,
     "articleUrl": "https://www.udiscovermusic.com/stories/joanne-lady-gaga-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/a6kb05v3qx3w72tu1qb7r71ruotyvima"
+    "socialAssetUrl": "https://umusic.box.com/s/a6kb05v3qx3w72tu1qb7r71ruotyvima",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-gaga"
   },
   {
     "name": "Sting released 'If On A Winter's Night...'",
@@ -8883,7 +9777,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2009,
     "month": 10,
-    "day": 21
+    "day": 21,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   {
     "name": "Bob Seger released 'Night Moves'",
@@ -8901,7 +9796,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 10,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/carpenters/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/carpenters/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Elton John released 'Blue Moves'",
@@ -8910,7 +9806,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 10,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-moves-into-a-new-phase/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-moves-into-a-new-phase/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Kendrick Lamar released 'Good Kid, M.A.A.D City'",
@@ -8920,7 +9817,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 22,
     "articleUrl": "https://www.udiscovermusic.com/stories/kendrick-lamars-good-kid-maad-city/",
-    "socialAssetUrl": "https://umusic.box.com/s/95l3i6bhehhiiu5kl8o07fkngruq0mo2 + https://umusic.box.com/s/janlop32rixbn496ic3j6re4fadpdnzl"
+    "socialAssetUrl": "https://umusic.box.com/s/95l3i6bhehhiiu5kl8o07fkngruq0mo2 + https://umusic.box.com/s/janlop32rixbn496ic3j6re4fadpdnzl",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kendrick-lamar"
   },
   {
     "name": "KISS released 'Hotter Than Hell'",
@@ -8929,7 +9827,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 10,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kiss-hotter-than-hell-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kiss-hotter-than-hell-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kiss"
   },
   {
     "name": "Taylor Swift released 'Red'",
@@ -8938,7 +9837,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2012,
     "month": 10,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/red-taylor-swift-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/red-taylor-swift-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   {
     "name": "U2 - Beautiful Day - Story Behind The Song",
@@ -8947,7 +9847,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 10,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/u2-beautiful-day/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/u2-beautiful-day/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Frank Zappa released 'Chunga's Revenge'",
@@ -8956,7 +9857,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 10,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/chungas-revenge-frank-zappa-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/chungas-revenge-frank-zappa-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Patsy Cline's 'Crazy' enters the US Hot 100",
@@ -8965,7 +9867,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1961,
     "month": 10,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/america-goes-crazy-patsy-cline/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/america-goes-crazy-patsy-cline/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Rob Zombie released 'Zombie Live'",
@@ -8974,7 +9877,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2007,
     "month": 10,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rob-zombie-live-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rob-zombie-live-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "Robert Palmer's 'Some People Can Do What They Like' makes the US album chart",
@@ -8983,7 +9887,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 10,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-does-what-he-likes/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-does-what-he-likes/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "Smashing Pumpkins released 'Mellon Collie And The Infinite Sadness'",
@@ -9002,7 +9907,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 10,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-rock-of-the-westies-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-rock-of-the-westies-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Fats Domino died",
@@ -9010,7 +9916,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2017,
     "month": 10,
-    "day": 24
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Fats-Domino"
   },
   {
     "name": "Frank Sinatra played Reunion Hall, Dallas",
@@ -9019,7 +9926,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1987,
     "month": 10,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-live-dallas-1987/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-live-dallas-1987/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Gene Krupa died",
@@ -9027,7 +9935,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1973,
     "month": 10,
-    "day": 24
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gene-krupa"
   },
   {
     "name": "Guns N' Roses released 'Welcome To The Jungle' for a second time",
@@ -9044,7 +9953,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 4,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/working-class-hero-john-lennon-yoko-ono-plastic-ono-band/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/working-class-hero-john-lennon-yoko-ono-plastic-ono-band/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Taylor Swift released 'Taylor Swift'",
@@ -9053,7 +9963,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2006,
     "month": 10,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/taylor-swift-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/taylor-swift-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   {
     "name": "Vangelis' '1492: Conquest Of Paradise' enters the UK album charts",
@@ -9062,7 +9973,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 10,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-vangelis-voyage-inspired-by-columbus/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-vangelis-voyage-inspired-by-columbus/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vangelis"
   },
   {
     "name": "Rush released 'Hemispheres'",
@@ -9071,7 +9983,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 10,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hemispheres-rush-sixth-album-prog/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hemispheres-rush-sixth-album-prog/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   {
     "name": "Bob Marley's 'Natty Dread' album released",
@@ -9080,7 +9993,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 10,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bob-marley-steps-natty-dread/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bob-marley-steps-natty-dread/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Kanye West released 'Jesus Is King'",
@@ -9089,7 +10003,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 10,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-jesus-is-king-gospel-influence/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-jesus-is-king-gospel-influence/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Taylor Swift released 'Speak Now'",
@@ -9098,7 +10013,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 10,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/speak-now-taylor-swift-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/speak-now-taylor-swift-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   {
     "name": "The Rolling Stones appear on 'The Ed Sullivan Show' for the first time",
@@ -9107,7 +10023,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 10,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-and-mr-sullivan/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-and-mr-sullivan/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Thelonious Monk recorded sixth (and final) Prestige Records session",
@@ -9115,7 +10032,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1954,
     "month": 10,
-    "day": 25
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thelonious-monk"
   },
   {
     "name": "Supertramp release 'Crime Of The Century'",
@@ -9124,7 +10042,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 10,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/supertramp-pull-off-crime-of-the-century/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/supertramp-pull-off-crime-of-the-century/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/supertramp"
   },
   {
     "name": "Diana Ross And Marvin Gaye release 'Diana & Marvin'",
@@ -9133,7 +10052,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 26,
-    "socialAssetUrl": "https://umusic.box.com/s/s1u6h4trou0s4fm0bsm7pf5wg5xhjgw2"
+    "socialAssetUrl": "https://umusic.box.com/s/s1u6h4trou0s4fm0bsm7pf5wg5xhjgw2",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Ross"
   },
   {
     "name": "Horace Silver records second 'Song For My Father'\u00a0session",
@@ -9141,7 +10061,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1964,
     "month": 10,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Horace-Silve"
   },
   {
     "name": "Rob Zombie released 'American Made Music To Strip By'",
@@ -9150,7 +10071,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1999,
     "month": 10,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/american-made-music-to-strip-by-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/american-made-music-to-strip-by-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "The Who released 'Quadrophenia'",
@@ -9159,7 +10081,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/1973-debut-quadrophenia/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/1973-debut-quadrophenia/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Amy Winehouse released 'Back To Black'",
@@ -9167,7 +10090,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2006,
     "month": 10,
-    "day": 27
+    "day": 27,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Amy-Winehouse"
   },
   {
     "name": "R.E.M. released 'Live At The Olympia'",
@@ -9176,7 +10100,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2009,
     "month": 10,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/r-e-m-live-at-the-olympia/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/r-e-m-live-at-the-olympia/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/r-e-m/"
   },
   {
     "name": "Taylor Swift released '1989'",
@@ -9186,7 +10111,8 @@ const EDITORIAL_EVENTS = [
     "month": 10,
     "day": 27,
     "articleUrl": "https://www.udiscovermusic.com/stories/1989-taylor-swift-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/0k6tdsnf07kptms6wlbxcytbmz7e8uav"
+    "socialAssetUrl": "https://umusic.box.com/s/0k6tdsnf07kptms6wlbxcytbmz7e8uav",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   {
     "name": "XTC released 'Skylarking'",
@@ -9211,7 +10137,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1989,
     "month": 10,
-    "day": 28
+    "day": 28,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/janet-jackson"
   },
   {
     "name": "Queen released 'News Of The World'",
@@ -9220,7 +10147,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 10,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-news-of-the-world/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-news-of-the-world/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Beastie Boys' 'Beastie Boys Book' released",
@@ -9229,7 +10157,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 10,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beastie-boys-facts-beastie-boys-book/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beastie-boys-facts-beastie-boys-book/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "Eminem released '8 Mile'",
@@ -9237,7 +10166,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2002,
     "month": 10,
-    "day": 29
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "Four Tops' 'Reach Out I'll Be There' makes No.1 on UK singles chart",
@@ -9245,7 +10175,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1966,
     "month": 10,
-    "day": 29
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Four-Tops"
   },
   {
     "name": "John Lennon releases 'Mind Games' single and LP in the US",
@@ -9254,7 +10185,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 10,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-mind-games/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-mind-games/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Def Leppard released 'Def Leppard'",
@@ -9263,7 +10195,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2015,
     "month": 10,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/def-leppard-self-titled-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/def-leppard-self-titled-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Def-Leppard"
   },
   {
     "name": "Elton John released 'Tumbleweed Connection'",
@@ -9272,7 +10205,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 10,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-tumbleweed-connection-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-tumbleweed-connection-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Marvin Gaye released 'I Heard It Through The Grapevine' single",
@@ -9281,7 +10215,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 10,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/gaye-gets-grapevine/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/gaye-gets-grapevine/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "The Beach Boys' 'Long Promised Road' makes the US chart",
@@ -9290,7 +10225,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 10,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-on-the-right-road/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-on-the-right-road/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Who -  Endless Wire released",
@@ -9298,7 +10234,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2006,
     "month": 10,
-    "day": 30
+    "day": 30,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "U2's 'All That You Can't Leave Behind' released",
@@ -9307,7 +10244,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2000,
     "month": 10,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-all-that-you-cant-leave-behind-album/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-all-that-you-cant-leave-behind-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Soundgarden released 'Ultramega OK'",
@@ -9316,7 +10254,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 10,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ultramega-ok-soundgarden-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ultramega-ok-soundgarden-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "The Beatles released 'Something' in the UK",
@@ -9325,7 +10264,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 10,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-something-george-harrison-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-something-george-harrison-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Frank Zappa - Civilisation Phaze III",
@@ -9334,7 +10274,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 10,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-civilization-phaze-iii-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-civilization-phaze-iii-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Brian Eno released 'Taking Tiger Mountain (By Strategy)' this month",
@@ -9343,7 +10284,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 11,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-eno-taking-tiger-mountain/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-eno-taking-tiger-mountain/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brian-eno"
   },
   {
     "name": "George Harrison released 'Wonderwall Music'",
@@ -9352,7 +10294,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 11,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-wonderwall-music/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-wonderwall-music/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Glen Campbell released 'By The Time I Get To Phoenix' album this month",
@@ -9361,7 +10304,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 11,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-by-the-time-i-get-to-phoenix/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-by-the-time-i-get-to-phoenix/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "Isaac Hayes released 'Black Moses' this month",
@@ -9370,7 +10314,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 11,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-black-moses/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-black-moses/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/isaac-hayes"
   },
   {
     "name": "Keith Jarrett releases 'Munich 2016'",
@@ -9379,7 +10324,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 11,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/keith-jarrett-munich-2016-live-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/keith-jarrett-munich-2016-live-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-jarrett"
   },
   {
     "name": "Marvin Gaye released 'A Tribute To The Great Nat \"King\" Cole",
@@ -9388,7 +10334,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 11,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-tribute-to-the-great-nat-king-cole-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-tribute-to-the-great-nat-king-cole-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Megadeth released 'Youthanasia'",
@@ -9397,7 +10344,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 11,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-youthanasia-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/megadeth-youthanasia-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/megadeth"
   },
   {
     "name": "Nirvana released 'MTV Unplugged In New York'",
@@ -9405,7 +10353,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1994,
     "month": 11,
-    "day": 1
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "Robert Palmer releases 'Pressure Drop' album this month",
@@ -9414,7 +10363,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 11,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-robert-palmer-pressure-drop/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-robert-palmer-pressure-drop/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "Slick Rick released 'The Great Adventures Of Slick Rick'",
@@ -9423,7 +10373,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 11,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/great-adventures-of-slick-rick-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/great-adventures-of-slick-rick-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/slick-rick"
   },
   {
     "name": "Steppenwolf release 7 (fifth studio album, seventh overall album) this month",
@@ -9431,7 +10382,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1970,
     "month": 11,
-    "day": 1
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steppenwolf"
   },
   {
     "name": "The Rolling Stones release their second single, 'I Wanna Be Your Man'",
@@ -9440,7 +10392,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 11,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/i-wanna-be-your-man/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/i-wanna-be-your-man/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bee Gees released 'Size Isn't Everything' In The US (UK release was Sep 13)",
@@ -9448,7 +10401,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1993,
     "month": 11,
-    "day": 2
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Creedence Clearwater Revival release 'Willy And The Poor Boys' album",
@@ -9457,7 +10411,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 11,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/creedence-end-60s-style/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/creedence-end-60s-style/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Creedence-Clearwater-Revival"
   },
   {
     "name": "Deep Purple's 'Perfect Strangers' released 1984",
@@ -9466,7 +10421,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 11,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/purples-momentous-mk-ii-reunion/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/purples-momentous-mk-ii-reunion/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Deep-Purple"
   },
   {
     "name": "George Harrison released 'Cloud Nine'",
@@ -9475,7 +10431,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1987,
     "month": 11,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-cloud-nine/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-cloud-nine/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Ringo Starr released 'Ringo' in the US",
@@ -9484,7 +10441,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 11,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ringo-starr-solo-album-invoked-beatles/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ringo-starr-solo-album-invoked-beatles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ringo-starr"
   },
   {
     "name": "The Police released Outlandos 'D'Amour'",
@@ -9493,7 +10451,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 11,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/outlandos-damour-police-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/outlandos-damour-police-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
   },
   {
     "name": "Tom Petty\tLong After Dark",
@@ -9501,7 +10460,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1982,
     "month": 11,
-    "day": 2
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   {
     "name": "Bon Jovi released 'Keep The Faith'",
@@ -9510,7 +10470,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1992,
     "month": 11,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-keep-the-faith-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bon-jovi-keep-the-faith-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bon-Jovi"
   },
   {
     "name": "Maroon 5 released 'Red Pill Blues'",
@@ -9519,7 +10480,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 11,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/red-pill-blues-maroon-5-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/red-pill-blues-maroon-5-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Maroon-5"
   },
   {
     "name": "Marvin Gaye enters R&B and pop charts with 'Come Get To This'",
@@ -9528,7 +10490,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 11,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-come-get-to-this-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-come-get-to-this-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Spice Girls released 'Spiceworld' album",
@@ -9537,7 +10500,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 11,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/spice-girls-spiceworld-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/spice-girls-spiceworld-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/spice-girls"
   },
   {
     "name": "Weezer released 'Raditude'",
@@ -9546,7 +10510,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2009,
     "month": 11,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/weezer-raditude-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/weezer-raditude-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/weezer"
   },
   {
     "name": "Elton John released 'Ice On Fire'",
@@ -9555,7 +10520,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 11,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-ice-on-fire-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-ice-on-fire-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Shania Twain released 'Come On Over'",
@@ -9564,7 +10530,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 11,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/shania-twain-come-on-over-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/shania-twain-come-on-over-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/shania-twain"
   },
   {
     "name": "Spice Girls released 'Spice'",
@@ -9573,7 +10540,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 11,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/spice-girls-debut-album-girl-power/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/spice-girls-debut-album-girl-power/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/spice-girls"
   },
   {
     "name": "Eminem released 'The Marshall Mathers LP 2'",
@@ -9582,7 +10550,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 11,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/eminem-marshall-mathers-lp-2/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/eminem-marshall-mathers-lp-2/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "George Harrison released 'Gone Troppo'",
@@ -9591,7 +10560,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 11,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-gone-troppo/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-gone-troppo/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Johnny Cash's 'American II: Unchained' released",
@@ -9600,7 +10570,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 11,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-american-ii-unchained/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-american-ii-unchained/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/johnny-cash"
   },
   {
     "name": "Neil Diamond releases 'Stones' album",
@@ -9609,7 +10580,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 11,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-stones/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-stones/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "The Beach Boys' 'Kokomo makes No.1 in the US",
@@ -9618,7 +10590,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 11,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kokomo-whats-name/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kokomo-whats-name/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Who's 'My Generation' single released in the UK",
@@ -9626,7 +10599,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1965,
     "month": 11,
-    "day": 5
+    "day": 5,
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Isaac Hayes' 'Shaft' soundtrack makes No.1 in the US",
@@ -9635,7 +10609,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1971,
     "month": 11,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/pop-soul-soul-superstar-isaac-hayes-scores-shaft/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/pop-soul-soul-superstar-isaac-hayes-scores-shaft/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/isaac-hayes"
   },
   {
     "name": "Lady Gaga released 'Artpop'",
@@ -9644,7 +10619,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 11,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/artpop-lady-gaga-third-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/artpop-lady-gaga-third-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-gaga"
   },
   {
     "name": "Queen released 'Made In Heaven'",
@@ -9653,7 +10629,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1995,
     "month": 11,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-made-in-heaven/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-made-in-heaven/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Spice Girls released 'Forever'",
@@ -9662,7 +10639,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2000,
     "month": 11,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/spice-girls-forever-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/spice-girls-forever-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/spice-girls"
   },
   {
     "name": "GZA released 'Liquid Swords'",
@@ -9681,7 +10659,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 7,
     "articleUrl": "https://www.udiscovermusic.com/stories/stones-go-undercover/",
-    "socialAssetUrl": "https://umusic.box.com/s/d15b74c0xpgkq8siopjg31b8gqmjlo1y"
+    "socialAssetUrl": "https://umusic.box.com/s/d15b74c0xpgkq8siopjg31b8gqmjlo1y",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Queen's 'Sheer Heart Attack' album released",
@@ -9691,7 +10670,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 8,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-sheer-heart-attack/",
-    "socialAssetUrl": "https://umusic.box.com/s/sp5fn2u3hpsa5ahjin1s2oy6oy4s910s"
+    "socialAssetUrl": "https://umusic.box.com/s/sp5fn2u3hpsa5ahjin1s2oy6oy4s910s",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Queen\u2019s \u2018Sheer Heart Attack\u2019 Quiz",
@@ -9700,7 +10680,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 11,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/quizzes/queen-sheer-heart-attack-quiz/"
+    "articleUrl": "https://www.udiscovermusic.com/quizzes/queen-sheer-heart-attack-quiz/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Thin Lizzy release 'Nightlife' album",
@@ -9709,7 +10690,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 11,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/gorham-robertson-join-lizzys-nightlife/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/gorham-robertson-join-lizzys-nightlife/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thin-lizzy"
   },
   {
     "name": "Neil Diamond released '12 Songs' album",
@@ -9718,7 +10700,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2005,
     "month": 11,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-12-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-12-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "Elton John's 'Peachtree Road' album released",
@@ -9727,7 +10710,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 11,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-sole-producer-atlanta/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-sole-producer-atlanta/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "The Beach Boys\tThe Beach Boys Christmas Album",
@@ -9736,7 +10720,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 11,
     "day": 9,
-    "socialAssetUrl": "https://umusic.box.com/s/zjbi73nlyuzk9q8llkdu8346qy1e2qrc"
+    "socialAssetUrl": "https://umusic.box.com/s/zjbi73nlyuzk9q8llkdu8346qy1e2qrc",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Carpenters release 'Ticket To Ride' album",
@@ -9746,7 +10731,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 10,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-carpenters-ticket-to-ride/",
-    "socialAssetUrl": "https://umusic.box.com/s/603eqds5szbcksakt6i5x1vjekhbnm1w"
+    "socialAssetUrl": "https://umusic.box.com/s/603eqds5szbcksakt6i5x1vjekhbnm1w",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Neil Diamond releases 'The Jazz Singer' soundtrack",
@@ -9755,7 +10741,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 11,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-the-jazz-singer/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-the-jazz-singer/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "Queen released 'Jazz'",
@@ -9764,7 +10751,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 11,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-jazz/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-jazz/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Taylor Swift released 'Reputation'",
@@ -9773,7 +10761,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 11,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/reputation-taylor-swift-new-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/reputation-taylor-swift-new-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   {
     "name": "Howlin' Wolf recorded 'The Howlin' Wolf Album'",
@@ -9800,7 +10789,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 11,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sparks-propaganda-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sparks-propaganda-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sparks"
   },
   {
     "name": "Eminem released 'Encore'",
@@ -9809,7 +10799,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 11,
     "day": 12,
-    "socialAssetUrl": "https://umusic.box.com/s/08bt3j532fzj8y9tigvn4cjits5nxofj"
+    "socialAssetUrl": "https://umusic.box.com/s/08bt3j532fzj8y9tigvn4cjits5nxofj",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "Lionel Richie's 'All Night Long' makes No.1 in the US",
@@ -9818,7 +10809,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 11,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lionel-richie-plays-night-long/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lionel-richie-plays-night-long/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lionel-richie"
   },
   {
     "name": "Rihanna released 'Loud'",
@@ -9827,7 +10819,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 11,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-loud-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-loud-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "James Brown's 'I Got You (I Feel Good)' enters the Hot 100 on its way to No.3",
@@ -9836,7 +10829,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 11,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-feels-good/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-feels-good/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Katy Perry released 'MTV Unplugged'",
@@ -9844,7 +10838,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 2009,
     "month": 11,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   {
     "name": "Siouxsie And The Banshees' 'The Scream' released",
@@ -9862,7 +10857,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2001,
     "month": 11,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sinister-urge-rob-zombie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sinister-urge-rob-zombie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   {
     "name": "Soundgarden released 'King Animal'",
@@ -9871,7 +10867,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2012,
     "month": 11,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/king-animal-soundgarden-final-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/king-animal-soundgarden-final-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "The Rolling Stones' 'Little Red Rooster' released",
@@ -9879,7 +10876,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1964,
     "month": 11,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bee Gees recorded 'One Night Only'",
@@ -9887,7 +10885,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1997,
     "month": 11,
-    "day": 14
+    "day": 14,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Blondie released 'Autoamerican'",
@@ -9896,7 +10895,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 11,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/blondie-autoamerican-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/blondie-autoamerican-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blondie"
   },
   {
     "name": "Vince Gill released 'I Still Believe In You' this month",
@@ -9904,7 +10904,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1992,
     "month": 9,
-    "day": 1
+    "day": 1,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vince-gill"
   },
   {
     "name": "Vince Gill released 'When I Call Your Name'",
@@ -9913,7 +10914,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1989,
     "month": 11,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/vince-gill-when-i-call-your-name-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/vince-gill-when-i-call-your-name-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vince-gill"
   },
   {
     "name": "Beastie Boys released 'Licensed To Ill'",
@@ -9923,7 +10925,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 15,
     "articleUrl": "https://www.udiscovermusic.com/stories/licensed-to-ill-beastie-boys-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/5v9ytfvujyc25ac6ljcmx3ou6ooc94yd"
+    "socialAssetUrl": "https://umusic.box.com/s/5v9ytfvujyc25ac6ljcmx3ou6ooc94yd",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/beastie-boys"
   },
   {
     "name": "Donald Byrd enters R&B chart with 'Change (Makes You Wanna Hustle)'",
@@ -9941,7 +10944,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2011,
     "month": 11,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/take-care-drake-second-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/take-care-drake-second-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   {
     "name": "Frank Sinatra released 'Duets II'",
@@ -9950,7 +10954,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 11,
     "day": 15,
-    "socialAssetUrl": "https://umusic.box.com/s/1c3ut9r4y00wy5xlwov4kh9g8bc70u2m"
+    "socialAssetUrl": "https://umusic.box.com/s/1c3ut9r4y00wy5xlwov4kh9g8bc70u2m",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Ringo Starr's 'Goodnight Vienna' album released",
@@ -9959,7 +10964,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 11,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ringo-racks-another-winner/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ringo-racks-another-winner/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ringo-starr"
   },
   {
     "name": "Kenny Rogers releases the title song from 'The Gambler'",
@@ -9977,7 +10983,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1994,
     "month": 11,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/method-man-tical-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/method-man-tical-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/method-man"
   },
   {
     "name": "Frank Sinatra records 'In Concert At Royal Festival Hall'",
@@ -9986,7 +10993,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 11,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sinatra-in-concert-at-the-royal-festival-hall/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sinatra-in-concert-at-the-royal-festival-hall/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Glen Campbell released 'Sings For The King'",
@@ -9995,7 +11003,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 11,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/fit-for-a-king-the-charm-of-glen-campbells-recordings-for-elvis-presley/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/fit-for-a-king-the-charm-of-glen-campbells-recordings-for-elvis-presley/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "Patsy Cline records 'I Fall To Pieces'",
@@ -10003,7 +11012,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1960,
     "month": 11,
-    "day": 16
+    "day": 16,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "John Lennon released 'Bring On the Lucie (Freda Peeple)'",
@@ -10012,7 +11022,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 11,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/john-lennon-bring-on-the-lucie-freda-peeple-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/john-lennon-bring-on-the-lucie-freda-peeple-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "John Lennon and Yoko Ono's 'Double Fantasy' album released",
@@ -10021,7 +11032,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 11,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-double-fantasy/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/john-lennon-double-fantasy/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Norah Jones released 'The Fall'",
@@ -10030,7 +11042,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 11,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/norah-jones-the-fall-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/norah-jones-the-fall-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   {
     "name": "Frank Zappa - Over-Nite Sensation review",
@@ -10039,7 +11052,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 9,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-mothers-over-nite-sensation-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-mothers-over-nite-sensation-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Chuck Berry's 'Rock And Roll Music' makes the 'Billboard' R&B chart",
@@ -10048,7 +11062,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1957,
     "month": 11,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/its-got-to-be-chucks-rock-roll-music/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/its-got-to-be-chucks-rock-roll-music/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   {
     "name": "Genesis' 'The Lamb Lies Down On Broadway' released",
@@ -10058,7 +11073,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 18,
     "articleUrl": "https://www.udiscovermusic.com/stories/genesis-lie-lamb/",
-    "socialAssetUrl": "https://umusic.box.com/s/brqowx0yj8q2fo96rzd0avxc5gfclllw"
+    "socialAssetUrl": "https://umusic.box.com/s/brqowx0yj8q2fo96rzd0avxc5gfclllw",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "George Harrison released 'Brainwashed'",
@@ -10068,7 +11084,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 18,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-brainwashed/",
-    "socialAssetUrl": "https://umusic.box.com/s/h0pqaiss3nr14nty4psi2plq8fjxtvyq"
+    "socialAssetUrl": "https://umusic.box.com/s/h0pqaiss3nr14nty4psi2plq8fjxtvyq",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Hank Williams' 'Moanin' The Blues' makes country chart on way to No.1",
@@ -10077,7 +11094,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1950,
     "month": 11,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-country-blues/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-country-blues/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "John Lennon's 'Jealous Guy' released as posthumous single",
@@ -10086,7 +11104,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1985,
     "month": 11,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/jealous-guy-john-lennon-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/jealous-guy-john-lennon-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "LL Cool J released 'Radio'",
@@ -10096,7 +11115,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 18,
     "articleUrl": "https://www.udiscovermusic.com/stories/ll-cool-j-radio-debut-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/bo83ojkgh9brg7e00ufcfdxmrkrohaio"
+    "socialAssetUrl": "https://umusic.box.com/s/bo83ojkgh9brg7e00ufcfdxmrkrohaio",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ll-cool-j"
   },
   {
     "name": "Nirvana recorded 'MTV Unplugged In New York'",
@@ -10104,7 +11124,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1993,
     "month": 11,
-    "day": 18
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nirvana"
   },
   {
     "name": "The Killers released 'Day & Age'",
@@ -10113,7 +11134,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2008,
     "month": 11,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/day-and-age-killers-third-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/day-and-age-killers-third-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-killers"
   },
   {
     "name": "U2 released 'Achtung Baby'",
@@ -10123,7 +11145,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 18,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-achtung-baby-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/eh6c2vlv614orhqf6kmrj7bdcfy2aly3"
+    "socialAssetUrl": "https://umusic.box.com/s/eh6c2vlv614orhqf6kmrj7bdcfy2aly3",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Audioslave released 'Audioslave'",
@@ -10132,7 +11155,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2002,
     "month": 11,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/audioslave-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/audioslave-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/audioslave"
   },
   {
     "name": "Carpenters' 'Make Believe It's The First Time' enters the Hot 100; 'Voice Of The Heart' album enters 'Billboard' chart",
@@ -10140,7 +11164,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1983,
     "month": 11,
-    "day": 19
+    "day": 19,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Foxy Brown released 'Ill Na Na'",
@@ -10149,7 +11174,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1996,
     "month": 11,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/foxy-brown-ill-na-na/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/foxy-brown-ill-na-na/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/foxy-brown"
   },
   {
     "name": "George Harrison released '33 1/3'",
@@ -10158,7 +11184,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 11,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-thirty-three-and-a-third/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-thirty-three-and-a-third/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Shania Twain releases 'Up!'",
@@ -10167,7 +11194,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2002,
     "month": 11,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/way-shania/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/way-shania/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/shania-twain"
   },
   {
     "name": "The Beach Boys' 'Good Vibrations' makes No.1 in the UK",
@@ -10176,7 +11204,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 11,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/good-vibes-in-great-britain-for-beach-boys/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/good-vibes-in-great-britain-for-beach-boys/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Rihanna released 'Unapologetic'",
@@ -10185,7 +11214,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2012,
     "month": 11,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-unapologetic-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-unapologetic-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "Loretta Lynn releases 'Rated 'X'",
@@ -10203,7 +11233,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2010,
     "month": 11,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nicki-minaj-pink-friday-debut-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nicki-minaj-pink-friday-debut-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nicki-Minaj"
   },
   {
     "name": "Queen released 'Bohemian Rhapsody' video",
@@ -10211,7 +11242,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1975,
     "month": 11,
-    "day": 20
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Chris Cornell released 'Songbook'",
@@ -10220,7 +11252,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2011,
     "month": 11,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/songbook-chris-cornell-solo-acoustic-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/songbook-chris-cornell-solo-acoustic-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chris-cornell"
   },
   {
     "name": "Erykah Badu Mama's Gun quiz",
@@ -10229,7 +11262,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 11,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/quizzes/erykah-badu-mamas-gun-quiz/"
+    "articleUrl": "https://www.udiscovermusic.com/quizzes/erykah-badu-mamas-gun-quiz/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/erykah-badu"
   },
   {
     "name": "Erykah Badu releases 'Mama's Gun'",
@@ -10239,7 +11273,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 21,
     "articleUrl": "https://www.udiscovermusic.com/stories/erykah-badu-mamas-gun-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/2g1jjy0thhjcf4jeiwvfo9p8owwz265w"
+    "socialAssetUrl": "https://umusic.box.com/s/2g1jjy0thhjcf4jeiwvfo9p8owwz265w",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/erykah-badu"
   },
   {
     "name": "Queen and David Bowie's Under Pressure makes UK No.1",
@@ -10248,7 +11283,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 11,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-bowie-feel-no-pressure/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-bowie-feel-no-pressure/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Queen released 'A Night At The Opera'",
@@ -10257,7 +11293,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 11,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-a-night-at-the-opera/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-a-night-at-the-opera/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Statler Brothers 'Bed Of Rose's' enters the country chart this week",
@@ -10275,7 +11312,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1983,
     "month": 11,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-under-a-blood-red-sky/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-under-a-blood-red-sky/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Rihanna released 'Talk That Talk'",
@@ -10284,7 +11322,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2011,
     "month": 11,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-talk-that-talk-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-talk-that-talk-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "Kanye West released 'My Beautiful Dark Twisted Fantasy'",
@@ -10294,7 +11333,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 22,
     "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-beautiful-dark-twisted-fantasy/",
-    "socialAssetUrl": "https://umusic.box.com/s/g8lkxxnbwlvaqmwkqm4lysigv6nepgel"
+    "socialAssetUrl": "https://umusic.box.com/s/g8lkxxnbwlvaqmwkqm4lysigv6nepgel",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "The Beatles released 'The White Album'",
@@ -10303,7 +11343,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 11,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/how-the-beatles-wiped-the-slate-clean-with-the-white-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/how-the-beatles-wiped-the-slate-clean-with-the-white-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Rolling Stones' Mick, Keith and Ronnie jam with Muddy Waters at the Checker Board lounge in Chicago",
@@ -10312,7 +11353,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1981,
     "month": 11,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/for-one-night-only-at-the-checkerboard-lounge/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/for-one-night-only-at-the-checkerboard-lounge/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "U2 released 'How To Dismantle An Atomic Bomb'",
@@ -10321,7 +11363,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 11,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-how-to-dismantle-an-atomic-bomb-album/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/u2-how-to-dismantle-an-atomic-bomb-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Enrique Iglesias released 'Enrique'",
@@ -10339,7 +11382,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 11,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/story-behind-george-harrison-isnt-it-a-pity/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/story-behind-george-harrison-isnt-it-a-pity/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Gwen Stefani released 'Love Angel Music Baby'",
@@ -10348,7 +11392,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 11,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/gwen-stefani-love-angel-music-baby-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/gwen-stefani-love-angel-music-baby-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gwen-stefani"
   },
   {
     "name": "Ringo Starr released 'Ringo' in the UK",
@@ -10356,7 +11401,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1973,
     "month": 11,
-    "day": 23
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ringo-starr"
   },
   {
     "name": "The Mamas And The Papas' 'Do You Wanna Dance?' makes the US Hot 100",
@@ -10373,7 +11419,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1974,
     "month": 11,
-    "day": 23
+    "day": 23,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Cat Stevens/Yusuf Islam released 'Tea for the Tillerman'",
@@ -10382,7 +11429,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 11,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-father-and-son-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/cat-stevens-father-and-son-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   {
     "name": "Rihanna released 'Rated R'",
@@ -10391,7 +11439,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2009,
     "month": 11,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-rated-r-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-rated-r-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   {
     "name": "Elton John released 'Step Into Christmas' in the US",
@@ -10400,7 +11449,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 11,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-step-into-christmas-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-step-into-christmas-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   {
     "name": "Frank Sinatra special 'A Man And His Music' airs",
@@ -10409,7 +11459,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 11,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-man-and-his-music-tv-special/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-man-and-his-music-tv-special/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Freddie Mercury died",
@@ -10417,7 +11468,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1991,
     "month": 11,
-    "day": 24
+    "day": 24,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/freddie-mercury"
   },
   {
     "name": "Kanye West released '808s And Heartbreak'",
@@ -10426,7 +11478,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2008,
     "month": 11,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/808s-and-heartbreak-kanye-west-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/808s-and-heartbreak-kanye-west-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   {
     "name": "Soundgarden released 'Echo Of Miles'",
@@ -10435,7 +11488,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2014,
     "month": 11,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/echo-of-miles-soundgarden-rarities-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/echo-of-miles-soundgarden-rarities-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/soundgarden"
   },
   {
     "name": "Glen Campbell records 'Galveston' album and title track single",
@@ -10443,7 +11497,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1968,
     "month": 11,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   {
     "name": "Hank Williams' 'My Bucket's Got A Hole In It' makes country charts on way to No.1",
@@ -10452,7 +11507,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1949,
     "month": 11,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-by-the-bucketload/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-by-the-bucketload/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Frank Zappa Facts: 10 Things We Learned From The \u2018ZAPPA\u2019 Doc",
@@ -10461,7 +11517,8 @@ const EDITORIAL_EVENTS = [
     "origYear": null,
     "month": 11,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-facts-zappa-doc/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-facts-zappa-doc/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "George Harrison released 'All Things Must Pass'",
@@ -10471,7 +11528,8 @@ const EDITORIAL_EVENTS = [
     "month": 11,
     "day": 27,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-all-things-must-pass/",
-    "socialAssetUrl": "https://umusic.box.com/s/fuun3egp3aqhph8lvjk8pi2ok25o8t77"
+    "socialAssetUrl": "https://umusic.box.com/s/fuun3egp3aqhph8lvjk8pi2ok25o8t77",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Lionel Richie's earns first solo US No.1 with 'Truly' (between 1978 and 1986 he wrote a No.1 US hit every year)",
@@ -10480,7 +11538,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1982,
     "month": 11,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lionel-richie-truly-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lionel-richie-truly-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lionel-richie"
   },
   {
     "name": "The Rolling Stones record get 'Yer Ya-Ya's Out!'",
@@ -10489,7 +11548,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 11,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-live-in-1969/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-stones-live-in-1969/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Deep Purple played the first of four nights at the Fillmore West, San Francisco, as part of first US tour",
@@ -10498,7 +11558,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 11,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/deep-purple-rock-fillmore/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/deep-purple-rock-fillmore/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Deep-Purple"
   },
   {
     "name": "George Harrison died",
@@ -10506,7 +11567,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2001,
     "month": 11,
-    "day": 29
+    "day": 29,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Patsy Cline enters UK chart with 'Heartaches', which didn't make US country chart",
@@ -10515,7 +11577,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1962,
     "month": 11,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-uk-hit-country-missed/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/patsy-cline-uk-hit-country-missed/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Patsy Cline Makes Her Carnegie Hall Debut",
@@ -10524,7 +11587,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1961,
     "month": 11,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/what-was-patsy-cline-really-like-on-stage/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/what-was-patsy-cline-really-like-on-stage/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   {
     "name": "Supertramp record 'Paris' live album",
@@ -10533,7 +11597,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 11,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/one-night-paris-supertramp/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/one-night-paris-supertramp/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/supertramp"
   },
   {
     "name": "Carpenters' 'Please Mr Postman' enters the Hot 100, on its way to No.1",
@@ -10542,7 +11607,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1974,
     "month": 11,
     "day": 23,
-    "articleUrl": "https://www.udiscovermusic.com/stories/postman-rings-twice-carpenters/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/postman-rings-twice-carpenters/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Brian Eno released 'Before And After Science' this month",
@@ -10551,7 +11617,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 12,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-before-and-after-science/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-before-and-after-science/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brian-eno"
   },
   {
     "name": "Tears For Fears' 'Shout' enters UK singles chart",
@@ -10560,7 +11627,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1984,
     "month": 12,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/tears-fears-shout-let/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/tears-fears-shout-let/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tears-for-fears"
   },
   {
     "name": "U2 released 'Songs Of Experience'",
@@ -10569,7 +11637,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 12,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/u2-songs-of-experience-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/u2-songs-of-experience-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   {
     "name": "Trisha Yearwood enters country chart with Gretchen Peters' 'On A Bus To St. Cloud'",
@@ -10596,7 +11665,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 12,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-rubber-soul-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beatles-rubber-soul-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "The Who release 'My Generation' album",
@@ -10605,7 +11675,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 12,
     "day": 3,
-    "socialAssetUrl": "https://umusic.box.com/s/qdd89qsdt2agenoavaiubwz2zz4x3ofe"
+    "socialAssetUrl": "https://umusic.box.com/s/qdd89qsdt2agenoavaiubwz2zz4x3ofe",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Frank Zappa died",
@@ -10613,7 +11684,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1993,
     "month": 12,
-    "day": 4
+    "day": 4,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "The Rolling Stones released 'December's Children (And Everybody's) in the US",
@@ -10622,7 +11694,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 12,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-decembers-children-and-everybodys/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-decembers-children-and-everybodys/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Bob Marley released 'Live!'",
@@ -10631,7 +11704,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 12,
     "day": 5,
-    "socialAssetUrl": "https://umusic.box.com/s/8rwur4xfbr1ysw84h0ud2v8dndnrbfft"
+    "socialAssetUrl": "https://umusic.box.com/s/8rwur4xfbr1ysw84h0ud2v8dndnrbfft",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   {
     "name": "Gwen Stefani\tThe Sweet Escape",
@@ -10640,7 +11714,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2012,
     "month": 12,
     "day": 5,
-    "socialAssetUrl": "https://umusic.box.com/s/pipz9pbdapy8hrky8chnrpncspnf9t8d"
+    "socialAssetUrl": "https://umusic.box.com/s/pipz9pbdapy8hrky8chnrpncspnf9t8d",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gwen-stefani"
   },
   {
     "name": "The Beach Boys' 'Concert' album makes No.1 in US",
@@ -10649,7 +11724,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 12,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-live-1/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-live-1/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Rolling Stones released 'Let It Bleed'",
@@ -10658,7 +11734,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 12,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-let-it-bleed-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-rolling-stones-let-it-bleed-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones' 'Little Red Rooster' makes No.1 in the UK",
@@ -10667,7 +11744,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1964,
     "month": 12,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-first-blues-record-to-top-the-uk-singles-chart/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-first-blues-record-to-top-the-uk-singles-chart/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Deep Purple's 'Kentucky Woman' released as UK single",
@@ -10676,7 +11754,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 12,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ritchie-blackmore-remembers-deep-purple-mk/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ritchie-blackmore-remembers-deep-purple-mk/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Deep-Purple"
   },
   {
     "name": "The Rolling Stones released 'Beggars Banquet'",
@@ -10686,7 +11765,8 @@ const EDITORIAL_EVENTS = [
     "month": 12,
     "day": 6,
     "articleUrl": "https://www.udiscovermusic.com/stories/beggars-banquet-rolling-stones-album/",
-    "socialAssetUrl": "https://umusic.box.com/s/5zj7zfh0h320f23i24bfcj13d3eeousp"
+    "socialAssetUrl": "https://umusic.box.com/s/5zj7zfh0h320f23i24bfcj13d3eeousp",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones' 'Let It Bleed' makes the US album chart",
@@ -10694,7 +11774,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1969,
     "month": 12,
-    "day": 6
+    "day": 6,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Who released 'WHO'",
@@ -10703,7 +11784,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2019,
     "month": 12,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-who-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-who-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Carpenters released 'Carpenters With The Royal Philharmonic Orchestra'",
@@ -10712,7 +11794,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2018,
     "month": 12,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/carpenters-orchestral-album-review/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/carpenters-orchestral-album-review/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Creedence Clearwater Revival released 'Pendulum'",
@@ -10721,7 +11804,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 12,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-pendulum/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-pendulum/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Creedence-Clearwater-Revival"
   },
   {
     "name": "Paul McCartney & Wings release 'Wild Life'",
@@ -10739,7 +11823,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1968,
     "month": 12,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/a-special-occasion-for-smokey-the-miracles/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/a-special-occasion-for-smokey-the-miracles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/smokey-robinson"
   },
   {
     "name": "The Beatles White album makes No.1 in the UK",
@@ -10747,7 +11832,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1968,
     "month": 12,
-    "day": 7
+    "day": 7,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/The-Beatles"
   },
   {
     "name": "Antonio Carlos Jobim died",
@@ -10755,7 +11841,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1994,
     "month": 12,
-    "day": 8
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/antonio-carlos-jobim"
   },
   {
     "name": "John Lennon died",
@@ -10763,7 +11850,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 1980,
     "month": 12,
-    "day": 8
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   {
     "name": "Juice WRLD died",
@@ -10781,7 +11869,8 @@ const EDITORIAL_EVENTS = [
     "month": 12,
     "day": 8,
     "articleUrl": "https://www.udiscovermusic.com/stories/rediscover-trouble-man/",
-    "socialAssetUrl": "https://umusic.box.com/s/rw5hu3yyownardocrfr44n0us0ifu8yb"
+    "socialAssetUrl": "https://umusic.box.com/s/rw5hu3yyownardocrfr44n0us0ifu8yb",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Queen released 'Flash Gordon'",
@@ -10790,7 +11879,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1980,
     "month": 12,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-flash-gordon/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-flash-gordon/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Styx's 'Babe' tops the US singles chart",
@@ -10799,7 +11889,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 12,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/styx-ballad-lives/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/styx-ballad-lives/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/styx"
   },
   {
     "name": "The Rolling Stones released 'Their Satanic Majesties Request'",
@@ -10808,7 +11899,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 12,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-their-satanic-majesties-request/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rolling-stones-their-satanic-majesties-request/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Carpenters' 'Christmas Portrait' makes US album chart",
@@ -10817,7 +11909,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 12,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-christmas-portrait-anniversary/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-carpenters-christmas-portrait-anniversary/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/carpenters"
   },
   {
     "name": "Frank Zappa starts Roxy residency",
@@ -10826,7 +11919,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1973,
     "month": 12,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/roxy-performances-frank-zappa/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/roxy-performances-frank-zappa/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   {
     "name": "Neil Diamond releases 'Hot August Night'",
@@ -10834,7 +11928,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": 1972,
     "month": 12,
-    "day": 9
+    "day": 9,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "Post Malone released 'Stoney'",
@@ -10852,7 +11947,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1963,
     "month": 12,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-beach-boys-little-saint-nick-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-beach-boys-little-saint-nick-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Queen released 'A Day At The Races'",
@@ -10861,7 +11957,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 12,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-a-day-at-the-races/"
+    "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/queen-a-day-at-the-races/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "The Beach Boys' 'Good Vibrations' tops the US singles chart",
@@ -10870,7 +11967,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1965,
     "month": 12,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-good-vibrations/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/beach-boys-good-vibrations/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "The Rolling Stones release 'Got LIVE If You Want It' album",
@@ -10880,7 +11978,8 @@ const EDITORIAL_EVENTS = [
     "month": 12,
     "day": 10,
     "articleUrl": "https://www.udiscovermusic.com/stories/live-if-you-want-it/",
-    "socialAssetUrl": "https://umusic.box.com/s/528siw45zj342sfnxj6byq96a7mcqvfj"
+    "socialAssetUrl": "https://umusic.box.com/s/528siw45zj342sfnxj6byq96a7mcqvfj",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "James Brown's 'Bodyheat' enters US R&B chart",
@@ -10889,7 +11988,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1976,
     "month": 12,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-turns-up-the-heat/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-turns-up-the-heat/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Neil Diamond's 'Stones' album enters UK charts",
@@ -10897,7 +11997,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1971,
     "month": 12,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "Snoop Dogg and Pharrell Williams' 'Drop It Like It's Hot' makes No.1 in the US",
@@ -10906,7 +12007,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 12,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/snoop-pharrell-drop/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/snoop-pharrell-drop/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/snoop-dogg"
   },
   {
     "name": "The Rolling Stones stage their 'Rock'n'Roll Circus'",
@@ -10914,7 +12016,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Performance",
     "origYear": 1968,
     "month": 12,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "The Rolling Stones' 'December's Children (And Everybody's) makes the US album charts",
@@ -10922,7 +12025,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1965,
     "month": 12,
-    "day": 11
+    "day": 11,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Ludacris - Red Light District",
@@ -10931,7 +12035,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2004,
     "month": 12,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ludacris-red-light-district-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ludacris-red-light-district-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ludacris"
   },
   {
     "name": "Smokey Robinson And The Miracles' 'Tears Of A Clown' tops the US singles chart",
@@ -10939,7 +12044,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1970,
     "month": 12,
-    "day": 12
+    "day": 12,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/smokey-robinson"
   },
   {
     "name": "Loretta Lynn recorded 'The Pill'",
@@ -10956,7 +12062,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1968,
     "month": 12,
-    "day": 13
+    "day": 13,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Vangelis' 'Opera Sauvage' makes US album chart",
@@ -10965,7 +12072,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1986,
     "month": 12,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-opera-sauvage/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rediscovered-gem-opera-sauvage/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vangelis"
   },
   {
     "name": "Queen and Laurel And Hardy battle in the charts",
@@ -10974,7 +12082,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 12,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-versus-laurel-and-hardy/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-versus-laurel-and-hardy/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Eminem released revival",
@@ -10983,7 +12092,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2017,
     "month": 12,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/revival-eminem-review/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/revival-eminem-review/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   {
     "name": "Marvin Gaye released 'Here, My Dear'",
@@ -10992,7 +12102,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1978,
     "month": 12,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/under-the-radar/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/under-the-radar/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   {
     "name": "Nicki Minaj released 'The Pinkprint'",
@@ -11001,7 +12112,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2014,
     "month": 12,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-pinkprint-nicki-minaj/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-pinkprint-nicki-minaj/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nicki-Minaj"
   },
   {
     "name": "The Who release 'The Who Sell Out'",
@@ -11010,7 +12122,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1967,
     "month": 12,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-the-who-sell-out-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/the-who-the-who-sell-out-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artists/the-who/"
   },
   {
     "name": "Bee Gees released 'Stayin' Alive'",
@@ -11019,7 +12132,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1977,
     "month": 12,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/stayin-alive-the-story-behind-the-iconic-bee-gees-anthem/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/stayin-alive-the-story-behind-the-iconic-bee-gees-anthem/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bee-gees"
   },
   {
     "name": "Guns N' Roses release 'Live ?!*@ Like A Suicide'",
@@ -11037,7 +12151,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2008,
     "month": 12,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/christmas-with-weezer-ep/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/christmas-with-weezer-ep/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/weezer"
   },
   {
     "name": "Queen Pen released 'My Melody'",
@@ -11046,7 +12161,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1997,
     "month": 12,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-pen-my-melody-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-pen-my-melody-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "Blondie's remix album 'Once More Into The Bleach' enters UK chart",
@@ -11055,7 +12171,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1988,
     "month": 12,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/remixing-of-a-bleach-blondie/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/remixing-of-a-bleach-blondie/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blondie"
   },
   {
     "name": "Katy Perry released 'Dark Horse'",
@@ -11064,7 +12181,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2013,
     "month": 12,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/katy-perry-dark-horse-song/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/katy-perry-dark-horse-song/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   {
     "name": "The Rolling Stones' 'Got Live If You Want It!' makes US album chart",
@@ -11072,7 +12190,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1966,
     "month": 12,
-    "day": 17
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Ariana Grande released 'Christmas & Chill'",
@@ -11081,7 +12200,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2015,
     "month": 12,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ariana-grande-christmas-and-chill-ep/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ariana-grande-christmas-and-chill-ep/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ariana-Grande"
   },
   {
     "name": "James Brown's 'Lost Someone' enters R&B singles chart",
@@ -11090,7 +12210,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1961,
     "month": 12,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-lost-found/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/james-brown-lost-found/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Mary J. Blige releases 'Growing Pains'",
@@ -11109,7 +12230,8 @@ const EDITORIAL_EVENTS = [
     "month": 12,
     "day": 18,
     "articleUrl": "https://www.udiscovermusic.com/stories/1967-sunshine-tomorrow-insight-beach-boys/",
-    "socialAssetUrl": "https://umusic.box.com/s/is5iteziziqdtuwoxfg9b3mo5ehu7hvp"
+    "socialAssetUrl": "https://umusic.box.com/s/is5iteziziqdtuwoxfg9b3mo5ehu7hvp",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   {
     "name": "Thelonious Monk recorded second Prestige Records session",
@@ -11117,7 +12239,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Recording",
     "origYear": 1952,
     "month": 12,
-    "day": 18
+    "day": 18,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thelonious-monk"
   },
   {
     "name": "Loretta Lynn tops country chart with 'Coal Miner's Daughter'",
@@ -11134,7 +12257,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Release",
     "origYear": null,
     "month": 12,
-    "day": 20
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "George Harrison releases Dark Horse",
@@ -11144,7 +12268,8 @@ const EDITORIAL_EVENTS = [
     "month": 12,
     "day": 20,
     "articleUrl": "https://www.udiscovermusic.com/behind-the-albums/george-harrison-dark-horse/",
-    "socialAssetUrl": "https://umusic.box.com/s/f4b80jud95s1erb3731cxsykiil360k4"
+    "socialAssetUrl": "https://umusic.box.com/s/f4b80jud95s1erb3731cxsykiil360k4",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   {
     "name": "Hank Williams' 'I'll Never Get Out Of This World Alive' enters country chart",
@@ -11153,7 +12278,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1952,
     "month": 12,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-sadly-poignant-swansong/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-sadly-poignant-swansong/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "The Rolling Stones' 'Let It Bleed' makes No.1 in the UK",
@@ -11161,7 +12287,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1969,
     "month": 12,
-    "day": 20
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Hank Williams records 'Cold, Cold Heart'",
@@ -11170,7 +12297,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1950,
     "month": 12,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-cold-cold-heart-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-cold-cold-heart-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   {
     "name": "Queen's reissue of 'Bohemian Rhapsody' makes No.1",
@@ -11179,7 +12307,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 12,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/bohemian-rhapsody-second-movement/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/bohemian-rhapsody-second-movement/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "DMX released 'Flesh Of My Flesh, Blood Of My Blood'",
@@ -11188,7 +12317,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1998,
     "month": 12,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/dmx-flesh-of-my-flesh-blood-of-my-blood/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/dmx-flesh-of-my-flesh-blood-of-my-blood/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/dmx"
   },
   {
     "name": "Nine Inch Nails released 'Not The Actual Events'",
@@ -11197,7 +12327,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 2016,
     "month": 12,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/nine-inch-nails-not-the-actual-events/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/nine-inch-nails-not-the-actual-events/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nine-Inch-Nails"
   },
   {
     "name": "Robert Palmer's 'Can We Still Be Friends' enters the US Hot 100",
@@ -11206,7 +12337,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1979,
     "month": 12,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-sings-todd-rundgren/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-sings-todd-rundgren/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   {
     "name": "The Rolling Stones' 'Their Satanic Majesties Request' makes US album chart",
@@ -11214,7 +12346,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Chart",
     "origYear": 1967,
     "month": 12,
-    "day": 22
+    "day": 22,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   {
     "name": "Juvenile released 'Juve The Great'",
@@ -11232,7 +12365,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1975,
     "month": 12,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/queen-at-the-odeon-a-night-in-pictures/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/queen-at-the-odeon-a-night-in-pictures/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   {
     "name": "James Brown died",
@@ -11240,7 +12374,8 @@ const EDITORIAL_EVENTS = [
     "occasion": "Death Day",
     "origYear": 2006,
     "month": 12,
-    "day": 25
+    "day": 25,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   {
     "name": "Isaac Hayes' '... To Be Continued' makes No.1 on US R&B chart",
@@ -11249,7 +12384,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1970,
     "month": 12,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/americas-lovin-feelin-isaac-hayes/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/americas-lovin-feelin-isaac-hayes/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/isaac-hayes"
   },
   {
     "name": "Diana Ross And The Supremes' 'Someday We'll Be Together' tops the US singles chart",
@@ -11258,7 +12394,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1969,
     "month": 12,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/supreme-run-comes-end/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/supreme-run-comes-end/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Ross"
   },
   {
     "name": "Paul McCartney enters UK singles chart with 'Beautiful Night'",
@@ -11284,7 +12421,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1991,
     "month": 12,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/dancing-up-the-charts-with-genesis/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/dancing-up-the-charts-with-genesis/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   {
     "name": "Neil Diamond peaks at No. 17 on Hot 100 with 'Walk On Water'",
@@ -11293,7 +12431,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1972,
     "month": 12,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-walks-water/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-walks-water/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   {
     "name": "Sam Cooke enters US chart with '(I Love You) For Sentimental Reasons'",
@@ -11302,7 +12441,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1957,
     "month": 12,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sam-cooke-got-sentimental/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sam-cooke-got-sentimental/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-cooke"
   },
   {
     "name": "Frank Sinatra recorded 'My Way'",
@@ -11312,7 +12452,8 @@ const EDITORIAL_EVENTS = [
     "month": 12,
     "day": 30,
     "articleUrl": "https://www.udiscovermusic.com/stories/frank-sinatra-my-way-story-behind-song/",
-    "socialAssetUrl": "https://umusic.box.com/s/xbca1ndjvv34v8kr7smf7bn9c0e5kn96"
+    "socialAssetUrl": "https://umusic.box.com/s/xbca1ndjvv34v8kr7smf7bn9c0e5kn96",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   {
     "name": "Frank Sinatra enters top 40 of Billboard R&B chart with 'That's Life'",
@@ -11321,7 +12462,8 @@ const EDITORIAL_EVENTS = [
     "origYear": 1966,
     "month": 12,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/soul-hit-sinatra-thats-life/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/soul-hit-sinatra-thats-life/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   }
 ];
 
@@ -11330,7 +12472,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1950,
     "month": 4,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/peter-frampton-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/peter-frampton-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peter-Frampton"
   },
   "Roger Miller": {
     "birthYear": 1936,
@@ -11348,13 +12491,15 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1950,
     "month": 1,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/blondie-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/blondie-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/blondie"
   },
   "Scott Walker": {
     "birthYear": 1943,
     "month": 1,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/stories/a-fire-escape-in-the-sky/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/a-fire-escape-in-the-sky/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/scott-walker"
   },
   "Max Roach": {
     "birthYear": 1924,
@@ -11366,7 +12511,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1953,
     "month": 1,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-pat-benatar-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-pat-benatar-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/pat-benatar"
   },
   "Mary J. Blige": {
     "birthYear": 1971,
@@ -11378,30 +12524,35 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1965,
     "month": 1,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rob-zombie-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rob-zombie-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rob-zombie"
   },
   "LL Cool J": {
     "birthYear": 1968,
     "month": 1,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-ll-cool-j-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-ll-cool-j-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ll-cool-j"
   },
   "Slick Rick": {
     "birthYear": 1965,
     "month": 1,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-slick-rick-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-slick-rick-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/slick-rick"
   },
   "Gene Krupa": {
     "birthYear": 1909,
     "month": 1,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-gene-krupa-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-gene-krupa-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gene-krupa"
   },
   "The Rolling Stones": {
     "birthYear": 1948,
     "month": 1,
-    "day": 17
+    "day": 17,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-rolling-stones"
   },
   "David Ruffin": {
     "birthYear": 1941,
@@ -11413,48 +12564,56 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1949,
     "month": 1,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-in-20-quotes/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/robert-palmer-in-20-quotes/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/robert-palmer"
   },
   "KISS": {
     "birthYear": 1950,
     "month": 1,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-kiss-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-kiss-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kiss"
   },
   "Sam Cooke": {
     "birthYear": 1931,
     "month": 1,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-sam-cooke-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-sam-cooke-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-cooke"
   },
   "Neil Diamond": {
     "birthYear": 1941,
     "month": 1,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-christmas-holiday-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/neil-diamond-christmas-holiday-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Neil-Diamond"
   },
   "Antonio Carlos Jobim": {
     "birthYear": 1927,
     "month": 1,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/antonio-carlos-jobim-best-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/antonio-carlos-jobim-best-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/antonio-carlos-jobim"
   },
   "Lana Del Rey": {
     "birthYear": 2012,
     "month": 1,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lana-del-rey-born-to-die-album/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lana-del-rey-born-to-die-album/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lana-del-rey"
   },
   "Sonic Youth": {
     "birthYear": 1956,
     "month": 2,
-    "day": 3
+    "day": 3,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sonic-youth"
   },
   "Bob Marley": {
     "birthYear": 1945,
     "month": 2,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-bob-marley-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-bob-marley-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bob-marley/"
   },
   "Guns N' Roses": {
     "birthYear": 1962,
@@ -11466,25 +12625,29 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1950,
     "month": 2,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-natalie-cole-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-natalie-cole-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/natalie"
   },
   "Eric Clapton": {
     "birthYear": 1969,
     "month": 2,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/matter-blind-faith/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/matter-blind-faith/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eric-Clapton"
   },
   "Sheryl Crow": {
     "birthYear": 1962,
     "month": 2,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-sheryl-crow-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-sheryl-crow-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sheryl-crow"
   },
   "Steppenwolf": {
     "birthYear": 1969,
     "month": 2,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/steppenwolf-born-even-wilder/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/steppenwolf-born-even-wilder/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steppenwolf"
   },
   "Mala Rodr\u00edguez": {
     "birthYear": 1979,
@@ -11496,13 +12659,15 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1955,
     "month": 2,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/playlists/roger-hodgson-and-supertramp-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/playlists/roger-hodgson-and-supertramp-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/supertramp"
   },
   "Slayer": {
     "birthYear": 1965,
     "month": 2,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-slayer-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-slayer-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/slayer"
   },
   "Ed Sheeran": {
     "birthYear": 1991,
@@ -11520,55 +12685,64 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1940,
     "month": 2,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-smokey-robinson-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-smokey-robinson-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/smokey-robinson"
   },
   "Rihanna": {
     "birthYear": 1988,
     "month": 2,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rihanna-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rihanna"
   },
   "George Harrison": {
     "birthYear": 1943,
     "month": 2,
     "day": 25,
-    "articleUrl": "https://www.thisdayinmusic.com/artists/the-beatles-100-facts/"
+    "articleUrl": "https://www.thisdayinmusic.com/artists/the-beatles-100-facts/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/George-Harrison"
   },
   "Erykah Badu": {
     "birthYear": 1971,
     "month": 2,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-erykah-badu-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-erykah-badu-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/erykah-badu"
   },
   "Fats Domino": {
     "birthYear": 1928,
     "month": 2,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/20-best-fats-domino-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/20-best-fats-domino-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Fats-Domino"
   },
   "Johnny Cash": {
     "birthYear": 1932,
     "month": 2,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/20-things-never-knew-johnny-cash/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/20-things-never-knew-johnny-cash/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/johnny-cash"
   },
   "Justin Bieber": {
     "birthYear": 1994,
     "month": 3,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-justin-bieber-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-justin-bieber-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/justin-bieber"
   },
   "Roger Daltrey": {
     "birthYear": 1944,
     "month": 3,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/roger-daltrey-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/roger-daltrey-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/roger-daltrey"
   },
   "Wes Montgomery": {
     "birthYear": 1923,
     "month": 3,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-wes-montgomery-pieces-jazz-essentials/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-wes-montgomery-pieces-jazz-essentials/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/wes-montgomery"
   },
   "Ornette Coleman": {
     "birthYear": 1930,
@@ -11580,43 +12754,50 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1972,
     "month": 3,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-common-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-common-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/common"
   },
   "Quincy Jones": {
     "birthYear": 1933,
     "month": 3,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/quincy-jones-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/quincy-jones-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Quincy-Jones"
   },
   "The Beach Boys": {
     "birthYear": 1941,
     "month": 3,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-beach-boys-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-beach-boys-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-beach-boys"
   },
   "Nat King Cole": {
     "birthYear": 1919,
     "month": 3,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-nat-king-cole-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-nat-king-cole-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nat-King-Cole"
   },
   "Thin Lizzy": {
     "birthYear": 1951,
     "month": 3,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-thin-lizzy-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-thin-lizzy-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thin-lizzy"
   },
   "Maroon 5": {
     "birthYear": 1979,
     "month": 3,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-maroon-5-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-maroon-5-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Maroon-5"
   },
   "Queen": {
     "birthYear": 1970,
     "month": 3,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-queen-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-queen-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Queen"
   },
   "Big Sean": {
     "birthYear": 1988,
@@ -11628,7 +12809,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1947,
     "month": 3,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-in-20-quotes/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/elton-john-in-20-quotes/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elton-John"
   },
   "Juvenile": {
     "birthYear": 1975,
@@ -11640,19 +12822,22 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1944,
     "month": 3,
     "day": 26,
-    "articleUrl": "https://www.thisdayinmusic.com/artists/the-supremes/"
+    "articleUrl": "https://www.thisdayinmusic.com/artists/the-supremes/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Ross"
   },
   "Genesis": {
     "birthYear": 1950,
     "month": 3,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/playlists/genesis-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/playlists/genesis-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Genesis"
   },
   "Jessie J": {
     "birthYear": 1988,
     "month": 3,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-jessie-j-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-jessie-j-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jessie-j"
   },
   "Mariah Carey": {
     "birthYear": 1969,
@@ -11664,55 +12849,64 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1986,
     "month": 3,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/lady-gaga-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/lady-gaga-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lady-gaga"
   },
   "Reba McEntire": {
     "birthYear": 1955,
     "month": 3,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/reba-mcentire-best-tracks/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/reba-mcentire-best-tracks/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/reba-mcentire"
   },
   "Vangelis": {
     "birthYear": 1943,
     "month": 3,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-vangelis-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-vangelis-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vangelis"
   },
   "Norah Jones": {
     "birthYear": 1979,
     "month": 3,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-norah-jones-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-norah-jones-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Norah-Jones"
   },
   "Marvin Gaye": {
     "birthYear": 1939,
     "month": 4,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/marvin-gaye-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Marvin-Gaye"
   },
   "Gary Moore": {
     "birthYear": 1952,
     "month": 4,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/gary-moore-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/gary-moore-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gary-moore"
   },
   "Muddy Waters": {
     "birthYear": 1913,
     "month": 4,
     "day": 4,
-    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/muddy-waters-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Muddy-Waters"
   },
   "Herbie Hancock": {
     "birthYear": 1940,
     "month": 4,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-herbie-hancock-albums/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-herbie-hancock-albums/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Herbie-Hancock"
   },
   "Vince Gill": {
     "birthYear": 1957,
     "month": 4,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-vince-gill-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-vince-gill-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/vince-gill"
   },
   "Peabo Bryson": {
     "birthYear": 1951,
@@ -11748,13 +12942,15 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1970,
     "month": 4,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/redman-best-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/redman-best-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/redman"
   },
   "Glen Campbell": {
     "birthYear": 1936,
     "month": 4,
     "day": 22,
-    "articleUrl": "https://www.thisdayinmusic.com/artists/glen-campbell/"
+    "articleUrl": "https://www.thisdayinmusic.com/artists/glen-campbell/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Glen-Campbell"
   },
   "Bing Crosby": {
     "birthYear": 1903,
@@ -11766,13 +12962,15 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1977,
     "month": 5,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-eric-church-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-eric-church-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/eric-church"
   },
   "James Brown": {
     "birthYear": 1933,
     "month": 5,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-james-brown-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-james-brown-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/james-brown"
   },
   "Bob Seger": {
     "birthYear": 1945,
@@ -11808,7 +13006,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1948,
     "month": 5,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/steve-winwood-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/steve-winwood-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/steve-winwood"
   },
   "Sidney Bechet": {
     "birthYear": 1897,
@@ -11820,25 +13019,29 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1948,
     "month": 5,
     "day": 15,
-    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/brian-eno-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/brian-eno"
   },
   "Janet Jackson": {
     "birthYear": 1966,
     "month": 5,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-janet-jackson-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-janet-jackson-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/janet-jackson"
   },
   "Rick Wakeman": {
     "birthYear": 1949,
     "month": 5,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/rick-wakeman-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/rick-wakeman-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rick-wakeman"
   },
   "Sam Smith": {
     "birthYear": 1992,
     "month": 5,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-sam-smith-songs-20-essential-tracks/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-sam-smith-songs-20-essential-tracks/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sam-smith"
   },
   "Jon Pardi": {
     "birthYear": 1985,
@@ -11856,24 +13059,28 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1941,
     "month": 5,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-bob-dylan-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-bob-dylan-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Bob-Dylan"
   },
   "Hank Williams": {
     "birthYear": 1949,
     "month": 5,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/hank-williams-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/hank-williams"
   },
   "Lenny Kravitz": {
     "birthYear": 1964,
     "month": 5,
-    "day": 26
+    "day": 26,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lenny-kravitz"
   },
   "Peggy Lee": {
     "birthYear": 1920,
     "month": 5,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-peggy-lee-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-peggy-lee-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Peggy-Lee"
   },
   "Don Williams": {
     "birthYear": 1939,
@@ -11885,19 +13092,22 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1975,
     "month": 5,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-jadakiss-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-jadakiss-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/jadakiss"
   },
   "Ronnie Wood": {
     "birthYear": 1947,
     "month": 6,
     "day": 1,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ronnie-wood-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ronnie-wood-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ronnie-wood"
   },
   "Kanye West": {
     "birthYear": 1977,
     "month": 6,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/kanye-west-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kanye-west"
   },
   "Chick Corea": {
     "birthYear": 1942,
@@ -11909,7 +13119,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1987,
     "month": 6,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/playlists/damn-the-best-of-kendrick-lamar-playlist/"
+    "articleUrl": "https://www.udiscovermusic.com/playlists/damn-the-best-of-kendrick-lamar-playlist/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kendrick-lamar"
   },
   "Paul McCartney": {
     "birthYear": 1942,
@@ -11927,19 +13138,22 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1949,
     "month": 6,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-lionel-richie-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-lionel-richie-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lionel-richie"
   },
   "Ariana Grande": {
     "birthYear": 1993,
     "month": 6,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-ariana-grande-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-ariana-grande-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Ariana-Grande"
   },
   "Deep Purple": {
     "birthYear": 1948,
     "month": 6,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/playlists/deep-purple-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/playlists/deep-purple-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Deep-Purple"
   },
   "Post Malone": {
     "birthYear": 1995,
@@ -11951,18 +13165,21 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1957,
     "month": 7,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/a-day-that-changed-the-course-of-history/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/a-day-that-changed-the-course-of-history/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lennon"
   },
   "Ringo Starr": {
     "birthYear": 1940,
     "month": 7,
     "day": 7,
-    "articleUrl": "https://www.thisdayinmusic.com/artists/the-beatles-100-facts/"
+    "articleUrl": "https://www.thisdayinmusic.com/artists/the-beatles-100-facts/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ringo-starr"
   },
   "Toby Keith": {
     "birthYear": 1961,
     "month": 7,
-    "day": 8
+    "day": 8,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/toby-keith"
   },
   "Nico": {
     "birthYear": 1925,
@@ -11973,85 +13190,99 @@ const ARTIST_BIRTHDAYS = {
   "Chris Cornell": {
     "birthYear": 1964,
     "month": 7,
-    "day": 20
+    "day": 20,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chris-cornell"
   },
   "Cat Stevens": {
     "birthYear": 1948,
     "month": 7,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-yusuf-cat-stevens-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-yusuf-cat-stevens-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/cat-stevens"
   },
   "Don Henley": {
     "birthYear": 1947,
     "month": 7,
     "day": 22,
-    "articleUrl": "https://www.thisdayinmusic.com/artists/the-eagles/"
+    "articleUrl": "https://www.thisdayinmusic.com/artists/the-eagles/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/don-henley"
   },
   "Rush": {
     "birthYear": 1953,
     "month": 7,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-rush-live-performances-shows-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-rush-live-performances-shows-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/rush"
   },
   "Buddy Guy": {
     "birthYear": 1936,
     "month": 7,
     "day": 30,
-    "articleUrl": "https://www.udiscovermusic.com/stories/buddy-guy-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/buddy-guy-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/buddy-guy"
   },
   "Elliott Smith": {
     "birthYear": 1969,
     "month": 8,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-elliott-smith-songs-20-essential-tracks/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-elliott-smith-songs-20-essential-tracks/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elliott-Smith"
   },
   "U2": {
     "birthYear": 1961,
     "month": 8,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-u2-songs-classic-hits/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-u2-songs-classic-hits/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/u2"
   },
   "Bill Evans": {
     "birthYear": 1929,
     "month": 8,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-bill-evans-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-bill-evans-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bill-evans"
   },
   "Billy Currington": {
     "birthYear": 1973,
     "month": 8,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-billy-currington-songs-essential-tracks/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-billy-currington-songs-essential-tracks/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/billy-currington"
   },
   "Ginger Baker": {
     "birthYear": 1939,
     "month": 8,
     "day": 19,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ginger-baker-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ginger-baker-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ginger-baker"
   },
   "Demi Lovato": {
     "birthYear": 1992,
     "month": 8,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-demi-lovato-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-demi-lovato-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/demi-lovato"
   },
   "Isaac Hayes": {
     "birthYear": 1942,
     "month": 8,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-isaac-hayes-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-isaac-hayes-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/isaac-hayes"
   },
   "Count Basie": {
     "birthYear": 1904,
     "month": 8,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-count-basie-pieces-jazz-essentials/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-count-basie-pieces-jazz-essentials/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/count-basie"
   },
   "Kacey Musgraves": {
     "birthYear": 1988,
     "month": 8,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-kacey-musgraves-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-kacey-musgraves-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/kacey-musgraves"
   },
   "Kenny Rogers": {
     "birthYear": 1938,
@@ -12069,7 +13300,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1917,
     "month": 8,
     "day": 22,
-    "articleUrl": "https://www.udiscovermusic.com/stories/john-lee-hooker-playlist-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/john-lee-hooker-playlist-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-lee-hooker"
   },
   "Keith Moon": {
     "birthYear": 1946,
@@ -12081,37 +13313,43 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1954,
     "month": 8,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-elvis-costello-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-elvis-costello-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Elvis-Costello"
   },
   "Shania Twain": {
     "birthYear": 1965,
     "month": 8,
     "day": 28,
-    "articleUrl": "https://www.udiscovermusic.com/stories/ten-best-shania-twain-songs-youve-never-heard/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/ten-best-shania-twain-songs-youve-never-heard/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/shania-twain"
   },
   "Horace Silver": {
     "birthYear": 1928,
     "month": 9,
     "day": 2,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-horace-silver-pieces/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-horace-silver-pieces/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Horace-Silve"
   },
   "Freddie Mercury": {
     "birthYear": 1946,
     "month": 9,
     "day": 5,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-freddie-mercury-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-freddie-mercury-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/freddie-mercury"
   },
   "Foxy Brown": {
     "birthYear": 1978,
     "month": 9,
     "day": 6,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-foxy-brown-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-foxy-brown-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/foxy-brown"
   },
   "Patsy Cline": {
     "birthYear": 1932,
     "month": 9,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/50-facts-about-patsy-cline/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/50-facts-about-patsy-cline/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Patsy-Cline"
   },
   "Roy Ayers": {
     "birthYear": 1940,
@@ -12123,13 +13361,15 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1977,
     "month": 9,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-ludacris-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-ludacris-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ludacris"
   },
   "Barry White": {
     "birthYear": 1944,
     "month": 9,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-barry-white-songs-soul-music/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-barry-white-songs-soul-music/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/barry-white"
   },
   "Mel Torm\u00e9": {
     "birthYear": 1925,
@@ -12141,7 +13381,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1983,
     "month": 9,
     "day": 14,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-amy-winehouse-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-amy-winehouse-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Amy-Winehouse"
   },
   "Trisha Yearwood": {
     "birthYear": 1964,
@@ -12152,7 +13393,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1945,
     "month": 9,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-bryan-ferry-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-bryan-ferry-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bryan-ferry"
   },
   "Bud Powell": {
     "birthYear": 1924,
@@ -12164,7 +13406,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1982,
     "month": 9,
     "day": 27,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-lil-wayne-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-lil-wayne-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/lil-wayne"
   },
   "Halsey": {
     "birthYear": 1994,
@@ -12181,19 +13424,22 @@ const ARTIST_BIRTHDAYS = {
   "Sting": {
     "birthYear": 1951,
     "month": 10,
-    "day": 2
+    "day": 2,
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Sting"
   },
   "Gwen Stefani": {
     "birthYear": 1969,
     "month": 10,
     "day": 3,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-gwen-stefani-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-gwen-stefani-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/gwen-stefani"
   },
   "John Mellencamp": {
     "birthYear": 1951,
     "month": 10,
     "day": 7,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-john-mellencamp-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-john-mellencamp-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/john-mellencamp"
   },
   "Tanya Tucker": {
     "birthYear": 1958,
@@ -12205,19 +13451,22 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1917,
     "month": 10,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-thelonious-monk-pieces/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-thelonious-monk-pieces/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/thelonious-monk"
   },
   "Sammy Hagar": {
     "birthYear": 1947,
     "month": 10,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/sammy-hagar-best-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/sammy-hagar-best-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/sammy-hagar"
   },
   "Eminem": {
     "birthYear": 1972,
     "month": 10,
     "day": 17,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-eminem-songs-playlist/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-eminem-songs-playlist/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Eminem"
   },
   "Anita O\u2019Day": {
     "birthYear": 1919,
@@ -12229,19 +13478,22 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1926,
     "month": 10,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/chuck-berry-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/chuck-berry"
   },
   "Ne-Yo": {
     "birthYear": 1979,
     "month": 10,
     "day": 18,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-ne-yo-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-ne-yo-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/ne-yo"
   },
   "Tom Petty": {
     "birthYear": 1950,
     "month": 10,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-tom-petty-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-tom-petty-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/tom-petty"
   },
   "Dizzy Gillespie": {
     "birthYear": 1917,
@@ -12253,19 +13505,22 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1986,
     "month": 10,
     "day": 24,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-drake-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-drake-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/drake"
   },
   "Katy Perry": {
     "birthYear": 1984,
     "month": 10,
     "day": 25,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-katy-perry-collaborations/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-katy-perry-collaborations/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/katy-perry"
   },
   "Keith Urban": {
     "birthYear": 1967,
     "month": 10,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-keith-urban-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-keith-urban-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/keith-urban"
   },
   "Bill Anderson": {
     "birthYear": 1937,
@@ -12283,43 +13538,50 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1949,
     "month": 11,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-bonnie-raitt-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-bonnie-raitt-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/bonnie-raitt"
   },
   "Creedence Clearwater Revival": {
     "birthYear": 1941,
     "month": 11,
     "day": 9,
-    "articleUrl": "https://www.udiscovermusic.com/playlists/ccr-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/playlists/ccr-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Creedence-Clearwater-Revival"
   },
   "Eve": {
     "birthYear": 1978,
     "month": 11,
     "day": 10,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-eve-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-eve-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/eve"
   },
   "Diana Krall": {
     "birthYear": 1964,
     "month": 11,
     "day": 16,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-diana-krall-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-diana-krall-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Diana-Krall"
   },
   "Dierks Bentley": {
     "birthYear": 1975,
     "month": 11,
     "day": 20,
-    "articleUrl": "https://www.udiscovermusic.com/stories/dierks-bentley-best-songs-feature/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/dierks-bentley-best-songs-feature/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Dierks-Bentley"
   },
   "Coleman Hawkins": {
     "birthYear": 1904,
     "month": 11,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-coleman-hawkins-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-coleman-hawkins-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/coleman-hawkin"
   },
   "The Game": {
     "birthYear": 1979,
     "month": 11,
     "day": 29,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-the-game-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-the-game-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-game"
   },
   "Billy Idol": {
     "birthYear": 1955,
@@ -12343,7 +13605,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1982,
     "month": 12,
     "day": 8,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-nicki-minaj-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-nicki-minaj-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Nicki-Minaj"
   },
   "Sammy Davis Jr.": {
     "birthYear": 1925,
@@ -12361,19 +13624,22 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1938,
     "month": 12,
     "day": 11,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-mccoy-tyner-albums/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-mccoy-tyner-albums/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/mccoy-tyner"
   },
   "Frank Sinatra": {
     "birthYear": 1915,
     "month": 12,
     "day": 12,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-frank-sinatra-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-frank-sinatra-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Sinatra"
   },
   "Taylor Swift": {
     "birthYear": 1989,
     "month": 12,
     "day": 13,
-    "articleUrl": "https://www.udiscovermusic.com/stories/20-best-taylor-swift-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/20-best-taylor-swift-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/taylor-swift"
   },
   "Billie Eilish": {
     "birthYear": 2001,
@@ -12385,7 +13651,8 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1940,
     "month": 12,
     "day": 21,
-    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-in-20-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/frank-zappa-in-20-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Frank-Zappa"
   },
   "Barbara Mandrell": {
     "birthYear": 1948,
@@ -12397,19 +13664,22 @@ const ARTIST_BIRTHDAYS = {
     "birthYear": 1935,
     "month": 12,
     "day": 26,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-four-tops-songs-motown/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-four-tops-songs-motown/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/Four-Tops"
   },
   "Donna Summer": {
     "birthYear": 1948,
     "month": 12,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-donna-summer-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-donna-summer-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/donna-summer"
   },
   "The Police": {
     "birthYear": 1942,
     "month": 12,
     "day": 31,
-    "articleUrl": "https://www.udiscovermusic.com/stories/best-the-police-songs/"
+    "articleUrl": "https://www.udiscovermusic.com/stories/best-the-police-songs/",
+    "artistPageUrl": "https://www.udiscovermusic.com/artist/the-police"
   }
 };
 
@@ -27300,4 +28570,583 @@ const BESTOF_ARTICLES = {
   "Frank Zappa": "https://www.udiscovermusic.com/stories/frank-zappa-in-20-songs/",
   "Chet Baker": "https://www.udiscovermusic.com/stories/best-chet-baker-pieces/",
   "Barbara Mandrell": "https://www.udiscovermusic.com/stories/best-barbara-mandrell-songs/"
+};
+
+const ARTIST_PAGES = {
+  "10cc": "https://www.udiscovermusic.com/artist/10cc",
+  "2Pac": "https://www.udiscovermusic.com/artist/2pac",
+  "50 Cent": "https://www.udiscovermusic.com/artist/50-cent",
+  "A Thousand Horses": "https://www.udiscovermusic.com/artist/a-thousand-horses",
+  "ABBA": "https://www.udiscovermusic.com/artist/abba",
+  "ABC": "https://www.udiscovermusic.com/artist/abc",
+  "Aerosmith": "https://www.udiscovermusic.com/artist/aerosmith",
+  "Agnetha F\u00e4ltskog": "https://www.udiscovermusic.com/artist/agnetha-faltskog",
+  "Alan Jackson": "https://www.udiscovermusic.com/artists/alan-jackson",
+  "Albert King": "https://www.udiscovermusic.com/artist/albert-king",
+  "Alice Cooper": "https://www.udiscovermusic.com/artist/Alice-Cooper",
+  "Alison Krauss": "https://www.udiscovermusic.com/artist/alison-krauss",
+  "Amy Winehouse": "https://www.udiscovermusic.com/artist/Amy-Winehouse",
+  "Andre Rieu": "https://www.udiscovermusic.com/artist/andre-rieu",
+  "Andrea Bocelli": "https://www.udiscovermusic.com/artist/andrea-bocelli",
+  "Andrew W.K.": "https://www.udiscovermusic.com/artist/andrew-w-k",
+  "Anna-Frid Lyngstad": "https://www.udiscovermusic.com/artist/frida-lyngstad",
+  "Anthrax": "https://www.udiscovermusic.com/artist/anthrax",
+  "Antonio Carlos Jobim": "https://www.udiscovermusic.com/artist/antonio-carlos-jobim",
+  "Apache Indian": "https://www.udiscovermusic.com/artist/apache-indian",
+  "Arcade Fire": "https://www.udiscovermusic.com/artist/arcade-fire",
+  "Ariana Grande": "https://www.udiscovermusic.com/artist/Ariana-Grande",
+  "Arrested Development": "https://www.udiscovermusic.com/artist/arrested-development",
+  "Ashley Campbell": "https://www.udiscovermusic.com/artist/ashley-campbell",
+  "Astrud Gilberto": "https://www.udiscovermusic.com/artist/astrud-gilberto",
+  "Aswad": "https://www.udiscovermusic.com/artist/aswad",
+  "Atlanta Rhythm Section": "https://www.udiscovermusic.com/artist/atlanta-rhythm-section",
+  "Audioslave": "https://www.udiscovermusic.com/artist/audioslave",
+  "B.B. King": "https://www.udiscovermusic.com/artist/b-b-king",
+  "Badfinger": "https://www.udiscovermusic.com/artist/badfinger",
+  "Barclay James Harvest": "https://www.udiscovermusic.com/artist/barclay-james-harvest",
+  "Barry White": "https://www.udiscovermusic.com/artist/barry-white",
+  "Beastie Boys": "https://www.udiscovermusic.com/artist/beastie-boys",
+  "Beck": "https://www.udiscovermusic.com/artist/Beck",
+  "Bee Gees": "https://www.udiscovermusic.com/artist/bee-gees",
+  "Belinda Carlisle": "https://www.udiscovermusic.com/artist/belinda-carlisle",
+  "Ben Harper": "https://www.udiscovermusic.com/artist/ben-harper",
+  "Ben Howard": "https://www.udiscovermusic.com/?post_type=artists&p=29929",
+  "Benny Andersson": "https://www.udiscovermusic.com/artist/benny-andersson",
+  "Big Country": "https://www.udiscovermusic.com/artist/big-country",
+  "Big Star": "https://www.udiscovermusic.com/artist/big-star",
+  "Bill Evans": "https://www.udiscovermusic.com/artist/bill-evans",
+  "Billie Holiday": "https://www.udiscovermusic.com/artist/billie-holiday",
+  "Billy Currington": "https://www.udiscovermusic.com/artist/billy-currington",
+  "Billy Fury": "https://www.udiscovermusic.com/artist/billy-fury",
+  "Billy Preston": "https://www.udiscovermusic.com/artist/billy-preston",
+  "Bj\u00f6rk": "https://www.udiscovermusic.com/artist/bjork",
+  "Black Eyed Peas": "https://www.udiscovermusic.com/artist/black-eyed-peas",
+  "Black Sabbath": "https://www.udiscovermusic.com/artist/black-sabbath",
+  "Black Uhuru": "https://www.udiscovermusic.com/artist/black-uhuru",
+  "Blind Faith": "https://www.udiscovermusic.com/artist/blind-faith",
+  "Blink 182": "https://www.udiscovermusic.com/artist/blink-182",
+  "Blondie": "https://www.udiscovermusic.com/artist/blondie",
+  "Blue Cheer": "https://www.udiscovermusic.com/artist/blue-cheer",
+  "Bo Diddley": "https://www.udiscovermusic.com/artist/bo-diddley",
+  "Bob Dylan": "https://www.udiscovermusic.com/artist/Bob-Dylan",
+  "Bob Marley": "https://www.udiscovermusic.com/artist/bob-marley/",
+  "Bon Jovi": "https://www.udiscovermusic.com/artist/Bon-Jovi",
+  "Bonnie Raitt": "https://www.udiscovermusic.com/artist/bonnie-raitt",
+  "Booker T": "https://www.udiscovermusic.com/artist/booker-t",
+  "Boyz II Men": "https://www.udiscovermusic.com/artist/Boyz-II-Men",
+  "Brantley Gilbert": "https://www.udiscovermusic.com/artist/brantley-gilbert",
+  "Brenda Holloway": "https://www.udiscovermusic.com/artist/brenda-holloway",
+  "Brian Eno": "https://www.udiscovermusic.com/artist/brian-eno",
+  "Bruce Springsteen": "https://www.udiscovermusic.com/artist/Bruce-Springsteen",
+  "Bryan Adams": "https://www.udiscovermusic.com/artist/bryan-adams",
+  "Bryan Ferry": "https://www.udiscovermusic.com/artist/bryan-ferry",
+  "Buddy Guy": "https://www.udiscovermusic.com/artist/buddy-guy",
+  "Buddy Holly": "https://www.udiscovermusic.com/artist/buddy-holly",
+  "Burning Spear": "https://www.udiscovermusic.com/artist/burning-spear",
+  "Burt Bacharach": "https://www.udiscovermusic.com/artist/burt-bacharach",
+  "Camel": "https://www.udiscovermusic.com/artist/camel",
+  "Canned Heat": "https://www.udiscovermusic.com/artist/canned-heat",
+  "Captain Beefheart": "https://www.udiscovermusic.com/artist/captain-beefheart",
+  "Caravan": "https://www.udiscovermusic.com/artist/caravan",
+  "Carpenters": "https://www.udiscovermusic.com/artist/carpenters",
+  "Cat Stevens": "https://www.udiscovermusic.com/artist/cat-stevens",
+  "Charlie Parker": "https://www.udiscovermusic.com/artist/Charlie-Parker",
+  "Cheap Trick": "https://www.udiscovermusic.com/artist/cheap-trick",
+  "Cher": "https://www.udiscovermusic.com/artist/cher",
+  "Chris Cornell": "https://www.udiscovermusic.com/artist/chris-cornell",
+  "Chris Stapleton": "https://www.udiscovermusic.com/artist/chris-stapleton",
+  "Chuck Berry": "https://www.udiscovermusic.com/artist/chuck-berry",
+  "Cinderella": "https://www.udiscovermusic.com/artist/cinderella",
+  "Climax Blues Band": "https://www.udiscovermusic.com/artist/climax-blues-band",
+  "Coleman Hawkins": "https://www.udiscovermusic.com/artist/coleman-hawkin",
+  "Commodores": "https://www.udiscovermusic.com/artist/commodores",
+  "Common": "https://www.udiscovermusic.com/artist/common",
+  "Corinne Bailey Rae": "https://www.udiscovermusic.com/artist/corinne-bailey-rae",
+  "Count Basie": "https://www.udiscovermusic.com/artist/count-basie",
+  "Counting Crows": "https://www.udiscovermusic.com/artist/counting-crows",
+  "Craig Armstrong": "https://www.udiscovermusic.com/artist/craig-armstrong",
+  "Cream": "https://www.udiscovermusic.com/artist/cream",
+  "Creedence Clearwater Revival": "https://www.udiscovermusic.com/artist/Creedence-Clearwater-Revival",
+  "Crowded House": "https://www.udiscovermusic.com/artist/crowded-house",
+  "Culture Club": "https://www.udiscovermusic.com/artist/culture-club",
+  "Cutting Crew": "https://www.udiscovermusic.com/artist/cutting-crew",
+  "D'Angelo": "https://www.udiscovermusic.com/artist/dangelo",
+  "Daniel Hope": "https://www.udiscovermusic.com/artist/daniel-hope",
+  "Darren Hayes": "https://www.udiscovermusic.com/artist/darren-hayes",
+  "David Bowie": "https://www.udiscovermusic.com/artist/david-bowie",
+  "Dean Martin": "https://www.udiscovermusic.com/artist/dean-martin",
+  "Debarge": "https://www.udiscovermusic.com/artist/debarge",
+  "Deep Purple": "https://www.udiscovermusic.com/artist/Deep-Purple",
+  "Def Leppard": "https://www.udiscovermusic.com/artist/Def-Leppard",
+  "Demi Lovato": "https://www.udiscovermusic.com/artist/demi-lovato",
+  "Demis Roussos": "https://www.udiscovermusic.com/artist/demis-roussos",
+  "Derek And The Dominos": "https://www.udiscovermusic.com/artist/Derek-And-The-Dominos",
+  "Desmond Dekker": "https://www.udiscovermusic.com/artist/desmond-dekker",
+  "Diana Krall": "https://www.udiscovermusic.com/artist/Diana-Krall",
+  "Diana Ross": "https://www.udiscovermusic.com/artist/Diana-Ross",
+  "Dierks Bentley": "https://www.udiscovermusic.com/artist/Dierks-Bentley",
+  "Dinah Washington": "https://www.udiscovermusic.com/artist/Dinah-Washington",
+  "Dio": "https://www.udiscovermusic.com/artist/dio",
+  "Dire Straits": "https://www.udiscovermusic.com/artist/Dire-Straits",
+  "Disclosure": "https://www.udiscovermusic.com/artist/disclosure",
+  "DMX": "https://www.udiscovermusic.com/artist/dmx",
+  "Don Henley": "https://www.udiscovermusic.com/artist/don-henley",
+  "Donna Summer": "https://www.udiscovermusic.com/artist/donna-summer",
+  "Dr Dre": "https://www.udiscovermusic.com/artist/dr-dre",
+  "Drake": "https://www.udiscovermusic.com/artist/drake",
+  "Duke Ellington": "https://www.udiscovermusic.com/artist/duke-ellington",
+  "Dusty Springfield": "https://www.udiscovermusic.com/artist/Dusty-Springfield",
+  "Eagles": "https://www.udiscovermusic.com/artist/Eagles",
+  "Eagles of Death Metal": "https://www.udiscovermusic.com/artist/eagles-of-death-metal",
+  "Eazy-E": "https://www.udiscovermusic.com/artist/Eazy-E",
+  "Eddie Cochran": "https://www.udiscovermusic.com/artist/Eddie-Cochran",
+  "Eddie Kendricks": "https://www.udiscovermusic.com/artist/Eddie-Kendrick",
+  "Eels": "https://www.udiscovermusic.com/artist/eels",
+  "Elbow": "https://www.udiscovermusic.com/artist/elbow",
+  "Ella Fitzgerald": "https://www.udiscovermusic.com/artist/Ella-Fitzgerald",
+  "Elliott Smith": "https://www.udiscovermusic.com/artist/Elliott-Smith",
+  "Elton John": "https://www.udiscovermusic.com/artist/Elton-John",
+  "Elvis Costello": "https://www.udiscovermusic.com/artist/Elvis-Costello",
+  "Elvis Presley": "https://www.udiscovermusic.com/artist/Elvis-Presley",
+  "Emeli Sand\u00e9": "https://www.udiscovermusic.com/artist/emeli-sande",
+  "Eminem": "https://www.udiscovermusic.com/artist/Eminem",
+  "Enigma": "https://www.udiscovermusic.com/artist/enigma",
+  "EPMD": "https://www.udiscovermusic.com/artist/epmd",
+  "Eric B and Rakim": "https://www.udiscovermusic.com/artist/eric-b-and-rakim",
+  "Eric Clapton": "https://www.udiscovermusic.com/artist/Eric-Clapton",
+  "Eric Church": "https://www.udiscovermusic.com/artist/eric-church",
+  "Erykah Badu": "https://www.udiscovermusic.com/artist/erykah-badu",
+  "Etta James": "https://www.udiscovermusic.com/artist/Etta-James",
+  "Eva Cassidy": "https://www.udiscovermusic.com/artist/eva-cassidy",
+  "Evanescence": "https://www.udiscovermusic.com/artist/evanescence",
+  "Eve": "https://www.udiscovermusic.com/artist/eve",
+  "Extreme": "https://www.udiscovermusic.com/artist/extreme",
+  "Fairport Convention": "https://www.udiscovermusic.com/artist/fairport-convention",
+  "Fall Out Boy": "https://www.udiscovermusic.com/artist/fall-out-boy",
+  "Fats Domino": "https://www.udiscovermusic.com/artist/Fats-Domino",
+  "Faust": "https://www.udiscovermusic.com/artist/faust",
+  "Fergie": "https://www.udiscovermusic.com/artist/fergie",
+  "Florence and the Machine": "https://www.udiscovermusic.com/artist/florence-and-the-machine",
+  "Foo Fighters": "https://www.udiscovermusic.com/artist/foo-fighter",
+  "Four Tops": "https://www.udiscovermusic.com/artist/Four-Tops",
+  "Foxy Brown": "https://www.udiscovermusic.com/artist/foxy-brown",
+  "Frank Sinatra": "https://www.udiscovermusic.com/artist/Frank-Sinatra",
+  "Frank Zappa": "https://www.udiscovermusic.com/artist/Frank-Zappa",
+  "Frankie Goes To Hollywood": "https://www.udiscovermusic.com/artist/frankie-goes-to-hollywood",
+  "Freddie Mercury": "https://www.udiscovermusic.com/artist/freddie-mercury",
+  "Free": "https://www.udiscovermusic.com/artist/Free",
+  "Gang Starr": "https://www.udiscovermusic.com/artist/gang-starr",
+  "Gary Clark": "https://www.udiscovermusic.com/artist/danny-wilson-gary-clark",
+  "Gary Moore": "https://www.udiscovermusic.com/artist/gary-moore",
+  "Gaz Coombe": "https://www.udiscovermusic.com/artist/gaz-coombe",
+  "Gene Krupa": "https://www.udiscovermusic.com/artist/gene-krupa",
+  "Gene Vincent": "https://www.udiscovermusic.com/artist/gene-vincent",
+  "Genesis": "https://www.udiscovermusic.com/artist/Genesis",
+  "Gentle Giant": "https://www.udiscovermusic.com/artist/gentle-giant",
+  "George Benson": "https://www.udiscovermusic.com/artist/george-benson",
+  "George Gershwin": "https://www.udiscovermusic.com/artist/george-gershwi",
+  "George Harrison": "https://www.udiscovermusic.com/artist/George-Harrison",
+  "George Michael": "https://www.udiscovermusic.com/artist/george-michael",
+  "George Strait": "https://www.udiscovermusic.com/artist/George-Strait",
+  "George Thorogood": "https://www.udiscovermusic.com/artist/George-Thorogood",
+  "Georgie Fame": "https://www.udiscovermusic.com/artist/Georgie-Fame",
+  "Ghostface Killah": "https://www.udiscovermusic.com/artist/ghostface-killah",
+  "Ginger Baker": "https://www.udiscovermusic.com/artist/ginger-baker",
+  "Glen Campbell": "https://www.udiscovermusic.com/artist/Glen-Campbell",
+  "Gong": "https://www.udiscovermusic.com/artist/gong",
+  "Grace Jones": "https://www.udiscovermusic.com/artist/Grace-Jones",
+  "Graham Parker": "https://www.udiscovermusic.com/artist/graham-parker",
+  "Grand Funk Railroad": "https://www.udiscovermusic.com/artist/grand-funk-railroad",
+  "Gregory Isaacs": "https://www.udiscovermusic.com/artist/gregory-isaacs",
+  "Gregory Porter": "https://www.udiscovermusic.com/artist/gregory-porter",
+  "Guns N Roses": "https://www.udiscovermusic.com/artist/Guns-N-Roses",
+  "Gwen Stefani": "https://www.udiscovermusic.com/artist/gwen-stefani",
+  "Haddaway": "https://www.udiscovermusic.com/artist/haddawa",
+  "Hank Williams": "https://www.udiscovermusic.com/artist/hank-williams",
+  "Heart": "https://www.udiscovermusic.com/artist/heart",
+  "Heaven 17": "https://www.udiscovermusic.com/artist/Heaven-17",
+  "Helmet": "https://www.udiscovermusic.com/artist/helmet",
+  "Herbie Hancock": "https://www.udiscovermusic.com/artist/Herbie-Hancock",
+  "Hoobastank": "https://www.udiscovermusic.com/artist/hoobastank",
+  "Horace Silver": "https://www.udiscovermusic.com/artist/Horace-Silve",
+  "Howlin Wolf": "https://www.udiscovermusic.com/artist/Howlin-Wolf",
+  "Hoyt Axton": "https://www.udiscovermusic.com/artist/hoyt-axton",
+  "Huey Lewis & The News": "https://www.udiscovermusic.com/artist/huey-lewis-and-the-news",
+  "Human League": "https://www.udiscovermusic.com/artist/human-league",
+  "Humble Pie": "https://www.udiscovermusic.com/artist/Humble-Pie",
+  "Ice Cube": "https://www.udiscovermusic.com/artist/ice-cube",
+  "Iggy Pop": "https://www.udiscovermusic.com/artist/Iggy-Pop",
+  "Imagine Dragons": "https://www.udiscovermusic.com/artist/Imagine-Dragons",
+  "INXS": "https://www.udiscovermusic.com/artist/inxs",
+  "Iron Maiden": "https://www.udiscovermusic.com/artist/iron-maiden",
+  "Isaac Hayes": "https://www.udiscovermusic.com/artist/isaac-hayes",
+  "It Bites": "https://www.udiscovermusic.com/artist/it-bites",
+  "J.J. Cale": "https://www.udiscovermusic.com/artist/j-j-cale",
+  "Jack Bruce": "https://www.udiscovermusic.com/artist/jack-bruce",
+  "Jack Johnson": "https://www.udiscovermusic.com/artist/jack-johnson",
+  "Jackie Wilson": "https://www.udiscovermusic.com/artist/jackie-wilson",
+  "Jacques Brel": "https://www.udiscovermusic.com/artist/jacques-brel",
+  "Jadakiss": "https://www.udiscovermusic.com/artist/jadakiss",
+  "James": "https://www.udiscovermusic.com/artist/james",
+  "James Bay": "https://www.udiscovermusic.com/artist/james-bay",
+  "James Blake": "https://www.udiscovermusic.com/artist/james-blake",
+  "James Brown": "https://www.udiscovermusic.com/artist/james-brown",
+  "James Morrison": "https://www.udiscovermusic.com/artist/james-morrison",
+  "James Taylor": "https://www.udiscovermusic.com/artist/james-taylor",
+  "Jane's Addiction": "https://www.udiscovermusic.com/artist/janes-addiction",
+  "Janet Jackson": "https://www.udiscovermusic.com/artist/janet-jackson",
+  "Japan": "https://www.udiscovermusic.com/artist/japan-david-sylvian",
+  "Jay Z": "https://www.udiscovermusic.com/artist/jay-z",
+  "Jeff Buckley": "https://www.udiscovermusic.com/artist/jeffbuckley",
+  "Jeru The Damaja": "https://www.udiscovermusic.com/artist/jeru-the-damaja",
+  "Jessie J": "https://www.udiscovermusic.com/artist/jessie-j",
+  "Jethro Tull": "https://www.udiscovermusic.com/artist/jethro-tul",
+  "Jimi Hendrix": "https://www.udiscovermusic.com/artist/jimi-hendrix",
+  "Jimmy Buffett": "https://www.udiscovermusic.com/artist/jimmy-buffett",
+  "Jimmy Cliff": "https://www.udiscovermusic.com/artist/jimmy-cliff",
+  "Jimmy Eat World": "https://www.udiscovermusic.com/artist/jimmy-eat-world",
+  "Jimmy Ruffin": "https://www.udiscovermusic.com/artist/jimmy-ruffin",
+  "Jimmy Smith": "https://www.udiscovermusic.com/artist/jimmy-smith",
+  "Joan Armatrading": "https://www.udiscovermusic.com/artist/joan-armatrading",
+  "Joan Baez": "https://www.udiscovermusic.com/artist/joan-baez",
+  "Joe Cocker": "https://www.udiscovermusic.com/artist/joe-cocker",
+  "Joe Jackson": "https://www.udiscovermusic.com/artist/joe-jackson",
+  "Joe Sample": "https://www.udiscovermusic.com/artist/joe-sample",
+  "Joe Walsh": "https://www.udiscovermusic.com/artist/joe-walsh-the-james-gang",
+  "John Coltrane": "https://www.udiscovermusic.com/artists/john-coltrane/",
+  "John Fogerty": "https://www.udiscovermusic.com/artist/john-fogerty",
+  "John Lee Hooker": "https://www.udiscovermusic.com/artist/john-lee-hooker",
+  "John Lennon": "https://www.udiscovermusic.com/artist/john-lennon",
+  "John Martyn": "https://www.udiscovermusic.com/artist/john-martyn",
+  "John Mayall": "https://www.udiscovermusic.com/artist/john-mayall",
+  "John Mellencamp": "https://www.udiscovermusic.com/artist/john-mellencamp",
+  "John Williams": "https://www.udiscovermusic.com/artist/john-williams",
+  "Johnny Cash": "https://www.udiscovermusic.com/artist/johnny-cash",
+  "Johnny Gill": "https://www.udiscovermusic.com/artist/johnny-gill",
+  "Joni Mitchell": "https://www.udiscovermusic.com/artist/joni-mitchell",
+  "Jonny Lang": "https://www.udiscovermusic.com/artist/jonny-lang",
+  "Jorge Ben": "https://www.udiscovermusic.com/artist/jorge-ben",
+  "Joss Stone": "https://www.udiscovermusic.com/artist/joss-stone",
+  "Jr. Walker & the All-Stars": "https://www.udiscovermusic.com/artist/jr-walker-the-all-stars",
+  "Julie London": "https://www.udiscovermusic.com/artist/julie-london",
+  "Jurassic 5": "https://www.udiscovermusic.com/artist/jurassic-5",
+  "Justin Bieber": "https://www.udiscovermusic.com/artist/justin-bieber",
+  "Kacey Musgraves": "https://www.udiscovermusic.com/artist/kacey-musgraves",
+  "Kaiser Chiefs": "https://www.udiscovermusic.com/artist/kaiser-chiefs",
+  "Kanye West": "https://www.udiscovermusic.com/artist/kanye-west",
+  "Kate Bush": "https://www.udiscovermusic.com/artist/kate-bush",
+  "Katy Perry": "https://www.udiscovermusic.com/artist/katy-perry",
+  "Keane": "https://www.udiscovermusic.com/artist/keane",
+  "Keith Jarrett": "https://www.udiscovermusic.com/artist/keith-jarrett",
+  "Keith Richards": "https://www.udiscovermusic.com/artist/keith-richards",
+  "Keith Urban": "https://www.udiscovermusic.com/artist/keith-urban",
+  "Kendrick Lamar": "https://www.udiscovermusic.com/artist/kendrick-lamar",
+  "Kenny Burrell": "https://www.udiscovermusic.com/artist/kenny-burrell",
+  "Kevin Coyne": "https://www.udiscovermusic.com/artist/kevin-coyne",
+  "Killing Joke": "https://www.udiscovermusic.com/artist/killing-joke",
+  "Kim Carnes": "https://www.udiscovermusic.com/artist/kim-carnes",
+  "Kip Moore": "https://www.udiscovermusic.com/artist/kip-moore",
+  "KISS": "https://www.udiscovermusic.com/artist/kiss",
+  "Klaatu": "https://www.udiscovermusic.com/artist/klaatu",
+  "Kool and the Gang": "https://www.udiscovermusic.com/artist/kool-and-the-gang",
+  "Lady A": "https://www.udiscovermusic.com/artist/lady-antebellum",
+  "Lady Gaga": "https://www.udiscovermusic.com/artist/lady-gaga",
+  "Lana Del Rey": "https://www.udiscovermusic.com/artist/lana-del-rey",
+  "Laura Marling": "https://www.udiscovermusic.com/artist/laura-marling",
+  "Led Zeppelin": "https://www.udiscovermusic.com/artist/led-zeppelin",
+  "Lee Scratch Perry": "https://www.udiscovermusic.com/artist/lee-scratch-perry",
+  "Lenny Kravitz": "https://www.udiscovermusic.com/artist/lenny-kravitz",
+  "Leon Russell": "https://www.udiscovermusic.com/artist/leon-russell",
+  "Lester Young": "https://www.udiscovermusic.com/artist/lester-young",
+  "Level 42": "https://www.udiscovermusic.com/artist/level-42",
+  "Lightnin' Hopkins": "https://www.udiscovermusic.com/artist/lightnin-hopkins",
+  "Lil Wayne": "https://www.udiscovermusic.com/artist/lil-wayne",
+  "Linton Kwesi Johnson": "https://www.udiscovermusic.com/artist/linton-kwesi-johnson",
+  "Lionel Richie": "https://www.udiscovermusic.com/artist/lionel-richie",
+  "Little Big Town": "https://www.udiscovermusic.com/artist/little-big-town",
+  "Little Richard": "https://www.udiscovermusic.com/artist/little-richard",
+  "LL Cool J": "https://www.udiscovermusic.com/artist/ll-cool-j",
+  "Lloyd Cole": "https://www.udiscovermusic.com/artist/lloyd-cole",
+  "Lorde": "https://www.udiscovermusic.com/artist/lorde",
+  "Loreena McKennitt": "https://www.udiscovermusic.com/artist/loreena-mckennit",
+  "Louis Armstrong": "https://www.udiscovermusic.com/artist/louis-armstrong",
+  "Lucinda Williams": "https://www.udiscovermusic.com/artist/lucinda-williams",
+  "Ludacris": "https://www.udiscovermusic.com/artist/ludacris",
+  "Ludovico Einaudi": "https://www.udiscovermusic.com/artist/ludovico-einaudi",
+  "Luke Bryan": "https://www.udiscovermusic.com/artist/luke-bryan",
+  "Lulu": "https://www.udiscovermusic.com/artist/lulu",
+  "Lynyrd Skynyrd": "https://www.udiscovermusic.com/artist/lynyrd-skynyrd",
+  "Maddie & Tae": "https://www.udiscovermusic.com/artist/maddie-and-tae",
+  "Madonna": "https://www.udiscovermusic.com/artist/madonna",
+  "Magazine": "https://www.udiscovermusic.com/artists/magazine/",
+  "Marc Almond": "https://www.udiscovermusic.com/artist/marc-almond",
+  "Marilyn Manson": "https://www.udiscovermusic.com/artist/Marilyn-Manson",
+  "Mark Knopfler": "https://www.udiscovermusic.com/artist/Mark-Knopfler",
+  "Maroon 5": "https://www.udiscovermusic.com/artist/Maroon-5",
+  "Martha Reeves & The Vandellas": "https://www.udiscovermusic.com/artists/martha-reeves-the-vandellas/",
+  "Marvin Gaye": "https://www.udiscovermusic.com/artist/Marvin-Gaye",
+  "Mary Hopkin": "https://www.udiscovermusic.com/artist/mary-hopkin",
+  "Mary J Blige": "https://www.udiscovermusic.com/artist/Mary-J-Blige",
+  "Mary Wells": "https://www.udiscovermusic.com/artist/mary-wells",
+  "Massive Attack": "https://www.udiscovermusic.com/artist/massive-attack",
+  "Master P": "https://www.udiscovermusic.com/artist/master-p",
+  "Maxi Priest": "https://www.udiscovermusic.com/artist/maxi-priest",
+  "McCoy Tyner": "https://www.udiscovermusic.com/artist/mccoy-tyner",
+  "Meat Loaf": "https://www.udiscovermusic.com/artist/meat-loaf",
+  "Megadeth": "https://www.udiscovermusic.com/artist/megadeth",
+  "Mel Torme": "https://www.udiscovermusic.com/artist/mel-torm",
+  "Melody Gardot": "https://www.udiscovermusic.com/artist/Melody-Gardot",
+  "Metallica": "https://www.udiscovermusic.com/artist/Metallica",
+  "Method Man": "https://www.udiscovermusic.com/artist/method-man",
+  "Michael Jackson": "https://www.udiscovermusic.com/artist/Michael-Jackson",
+  "Michael Nyman": "https://www.udiscovermusic.com/artist/michael-nyman",
+  "Mike and the Mechanics": "https://www.udiscovermusic.com/artist/mike-and-the-mechanics",
+  "Mike Oldfield": "https://www.udiscovermusic.com/artist/mike-oldfield",
+  "Miles Davis": "https://www.udiscovermusic.com/artist/Miles-Davis",
+  "Minnie Riperton": "https://www.udiscovermusic.com/artist/minnie-riperton",
+  "Morrissey": "https://www.udiscovermusic.com/artist/Morrissey",
+  "Motley Crue": "https://www.udiscovermusic.com/artist/motley-crue",
+  "Motorhead": "https://www.udiscovermusic.com/artist/Motorhead",
+  "Muddy Waters": "https://www.udiscovermusic.com/artist/Muddy-Waters",
+  "Mumford & Sons": "https://www.udiscovermusic.com/artist/Mumford-And-Sons",
+  "N.W.A": "https://www.udiscovermusic.com/artist/NWA",
+  "Nancy Griffith": "https://www.udiscovermusic.com/artist/Nanci-Griffith",
+  "NAS": "https://www.udiscovermusic.com/artist/Nas",
+  "Nat King Cole": "https://www.udiscovermusic.com/artist/Nat-King-Cole",
+  "Natalie Cole": "https://www.udiscovermusic.com/artist/natalie",
+  "Nazareth": "https://www.udiscovermusic.com/artist/nazareth",
+  "Ne-Yo": "https://www.udiscovermusic.com/artist/ne-yo",
+  "Neil Diamond": "https://www.udiscovermusic.com/artist/Neil-Diamond",
+  "Neil Young": "https://www.udiscovermusic.com/artist/neil-young",
+  "Nelly": "https://www.udiscovermusic.com/artist/nelly",
+  "Neneh Cherry": "https://www.udiscovermusic.com/artist/neneh-cherry",
+  "New Edition": "https://www.udiscovermusic.com/artist/new-edition",
+  "New York Dolls": "https://www.udiscovermusic.com/artist/New-York-Dolls",
+  "Nick Drake": "https://www.udiscovermusic.com/artist/Nick-Drake",
+  "Nicki Minaj": "https://www.udiscovermusic.com/artist/Nicki-Minaj",
+  "Nik Kershaw": "https://www.udiscovermusic.com/artist/nik-kershaw",
+  "Nina Simone": "https://www.udiscovermusic.com/artist/Nina-Simone",
+  "Nine Inch Nails": "https://www.udiscovermusic.com/artist/Nine-Inch-Nails",
+  "Nirvana": "https://www.udiscovermusic.com/artist/Nirvana",
+  "Nitty Gritty Dirt Band": "https://www.udiscovermusic.com/artist/Nitty-Gritty-Dirt-Band",
+  "No Doubt": "https://www.udiscovermusic.com/artist/No-Doubt",
+  "Norah Jones": "https://www.udiscovermusic.com/artist/Norah-Jones",
+  "Ocean Colour Scene": "https://www.udiscovermusic.com/artist/Ocean-Colour-Scene",
+  "OMD": "https://www.udiscovermusic.com/artist/OMD",
+  "OneRepublic": "https://www.udiscovermusic.com/artists/onerepublic/",
+  "Onyx": "https://www.udiscovermusic.com/artist/onyx",
+  "Oscar Peterson": "https://www.udiscovermusic.com/artist/Oscar-Peterson",
+  "Otis Redding": "https://www.udiscovermusic.com/artist/Otis-Redding",
+  "Papa Roach": "https://www.udiscovermusic.com/artist/papa-roach",
+  "Pat Benatar": "https://www.udiscovermusic.com/artist/pat-benatar",
+  "Pato Banton": "https://www.udiscovermusic.com/artist/pato-banton",
+  "Patsy Cline": "https://www.udiscovermusic.com/artist/Patsy-Cline",
+  "Patty Griffin": "https://www.udiscovermusic.com/artist/patty-griffin",
+  "Paul McCartney and Wings": "https://www.udiscovermusic.com/artist/paul-mccartney-and-wings",
+  "Paul Simon": "https://www.udiscovermusic.com/artist/paul-simon",
+  "Paul Weller": "https://www.udiscovermusic.com/artist/paul-weller",
+  "Peaches & Herb": "https://www.udiscovermusic.com/artist/peaches-and-herb",
+  "Pearl Jam": "https://www.udiscovermusic.com/artist/pearl-jam",
+  "Peggy Lee": "https://www.udiscovermusic.com/artist/Peggy-Lee",
+  "Pete Townshend": "https://www.udiscovermusic.com/artist/Pete-Townshend",
+  "Peter Frampton": "https://www.udiscovermusic.com/artist/Peter-Frampton",
+  "Peter Gabriel": "https://www.udiscovermusic.com/artist/peter-gabriel",
+  "Phil Collins": "https://www.udiscovermusic.com/artist/Phil-Collins",
+  "Phil Manzanera": "https://www.udiscovermusic.com/artist/phil-manzanera",
+  "PiL": "https://www.udiscovermusic.com/artist/pil",
+  "Pink Floyd": "https://www.udiscovermusic.com/artist/Pink-Floyd",
+  "PJ Harvey": "https://www.udiscovermusic.com/artist/pj-harvey",
+  "Placebo": "https://www.udiscovermusic.com/artist/placebo",
+  "Poco": "https://www.udiscovermusic.com/artist/poco",
+  "Poison": "https://www.udiscovermusic.com/artist/Poison",
+  "Portishead": "https://www.udiscovermusic.com/artist/portishead",
+  "Prince": "https://www.udiscovermusic.com/artist/Prince",
+  "Public Enemy": "https://www.udiscovermusic.com/artist/Public-Enemy",
+  "Pulp": "https://www.udiscovermusic.com/artist/Pulp",
+  "Queen": "https://www.udiscovermusic.com/artist/Queen",
+  "Queens of the Stone Age": "https://www.udiscovermusic.com/artist/Queens-Of-The-Stone-Age",
+  "Quicksilver Messenger Service": "https://www.udiscovermusic.com/artist/quicksilver-messenger-service",
+  "Quincy Jones": "https://www.udiscovermusic.com/artist/Quincy-Jones",
+  "R.E.M.": "https://www.udiscovermusic.com/artists/r-e-m/",
+  "Rainbow": "https://www.udiscovermusic.com/artist/rainbow",
+  "Rammstein": "https://www.udiscovermusic.com/artist/rammstein",
+  "Ray Charles": "https://www.udiscovermusic.com/artist/ray-charles",
+  "Reba McEntire": "https://www.udiscovermusic.com/artist/reba-mcentire",
+  "Red Hot Chili Peppers": "https://www.udiscovermusic.com/artist/red-hot-chili-peppers",
+  "Redman": "https://www.udiscovermusic.com/artist/redman",
+  "Richie Havens": "https://www.udiscovermusic.com/artist/richie-havens",
+  "Rick James": "https://www.udiscovermusic.com/artist/rick-james",
+  "Rick Nelson": "https://www.udiscovermusic.com/artist/rick-nelson",
+  "Rick Ross": "https://www.udiscovermusic.com/artist/rick-ross",
+  "Rick Wakeman": "https://www.udiscovermusic.com/artist/rick-wakeman",
+  "Rihanna": "https://www.udiscovermusic.com/artist/rihanna",
+  "Ringo Starr": "https://www.udiscovermusic.com/artist/ringo-starr",
+  "Rise Against": "https://www.udiscovermusic.com/artist/rise-against",
+  "Rob Zombie": "https://www.udiscovermusic.com/artist/rob-zombie",
+  "Robbie Williams": "https://www.udiscovermusic.com/artist/robbie-williams",
+  "Robert Cray": "https://www.udiscovermusic.com/artist/robert-cray",
+  "Robert Glasper": "https://www.udiscovermusic.com/artist/robert-glasper",
+  "Robert Palmer": "https://www.udiscovermusic.com/artist/robert-palmer",
+  "Robert Plant": "https://www.udiscovermusic.com/artist/robert-plant",
+  "Rod Stewart": "https://www.udiscovermusic.com/artist/rod-stewart",
+  "Roger Daltrey": "https://www.udiscovermusic.com/artist/roger-daltrey",
+  "Ronnie Lane": "https://www.udiscovermusic.com/artist/ronnie-lane",
+  "Ronnie Wood": "https://www.udiscovermusic.com/artist/ronnie-wood",
+  "Rory Gallagher": "https://www.udiscovermusic.com/artist/rory-gallagher",
+  "Rosanne Cash": "https://www.udiscovermusic.com/artist/rosanne-cash",
+  "Roxy Music": "https://www.udiscovermusic.com/artist/roxy-music",
+  "Roy Orbison": "https://www.udiscovermusic.com/artist/roy-orbison",
+  "Ruff Ryders": "https://www.udiscovermusic.com/artist/ruff-ryders",
+  "Rufus Wainwright": "https://www.udiscovermusic.com/artist/rufus-wainwright",
+  "Rush": "https://www.udiscovermusic.com/artist/rush",
+  "Ryan Adams": "https://www.udiscovermusic.com/artist/ryan-adams",
+  "Saint Etienne": "https://www.udiscovermusic.com/artist/saint-etienne",
+  "Salt-n-Pepa": "https://www.udiscovermusic.com/artist/salt-n-pepa",
+  "Sam Cooke": "https://www.udiscovermusic.com/artist/sam-cooke",
+  "Sam Hunt": "https://www.udiscovermusic.com/artist/sam-hunt",
+  "Sam Smith": "https://www.udiscovermusic.com/artist/sam-smith",
+  "Sammy Hagar": "https://www.udiscovermusic.com/artist/sammy-hagar",
+  "Sandy Denny": "https://www.udiscovermusic.com/artist/sandy-denny",
+  "Schiller": "https://www.udiscovermusic.com/artists/schiller/",
+  "Scorpions": "https://www.udiscovermusic.com/artist/scorpions",
+  "Scott Walker": "https://www.udiscovermusic.com/artist/scott-walker",
+  "Secret Garden": "https://www.udiscovermusic.com/artist/secret-garden",
+  "Sensational Alex Harvey Band": "https://www.udiscovermusic.com/artist/sensational-alex-harvey-band",
+  "Serge Gainsbourg": "https://www.udiscovermusic.com/artist/serge-gainsbourg",
+  "S\u00e9rgio Mendes": "https://www.udiscovermusic.com/artist/sergio-mendes",
+  "Sex Pistols": "https://www.udiscovermusic.com/artist/sex-pistols",
+  "Shaggy": "https://www.udiscovermusic.com/artist/shagg",
+  "Sham 69": "https://www.udiscovermusic.com/artist/sham-69",
+  "Shania Twain": "https://www.udiscovermusic.com/artist/shania-twain",
+  "Sheryl Crow": "https://www.udiscovermusic.com/artist/sheryl-crow",
+  "Simple Minds": "https://www.udiscovermusic.com/artist/simple-minds",
+  "Siouxsie & The Banshees": "https://www.udiscovermusic.com/artist/siouxsie-and-the-banshees",
+  "Slayer": "https://www.udiscovermusic.com/artist/slayer",
+  "Slick Rick": "https://www.udiscovermusic.com/artist/slick-rick",
+  "Sly & Robbie": "https://www.udiscovermusic.com/artist/sly-and-robbie",
+  "Small Faces": "https://www.udiscovermusic.com/artist/small-faces",
+  "Smokey Robinson": "https://www.udiscovermusic.com/artist/smokey-robinson",
+  "Smokey Robinson & The Miracles": "https://www.udiscovermusic.com/artist/smokey-robinson-the-miracles",
+  "Snoop Dogg": "https://www.udiscovermusic.com/artist/snoop-dogg",
+  "Snow Patrol": "https://www.udiscovermusic.com/artist/snow-patrol",
+  "Soft Cell": "https://www.udiscovermusic.com/artist/soft-cell",
+  "Sonic Youth": "https://www.udiscovermusic.com/artist/sonic-youth",
+  "Sonny Boy Williamson": "https://www.udiscovermusic.com/artist/sonny-boy-williamson",
+  "Soul II Soul": "https://www.udiscovermusic.com/artist/soul-ii-soul",
+  "Soundgarden": "https://www.udiscovermusic.com/artist/soundgarden",
+  "Spandau Ballet": "https://www.udiscovermusic.com/artist/spandau-ballet",
+  "Sparks": "https://www.udiscovermusic.com/artist/sparks",
+  "Spice Girls": "https://www.udiscovermusic.com/artist/spice-girls",
+  "Stan Getz": "https://www.udiscovermusic.com/artist/stan-getz",
+  "Status Quo": "https://www.udiscovermusic.com/artist/status-quo",
+  "Steel Pulse": "https://www.udiscovermusic.com/artist/steel-pulse",
+  "Steely Dan": "https://www.udiscovermusic.com/artist/steely-dan",
+  "Steppenwolf": "https://www.udiscovermusic.com/artist/steppenwolf",
+  "Stereophonics": "https://www.udiscovermusic.com/artist/stereophonics",
+  "Stero MCs": "https://www.udiscovermusic.com/artist/stereo-mcs",
+  "Steve Earle": "https://www.udiscovermusic.com/artist/Steve-Earle",
+  "Steve Hackett": "https://www.udiscovermusic.com/artist/steve-hackett",
+  "Steve Hillage": "https://www.udiscovermusic.com/artist/steve-hillage",
+  "Steve Miller Band": "https://www.udiscovermusic.com/artist/steve-miller-band",
+  "Steve Winwood": "https://www.udiscovermusic.com/artist/steve-winwood",
+  "Steven Tyler": "https://www.udiscovermusic.com/artist/steven-tyler",
+  "Stevie Wonder": "https://www.udiscovermusic.com/artist/stevie-wonder",
+  "Sting": "https://www.udiscovermusic.com/artist/Sting",
+  "Styx": "https://www.udiscovermusic.com/artist/styx",
+  "Sublime": "https://www.udiscovermusic.com/artist/sublime",
+  "Sum 41": "https://www.udiscovermusic.com/artist/sum-41",
+  "Supertramp": "https://www.udiscovermusic.com/artist/supertramp",
+  "Suzanne Vega": "https://www.udiscovermusic.com/artist/suzanne-vega",
+  "T. Bone Walker": "https://www.udiscovermusic.com/artist/t-bone-walker",
+  "T. Rex": "https://www.udiscovermusic.com/artist/t-rex",
+  "Take That": "https://www.udiscovermusic.com/artist/take-that",
+  "Tammi Terrell": "https://www.udiscovermusic.com/artist/tammi-terrell",
+  "Tangerine Dream": "https://www.udiscovermusic.com/artist/tangerine-dream",
+  "Taylor Swift": "https://www.udiscovermusic.com/artist/taylor-swift",
+  "Tears For Fears": "https://www.udiscovermusic.com/artist/tears-for-fears",
+  "Teena Marie": "https://www.udiscovermusic.com/artist/teena-marie",
+  "Temple Of The Dog": "https://www.udiscovermusic.com/artist/temple-of-the-dog",
+  "Tesla": "https://www.udiscovermusic.com/artist/tesla",
+  "Texas": "https://www.udiscovermusic.com/artist/texas",
+  "The All-American Rejects": "https://www.udiscovermusic.com/artist/the-all-american-rejects",
+  "The Allman Brothers Band": "https://www.udiscovermusic.com/artist/the-allman-brothers-band",
+  "The Band": "https://www.udiscovermusic.com/artist/the-band",
+  "The Beach Boys": "https://www.udiscovermusic.com/artist/the-beach-boys",
+  "The Beatles": "https://www.udiscovermusic.com/artist/The-Beatles",
+  "The Brothers Johnson": "https://www.udiscovermusic.com/artist/the-brothers-johnson/",
+  "The Cadillac Three": "https://www.udiscovermusic.com/artist/the-cadillac-three",
+  "The Chemical Brothers": "https://www.udiscovermusic.com/artist/the-chemical-brothers",
+  "The Clash": "https://www.udiscovermusic.com/artist/the-clash",
+  "The Common Linnets": "https://www.udiscovermusic.com/artist/the-common-linnets",
+  "The Cranberries": "https://www.udiscovermusic.com/artist/the-cranberries",
+  "The Cure": "https://www.udiscovermusic.com/artist/the-cure/",
+  "The Damned": "https://www.udiscovermusic.com/artist/the-damned",
+  "The Doors": "https://www.udiscovermusic.com/artist/the-doors",
+  "The Flying Burrito Brothers": "https://www.udiscovermusic.com/artist/the-flying-burrito-brothers",
+  "The Game": "https://www.udiscovermusic.com/artist/the-game",
+  "The Human League": "https://www.udiscovermusic.com/artist/the-human-league",
+  "The Isley Brothers": "https://www.udiscovermusic.com/artist/the-isley-brothers",
+  "The Jackson 5": "https://www.udiscovermusic.com/artist/jackson-5",
+  "The Jam": "https://www.udiscovermusic.com/artist/the-jam",
+  "The Killers": "https://www.udiscovermusic.com/artist/the-killers",
+  "The Kinks": "https://www.udiscovermusic.com/artist/the-kinks",
+  "The Kooks": "https://www.udiscovermusic.com/artist/the-kooks",
+  "The Libertines": "https://www.udiscovermusic.com/artist/the-libertines",
+  "The Lumineers": "https://www.udiscovermusic.com/artist/the-lumineers",
+  "The Mamas & The Papas": "https://www.udiscovermusic.com/artist/the-mamas-and-the-papas",
+  "The Marvelettes": "https://www.udiscovermusic.com/artist/the-marvelettes",
+  "The Mavericks": "https://www.udiscovermusic.com/artist/the-mavericks",
+  "The Moody Blues": "https://www.udiscovermusic.com/artist/the-moody-blues",
+  "The Ozark Mountain Daredevils": "https://www.udiscovermusic.com/artist/ozark-mountain-daredevils",
+  "The Police": "https://www.udiscovermusic.com/artist/the-police",
+  "The Righteous Brothers": "https://www.udiscovermusic.com/artist/the-righteous-brothers",
+  "The Rolling Stones": "https://www.udiscovermusic.com/artist/the-rolling-stones",
+  "The Roots": "https://www.udiscovermusic.com/artist/the-roots",
+  "The Ruts": "https://www.udiscovermusic.com/artist/the-ruts",
+  "The Smashing Pumpkins": "https://www.udiscovermusic.com/artist/the-smashing-pumpkins",
+  "The Statler Brothers": "https://www.udiscovermusic.com/artist/the-statler-brothers",
+  "The Style Council": "https://www.udiscovermusic.com/artist/the-style-council",
+  "The Supremes": "https://www.udiscovermusic.com/artist/the-supremes",
+  "The Temptations": "https://www.udiscovermusic.com/artist/the-temptations",
+  "The Tubes": "https://www.udiscovermusic.com/artist/the-tubes",
+  "The Velvet Underground": "https://www.udiscovermusic.com/artist/the-velvet-underground",
+  "The Verve": "https://www.udiscovermusic.com/artist/the-verve",
+  "The Walker Brothers": "https://www.udiscovermusic.com/artist/the-walker-brothers",
+  "The Who": "https://www.udiscovermusic.com/artists/the-who/",
+  "Thelma Houston": "https://www.udiscovermusic.com/artist/thelma-houston",
+  "Thelonious Monk": "https://www.udiscovermusic.com/artist/thelonious-monk",
+  "Thin Lizzy": "https://www.udiscovermusic.com/artist/thin-lizzy",
+  "Thomas Rhett": "https://www.udiscovermusic.com/artist/thomas-rhett",
+  "Three Dog Night": "https://www.udiscovermusic.com/artist/three-dog-night",
+  "Tim McGraw": "https://www.udiscovermusic.com/artist/tim-mcgraw",
+  "Toby Keith": "https://www.udiscovermusic.com/artist/toby-keith",
+  "Tom Jones": "https://www.udiscovermusic.com/artist/tom-jones",
+  "Tom Petty": "https://www.udiscovermusic.com/artist/tom-petty",
+  "Tom Waits": "https://www.udiscovermusic.com/artist/tom-waits",
+  "Toots and the Maytals": "https://www.udiscovermusic.com/artist/toots-and-the-maytals",
+  "Tori Amos": "https://www.udiscovermusic.com/artist/tori-amos",
+  "Traffic": "https://www.udiscovermusic.com/artist/traffic",
+  "Traveling Wilburys": "https://www.udiscovermusic.com/artist/traveling-wilburys",
+  "U2": "https://www.udiscovermusic.com/artist/u2",
+  "UB40": "https://www.udiscovermusic.com/artist/ub40",
+  "Ultravox": "https://www.udiscovermusic.com/artist/ultravox",
+  "Underworld": "https://www.udiscovermusic.com/artist/underworld",
+  "Van der Graaf Generator": "https://www.udiscovermusic.com/artist/van-der-graaf-generator",
+  "Vangelis": "https://www.udiscovermusic.com/artist/vangelis",
+  "Vince Gill": "https://www.udiscovermusic.com/artist/vince-gill",
+  "Weezer": "https://www.udiscovermusic.com/artist/weezer",
+  "Wes Montgomery": "https://www.udiscovermusic.com/artist/wes-montgomery",
+  "Wet Wet Wet": "https://www.udiscovermusic.com/artist/wet-wet-wet",
+  "Whitesnake": "https://www.udiscovermusic.com/artist/whitesnake",
+  "will.i.am": "https://www.udiscovermusic.com/artist/will-i-am",
+  "William Orbit": "https://www.udiscovermusic.com/artist/william-orbit",
+  "Willie Nelson": "https://www.udiscovermusic.com/artist/willie-nelson",
+  "Wilson Pickett": "https://www.udiscovermusic.com/artist/wilson-pickett",
+  "Wishbone Ash": "https://www.udiscovermusic.com/artist/wishbone-ash",
+  "Wolfmother": "https://www.udiscovermusic.com/artist/wolfmother",
+  "Yeah Yeah Yeahs": "https://www.udiscovermusic.com/artist/yeah-yeah-yeahs",
+  "Yello": "https://www.udiscovermusic.com/artist/yello",
+  "Yes": "https://www.udiscovermusic.com/artist/yes",
+  "Young Jeezy": "https://www.udiscovermusic.com/artist/young-jeezy",
+  "Zucchero": "https://www.udiscovermusic.com/artist/zucchero"
 };

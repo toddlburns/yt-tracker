@@ -1294,14 +1294,14 @@ let PIPED_INSTANCES = [
     'piped-api.codespace.cz',
     'pipedapi.adminforge.de'
 ];
-const ALLORIGINS_PROXY = 'https://api.allorigins.win/raw?url=';
+const ALLORIGINS_PROXY = 'https://api.codetabs.com/v1/proxy/?quest=';
 const CORS_PROXIES = [
+    'https://api.codetabs.com/v1/proxy/?quest=',
     'https://api.allorigins.win/raw?url=',
     'https://corsproxy.io/?',
-    'https://api.codetabs.com/v1/proxy?quest=',
 ];
 const DAYS_WINDOW = 6;
-const CONCURRENCY = 8;
+const CONCURRENCY = 12;
 const RSS_CACHE_TTL = 10 * 60 * 1000; // 10 minute cache for RSS results
 const MAX_CHANNELS = 200;
 
@@ -1690,7 +1690,7 @@ async function fetchChannelVideos(channel) {
     return [];
 }
 
-async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 5000, externalSignal) {
+async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 4000, externalSignal) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
 
@@ -1701,9 +1701,10 @@ async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 5000, externalSigna
     }
 
     try {
-        const res = await fetch(proxyUrl + encodeURIComponent(url), {
-            signal: controller.signal
-        });
+        // codetabs takes raw URL, allorigins/corsproxy need encoded
+        const needsEncode = proxyUrl.includes('allorigins') || proxyUrl.includes('corsproxy');
+        const fullUrl = proxyUrl + (needsEncode ? encodeURIComponent(url) : url);
+        const res = await fetch(fullUrl, { signal: controller.signal });
         clearTimeout(timeoutId);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const text = await res.text();
@@ -1864,6 +1865,8 @@ async function _refreshFeedInner() {
 
     const queue = [...channels];
     const results = [];
+    let lastRenderTime = 0;
+    const RENDER_INTERVAL = 800; // Re-render at most every 800ms during loading
 
     async function worker() {
         while (queue.length > 0) {
@@ -1888,6 +1891,13 @@ async function _refreshFeedInner() {
             } catch {}
             completed++;
             progressBar.style.width = Math.round((completed / total) * 100) + '%';
+            // Progressive rendering: update the feed periodically as results come in
+            const now = Date.now();
+            if (results.length > 0 && now - lastRenderTime > RENDER_INTERVAL) {
+                lastRenderTime = now;
+                allVideos = [...results].sort((a, b) => b.uploaded - a.uploaded);
+                renderFeed();
+            }
         }
     }
 

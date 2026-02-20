@@ -1876,7 +1876,7 @@ async function _refreshFeedInner() {
                 if (videos) {
                     const recent = videos.filter(v => {
                         if (v.uploaded <= cutoff) return false;
-                        if (v.duration > 0 && v.duration <= 30) return false;
+                        if (v.duration > 0 && v.duration <= 60) return false;
                         // For omni channels, only include videos mentioning an artist
                         if (channel.type === 'omni') {
                             const titleLower = v.title.toLowerCase();

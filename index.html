@@ -241,6 +241,125 @@
             background: rgba(0, 255, 255, 0.15); color: #00FFFF;
         }
 
+        /* Editorial Hub */
+        .editorial-header { margin-bottom: 16px; }
+        .editorial-header h2 {
+            font-family: 'Righteous', cursive; font-size: 1.4rem;
+            background: linear-gradient(135deg, #00FFFF 0%, #FF69B4 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .editorial-header p { font-size: 0.8rem; color: #7DD3E8; margin-top: 4px; }
+        .editorial-filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+        .editorial-filter-btn {
+            padding: 6px 14px; font-size: 0.8rem; border-radius: 20px;
+            border: 1px solid rgba(0, 255, 255, 0.3); background: transparent;
+            color: #7DD3E8; cursor: pointer; font-family: 'Inter', sans-serif;
+            transition: all 0.3s;
+        }
+        .editorial-filter-btn:hover { border-color: #00FFFF; color: #00FFFF; }
+        .editorial-filter-btn.active { background: rgba(0, 255, 255, 0.15); border-color: #00FFFF; color: #00FFFF; }
+        .editorial-date-group {
+            font-size: 0.85rem; font-weight: 600; color: #00FFFF;
+            padding: 10px 0 6px; margin-top: 8px;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .editorial-date-group .editorial-days-badge {
+            font-size: 0.7rem; font-weight: 500; color: #7DD3E8;
+            background: rgba(0, 255, 255, 0.1); padding: 2px 10px; border-radius: 10px;
+        }
+        .editorial-card {
+            display: flex; gap: 8px; padding: 6px 10px; border-radius: 6px;
+            border-bottom: 1px solid rgba(0, 255, 255, 0.06);
+            background: rgba(0, 20, 40, 0.4); transition: all 0.2s; align-items: center;
+        }
+        .editorial-card:hover {
+            background: rgba(0, 255, 255, 0.06);
+        }
+        .editorial-card-icon { font-size: 0.85rem; min-width: 20px; text-align: center; }
+        .editorial-card-body { flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .editorial-card-artist {
+            font-weight: 600; font-size: 0.8rem; color: #E0F7FF; white-space: nowrap;
+            overflow: hidden; text-overflow: ellipsis;
+        }
+        .editorial-card-desc {
+            font-size: 0.7rem; color: #7DD3E8; line-height: 1.2;
+        }
+        .editorial-anniv-badge {
+            display: inline-block; font-size: 0.6rem; font-weight: 600;
+            padding: 1px 6px; border-radius: 8px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.3) 0%, rgba(255, 105, 180, 0.3) 100%);
+            color: #E0C4FF; border: 1px solid rgba(139, 92, 246, 0.3);
+            white-space: nowrap;
+        }
+        /* Round-number anniversaries (multiples of 5) */
+        .editorial-round .editorial-anniv-badge {
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.3) 0%, rgba(139, 92, 246, 0.4) 100%);
+            color: #B0FFFF; border-color: rgba(0, 255, 255, 0.4);
+        }
+        .editorial-round .editorial-card-artist { color: #00FFFF; }
+        /* Major milestones (25, 50, 75, 100) */
+        .editorial-milestone .editorial-anniv-badge {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.35) 0%, rgba(255, 105, 180, 0.35) 100%);
+            color: #FFE680; border-color: rgba(255, 215, 0, 0.5);
+            font-size: 0.65rem; padding: 2px 8px;
+        }
+        .editorial-milestone .editorial-card-artist { color: #FFE680; }
+        .editorial-milestone {
+            background: rgba(255, 215, 0, 0.04);
+            border-left: 2px solid rgba(255, 215, 0, 0.4);
+        }
+        .editorial-card-links {
+            display: inline-flex; gap: 8px; align-items: center; margin-left: auto;
+        }
+        .editorial-video-link, .editorial-wiki-link, .editorial-article-link, .editorial-social-link {
+            display: inline-flex; align-items: center; gap: 3px;
+            font-size: 0.65rem; text-decoration: none; transition: color 0.2s;
+            white-space: nowrap;
+        }
+        .editorial-video-link { color: #FF69B4; }
+        .editorial-video-link:hover { color: #FF89C4; }
+        .editorial-wiki-link { color: #7DD3E8; cursor: pointer; }
+        .editorial-wiki-link:hover { color: #00FFFF; }
+        .editorial-article-link { color: #B794F6; }
+        .editorial-article-link:hover { color: #D4BBFF; }
+        .editorial-social-link { color: #FF9F43; }
+        .editorial-social-link:hover { color: #FFBE76; }
+
+        /* Collapsible artist group */
+        .editorial-artist-group {
+            border-bottom: 1px solid rgba(0, 255, 255, 0.06);
+        }
+        .editorial-group-header {
+            display: flex; gap: 8px; padding: 6px 10px; border-radius: 6px;
+            background: rgba(0, 20, 40, 0.4); align-items: center;
+            cursor: pointer; transition: all 0.2s; user-select: none;
+        }
+        .editorial-group-header:hover { background: rgba(0, 255, 255, 0.06); }
+        .editorial-group-header .editorial-card-icon { font-size: 0.85rem; min-width: 20px; text-align: center; }
+        .editorial-group-header .editorial-card-artist {
+            font-weight: 600; font-size: 0.95rem; color: #00FFFF;
+        }
+        .editorial-group-count {
+            font-size: 0.6rem; color: #7DD3E8; background: rgba(0, 255, 255, 0.1);
+            padding: 1px 6px; border-radius: 8px; margin-left: 4px; white-space: nowrap;
+        }
+        .editorial-group-chevron {
+            margin-left: auto; font-size: 0.7rem; color: #5a8a9a; transition: transform 0.2s;
+        }
+        .editorial-artist-group.open .editorial-group-chevron { transform: rotate(90deg); }
+        .editorial-group-body {
+            display: none; padding: 2px 0 4px 28px;
+        }
+        .editorial-artist-group.open .editorial-group-body { display: block; }
+        .editorial-group-body .editorial-card {
+            background: rgba(0, 20, 40, 0.2); padding: 4px 10px; border-radius: 4px;
+            border-bottom: none; border-left: 2px solid rgba(0, 255, 255, 0.1);
+        }
+        .editorial-birthday { border-left: 2px solid #FF69B4; }
+        .editorial-no-data { text-align: center; padding: 40px; color: #5a8a9a; font-size: 0.9rem; }
+
         /* Progress bar */
         .progress-wrap {
             width: 100%; height: 6px;
@@ -957,6 +1076,9 @@
         <button class="tab-btn" onclick="switchTab('news')" id="tab-news">
             Music News
         </button>
+        <button class="tab-btn" onclick="switchTab('editorial')" id="tab-editorial">
+            Editorial Hub
+        </button>
     </div>
 
     <!-- YouTube Tab -->
@@ -1047,6 +1169,22 @@
         </div>
         <div id="news-feed"></div>
     </div>
+
+    <!-- Editorial Hub Tab -->
+    <div class="tab-content" id="content-editorial">
+        <div class="editorial-header">
+            <h2>Editorial Hub</h2>
+            <p>Upcoming anniversaries for priority artists (next 30 days)</p>
+        </div>
+        <div class="editorial-filters">
+            <button class="editorial-filter-btn active" onclick="filterEditorial('all')">All</button>
+            <button class="editorial-filter-btn" onclick="filterEditorial('birthday')">Birthdays</button>
+            <button class="editorial-filter-btn" onclick="filterEditorial('release')">Releases</button>
+            <button class="editorial-filter-btn" onclick="filterEditorial('chart')">Chart Milestones</button>
+            <button class="editorial-filter-btn" onclick="filterEditorial('video')">Videos Available</button>
+        </div>
+        <div id="editorial-feed"></div>
+    </div>
 </div>
 
 <!-- Image Lightbox -->
@@ -1055,6 +1193,7 @@
     <img id="lightbox-img" src="" alt="Video thumbnail">
 </div>
 
+<script src="editorial_data.js"></script>
 <script>
 // ─── Default Channels ───────────────────────────────────────────
 const DEFAULT_CHANNELS = [
@@ -1170,7 +1309,9 @@ const MAX_CHANNELS = 200;
 let channels = [];
 let allVideos = [];
 let dismissed = [];
+let dismissedSet = new Set(); // Fast O(1) lookup for dismissed video IDs
 let workingInstance = null;
+let workingCorsProxy = null; // Cache the CORS proxy that works
 let currentTab = 'youtube';
 
 // ─── Password Protection ──────────────────────────────────────
@@ -1242,6 +1383,9 @@ function switchTab(tab) {
     document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
     document.getElementById(`tab-${tab}`).classList.add('active');
     document.getElementById(`content-${tab}`).classList.add('active');
+    if (tab === 'editorial' && !editorialRendered) {
+        renderEditorial();
+    }
 }
 
 // ─── Init ──────────────────────────────────────────────────────
@@ -1412,7 +1556,10 @@ async function loadDismissed() {
     // Load from localStorage cache first for instant display
     const cached = localStorage.getItem('yt_tracker_dismissed_ids');
     if (cached) {
-        try { dismissed = JSON.parse(cached).map(id => ({ id, ts: 0 })); } catch {}
+        try {
+            dismissed = JSON.parse(cached).map(id => ({ id, ts: 0 }));
+            dismissedSet = new Set(dismissed.map(d => d.id));
+        } catch {}
     }
     // Then sync from cloud
     try {
@@ -1420,6 +1567,7 @@ async function loadDismissed() {
         if (res.ok) {
             const ids = await res.json();
             dismissed = ids.map(id => ({ id, ts: 0 }));
+            dismissedSet = new Set(ids);
             localStorage.setItem('yt_tracker_dismissed_ids', JSON.stringify(ids));
         }
     } catch {}
@@ -1434,8 +1582,9 @@ function saveDismissedToCloud(videoId, action) {
 }
 
 function dismissVideo(videoId) {
-    if (!dismissed.some(d => d.id === videoId)) {
+    if (!dismissedSet.has(videoId)) {
         dismissed.push({ id: videoId, ts: Date.now() });
+        dismissedSet.add(videoId);
         // Update local cache
         const ids = dismissed.map(d => d.id);
         localStorage.setItem('yt_tracker_dismissed_ids', JSON.stringify(ids));
@@ -1448,7 +1597,7 @@ function dismissVideo(videoId) {
 }
 
 function isDismissed(videoId) {
-    return dismissed.some(d => d.id === videoId);
+    return dismissedSet.has(videoId);
 }
 
 // ─── Piped API ─────────────────────────────────────────────────
@@ -1541,9 +1690,15 @@ async function fetchChannelVideos(channel) {
     return [];
 }
 
-async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 5000) {
+async function fetchTextWithProxy(url, proxyUrl, timeoutMs = 5000, externalSignal) {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+    // If an external signal is provided, link it to our controller
+    if (externalSignal) {
+        if (externalSignal.aborted) { clearTimeout(timeoutId); throw new Error('Aborted'); }
+        externalSignal.addEventListener('abort', () => controller.abort(), { once: true });
+    }
 
     try {
         const res = await fetch(proxyUrl + encodeURIComponent(url), {
@@ -1607,18 +1762,36 @@ async function fetchRSS(channel) {
 
     const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel.channelId}`;
 
-    // Race all proxies in parallel — first valid response wins
+    // Try the known-good proxy first before racing all
+    if (workingCorsProxy) {
+        try {
+            const text = await fetchTextWithProxy(rssUrl, workingCorsProxy, 4000);
+            const parsed = parseRSSXml(text, channel);
+            if (parsed && parsed.length > 0) {
+                setRSSCache(channel.channelId, parsed);
+                return parsed;
+            }
+        } catch {
+            workingCorsProxy = null;
+        }
+    }
+
+    // Race remaining proxies with AbortControllers to cancel losers
     try {
+        const controllers = CORS_PROXIES.map(() => new AbortController());
         const result = await new Promise((resolve, reject) => {
             let settled = false;
             let failures = 0;
-            CORS_PROXIES.forEach(proxy => {
-                fetchTextWithProxy(rssUrl, proxy, 5000)
+            CORS_PROXIES.forEach((proxy, i) => {
+                fetchTextWithProxy(rssUrl, proxy, 5000, controllers[i].signal)
                     .then(text => {
                         if (settled) return;
                         const parsed = parseRSSXml(text, channel);
                         if (parsed && parsed.length > 0) {
                             settled = true;
+                            workingCorsProxy = proxy;
+                            // Abort all other in-flight requests
+                            controllers.forEach((c, j) => { if (j !== i) c.abort(); });
                             resolve(parsed);
                         } else {
                             throw new Error('Empty RSS');
@@ -1684,6 +1857,8 @@ async function _refreshFeedInner() {
 
     const cutoff = Date.now() - DAYS_WINDOW * 24 * 60 * 60 * 1000;
     const artistNames = getArtistNames();
+    // Pre-lowercase artist names once for omni channel matching
+    const artistNamesLower = artistNames.map(n => ({ original: n, lower: n.toLowerCase() }));
     let completed = 0;
     const total = channels.length;
 
@@ -1702,11 +1877,9 @@ async function _refreshFeedInner() {
                         // For omni channels, only include videos mentioning an artist
                         if (channel.type === 'omni') {
                             const titleLower = v.title.toLowerCase();
-                            const matchedArtist = artistNames.find(name =>
-                                titleLower.includes(name.toLowerCase())
-                            );
-                            if (!matchedArtist) return false;
-                            v.matchedArtist = matchedArtist;
+                            const match = artistNamesLower.find(a => titleLower.includes(a.lower));
+                            if (!match) return false;
+                            v.matchedArtist = match.original;
                         }
                         return true;
                     });
@@ -1735,14 +1908,20 @@ async function _refreshFeedInner() {
 function renderFeed() {
     const feedEl = document.getElementById('feed');
     const visible = allVideos.filter(v => !isDismissed(v.videoId));
-    updateFeedCount();
+
+    // Update count inline to avoid re-filtering
+    document.getElementById('feed-title').textContent =
+        `The Reel (${visible.length} video${visible.length !== 1 ? 's' : ''})`;
 
     if (!visible.length) {
         feedEl.innerHTML = `<div class="feed-empty">No new videos in the last ${DAYS_WINDOW} days.</div>`;
         return;
     }
 
-    feedEl.innerHTML = visible.map(v => {
+    // Build HTML in chunks to avoid long main-thread blocks
+    const chunks = [];
+    for (let i = 0; i < visible.length; i++) {
+        const v = visible[i];
         const isOfficialMV = /official\s+(music\s+)?video/i.test(v.title);
         const isPopular = v.views >= 100000;
         const titleClass = 'vc-title' + (isOfficialMV ? ' official-mv' : '');
@@ -1750,12 +1929,10 @@ function renderFeed() {
         const isOmni = v.channelType === 'omni';
         const omniTag = isOmni ? `<span class="vc-omni-tag">Omni</span>` : '';
         const artistTag = v.matchedArtist ? `<span class="vc-artist-match">${esc(v.matchedArtist)}</span>` : '';
-        // Get high-res thumbnail
         const maxresThumbnail = `https://img.youtube.com/vi/${v.videoId}/maxresdefault.jpg`;
         const hqThumbnail = `https://img.youtube.com/vi/${v.videoId}/hqdefault.jpg`;
 
-        return `
-        <div class="video-card" data-video-id="${esc(v.videoId)}">
+        chunks.push(`<div class="video-card" data-video-id="${esc(v.videoId)}">
             <div class="vc-check" onclick="dismissVideo('${esc(v.videoId)}')" title="Dismiss"></div>
             <div class="vc-body">
                 <div class="vc-meta">
@@ -1777,14 +1954,15 @@ function renderFeed() {
                     <button class="vc-thumb-btn yt-btn" onclick="window.open('https://www.youtube.com/watch?v=${esc(v.videoId)}','_blank')" title="Watch on YouTube">&#x25B6;</button>
                 </div>
             </div>
-        </div>`;
-    }).join('');
+        </div>`);
+    }
+    feedEl.innerHTML = chunks.join('');
 }
 
 function updateFeedCount() {
-    const visible = allVideos.filter(v => !isDismissed(v.videoId));
+    const count = allVideos.reduce((n, v) => n + (isDismissed(v.videoId) ? 0 : 1), 0);
     document.getElementById('feed-title').textContent =
-        `The Reel (${visible.length} video${visible.length !== 1 ? 's' : ''})`;
+        `The Reel (${count} video${count !== 1 ? 's' : ''})`;
 }
 
 
@@ -2377,17 +2555,34 @@ async function fetchNewsFeed(feed) {
         }
     } catch {}
 
+    // Try the known-good proxy first
+    if (workingCorsProxy) {
+        try {
+            const text = await fetchTextWithProxy(feed.url, workingCorsProxy, 4000);
+            if (text && text.includes('<item>')) {
+                const articles = parseNewsRSS(text, feed);
+                localStorage.setItem(cacheKey, JSON.stringify({ data: articles, ts: Date.now() }));
+                return articles;
+            }
+        } catch {
+            workingCorsProxy = null;
+        }
+    }
+
     const proxies = [...CORS_PROXIES];
     try {
+        const controllers = proxies.map(() => new AbortController());
         const result = await new Promise((resolve, reject) => {
             let settled = false;
             let failures = 0;
-            proxies.forEach(proxy => {
-                fetchTextWithProxy(feed.url, proxy, 5000)
+            proxies.forEach((proxy, i) => {
+                fetchTextWithProxy(feed.url, proxy, 5000, controllers[i].signal)
                     .then(text => {
                         if (settled) return;
                         if (!text || !text.includes('<item>')) throw new Error('Invalid RSS');
                         settled = true;
+                        workingCorsProxy = proxy;
+                        controllers.forEach((c, j) => { if (j !== i) c.abort(); });
                         resolve(text);
                     })
                     .catch(() => {
@@ -2445,16 +2640,26 @@ async function refreshNews() {
 
 function renderNews() {
     const feedEl = document.getElementById('news-feed');
-    const filtered = newsFilter === 'all' ? newsArticles
-        : newsFilter === 'artists' ? newsArticles.filter(a => matchArtists(a.title + ' ' + a.description).length > 0)
-        : newsArticles.filter(a => a.source === newsFilter);
+
+    // Pre-compute artist matches once per article to avoid redundant regex work
+    const articlesWithMatches = newsArticles.map(a => {
+        if (!a._cachedArtists) {
+            a._cachedArtists = matchArtists(a.title + ' ' + a.description);
+        }
+        return a;
+    });
+
+    const filtered = newsFilter === 'all' ? articlesWithMatches
+        : newsFilter === 'artists' ? articlesWithMatches.filter(a => a._cachedArtists.length > 0)
+        : articlesWithMatches.filter(a => a.source === newsFilter);
+
     if (filtered.length === 0) {
         feedEl.innerHTML = '<div class="no-data">No articles found. Click <strong>Refresh</strong> to load news.</div>';
         return;
     }
     feedEl.innerHTML = filtered.map(a => {
         const ago = timeAgo(a.date);
-        const artists = matchArtists(a.title + ' ' + a.description);
+        const artists = a._cachedArtists;
         const isHighlight = artists.length > 0;
         return `<a class="news-card${isHighlight ? ' news-highlight' : ''}" href="${a.link}" target="_blank" rel="noopener">
             <div class="news-card-body">
@@ -2492,6 +2697,332 @@ function filterNews(filter) {
     document.querySelectorAll('.news-filter-btn').forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
     renderNews();
+}
+
+// ─── Editorial Hub ──────────────────────────────────────────────
+let editorialFilter = 'all';
+let editorialRendered = false;
+
+function filterEditorial(filter) {
+    editorialFilter = filter;
+    document.querySelectorAll('.editorial-filter-btn').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    renderEditorial();
+}
+
+function getOrdinal(n) {
+    const s = ['th','st','nd','rd'];
+    const v = n % 100;
+    return n + (s[(v-20)%10] || s[v] || s[0]);
+}
+
+function findSocialPosts(artist, description, type) {
+    if (typeof SOCIAL_POSTS === 'undefined') return [];
+    // Extract title from description
+    let title = '';
+    if (type === 'video') {
+        const m = description.match(/"([^"]+)"/);
+        if (m) title = m[1];
+    } else {
+        const m = description.match(/['\u2018\u2019]([^'\u2018\u2019]+)['\u2018\u2019]/);
+        if (m) title = m[1];
+    }
+    if (!title || !title.trim()) return [];
+    const searchKey = `${artist}|${title.toLowerCase().trim()}`;
+    // Exact match first
+    if (SOCIAL_POSTS[searchKey]) return SOCIAL_POSTS[searchKey];
+    // Partial match: check if any social post key contains this title or vice versa
+    const titleLower = title.toLowerCase().trim();
+    if (titleLower.length < 3) return [];
+    for (const [key, posts] of Object.entries(SOCIAL_POSTS)) {
+        if (!key.startsWith(artist + '|')) continue;
+        const postTitle = key.split('|')[1];
+        if (postTitle.includes(titleLower) || titleLower.includes(postTitle)) {
+            return posts;
+        }
+    }
+    return [];
+}
+
+function wikiQuery(artist, description, type) {
+    // Extract quoted title from event description (e.g. "'Fearless'" or '"Finding Forever"')
+    const quoteMatch = description.match(/['\u2018\u2019\u201C\u201D]([^'\u2018\u2019\u201C\u201D]+)['\u2018\u2019\u201C\u201D]/);
+    if (type === 'birthday') {
+        return artist;
+    }
+    if (type === 'video') {
+        const vidMatch = description.match(/"([^"]+)"/);
+        return artist + ' ' + (vidMatch ? vidMatch[1] : description);
+    }
+    if (quoteMatch) {
+        return artist + ' ' + quoteMatch[1];
+    }
+    const cleaned = description.replace(/^\[.*?\]\s*/, '').replace(artist, '').trim();
+    return artist + ' ' + cleaned;
+}
+
+function wikiGo(query, event) {
+    event.preventDefault();
+    event.stopPropagation();
+    const el = event.currentTarget;
+    el.style.opacity = '0.5';
+    fetch(`https://en.wikipedia.org/w/api.php?action=opensearch&search=${encodeURIComponent(query)}&limit=1&format=json&origin=*`)
+        .then(r => r.json())
+        .then(data => {
+            el.style.opacity = '';
+            if (data[3] && data[3][0]) {
+                window.open(data[3][0], '_blank');
+            } else {
+                window.open(`https://en.wikipedia.org/w/index.php?search=${encodeURIComponent(query)}`, '_blank');
+            }
+        })
+        .catch(() => {
+            el.style.opacity = '';
+            window.open(`https://en.wikipedia.org/w/index.php?search=${encodeURIComponent(query)}`, '_blank');
+        });
+}
+
+function renderEditorial() {
+    editorialRendered = true;
+    const feed = document.getElementById('editorial-feed');
+    const today = new Date();
+    today.setHours(0,0,0,0);
+    const currentYear = today.getFullYear();
+    const todayMonth = today.getMonth() + 1;
+    const todayDay = today.getDate();
+
+    // Build list of all upcoming events within 30 days
+    let upcoming = [];
+
+    // Helper: compute days until an anniversary (month/day) from today
+    function daysUntil(month, day) {
+        // Create target date in current year
+        let target = new Date(currentYear, month - 1, day);
+        target.setHours(0,0,0,0);
+        // If target already passed this year, it won't be in the next 30 days
+        // unless it wraps into next year
+        let diff = Math.round((target - today) / 86400000);
+        if (diff < 0) {
+            target = new Date(currentYear + 1, month - 1, day);
+            target.setHours(0,0,0,0);
+            diff = Math.round((target - today) / 86400000);
+        }
+        return diff;
+    }
+
+    // 1. Birthdays
+    if (typeof ARTIST_BIRTHDAYS !== 'undefined') {
+        for (const [artist, info] of Object.entries(ARTIST_BIRTHDAYS)) {
+            const days = daysUntil(info.month, info.day);
+            if (days >= 0 && days <= 30) {
+                const age = currentYear - info.birthYear + (days === 0 ? 0 : (info.month > todayMonth || (info.month === todayMonth && info.day >= todayDay) ? 0 : 1));
+                upcoming.push({
+                    type: 'birthday',
+                    artist: artist,
+                    description: `Birthday`,
+                    detail: `${getOrdinal(age)} Birthday (born ${info.birthYear})`,
+                    month: info.month,
+                    day: info.day,
+                    origYear: info.birthYear,
+                    daysUntil: days,
+                    icon: '\uD83C\uDF82',
+                    articleUrl: info.articleUrl || null
+                });
+            }
+        }
+    }
+
+    // 2. Editorial events
+    if (typeof EDITORIAL_EVENTS !== 'undefined') {
+        for (const ev of EDITORIAL_EVENTS) {
+            const days = daysUntil(ev.month, ev.day);
+            if (days >= 0 && days <= 30) {
+                const annivYear = ev.origYear ? currentYear - ev.origYear : null;
+                let icon = '\uD83C\uDFB5';
+                let typeKey = 'release';
+                if (ev.occasion === 'Chart') { icon = '\uD83D\uDCC8'; typeKey = 'chart'; }
+                else if (ev.occasion === 'Performance') { icon = '\uD83C\uDFA4'; typeKey = 'release'; }
+                else if (ev.occasion === 'Recording') { icon = '\uD83C\uDFA7'; typeKey = 'release'; }
+                else if (ev.occasion === 'Video' || ev.occasion === 'uDiscover Video') { icon = '\uD83C\uDFAC'; typeKey = 'release'; }
+                else if (ev.occasion === 'Anniversary') { icon = '\u2B50'; typeKey = 'release'; }
+
+                upcoming.push({
+                    type: typeKey,
+                    artist: ev.artist,
+                    description: ev.name,
+                    detail: annivYear ? `${getOrdinal(annivYear)} Anniversary (${ev.origYear})` : ev.occasion,
+                    month: ev.month,
+                    day: ev.day,
+                    origYear: ev.origYear,
+                    daysUntil: days,
+                    icon: icon,
+                    articleUrl: ev.articleUrl || null,
+                    socialAssetUrl: ev.socialAssetUrl || null
+                });
+            }
+        }
+    }
+
+    // 3. Build video lookup: artist+month+day -> videos
+    const videoLookup = {};
+    if (typeof MUSIC_VIDEO_ANNIVERSARIES !== 'undefined') {
+        for (const vid of MUSIC_VIDEO_ANNIVERSARIES) {
+            const days = daysUntil(vid.month, vid.day);
+            if (days >= 0 && days <= 30) {
+                const key = `${vid.artist}|${vid.month}|${vid.day}`;
+                if (!videoLookup[key]) videoLookup[key] = [];
+                videoLookup[key].push(vid);
+
+                // Also add standalone video entries
+                const annivYear = currentYear - vid.origYear;
+                upcoming.push({
+                    type: 'video',
+                    artist: vid.artist,
+                    description: `"${vid.title}" — ${vid.dateType}`,
+                    detail: `${getOrdinal(annivYear)} Anniversary (${vid.origYear})`,
+                    month: vid.month,
+                    day: vid.day,
+                    origYear: vid.origYear,
+                    daysUntil: days,
+                    icon: '\u25B6\uFE0F',
+                    youtubeId: vid.youtubeId,
+                    views: vid.views
+                });
+            }
+        }
+    }
+
+    // Filter
+    if (editorialFilter !== 'all') {
+        if (editorialFilter === 'video') {
+            upcoming = upcoming.filter(e => e.type === 'video' || e.youtubeId);
+        } else {
+            upcoming = upcoming.filter(e => e.type === editorialFilter);
+        }
+    }
+
+    // Sort by days until (soonest first), then by artist name
+    upcoming.sort((a, b) => a.daysUntil - b.daysUntil || a.artist.localeCompare(b.artist));
+
+    if (upcoming.length === 0) {
+        feed.innerHTML = '<div class="editorial-no-data">No upcoming anniversaries found in the next 30 days.</div>';
+        return;
+    }
+
+    // Group by date
+    const groups = {};
+    for (const item of upcoming) {
+        const dateKey = `${item.month}-${item.day}`;
+        if (!groups[dateKey]) groups[dateKey] = { items: [], daysUntil: item.daysUntil, month: item.month, day: item.day };
+        groups[dateKey].items.push(item);
+    }
+
+    const monthNames = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    let html = '';
+    let groupId = 0;
+
+    function roundClass(item) {
+        if (!item.origYear) return '';
+        const anniv = currentYear - item.origYear;
+        if (anniv > 0 && anniv % 25 === 0) return ' editorial-milestone';
+        if (anniv > 0 && anniv % 5 === 0) return ' editorial-round';
+        return '';
+    }
+
+    function renderCardHtml(item) {
+        const birthdayClass = item.type === 'birthday' ? ' editorial-birthday' : '';
+        const videoKey = `${item.artist}|${item.month}|${item.day}`;
+        const matchingVideos = videoLookup[videoKey] || [];
+
+        let videoHtml = '';
+        if (item.youtubeId) {
+            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F</a>`;
+        } else if (matchingVideos.length > 0 && item.type !== 'video') {
+            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F</a>`;
+        }
+
+        const wq = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
+        const articleHtml = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
+        const socialPosts = findSocialPosts(item.artist, item.description, item.type);
+        const socialPostHtml = socialPosts.length > 0 ? `<a class="editorial-social-link" href="${socialPosts[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts.length} social post${socialPosts.length > 1 ? 's' : ''}"><span style="color:#FF3B3B;font-weight:700;font-size:0.85rem;">✘</span></a>` : '';
+        return `<div class="editorial-card${birthdayClass}${roundClass(item)}">
+            <div class="editorial-card-icon">${item.icon}</div>
+            <div class="editorial-card-body">
+                <span class="editorial-card-artist">${item.description}</span>
+                ${item.origYear ? `<span class="editorial-anniv-badge">${item.detail}</span>` : `<span class="editorial-card-desc">${item.detail}</span>`}
+                <span class="editorial-card-links">
+                    ${articleHtml}${socialPostHtml}
+                    <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq}', event)">\uD83C\uDF10</a>
+                    ${videoHtml}
+                </span>
+            </div>
+        </div>`;
+    }
+
+    for (const [dateKey, group] of Object.entries(groups).sort((a, b) => a[1].daysUntil - b[1].daysUntil)) {
+        const daysLabel = group.daysUntil === 0 ? 'Today' : group.daysUntil === 1 ? 'Tomorrow' : `in ${group.daysUntil} days`;
+        html += `<div class="editorial-date-group">
+            <span>${monthNames[group.month]} ${group.day}</span>
+            <span class="editorial-days-badge">${daysLabel}</span>
+        </div>`;
+
+        // Sub-group by artist within this date
+        const artistGroups = {};
+        for (const item of group.items) {
+            if (!artistGroups[item.artist]) artistGroups[item.artist] = [];
+            artistGroups[item.artist].push(item);
+        }
+
+        for (const [artist, items] of Object.entries(artistGroups).sort((a, b) => a[0].localeCompare(b[0]))) {
+            if (items.length === 1) {
+                // Single event — render inline with artist name
+                const item = items[0];
+                const birthdayClass = item.type === 'birthday' ? ' editorial-birthday' : '';
+                const videoKey = `${item.artist}|${item.month}|${item.day}`;
+                const matchingVideos = videoLookup[videoKey] || [];
+                let videoHtml = '';
+                if (item.youtubeId) {
+                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F</a>`;
+                } else if (matchingVideos.length > 0 && item.type !== 'video') {
+                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F</a>`;
+                }
+                const wq2 = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
+                const articleHtml2 = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
+                const socialPosts2 = findSocialPosts(item.artist, item.description, item.type);
+                const socialPostHtml2 = socialPosts2.length > 0 ? `<a class="editorial-social-link" href="${socialPosts2[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts2.length} social post${socialPosts2.length > 1 ? 's' : ''}"><span style="color:#FF3B3B;font-weight:700;font-size:0.85rem;">✘</span></a>` : '';
+                html += `<div class="editorial-card${birthdayClass}${roundClass(item)}">
+                    <div class="editorial-card-icon">${item.icon}</div>
+                    <div class="editorial-card-body">
+                        <span class="editorial-card-artist">${artist} — ${item.description}</span>
+                        ${item.origYear ? `<span class="editorial-anniv-badge">${item.detail}</span>` : `<span class="editorial-card-desc">${item.detail}</span>`}
+                        <span class="editorial-card-links">
+                            ${articleHtml2}${socialPostHtml2}
+                            <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq2}', event)">\uD83C\uDF10</a>
+                            ${videoHtml}
+                        </span>
+                    </div>
+                </div>`;
+            } else {
+                // Multiple events — collapsible group
+                const gid = `eg-${groupId++}`;
+                const primaryIcon = items.find(i => i.type === 'birthday') ? '\uD83C\uDF82' : items[0].icon;
+                html += `<div class="editorial-artist-group" id="${gid}">
+                    <div class="editorial-group-header" onclick="document.getElementById('${gid}').classList.toggle('open')">
+                        <div class="editorial-card-icon">${primaryIcon}</div>
+                        <span class="editorial-card-artist">${artist}</span>
+                        <span class="editorial-group-count">${items.length} events</span>
+                        <span class="editorial-group-chevron">\u25B6</span>
+                    </div>
+                    <div class="editorial-group-body">`;
+                for (const item of items) {
+                    html += renderCardHtml(item);
+                }
+                html += `</div></div>`;
+            }
+        }
+    }
+
+    feed.innerHTML = html;
 }
 
 // ─── Boot ──────────────────────────────────────────────────────

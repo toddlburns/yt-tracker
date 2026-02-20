@@ -232,6 +232,14 @@
         .news-source-billboard { background: rgba(255, 59, 48, 0.2); color: #FF6B6B; }
         .news-source-variety { background: rgba(139, 92, 246, 0.2); color: #B794F6; }
         .news-source-rollingstone { background: rgba(255, 105, 180, 0.2); color: #FF69B4; }
+        .news-card.news-highlight {
+            border-left: 3px solid #00FFFF;
+            background: rgba(0, 255, 255, 0.06);
+        }
+        .news-artist-tag {
+            padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; font-weight: 600;
+            background: rgba(0, 255, 255, 0.15); color: #00FFFF;
+        }
 
         /* Progress bar */
         .progress-wrap {
@@ -1032,6 +1040,7 @@
         </div>
         <div class="news-filters">
             <button class="news-filter-btn active" onclick="filterNews('all')">All</button>
+            <button class="news-filter-btn" onclick="filterNews('artists')">Our Artists</button>
             <button class="news-filter-btn" onclick="filterNews('billboard')">Billboard</button>
             <button class="news-filter-btn" onclick="filterNews('variety')">Variety</button>
             <button class="news-filter-btn" onclick="filterNews('rollingstone')">Rolling Stone</button>
@@ -2333,6 +2342,32 @@ const NEWS_FEEDS = [
 const NEWS_CACHE_TTL = 15 * 60 * 1000; // 15 min cache
 let newsArticles = [];
 let newsFilter = 'all';
+const TRACKED_ARTISTS = [
+    'Aerosmith','Akon','Amy Winehouse','Andrea Bocelli','Audioslave','Beastie Boys',
+    'Bee Gees','Billy Idol','Black Eyed Peas','Bob Marley','Bob Seger','Bon Jovi',
+    'Boyz II Men','Cat Stevens','Yusuf Islam','Chris Cornell','Common','D\'Angelo',
+    'Def Leppard','DMX','Elton John','Elvis Costello','Erykah Badu','Fall Out Boy',
+    'Frank Sinatra','Frank Zappa','Glen Campbell','Godsmack','Guns N\' Roses',
+    'Heart','Janet Jackson','Jeremih','Jimmy Eat World','Jodeci','John Lennon',
+    'John Mellencamp','Johnny Cash','Juvenile','Kenny Rogers','Keyshia Cole','Kiss',
+    'Lenny Kravitz','Lionel Richie','Little Big Town','LL COOL J','Mariah Carey',
+    'Marvin Gaye','Mary J. Blige','Neil Diamond','Nelly Furtado','Nirvana',
+    'OneRepublic','Paul McCartney','Peter Frampton','Queens Of The Stone Age',
+    'Ringo Starr','Roger Hodgson','Rush','Shania Twain','Smashing Pumpkins',
+    'Sonic Youth','Soundgarden','Spice Girls','Sting','Supertramp','The Beach Boys',
+    'The Beatles','The Black Crowes','The Cranberries','The Game','The Rolling Stones',
+    'The Who','Toby Keith','Tom Petty','Heartbreakers','Trisha Yearwood','U2','Weezer','Nelly'
+];
+const _artistRegex = new RegExp('\\b(' + TRACKED_ARTISTS.map(a => a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')\\b', 'i');
+function matchArtists(text) {
+    const matches = [];
+    for (const artist of TRACKED_ARTISTS) {
+        if (new RegExp('\\b' + artist.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i').test(text)) {
+            matches.push(artist);
+        }
+    }
+    return matches;
+}
 
 async function fetchNewsFeed(feed) {
     const cacheKey = `news_cache_${feed.id}`;
@@ -2401,19 +2436,24 @@ async function refreshNews() {
 
 function renderNews() {
     const feedEl = document.getElementById('news-feed');
-    const filtered = newsFilter === 'all' ? newsArticles : newsArticles.filter(a => a.source === newsFilter);
+    const filtered = newsFilter === 'all' ? newsArticles
+        : newsFilter === 'artists' ? newsArticles.filter(a => matchArtists(a.title + ' ' + a.description).length > 0)
+        : newsArticles.filter(a => a.source === newsFilter);
     if (filtered.length === 0) {
         feedEl.innerHTML = '<div class="no-data">No articles found. Click <strong>Refresh</strong> to load news.</div>';
         return;
     }
     feedEl.innerHTML = filtered.map(a => {
         const ago = timeAgo(a.date);
-        return `<a class="news-card" href="${a.link}" target="_blank" rel="noopener">
+        const artists = matchArtists(a.title + ' ' + a.description);
+        const isHighlight = artists.length > 0;
+        return `<a class="news-card${isHighlight ? ' news-highlight' : ''}" href="${a.link}" target="_blank" rel="noopener">
             <div class="news-card-body">
                 <div class="news-card-title">${escapeHtml(a.title)}</div>
                 <div style="font-size:0.82rem;color:#8aacba;margin-bottom:6px;line-height:1.4;">${escapeHtml(a.description)}</div>
                 <div class="news-card-meta">
                     <span class="news-card-source news-source-${a.source}">${a.sourceName}</span>
+                    ${artists.map(ar => `<span class="news-artist-tag">${escapeHtml(ar)}</span>`).join('')}
                     ${a.creator ? `<span>${escapeHtml(a.creator)}</span>` : ''}
                     <span>${ago}</span>
                 </div>

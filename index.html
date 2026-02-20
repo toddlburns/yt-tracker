@@ -3511,7 +3511,7 @@ function renderEditorial() {
                     origYear: ev.origYear,
                     daysUntil: days,
                     icon: icon,
-                    articleUrl: ev.articleUrl || bestofUrl(ev.artist) || null,
+                    articleUrl: ev.articleUrl || null,
                     socialAssetUrl: ev.socialAssetUrl || null,
                     artistPageUrl: ev.artistPageUrl || artistPageUrl(ev.artist) || null
                 });
@@ -3543,7 +3543,7 @@ function renderEditorial() {
                     icon: '\u25B6\uFE0F',
                     youtubeId: vid.youtubeId,
                     views: vid.views,
-                    articleUrl: bestofUrl(vid.artist) || null,
+                    articleUrl: null,
                     artistPageUrl: artistPageUrl(vid.artist) || null
                 });
             }

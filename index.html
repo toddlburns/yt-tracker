@@ -2944,7 +2944,7 @@ function auditInlineHtml(artist, dedupSet) {
     const resultHtml = result ? formatAuditResult(result) : '';
     return `<span class="audit-inline">
         <button class="audit-check-btn" id="abtn-${css_id(artist)}" onclick="event.stopPropagation(); auditCheckOne('${escapedArtist}')"${result ? ' disabled' : ''}>
-            ${result ? '✓' : 'Audit'}
+            ${result ? '✓' : 'Best-Of'}
         </button>
         <span class="audit-result-inline" id="ares-${css_id(artist)}">${resultHtml}</span>
     </span>`;

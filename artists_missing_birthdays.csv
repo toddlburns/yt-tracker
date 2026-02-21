@@ -1,449 +1,670 @@
-ARTIST NAME,ARTIST PAGE URL,BIRTHDAY (YYYY-MM-DD)
-10cc,https://www.udiscovermusic.com/artist/10cc,
-2Pac,https://www.udiscovermusic.com/artist/2pac,
-50 Cent,https://www.udiscovermusic.com/artist/50-cent,
-A Thousand Horses,https://www.udiscovermusic.com/artist/a-thousand-horses,
-ABBA,https://www.udiscovermusic.com/artist/abba,
-ABC,https://www.udiscovermusic.com/artist/abc,
-Aerosmith,https://www.udiscovermusic.com/artist/aerosmith,
-Agnetha Fältskog,https://www.udiscovermusic.com/artist/agnetha-faltskog,
-Alan Jackson,https://www.udiscovermusic.com/artists/alan-jackson,
-Albert King,https://www.udiscovermusic.com/artist/albert-king,
-Alice Cooper,https://www.udiscovermusic.com/artist/Alice-Cooper,
-Alison Krauss,https://www.udiscovermusic.com/artist/alison-krauss,
-Andre Rieu,https://www.udiscovermusic.com/artist/andre-rieu,
-Andrea Bocelli,https://www.udiscovermusic.com/artist/andrea-bocelli,
-Andrew W.K.,https://www.udiscovermusic.com/artist/andrew-w-k,
-Anna-Frid Lyngstad,https://www.udiscovermusic.com/artist/frida-lyngstad,
-Anthrax,https://www.udiscovermusic.com/artist/anthrax,
-Apache Indian,https://www.udiscovermusic.com/artist/apache-indian,
-Arcade Fire,https://www.udiscovermusic.com/artist/arcade-fire,
-Arrested Development,https://www.udiscovermusic.com/artist/arrested-development,
-Ashley Campbell,https://www.udiscovermusic.com/artist/ashley-campbell,
-Astrud Gilberto,https://www.udiscovermusic.com/artist/astrud-gilberto,
-Aswad,https://www.udiscovermusic.com/artist/aswad,
-Atlanta Rhythm Section,https://www.udiscovermusic.com/artist/atlanta-rhythm-section,
-Audioslave,https://www.udiscovermusic.com/artist/audioslave,
-B.B. King,https://www.udiscovermusic.com/artist/b-b-king,
-Badfinger,https://www.udiscovermusic.com/artist/badfinger,
-Barclay James Harvest,https://www.udiscovermusic.com/artist/barclay-james-harvest,
-Beastie Boys,https://www.udiscovermusic.com/artist/beastie-boys,
-Beck,https://www.udiscovermusic.com/artist/Beck,
-Bee Gees,https://www.udiscovermusic.com/artist/bee-gees,
-Belinda Carlisle,https://www.udiscovermusic.com/artist/belinda-carlisle,
-Ben Harper,https://www.udiscovermusic.com/artist/ben-harper,
-Ben Howard,https://www.udiscovermusic.com/?post_type=artists&p=29929,
-Benny Andersson,https://www.udiscovermusic.com/artist/benny-andersson,
-Big Country,https://www.udiscovermusic.com/artist/big-country,
-Big Star,https://www.udiscovermusic.com/artist/big-star,
-Billie Holiday,https://www.udiscovermusic.com/artist/billie-holiday,
-Billy Fury,https://www.udiscovermusic.com/artist/billy-fury,
-Billy Preston,https://www.udiscovermusic.com/artist/billy-preston,
-Björk,https://www.udiscovermusic.com/artist/bjork,
-Black Eyed Peas,https://www.udiscovermusic.com/artist/black-eyed-peas,
-Black Sabbath,https://www.udiscovermusic.com/artist/black-sabbath,
-Black Uhuru,https://www.udiscovermusic.com/artist/black-uhuru,
-Blind Faith,https://www.udiscovermusic.com/artist/blind-faith,
-Blink 182,https://www.udiscovermusic.com/artist/blink-182,
-Blue Cheer,https://www.udiscovermusic.com/artist/blue-cheer,
-Bo Diddley,https://www.udiscovermusic.com/artist/bo-diddley,
-Bon Jovi,https://www.udiscovermusic.com/artist/Bon-Jovi,
-Booker T,https://www.udiscovermusic.com/artist/booker-t,
-Boyz II Men,https://www.udiscovermusic.com/artist/Boyz-II-Men,
-Brantley Gilbert,https://www.udiscovermusic.com/artist/brantley-gilbert,
-Brenda Holloway,https://www.udiscovermusic.com/artist/brenda-holloway,
-Bruce Springsteen,https://www.udiscovermusic.com/artist/Bruce-Springsteen,
-Bryan Adams,https://www.udiscovermusic.com/artist/bryan-adams,
-Buddy Holly,https://www.udiscovermusic.com/artist/buddy-holly,
-Burning Spear,https://www.udiscovermusic.com/artist/burning-spear,
-Burt Bacharach,https://www.udiscovermusic.com/artist/burt-bacharach,
-Camel,https://www.udiscovermusic.com/artist/camel,
-Canned Heat,https://www.udiscovermusic.com/artist/canned-heat,
-Captain Beefheart,https://www.udiscovermusic.com/artist/captain-beefheart,
-Caravan,https://www.udiscovermusic.com/artist/caravan,
-Carpenters,https://www.udiscovermusic.com/artist/carpenters,
-Charlie Parker,https://www.udiscovermusic.com/artist/Charlie-Parker,
-Cheap Trick,https://www.udiscovermusic.com/artist/cheap-trick,
-Cher,https://www.udiscovermusic.com/artist/cher,
-Chris Stapleton,https://www.udiscovermusic.com/artist/chris-stapleton,
-Cinderella,https://www.udiscovermusic.com/artist/cinderella,
-Climax Blues Band,https://www.udiscovermusic.com/artist/climax-blues-band,
-Commodores,https://www.udiscovermusic.com/artist/commodores,
-Corinne Bailey Rae,https://www.udiscovermusic.com/artist/corinne-bailey-rae,
-Counting Crows,https://www.udiscovermusic.com/artist/counting-crows,
-Craig Armstrong,https://www.udiscovermusic.com/artist/craig-armstrong,
-Cream,https://www.udiscovermusic.com/artist/cream,
-Crowded House,https://www.udiscovermusic.com/artist/crowded-house,
-Culture Club,https://www.udiscovermusic.com/artist/culture-club,
-Cutting Crew,https://www.udiscovermusic.com/artist/cutting-crew,
-D'Angelo,https://www.udiscovermusic.com/artist/dangelo,
-DMX,https://www.udiscovermusic.com/artist/dmx,
-Daniel Hope,https://www.udiscovermusic.com/artist/daniel-hope,
-Darren Hayes,https://www.udiscovermusic.com/artist/darren-hayes,
-David Bowie,https://www.udiscovermusic.com/artist/david-bowie,
-Dean Martin,https://www.udiscovermusic.com/artist/dean-martin,
-Debarge,https://www.udiscovermusic.com/artist/debarge,
-Def Leppard,https://www.udiscovermusic.com/artist/Def-Leppard,
-Demis Roussos,https://www.udiscovermusic.com/artist/demis-roussos,
-Derek And The Dominos,https://www.udiscovermusic.com/artist/Derek-And-The-Dominos,
-Desmond Dekker,https://www.udiscovermusic.com/artist/desmond-dekker,
-Dinah Washington,https://www.udiscovermusic.com/artist/Dinah-Washington,
-Dio,https://www.udiscovermusic.com/artist/dio,
-Dire Straits,https://www.udiscovermusic.com/artist/Dire-Straits,
-Disclosure,https://www.udiscovermusic.com/artist/disclosure,
-Dr Dre,https://www.udiscovermusic.com/artist/dr-dre,
-Duke Ellington,https://www.udiscovermusic.com/artist/duke-ellington,
-Dusty Springfield,https://www.udiscovermusic.com/artist/Dusty-Springfield,
-EPMD,https://www.udiscovermusic.com/artist/epmd,
-Eagles,https://www.udiscovermusic.com/artist/Eagles,
-Eagles of Death Metal,https://www.udiscovermusic.com/artist/eagles-of-death-metal,
-Eazy-E,https://www.udiscovermusic.com/artist/Eazy-E,
-Eddie Cochran,https://www.udiscovermusic.com/artist/Eddie-Cochran,
-Eddie Kendricks,https://www.udiscovermusic.com/artist/Eddie-Kendrick,
-Eels,https://www.udiscovermusic.com/artist/eels,
-Elbow,https://www.udiscovermusic.com/artist/elbow,
-Ella Fitzgerald,https://www.udiscovermusic.com/artist/Ella-Fitzgerald,
-Elvis Presley,https://www.udiscovermusic.com/artist/Elvis-Presley,
-Emeli Sandé,https://www.udiscovermusic.com/artist/emeli-sande,
-Enigma,https://www.udiscovermusic.com/artist/enigma,
-Eric B and Rakim,https://www.udiscovermusic.com/artist/eric-b-and-rakim,
-Etta James,https://www.udiscovermusic.com/artist/Etta-James,
-Eva Cassidy,https://www.udiscovermusic.com/artist/eva-cassidy,
-Evanescence,https://www.udiscovermusic.com/artist/evanescence,
-Extreme,https://www.udiscovermusic.com/artist/extreme,
-Fairport Convention,https://www.udiscovermusic.com/artist/fairport-convention,
-Fall Out Boy,https://www.udiscovermusic.com/artist/fall-out-boy,
-Faust,https://www.udiscovermusic.com/artist/faust,
-Fergie,https://www.udiscovermusic.com/artist/fergie,
-Florence and the Machine,https://www.udiscovermusic.com/artist/florence-and-the-machine,
-Foo Fighters,https://www.udiscovermusic.com/artist/foo-fighter,
-Frankie Goes To Hollywood,https://www.udiscovermusic.com/artist/frankie-goes-to-hollywood,
-Free,https://www.udiscovermusic.com/artist/Free,
-Gang Starr,https://www.udiscovermusic.com/artist/gang-starr,
-Gary Clark,https://www.udiscovermusic.com/artist/danny-wilson-gary-clark,
-Gaz Coombe,https://www.udiscovermusic.com/artist/gaz-coombe,
-Gene Vincent,https://www.udiscovermusic.com/artist/gene-vincent,
-Gentle Giant,https://www.udiscovermusic.com/artist/gentle-giant,
-George Benson,https://www.udiscovermusic.com/artist/george-benson,
-George Gershwin,https://www.udiscovermusic.com/artist/george-gershwi,
-George Michael,https://www.udiscovermusic.com/artist/george-michael,
-George Strait,https://www.udiscovermusic.com/artist/George-Strait,
-George Thorogood,https://www.udiscovermusic.com/artist/George-Thorogood,
-Georgie Fame,https://www.udiscovermusic.com/artist/Georgie-Fame,
-Ghostface Killah,https://www.udiscovermusic.com/artist/ghostface-killah,
-Gong,https://www.udiscovermusic.com/artist/gong,
-Grace Jones,https://www.udiscovermusic.com/artist/Grace-Jones,
-Graham Parker,https://www.udiscovermusic.com/artist/graham-parker,
-Grand Funk Railroad,https://www.udiscovermusic.com/artist/grand-funk-railroad,
-Gregory Isaacs,https://www.udiscovermusic.com/artist/gregory-isaacs,
-Gregory Porter,https://www.udiscovermusic.com/artist/gregory-porter,
-Guns N Roses,https://www.udiscovermusic.com/artist/Guns-N-Roses,
-Haddaway,https://www.udiscovermusic.com/artist/haddawa,
-Heart,https://www.udiscovermusic.com/artist/heart,
-Heaven 17,https://www.udiscovermusic.com/artist/Heaven-17,
-Helmet,https://www.udiscovermusic.com/artist/helmet,
-Hoobastank,https://www.udiscovermusic.com/artist/hoobastank,
-Howlin Wolf,https://www.udiscovermusic.com/artist/Howlin-Wolf,
-Hoyt Axton,https://www.udiscovermusic.com/artist/hoyt-axton,
-Huey Lewis & The News,https://www.udiscovermusic.com/artist/huey-lewis-and-the-news,
-Human League,https://www.udiscovermusic.com/artist/human-league,
-Humble Pie,https://www.udiscovermusic.com/artist/Humble-Pie,
-INXS,https://www.udiscovermusic.com/artist/inxs,
-Ice Cube,https://www.udiscovermusic.com/artist/ice-cube,
-Iggy Pop,https://www.udiscovermusic.com/artist/Iggy-Pop,
-Imagine Dragons,https://www.udiscovermusic.com/artist/Imagine-Dragons,
-Iron Maiden,https://www.udiscovermusic.com/artist/iron-maiden,
-It Bites,https://www.udiscovermusic.com/artist/it-bites,
-J.J. Cale,https://www.udiscovermusic.com/artist/j-j-cale,
-Jack Bruce,https://www.udiscovermusic.com/artist/jack-bruce,
-Jack Johnson,https://www.udiscovermusic.com/artist/jack-johnson,
-Jackie Wilson,https://www.udiscovermusic.com/artist/jackie-wilson,
-Jacques Brel,https://www.udiscovermusic.com/artist/jacques-brel,
-James,https://www.udiscovermusic.com/artist/james,
-James Bay,https://www.udiscovermusic.com/artist/james-bay,
-James Blake,https://www.udiscovermusic.com/artist/james-blake,
-James Morrison,https://www.udiscovermusic.com/artist/james-morrison,
-James Taylor,https://www.udiscovermusic.com/artist/james-taylor,
-Jane's Addiction,https://www.udiscovermusic.com/artist/janes-addiction,
-Japan,https://www.udiscovermusic.com/artist/japan-david-sylvian,
-Jay Z,https://www.udiscovermusic.com/artist/jay-z,
-Jeff Buckley,https://www.udiscovermusic.com/artist/jeffbuckley,
-Jeru The Damaja,https://www.udiscovermusic.com/artist/jeru-the-damaja,
-Jethro Tull,https://www.udiscovermusic.com/artist/jethro-tul,
-Jimi Hendrix,https://www.udiscovermusic.com/artist/jimi-hendrix,
-Jimmy Buffett,https://www.udiscovermusic.com/artist/jimmy-buffett,
-Jimmy Cliff,https://www.udiscovermusic.com/artist/jimmy-cliff,
-Jimmy Eat World,https://www.udiscovermusic.com/artist/jimmy-eat-world,
-Jimmy Ruffin,https://www.udiscovermusic.com/artist/jimmy-ruffin,
-Jimmy Smith,https://www.udiscovermusic.com/artist/jimmy-smith,
-Joan Armatrading,https://www.udiscovermusic.com/artist/joan-armatrading,
-Joan Baez,https://www.udiscovermusic.com/artist/joan-baez,
-Joe Cocker,https://www.udiscovermusic.com/artist/joe-cocker,
-Joe Jackson,https://www.udiscovermusic.com/artist/joe-jackson,
-Joe Sample,https://www.udiscovermusic.com/artist/joe-sample,
-Joe Walsh,https://www.udiscovermusic.com/artist/joe-walsh-the-james-gang,
-John Coltrane,https://www.udiscovermusic.com/artists/john-coltrane/,
-John Fogerty,https://www.udiscovermusic.com/artist/john-fogerty,
-John Martyn,https://www.udiscovermusic.com/artist/john-martyn,
-John Mayall,https://www.udiscovermusic.com/artist/john-mayall,
-John Williams,https://www.udiscovermusic.com/artist/john-williams,
-Johnny Gill,https://www.udiscovermusic.com/artist/johnny-gill,
-Joni Mitchell,https://www.udiscovermusic.com/artist/joni-mitchell,
-Jonny Lang,https://www.udiscovermusic.com/artist/jonny-lang,
-Jorge Ben,https://www.udiscovermusic.com/artist/jorge-ben,
-Joss Stone,https://www.udiscovermusic.com/artist/joss-stone,
-Jr. Walker & the All-Stars,https://www.udiscovermusic.com/artist/jr-walker-the-all-stars,
-Julie London,https://www.udiscovermusic.com/artist/julie-london,
-Jurassic 5,https://www.udiscovermusic.com/artist/jurassic-5,
-Kaiser Chiefs,https://www.udiscovermusic.com/artist/kaiser-chiefs,
-Kate Bush,https://www.udiscovermusic.com/artist/kate-bush,
-Keane,https://www.udiscovermusic.com/artist/keane,
-Keith Jarrett,https://www.udiscovermusic.com/artist/keith-jarrett,
-Keith Richards,https://www.udiscovermusic.com/artist/keith-richards,
-Kenny Burrell,https://www.udiscovermusic.com/artist/kenny-burrell,
-Kevin Coyne,https://www.udiscovermusic.com/artist/kevin-coyne,
-Killing Joke,https://www.udiscovermusic.com/artist/killing-joke,
-Kim Carnes,https://www.udiscovermusic.com/artist/kim-carnes,
-Kip Moore,https://www.udiscovermusic.com/artist/kip-moore,
-Klaatu,https://www.udiscovermusic.com/artist/klaatu,
-Kool and the Gang,https://www.udiscovermusic.com/artist/kool-and-the-gang,
-Lady A,https://www.udiscovermusic.com/artist/lady-antebellum,
-Laura Marling,https://www.udiscovermusic.com/artist/laura-marling,
-Led Zeppelin,https://www.udiscovermusic.com/artist/led-zeppelin,
-Lee Scratch Perry,https://www.udiscovermusic.com/artist/lee-scratch-perry,
-Leon Russell,https://www.udiscovermusic.com/artist/leon-russell,
-Lester Young,https://www.udiscovermusic.com/artist/lester-young,
-Level 42,https://www.udiscovermusic.com/artist/level-42,
-Lightnin' Hopkins,https://www.udiscovermusic.com/artist/lightnin-hopkins,
-Linton Kwesi Johnson,https://www.udiscovermusic.com/artist/linton-kwesi-johnson,
-Little Big Town,https://www.udiscovermusic.com/artist/little-big-town,
-Little Richard,https://www.udiscovermusic.com/artist/little-richard,
-Lloyd Cole,https://www.udiscovermusic.com/artist/lloyd-cole,
-Lorde,https://www.udiscovermusic.com/artist/lorde,
-Loreena McKennitt,https://www.udiscovermusic.com/artist/loreena-mckennit,
-Louis Armstrong,https://www.udiscovermusic.com/artist/louis-armstrong,
-Lucinda Williams,https://www.udiscovermusic.com/artist/lucinda-williams,
-Ludovico Einaudi,https://www.udiscovermusic.com/artist/ludovico-einaudi,
-Luke Bryan,https://www.udiscovermusic.com/artist/luke-bryan,
-Lulu,https://www.udiscovermusic.com/artist/lulu,
-Lynyrd Skynyrd,https://www.udiscovermusic.com/artist/lynyrd-skynyrd,
-Maddie & Tae,https://www.udiscovermusic.com/artist/maddie-and-tae,
-Madonna,https://www.udiscovermusic.com/artist/madonna,
-Magazine,https://www.udiscovermusic.com/artists/magazine/,
-Marc Almond,https://www.udiscovermusic.com/artist/marc-almond,
-Marilyn Manson,https://www.udiscovermusic.com/artist/Marilyn-Manson,
-Mark Knopfler,https://www.udiscovermusic.com/artist/Mark-Knopfler,
-Martha Reeves & The Vandellas,https://www.udiscovermusic.com/artists/martha-reeves-the-vandellas/,
-Mary Hopkin,https://www.udiscovermusic.com/artist/mary-hopkin,
-Mary J Blige,https://www.udiscovermusic.com/artist/Mary-J-Blige,
-Mary Wells,https://www.udiscovermusic.com/artist/mary-wells,
-Massive Attack,https://www.udiscovermusic.com/artist/massive-attack,
-Master P,https://www.udiscovermusic.com/artist/master-p,
-Maxi Priest,https://www.udiscovermusic.com/artist/maxi-priest,
-Meat Loaf,https://www.udiscovermusic.com/artist/meat-loaf,
-Megadeth,https://www.udiscovermusic.com/artist/megadeth,
-Mel Torme,https://www.udiscovermusic.com/artist/mel-torm,
-Melody Gardot,https://www.udiscovermusic.com/artist/Melody-Gardot,
-Metallica,https://www.udiscovermusic.com/artist/Metallica,
-Method Man,https://www.udiscovermusic.com/artist/method-man,
-Michael Jackson,https://www.udiscovermusic.com/artist/Michael-Jackson,
-Michael Nyman,https://www.udiscovermusic.com/artist/michael-nyman,
-Mike Oldfield,https://www.udiscovermusic.com/artist/mike-oldfield,
-Mike and the Mechanics,https://www.udiscovermusic.com/artist/mike-and-the-mechanics,
-Miles Davis,https://www.udiscovermusic.com/artist/Miles-Davis,
-Minnie Riperton,https://www.udiscovermusic.com/artist/minnie-riperton,
-Morrissey,https://www.udiscovermusic.com/artist/Morrissey,
-Motley Crue,https://www.udiscovermusic.com/artist/motley-crue,
-Motorhead,https://www.udiscovermusic.com/artist/Motorhead,
-Mumford & Sons,https://www.udiscovermusic.com/artist/Mumford-And-Sons,
-N.W.A,https://www.udiscovermusic.com/artist/NWA,
-NAS,https://www.udiscovermusic.com/artist/Nas,
-Nancy Griffith,https://www.udiscovermusic.com/artist/Nanci-Griffith,
-Nazareth,https://www.udiscovermusic.com/artist/nazareth,
-Neil Young,https://www.udiscovermusic.com/artist/neil-young,
-Nelly,https://www.udiscovermusic.com/artist/nelly,
-Neneh Cherry,https://www.udiscovermusic.com/artist/neneh-cherry,
-New Edition,https://www.udiscovermusic.com/artist/new-edition,
-New York Dolls,https://www.udiscovermusic.com/artist/New-York-Dolls,
-Nick Drake,https://www.udiscovermusic.com/artist/Nick-Drake,
-Nik Kershaw,https://www.udiscovermusic.com/artist/nik-kershaw,
-Nina Simone,https://www.udiscovermusic.com/artist/Nina-Simone,
-Nine Inch Nails,https://www.udiscovermusic.com/artist/Nine-Inch-Nails,
-Nirvana,https://www.udiscovermusic.com/artist/Nirvana,
-Nitty Gritty Dirt Band,https://www.udiscovermusic.com/artist/Nitty-Gritty-Dirt-Band,
-No Doubt,https://www.udiscovermusic.com/artist/No-Doubt,
-OMD,https://www.udiscovermusic.com/artist/OMD,
-Ocean Colour Scene,https://www.udiscovermusic.com/artist/Ocean-Colour-Scene,
-OneRepublic,https://www.udiscovermusic.com/artists/onerepublic/,
-Onyx,https://www.udiscovermusic.com/artist/onyx,
-Oscar Peterson,https://www.udiscovermusic.com/artist/Oscar-Peterson,
-Otis Redding,https://www.udiscovermusic.com/artist/Otis-Redding,
-PJ Harvey,https://www.udiscovermusic.com/artist/pj-harvey,
-Papa Roach,https://www.udiscovermusic.com/artist/papa-roach,
-Pato Banton,https://www.udiscovermusic.com/artist/pato-banton,
-Patty Griffin,https://www.udiscovermusic.com/artist/patty-griffin,
-Paul McCartney and Wings,https://www.udiscovermusic.com/artist/paul-mccartney-and-wings,
-Paul Simon,https://www.udiscovermusic.com/artist/paul-simon,
-Paul Weller,https://www.udiscovermusic.com/artist/paul-weller,
-Peaches & Herb,https://www.udiscovermusic.com/artist/peaches-and-herb,
-Pearl Jam,https://www.udiscovermusic.com/artist/pearl-jam,
-Pete Townshend,https://www.udiscovermusic.com/artist/Pete-Townshend,
-Peter Gabriel,https://www.udiscovermusic.com/artist/peter-gabriel,
-Phil Collins,https://www.udiscovermusic.com/artist/Phil-Collins,
-Phil Manzanera,https://www.udiscovermusic.com/artist/phil-manzanera,
-PiL,https://www.udiscovermusic.com/artist/pil,
-Pink Floyd,https://www.udiscovermusic.com/artist/Pink-Floyd,
-Placebo,https://www.udiscovermusic.com/artist/placebo,
-Poco,https://www.udiscovermusic.com/artist/poco,
-Poison,https://www.udiscovermusic.com/artist/Poison,
-Portishead,https://www.udiscovermusic.com/artist/portishead,
-Prince,https://www.udiscovermusic.com/artist/Prince,
-Public Enemy,https://www.udiscovermusic.com/artist/Public-Enemy,
-Pulp,https://www.udiscovermusic.com/artist/Pulp,
-Queens of the Stone Age,https://www.udiscovermusic.com/artist/Queens-Of-The-Stone-Age,
-Quicksilver Messenger Service,https://www.udiscovermusic.com/artist/quicksilver-messenger-service,
-R.E.M.,https://www.udiscovermusic.com/artists/r-e-m/,
-Rainbow,https://www.udiscovermusic.com/artist/rainbow,
-Rammstein,https://www.udiscovermusic.com/artist/rammstein,
-Ray Charles,https://www.udiscovermusic.com/artist/ray-charles,
-Red Hot Chili Peppers,https://www.udiscovermusic.com/artist/red-hot-chili-peppers,
-Richie Havens,https://www.udiscovermusic.com/artist/richie-havens,
-Rick James,https://www.udiscovermusic.com/artist/rick-james,
-Rick Nelson,https://www.udiscovermusic.com/artist/rick-nelson,
-Rick Ross,https://www.udiscovermusic.com/artist/rick-ross,
-Rise Against,https://www.udiscovermusic.com/artist/rise-against,
-Robbie Williams,https://www.udiscovermusic.com/artist/robbie-williams,
-Robert Cray,https://www.udiscovermusic.com/artist/robert-cray,
-Robert Glasper,https://www.udiscovermusic.com/artist/robert-glasper,
-Robert Plant,https://www.udiscovermusic.com/artist/robert-plant,
-Rod Stewart,https://www.udiscovermusic.com/artist/rod-stewart,
-Ronnie Lane,https://www.udiscovermusic.com/artist/ronnie-lane,
-Rory Gallagher,https://www.udiscovermusic.com/artist/rory-gallagher,
-Rosanne Cash,https://www.udiscovermusic.com/artist/rosanne-cash,
-Roxy Music,https://www.udiscovermusic.com/artist/roxy-music,
-Roy Orbison,https://www.udiscovermusic.com/artist/roy-orbison,
-Ruff Ryders,https://www.udiscovermusic.com/artist/ruff-ryders,
-Rufus Wainwright,https://www.udiscovermusic.com/artist/rufus-wainwright,
-Ryan Adams,https://www.udiscovermusic.com/artist/ryan-adams,
-Saint Etienne,https://www.udiscovermusic.com/artist/saint-etienne,
-Salt-n-Pepa,https://www.udiscovermusic.com/artist/salt-n-pepa,
-Sam Hunt,https://www.udiscovermusic.com/artist/sam-hunt,
-Sandy Denny,https://www.udiscovermusic.com/artist/sandy-denny,
-Schiller,https://www.udiscovermusic.com/artists/schiller/,
-Scorpions,https://www.udiscovermusic.com/artist/scorpions,
-Secret Garden,https://www.udiscovermusic.com/artist/secret-garden,
-Sensational Alex Harvey Band,https://www.udiscovermusic.com/artist/sensational-alex-harvey-band,
-Serge Gainsbourg,https://www.udiscovermusic.com/artist/serge-gainsbourg,
-Sex Pistols,https://www.udiscovermusic.com/artist/sex-pistols,
-Shaggy,https://www.udiscovermusic.com/artist/shagg,
-Sham 69,https://www.udiscovermusic.com/artist/sham-69,
-Simple Minds,https://www.udiscovermusic.com/artist/simple-minds,
-Siouxsie & The Banshees,https://www.udiscovermusic.com/artist/siouxsie-and-the-banshees,
-Sly & Robbie,https://www.udiscovermusic.com/artist/sly-and-robbie,
-Small Faces,https://www.udiscovermusic.com/artist/small-faces,
-Smokey Robinson & The Miracles,https://www.udiscovermusic.com/artist/smokey-robinson-the-miracles,
-Snoop Dogg,https://www.udiscovermusic.com/artist/snoop-dogg,
-Snow Patrol,https://www.udiscovermusic.com/artist/snow-patrol,
-Soft Cell,https://www.udiscovermusic.com/artist/soft-cell,
-Sonny Boy Williamson,https://www.udiscovermusic.com/artist/sonny-boy-williamson,
-Soul II Soul,https://www.udiscovermusic.com/artist/soul-ii-soul,
-Soundgarden,https://www.udiscovermusic.com/artist/soundgarden,
-Spandau Ballet,https://www.udiscovermusic.com/artist/spandau-ballet,
-Sparks,https://www.udiscovermusic.com/artist/sparks,
-Spice Girls,https://www.udiscovermusic.com/artist/spice-girls,
-Stan Getz,https://www.udiscovermusic.com/artist/stan-getz,
-Status Quo,https://www.udiscovermusic.com/artist/status-quo,
-Steel Pulse,https://www.udiscovermusic.com/artist/steel-pulse,
-Steely Dan,https://www.udiscovermusic.com/artist/steely-dan,
-Stereophonics,https://www.udiscovermusic.com/artist/stereophonics,
-Stero MCs,https://www.udiscovermusic.com/artist/stereo-mcs,
-Steve Earle,https://www.udiscovermusic.com/artist/Steve-Earle,
-Steve Hackett,https://www.udiscovermusic.com/artist/steve-hackett,
-Steve Hillage,https://www.udiscovermusic.com/artist/steve-hillage,
-Steve Miller Band,https://www.udiscovermusic.com/artist/steve-miller-band,
-Steven Tyler,https://www.udiscovermusic.com/artist/steven-tyler,
-Stevie Wonder,https://www.udiscovermusic.com/artist/stevie-wonder,
-Styx,https://www.udiscovermusic.com/artist/styx,
-Sublime,https://www.udiscovermusic.com/artist/sublime,
-Sum 41,https://www.udiscovermusic.com/artist/sum-41,
-Suzanne Vega,https://www.udiscovermusic.com/artist/suzanne-vega,
-Sérgio Mendes,https://www.udiscovermusic.com/artist/sergio-mendes,
-T. Bone Walker,https://www.udiscovermusic.com/artist/t-bone-walker,
-T. Rex,https://www.udiscovermusic.com/artist/t-rex,
-Take That,https://www.udiscovermusic.com/artist/take-that,
-Tammi Terrell,https://www.udiscovermusic.com/artist/tammi-terrell,
-Tangerine Dream,https://www.udiscovermusic.com/artist/tangerine-dream,
-Tears For Fears,https://www.udiscovermusic.com/artist/tears-for-fears,
-Teena Marie,https://www.udiscovermusic.com/artist/teena-marie,
-Temple Of The Dog,https://www.udiscovermusic.com/artist/temple-of-the-dog,
-Tesla,https://www.udiscovermusic.com/artist/tesla,
-Texas,https://www.udiscovermusic.com/artist/texas,
-The All-American Rejects,https://www.udiscovermusic.com/artist/the-all-american-rejects,
-The Allman Brothers Band,https://www.udiscovermusic.com/artist/the-allman-brothers-band,
-The Band,https://www.udiscovermusic.com/artist/the-band,
-The Beatles,https://www.udiscovermusic.com/artist/The-Beatles,
-The Brothers Johnson,https://www.udiscovermusic.com/artist/the-brothers-johnson/,
-The Cadillac Three,https://www.udiscovermusic.com/artist/the-cadillac-three,
-The Chemical Brothers,https://www.udiscovermusic.com/artist/the-chemical-brothers,
-The Clash,https://www.udiscovermusic.com/artist/the-clash,
-The Common Linnets,https://www.udiscovermusic.com/artist/the-common-linnets,
-The Cranberries,https://www.udiscovermusic.com/artist/the-cranberries,
-The Cure,https://www.udiscovermusic.com/artist/the-cure/,
-The Damned,https://www.udiscovermusic.com/artist/the-damned,
-The Doors,https://www.udiscovermusic.com/artist/the-doors,
-The Flying Burrito Brothers,https://www.udiscovermusic.com/artist/the-flying-burrito-brothers,
-The Human League,https://www.udiscovermusic.com/artist/the-human-league,
-The Isley Brothers,https://www.udiscovermusic.com/artist/the-isley-brothers,
-The Jackson 5,https://www.udiscovermusic.com/artist/jackson-5,
-The Jam,https://www.udiscovermusic.com/artist/the-jam,
-The Killers,https://www.udiscovermusic.com/artist/the-killers,
-The Kinks,https://www.udiscovermusic.com/artist/the-kinks,
-The Kooks,https://www.udiscovermusic.com/artist/the-kooks,
-The Libertines,https://www.udiscovermusic.com/artist/the-libertines,
-The Lumineers,https://www.udiscovermusic.com/artist/the-lumineers,
-The Mamas & The Papas,https://www.udiscovermusic.com/artist/the-mamas-and-the-papas,
-The Marvelettes,https://www.udiscovermusic.com/artist/the-marvelettes,
-The Mavericks,https://www.udiscovermusic.com/artist/the-mavericks,
-The Moody Blues,https://www.udiscovermusic.com/artist/the-moody-blues,
-The Ozark Mountain Daredevils,https://www.udiscovermusic.com/artist/ozark-mountain-daredevils,
-The Righteous Brothers,https://www.udiscovermusic.com/artist/the-righteous-brothers,
-The Roots,https://www.udiscovermusic.com/artist/the-roots,
-The Ruts,https://www.udiscovermusic.com/artist/the-ruts,
-The Smashing Pumpkins,https://www.udiscovermusic.com/artist/the-smashing-pumpkins,
-The Statler Brothers,https://www.udiscovermusic.com/artist/the-statler-brothers,
-The Style Council,https://www.udiscovermusic.com/artist/the-style-council,
-The Supremes,https://www.udiscovermusic.com/artist/the-supremes,
-The Temptations,https://www.udiscovermusic.com/artist/the-temptations,
-The Tubes,https://www.udiscovermusic.com/artist/the-tubes,
-The Velvet Underground,https://www.udiscovermusic.com/artist/the-velvet-underground,
-The Verve,https://www.udiscovermusic.com/artist/the-verve,
-The Walker Brothers,https://www.udiscovermusic.com/artist/the-walker-brothers,
-The Who,https://www.udiscovermusic.com/artists/the-who/,
-Thelma Houston,https://www.udiscovermusic.com/artist/thelma-houston,
-Thomas Rhett,https://www.udiscovermusic.com/artist/thomas-rhett,
-Three Dog Night,https://www.udiscovermusic.com/artist/three-dog-night,
-Tim McGraw,https://www.udiscovermusic.com/artist/tim-mcgraw,
-Tom Jones,https://www.udiscovermusic.com/artist/tom-jones,
-Tom Waits,https://www.udiscovermusic.com/artist/tom-waits,
-Toots and the Maytals,https://www.udiscovermusic.com/artist/toots-and-the-maytals,
-Tori Amos,https://www.udiscovermusic.com/artist/tori-amos,
-Traffic,https://www.udiscovermusic.com/artist/traffic,
-Traveling Wilburys,https://www.udiscovermusic.com/artist/traveling-wilburys,
-UB40,https://www.udiscovermusic.com/artist/ub40,
-Ultravox,https://www.udiscovermusic.com/artist/ultravox,
-Underworld,https://www.udiscovermusic.com/artist/underworld,
-Van der Graaf Generator,https://www.udiscovermusic.com/artist/van-der-graaf-generator,
-Weezer,https://www.udiscovermusic.com/artist/weezer,
-Wet Wet Wet,https://www.udiscovermusic.com/artist/wet-wet-wet,
-Whitesnake,https://www.udiscovermusic.com/artist/whitesnake,
-William Orbit,https://www.udiscovermusic.com/artist/william-orbit,
-Willie Nelson,https://www.udiscovermusic.com/artist/willie-nelson,
-Wilson Pickett,https://www.udiscovermusic.com/artist/wilson-pickett,
-Wishbone Ash,https://www.udiscovermusic.com/artist/wishbone-ash,
-Wolfmother,https://www.udiscovermusic.com/artist/wolfmother,
-Yeah Yeah Yeahs,https://www.udiscovermusic.com/artist/yeah-yeah-yeahs,
-Yello,https://www.udiscovermusic.com/artist/yello,
-Yes,https://www.udiscovermusic.com/artist/yes,
-Young Jeezy,https://www.udiscovermusic.com/artist/young-jeezy,
-Zucchero,https://www.udiscovermusic.com/artist/zucchero,
-will.i.am,https://www.udiscovermusic.com/artist/will-i-am,
+ARTIST NAME,MEMBER NAME,ARTIST PAGE URL,BIRTHDAY (YYYY-MM-DD)
+10cc,,https://www.udiscovermusic.com/artist/10cc,
+2Pac,2Pac,https://www.udiscovermusic.com/artist/2pac,1971-06-16
+50 Cent,50 Cent,https://www.udiscovermusic.com/artist/50-cent,1975-07-06
+A Thousand Horses,,https://www.udiscovermusic.com/artist/a-thousand-horses,
+ABBA,Agnetha Fältskog,https://www.udiscovermusic.com/artist/abba,1950-04-05
+ABBA,Björn Ulvaeus,https://www.udiscovermusic.com/artist/abba,1945-04-25
+ABBA,Benny Andersson,https://www.udiscovermusic.com/artist/abba,1946-12-16
+ABC,,https://www.udiscovermusic.com/artist/abc,
+Aerosmith,Steven Tyler,https://www.udiscovermusic.com/artist/aerosmith,1948-03-26
+Aerosmith,Joe Perry,https://www.udiscovermusic.com/artist/aerosmith,1950-09-10
+Aerosmith,Tom Hamilton,https://www.udiscovermusic.com/artist/aerosmith,1951-12-31
+Agnetha Fältskog,Agnetha Fältskog,https://www.udiscovermusic.com/artist/agnetha-faltskog,1950-04-05
+Alan Jackson,Alan Jackson,https://www.udiscovermusic.com/artists/alan-jackson,1958-10-17
+Albert King,Albert King,https://www.udiscovermusic.com/artist/albert-king,1923-04-25
+Alice Cooper,Alice Cooper,https://www.udiscovermusic.com/artist/Alice-Cooper,1948-02-04
+Alison Krauss,Alison Krauss,https://www.udiscovermusic.com/artist/alison-krauss,1971-07-23
+Andre Rieu,Andre Rieu,https://www.udiscovermusic.com/artist/andre-rieu,1949-10-01
+Andrea Bocelli,Andrea Bocelli,https://www.udiscovermusic.com/artist/andrea-bocelli,1958-09-22
+Andrew W.K.,Andrew W.K.,https://www.udiscovermusic.com/artist/andrew-w-k,1979-05-09
+Anna-Frid Lyngstad,Anna-Frid Lyngstad,https://www.udiscovermusic.com/artist/frida-lyngstad,1945-11-15
+Anthrax,Joey Belladonna,https://www.udiscovermusic.com/artist/anthrax,1960-10-13
+Apache Indian,Apache Indian,https://www.udiscovermusic.com/artist/apache-indian,1967-05-11
+Arcade Fire,Win Butler,https://www.udiscovermusic.com/artist/arcade-fire,1980-04-14
+Arcade Fire,Régine Chassagne,https://www.udiscovermusic.com/artist/arcade-fire,1976-08-19
+Arcade Fire,Richard Parry,https://www.udiscovermusic.com/artist/arcade-fire,1977-10-04
+Arrested Development,Speech,https://www.udiscovermusic.com/artist/arrested-development,1968-10-25
+Ashley Campbell,Ashley Campbell,https://www.udiscovermusic.com/artist/ashley-campbell,1986-12-08
+Astrud Gilberto,Astrud Gilberto,https://www.udiscovermusic.com/artist/astrud-gilberto,1940-03-29
+Aswad,,https://www.udiscovermusic.com/artist/aswad,
+Atlanta Rhythm Section,,https://www.udiscovermusic.com/artist/atlanta-rhythm-section,
+Audioslave,Chris Cornell,https://www.udiscovermusic.com/artist/audioslave,1964-07-20
+Audioslave,Tom Morello,https://www.udiscovermusic.com/artist/audioslave,1964-05-30
+Audioslave,Tim Commerford,https://www.udiscovermusic.com/artist/audioslave,1968-02-26
+B.B. King,B.B. King,https://www.udiscovermusic.com/artist/b-b-king,1925-09-16
+Badfinger,Peter Hamm,https://www.udiscovermusic.com/artist/badfinger,1966-01-01
+Badfinger,Joey Molland,https://www.udiscovermusic.com/artist/badfinger,1947-06-21
+Badfinger,Tom Evans,https://www.udiscovermusic.com/artist/badfinger,1947-06-05
+Barclay James Harvest,Mel Pritchard,https://www.udiscovermusic.com/artist/barclay-james-harvest,1948-01-20
+Beastie Boys,Mike D,https://www.udiscovermusic.com/artist/beastie-boys,1965-11-20
+Beastie Boys,Adam Yauch,https://www.udiscovermusic.com/artist/beastie-boys,1964-08-05
+Beastie Boys,Ad-Rock,https://www.udiscovermusic.com/artist/beastie-boys,1966-10-31
+Beck,Beck,https://www.udiscovermusic.com/artist/Beck,1970-07-08
+Bee Gees,Barry Gibb,https://www.udiscovermusic.com/artist/bee-gees,1946-09-01
+Bee Gees,Robin Gibb,https://www.udiscovermusic.com/artist/bee-gees,1949-12-22
+Bee Gees,Maurice Gibb,https://www.udiscovermusic.com/artist/bee-gees,1949-12-22
+Belinda Carlisle,Belinda Carlisle,https://www.udiscovermusic.com/artist/belinda-carlisle,1958-08-17
+Ben Harper,Ben Harper,https://www.udiscovermusic.com/artist/ben-harper,1969-10-28
+Ben Howard,Ben Howard,https://www.udiscovermusic.com/?post_type=artists&p=29929,1987-04-24
+Benny Andersson,Benny Andersson,https://www.udiscovermusic.com/artist/benny-andersson,1946-12-16
+Big Country,Stuart Adamson,https://www.udiscovermusic.com/artist/big-country,1958-04-11
+Big Star,,https://www.udiscovermusic.com/artist/big-star,
+Billie Holiday,Billie Holiday,https://www.udiscovermusic.com/artist/billie-holiday,1915-04-07
+Billy Fury,Billy Fury,https://www.udiscovermusic.com/artist/billy-fury,1940-04-17
+Billy Preston,Billy Preston,https://www.udiscovermusic.com/artist/billy-preston,1946-09-02
+Björk,Björk,https://www.udiscovermusic.com/artist/bjork,1965-11-21
+Black Eyed Peas,will.i.am,https://www.udiscovermusic.com/artist/black-eyed-peas,1975-03-15
+Black Eyed Peas,apl.de.ap,https://www.udiscovermusic.com/artist/black-eyed-peas,1974-11-28
+Black Eyed Peas,Taboo Nawasha,https://www.udiscovermusic.com/artist/black-eyed-peas,1975-07-14
+Black Sabbath,Black Sabbath,https://www.udiscovermusic.com/artist/black-sabbath,1983-09-09
+Black Uhuru,Michael Rose,https://www.udiscovermusic.com/artist/black-uhuru,1957-07-11
+Black Uhuru,Duckie Simpson,https://www.udiscovermusic.com/artist/black-uhuru,1950-06-24
+Black Uhuru,Don Carlos,https://www.udiscovermusic.com/artist/black-uhuru,1952-06-29
+Blind Faith,Eric Clapton,https://www.udiscovermusic.com/artist/blind-faith,1945-03-30
+Blind Faith,Steve Winwood,https://www.udiscovermusic.com/artist/blind-faith,1948-05-12
+Blind Faith,Ric Grech,https://www.udiscovermusic.com/artist/blind-faith,1946-11-01
+Blink 182,Mark Hoppus,https://www.udiscovermusic.com/artist/blink-182,1972-03-15
+Blink 182,Travis Barker,https://www.udiscovermusic.com/artist/blink-182,1975-11-14
+Blink 182,Matt Skiba,https://www.udiscovermusic.com/artist/blink-182,1976-02-24
+Blue Cheer,,https://www.udiscovermusic.com/artist/blue-cheer,
+Bo Diddley,Bo Diddley,https://www.udiscovermusic.com/artist/bo-diddley,1928-12-30
+Bon Jovi,Jon Bon Jovi,https://www.udiscovermusic.com/artist/Bon-Jovi,1962-03-02
+Bon Jovi,David Bryan,https://www.udiscovermusic.com/artist/Bon-Jovi,1962-02-07
+Bon Jovi,Tico Torres,https://www.udiscovermusic.com/artist/Bon-Jovi,1953-10-07
+Booker T,Booker T,https://www.udiscovermusic.com/artist/booker-t,1856-04-05
+Boyz II Men,,https://www.udiscovermusic.com/artist/Boyz-II-Men,
+Brantley Gilbert,Brantley Gilbert,https://www.udiscovermusic.com/artist/brantley-gilbert,1963-01-20
+Brenda Holloway,Brenda Holloway,https://www.udiscovermusic.com/artist/brenda-holloway,1946-06-21
+Bruce Springsteen,Bruce Springsteen,https://www.udiscovermusic.com/artist/Bruce-Springsteen,1949-09-23
+Bryan Adams,Bryan Adams,https://www.udiscovermusic.com/artist/bryan-adams,1959-11-05
+Buddy Holly,Buddy Holly,https://www.udiscovermusic.com/artist/buddy-holly,1936-09-07
+Burning Spear,Burning Spear,https://www.udiscovermusic.com/artist/burning-spear,1948-03-01
+Burt Bacharach,Burt Bacharach,https://www.udiscovermusic.com/artist/burt-bacharach,1928-05-12
+Camel,,https://www.udiscovermusic.com/artist/camel,
+Canned Heat,Dale Spalding,https://www.udiscovermusic.com/artist/canned-heat,1949-04-16
+Canned Heat,Bob Hite,https://www.udiscovermusic.com/artist/canned-heat,1943-02-26
+Canned Heat,Alan Wilson,https://www.udiscovermusic.com/artist/canned-heat,1943-07-04
+Captain Beefheart,Captain Beefheart,https://www.udiscovermusic.com/artist/captain-beefheart,1941-01-15
+Caravan,Pye Hastings,https://www.udiscovermusic.com/artist/caravan,1947-01-21
+Caravan,Dave Sinclair,https://www.udiscovermusic.com/artist/caravan,1947-11-24
+Carpenters,,https://www.udiscovermusic.com/artist/carpenters,
+Charlie Parker,Charlie Parker,https://www.udiscovermusic.com/artist/Charlie-Parker,1920-08-29
+Cheap Trick,Rick Nielsen,https://www.udiscovermusic.com/artist/cheap-trick,1948-12-22
+Cheap Trick,Bun E. Carlos,https://www.udiscovermusic.com/artist/cheap-trick,1950-06-12
+Cheap Trick,Tom Petersson,https://www.udiscovermusic.com/artist/cheap-trick,1950-05-09
+Cher,Cher,https://www.udiscovermusic.com/artist/cher,1946-05-20
+Chris Stapleton,Chris Stapleton,https://www.udiscovermusic.com/artist/chris-stapleton,1978-04-15
+Cinderella,,https://www.udiscovermusic.com/artist/cinderella,
+Climax Blues Band,,https://www.udiscovermusic.com/artist/climax-blues-band,
+Commodores,Lionel Richie,https://www.udiscovermusic.com/artist/commodores,1949-06-20
+Commodores,Walter Orange,https://www.udiscovermusic.com/artist/commodores,1946-12-10
+Corinne Bailey Rae,Corinne Bailey Rae,https://www.udiscovermusic.com/artist/corinne-bailey-rae,1979-02-26
+Counting Crows,Adam Duritz,https://www.udiscovermusic.com/artist/counting-crows,1964-08-01
+Counting Crows,David Bryson,https://www.udiscovermusic.com/artist/counting-crows,1961-11-05
+Counting Crows,Charlie Gillingham,https://www.udiscovermusic.com/artist/counting-crows,1960-01-26
+Craig Armstrong,Craig Armstrong,https://www.udiscovermusic.com/artist/craig-armstrong,1975-05-23
+Cream,Jack Bruce,https://www.udiscovermusic.com/artist/cream,1943-05-14
+Cream,Eric Clapton,https://www.udiscovermusic.com/artist/cream,1945-03-30
+Cream,Ginger Baker,https://www.udiscovermusic.com/artist/cream,1939-08-19
+Crowded House,Neil Finn,https://www.udiscovermusic.com/artist/crowded-house,1958-05-27
+Crowded House,Nick Seymour,https://www.udiscovermusic.com/artist/crowded-house,1958-12-09
+Crowded House,Mitchell Froom,https://www.udiscovermusic.com/artist/crowded-house,1953-06-29
+Culture Club,Boy George,https://www.udiscovermusic.com/artist/culture-club,1961-06-14
+Culture Club,Mikey Craig,https://www.udiscovermusic.com/artist/culture-club,1960-02-15
+Culture Club,Roy Hay,https://www.udiscovermusic.com/artist/culture-club,1961-08-12
+Cutting Crew,Nick Van Eede,https://www.udiscovermusic.com/artist/cutting-crew,1958-06-14
+D'Angelo,D'Angelo,https://www.udiscovermusic.com/artist/dangelo,1974-02-11
+DMX,DMX,https://www.udiscovermusic.com/artist/dmx,1970-12-18
+Daniel Hope,Daniel Hope,https://www.udiscovermusic.com/artist/daniel-hope,1973-08-17
+Darren Hayes,Darren Hayes,https://www.udiscovermusic.com/artist/darren-hayes,1972-05-08
+David Bowie,David Bowie,https://www.udiscovermusic.com/artist/david-bowie,1947-01-08
+Dean Martin,Dean Martin,https://www.udiscovermusic.com/artist/dean-martin,1917-06-07
+Debarge,Bunny DeBarge,https://www.udiscovermusic.com/artist/debarge,1955-03-10
+Debarge,Mark DeBarge,https://www.udiscovermusic.com/artist/debarge,1959-06-19
+Debarge,Randy DeBarge,https://www.udiscovermusic.com/artist/debarge,1958-08-06
+Def Leppard,Joe Elliott,https://www.udiscovermusic.com/artist/Def-Leppard,1959-08-01
+Def Leppard,Rick Savage,https://www.udiscovermusic.com/artist/Def-Leppard,1960-12-02
+Def Leppard,Rick Allen,https://www.udiscovermusic.com/artist/Def-Leppard,1963-11-01
+Demis Roussos,Demis Roussos,https://www.udiscovermusic.com/artist/demis-roussos,1946-06-15
+Derek And The Dominos,Eric Clapton,https://www.udiscovermusic.com/artist/Derek-And-The-Dominos,1945-03-30
+Desmond Dekker,Desmond Dekker,https://www.udiscovermusic.com/artist/desmond-dekker,1941-07-16
+Dinah Washington,Dinah Washington,https://www.udiscovermusic.com/artist/Dinah-Washington,1924-08-29
+Dio,Dio,https://www.udiscovermusic.com/artist/dio,1968-03-30
+Dire Straits,Mark Knopfler,https://www.udiscovermusic.com/artist/Dire-Straits,1949-08-12
+Dire Straits,David Knopfler,https://www.udiscovermusic.com/artist/Dire-Straits,1952-12-27
+Dire Straits,John Illsley,https://www.udiscovermusic.com/artist/Dire-Straits,1949-06-24
+Disclosure,,https://www.udiscovermusic.com/artist/disclosure,
+Dr Dre,Dr Dre,https://www.udiscovermusic.com/artist/dr-dre,1965-02-18
+Duke Ellington,Duke Ellington,https://www.udiscovermusic.com/artist/duke-ellington,1899-04-29
+Dusty Springfield,Dusty Springfield,https://www.udiscovermusic.com/artist/Dusty-Springfield,1939-04-16
+EPMD,,https://www.udiscovermusic.com/artist/epmd,
+Eagles,Glenn Frey,https://www.udiscovermusic.com/artist/Eagles,1948-11-06
+Eagles,Don Henley,https://www.udiscovermusic.com/artist/Eagles,1947-07-22
+Eagles,Timothy B. Schmit,https://www.udiscovermusic.com/artist/Eagles,1947-10-30
+Eagles of Death Metal,Josh Homme,https://www.udiscovermusic.com/artist/eagles-of-death-metal,1973-05-17
+Eagles of Death Metal,Jesse Hughes,https://www.udiscovermusic.com/artist/eagles-of-death-metal,1972-09-24
+Eazy-E,Eazy-E,https://www.udiscovermusic.com/artist/Eazy-E,1964-09-07
+Eddie Cochran,Eddie Cochran,https://www.udiscovermusic.com/artist/Eddie-Cochran,1938-10-03
+Eddie Kendricks,Eddie Kendricks,https://www.udiscovermusic.com/artist/Eddie-Kendrick,1939-12-17
+Eels,Mark Oliver Everett,https://www.udiscovermusic.com/artist/eels,1963-04-10
+Elbow,Guy Garvey,https://www.udiscovermusic.com/artist/elbow,1974-03-06
+Elbow,Pete Turner,https://www.udiscovermusic.com/artist/elbow,1974-01-01
+Ella Fitzgerald,Ella Fitzgerald,https://www.udiscovermusic.com/artist/Ella-Fitzgerald,1917-04-25
+Elvis Presley,Elvis Presley,https://www.udiscovermusic.com/artist/Elvis-Presley,1935-01-08
+Emeli Sandé,Emeli Sandé,https://www.udiscovermusic.com/artist/emeli-sande,1987-03-10
+Enigma,,https://www.udiscovermusic.com/artist/enigma,
+Eric B and Rakim,,https://www.udiscovermusic.com/artist/eric-b-and-rakim,
+Etta James,Etta James,https://www.udiscovermusic.com/artist/Etta-James,1938-01-25
+Eva Cassidy,Eva Cassidy,https://www.udiscovermusic.com/artist/eva-cassidy,1963-02-02
+Evanescence,Amy Lee,https://www.udiscovermusic.com/artist/evanescence,1981-12-13
+Evanescence,Ben Moody,https://www.udiscovermusic.com/artist/evanescence,1981-01-22
+Evanescence,David Hodges,https://www.udiscovermusic.com/artist/evanescence,1978-12-05
+Extreme,,https://www.udiscovermusic.com/artist/extreme,
+Fairport Convention,Sandy Denny,https://www.udiscovermusic.com/artist/fairport-convention,1947-01-06
+Fairport Convention,Richard Thompson,https://www.udiscovermusic.com/artist/fairport-convention,1949-04-03
+Fairport Convention,Ashley Hutchings,https://www.udiscovermusic.com/artist/fairport-convention,1945-01-26
+Fall Out Boy,Patrick Stump,https://www.udiscovermusic.com/artist/fall-out-boy,1984-04-27
+Fall Out Boy,Joe Trohman,https://www.udiscovermusic.com/artist/fall-out-boy,1984-09-01
+Fall Out Boy,Pete Wentz,https://www.udiscovermusic.com/artist/fall-out-boy,1979-06-05
+Faust,Faust,https://www.udiscovermusic.com/artist/faust,1969-11-10
+Fergie,Fergie,https://www.udiscovermusic.com/artist/fergie,1975-03-27
+Florence and the Machine,Florence Welch,https://www.udiscovermusic.com/artist/florence-and-the-machine,1986-08-28
+Florence and the Machine,Isabella Summers,https://www.udiscovermusic.com/artist/florence-and-the-machine,1980-10-31
+Foo Fighters,Franz Stahl,https://www.udiscovermusic.com/artist/foo-fighter,1962-10-30
+Foo Fighters,Dave Grohl,https://www.udiscovermusic.com/artist/foo-fighter,1969-01-14
+Foo Fighters,William Goldsmith,https://www.udiscovermusic.com/artist/foo-fighter,1972-07-04
+Frankie Goes To Hollywood,Holly Johnson,https://www.udiscovermusic.com/artist/frankie-goes-to-hollywood,1960-02-09
+Frankie Goes To Hollywood,Peter Gill,https://www.udiscovermusic.com/artist/frankie-goes-to-hollywood,1964-03-08
+Frankie Goes To Hollywood,Mark O'Toole,https://www.udiscovermusic.com/artist/frankie-goes-to-hollywood,1964-01-06
+Free,,https://www.udiscovermusic.com/artist/Free,
+Gang Starr,,https://www.udiscovermusic.com/artist/gang-starr,
+Gary Clark,Gary Clark,https://www.udiscovermusic.com/artist/danny-wilson-gary-clark,1984-02-15
+Gaz Coombe,Gaz Coombe,https://www.udiscovermusic.com/artist/gaz-coombe,1976-03-08
+Gene Vincent,Gene Vincent,https://www.udiscovermusic.com/artist/gene-vincent,1935-02-11
+Gentle Giant,Martin Smith,https://www.udiscovermusic.com/artist/gentle-giant,1946-12-17
+George Benson,George Benson,https://www.udiscovermusic.com/artist/george-benson,1943-03-22
+George Gershwin,George Gershwin,https://www.udiscovermusic.com/artist/george-gershwi,1898-09-26
+George Michael,George Michael,https://www.udiscovermusic.com/artist/george-michael,1963-06-25
+George Strait,George Strait,https://www.udiscovermusic.com/artist/George-Strait,1952-05-18
+George Thorogood,George Thorogood,https://www.udiscovermusic.com/artist/George-Thorogood,1950-02-24
+Georgie Fame,Georgie Fame,https://www.udiscovermusic.com/artist/Georgie-Fame,1943-06-26
+Ghostface Killah,Ghostface Killah,https://www.udiscovermusic.com/artist/ghostface-killah,1970-05-09
+Gong,Gong,https://www.udiscovermusic.com/artist/gong,1965-12-31
+Grace Jones,Grace Jones,https://www.udiscovermusic.com/artist/Grace-Jones,1948-05-19
+Graham Parker,Graham Parker,https://www.udiscovermusic.com/artist/graham-parker,1950-11-18
+Grand Funk Railroad,Don Brewer,https://www.udiscovermusic.com/artist/grand-funk-railroad,1948-09-03
+Gregory Isaacs,Gregory Isaacs,https://www.udiscovermusic.com/artist/gregory-isaacs,1951-07-15
+Gregory Porter,Gregory Porter,https://www.udiscovermusic.com/artist/gregory-porter,1971-11-04
+Guns N Roses,Axl Rose,https://www.udiscovermusic.com/artist/Guns-N-Roses,1962-02-06
+Guns N Roses,Duff McKagan,https://www.udiscovermusic.com/artist/Guns-N-Roses,1964-02-05
+Guns N Roses,Richard Fortus,https://www.udiscovermusic.com/artist/Guns-N-Roses,1966-11-17
+Haddaway,Haddaway,https://www.udiscovermusic.com/artist/haddawa,1965-01-09
+Heart,,https://www.udiscovermusic.com/artist/heart,
+Heaven 17,Ian Craig Marsh,https://www.udiscovermusic.com/artist/Heaven-17,1956-11-11
+Helmet,Helmet,https://www.udiscovermusic.com/artist/helmet,1930-04-03
+Hoobastank,Markku Lappalainen,https://www.udiscovermusic.com/artist/hoobastank,1973-04-06
+Hoobastank,Doug Robb,https://www.udiscovermusic.com/artist/hoobastank,1975-01-02
+Howlin Wolf,Howlin Wolf,https://www.udiscovermusic.com/artist/Howlin-Wolf,1910-06-10
+Hoyt Axton,Hoyt Axton,https://www.udiscovermusic.com/artist/hoyt-axton,1938-03-25
+Huey Lewis & The News,Huey Lewis,https://www.udiscovermusic.com/artist/huey-lewis-and-the-news,1950-07-05
+Huey Lewis & The News,Johnny Colla,https://www.udiscovermusic.com/artist/huey-lewis-and-the-news,1952-07-02
+Huey Lewis & The News,Sean Hopper,https://www.udiscovermusic.com/artist/huey-lewis-and-the-news,1953-03-31
+Human League,Philip Oakey,https://www.udiscovermusic.com/artist/human-league,1955-10-02
+Human League,Joanne Catherall,https://www.udiscovermusic.com/artist/human-league,1962-09-18
+Humble Pie,Steve Marriott,https://www.udiscovermusic.com/artist/Humble-Pie,1947-01-30
+INXS,Michael Hutchence,https://www.udiscovermusic.com/artist/inxs,1960-01-22
+INXS,Garry Gary Beers,https://www.udiscovermusic.com/artist/inxs,1957-06-22
+INXS,Andrew Farriss,https://www.udiscovermusic.com/artist/inxs,1959-03-27
+Ice Cube,Ice Cube,https://www.udiscovermusic.com/artist/ice-cube,1969-06-15
+Iggy Pop,Iggy Pop,https://www.udiscovermusic.com/artist/Iggy-Pop,1947-04-21
+Imagine Dragons,Dan Reynolds,https://www.udiscovermusic.com/artist/Imagine-Dragons,1987-07-14
+Imagine Dragons,Daniel Wayne Sermón,https://www.udiscovermusic.com/artist/Imagine-Dragons,1984-06-15
+Imagine Dragons,Ben McKee,https://www.udiscovermusic.com/artist/Imagine-Dragons,1985-04-07
+Iron Maiden,Bruce Dickinson,https://www.udiscovermusic.com/artist/iron-maiden,1958-08-07
+Iron Maiden,Steve Harris,https://www.udiscovermusic.com/artist/iron-maiden,1956-03-12
+Iron Maiden,Dave Murray,https://www.udiscovermusic.com/artist/iron-maiden,1956-12-23
+It Bites,,https://www.udiscovermusic.com/artist/it-bites,
+J.J. Cale,J.J. Cale,https://www.udiscovermusic.com/artist/j-j-cale,1938-12-05
+Jack Bruce,Jack Bruce,https://www.udiscovermusic.com/artist/jack-bruce,1943-05-14
+Jack Johnson,Jack Johnson,https://www.udiscovermusic.com/artist/jack-johnson,1878-03-31
+Jackie Wilson,Jackie Wilson,https://www.udiscovermusic.com/artist/jackie-wilson,1934-06-09
+Jacques Brel,Jacques Brel,https://www.udiscovermusic.com/artist/jacques-brel,1929-04-08
+James,James,https://www.udiscovermusic.com/artist/james,1984-12-30
+James Bay,James Bay,https://www.udiscovermusic.com/artist/james-bay,1990-09-04
+James Blake,James Blake,https://www.udiscovermusic.com/artist/james-blake,1988-09-25
+James Morrison,James Morrison,https://www.udiscovermusic.com/artist/james-morrison,1962-11-11
+James Taylor,James Taylor,https://www.udiscovermusic.com/artist/james-taylor,1948-03-12
+Jane's Addiction,Eric Avery,https://www.udiscovermusic.com/artist/janes-addiction,1965-04-25
+Japan,,https://www.udiscovermusic.com/artist/japan-david-sylvian,
+Jay Z,Jay Z,https://www.udiscovermusic.com/artist/jay-z,1969-12-04
+Jeff Buckley,Jeff Buckley,https://www.udiscovermusic.com/artist/jeffbuckley,1966-11-17
+Jeru The Damaja,Jeru The Damaja,https://www.udiscovermusic.com/artist/jeru-the-damaja,1972-02-14
+Jethro Tull,Ian Anderson,https://www.udiscovermusic.com/artist/jethro-tul,1947-08-10
+Jethro Tull,Jeffrey Hammond,https://www.udiscovermusic.com/artist/jethro-tul,1946-07-30
+Jethro Tull,Martin Barre,https://www.udiscovermusic.com/artist/jethro-tul,1946-11-17
+Jimi Hendrix,Jimi Hendrix,https://www.udiscovermusic.com/artist/jimi-hendrix,1942-11-27
+Jimmy Buffett,Jimmy Buffett,https://www.udiscovermusic.com/artist/jimmy-buffett,1946-12-25
+Jimmy Cliff,Jimmy Cliff,https://www.udiscovermusic.com/artist/jimmy-cliff,1944-07-30
+Jimmy Eat World,Jim Adkins,https://www.udiscovermusic.com/artist/jimmy-eat-world,1975-11-10
+Jimmy Ruffin,Jimmy Ruffin,https://www.udiscovermusic.com/artist/jimmy-ruffin,1939-05-07
+Jimmy Smith,Jimmy Smith,https://www.udiscovermusic.com/artist/jimmy-smith,1988-07-26
+Joan Armatrading,Joan Armatrading,https://www.udiscovermusic.com/artist/joan-armatrading,1950-12-09
+Joan Baez,Joan Baez,https://www.udiscovermusic.com/artist/joan-baez,1941-01-09
+Joe Cocker,Joe Cocker,https://www.udiscovermusic.com/artist/joe-cocker,1944-05-20
+Joe Jackson,Joe Jackson,https://www.udiscovermusic.com/artist/joe-jackson,1928-07-26
+Joe Sample,Joe Sample,https://www.udiscovermusic.com/artist/joe-sample,1939-02-01
+Joe Walsh,Joe Walsh,https://www.udiscovermusic.com/artist/joe-walsh-the-james-gang,1947-11-20
+John Coltrane,John Coltrane,https://www.udiscovermusic.com/artists/john-coltrane/,1926-09-23
+John Fogerty,John Fogerty,https://www.udiscovermusic.com/artist/john-fogerty,1945-05-28
+John Martyn,John Martyn,https://www.udiscovermusic.com/artist/john-martyn,1948-09-11
+John Mayall,John Mayall,https://www.udiscovermusic.com/artist/john-mayall,1933-11-29
+John Williams,John Williams,https://www.udiscovermusic.com/artist/john-williams,1932-02-08
+Johnny Gill,Johnny Gill,https://www.udiscovermusic.com/artist/johnny-gill,1966-05-22
+Joni Mitchell,Joni Mitchell,https://www.udiscovermusic.com/artist/joni-mitchell,1943-11-07
+Jonny Lang,Jonny Lang,https://www.udiscovermusic.com/artist/jonny-lang,1981-01-29
+Jorge Ben,Jorge Ben,https://www.udiscovermusic.com/artist/jorge-ben,1942-03-22
+Joss Stone,Joss Stone,https://www.udiscovermusic.com/artist/joss-stone,1987-04-11
+Jr. Walker & the All-Stars,Jr. Walker & the All-Stars,https://www.udiscovermusic.com/artist/jr-walker-the-all-stars,1931-06-14
+Julie London,Julie London,https://www.udiscovermusic.com/artist/julie-london,1926-09-26
+Jurassic 5,,https://www.udiscovermusic.com/artist/jurassic-5,
+Kaiser Chiefs,Ricky Wilson,https://www.udiscovermusic.com/artist/kaiser-chiefs,1978-01-17
+Kaiser Chiefs,Andrew White,https://www.udiscovermusic.com/artist/kaiser-chiefs,1974-08-28
+Kaiser Chiefs,Nick Hodgson,https://www.udiscovermusic.com/artist/kaiser-chiefs,1977-10-20
+Kate Bush,Kate Bush,https://www.udiscovermusic.com/artist/kate-bush,1958-07-30
+Keane,Keane,https://www.udiscovermusic.com/artist/keane,1980-07-08
+Keith Jarrett,Keith Jarrett,https://www.udiscovermusic.com/artist/keith-jarrett,1945-05-08
+Keith Richards,Keith Richards,https://www.udiscovermusic.com/artist/keith-richards,1943-12-18
+Kenny Burrell,Kenny Burrell,https://www.udiscovermusic.com/artist/kenny-burrell,1931-07-31
+Kevin Coyne,Kevin Coyne,https://www.udiscovermusic.com/artist/kevin-coyne,1944-01-27
+Killing Joke,Paul Raven,https://www.udiscovermusic.com/artist/killing-joke,1961-01-16
+Killing Joke,Jaz Coleman,https://www.udiscovermusic.com/artist/killing-joke,1960-02-26
+Killing Joke,Geordie Walker,https://www.udiscovermusic.com/artist/killing-joke,1958-12-18
+Kim Carnes,Kim Carnes,https://www.udiscovermusic.com/artist/kim-carnes,1945-07-20
+Kip Moore,Kip Moore,https://www.udiscovermusic.com/artist/kip-moore,1980-04-02
+Klaatu,,https://www.udiscovermusic.com/artist/klaatu,
+Kool and the Gang,Dennis Thomas,https://www.udiscovermusic.com/artist/kool-and-the-gang,1951-02-09
+Kool and the Gang,Ronald Bell,https://www.udiscovermusic.com/artist/kool-and-the-gang,1951-11-01
+Lady A,Hillary Scott,https://www.udiscovermusic.com/artist/lady-antebellum,1986-04-01
+Lady A,Charles Kelley,https://www.udiscovermusic.com/artist/lady-antebellum,1981-09-11
+Lady A,Dave Haywood,https://www.udiscovermusic.com/artist/lady-antebellum,1982-07-05
+Laura Marling,Laura Marling,https://www.udiscovermusic.com/artist/laura-marling,1990-02-01
+Led Zeppelin,Robert Plant,https://www.udiscovermusic.com/artist/led-zeppelin,1948-08-20
+Led Zeppelin,Jimmy Page,https://www.udiscovermusic.com/artist/led-zeppelin,1944-01-09
+Led Zeppelin,John Bonham,https://www.udiscovermusic.com/artist/led-zeppelin,1948-05-31
+Lee Scratch Perry,Lee Scratch Perry,https://www.udiscovermusic.com/artist/lee-scratch-perry,1936-03-20
+Leon Russell,Leon Russell,https://www.udiscovermusic.com/artist/leon-russell,1942-04-02
+Lester Young,Lester Young,https://www.udiscovermusic.com/artist/lester-young,1909-08-27
+Level 42,Mark King,https://www.udiscovermusic.com/artist/level-42,1958-10-20
+Level 42,Mike Lindup,https://www.udiscovermusic.com/artist/level-42,1959-03-17
+Level 42,Nathan King,https://www.udiscovermusic.com/artist/level-42,1970-08-29
+Lightnin' Hopkins,Lightnin' Hopkins,https://www.udiscovermusic.com/artist/lightnin-hopkins,1912-03-15
+Linton Kwesi Johnson,Linton Kwesi Johnson,https://www.udiscovermusic.com/artist/linton-kwesi-johnson,1952-08-24
+Little Big Town,,https://www.udiscovermusic.com/artist/little-big-town,
+Little Richard,Little Richard,https://www.udiscovermusic.com/artist/little-richard,1932-12-05
+Lloyd Cole,Lloyd Cole,https://www.udiscovermusic.com/artist/lloyd-cole,1961-01-31
+Lorde,Lorde,https://www.udiscovermusic.com/artist/lorde,1996-11-07
+Loreena McKennitt,Loreena McKennitt,https://www.udiscovermusic.com/artist/loreena-mckennit,1957-02-17
+Louis Armstrong,Louis Armstrong,https://www.udiscovermusic.com/artist/louis-armstrong,1901-08-04
+Lucinda Williams,Lucinda Williams,https://www.udiscovermusic.com/artist/lucinda-williams,1953-01-26
+Ludovico Einaudi,Ludovico Einaudi,https://www.udiscovermusic.com/artist/ludovico-einaudi,1955-11-23
+Luke Bryan,Luke Bryan,https://www.udiscovermusic.com/artist/luke-bryan,1976-07-17
+Lulu,Lulu,https://www.udiscovermusic.com/artist/lulu,1948-11-03
+Lynyrd Skynyrd,Gary Rossington,https://www.udiscovermusic.com/artist/lynyrd-skynyrd,1951-12-04
+Lynyrd Skynyrd,Michael Cartellone,https://www.udiscovermusic.com/artist/lynyrd-skynyrd,1962-06-07
+Lynyrd Skynyrd,Johnny Van Zant,https://www.udiscovermusic.com/artist/lynyrd-skynyrd,1960-02-27
+Maddie & Tae,Maddie & Tae,https://www.udiscovermusic.com/artist/maddie-and-tae,1995-06-07
+Madonna,Madonna,https://www.udiscovermusic.com/artist/madonna,1958-08-16
+Magazine,,https://www.udiscovermusic.com/artists/magazine/,
+Marc Almond,Marc Almond,https://www.udiscovermusic.com/artist/marc-almond,1957-07-09
+Marilyn Manson,Marilyn Manson,https://www.udiscovermusic.com/artist/Marilyn-Manson,1969-01-05
+Mark Knopfler,Mark Knopfler,https://www.udiscovermusic.com/artist/Mark-Knopfler,1949-08-12
+Martha Reeves & The Vandellas,Martha Reeves,https://www.udiscovermusic.com/artists/martha-reeves-the-vandellas/,1941-07-18
+Mary Hopkin,Mary Hopkin,https://www.udiscovermusic.com/artist/mary-hopkin,1950-05-03
+Mary J Blige,Mary J Blige,https://www.udiscovermusic.com/artist/Mary-J-Blige,1971-01-11
+Mary Wells,Mary Wells,https://www.udiscovermusic.com/artist/mary-wells,1943-05-13
+Massive Attack,Robert Del Naja,https://www.udiscovermusic.com/artist/massive-attack,1965-01-21
+Massive Attack,Daddy G,https://www.udiscovermusic.com/artist/massive-attack,1959-12-18
+Master P,Master P,https://www.udiscovermusic.com/artist/master-p,1970-04-29
+Maxi Priest,Maxi Priest,https://www.udiscovermusic.com/artist/maxi-priest,1961-06-10
+Meat Loaf,Meat Loaf,https://www.udiscovermusic.com/artist/meat-loaf,1947-09-27
+Megadeth,,https://www.udiscovermusic.com/artist/megadeth,
+Mel Torme,Mel Torme,https://www.udiscovermusic.com/artist/mel-torm,1925-09-13
+Melody Gardot,Melody Gardot,https://www.udiscovermusic.com/artist/Melody-Gardot,1985-02-02
+Metallica,Lars Ulrich,https://www.udiscovermusic.com/artist/Metallica,1963-12-26
+Metallica,James Hetfield,https://www.udiscovermusic.com/artist/Metallica,1963-08-03
+Metallica,Robert Trujillo,https://www.udiscovermusic.com/artist/Metallica,1964-10-23
+Method Man,Method Man,https://www.udiscovermusic.com/artist/method-man,1971-03-02
+Michael Jackson,Michael Jackson,https://www.udiscovermusic.com/artist/Michael-Jackson,1958-08-29
+Michael Nyman,Michael Nyman,https://www.udiscovermusic.com/artist/michael-nyman,1944-03-23
+Mike Oldfield,Mike Oldfield,https://www.udiscovermusic.com/artist/mike-oldfield,1953-05-15
+Mike and the Mechanics,Mike Rutherford,https://www.udiscovermusic.com/artist/mike-and-the-mechanics,1950-10-02
+Mike and the Mechanics,Gary Wallis,https://www.udiscovermusic.com/artist/mike-and-the-mechanics,1964-06-10
+Mike and the Mechanics,Adrian Lee,https://www.udiscovermusic.com/artist/mike-and-the-mechanics,1957-09-09
+Miles Davis,Miles Davis,https://www.udiscovermusic.com/artist/Miles-Davis,1926-05-26
+Minnie Riperton,Minnie Riperton,https://www.udiscovermusic.com/artist/minnie-riperton,1947-11-08
+Morrissey,Morrissey,https://www.udiscovermusic.com/artist/Morrissey,1959-05-22
+Motley Crue,,https://www.udiscovermusic.com/artist/motley-crue,
+Motorhead,Lemmy,https://www.udiscovermusic.com/artist/Motorhead,1945-12-24
+Motorhead,Phil Campbell,https://www.udiscovermusic.com/artist/Motorhead,1961-05-07
+Mumford & Sons,Marcus Mumford,https://www.udiscovermusic.com/artist/Mumford-And-Sons,1987-01-31
+N.W.A,Eazy-E,https://www.udiscovermusic.com/artist/NWA,1964-09-07
+N.W.A,MC Ren,https://www.udiscovermusic.com/artist/NWA,1969-06-14
+N.W.A,Arabian Prince,https://www.udiscovermusic.com/artist/NWA,1965-06-17
+NAS,,https://www.udiscovermusic.com/artist/Nas,
+Nancy Griffith,Nancy Griffith,https://www.udiscovermusic.com/artist/Nanci-Griffith,1953-07-06
+Nazareth,Dan McCafferty,https://www.udiscovermusic.com/artist/nazareth,1946-10-14
+Neil Young,Neil Young,https://www.udiscovermusic.com/artist/neil-young,1945-11-12
+Nelly,Nelly,https://www.udiscovermusic.com/artist/nelly,1974-11-02
+Neneh Cherry,Neneh Cherry,https://www.udiscovermusic.com/artist/neneh-cherry,1964-03-10
+New Edition,Ricky Bell,https://www.udiscovermusic.com/artist/new-edition,1967-09-18
+New Edition,Michael Bivins,https://www.udiscovermusic.com/artist/new-edition,1968-08-10
+New Edition,Bobby Brown,https://www.udiscovermusic.com/artist/new-edition,1969-02-05
+New York Dolls,Johnny Thunders,https://www.udiscovermusic.com/artist/New-York-Dolls,1952-07-15
+Nick Drake,Nick Drake,https://www.udiscovermusic.com/artist/Nick-Drake,1948-06-19
+Nik Kershaw,Nik Kershaw,https://www.udiscovermusic.com/artist/nik-kershaw,1958-03-01
+Nina Simone,Nina Simone,https://www.udiscovermusic.com/artist/Nina-Simone,1933-02-21
+Nine Inch Nails,Atticus Ross,https://www.udiscovermusic.com/artist/Nine-Inch-Nails,1968-01-16
+Nirvana,Kurt Cobain,https://www.udiscovermusic.com/artist/Nirvana,1967-02-20
+Nirvana,Krist Novoselic,https://www.udiscovermusic.com/artist/Nirvana,1965-05-16
+Nirvana,Dave Grohl,https://www.udiscovermusic.com/artist/Nirvana,1969-01-14
+Nitty Gritty Dirt Band,Jeff Hanna,https://www.udiscovermusic.com/artist/Nitty-Gritty-Dirt-Band,1947-07-11
+Nitty Gritty Dirt Band,Ross Holmes,https://www.udiscovermusic.com/artist/Nitty-Gritty-Dirt-Band,1984-06-14
+No Doubt,Gwen Stefani,https://www.udiscovermusic.com/artist/No-Doubt,1969-10-03
+No Doubt,Tony Kanal,https://www.udiscovermusic.com/artist/No-Doubt,1970-08-27
+No Doubt,Tom Dumont,https://www.udiscovermusic.com/artist/No-Doubt,1968-01-11
+OMD,,https://www.udiscovermusic.com/artist/OMD,
+Ocean Colour Scene,Simon Fowler,https://www.udiscovermusic.com/artist/Ocean-Colour-Scene,1965-05-25
+OneRepublic,Ryan Tedder,https://www.udiscovermusic.com/artists/onerepublic/,1979-06-26
+OneRepublic,Zach Filkins,https://www.udiscovermusic.com/artists/onerepublic/,1978-09-15
+OneRepublic,Eddie Fisher,https://www.udiscovermusic.com/artists/onerepublic/,1928-08-10
+Onyx,Fredro Starr,https://www.udiscovermusic.com/artist/onyx,1971-04-18
+Onyx,Sticky Fingaz,https://www.udiscovermusic.com/artist/onyx,1973-11-03
+Onyx,Sonny Seeza,https://www.udiscovermusic.com/artist/onyx,1970-11-13
+Oscar Peterson,Oscar Peterson,https://www.udiscovermusic.com/artist/Oscar-Peterson,1925-08-15
+Otis Redding,Otis Redding,https://www.udiscovermusic.com/artist/Otis-Redding,1941-09-09
+PJ Harvey,PJ Harvey,https://www.udiscovermusic.com/artist/pj-harvey,1969-10-09
+Papa Roach,Tobin Esperance,https://www.udiscovermusic.com/artist/papa-roach,1979-11-14
+Pato Banton,Pato Banton,https://www.udiscovermusic.com/artist/pato-banton,1961-01-28
+Patty Griffin,Patty Griffin,https://www.udiscovermusic.com/artist/patty-griffin,1964-03-16
+Paul McCartney and Wings,Laurence Juber,https://www.udiscovermusic.com/artist/paul-mccartney-and-wings,1952-11-12
+Paul McCartney and Wings,Denny Seiwell,https://www.udiscovermusic.com/artist/paul-mccartney-and-wings,1943-07-10
+Paul Simon,Paul Simon,https://www.udiscovermusic.com/artist/paul-simon,1941-10-13
+Paul Weller,Paul Weller,https://www.udiscovermusic.com/artist/paul-weller,1958-05-25
+Peaches & Herb,Peaches & Herb,https://www.udiscovermusic.com/artist/peaches-and-herb,1941-10-01
+Pearl Jam,Eddie Vedder,https://www.udiscovermusic.com/artist/pearl-jam,1964-12-23
+Pearl Jam,Stone Gossard,https://www.udiscovermusic.com/artist/pearl-jam,1966-07-20
+Pearl Jam,Mike McCready,https://www.udiscovermusic.com/artist/pearl-jam,1966-04-05
+Pete Townshend,Pete Townshend,https://www.udiscovermusic.com/artist/Pete-Townshend,1945-05-19
+Peter Gabriel,Peter Gabriel,https://www.udiscovermusic.com/artist/peter-gabriel,1950-02-13
+Phil Collins,Phil Collins,https://www.udiscovermusic.com/artist/Phil-Collins,1951-01-30
+Phil Manzanera,Phil Manzanera,https://www.udiscovermusic.com/artist/phil-manzanera,1951-01-31
+PiL,Keith Levene,https://www.udiscovermusic.com/artist/pil,1957-07-18
+Pink Floyd,Syd Barrett,https://www.udiscovermusic.com/artist/Pink-Floyd,1946-01-06
+Pink Floyd,David Gilmour,https://www.udiscovermusic.com/artist/Pink-Floyd,1946-03-06
+Pink Floyd,Q192936,https://www.udiscovermusic.com/artist/Pink-Floyd,1944-01-27
+Placebo,Brian Molko,https://www.udiscovermusic.com/artist/placebo,1972-12-10
+Placebo,Stefan Olsdal,https://www.udiscovermusic.com/artist/placebo,1974-03-31
+Placebo,Steve Forrest,https://www.udiscovermusic.com/artist/placebo,1986-09-25
+Poco,,https://www.udiscovermusic.com/artist/poco,
+Poison,,https://www.udiscovermusic.com/artist/Poison,
+Portishead,Geoff Barrow,https://www.udiscovermusic.com/artist/portishead,1971-12-09
+Prince,Prince,https://www.udiscovermusic.com/artist/Prince,1958-06-07
+Public Enemy,Flavor Flav,https://www.udiscovermusic.com/artist/Public-Enemy,1959-03-16
+Public Enemy,Chuck D,https://www.udiscovermusic.com/artist/Public-Enemy,1960-08-01
+Public Enemy,DJ Lord,https://www.udiscovermusic.com/artist/Public-Enemy,1962-09-27
+Pulp,,https://www.udiscovermusic.com/artist/Pulp,
+Queens of the Stone Age,Mark Lanegan,https://www.udiscovermusic.com/artist/Queens-Of-The-Stone-Age,1964-11-25
+Queens of the Stone Age,Josh Homme,https://www.udiscovermusic.com/artist/Queens-Of-The-Stone-Age,1973-05-17
+Queens of the Stone Age,Troy Van Leeuwen,https://www.udiscovermusic.com/artist/Queens-Of-The-Stone-Age,1970-01-05
+Quicksilver Messenger Service,John Cipollina,https://www.udiscovermusic.com/artist/quicksilver-messenger-service,1943-08-24
+Quicksilver Messenger Service,David Freiberg,https://www.udiscovermusic.com/artist/quicksilver-messenger-service,1938-08-24
+Quicksilver Messenger Service,Gary Duncan,https://www.udiscovermusic.com/artist/quicksilver-messenger-service,1946-09-04
+R.E.M.,Michael Stipe,https://www.udiscovermusic.com/artists/r-e-m/,1960-01-04
+R.E.M.,Peter Buck,https://www.udiscovermusic.com/artists/r-e-m/,1956-12-06
+R.E.M.,Mike Mills,https://www.udiscovermusic.com/artists/r-e-m/,1958-12-17
+Rainbow,,https://www.udiscovermusic.com/artist/rainbow,
+Rammstein,Till Lindemann,https://www.udiscovermusic.com/artist/rammstein,1963-01-04
+Rammstein,Richard Kruspe,https://www.udiscovermusic.com/artist/rammstein,1967-06-24
+Rammstein,Paul Landers,https://www.udiscovermusic.com/artist/rammstein,1964-12-09
+Ray Charles,Ray Charles,https://www.udiscovermusic.com/artist/ray-charles,1930-09-23
+Red Hot Chili Peppers,Flea,https://www.udiscovermusic.com/artist/red-hot-chili-peppers,1962-10-16
+Red Hot Chili Peppers,John Frusciante,https://www.udiscovermusic.com/artist/red-hot-chili-peppers,1970-03-05
+Red Hot Chili Peppers,Anthony Kiedis,https://www.udiscovermusic.com/artist/red-hot-chili-peppers,1962-11-01
+Richie Havens,Richie Havens,https://www.udiscovermusic.com/artist/richie-havens,1941-01-21
+Rick James,Rick James,https://www.udiscovermusic.com/artist/rick-james,1948-02-01
+Rick Nelson,Rick Nelson,https://www.udiscovermusic.com/artist/rick-nelson,1940-05-08
+Rick Ross,Rick Ross,https://www.udiscovermusic.com/artist/rick-ross,1976-01-28
+Rise Against,Tim McIlrath,https://www.udiscovermusic.com/artist/rise-against,1979-11-03
+Robbie Williams,Robbie Williams,https://www.udiscovermusic.com/artist/robbie-williams,1974-02-13
+Robert Cray,Robert Cray,https://www.udiscovermusic.com/artist/robert-cray,1953-08-01
+Robert Glasper,Robert Glasper,https://www.udiscovermusic.com/artist/robert-glasper,1978-04-05
+Robert Plant,Robert Plant,https://www.udiscovermusic.com/artist/robert-plant,1948-08-20
+Rod Stewart,Rod Stewart,https://www.udiscovermusic.com/artist/rod-stewart,1945-01-10
+Ronnie Lane,Ronnie Lane,https://www.udiscovermusic.com/artist/ronnie-lane,1946-04-01
+Rory Gallagher,Rory Gallagher,https://www.udiscovermusic.com/artist/rory-gallagher,1948-03-02
+Rosanne Cash,Rosanne Cash,https://www.udiscovermusic.com/artist/rosanne-cash,1955-05-24
+Roxy Music,Andy Mackay,https://www.udiscovermusic.com/artist/roxy-music,1946-07-23
+Roxy Music,Bryan Ferry,https://www.udiscovermusic.com/artist/roxy-music,1945-09-26
+Roxy Music,Phil Manzanera,https://www.udiscovermusic.com/artist/roxy-music,1951-01-31
+Roy Orbison,Roy Orbison,https://www.udiscovermusic.com/artist/roy-orbison,1936-04-23
+Ruff Ryders,,https://www.udiscovermusic.com/artist/ruff-ryders,
+Rufus Wainwright,Rufus Wainwright,https://www.udiscovermusic.com/artist/rufus-wainwright,1973-07-22
+Ryan Adams,Ryan Adams,https://www.udiscovermusic.com/artist/ryan-adams,1974-11-05
+Saint Etienne,,https://www.udiscovermusic.com/artist/saint-etienne,
+Salt-n-Pepa,Cheryl James,https://www.udiscovermusic.com/artist/salt-n-pepa,1966-03-28
+Salt-n-Pepa,Sandra Denton,https://www.udiscovermusic.com/artist/salt-n-pepa,1969-11-09
+Salt-n-Pepa,DJ Spinderella,https://www.udiscovermusic.com/artist/salt-n-pepa,1971-08-03
+Sam Hunt,Sam Hunt,https://www.udiscovermusic.com/artist/sam-hunt,1984-12-08
+Sandy Denny,Sandy Denny,https://www.udiscovermusic.com/artist/sandy-denny,1947-01-06
+Schiller,Schiller,https://www.udiscovermusic.com/artists/schiller/,1759-11-10
+Scorpions,Rudolf Schenker,https://www.udiscovermusic.com/artist/scorpions,1948-08-31
+Scorpions,Klaus Meine,https://www.udiscovermusic.com/artist/scorpions,1948-05-25
+Scorpions,Matthias Jabs,https://www.udiscovermusic.com/artist/scorpions,1955-10-25
+Secret Garden,,https://www.udiscovermusic.com/artist/secret-garden,
+Sensational Alex Harvey Band,,https://www.udiscovermusic.com/artist/sensational-alex-harvey-band,
+Serge Gainsbourg,Serge Gainsbourg,https://www.udiscovermusic.com/artist/serge-gainsbourg,1928-04-02
+Sex Pistols,John Lydon,https://www.udiscovermusic.com/artist/sex-pistols,1956-01-31
+Sex Pistols,Glen Matlock,https://www.udiscovermusic.com/artist/sex-pistols,1956-08-27
+Sex Pistols,Steve Jones,https://www.udiscovermusic.com/artist/sex-pistols,1955-09-03
+Shaggy,Shaggy,https://www.udiscovermusic.com/artist/shagg,1968-10-22
+Sham 69,,https://www.udiscovermusic.com/artist/sham-69,
+Simple Minds,Jim Kerr,https://www.udiscovermusic.com/artist/simple-minds,1959-07-09
+Simple Minds,Mick MacNeil,https://www.udiscovermusic.com/artist/simple-minds,1958-07-20
+Simple Minds,Charlie Burchill,https://www.udiscovermusic.com/artist/simple-minds,1959-11-27
+Siouxsie & The Banshees,Siouxsie Sioux,https://www.udiscovermusic.com/artist/siouxsie-and-the-banshees,1957-05-27
+Siouxsie & The Banshees,Steven Severin,https://www.udiscovermusic.com/artist/siouxsie-and-the-banshees,1955-09-25
+Siouxsie & The Banshees,Budgie,https://www.udiscovermusic.com/artist/siouxsie-and-the-banshees,1957-08-21
+Sly & Robbie,,https://www.udiscovermusic.com/artist/sly-and-robbie,
+Small Faces,Steve Marriott,https://www.udiscovermusic.com/artist/small-faces,1947-01-30
+Small Faces,Ronnie Lane,https://www.udiscovermusic.com/artist/small-faces,1946-04-01
+Small Faces,Ian McLagan,https://www.udiscovermusic.com/artist/small-faces,1945-05-12
+Smokey Robinson & The Miracles,Smokey Robinson & The Miracles,https://www.udiscovermusic.com/artist/smokey-robinson-the-miracles,1940-02-19
+Snoop Dogg,Snoop Dogg,https://www.udiscovermusic.com/artist/snoop-dogg,1971-10-20
+Snow Patrol,Gary Lightbody,https://www.udiscovermusic.com/artist/snow-patrol,1976-06-15
+Snow Patrol,Nathan Connolly,https://www.udiscovermusic.com/artist/snow-patrol,1981-01-06
+Snow Patrol,Johnny McDaid,https://www.udiscovermusic.com/artist/snow-patrol,1976-07-24
+Soft Cell,,https://www.udiscovermusic.com/artist/soft-cell,
+Sonny Boy Williamson,Sonny Boy Williamson,https://www.udiscovermusic.com/artist/sonny-boy-williamson,1912-12-05
+Soul II Soul,Jazzie B,https://www.udiscovermusic.com/artist/soul-ii-soul,1963-01-26
+Soul II Soul,Simon Law,https://www.udiscovermusic.com/artist/soul-ii-soul,1961-05-28
+Soundgarden,Chris Cornell,https://www.udiscovermusic.com/artist/soundgarden,1964-07-20
+Soundgarden,Kim Thayil,https://www.udiscovermusic.com/artist/soundgarden,1960-09-04
+Soundgarden,Ben Shepherd,https://www.udiscovermusic.com/artist/soundgarden,1968-09-20
+Spandau Ballet,,https://www.udiscovermusic.com/artist/spandau-ballet,
+Sparks,Sparks,https://www.udiscovermusic.com/artist/sparks,1989-12-22
+Spice Girls,,https://www.udiscovermusic.com/artist/spice-girls,
+Stan Getz,Stan Getz,https://www.udiscovermusic.com/artist/stan-getz,1927-02-02
+Status Quo,John Coghlan,https://www.udiscovermusic.com/artist/status-quo,1946-09-19
+Status Quo,Alan Lancaster,https://www.udiscovermusic.com/artist/status-quo,1949-02-07
+Status Quo,Francis Rossi,https://www.udiscovermusic.com/artist/status-quo,1949-05-29
+Steel Pulse,,https://www.udiscovermusic.com/artist/steel-pulse,
+Steely Dan,Donald Fagen,https://www.udiscovermusic.com/artist/steely-dan,1948-01-10
+Steely Dan,Walter Becker,https://www.udiscovermusic.com/artist/steely-dan,1950-02-20
+Steely Dan,Jeff Baxter,https://www.udiscovermusic.com/artist/steely-dan,1948-12-13
+Stereophonics,Stuart Cable,https://www.udiscovermusic.com/artist/stereophonics,1970-05-19
+Stero MCs,,https://www.udiscovermusic.com/artist/stereo-mcs,
+Steve Earle,Steve Earle,https://www.udiscovermusic.com/artist/Steve-Earle,1955-01-17
+Steve Hackett,Steve Hackett,https://www.udiscovermusic.com/artist/steve-hackett,1950-02-12
+Steve Hillage,Steve Hillage,https://www.udiscovermusic.com/artist/steve-hillage,1951-08-02
+Steve Miller Band,Steve Miller,https://www.udiscovermusic.com/artist/steve-miller-band,1943-10-05
+Steve Miller Band,Joseph Wooten,https://www.udiscovermusic.com/artist/steve-miller-band,1961-12-15
+Steve Miller Band,Boz Scaggs,https://www.udiscovermusic.com/artist/steve-miller-band,1944-06-08
+Steven Tyler,Steven Tyler,https://www.udiscovermusic.com/artist/steven-tyler,1948-03-26
+Stevie Wonder,Stevie Wonder,https://www.udiscovermusic.com/artist/stevie-wonder,1950-05-13
+Styx,Chuck Panozzo,https://www.udiscovermusic.com/artist/styx,1948-09-20
+Sublime,Eric Wilson,https://www.udiscovermusic.com/artist/sublime,1970-02-21
+Sublime,Bud Gaugh,https://www.udiscovermusic.com/artist/sublime,1967-10-02
+Sum 41,Steve Jocz,https://www.udiscovermusic.com/artist/sum-41,1981-07-23
+Sum 41,Deryck Whibley,https://www.udiscovermusic.com/artist/sum-41,1980-03-21
+Sum 41,Jason McCaslin,https://www.udiscovermusic.com/artist/sum-41,1980-09-03
+Suzanne Vega,Suzanne Vega,https://www.udiscovermusic.com/artist/suzanne-vega,1959-07-11
+Sérgio Mendes,Sérgio Mendes,https://www.udiscovermusic.com/artist/sergio-mendes,1941-02-11
+T. Bone Walker,T. Bone Walker,https://www.udiscovermusic.com/artist/t-bone-walker,1910-05-28
+T. Rex,Marc Bolan,https://www.udiscovermusic.com/artist/t-rex,1947-09-30
+T. Rex,Jack Green,https://www.udiscovermusic.com/artist/t-rex,1951-03-12
+Take That,,https://www.udiscovermusic.com/artist/take-that,
+Tammi Terrell,Tammi Terrell,https://www.udiscovermusic.com/artist/tammi-terrell,1945-04-29
+Tangerine Dream,Thorsten Quaeschning,https://www.udiscovermusic.com/artist/tangerine-dream,1977-02-23
+Tangerine Dream,Hoshiko Yamane,https://www.udiscovermusic.com/artist/tangerine-dream,1981-04-04
+Tangerine Dream,Ulrich Schnauss,https://www.udiscovermusic.com/artist/tangerine-dream,1977-01-01
+Tears For Fears,,https://www.udiscovermusic.com/artist/tears-for-fears,
+Teena Marie,Teena Marie,https://www.udiscovermusic.com/artist/teena-marie,1956-03-05
+Temple Of The Dog,Chris Cornell,https://www.udiscovermusic.com/artist/temple-of-the-dog,1964-07-20
+Temple Of The Dog,Jeff Ament,https://www.udiscovermusic.com/artist/temple-of-the-dog,1963-03-10
+Temple Of The Dog,Mike McCready,https://www.udiscovermusic.com/artist/temple-of-the-dog,1966-04-05
+Tesla,,https://www.udiscovermusic.com/artist/tesla,
+Texas,Texas,https://www.udiscovermusic.com/artist/texas,2007-05-02
+The All-American Rejects,Tyson Ritter,https://www.udiscovermusic.com/artist/the-all-american-rejects,1984-04-24
+The Allman Brothers Band,Gregg Allman,https://www.udiscovermusic.com/artist/the-allman-brothers-band,1947-12-08
+The Allman Brothers Band,Jai Johanny Johanson,https://www.udiscovermusic.com/artist/the-allman-brothers-band,1944-07-08
+The Allman Brothers Band,Dickey Betts,https://www.udiscovermusic.com/artist/the-allman-brothers-band,1943-12-12
+The Band,,https://www.udiscovermusic.com/artist/the-band,
+The Beatles,John Lennon,https://www.udiscovermusic.com/artist/The-Beatles,1940-10-09
+The Beatles,Ringo Starr,https://www.udiscovermusic.com/artist/The-Beatles,1940-07-07
+The Beatles,Paul McCartney,https://www.udiscovermusic.com/artist/The-Beatles,1942-06-18
+The Brothers Johnson,George Johnson,https://www.udiscovermusic.com/artist/the-brothers-johnson/,1953-05-17
+The Cadillac Three,Jaren Johnston,https://www.udiscovermusic.com/artist/the-cadillac-three,1980-10-04
+The Chemical Brothers,,https://www.udiscovermusic.com/artist/the-chemical-brothers,
+The Clash,Joe Strummer,https://www.udiscovermusic.com/artist/the-clash,1952-08-21
+The Clash,Mick Jones,https://www.udiscovermusic.com/artist/the-clash,1955-06-26
+The Clash,Paul Simonon,https://www.udiscovermusic.com/artist/the-clash,1955-12-15
+The Common Linnets,Ilse DeLange,https://www.udiscovermusic.com/artist/the-common-linnets,1977-05-13
+The Common Linnets,Waylon,https://www.udiscovermusic.com/artist/the-common-linnets,1980-04-20
+The Cranberries,Dolores O'Riordan,https://www.udiscovermusic.com/artist/the-cranberries,1971-09-06
+The Cranberries,Mike Hogan,https://www.udiscovermusic.com/artist/the-cranberries,1973-04-29
+The Cranberries,Noel Hogan,https://www.udiscovermusic.com/artist/the-cranberries,1971-12-25
+The Cure,Robert Smith,https://www.udiscovermusic.com/artist/the-cure/,1959-04-21
+The Cure,Simon Gallup,https://www.udiscovermusic.com/artist/the-cure/,1960-06-01
+The Cure,Roger O'Donnell,https://www.udiscovermusic.com/artist/the-cure/,1955-10-29
+The Damned,David Vanian,https://www.udiscovermusic.com/artist/the-damned,1956-10-12
+The Damned,Captain Sensible,https://www.udiscovermusic.com/artist/the-damned,1954-04-24
+The Damned,Captain Sensible,https://www.udiscovermusic.com/artist/the-damned,1954-04-24
+The Doors,Robby Krieger,https://www.udiscovermusic.com/artist/the-doors,1946-01-08
+The Doors,Ray Manzarek,https://www.udiscovermusic.com/artist/the-doors,1939-02-12
+The Doors,John Densmore,https://www.udiscovermusic.com/artist/the-doors,1944-12-01
+The Flying Burrito Brothers,,https://www.udiscovermusic.com/artist/the-flying-burrito-brothers,
+The Human League,Philip Oakey,https://www.udiscovermusic.com/artist/the-human-league,1955-10-02
+The Human League,Joanne Catherall,https://www.udiscovermusic.com/artist/the-human-league,1962-09-18
+The Isley Brothers,,https://www.udiscovermusic.com/artist/the-isley-brothers,
+The Jackson 5,Q2831,https://www.udiscovermusic.com/artist/jackson-5,1958-08-29
+The Jackson 5,Jackie Jackson,https://www.udiscovermusic.com/artist/jackson-5,1951-05-04
+The Jackson 5,Tito Jackson,https://www.udiscovermusic.com/artist/jackson-5,1953-10-15
+The Jam,Paul Weller,https://www.udiscovermusic.com/artist/the-jam,1958-05-25
+The Jam,Bruce Foxton,https://www.udiscovermusic.com/artist/the-jam,1955-09-01
+The Jam,Rick Buckler,https://www.udiscovermusic.com/artist/the-jam,1955-12-06
+The Killers,Brandon Flowers,https://www.udiscovermusic.com/artist/the-killers,1981-06-21
+The Killers,Dave Keuning,https://www.udiscovermusic.com/artist/the-killers,1976-03-28
+The Killers,Ronnie Vannucci,https://www.udiscovermusic.com/artist/the-killers,1976-02-15
+The Kinks,Dave Davies,https://www.udiscovermusic.com/artist/the-kinks,1947-02-03
+The Kinks,Ray Davies,https://www.udiscovermusic.com/artist/the-kinks,1944-06-21
+The Kinks,Mick Avory,https://www.udiscovermusic.com/artist/the-kinks,1944-02-15
+The Kooks,Luke Pritchard,https://www.udiscovermusic.com/artist/the-kooks,1985-03-02
+The Libertines,Carl Barât,https://www.udiscovermusic.com/artist/the-libertines,1978-06-06
+The Lumineers,Wesley Schultz,https://www.udiscovermusic.com/artist/the-lumineers,1982-12-30
+The Lumineers,Neyla Pekarek,https://www.udiscovermusic.com/artist/the-lumineers,1986-09-04
+The Lumineers,Jeremiah Fraites,https://www.udiscovermusic.com/artist/the-lumineers,1986-01-17
+The Mamas & The Papas,,https://www.udiscovermusic.com/artist/the-mamas-and-the-papas,
+The Marvelettes,The Marvelettes,https://www.udiscovermusic.com/artist/the-marvelettes,2023-09-23
+The Mavericks,,https://www.udiscovermusic.com/artist/the-mavericks,
+The Moody Blues,Ray Thomas,https://www.udiscovermusic.com/artist/the-moody-blues,1941-12-29
+The Moody Blues,Graeme Edge,https://www.udiscovermusic.com/artist/the-moody-blues,1941-03-30
+The Moody Blues,Justin Hayward,https://www.udiscovermusic.com/artist/the-moody-blues,1946-10-14
+The Ozark Mountain Daredevils,,https://www.udiscovermusic.com/artist/ozark-mountain-daredevils,
+The Righteous Brothers,,https://www.udiscovermusic.com/artist/the-righteous-brothers,
+The Roots,Questlove,https://www.udiscovermusic.com/artist/the-roots,1971-01-20
+The Roots,Black Thought,https://www.udiscovermusic.com/artist/the-roots,1972-10-03
+The Roots,Malik B.,https://www.udiscovermusic.com/artist/the-roots,1972-11-14
+The Ruts,,https://www.udiscovermusic.com/artist/the-ruts,
+The Smashing Pumpkins,Kiki Wong,https://www.udiscovermusic.com/artist/the-smashing-pumpkins,1989-04-15
+The Smashing Pumpkins,Billy Corgan,https://www.udiscovermusic.com/artist/the-smashing-pumpkins,1967-03-17
+The Smashing Pumpkins,James Iha,https://www.udiscovermusic.com/artist/the-smashing-pumpkins,1968-03-26
+The Statler Brothers,Lew DeWitt,https://www.udiscovermusic.com/artist/the-statler-brothers,1938-03-12
+The Style Council,Paul Weller,https://www.udiscovermusic.com/artist/the-style-council,1958-05-25
+The Style Council,Mick Talbot,https://www.udiscovermusic.com/artist/the-style-council,1958-09-11
+The Style Council,Steve White,https://www.udiscovermusic.com/artist/the-style-council,1965-05-31
+The Supremes,Mary Wilson,https://www.udiscovermusic.com/artist/the-supremes,1944-03-06
+The Supremes,Diana Ross,https://www.udiscovermusic.com/artist/the-supremes,1944-03-26
+The Supremes,Florence Ballard,https://www.udiscovermusic.com/artist/the-supremes,1943-06-30
+The Temptations,Otis Williams,https://www.udiscovermusic.com/artist/the-temptations,1941-10-30
+The Temptations,Dennis Edwards,https://www.udiscovermusic.com/artist/the-temptations,1943-02-03
+The Temptations,Eddie Kendricks,https://www.udiscovermusic.com/artist/the-temptations,1939-12-17
+The Tubes,Vince Welnick,https://www.udiscovermusic.com/artist/the-tubes,1951-02-21
+The Tubes,Michele Gray,https://www.udiscovermusic.com/artist/the-tubes,1956-11-11
+The Velvet Underground,Lou Reed,https://www.udiscovermusic.com/artist/the-velvet-underground,1942-03-02
+The Velvet Underground,John Cale,https://www.udiscovermusic.com/artist/the-velvet-underground,1942-03-09
+The Velvet Underground,Maureen Tucker,https://www.udiscovermusic.com/artist/the-velvet-underground,1944-08-26
+The Verve,Richard Ashcroft,https://www.udiscovermusic.com/artist/the-verve,1971-09-11
+The Verve,Nick McCabe,https://www.udiscovermusic.com/artist/the-verve,1972-07-14
+The Verve,Simon Jones,https://www.udiscovermusic.com/artist/the-verve,1972-07-29
+The Walker Brothers,Scott Walker,https://www.udiscovermusic.com/artist/the-walker-brothers,1943-01-09
+The Who,Roger Daltrey,https://www.udiscovermusic.com/artists/the-who/,1944-03-01
+The Who,Pete Townshend,https://www.udiscovermusic.com/artists/the-who/,1945-05-19
+The Who,John Entwistle,https://www.udiscovermusic.com/artists/the-who/,1944-10-09
+Thelma Houston,Thelma Houston,https://www.udiscovermusic.com/artist/thelma-houston,1946-05-07
+Thomas Rhett,Thomas Rhett,https://www.udiscovermusic.com/artist/thomas-rhett,1990-03-30
+Three Dog Night,Danny Hutton,https://www.udiscovermusic.com/artist/three-dog-night,1942-09-10
+Three Dog Night,Michael Allsup,https://www.udiscovermusic.com/artist/three-dog-night,1947-03-08
+Three Dog Night,Jimmy Greenspoon,https://www.udiscovermusic.com/artist/three-dog-night,1948-02-07
+Tim McGraw,Tim McGraw,https://www.udiscovermusic.com/artist/tim-mcgraw,1967-05-01
+Tom Jones,Tom Jones,https://www.udiscovermusic.com/artist/tom-jones,1940-06-07
+Tom Waits,Tom Waits,https://www.udiscovermusic.com/artist/tom-waits,1949-12-07
+Toots and the Maytals,,https://www.udiscovermusic.com/artist/toots-and-the-maytals,
+Tori Amos,Tori Amos,https://www.udiscovermusic.com/artist/tori-amos,1963-08-22
+Traffic,,https://www.udiscovermusic.com/artist/traffic,
+Traveling Wilburys,Bob Dylan,https://www.udiscovermusic.com/artist/traveling-wilburys,1941-05-24
+Traveling Wilburys,George Harrison,https://www.udiscovermusic.com/artist/traveling-wilburys,1943-02-25
+Traveling Wilburys,Jeff Lynne,https://www.udiscovermusic.com/artist/traveling-wilburys,1947-12-30
+UB40,Earl Falconer,https://www.udiscovermusic.com/artist/ub40,1957-01-23
+UB40,Norman Hassan,https://www.udiscovermusic.com/artist/ub40,1958-01-26
+UB40,Duncan Campbell,https://www.udiscovermusic.com/artist/ub40,1958-04-03
+Ultravox,Midge Ure,https://www.udiscovermusic.com/artist/ultravox,1953-10-10
+Underworld,Karl Hyde,https://www.udiscovermusic.com/artist/underworld,1957-05-10
+Underworld,Darren Emerson,https://www.udiscovermusic.com/artist/underworld,1971-04-30
+Underworld,Rick Smith,https://www.udiscovermusic.com/artist/underworld,1959-05-25
+Van der Graaf Generator,David Jackson,https://www.udiscovermusic.com/artist/van-der-graaf-generator,1947-04-15
+Van der Graaf Generator,Peter Hammill,https://www.udiscovermusic.com/artist/van-der-graaf-generator,1948-11-05
+Weezer,Rivers Cuomo,https://www.udiscovermusic.com/artist/weezer,1970-06-13
+Weezer,Patrick Wilson,https://www.udiscovermusic.com/artist/weezer,1969-02-01
+Weezer,Brian Bell,https://www.udiscovermusic.com/artist/weezer,1968-12-09
+Wet Wet Wet,,https://www.udiscovermusic.com/artist/wet-wet-wet,
+Whitesnake,David Coverdale,https://www.udiscovermusic.com/artist/whitesnake,1951-09-22
+Whitesnake,Michele Luppi,https://www.udiscovermusic.com/artist/whitesnake,1974-04-07
+Whitesnake,Micky Moody,https://www.udiscovermusic.com/artist/whitesnake,1950-08-30
+William Orbit,William Orbit,https://www.udiscovermusic.com/artist/william-orbit,1956-12-15
+Willie Nelson,Willie Nelson,https://www.udiscovermusic.com/artist/willie-nelson,1933-04-29
+Wilson Pickett,Wilson Pickett,https://www.udiscovermusic.com/artist/wilson-pickett,1941-03-18
+Wishbone Ash,Andy Powell,https://www.udiscovermusic.com/artist/wishbone-ash,1950-02-19
+Wishbone Ash,Ted Turner,https://www.udiscovermusic.com/artist/wishbone-ash,1950-08-02
+Wishbone Ash,Martin Turner,https://www.udiscovermusic.com/artist/wishbone-ash,1947-10-01
+Wolfmother,,https://www.udiscovermusic.com/artist/wolfmother,
+Yeah Yeah Yeahs,Karen O,https://www.udiscovermusic.com/artist/yeah-yeah-yeahs,1978-11-22
+Yeah Yeah Yeahs,Nick Zinner,https://www.udiscovermusic.com/artist/yeah-yeah-yeahs,1974-12-08
+Yeah Yeah Yeahs,Brian Chase,https://www.udiscovermusic.com/artist/yeah-yeah-yeahs,1978-02-12
+Yello,,https://www.udiscovermusic.com/artist/yello,
+Yes,Jon Anderson,https://www.udiscovermusic.com/artist/yes,1944-10-25
+Yes,Steve Howe,https://www.udiscovermusic.com/artist/yes,1947-04-08
+Yes,Rick Wakeman,https://www.udiscovermusic.com/artist/yes,1949-05-18
+Young Jeezy,Young Jeezy,https://www.udiscovermusic.com/artist/young-jeezy,1977-09-28
+Zucchero,Zucchero,https://www.udiscovermusic.com/artist/zucchero,1955-09-25
+will.i.am,will.i.am,https://www.udiscovermusic.com/artist/will-i-am,1975-03-15

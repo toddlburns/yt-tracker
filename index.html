@@ -2998,28 +2998,43 @@ function extractMaxYearFromArticle(html) {
 
     // Remove all boilerplate elements that pollute year extraction
     const removeSelectors = [
-        'script', 'style', 'iframe', 'noscript',
-        'footer', 'nav', 'header',
-        // uDiscover MVP theme: footer sections
+        'script', 'style', 'iframe', 'noscript', 'link', 'meta',
+        'footer', 'nav', 'header', 'aside',
+        // uDiscover MVP theme: footer
         '[id^="mvp-foot"]',
-        // Sidebar widgets (features, latest news with current dates)
+        // Sidebar widgets (features, latest news with current-year dates)
         '[id^="mvp_tabber"]', '[id^="mvp-tabber"]',
         '[id="mvp-tab-col2"]', '[id="mvp-tab-col3"]',
-        '.mvp-tabber-widget',
+        '.mvp-tabber-widget', '.mvp-widget-home',
         // Navigation
         '[id^="mvp-main-nav"]', '.mvp-fly-nav-menu', '.mvp-drop-nav-title',
-        // Related articles
-        '.infinite-content',
-        // Social sharing, ads
-        '.mvp-soc-share', '.mvp-org-wrap',
+        // Related articles, infinite scroll
+        '.infinite-content', '.mvp-inf-more-but',
+        // Social sharing, ads, promos
+        '.mvp-soc-share', '.mvp-org-wrap', '.mvp-cd-img',
+        // Product/shop promotions (figures with shop links)
+        'figure',
+        // Any time/date metadata elements
+        'time',
     ];
     for (const sel of removeSelectors) {
         doc.querySelectorAll(sel).forEach(el => el.remove());
     }
+    // Remove any remaining links to shop or news (contain current-year dates in URLs/text)
+    doc.querySelectorAll('a[href*="shop.udiscovermusic"], a[href*="/news/"]').forEach(el => el.remove());
 
     // Try to get just the entry-content (articles) or fall back to body
     const content = doc.querySelector('.entry-content') || doc.querySelector('article') || doc.body;
-    const text = (content ? content.textContent : doc.body.textContent) || '';
+    // Only extract text from paragraph-like elements to avoid stray metadata
+    let text = '';
+    if (content) {
+        const paragraphs = content.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, blockquote, td');
+        if (paragraphs.length > 0) {
+            text = Array.from(paragraphs).map(p => p.textContent).join(' ');
+        } else {
+            text = content.textContent || '';
+        }
+    }
 
     // Find all 4-digit years in content (1950-2026)
     const years = [];

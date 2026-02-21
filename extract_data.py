@@ -328,8 +328,11 @@ def extract_social_posts():
         store = str(row[1] or '').strip()        # Store column
         channel = str(row[8] or '').strip()   # Content Channel + Type
         live_link = str(row[17] or '').strip()  # Live Social Link
+        cta_link = str(row[12] or '').strip()  # CTA Link (fallback)
 
-        if not live_link or live_link in ('', 'None', 'Live Social Link'):
+        # Use live link if available, otherwise fall back to CTA link
+        link = live_link if live_link and live_link not in ('None', 'Live Social Link') else cta_link
+        if not link or link in ('', 'None'):
             continue
 
         # Skip Sound of Vinyl (SOV) posts
@@ -349,10 +352,10 @@ def extract_social_posts():
         if key not in posts:
             posts[key] = []
         # Avoid duplicate links
-        if not any(p["liveLink"] == live_link for p in posts[key]):
+        if not any(p["liveLink"] == link for p in posts[key]):
             posts[key].append({
                 "channel": channel,
-                "liveLink": live_link
+                "liveLink": link
             })
 
     wb.close()

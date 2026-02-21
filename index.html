@@ -320,6 +320,7 @@
         }
         .editorial-video-link { color: #FF69B4; }
         .editorial-video-link:hover { color: #FF89C4; }
+        .editorial-video-views { font-size: 0.55rem; opacity: 0.7; }
         .editorial-wiki-link { color: #7DD3E8; cursor: pointer; }
         .editorial-wiki-link:hover { color: #00FFFF; }
         .editorial-article-link { color: #B794F6; }
@@ -3714,9 +3715,11 @@ function renderEditorial() {
 
         let videoHtml = '';
         if (item.youtubeId) {
-            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F</a>`;
+            const vc = item.views ? ` <span class="editorial-video-views">${formatCount(item.views)}</span>` : '';
+            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F${vc}</a>`;
         } else if (matchingVideos.length > 0 && item.type !== 'video') {
-            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F</a>`;
+            const vc = matchingVideos[0].views ? ` <span class="editorial-video-views">${formatCount(matchingVideos[0].views)}</span>` : '';
+            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F${vc}</a>`;
         }
 
         const wq = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
@@ -3765,9 +3768,11 @@ function renderEditorial() {
                 const matchingVideos = videoLookup[videoKey] || [];
                 let videoHtml = '';
                 if (item.youtubeId) {
-                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F</a>`;
+                    const vc = item.views ? ` <span class="editorial-video-views">${formatCount(item.views)}</span>` : '';
+                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F${vc}</a>`;
                 } else if (matchingVideos.length > 0 && item.type !== 'video') {
-                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F</a>`;
+                    const vc = matchingVideos[0].views ? ` <span class="editorial-video-views">${formatCount(matchingVideos[0].views)}</span>` : '';
+                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F${vc}</a>`;
                 }
                 const wq2 = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
                 const articleHtml2 = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';

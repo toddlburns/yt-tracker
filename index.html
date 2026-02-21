@@ -2848,8 +2848,8 @@ function saveEditorialChecked(key, action) {
     }).catch(() => {});
 }
 
-function toggleEditorialCheck(key, el) {
-    event.stopPropagation();
+function toggleEditorialCheck(key, el, ev) {
+    if (ev) ev.stopPropagation(); else if (typeof event !== 'undefined') event.stopPropagation();
     const card = el.closest('.editorial-card');
     if (editorialCheckedSet.has(key)) {
         // Unchecking — show it again
@@ -2888,6 +2888,14 @@ function toggleEditorialCheck(key, el) {
         group.classList.toggle('all-checked', allDone);
     }
 }
+
+// Delegated click handler for editorial checkboxes (avoids inline escaping issues)
+document.addEventListener('click', function(ev) {
+    const el = ev.target.closest('.editorial-check[data-ck]');
+    if (!el) return;
+    ev.stopPropagation();
+    toggleEditorialCheck(el.getAttribute('data-ck'), el, ev);
+});
 
 function toggleHideDone() {
     editorialHideDone = !editorialHideDone;
@@ -3716,10 +3724,11 @@ function renderEditorial() {
         const pageHtml = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page">👤</a>` : '';
         const socialPosts = findSocialPosts(item.artist, item.description, item.type);
         const socialPostHtml = socialPosts.length > 0 ? `<a class="editorial-social-link" href="${socialPosts[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts.length} social post${socialPosts.length > 1 ? 's' : ''}"><span style="color:#FF3B3B;font-weight:700;font-size:0.85rem;">✘</span></a>` : '';
-        const ck = editorialItemKey(item).replace(/'/g, "\\'");
-        const isChecked = editorialCheckedSet.has(editorialItemKey(item));
+        const ckRaw = editorialItemKey(item);
+        const ckAttr = ckRaw.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+        const isChecked = editorialCheckedSet.has(ckRaw);
         return `<div class="editorial-card${birthdayClass}${roundClass(item)}${isChecked ? ' checked-off' : ''}">
-            <div class="editorial-check${isChecked ? ' checked' : ''}" onclick="toggleEditorialCheck('${ck}', this)">${isChecked ? '✓' : ''}</div>
+            <div class="editorial-check${isChecked ? ' checked' : ''}" data-ck="${ckAttr}">${isChecked ? '✓' : ''}</div>
             <div class="editorial-card-icon">${item.icon}</div>
             <div class="editorial-card-body">
                 <span class="editorial-card-artist">${item.description}</span>
@@ -3765,12 +3774,13 @@ function renderEditorial() {
                 const pageHtml2 = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page">👤</a>` : '';
                 const socialPosts2 = findSocialPosts(item.artist, item.description, item.type);
                 const socialPostHtml2 = socialPosts2.length > 0 ? `<a class="editorial-social-link" href="${socialPosts2[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts2.length} social post${socialPosts2.length > 1 ? 's' : ''}"><span style="color:#FF3B3B;font-weight:700;font-size:0.85rem;">✘</span></a>` : '';
-                const ck2 = editorialItemKey(item).replace(/'/g, "\\'");
-                const isChecked2 = editorialCheckedSet.has(editorialItemKey(item));
+                const ck2Raw = editorialItemKey(item);
+                const ck2Attr = ck2Raw.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+                const isChecked2 = editorialCheckedSet.has(ck2Raw);
                 const auditHtml2 = auditInlineHtml(artist, auditRendered);
                 const pageAuditHtml2 = pageAuditInlineHtml(artist, auditRendered);
                 html += `<div class="editorial-card${birthdayClass}${roundClass(item)}${isChecked2 ? ' checked-off' : ''}">
-                    <div class="editorial-check${isChecked2 ? ' checked' : ''}" onclick="toggleEditorialCheck('${ck2}', this)">${isChecked2 ? '✓' : ''}</div>
+                    <div class="editorial-check${isChecked2 ? ' checked' : ''}" data-ck="${ck2Attr}">${isChecked2 ? '✓' : ''}</div>
                     <div class="editorial-card-icon">${item.icon}</div>
                     <div class="editorial-card-body">
                         <span class="editorial-card-artist">${artist} — ${item.description}</span>

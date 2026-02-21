@@ -3293,6 +3293,26 @@ Instructions:
     });
 }
 
+function isArtistBioPage(html) {
+    // Check JSON-LD articleSection for "Artists"
+    const ldMatch = html.match(/"articleSection"\s*:\s*\[([^\]]*)\]/);
+    if (ldMatch) {
+        return ldMatch[1].includes('"Artists"');
+    }
+    // Fallback: check dataLayer pageCategory for "artist"
+    const dlMatch = html.match(/"pageCategory"\s*:\s*\[([^\]]*)\]/);
+    if (dlMatch) {
+        return dlMatch[1].includes('"artist"');
+    }
+    // Fallback: check ad targeting contentcategory
+    const ccMatch = html.match(/"contentcategory"\s*:\s*"([^"]+)"/);
+    if (ccMatch) {
+        return ccMatch[1] === 'Artists';
+    }
+    // If no markers found, assume it's fine
+    return true;
+}
+
 async function pageAuditCheckOne(artist) {
     const resultEl = document.getElementById('pres-' + css_id(artist));
     const btnEl = document.getElementById('pbtn-' + css_id(artist));
@@ -3313,6 +3333,14 @@ async function pageAuditCheckOne(artist) {
         if (!pageHtml) {
             pageAuditResults[artist] = { error: 'Could not fetch page' };
             resultEl.innerHTML = formatPageAuditResult(pageAuditResults[artist]);
+            return;
+        }
+
+        // Verify this is actually an artist bio page, not an article/review
+        if (!isArtistBioPage(pageHtml)) {
+            pageAuditResults[artist] = { error: 'Not a bio page (article/review)' };
+            resultEl.innerHTML = formatPageAuditResult(pageAuditResults[artist]);
+            if (btnEl) btnEl.textContent = '⚠';
             return;
         }
 

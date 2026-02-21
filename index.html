@@ -325,6 +325,13 @@
         .editorial-wiki-link:hover { color: #00FFFF; }
         .editorial-article-link { color: #B794F6; }
         .editorial-article-link:hover { color: #D4BBFF; }
+        .editorial-page-icon {
+            display: inline-block; width: 16px; height: 14px; vertical-align: middle;
+            background: linear-gradient(135deg, #4ADE80, #22C55E);
+            border-radius: 3px; font-size: 5.5px; font-weight: 800; color: #fff;
+            text-align: center; line-height: 14px; letter-spacing: 0.2px;
+            font-family: 'Inter', sans-serif;
+        }
         .editorial-social-link { color: #FF9F43; }
         .editorial-social-link:hover { color: #FFBE76; }
         .editorial-page-link { color: #4ADE80; }
@@ -3724,7 +3731,7 @@ function renderEditorial() {
 
         const wq = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
         const articleHtml = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
-        const pageHtml = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page">👤</a>` : '';
+        const pageHtml = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page"><span class="editorial-page-icon">UDAP</span></a>` : '';
         const socialPosts = findSocialPosts(item.artist, item.description, item.type);
         const socialPostHtml = socialPosts.length > 0 ? `<a class="editorial-social-link" href="${socialPosts[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts.length} social post${socialPosts.length > 1 ? 's' : ''}"><span style="color:#FF3B3B;font-weight:700;font-size:0.85rem;">✘</span></a>` : '';
         const ckRaw = editorialItemKey(item);
@@ -3776,7 +3783,7 @@ function renderEditorial() {
                 }
                 const wq2 = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
                 const articleHtml2 = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
-                const pageHtml2 = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page">👤</a>` : '';
+                const pageHtml2 = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page"><span class="editorial-page-icon">UDAP</span></a>` : '';
                 const socialPosts2 = findSocialPosts(item.artist, item.description, item.type);
                 const socialPostHtml2 = socialPosts2.length > 0 ? `<a class="editorial-social-link" href="${socialPosts2[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts2.length} social post${socialPosts2.length > 1 ? 's' : ''}"><span style="color:#FF3B3B;font-weight:700;font-size:0.85rem;">✘</span></a>` : '';
                 const ck2Raw = editorialItemKey(item);

@@ -371,10 +371,15 @@
             background: rgba(0, 255, 255, 0.2); border-color: #00FFFF;
             font-size: 0.65rem; color: #00FFFF;
         }
-        .editorial-card.checked-off { opacity: 0.35; }
-        .editorial-card.checked-off:hover { opacity: 0.6; }
-        .editorial-hide-done .editorial-card.checked-off { display: none; }
-        .editorial-hide-done .editorial-artist-group.all-checked { display: none; }
+        .editorial-card.checked-off { display: none; }
+        .editorial-card.checking-off {
+            opacity: 0; transform: translateX(20px);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .editorial-show-done .editorial-card.checked-off { display: flex; opacity: 0.35; }
+        .editorial-show-done .editorial-card.checked-off:hover { opacity: 0.6; }
+        .editorial-artist-group.all-checked { display: none; }
+        .editorial-show-done .editorial-artist-group.all-checked { display: block; }
         .editorial-toggle-done {
             font-size: 0.7rem; color: #7DD3E8; background: rgba(0, 255, 255, 0.08);
             border: 1px solid rgba(0, 255, 255, 0.15); border-radius: 10px;
@@ -1265,7 +1270,7 @@
             <button class="editorial-filter-btn" onclick="filterEditorial('release')">Releases</button>
             <button class="editorial-filter-btn" onclick="filterEditorial('chart')">Chart Milestones</button>
             <button class="editorial-filter-btn" onclick="filterEditorial('video')">Videos Available</button>
-            <button class="editorial-toggle-done" id="toggle-done-btn" onclick="toggleHideDone()">Hide completed</button>
+            <button class="editorial-toggle-done" id="toggle-done-btn" onclick="toggleHideDone()">Show completed</button>
         </div>
         <div id="editorial-feed"></div>
     </div>
@@ -2847,17 +2852,33 @@ function toggleEditorialCheck(key, el) {
     event.stopPropagation();
     const card = el.closest('.editorial-card');
     if (editorialCheckedSet.has(key)) {
+        // Unchecking — show it again
         editorialCheckedSet.delete(key);
         el.classList.remove('checked');
         el.textContent = '';
         if (card) card.classList.remove('checked-off');
         saveEditorialChecked(key, 'undismiss');
     } else {
+        // Checking off — animate out then hide
         editorialCheckedSet.add(key);
         el.classList.add('checked');
         el.textContent = '✓';
-        if (card) card.classList.add('checked-off');
         saveEditorialChecked(key, 'dismiss');
+        if (card) {
+            card.classList.add('checking-off');
+            setTimeout(() => {
+                card.classList.add('checked-off');
+                card.classList.remove('checking-off');
+                // Update group checked state after hiding
+                const group = card.closest('.editorial-artist-group');
+                if (group) {
+                    const cards = group.querySelectorAll('.editorial-card');
+                    const allDone = [...cards].every(c => c.classList.contains('checked-off'));
+                    group.classList.toggle('all-checked', allDone);
+                }
+            }, 300);
+        }
+        return;
     }
     // Update group checked state
     const group = el.closest('.editorial-artist-group');
@@ -2872,7 +2893,8 @@ function toggleHideDone() {
     editorialHideDone = !editorialHideDone;
     const btn = document.getElementById('toggle-done-btn');
     btn.classList.toggle('active', editorialHideDone);
-    document.getElementById('editorial-feed').classList.toggle('editorial-hide-done', editorialHideDone);
+    btn.textContent = editorialHideDone ? 'Hide completed' : 'Show completed';
+    document.getElementById('editorial-feed').classList.toggle('editorial-show-done', editorialHideDone);
 }
 
 function filterEditorial(filter) {
@@ -3745,8 +3767,8 @@ function renderEditorial() {
     }
 
     feed.innerHTML = html;
-    // Apply hide-done state and mark fully-checked groups
-    if (editorialHideDone) feed.classList.add('editorial-hide-done');
+    // Apply show-done state and mark fully-checked groups
+    if (editorialHideDone) feed.classList.add('editorial-show-done');
     feed.querySelectorAll('.editorial-artist-group').forEach(grp => {
         const cards = grp.querySelectorAll('.editorial-card');
         if (cards.length && [...cards].every(c => c.classList.contains('checked-off'))) {

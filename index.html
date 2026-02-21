@@ -3269,20 +3269,37 @@ function formatPageAuditResult(r) {
 
 function copyAuditPrompt(artist, url, contentYear, latestYear, type, btnEl) {
     const typeLabel = type === 'page' ? 'artist page' : 'article';
+    const gap = latestYear - contentYear;
     const prompt = `I need you to write additional text to update a uDiscover Music ${typeLabel} about ${artist}.
 
 Here is the current ${typeLabel}: ${url}
 
-The ${typeLabel} currently covers ${artist}'s career through approximately ${contentYear}. I need new text that covers the period from ${contentYear} to ${latestYear}.
+The ${typeLabel} currently covers ${artist}'s career through approximately ${contentYear}. I need new text that covers the period from ${contentYear} to ${latestYear} (a ${gap}-year gap).
 
-Instructions:
-- Read the existing ${typeLabel} carefully and match its tone, voice, and writing style exactly
-- Write new paragraphs covering ${artist}'s notable activity from ${contentYear + 1} through ${latestYear} — this includes album releases, singles, tours, collaborations, reissues, box sets, awards, cultural moments, and any other significant events
-- The new text should be similar in density and paragraph length to the existing content
-- Important: the existing ${typeLabel} likely ends with a concluding paragraph that wraps up their legacy or significance. Your new text should be designed to slot in BEFORE that final paragraph — so it should flow naturally from the preceding content and lead smoothly into that existing conclusion
-- Do not repeat information already covered in the existing ${typeLabel}
-- Do not include a new conclusion or summary — the existing final paragraph will still serve that purpose
-- Use Wikipedia and other reliable sources to ensure factual accuracy for dates, album names, chart positions, and collaborations`;
+Before writing, analyze the existing ${typeLabel}:
+1. Count the total number of paragraphs and note how many years of career they cover
+2. Identify the author's voice, tone, and writing style
+3. Note the paragraph density — how many years does each paragraph typically span?
+4. Identify the final paragraph, which likely serves as a concluding/legacy statement
+
+Then write the update following these rules:
+
+PROPORTIONALITY (critical):
+- Your new text must be proportional to the existing content, not equal in length
+- The existing ${typeLabel} focuses on ${artist}'s most essential, culturally significant period. The gap years (${contentYear + 1}–${latestYear}) are likely a less central chapter — reissues, later-career work, legacy moments — and should be treated accordingly
+- As a rough guide: if the existing text is N paragraphs covering their peak years, your update covering the gap period should be significantly shorter — typically 1–3 paragraphs unless the gap years contain genuinely major output
+- Do NOT pad with filler or over-inflate minor releases. A quiet period can be covered in a sentence or two. Only expand where there is real substance (major albums, Grammy wins, cultural events, deaths, reunions, etc.)
+- The update should feel like a natural, proportionate addendum — not a second article bolted on
+
+STYLE & PLACEMENT:
+- Match the author's voice, tone, and sentence structure exactly
+- Your text should slot in BEFORE the existing final/concluding paragraph — flow naturally from the preceding content and lead smoothly into that conclusion
+- Do not repeat information already covered
+- Do not write a new conclusion — the existing final paragraph still serves that purpose
+
+ACCURACY:
+- Use Wikipedia and other reliable sources for factual accuracy on dates, album names, chart positions, and collaborations
+- If ${artist} is deceased or inactive, note that context appropriately`;
 
     navigator.clipboard.writeText(prompt).then(() => {
         if (btnEl) {

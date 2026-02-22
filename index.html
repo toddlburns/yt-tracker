@@ -336,6 +336,15 @@
         .editorial-social-link:hover { color: #FFBE76; }
         .editorial-page-link { color: #4ADE80; }
         .editorial-page-link:hover { color: #86EFAC; }
+        .editorial-copy-prompt {
+            display: inline-flex; align-items: center; gap: 2px;
+            font-size: 0.55rem; font-weight: 600; color: #FFE680; background: rgba(255, 230, 128, 0.1);
+            border: 1px solid rgba(255, 230, 128, 0.3); border-radius: 4px;
+            padding: 1px 5px; cursor: pointer; white-space: nowrap; transition: all 0.2s;
+            font-family: inherit; line-height: 1.2;
+        }
+        .editorial-copy-prompt:hover { background: rgba(255, 230, 128, 0.25); border-color: #FFE680; }
+        .editorial-copy-prompt.copied { color: #3fb950; border-color: #3fb950; background: rgba(63, 185, 80, 0.15); }
 
         /* Collapsible artist group */
         .editorial-artist-group {
@@ -3796,19 +3805,31 @@ function renderEditorial() {
         }
     }
 
+    function promptBtnHtml(artist, description) {
+        const songMatch = description.match(/^"(.+?)"/);
+        const song = songMatch ? songMatch[1] : description.replace(/ — .*$/, '').replace(/^['"]|['"]$/g, '');
+        const safeArtist = esc(artist).replace(/'/g, "\\'");
+        const safeSong = esc(song).replace(/'/g, "\\'");
+        return `<button class="editorial-copy-prompt" onclick="event.stopPropagation(); copyExplainerPrompt('${safeArtist}', '${safeSong}', this)">Copy Prompt</button>`;
+    }
+
     function renderCardHtml(item) {
         const birthdayClass = item.type === 'birthday' ? ' editorial-birthday' : '';
         const videoKey = `${item.artist}|${item.month}|${item.day}`;
         const matchingVideos = videoLookup[videoKey] || [];
 
         let videoHtml = '';
+        let hasVideo = false;
         if (item.youtubeId) {
+            hasVideo = true;
             const vc = item.views ? ` <span class="editorial-video-views">${formatCount(item.views)}</span>` : '';
             videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;">${vc}</a>`;
         } else if (matchingVideos.length > 0 && item.type !== 'video') {
+            hasVideo = true;
             const vc = matchingVideos[0].views ? ` <span class="editorial-video-views">${formatCount(matchingVideos[0].views)}</span>` : '';
             videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;">${vc}</a>`;
         }
+        const copyPromptHtml = hasVideo ? promptBtnHtml(item.artist, item.description) : '';
 
         const wq = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
         const articleHtml = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
@@ -3828,7 +3849,7 @@ function renderEditorial() {
                 <span class="editorial-card-links">
                     ${pageHtml}${articleHtml}${socialPostHtml}${storeHtml}
                     <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq}', event)"><img src="https://en.wikipedia.org/static/favicon/wikipedia.ico" style="width:14px;height:14px;vertical-align:middle;"></a>
-                    ${videoHtml}
+                    ${videoHtml}${copyPromptHtml}
                 </span>
             </div>
         </div>`;
@@ -3856,13 +3877,17 @@ function renderEditorial() {
                 const videoKey = `${item.artist}|${item.month}|${item.day}`;
                 const matchingVideos = videoLookup[videoKey] || [];
                 let videoHtml = '';
+                let hasVideo2 = false;
                 if (item.youtubeId) {
+                    hasVideo2 = true;
                     const vc = item.views ? ` <span class="editorial-video-views">${formatCount(item.views)}</span>` : '';
                     videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;">${vc}</a>`;
                 } else if (matchingVideos.length > 0 && item.type !== 'video') {
+                    hasVideo2 = true;
                     const vc = matchingVideos[0].views ? ` <span class="editorial-video-views">${formatCount(matchingVideos[0].views)}</span>` : '';
                     videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;">${vc}</a>`;
                 }
+                const copyPromptHtml2 = hasVideo2 ? promptBtnHtml(item.artist, item.description) : '';
                 const wq2 = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
                 const articleHtml2 = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
                 const pageHtml2 = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page"><span class="editorial-page-icon">UDAP</span></a>` : '';
@@ -3883,7 +3908,7 @@ function renderEditorial() {
                         <span class="editorial-card-links">
                             ${pageHtml2}${articleHtml2}${socialPostHtml2}${storeHtml2}
                             <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq2}', event)"><img src="https://en.wikipedia.org/static/favicon/wikipedia.ico" style="width:14px;height:14px;vertical-align:middle;"></a>
-                            ${videoHtml}
+                            ${videoHtml}${copyPromptHtml2}
                         </span>
                         ${auditHtml2}${pageAuditHtml2}
                     </div>
@@ -3927,6 +3952,110 @@ function renderEditorial() {
         if (cards.length && [...cards].every(c => c.classList.contains('checked-off'))) {
             grp.classList.add('all-checked');
         }
+    });
+}
+
+// ─── Explainer Script Prompt ─────────────────────────────────
+const EXPLAINER_PROMPT = `You are a scriptwriter for uDiscover Music's Instagram "Text-On-Screen Explainer" video series. Each video shows a series of text cards (one sentence per card) over music footage, telling a surprising or fascinating story about a song, album, or artist.
+
+Write a script following these rules:
+
+## FORMAT
+- 4–11 lines (aim for ~6), each line = one text card shown on screen
+- Each line is a single sentence or thought — short enough to read comfortably on a phone in 3–4 seconds
+- No stage directions, no visual cues — just the text that appears on screen
+
+## STRUCTURE (3-Act Micro-Narrative)
+1. **HOOK (Line 1–2):** Open with the artist/song and a surprising claim, bold statement, or direct question. The reader should immediately think "wait, really?" Examples:
+   - "[Artist]'s '[Song]' was banned by MTV"
+   - "Do you remember [Artist]?"
+   - "[Artist]'s '[Song]' peaked at No. 28… but became one of the most iconic songs ever"
+   - "At the end of the 1980s, [Artist] was struggling"
+
+2. **BACKSTORY / SURPRISE (Lines 3–7):** Unfold the story — origin details, behind-the-scenes moments, unexpected connections. Use direct quotes from artists, producers, or industry figures (~96% of scripts include at least one quote). Quotes make it feel real and personal.
+
+3. **RESOLUTION / PAYOFF (Final 1–2 lines):** Land with a satisfying conclusion — chart success, cultural impact, ironic twist, or feel-good ending. Optional soft CTA ("Stream the remastered version now" or "The expanded edition is out now").
+
+## VOICE & TONE
+- **Conversational and accessible** — like a knowledgeable friend sharing a cool story over drinks
+- **Celebratory but grounded** — enthusiastic about the music without being sycophantic
+- **Surprise-driven** — every script should contain at least one "I didn't know that!" moment
+- Use occasional humor and wit, especially in quotes or ironic juxtapositions
+- Use ellipsis (…) for dramatic pauses and cliffhangers between cards (~51% of scripts use this)
+- Contractions are fine ("didn't," "wasn't," "it's")
+
+## QUOTES
+- Include 1–3 direct quotes per script — they are the secret weapon
+- Attribute clearly: 'Freddie Mercury played synth bass on the track' or 'Murphy: "I really thought I was f**ked"'
+- Quotes can be funny, surprising, self-deprecating, or revealing
+- Sources: interviews, documentaries, liner notes, autobiographies
+
+## CONTENT THEMES THAT WORK
+- Origin stories (how a song/album came to be)
+- Unexpected connections (actors, other artists, surprising collaborators)
+- Perseverance narratives (artist was struggling → breakthrough)
+- Chart performance surprises (sleeper hits, late bloomers, banned songs that became classics)
+- Music video behind-the-scenes
+- Pop culture crossover moments (songs in movies, TV, viral moments)
+- Anniversary/reissue hooks tied to catalog releases
+
+## HOOKS THAT PERFORM WELL
+- Direct questions: "Did you know…?", "Do you remember…?"
+- Bold declaratives with surprise: "[Song] was banned by MTV"
+- Contrast/irony: "peaked at No. 28… but became one of the most iconic songs ever"
+- Stakes: "At the end of the 1980s, [Artist] was struggling"
+- Formula: [Artist]'s [Song] + surprising claim
+
+## WHAT TO AVOID
+- Overly long sentences that won't fit on a text card
+- Wikipedia-style recitation of facts without narrative arc
+- Being too promotional or sounding like a press release
+- Generic superlatives without specifics ("one of the greatest songs ever")
+- More than 11 lines — these are short-form videos, not essays
+
+## EXAMPLE SCRIPT
+
+Bob Seger's "Night Moves" was released in 1976, and it finally got a video in 1994
+Director Wayne Isham cast his friend Matt LeBlanc, an unknown at the time, in the video
+A few months later, LeBlanc would become a household name playing Joey on 'Friends'
+There's also a cameo from Johnny Galecki, known for National Lampoon's Vacation series
+But you probably recognize him as Leonard on 'The Big Bang Theory'
+'Melrose Place''s Daphne Zuniga and 'Lost Highway''s Natasha Gregson Wagner also appear
+When LeBlanc became a star, Isham joked: "I should have made him sign a deal!"
+
+## EXAMPLE SCRIPT 2
+
+The INXS album 'KICK' is one of the definitive LPs of the 1980s
+But when band manager Chris Murphy played it to the label for the first time…
+The response was muted.
+Murphy: "I really thought I was f**ked"
+Luckily, Andrea Ganis, then a director of radio promotions, got it immediately
+Ganis: "I heard something that I'd never heard before in my life!"
+The album features "Need You Tonight," "Never Tear Us Apart," and "New Sensation"
+
+## EXAMPLE SCRIPT 3
+
+At the end of the 1980s, Bonnie Raitt was struggling
+She didn't have a record deal, hadn't had a hit in decades, and was broke
+Tim Levine, an A&R man at Capitol Records, risked it all to give Raitt one last shot
+"When I went to sign her, my boss at the time said, 'Over my dead body'"
+The result was 'Nick Of Time,' an album about coming to terms with aging, lost love, and the passage of time
+The mix of country and R&B, from a middle-aged woman reflecting on her life, sounded fresh and different
+
+---
+
+Write a script for: ARTIST_PLACEHOLDER - SONG_PLACEHOLDER
+
+Output only the script lines, one per line. No numbering, no headers, no commentary.`;
+
+function copyExplainerPrompt(artist, song, btn) {
+    const prompt = EXPLAINER_PROMPT
+        .replace('ARTIST_PLACEHOLDER', artist)
+        .replace('SONG_PLACEHOLDER', song);
+    navigator.clipboard.writeText(prompt).then(() => {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'Copy Prompt'; btn.classList.remove('copied'); }, 1500);
     });
 }
 

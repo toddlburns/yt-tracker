@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%2300FFFF'/><stop offset='50%25' stop-color='%23FF69B4'/><stop offset='100%25' stop-color='%238B5CF6'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><path d='M50 20 C30 35 30 65 50 80 C70 65 70 35 50 20' fill='%23fff' opacity='0.3'/><circle cx='35' cy='45' r='5' fill='%23fff'/><circle cx='65' cy='45' r='5' fill='%23fff'/></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300FFFF'/%3E%3Cstop offset='50%25' stop-color='%23FF69B4'/%3E%3Cstop offset='100%25' stop-color='%238B5CF6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='45' fill='url(%23g)'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='60' font-weight='bold' fill='white' font-family='Arial'%3E%24%3C/text%3E%3C/svg%3E">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -1290,7 +1290,7 @@
     <img id="lightbox-img" src="" alt="Video thumbnail">
 </div>
 
-<script src="editorial_data.js"></script>
+<script src="editorial_data.js?v=2"></script>
 <script>
 // ─── Default Channels ───────────────────────────────────────────
 const DEFAULT_CHANNELS = [
@@ -3623,7 +3623,7 @@ function renderEditorial() {
                     daysUntil: days,
                     icon: '\uD83C\uDF82',
                     articleUrl: info.articleUrl || bestofUrl(displayArtist) || null,
-                    artistPageUrl: info.artistPageUrl || artistPageUrl(displayArtist) || null
+                    artistPageUrl: info.artistPageUrl || null
                 });
             }
         }
@@ -3655,7 +3655,7 @@ function renderEditorial() {
                     icon: icon,
                     articleUrl: ev.articleUrl || null,
                     socialAssetUrl: ev.socialAssetUrl || null,
-                    artistPageUrl: ev.artistPageUrl || artistPageUrl(ev.artist) || null
+                    artistPageUrl: ev.artistPageUrl || null
                 });
             }
         }
@@ -3686,7 +3686,7 @@ function renderEditorial() {
                     youtubeId: vid.youtubeId,
                     views: vid.views,
                     articleUrl: null,
-                    artistPageUrl: artistPageUrl(vid.artist) || null
+                    artistPageUrl: null
                 });
             }
         }
@@ -3730,6 +3730,72 @@ function renderEditorial() {
         return '';
     }
 
+    function normalizeForStore(name) {
+        if (!name) return '';
+        let n = name.toLowerCase().trim();
+        if (n.startsWith('the ')) n = n.substring(4);
+        n = n.replace(/ & /g, ' and ');
+        return n.replace(/\s+/g, ' ').trim();
+    }
+
+    function normalizeForMatch(s) {
+        if (!s) return '';
+        return s.toLowerCase()
+            .replace(/\(.*?\)/g, '')
+            .replace(/[''"""]/g, '')
+            .replace(/[^\w\s]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    function getStoreLink(item) {
+        try {
+            if (typeof STORE_ARTIST_PRODUCTS === 'undefined') return '';
+            const artistNorm = normalizeForStore(item.artist);
+            const storeIcon = `<img src="https://shop.udiscovermusic.com/cdn/shop/files/favicon_32x32.png" style="width:14px;height:14px;vertical-align:middle;">`;
+
+            if (item.type === 'birthday') {
+                const ap = STORE_ARTIST_PRODUCTS[artistNorm];
+                if (ap) {
+                    return `<a href="${ap.url}" target="_blank" rel="noopener" title="${ap.count} products on uDiscover Store">${storeIcon}</a>`;
+                }
+                return '';
+            }
+
+            // Non-birthday: try to match specific product
+            if (typeof STORE_TRACK_MATCHES !== 'undefined') {
+                const products = STORE_TRACK_MATCHES[artistNorm];
+                if (products) {
+                    const descNorm = normalizeForMatch(item.description || item.name);
+                    for (const p of products) {
+                        const titleNorm = normalizeForMatch(p.title);
+                        if (titleNorm && descNorm && (titleNorm.includes(descNorm) || descNorm.includes(titleNorm))) {
+                            return `<a href="https://shop.udiscovermusic.com/products/${p.handle}" target="_blank" rel="noopener" title="Available on uDiscover Store: ${p.title.replace(/"/g, '&quot;')}">${storeIcon}</a>`;
+                        }
+                        if (p.tracks && p.tracks.length > 0) {
+                            for (const track of p.tracks) {
+                                const trackNorm = normalizeForMatch(track);
+                                if (trackNorm && descNorm && (descNorm.includes(trackNorm) || trackNorm.includes(descNorm))) {
+                                    return `<a href="https://shop.udiscovermusic.com/products/${p.handle}" target="_blank" rel="noopener" title="Available on uDiscover Store: ${p.title.replace(/"/g, '&quot;')}">${storeIcon}</a>`;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Fallback: link to artist collection if any product exists
+            const ap = STORE_ARTIST_PRODUCTS[artistNorm];
+            if (ap) {
+                return `<a href="${ap.url}" target="_blank" rel="noopener" title="${ap.count} products on uDiscover Store">${storeIcon}</a>`;
+            }
+            return '';
+        } catch(e) {
+            console.error('getStoreLink error:', e, item);
+            return '';
+        }
+    }
+
     function renderCardHtml(item) {
         const birthdayClass = item.type === 'birthday' ? ' editorial-birthday' : '';
         const videoKey = `${item.artist}|${item.month}|${item.day}`;
@@ -3738,17 +3804,18 @@ function renderEditorial() {
         let videoHtml = '';
         if (item.youtubeId) {
             const vc = item.views ? ` <span class="editorial-video-views">${formatCount(item.views)}</span>` : '';
-            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F${vc}</a>`;
+            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;">${vc}</a>`;
         } else if (matchingVideos.length > 0 && item.type !== 'video') {
             const vc = matchingVideos[0].views ? ` <span class="editorial-video-views">${formatCount(matchingVideos[0].views)}</span>` : '';
-            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F${vc}</a>`;
+            videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;">${vc}</a>`;
         }
 
         const wq = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
         const articleHtml = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
         const pageHtml = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page"><span class="editorial-page-icon">UDAP</span></a>` : '';
         const socialPosts = findSocialPosts(item.artist, item.description, item.type);
-        const socialPostHtml = socialPosts.length > 0 ? `<a class="editorial-social-link" href="${socialPosts[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts.length} social post${socialPosts.length > 1 ? 's' : ''}"><span style="color:#FF3B3B;font-weight:700;font-size:0.85rem;">✘</span></a>` : '';
+        const socialPostHtml = socialPosts.length > 0 ? `<a class="editorial-social-link" href="${socialPosts[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts.length} social post${socialPosts.length > 1 ? 's' : ''}"><img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
+        const storeHtml = getStoreLink(item);
         const ckRaw = editorialItemKey(item);
         const ckAttr = ckRaw.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
         const isChecked = editorialCheckedSet.has(ckRaw);
@@ -3759,7 +3826,7 @@ function renderEditorial() {
                 <span class="editorial-card-artist">${item.description}</span>
                 ${item.origYear ? `<span class="editorial-anniv-badge">${item.detail}</span>` : `<span class="editorial-card-desc">${item.detail}</span>`}
                 <span class="editorial-card-links">
-                    ${pageHtml}${articleHtml}${socialPostHtml}
+                    ${pageHtml}${articleHtml}${socialPostHtml}${storeHtml}
                     <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq}', event)"><img src="https://en.wikipedia.org/static/favicon/wikipedia.ico" style="width:14px;height:14px;vertical-align:middle;"></a>
                     ${videoHtml}
                 </span>
@@ -3791,16 +3858,17 @@ function renderEditorial() {
                 let videoHtml = '';
                 if (item.youtubeId) {
                     const vc = item.views ? ` <span class="editorial-video-views">${formatCount(item.views)}</span>` : '';
-                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F${vc}</a>`;
+                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${item.youtubeId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;">${vc}</a>`;
                 } else if (matchingVideos.length > 0 && item.type !== 'video') {
                     const vc = matchingVideos[0].views ? ` <span class="editorial-video-views">${formatCount(matchingVideos[0].views)}</span>` : '';
-                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener">\u25B6\uFE0F${vc}</a>`;
+                    videoHtml = `<a class="editorial-video-link" href="https://www.youtube.com/watch?v=${matchingVideos[0].youtubeId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;">${vc}</a>`;
                 }
                 const wq2 = wikiQuery(item.artist, item.description, item.type).replace(/'/g, "\\'");
                 const articleHtml2 = item.articleUrl ? `<a class="editorial-article-link" href="${item.articleUrl}" target="_blank" rel="noopener" title="uDiscover article"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
                 const pageHtml2 = item.artistPageUrl ? `<a class="editorial-page-link" href="${item.artistPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page"><span class="editorial-page-icon">UDAP</span></a>` : '';
                 const socialPosts2 = findSocialPosts(item.artist, item.description, item.type);
-                const socialPostHtml2 = socialPosts2.length > 0 ? `<a class="editorial-social-link" href="${socialPosts2[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts2.length} social post${socialPosts2.length > 1 ? 's' : ''}"><span style="color:#FF3B3B;font-weight:700;font-size:0.85rem;">✘</span></a>` : '';
+                const socialPostHtml2 = socialPosts2.length > 0 ? `<a class="editorial-social-link" href="${socialPosts2[0].liveLink}" target="_blank" rel="noopener" title="${socialPosts2.length} social post${socialPosts2.length > 1 ? 's' : ''}"><img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
+                const storeHtml2 = getStoreLink(item);
                 const ck2Raw = editorialItemKey(item);
                 const ck2Attr = ck2Raw.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
                 const isChecked2 = editorialCheckedSet.has(ck2Raw);
@@ -3813,7 +3881,7 @@ function renderEditorial() {
                         <span class="editorial-card-artist">${artist} — ${item.description}</span>
                         ${item.origYear ? `<span class="editorial-anniv-badge">${item.detail}</span>` : `<span class="editorial-card-desc">${item.detail}</span>`}
                         <span class="editorial-card-links">
-                            ${pageHtml2}${articleHtml2}${socialPostHtml2}
+                            ${pageHtml2}${articleHtml2}${socialPostHtml2}${storeHtml2}
                             <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq2}', event)"><img src="https://en.wikipedia.org/static/favicon/wikipedia.ico" style="width:14px;height:14px;vertical-align:middle;"></a>
                             ${videoHtml}
                         </span>
@@ -3826,16 +3894,19 @@ function renderEditorial() {
                 const primaryIcon = items.find(i => i.type === 'birthday') ? '\uD83C\uDF82' : items[0].icon;
                 const groupAuditHtml = auditInlineHtml(artist, auditRendered);
                 const groupPageAuditHtml = pageAuditInlineHtml(artist, auditRendered);
-                const groupPageUrl = items[0].artistPageUrl || artistPageUrl(artist);
+                const groupPageUrl = items[0].artistPageUrl || null;
                 const groupArticleUrl = bestofUrl(artist);
                 const groupPageLinkHtml = groupPageUrl ? `<a class="editorial-page-link" href="${groupPageUrl}" target="_blank" rel="noopener" title="uDiscover artist page" onclick="event.stopPropagation()">👤</a>` : '';
                 const groupArticleLinkHtml = groupArticleUrl ? `<a class="editorial-article-link" href="${groupArticleUrl}" target="_blank" rel="noopener" title="uDiscover best-of article" onclick="event.stopPropagation()"><img src="https://www.udiscovermusic.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
+                const groupStoreNorm = normalizeForStore(artist);
+                const groupStoreAp = (typeof STORE_ARTIST_PRODUCTS !== 'undefined') ? STORE_ARTIST_PRODUCTS[groupStoreNorm] : null;
+                const groupStoreLinkHtml = groupStoreAp ? `<a href="${groupStoreAp.url}" target="_blank" rel="noopener" title="${groupStoreAp.count} products on uDiscover Store" onclick="event.stopPropagation()"><img src="https://shop.udiscovermusic.com/cdn/shop/files/favicon_32x32.png" style="width:14px;height:14px;vertical-align:middle;"></a>` : '';
                 html += `<div class="editorial-artist-group" id="${gid}">
                     <div class="editorial-group-header" onclick="document.getElementById('${gid}').classList.toggle('open')">
                         <div class="editorial-card-icon">${primaryIcon}</div>
                         <span class="editorial-card-artist">${artist}</span>
                         <span class="editorial-group-count">${items.length} events</span>
-                        <span class="editorial-card-links" onclick="event.stopPropagation()">${groupPageLinkHtml}${groupArticleLinkHtml}</span>
+                        <span class="editorial-card-links" onclick="event.stopPropagation()">${groupPageLinkHtml}${groupArticleLinkHtml}${groupStoreLinkHtml}</span>
                         ${groupAuditHtml}${groupPageAuditHtml}
                         <span class="editorial-group-chevron">\u25B6</span>
                     </div>

@@ -2927,7 +2927,7 @@ function renderNews() {
         return;
     }
     feedEl.innerHTML = filtered.map(a => {
-        const ago = timeAgo(a.date);
+        const ago = newsTimeAgo(a.date);
         const artists = a._cachedArtists;
         const isHighlight = artists.length > 0;
         return `<a class="news-card${isHighlight ? ' news-highlight' : ''}" href="${a.link}" target="_blank" rel="noopener">
@@ -2951,7 +2951,7 @@ function escapeHtml(str) {
     return d.innerHTML;
 }
 
-function timeAgo(date) {
+function newsTimeAgo(date) {
     const diff = Date.now() - date.getTime();
     const mins = Math.floor(diff / 60000);
     if (mins < 60) return `${mins}m ago`;

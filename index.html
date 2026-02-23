@@ -4151,6 +4151,7 @@ function renderEditorial() {
                 const safeTitle = cv.title.replace(/&/g,'&amp;').replace(/</g,'&lt;');
                 const sourceTag = cv.source === 'edsullivan' ? '<span class="catalog-source src-edsullivan">Ed Sullivan</span>' : '';
                 const socialDoneTag = cv.socialDone ? '<span class="catalog-social-done" title="Social video done">&#10003;</span>' : '';
+                const catPromptHtml = promptBtnHtml(cv.artist, `"${cv.title}"`);
                 html += `<div class="catalog-video-card">
                     ${sourceTag}${socialDoneTag}
                     <span class="catalog-artist">${safeArtist}</span>
@@ -4159,6 +4160,7 @@ function renderEditorial() {
                     <span class="catalog-anniv">${annivLabel}</span>
                     <span class="catalog-links">
                         <a href="https://www.youtube.com/watch?v=${cv.videoId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:12px;height:12px;vertical-align:middle;"></a>
+                        ${catPromptHtml}
                     </span>
                 </div>`;
             }

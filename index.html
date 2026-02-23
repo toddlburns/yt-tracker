@@ -313,7 +313,7 @@
         .editorial-card-links {
             display: inline-flex; gap: 8px; align-items: center; margin-left: auto;
         }
-        .editorial-video-link, .editorial-wiki-link, .editorial-article-link, .editorial-social-link, .editorial-page-link {
+        .editorial-video-link, .editorial-wiki-link, .editorial-article-link, .editorial-social-link, .editorial-page-link, .editorial-songfacts-link {
             display: inline-flex; align-items: center; gap: 3px;
             font-size: 0.65rem; text-decoration: none; transition: color 0.2s;
             white-space: nowrap;
@@ -323,6 +323,8 @@
         .editorial-video-views { font-size: 0.55rem; opacity: 0.7; }
         .editorial-wiki-link { color: #7DD3E8; cursor: pointer; }
         .editorial-wiki-link:hover { color: #00FFFF; }
+        .editorial-songfacts-link { color: #F0A050; }
+        .editorial-songfacts-link:hover { color: #FFB870; }
         .editorial-article-link { color: #B794F6; }
         .editorial-article-link:hover { color: #D4BBFF; }
         .editorial-page-icon {
@@ -336,15 +338,17 @@
         .editorial-social-link:hover { color: #FFBE76; }
         .editorial-page-link { color: #4ADE80; }
         .editorial-page-link:hover { color: #86EFAC; }
-        .editorial-copy-prompt {
+        .editorial-copy-prompt, .editorial-copy-dtc-prompt {
             display: inline-flex; align-items: center; gap: 2px;
             font-size: 0.55rem; font-weight: 600; color: #FFE680; background: rgba(255, 230, 128, 0.1);
             border: 1px solid rgba(255, 230, 128, 0.3); border-radius: 4px;
             padding: 1px 5px; cursor: pointer; white-space: nowrap; transition: all 0.2s;
             font-family: inherit; line-height: 1.2;
         }
+        .editorial-copy-dtc-prompt { color: #80CFFF; background: rgba(128, 207, 255, 0.1); border-color: rgba(128, 207, 255, 0.3); }
         .editorial-copy-prompt:hover { background: rgba(255, 230, 128, 0.25); border-color: #FFE680; }
-        .editorial-copy-prompt.copied { color: #3fb950; border-color: #3fb950; background: rgba(63, 185, 80, 0.15); }
+        .editorial-copy-dtc-prompt:hover { background: rgba(128, 207, 255, 0.25); border-color: #80CFFF; }
+        .editorial-copy-prompt.copied, .editorial-copy-dtc-prompt.copied { color: #3fb950; border-color: #3fb950; background: rgba(63, 185, 80, 0.15); }
 
         /* Collapsible artist group */
         .editorial-artist-group {
@@ -405,6 +409,25 @@
         .editorial-toggle-done:hover { background: rgba(0, 255, 255, 0.15); }
         .editorial-toggle-done.active { background: rgba(0, 255, 255, 0.2); border-color: #00FFFF; color: #00FFFF; }
         .editorial-no-data { text-align: center; padding: 40px; color: #5a8a9a; font-size: 0.9rem; }
+
+        /* Catalog Video Items */
+        .catalog-video-card {
+            display: flex; align-items: center; gap: 8px; padding: 3px 12px 3px 20px;
+            font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+            font-size: 0.65rem; color: #6e7a88; border-bottom: 1px solid rgba(255,255,255,0.03);
+            transition: background 0.15s;
+        }
+        .catalog-video-card:hover { background: rgba(255,255,255,0.03); color: #8b949e; }
+        .catalog-video-card .catalog-artist { color: #7a8a6e; white-space: nowrap; }
+        .catalog-video-card .catalog-title { color: #6e7a88; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+        .catalog-video-card .catalog-views { color: #5a6a5e; white-space: nowrap; font-size: 0.6rem; }
+        .catalog-video-card .catalog-anniv { color: #5a6570; white-space: nowrap; font-size: 0.55rem; }
+        .catalog-video-card .catalog-links { display: flex; gap: 6px; align-items: center; white-space: nowrap; }
+        .catalog-video-card .catalog-links a { color: #5a6a5e; text-decoration: none; transition: color 0.15s; }
+        .catalog-video-card .catalog-links a:hover { color: #8b949e; }
+        .catalog-video-card .catalog-source { font-size: 0.5rem; padding: 1px 4px; border-radius: 3px; white-space: nowrap; }
+        .catalog-video-card .catalog-source.src-edsullivan { color: #b89a5a; background: rgba(184, 154, 90, 0.12); border: 1px solid rgba(184, 154, 90, 0.2); }
+        .catalog-video-card .catalog-social-done { color: #3fb950; font-size: 0.6rem; title: "Social video done"; }
 
         /* Inline Article Audit */
         .audit-inline {
@@ -1300,6 +1323,8 @@
 </div>
 
 <script src="editorial_data.js?v=2"></script>
+<script src="catalog_videos_data.js?v=1"></script>
+<script src="ed_sullivan_data.js?v=1"></script>
 <script>
 // ─── Default Channels ───────────────────────────────────────────
 const DEFAULT_CHANNELS = [
@@ -3527,6 +3552,10 @@ function findSocialPosts(artist, description, type) {
     return [];
 }
 
+function songfactsSlug(artist) {
+    return artist.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-');
+}
+
 function wikiQuery(artist, description, type) {
     // Extract quoted title from event description (e.g. "'Fearless'" or '"Finding Forever"')
     const quoteMatch = description.match(/['\u2018\u2019\u201C\u201D]([^'\u2018\u2019\u201C\u201D]+)['\u2018\u2019\u201C\u201D]/);
@@ -3810,7 +3839,7 @@ function renderEditorial() {
         const song = songMatch ? songMatch[1] : description.replace(/ — .*$/, '').replace(/^['"]|['"]$/g, '');
         const safeArtist = esc(artist).replace(/'/g, "\\'");
         const safeSong = esc(song).replace(/'/g, "\\'");
-        return `<button class="editorial-copy-prompt" onclick="event.stopPropagation(); copyExplainerPrompt('${safeArtist}', '${safeSong}', this)">Copy Prompt</button>`;
+        return `<button class="editorial-copy-prompt" onclick="event.stopPropagation(); copyExplainerPrompt('${safeArtist}', '${safeSong}', this)">TOS Prompt</button><button class="editorial-copy-dtc-prompt" onclick="event.stopPropagation(); copyDtcPrompt('${safeArtist}', '${safeSong}', this)">DTC Prompt</button>`;
     }
 
     function renderCardHtml(item) {
@@ -3849,13 +3878,54 @@ function renderEditorial() {
                 <span class="editorial-card-links">
                     ${pageHtml}${articleHtml}${socialPostHtml}${storeHtml}
                     <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq}', event)"><img src="https://en.wikipedia.org/static/favicon/wikipedia.ico" style="width:14px;height:14px;vertical-align:middle;"></a>
+                    <a class="editorial-songfacts-link" href="https://www.songfacts.com/songs/${songfactsSlug(item.artist)}" target="_blank" rel="noopener" title="Songfacts"><img src="https://www.songfacts.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>
                     ${videoHtml}${copyPromptHtml}
                 </span>
             </div>
         </div>`;
     }
 
+    // Build catalog video lookup by month-day (catalog + Ed Sullivan combined)
+    const catalogByDate = {};
+    if (typeof CATALOG_VIDEOS !== 'undefined') {
+        for (const cv of CATALOG_VIDEOS) {
+            const key = `${cv.month}-${cv.day}`;
+            if (!catalogByDate[key]) catalogByDate[key] = [];
+            catalogByDate[key].push(cv);
+        }
+    }
+    if (typeof ED_SULLIVAN_VIDEOS !== 'undefined') {
+        for (const cv of ED_SULLIVAN_VIDEOS) {
+            const key = `${cv.month}-${cv.day}`;
+            if (!catalogByDate[key]) catalogByDate[key] = [];
+            catalogByDate[key].push(cv);
+        }
+    }
+    // Sort each date's videos by views descending
+    for (const k in catalogByDate) catalogByDate[k].sort((a, b) => b.views - a.views);
+
+    // Collect all date keys (editorial + catalog) so catalog-only dates appear too
+    const allDateKeys = new Set(Object.keys(groups));
+    for (const k in catalogByDate) {
+        const [m, d] = k.split('-').map(Number);
+        const dateKey = `${m}-${d}`;
+        if (!allDateKeys.has(dateKey)) {
+            const today = new Date(); today.setHours(0,0,0,0);
+            const evtDate = new Date(today.getFullYear(), m - 1, d); evtDate.setHours(0,0,0,0);
+            if (evtDate < today) evtDate.setFullYear(evtDate.getFullYear() + 1);
+            const diff = Math.round((evtDate - today) / 86400000);
+            groups[dateKey] = { month: m, day: d, daysUntil: diff, items: [] };
+            allDateKeys.add(dateKey);
+        }
+    }
+
     for (const [dateKey, group] of Object.entries(groups).sort((a, b) => a[1].daysUntil - b[1].daysUntil)) {
+        const catalogKey = `${group.month}-${group.day}`;
+        const catalogVideos = catalogByDate[catalogKey] || [];
+        const hasEditorial = group.items.length > 0;
+        const hasCatalog = catalogVideos.length > 0;
+        if (!hasEditorial && !hasCatalog) continue;
+
         const daysLabel = group.daysUntil === 0 ? 'Today' : group.daysUntil === 1 ? 'Tomorrow' : `in ${group.daysUntil} days`;
         html += `<div class="editorial-date-group">
             <span>${monthNames[group.month]} ${group.day}</span>
@@ -3908,6 +3978,7 @@ function renderEditorial() {
                         <span class="editorial-card-links">
                             ${pageHtml2}${articleHtml2}${socialPostHtml2}${storeHtml2}
                             <a class="editorial-wiki-link" href="#" onclick="wikiGo('${wq2}', event)"><img src="https://en.wikipedia.org/static/favicon/wikipedia.ico" style="width:14px;height:14px;vertical-align:middle;"></a>
+                            <a class="editorial-songfacts-link" href="https://www.songfacts.com/songs/${songfactsSlug(item.artist)}" target="_blank" rel="noopener" title="Songfacts"><img src="https://www.songfacts.com/favicon.ico" style="width:14px;height:14px;vertical-align:middle;"></a>
                             ${videoHtml}${copyPromptHtml2}
                         </span>
                         ${auditHtml2}${pageAuditHtml2}
@@ -3942,6 +4013,33 @@ function renderEditorial() {
                 html += `</div></div>`;
             }
         }
+
+        // Render catalog videos for this date
+        if (catalogVideos.length > 0) {
+            for (const cv of catalogVideos) {
+                const thisYear = new Date().getFullYear();
+                const annivYears = thisYear - cv.origYear;
+                const annivLabel = annivYears > 0 ? `${annivYears}y ago` : '';
+                const viewsStr = cv.views >= 1e9 ? (cv.views / 1e9).toFixed(1) + 'B'
+                    : cv.views >= 1e6 ? (cv.views / 1e6).toFixed(1) + 'M'
+                    : cv.views >= 1e3 ? (cv.views / 1e3).toFixed(0) + 'K'
+                    : cv.views.toLocaleString();
+                const safeArtist = cv.artist.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+                const safeTitle = cv.title.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+                const sourceTag = cv.source === 'edsullivan' ? '<span class="catalog-source src-edsullivan">Ed Sullivan</span>' : '';
+                const socialDoneTag = cv.socialDone ? '<span class="catalog-social-done" title="Social video done">&#10003;</span>' : '';
+                html += `<div class="catalog-video-card">
+                    ${sourceTag}${socialDoneTag}
+                    <span class="catalog-artist">${safeArtist}</span>
+                    <span class="catalog-title">${safeTitle}</span>
+                    <span class="catalog-views">${viewsStr}</span>
+                    <span class="catalog-anniv">${annivLabel}</span>
+                    <span class="catalog-links">
+                        <a href="https://www.youtube.com/watch?v=${cv.videoId}" target="_blank" rel="noopener"><img src="https://www.youtube.com/favicon.ico" style="width:12px;height:12px;vertical-align:middle;"></a>
+                    </span>
+                </div>`;
+            }
+        }
     }
 
     feed.innerHTML = html;
@@ -3962,7 +4060,7 @@ Write a script following these rules:
 
 ## FORMAT
 - 4–11 lines (aim for ~6), each line = one text card shown on screen
-- Each line is a single sentence or thought — short enough to read comfortably on a phone in 3–4 seconds
+- Each line is a single sentence or thought — ideally under 80 characters, and never more than 100. It must be short enough to read comfortably on a phone in 3–4 seconds
 - No stage directions, no visual cues — just the text that appears on screen
 
 ## STRUCTURE (3-Act Micro-Narrative)
@@ -4007,7 +4105,7 @@ Write a script following these rules:
 - Formula: [Artist]'s [Song] + surprising claim
 
 ## WHAT TO AVOID
-- Overly long sentences that won't fit on a text card
+- Overly long sentences that won't fit on a text card — keep each line under 80 characters (100 max)
 - Wikipedia-style recitation of facts without narrative arc
 - Being too promotional or sounding like a press release
 - Generic superlatives without specifics ("one of the greatest songs ever")
@@ -4055,7 +4153,121 @@ function copyExplainerPrompt(artist, song, btn) {
     navigator.clipboard.writeText(prompt).then(() => {
         btn.textContent = 'Copied!';
         btn.classList.add('copied');
-        setTimeout(() => { btn.textContent = 'Copy Prompt'; btn.classList.remove('copied'); }, 1500);
+        setTimeout(() => { btn.textContent = 'TOS Prompt'; btn.classList.remove('copied'); }, 1500);
+    });
+}
+
+// ─── Direct-to-Camera Script Prompt ─────────────────────────────────
+const DTC_PROMPT = `You are a scriptwriter for uDiscover Music, a music discovery brand owned by Universal Music Group. You write direct-to-camera video scripts for short-form social media (TikTok, Instagram Reels, YouTube Shorts). Each video should clock in at roughly 55 seconds when read aloud.
+
+The on-camera host is Todd. Every script must include the line "I'm Todd with uDiscover" early in the script, typically right after the opening hook.
+
+---
+
+STRUCTURE
+
+1. THE HOOK (1-2 sentences max)
+This is the most important part. It must immediately grab the viewer and make them want to keep watching. It can be a question, a surprising statement, a bold claim, or a cultural reference. It should feel like something you'd say to a friend to get their attention. Do NOT start with a generic statement like "Let me tell you about..." — start with something specific and intriguing.
+
+Strong hook examples:
+- "If you're at all curious about jazz, I've got a great entry point for you."
+- "Did Ace Hood ever actually get that Bugatti?"
+- "Pop quiz: What's the first words sung on Aerosmith's debut album?"
+- "Out on the streets, they call it..."
+- "What if one heartbreak could change the course of recorded music?"
+- "If I say The Cure and Robert Smith, you probably have an image jump to mind."
+- "Everyone knows Monster Mash, but do you know how it was actually made?"
+- "Quick: Name a hit song without a chorus?"
+- "You wouldn't expect a Neil Diamond song to stop a Pearl Jam crowd cold, but this one did."
+
+2. THE INTRODUCTION
+Always: "I'm Todd with uDiscover" or "I'm Todd with uDiscover and..." — this bridges the hook into the body of the script.
+
+3. THE BODY
+This is where you tell the story. Focus on ONE or TWO interesting angles — never try to cover everything about an artist or album. Prioritize:
+- How the music was made (studio stories, production tricks, recording accidents)
+- Curious or unexpected cultural impacts (unlikely covers, viral moments, connections between artists)
+- Interesting backstories (what inspired the song, who was in the room, what almost didn't happen)
+- Connections between artists that people might not know about
+- Music video stories (if genuinely interesting)
+
+4. THE CLOSE
+End with something that feels like a natural conclusion — a final thought, a callback to the hook, or a gentle nudge toward the music. If there's a new vinyl release, anniversary edition, or reason to revisit the music, mention it here. Do NOT end with a generic call to action like "subscribe" or "follow us." You can occasionally end with an open question to the audience if it feels natural, but don't force it.
+
+---
+
+TONE AND VOICE
+
+- Conversational but authoritative. You sound like a music-obsessed friend who happens to know a lot, not a professor or a journalist.
+- First person is fine and encouraged. "I love..." / "I get chills..." / "I keep coming back to..."
+- Enthusiasm is good, but never forced. Let the story do the work.
+- Humor is welcome when it's natural. Todd has a dry, self-aware wit.
+- Use short sentences for emphasis. Then longer ones for storytelling. Mix them up.
+- Rhetorical questions work well as transitions.
+- Ellipses (...) and dashes (—) can be used for natural pauses and asides, the way someone actually talks.
+
+---
+
+WHAT TO AVOID
+
+- Do NOT describe what the music sounds like in generic terms ("a soaring melody," "infectious beat"). If you must reference the sound, be extremely specific.
+- Do NOT focus on chart positions or award nominations unless they are genuinely unusual or central to the story.
+- Do NOT be controversial. These scripts must be brand-safe. Imagine the artist's manager will watch the video. They should be happy with it.
+- Do NOT use em-dashes in every sentence — use them sparingly.
+- Do NOT include stage directions, timestamps, or formatting markers.
+- Do NOT write more than one script per response unless asked.
+- Do NOT add a CTA like "follow for more" or "like and subscribe."
+- Do NOT use emojis.
+
+---
+
+WHEN GIVEN A SONG, ALBUM, OR ARTIST TO WRITE ABOUT
+
+Ask yourself: What is the single most interesting story here? Not the most obvious one — the most interesting one. The one that would make someone stop scrolling. Then build the script around that story.
+
+If you are also given a reason for the script (new vinyl release, anniversary, trending moment, sync in a TV show), weave that reason into the script naturally — usually near the end.
+
+If you include a quote from the artist or someone else, you must be confident the quote is real and be able to identify where it came from.
+
+---
+
+LENGTH
+
+Each script should be roughly 120-180 words. This is the sweet spot for a ~55 second read. A few scripts may run slightly longer (up to 220 words) if the story demands it, but never go beyond that. One focused story told well beats two stories crammed in.
+
+---
+
+EXAMPLE SCRIPTS FOR REFERENCE
+
+EXAMPLE 1 (vinyl reissue + studio story):
+"Supertramp's Crime of the Century is back on vinyl for the first time in what feels like forever. I'm Todd with uDiscover and I want to tell you a couple of recording secrets from this album. Producer Ken Scott wrote about this LP at length in his memoir, revealing that the violin played at the end of "Rudy" was actually from a busker outside a train station in London. On "Dreamer," Ken got the unique sound for two sustained notes by rubbing his hand along the top of a water-filled wine glass. And, speaking of water, that strange sound at around 2:45 of Crime of the Century. It's a piece of sheet metal that's been hit like a gong and is slowly being lowered into a fish tank. There are tons more sonic easter eggs on this incredible album."
+
+EXAMPLE 2 (cultural connection + unexpected angle):
+"Ever wondered where Dave Grohl got the inspiration for his drumming? I'm Todd with uDiscover, and if you haven't seen the clip of Dave Grohl talking to Pharrell about drumming, it's a must-watch. In the clip, Dave explains how The Gap Band's 'Early in the Morning' was a huge inspiration for his work on Nirvana's Nevermind. The Gap Band's fashion sense was not an inspiration for Dave. The Gap Band used to dress up in cowboy outfits all of the time, which has had a few people on the internet wondering, 'What's up with that?' Well, according to an interview with Charlie Wilson, it's because the group was already getting teased because they came from the unlikely state of Oklahoma. Despite the teasing… or perhaps because of it… Charlie once said in an interview, 'we just decided to dress like cowboys. When we put on the hat and boots, we knew it looked corny. But we did not care.' Inspiring words from an inspiring man."
+
+EXAMPLE 3 (trending moment + deeper story):
+"Did Ace Hood ever actually get that Bugatti? I'm Todd with uDiscover, and I'm of course talking about the currently viral Ace Hood song 'Bugatti.' You probably know it from the amazing videos of people pulling each other out of frame while driving an imaginary car. When this 2013 song came back around, I found myself asking, did Ace Hood ever have a real Bugatti? The research was inconclusive. But what we found was interesting. Written five years after the song came out, Ace was at a different moment in his career. He was reflecting on the death of his daughter and how it impacted his art. 'I wanted to be a human being. I realized I was playing a role… and the next thing you know… you've lost your values.' His focus at the time was 'saving for college and clearing my debts. I want to wake up when I'm 45 with financial freedom.'"
+
+EXAMPLE 4 (concept album + bold claim):
+"What if one heartbreak could change the course of recorded music? I'm Todd with uDiscover and that's the story of Frank Sinatra's In the Wee Small Hours. Made in the mid-1950s, it wasn't just another collection of songs — it was one of the first albums conceived as a true concept record. Concept albums are a dime a dozen these days. Not so when Sinatra conceptualized this. Sinatra built the album around themes of loneliness and late-night reflection, complete with one of the most iconic album covers of all time: him standing alone under a streetlamp in the city. It set the template for how we think about albums today — not just as songs, but as complete moods. And now, In the Wee Small Hours is on vinyl again as part of Blue Note's Tone Poet series, giving this classic the treatment it deserves."
+
+EXAMPLE 5 (accidental origin story):
+"One of the greatest R&B albums of the 2000s wasn't even meant to be an album. I'm Todd with uDiscover and Musiq Soulchild's debut record, Aijuswanaseing, just celebrated its 25th anniversary. Now, back in the late '90s, Musiq wasn't chasing a record deal — he was homeless, just recording songs because it gave him a reason to eat and a place to be. The team at A Touch of Jazz in Philly, however, saw something in him and kept inviting him back to the studio. Those late-night sessions turned into the songs we now know as 'Just Friends (Sunny),' 'Love,' and 'Girl Next Door.' The wild part? Those were demos. He didn't even know the label was shopping them around. Aijuswanaseing wasn't planned. It was pure instinct, raw emotion, and the sound of a young artist finding his voice by accident."
+
+---
+
+Write a script for: ARTIST_PLACEHOLDER - SONG_PLACEHOLDER
+
+Output only the script. No headers, no commentary.`;
+
+function copyDtcPrompt(artist, song, btn) {
+    const prompt = DTC_PROMPT
+        .replace('ARTIST_PLACEHOLDER', artist)
+        .replace('SONG_PLACEHOLDER', song);
+    navigator.clipboard.writeText(prompt).then(() => {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = 'DTC Prompt'; btn.classList.remove('copied'); }, 1500);
     });
 }
 

@@ -1163,6 +1163,88 @@
             0%, 100% { border-color: rgba(139, 92, 246, 0.5); }
             50% { border-color: #8B5CF6; }
         }
+
+        /* Morbidity Hub */
+        .morbidity-header { margin-bottom: 16px; }
+        .morbidity-header h2 { font-family: 'Righteous', cursive; font-size: 1.3rem; background: linear-gradient(90deg, #FF6B6B, #FF69B4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .morbidity-header p { font-size: 0.8rem; color: #7DD3E8; margin-top: 4px; }
+        .morbidity-stats { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+        .morbidity-stat {
+            background: rgba(0, 20, 40, 0.6); border: 1px solid rgba(255, 107, 107, 0.2);
+            border-radius: 10px; padding: 12px 18px; text-align: center; min-width: 120px;
+        }
+        .morbidity-stat-num { font-size: 1.6rem; font-weight: 700; color: #FF6B6B; font-family: 'Righteous', cursive; }
+        .morbidity-stat-label { font-size: 0.7rem; color: #7DD3E8; margin-top: 2px; }
+        .morbidity-section-title {
+            font-size: 0.9rem; font-weight: 600; color: #FF69B4; margin: 20px 0 10px;
+            padding-bottom: 6px; border-bottom: 1px solid rgba(255, 105, 180, 0.2);
+        }
+        .morb-tags-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+        .morb-tag {
+            display: inline-flex; align-items: center; gap: 5px;
+            padding: 5px 10px; border-radius: 16px; font-size: 0.78rem;
+            cursor: default; transition: all 0.2s; white-space: nowrap;
+        }
+        .morb-tag-preobit {
+            background: rgba(63, 185, 80, 0.12); border: 1px solid rgba(63, 185, 80, 0.35);
+            color: #3fb950;
+        }
+        .morb-tag-tracking {
+            background: rgba(0, 255, 255, 0.08); border: 1px solid rgba(0, 255, 255, 0.2);
+            color: #7DD3E8;
+        }
+        .morb-tag .morb-tag-age {
+            font-size: 0.65rem; opacity: 0.6; margin-left: 1px;
+        }
+        .morb-tag .morb-tag-x {
+            background: none; border: none; cursor: pointer; font-size: 0.7rem;
+            color: inherit; opacity: 0.35; padding: 0 0 0 2px; transition: opacity 0.2s;
+            font-family: inherit; line-height: 1;
+        }
+        .morb-tag .morb-tag-x:hover { opacity: 1; }
+        .morb-tag-confirm {
+            border-color: #FF6B6B !important; background: rgba(255, 107, 107, 0.15) !important;
+            color: #FF6B6B !important;
+        }
+        .morb-tag-consider {
+            background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.2);
+            color: #A78BFA; cursor: pointer;
+        }
+        .morb-tag-consider:hover { background: rgba(139, 92, 246, 0.18); border-color: rgba(139, 92, 246, 0.4); }
+        .morb-tag-consider .morb-tag-desc {
+            font-size: 0.6rem; opacity: 0.6; margin-left: 2px; max-width: 150px;
+            overflow: hidden; text-overflow: ellipsis;
+        }
+        .morbidity-search {
+            padding: 6px 12px; font-size: 0.8rem; border-radius: 6px;
+            border: 1px solid rgba(0, 255, 255, 0.2); background: rgba(0, 20, 40, 0.5);
+            color: #E0F7FF; font-family: 'Inter', sans-serif; width: 220px;
+        }
+        .morbidity-search:focus { outline: none; border-color: #00FFFF; }
+        .morb-add-row {
+            display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center;
+        }
+        .morb-add-input {
+            padding: 6px 10px; font-size: 0.8rem; border-radius: 6px;
+            border: 1px solid rgba(0, 255, 255, 0.2); background: rgba(0, 20, 40, 0.5);
+            color: #E0F7FF; font-family: 'Inter', sans-serif;
+        }
+        .morb-add-input:focus { outline: none; border-color: #00FFFF; }
+        .morb-add-input::placeholder { color: rgba(125, 211, 232, 0.4); }
+        .morb-add-age { width: 65px; }
+        .morb-add-select { width: 110px; cursor: pointer; }
+        .morb-add-select option { background: #0d0d1a; color: #E0F7FF; }
+        .morb-add-btn {
+            padding: 6px 14px; font-size: 0.8rem; font-weight: 600; border-radius: 6px;
+            border: 1px solid rgba(63, 185, 80, 0.4); background: rgba(63, 185, 80, 0.1);
+            color: #3fb950; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.2s;
+        }
+        .morb-add-btn:hover { background: rgba(63, 185, 80, 0.25); border-color: #3fb950; }
+        .morb-remove-btn {
+            background: none; border: none; color: rgba(255, 107, 107, 0.4); cursor: pointer;
+            font-size: 0.9rem; padding: 2px 6px; border-radius: 4px; transition: all 0.2s;
+        }
+        .morb-remove-btn:hover { color: #FF6B6B; background: rgba(255, 107, 107, 0.1); }
     </style>
 </head>
 <body>
@@ -1201,6 +1283,9 @@
         </button>
         <button class="tab-btn" onclick="switchTab('editorial')" id="tab-editorial">
             Editorial Hub
+        </button>
+        <button class="tab-btn" onclick="switchTab('morbidity')" id="tab-morbidity">
+            Morbidity Hub
         </button>
     </div>
 
@@ -1314,6 +1399,40 @@
         </div>
         <div id="editorial-feed"></div>
     </div>
+
+    <!-- Morbidity Hub Tab -->
+    <div class="tab-content" id="content-morbidity">
+        <div class="morbidity-header">
+            <h2>Morbidity Hub</h2>
+            <p>Pre-obituary watchlist and health/death monitoring for priority artists</p>
+        </div>
+        <div class="morbidity-stats">
+            <div class="morbidity-stat">
+                <div class="morbidity-stat-num" id="morb-total">0</div>
+                <div class="morbidity-stat-label">Watchlist Artists</div>
+            </div>
+        </div>
+
+        <div id="morbidity-status"></div>
+
+        <div class="morbidity-section-title" style="display:flex; justify-content:space-between; align-items:center;">
+            <span>Watchlist (Pre-Obituaries)</span>
+            <input type="text" class="morbidity-search" id="morb-search" placeholder="Filter artists..." oninput="filterMorbidityTable()">
+        </div>
+        <div class="morb-add-row">
+            <input type="text" id="morb-add-name" class="morb-add-input" placeholder="Artist name">
+            <input type="number" id="morb-add-age" class="morb-add-input morb-add-age" placeholder="Age">
+            <button class="morb-add-btn" onclick="addMorbidityArtist()">+ Add</button>
+        </div>
+        <div id="morbidity-tags" class="morb-tags-wrap"></div>
+
+        <div class="morbidity-section-title" style="display:flex; justify-content:space-between; align-items:center; margin-top: 28px;">
+            <span>Consider for Pre-Obit</span>
+            <input type="text" class="morbidity-search" id="morb-consider-search" placeholder="Filter..." oninput="filterConsiderList()">
+        </div>
+        <p style="font-size:0.7rem; color:#7DD3E8; margin-bottom:10px; opacity:0.7;">Click an artist to move them to the active watchlist above.</p>
+        <div id="morbidity-consider" class="morb-tags-wrap"></div>
+    </div>
 </div>
 
 <!-- Image Lightbox -->
@@ -1323,6 +1442,7 @@
 </div>
 
 <script src="editorial_data.js?v=2"></script>
+<script src="morbidity_data.js?v=1"></script>
 <script src="catalog_videos_data.js?v=1"></script>
 <script src="ed_sullivan_data.js?v=1"></script>
 <script>
@@ -1516,6 +1636,9 @@ function switchTab(tab) {
     document.getElementById(`content-${tab}`).classList.add('active');
     if (tab === 'editorial' && !editorialRendered) {
         renderEditorial();
+    }
+    if (tab === 'morbidity' && !morbidityRendered) {
+        renderMorbidity();
     }
 }
 
@@ -4269,6 +4392,187 @@ function copyDtcPrompt(artist, song, btn) {
         btn.classList.add('copied');
         setTimeout(() => { btn.textContent = 'DTC Prompt'; btn.classList.remove('copied'); }, 1500);
     });
+}
+
+// ─── Morbidity Hub ─────────────────────────────────────────────
+let morbidityRendered = false;
+
+function getMorbidityList() {
+    const baseline = typeof MORBIDITY_WATCHLIST !== 'undefined' ? MORBIDITY_WATCHLIST : [];
+    const added = JSON.parse(localStorage.getItem('morb_added') || '[]');
+    const removed = new Set(JSON.parse(localStorage.getItem('morb_removed') || '[]'));
+    return baseline.filter(a => !removed.has(a.name)).concat(added);
+}
+
+function saveMorbidityAdd(artist) {
+    const added = JSON.parse(localStorage.getItem('morb_added') || '[]');
+    added.push(artist);
+    localStorage.setItem('morb_added', JSON.stringify(added));
+}
+
+function saveMorbidityRemove(name) {
+    const added = JSON.parse(localStorage.getItem('morb_added') || '[]');
+    const idx = added.findIndex(a => a.name === name);
+    if (idx !== -1) {
+        added.splice(idx, 1);
+        localStorage.setItem('morb_added', JSON.stringify(added));
+    } else {
+        const removed = JSON.parse(localStorage.getItem('morb_removed') || '[]');
+        if (!removed.includes(name)) removed.push(name);
+        localStorage.setItem('morb_removed', JSON.stringify(removed));
+    }
+}
+
+function addMorbidityArtist() {
+    const nameEl = document.getElementById('morb-add-name');
+    const ageEl = document.getElementById('morb-add-age');
+    const name = nameEl.value.trim();
+    const age = parseInt(ageEl.value) || 0;
+    if (!name) { nameEl.focus(); return; }
+    if (getMorbidityList().some(a => a.name.toLowerCase() === name.toLowerCase())) {
+        nameEl.value = '';
+        nameEl.placeholder = 'Already on list';
+        setTimeout(() => { nameEl.placeholder = 'Artist name'; }, 1500);
+        return;
+    }
+    saveMorbidityAdd({ name, age, preObitStatus: 'Pending' });
+    nameEl.value = '';
+    ageEl.value = '';
+    refreshMorbidityView();
+}
+
+// Track confirmation state: { name: clickCount }
+const morbDeleteState = {};
+
+function removeMorbidityArtist(name, hasPreObit) {
+    const needed = hasPreObit ? 3 : 2;
+    morbDeleteState[name] = (morbDeleteState[name] || 0) + 1;
+
+    if (morbDeleteState[name] >= needed) {
+        delete morbDeleteState[name];
+        saveMorbidityRemove(name);
+        refreshMorbidityView();
+    } else {
+        // Re-render to show confirm state
+        refreshMorbidityView();
+    }
+}
+
+function refreshMorbidityView() {
+    const list = getMorbidityList();
+    document.getElementById('morb-total').textContent = list.length;
+    const q = document.getElementById('morb-search').value.toLowerCase();
+    const filtered = q ? list.filter(a => a.name.toLowerCase().includes(q)) : list;
+    renderMorbidityTags(filtered);
+}
+
+function renderMorbidity() {
+    if (morbidityRendered) return;
+    morbidityRendered = true;
+
+    // Monitor status
+    const statusEl = document.getElementById('morbidity-status');
+    const lastRun = typeof MORBIDITY_LAST_RUN !== 'undefined' ? MORBIDITY_LAST_RUN : null;
+    if (lastRun) {
+        const runDate = new Date(lastRun);
+        const now = new Date();
+        const hoursAgo = Math.floor((now - runDate) / (1000 * 60 * 60));
+        const isHealthy = hoursAgo < 26;
+        const timeStr = hoursAgo < 1 ? 'less than an hour ago'
+            : hoursAgo < 24 ? hoursAgo + ' hour' + (hoursAgo === 1 ? '' : 's') + ' ago'
+            : Math.floor(hoursAgo / 24) + ' day' + (Math.floor(hoursAgo / 24) === 1 ? '' : 's') + ' ago';
+        const color = isHealthy ? '#3fb950' : '#FF6B6B';
+        const label = isHealthy ? 'Running' : 'Stale — check launchd';
+        statusEl.innerHTML = `<div style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(0,20,40,0.5);border:1px solid ${isHealthy ? 'rgba(63,185,80,0.3)' : 'rgba(255,107,107,0.3)'};border-radius:8px;margin-bottom:16px;">
+            <span style="color:${color};font-size:1.2rem;">●</span>
+            <div>
+                <div style="font-size:0.85rem;font-weight:600;color:${color};">Daily Monitor: ${label}</div>
+                <div style="font-size:0.7rem;color:#7DD3E8;">Last run: ${runDate.toLocaleString()} (${timeStr}) · Runs daily at 8 AM · Alerts sent to todd.burns@gmail.com</div>
+            </div>
+        </div>`;
+    } else {
+        statusEl.innerHTML = `<div style="display:flex;align-items:center;gap:8px;padding:10px 14px;background:rgba(0,20,40,0.5);border:1px solid rgba(255,107,107,0.3);border-radius:8px;margin-bottom:16px;">
+            <span style="color:#FF6B6B;font-size:1.2rem;">●</span>
+            <div>
+                <div style="font-size:0.85rem;font-weight:600;color:#FF6B6B;">Daily Monitor: Never Run</div>
+                <div style="font-size:0.7rem;color:#7DD3E8;">Run monitor_morbidity.py manually or wait for the 8 AM scheduled run.</div>
+            </div>
+        </div>`;
+    }
+
+    refreshMorbidityView();
+    renderConsiderList();
+    document.getElementById('morb-add-name').addEventListener('keydown', e => { if (e.key === 'Enter') addMorbidityArtist(); });
+    document.getElementById('morb-add-age').addEventListener('keydown', e => { if (e.key === 'Enter') addMorbidityArtist(); });
+}
+
+function renderMorbidityTags(list) {
+    const PRE_OBIT_STATUSES = ['Written', 'Published', 'In Edits'];
+    // Sort: pre-obits first, then alphabetical
+    const sorted = [...list].sort((a, b) => {
+        const aHas = PRE_OBIT_STATUSES.includes(a.preObitStatus) ? 0 : 1;
+        const bHas = PRE_OBIT_STATUSES.includes(b.preObitStatus) ? 0 : 1;
+        if (aHas !== bHas) return aHas - bHas;
+        return a.name.localeCompare(b.name);
+    });
+    const wrap = document.getElementById('morbidity-tags');
+    wrap.innerHTML = sorted.map(a => {
+        const hasPreObit = PRE_OBIT_STATUSES.includes(a.preObitStatus);
+        const tagClass = hasPreObit ? 'morb-tag-preobit' : 'morb-tag-tracking';
+        const safeName = a.name.replace(/'/g, "\\'");
+        const clicks = morbDeleteState[a.name] || 0;
+        const needed = hasPreObit ? 3 : 2;
+        const confirming = clicks > 0 && clicks < needed;
+        const confirmClass = confirming ? ' morb-tag-confirm' : '';
+        const label = clicks === 0 ? '\u2715' : clicks < needed ? 'Sure?' : '\u2715';
+        return `<span class="morb-tag ${tagClass}${confirmClass}">
+            ${a.name}${a.age ? '<span class="morb-tag-age">' + a.age + '</span>' : ''}
+            <button class="morb-tag-x" onclick="removeMorbidityArtist('${safeName}', ${hasPreObit})" title="${hasPreObit ? 'Has pre-obit — click 3x to remove' : 'Click twice to remove'}">${label}</button>
+        </span>`;
+    }).join('');
+}
+
+function filterMorbidityTable() {
+    const q = document.getElementById('morb-search').value.toLowerCase();
+    const list = getMorbidityList();
+    const filtered = q ? list.filter(a => a.name.toLowerCase().includes(q)) : list;
+    renderMorbidityTags(filtered);
+}
+
+function getConsiderList() {
+    const baseline = typeof MORBIDITY_CONSIDER !== 'undefined' ? MORBIDITY_CONSIDER : [];
+    const promoted = new Set(JSON.parse(localStorage.getItem('morb_promoted') || '[]'));
+    const watchlist = getMorbidityList();
+    const watchNames = new Set(watchlist.map(a => a.name.toLowerCase()));
+    return baseline.filter(a => !promoted.has(a.name) && !watchNames.has(a.name.toLowerCase()));
+}
+
+function promoteToWatchlist(name, age) {
+    // Add to watchlist
+    saveMorbidityAdd({ name, age, preObitStatus: 'Pending' });
+    // Mark as promoted so it doesn't reappear in consider
+    const promoted = JSON.parse(localStorage.getItem('morb_promoted') || '[]');
+    if (!promoted.includes(name)) promoted.push(name);
+    localStorage.setItem('morb_promoted', JSON.stringify(promoted));
+    refreshMorbidityView();
+    renderConsiderList();
+}
+
+function renderConsiderList() {
+    const list = getConsiderList();
+    const q = (document.getElementById('morb-consider-search')?.value || '').toLowerCase();
+    const filtered = q ? list.filter(a => a.name.toLowerCase().includes(q) || (a.desc || '').toLowerCase().includes(q)) : list;
+    const wrap = document.getElementById('morbidity-consider');
+    wrap.innerHTML = filtered.map(a => {
+        const safeName = a.name.replace(/'/g, "\\'");
+        return `<span class="morb-tag morb-tag-consider" onclick="promoteToWatchlist('${safeName}', ${a.age || 0})" title="${a.desc || ''} — click to add to watchlist">
+            ${a.name}${a.age ? '<span class="morb-tag-age">' + a.age + '</span>' : ''}
+        </span>`;
+    }).join('');
+}
+
+function filterConsiderList() {
+    renderConsiderList();
 }
 
 // ─── Boot ──────────────────────────────────────────────────────

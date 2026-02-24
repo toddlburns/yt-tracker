@@ -4062,7 +4062,7 @@ function renderEditorial() {
             artistGroups[item.artist].push(item);
         }
 
-        for (const [artist, items] of Object.entries(artistGroups).sort((a, b) => a[0].localeCompare(b[0]))) {
+        for (const [artist, items] of Object.entries(artistGroups).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))) {
             if (items.length === 1) {
                 // Single event — render inline with artist name
                 const item = items[0];

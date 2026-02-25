@@ -1962,8 +1962,47 @@ async function searchYouTubeChannels(query) {
         }));
     });
 
+    // Resolve @handle or channel name via YouTube page scraping through CORS proxy
+    const handlePromise = (async () => {
+        // Normalize query: strip @ prefix for URL, try both handle and search page
+        const clean = query.replace(/^@/, '').trim();
+        const urls = [
+            `https://www.youtube.com/@${encodeURIComponent(clean)}`,
+            `https://www.youtube.com/c/${encodeURIComponent(clean)}`,
+        ];
+        for (const proxy of CORS_PROXIES) {
+            for (const ytUrl of urls) {
+                try {
+                    const res = await Promise.race([
+                        fetch(proxy + encodeURIComponent(ytUrl)),
+                        timeout(6000)
+                    ]);
+                    if (!res.ok) continue;
+                    const text = await res.text();
+                    // Extract channel ID from page source
+                    const cidMatch = text.match(/"externalId"\s*:\s*"(UC[a-zA-Z0-9_-]{22})"/);
+                    if (!cidMatch) continue;
+                    const channelId = cidMatch[1];
+                    // Extract channel name
+                    const nameMatch = text.match(/"channelMetadataRenderer"\s*:\s*\{[^}]*"title"\s*:\s*"([^"]+)"/);
+                    const channelName = nameMatch ? nameMatch[1] : clean;
+                    // Extract avatar
+                    const avatarMatch = text.match(/"avatar"\s*:\s*\{\s*"thumbnails"\s*:\s*\[\s*\{\s*"url"\s*:\s*"([^"]+)"/);
+                    const avatar = avatarMatch ? avatarMatch[1] : '';
+                    return [{
+                        id: channelId,
+                        name: channelName,
+                        thumbnail: avatar,
+                        subscribers: 0,
+                    }];
+                } catch { continue; }
+            }
+        }
+        throw new Error('handle resolve failed');
+    })();
+
     try {
-        return await Promise.any([...pipedPromises, ...invPromises]);
+        return await Promise.any([...pipedPromises, ...invPromises, handlePromise]);
     } catch {
         return null;
     }

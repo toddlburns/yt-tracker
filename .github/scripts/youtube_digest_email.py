@@ -105,7 +105,25 @@ def enrich_durations(videos):
             return
         except Exception:
             continue
-    print(f'  Duration enrichment failed for {channel_id}')
+
+    # Fallback: try individual video endpoints for videos still missing duration
+    missing = [v for v in videos if v['duration'] == 0]
+    for video in missing:
+        for instance in PIPED_INSTANCES:
+            try:
+                url = f'https://{instance}/streams/{video["videoId"]}'
+                req = Request(url, headers={'User-Agent': 'YouTubeDigest/1.0'})
+                with urlopen(req, timeout=8) as resp:
+                    data = json.loads(resp.read())
+                if data.get('duration'):
+                    video['duration'] = data['duration']
+                    break
+            except Exception:
+                continue
+
+    still_missing = sum(1 for v in videos if v['duration'] == 0)
+    if still_missing:
+        print(f'  Duration enrichment: {still_missing} videos still missing for {channel_id}')
 
 
 def format_views(n):
@@ -205,7 +223,7 @@ def build_email(channels, cutoff):
 </td>
 <td valign="top">
     <a href="{yt_url}" style="color: #1a1a2e; text-decoration: none; font-weight: 600; font-size: 14px; line-height: 1.3;">{title_escaped}</a>
-    <div style="margin-top: 4px; font-size: 12px; color: #666;">{channel_escaped} &middot; {views_str} views{dur_badge}</div>
+    <div style="margin-top: 4px; font-size: 12px; color: #666;"><span style="color: #DC143C; font-weight: 600;">{channel_escaped}</span> &middot; {views_str} views{dur_badge}</div>
 </td>
 </tr>
 </table>

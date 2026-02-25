@@ -608,6 +608,117 @@
         .channel-pill.omni .remove-channel { color: rgba(0,0,0,0.5); }
         .channel-pill.omni .remove-channel:hover { color: #0a1628; }
 
+        /* Email Status */
+        .email-status-card {
+            padding: 16px 20px;
+            background: rgba(0, 20, 40, 0.6);
+            border-radius: 12px;
+            border: 2px solid rgba(0, 255, 255, 0.2);
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .email-status-row {
+            display: flex; align-items: center; gap: 12px;
+        }
+        .email-status-indicator {
+            width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;
+        }
+        .status-ok { background: #10B981; box-shadow: 0 0 8px rgba(16, 185, 129, 0.5); }
+        .status-warn { background: #F59E0B; box-shadow: 0 0 8px rgba(245, 158, 11, 0.5); }
+        .status-error { background: #EF4444; box-shadow: 0 0 8px rgba(239, 68, 68, 0.5); animation: pulse-error 2s infinite; }
+        .status-unknown { background: #6B7280; }
+        @keyframes pulse-error {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .email-status-text {
+            font-size: 0.85rem; color: #E0F7FF;
+        }
+        .email-status-text strong { color: #00FFFF; }
+
+        /* Channel Management */
+        .channel-mgmt {
+            background: rgba(0, 20, 40, 0.6);
+            border-radius: 12px;
+            border: 2px solid rgba(0, 255, 255, 0.2);
+            padding: 20px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        .channel-mgmt-header {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 0.85rem; color: #FF69B4; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.5px;
+            margin-bottom: 14px;
+        }
+        .add-channel-section { margin-top: 16px; }
+        .add-channel-section input {
+            width: 100%; padding: 10px 16px; font-size: 0.9rem;
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            border-radius: 25px;
+            background: rgba(0, 20, 40, 0.8);
+            color: #E0F7FF; outline: none; font-family: 'Inter', sans-serif;
+        }
+        .add-channel-section input:focus {
+            border-color: #00FFFF;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+        .channel-actions {
+            margin-top: 16px;
+            display: flex; align-items: center; gap: 12px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(0, 255, 255, 0.15);
+        }
+        .session-info { font-size: 0.8rem; color: #7DD3E8; }
+        .sync-btn {
+            padding: 10px 20px; font-size: 0.85rem; border: none; border-radius: 25px;
+            background: linear-gradient(135deg, #00FFFF 0%, #FF69B4 100%);
+            color: #0a1628; cursor: pointer; font-weight: 600;
+            font-family: 'Inter', sans-serif; transition: all 0.3s;
+            margin-left: auto;
+        }
+        .sync-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.4);
+        }
+        .sync-btn:disabled {
+            opacity: 0.5; cursor: not-allowed; transform: none;
+            box-shadow: none;
+        }
+
+        /* GitHub Setup */
+        .github-setup {
+            background: rgba(0, 20, 40, 0.4);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 255, 255, 0.1);
+            padding: 4px 16px;
+        }
+        .github-setup summary {
+            cursor: pointer; color: #7DD3E8; font-size: 0.8rem;
+            padding: 8px 0; user-select: none;
+        }
+        .github-setup[open] { padding: 4px 16px 16px; }
+        .setup-desc { font-size: 0.8rem; color: #7DD3E8; margin: 8px 0 12px; }
+        .setup-row { display: flex; gap: 8px; }
+        .setup-row input {
+            flex: 1; padding: 10px 16px; font-size: 0.85rem;
+            border: 2px solid rgba(0, 255, 255, 0.3);
+            border-radius: 25px;
+            background: rgba(0, 20, 40, 0.8);
+            color: #E0F7FF; outline: none; font-family: 'Inter', sans-serif;
+        }
+        .setup-save-btn {
+            padding: 10px 20px; font-size: 0.85rem; border: none; border-radius: 25px;
+            background: linear-gradient(135deg, #00FFFF 0%, #8B5CF6 100%);
+            color: #0a1628; cursor: pointer; font-weight: 600;
+            font-family: 'Inter', sans-serif;
+        }
+        .setup-status { font-size: 0.8rem; margin-top: 8px; min-height: 20px; }
+        .setup-hint {
+            font-size: 0.75rem; color: #6B7280; margin-top: 10px; line-height: 1.5;
+        }
+        .setup-hint strong { color: #7DD3E8; }
+
         /* Feed */
         .feed-header {
             display: flex; justify-content: space-between; align-items: center;
@@ -1291,47 +1402,44 @@
 
     <!-- YouTube Tab -->
     <div class="tab-content active" id="content-youtube">
-        <div class="progress-wrap" id="progress-wrap">
-            <div class="progress-bar" id="progress-bar" style="width:0%"></div>
-        </div>
-
-        <button class="manage-toggle" id="manage-toggle" onclick="toggleManage()">&#9830; Manage Channels</button>
-
-        <div class="manage-section" id="manage-section">
-            <div class="search-row">
-                <input type="text" id="channel-search" placeholder="Search for a channel..." autocomplete="off">
-                <select id="channel-type">
-                    <option value="artist">Artist Channel</option>
-                    <option value="omni">Omni Channel</option>
-                </select>
-                <button onclick="searchChannel()">Search</button>
-            </div>
-            <div class="search-results" id="search-results"></div>
-
-            <div class="channel-section">
-                <div class="channel-label">
-                    Artist Channels <span class="count" id="artist-count">0</span>
-                </div>
-                <div class="channel-pills" id="artist-pills"></div>
-            </div>
-
-            <div class="channel-section">
-                <div class="channel-label">
-                    Omni Channels <span class="count" id="omni-count">0</span>
-                    <span style="font-size:0.75rem;color:#8a7a6a;font-style:italic;margin-left:8px;">
-                        (searches for artist names)
-                    </span>
-                </div>
-                <div class="channel-pills" id="omni-pills"></div>
+        <!-- Email Health Status -->
+        <div class="email-status-card" id="email-status-card">
+            <div class="email-status-row">
+                <div class="email-status-indicator status-unknown" id="email-status-indicator"></div>
+                <div class="email-status-text" id="email-status-text">Checking email status...</div>
             </div>
         </div>
 
-        <div class="feed-header">
-            <div class="feed-title" id="feed-title">The Reel</div>
-            <button class="refresh-btn" onclick="refreshFeed()">Refresh</button>
+        <!-- Channel Management -->
+        <div class="channel-mgmt">
+            <div class="channel-mgmt-header">
+                <span>Tracked Channels</span>
+                <span class="channel-count" id="channel-count">0</span>
+            </div>
+            <div class="channel-pills" id="all-channel-pills"></div>
+
+            <div class="add-channel-section">
+                <input type="text" id="channel-search" placeholder="Search YouTube channels to add..." autocomplete="off">
+                <div class="search-results" id="search-results"></div>
+            </div>
+
+            <div class="channel-actions" id="channel-actions" style="display:none;">
+                <span class="session-info" id="session-info"></span>
+                <button class="sync-btn" id="sync-btn" onclick="syncAndTestEmail()">Sync & Send Test Email</button>
+            </div>
         </div>
 
-        <div id="feed"></div>
+        <!-- GitHub Connection -->
+        <details class="github-setup" id="github-setup">
+            <summary>Settings</summary>
+            <p class="setup-desc">Connect to GitHub to sync channel changes and send test emails.</p>
+            <div class="setup-row">
+                <input type="password" id="github-pat-input" placeholder="GitHub Personal Access Token">
+                <button class="setup-save-btn" onclick="saveGitHubPAT()">Save</button>
+            </div>
+            <div class="setup-status" id="github-status"></div>
+            <p class="setup-hint">Create a fine-grained PAT at github.com/settings/tokens with <strong>Contents: Read &amp; Write</strong> and <strong>Actions: Read &amp; Write</strong> for the yt-tracker repo.</p>
+        </details>
     </div>
 
     <!-- Artist Stores Tab -->
@@ -1562,6 +1670,8 @@ let allVideos = [];
 let dismissed = [];
 let dismissedSet = new Set(); // Fast O(1) lookup for dismissed video IDs
 let workingInstance = null;
+let sessionAddCount = 0;
+const INVIDIOUS_INSTANCES = ['inv.nadeko.net', 'invidious.nerdvpn.de', 'iv.ggtyler.dev'];
 let workingCorsProxy = null; // Cache the CORS proxy that works
 let currentTab = 'youtube';
 
@@ -1649,14 +1759,14 @@ async function init() {
     renderChannelPills();
     updateSubtitle();
     populateStoreButtons();
-    discoverInstances(); // non-blocking, RSS is primary now
-    // Don't auto-load tabs - user must click Refresh
+    discoverInstances(); // non-blocking, for channel search
     showInitialMessages();
+    checkEmailStatus();
+    loadGitHubPAT();
+    setupChannelSearchAutoComplete();
 }
 
 function showInitialMessages() {
-    // YouTube tab
-    document.getElementById('feed').innerHTML = '<div class="no-data">Click <strong>Refresh</strong> to load videos.</div>';
     // Stores tab already shows individual store buttons
     // News tab
     document.getElementById('news-feed').innerHTML = '<div class="no-data">Click <strong>Refresh</strong> to load news.</div>';
@@ -1708,11 +1818,13 @@ function getArtistNames() {
 function addChannel(name, channelId, type) {
     if (channels.length >= MAX_CHANNELS) return;
     if (channels.some(c => c.channelId === channelId)) return;
-    channels.push({ name, channelId, type });
+    channels.push({ name, channelId, type: type || 'artist' });
     channels.sort((a, b) => a.name.localeCompare(b.name));
     saveChannels();
     renderChannelPills();
     updateSubtitle();
+    sessionAddCount++;
+    showSessionActions();
 }
 
 function removeChannel(channelId) {
@@ -1720,88 +1832,332 @@ function removeChannel(channelId) {
     saveChannels();
     renderChannelPills();
     updateSubtitle();
-    allVideos = allVideos.filter(v => v.channelId !== channelId);
-    renderFeed();
+    sessionAddCount++;
+    showSessionActions();
+}
+
+function showSessionActions() {
+    const el = document.getElementById('channel-actions');
+    const info = document.getElementById('session-info');
+    el.style.display = 'flex';
+    info.textContent = `${sessionAddCount} change${sessionAddCount !== 1 ? 's' : ''} this session`;
 }
 
 function renderChannelPills() {
-    const artistChannels = channels.filter(c => c.type === 'artist');
-    const omniChannels = channels.filter(c => c.type === 'omni');
+    const pillsEl = document.getElementById('all-channel-pills');
+    if (!pillsEl) return;
+    const countEl = document.getElementById('channel-count');
+    if (countEl) countEl.textContent = channels.length;
 
-    document.getElementById('artist-count').textContent = artistChannels.length;
-    document.getElementById('omni-count').textContent = omniChannels.length;
+    pillsEl.innerHTML = channels.map(c => {
+        const cls = c.type === 'omni' ? 'channel-pill omni' : 'channel-pill';
+        return `<span class="${cls}">${esc(c.name)}<button class="remove-channel" onclick="event.stopPropagation();removeChannel('${c.channelId}')" title="Remove">&times;</button></span>`;
+    }).join('');
 
-    document.getElementById('artist-pills').innerHTML = artistChannels.map(c =>
-        `<span class="channel-pill">${esc(c.name)}<button class="remove-channel" onclick="event.stopPropagation();removeChannel('${c.channelId}')" title="Remove">&times;</button></span>`
-    ).join('');
-
-    document.getElementById('omni-pills').innerHTML = omniChannels.map(c =>
-        `<span class="channel-pill omni">${esc(c.name)}<button class="remove-channel" onclick="event.stopPropagation();removeChannel('${c.channelId}')" title="Remove">&times;</button></span>`
-    ).join('');
+    // Also update legacy elements if they exist
+    const artistPills = document.getElementById('artist-pills');
+    const omniPills = document.getElementById('omni-pills');
+    if (artistPills) artistPills.innerHTML = '';
+    if (omniPills) omniPills.innerHTML = '';
 }
 
 function updateSubtitle() {
-    const artistCount = channels.filter(c => c.type === 'artist').length;
-    const omniCount = channels.filter(c => c.type === 'omni').length;
-    document.getElementById('subtitle').textContent =
-        `${artistCount} YT artists, ${omniCount} omni`;
+    const el = document.getElementById('subtitle');
+    if (el) el.textContent = `${channels.length} tracked channels`;
 }
 
 function toggleManage() {
-    const section = document.getElementById('manage-section');
-    const btn = document.getElementById('manage-toggle');
-    const open = section.classList.toggle('open');
-    btn.innerHTML = (open ? '&#9830;' : '&#9830;') + ' Manage Channels';
+    // Legacy: manage section is now always visible in the new channel management UI
 }
 
 
-// ─── Channel Search ─────────────────────────────────────────────
+// ─── Channel Search (Multi-API) ─────────────────────────────────
+let searchDebounceTimer = null;
+
+function setupChannelSearchAutoComplete() {
+    const input = document.getElementById('channel-search');
+    if (!input) return;
+    input.addEventListener('input', () => {
+        clearTimeout(searchDebounceTimer);
+        const q = input.value.trim();
+        if (q.length < 2) {
+            document.getElementById('search-results').innerHTML = '';
+            return;
+        }
+        searchDebounceTimer = setTimeout(() => searchChannel(), 400);
+    });
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            clearTimeout(searchDebounceTimer);
+            searchChannel();
+        }
+    });
+}
+
 async function searchChannel() {
     const q = document.getElementById('channel-search').value.trim();
-    if (!q) return;
+    if (!q || q.length < 2) return;
     const el = document.getElementById('search-results');
-    el.innerHTML = '<div style="font-size:0.85rem;color:#666;padding:8px 0;">Searching...</div>';
+    el.innerHTML = '<div style="font-size:0.85rem;color:#7DD3E8;padding:8px 0;">Searching...</div>';
+
+    const results = await searchYouTubeChannels(q);
+    if (!results || results.length === 0) {
+        el.innerHTML = '<div style="font-size:0.85rem;color:#FF69B4;padding:8px 0;">No channels found. Try different spelling.</div>';
+        return;
+    }
+
+    el.innerHTML = results.slice(0, 6).map(ch => {
+        const already = channels.some(c => c.channelId === ch.id);
+        return `<div class="search-result">
+            <img src="${esc(ch.thumbnail)}" alt="" onerror="this.style.display='none'">
+            <div class="sr-info">
+                <div class="sr-name">${esc(ch.name)}</div>
+                <div class="sr-subs">${ch.subscribers ? formatCount(ch.subscribers) + ' subscribers' : ''}</div>
+            </div>
+            ${already
+                ? '<span style="font-size:0.8rem;color:#7DD3E8;padding:6px 14px;">Added</span>'
+                : `<button class="sr-add" onclick="event.stopPropagation();addChannelFromSearch('${esc(ch.name)}','${esc(ch.id)}',this)">Add</button>`
+            }
+        </div>`;
+    }).join('');
+}
+
+async function searchYouTubeChannels(query) {
+    const timeout = ms => new Promise((_, rej) => setTimeout(() => rej('timeout'), ms));
+
+    // Build promises for Piped instances
+    const pipedPromises = PIPED_INSTANCES.slice(0, 3).map(async inst => {
+        const res = await Promise.race([
+            fetch(`https://${inst}/search?q=${encodeURIComponent(query)}&filter=channels`),
+            timeout(4000)
+        ]);
+        if (!res.ok) throw new Error('bad');
+        const data = await res.json();
+        const items = (data.items || []).filter(i => i.url);
+        if (!items.length) throw new Error('empty');
+        return items.map(i => ({
+            id: i.url.replace('/channel/', ''),
+            name: i.name || '',
+            thumbnail: i.thumbnail || '',
+            subscribers: i.subscribers || 0,
+        }));
+    });
+
+    // Build promises for Invidious instances
+    const invPromises = INVIDIOUS_INSTANCES.map(async inst => {
+        const res = await Promise.race([
+            fetch(`https://${inst}/api/v1/search?q=${encodeURIComponent(query)}&type=channel`),
+            timeout(4000)
+        ]);
+        if (!res.ok) throw new Error('bad');
+        const data = await res.json();
+        if (!Array.isArray(data) || !data.length) throw new Error('empty');
+        const chans = data.filter(i => i.type === 'channel');
+        if (!chans.length) throw new Error('no channels');
+        return chans.map(i => ({
+            id: i.authorId || '',
+            name: i.author || '',
+            thumbnail: (i.authorThumbnails && i.authorThumbnails.length) ? i.authorThumbnails[i.authorThumbnails.length - 1].url : '',
+            subscribers: i.subCount || 0,
+        }));
+    });
+
     try {
-        const data = await pipedFetch(`/search?q=${encodeURIComponent(q)}&filter=channels`);
-        if (!data) {
-            el.innerHTML = '<div style="font-size:0.85rem;color:#E31C25;padding:8px 0;">Search failed. Try again.</div>';
-            return;
-        }
-        const items = (data.items || []).slice(0, 5);
-        if (!items.length) {
-            el.innerHTML = '<div style="font-size:0.85rem;color:#6a5a4a;padding:8px 0;font-style:italic;">No channels found.</div>';
-            return;
-        }
-        el.innerHTML = items.map(ch => {
-            const id = ch.url ? ch.url.replace('/channel/', '') : '';
-            const subs = ch.subscribers >= 0 ? formatCount(ch.subscribers) + ' subscribers' : '';
-            const thumb = ch.thumbnail || '';
-            return `<div class="search-result">
-                <img src="${esc(thumb)}" alt="" onerror="this.style.display='none'">
-                <div class="sr-info">
-                    <div class="sr-name">${esc(ch.name || '')}</div>
-                    <div class="sr-subs">${esc(subs)}</div>
-                </div>
-                <button class="sr-add" onclick="event.stopPropagation();addChannelFromSearch('${esc(ch.name || '')}','${esc(id)}',this)">Add</button>
-            </div>`;
-        }).join('');
-    } catch (e) {
-        el.innerHTML = '<div style="font-size:0.85rem;color:#C75050;padding:8px 0;">Search failed. Try again.</div>';
+        return await Promise.any([...pipedPromises, ...invPromises]);
+    } catch {
+        return null;
     }
 }
 
 function addChannelFromSearch(name, channelId, btn) {
     if (!channelId) return;
-    const type = document.getElementById('channel-type').value;
-    addChannel(name, channelId, type);
+    addChannel(name, channelId, 'artist');
     btn.textContent = 'Added';
     btn.disabled = true;
     btn.style.opacity = '0.5';
 }
 
-document.getElementById('channel-search').addEventListener('keydown', e => {
-    if (e.key === 'Enter') searchChannel();
-});
+// ─── Email Health Check ─────────────────────────────────────────
+async function checkEmailStatus() {
+    const statusEl = document.getElementById('email-status-text');
+    const indicatorEl = document.getElementById('email-status-indicator');
+    if (!statusEl || !indicatorEl) return;
+
+    try {
+        const res = await fetch('https://api.github.com/repos/toddlburns/yt-tracker/actions/workflows/youtube-digest-email.yml/runs?per_page=5');
+        if (!res.ok) {
+            statusEl.innerHTML = 'YouTube digest email not yet configured. Push the workflow to enable.';
+            indicatorEl.className = 'email-status-indicator status-unknown';
+            return;
+        }
+        const data = await res.json();
+        const runs = data.workflow_runs || [];
+
+        if (runs.length === 0) {
+            statusEl.innerHTML = 'No email runs yet. First email will send at noon PST on the next weekday.';
+            indicatorEl.className = 'email-status-indicator status-unknown';
+            return;
+        }
+
+        const lastRun = runs[0];
+        const lastRunTime = new Date(lastRun.updated_at || lastRun.created_at);
+        const now = new Date();
+        const hoursSince = (now - lastRunTime) / (1000 * 60 * 60);
+
+        const timeAgoStr = hoursSince < 1 ? 'just now' :
+            hoursSince < 24 ? `${Math.floor(hoursSince)}h ago` :
+            `${Math.floor(hoursSince / 24)}d ago`;
+
+        if (lastRun.conclusion === 'success') {
+            const dayOfWeek = now.getUTCDay();
+            // Max hours before warning: weekends tolerate longer, Mon before noon tolerates Fri
+            let maxHours = 30;
+            if (dayOfWeek === 0) maxHours = 48;      // Sunday
+            else if (dayOfWeek === 6) maxHours = 30;  // Saturday
+            else if (dayOfWeek === 1) maxHours = 75;  // Monday
+
+            if (hoursSince <= maxHours) {
+                statusEl.innerHTML = `YouTube digest email sending normally. Last sent: <strong>${timeAgoStr}</strong>`;
+                indicatorEl.className = 'email-status-indicator status-ok';
+            } else {
+                statusEl.innerHTML = `YouTube digest email may be delayed. Last sent: <strong>${timeAgoStr}</strong>`;
+                indicatorEl.className = 'email-status-indicator status-warn';
+            }
+        } else if (lastRun.status === 'in_progress' || lastRun.status === 'queued') {
+            statusEl.innerHTML = `YouTube digest email is <strong>running now</strong>...`;
+            indicatorEl.className = 'email-status-indicator status-warn';
+        } else {
+            statusEl.innerHTML = `YouTube digest email <strong>failed</strong> (${timeAgoStr}). <a href="https://github.com/toddlburns/yt-tracker/actions" target="_blank" style="color:#00FFFF;">Check Actions</a>`;
+            indicatorEl.className = 'email-status-indicator status-error';
+        }
+    } catch (e) {
+        statusEl.innerHTML = 'Could not check email status.';
+        indicatorEl.className = 'email-status-indicator status-unknown';
+    }
+}
+
+// ─── GitHub API Integration ─────────────────────────────────────
+function loadGitHubPAT() {
+    const pat = localStorage.getItem('yt_tracker_github_pat');
+    if (pat) {
+        const input = document.getElementById('github-pat-input');
+        if (input) input.value = pat;
+        const status = document.getElementById('github-status');
+        if (status) status.innerHTML = '<span style="color:#10B981;">Connected</span>';
+    }
+}
+
+function saveGitHubPAT() {
+    const input = document.getElementById('github-pat-input');
+    const status = document.getElementById('github-status');
+    const pat = input ? input.value.trim() : '';
+    if (!pat) {
+        if (status) status.innerHTML = '<span style="color:#FF69B4;">Please enter a token.</span>';
+        return;
+    }
+    localStorage.setItem('yt_tracker_github_pat', pat);
+    if (status) status.innerHTML = '<span style="color:#10B981;">Saved!</span>';
+}
+
+function getGitHubPAT() {
+    return localStorage.getItem('yt_tracker_github_pat') || '';
+}
+
+async function syncChannelsToGitHub() {
+    const pat = getGitHubPAT();
+    if (!pat) {
+        alert('Set up a GitHub Personal Access Token in Settings first.');
+        document.getElementById('github-setup').open = true;
+        return false;
+    }
+
+    const channelsJson = JSON.stringify(channels, null, 2) + '\n';
+    const content = btoa(unescape(encodeURIComponent(channelsJson)));
+
+    // Get current file SHA (required for update)
+    try {
+        const getRes = await fetch('https://api.github.com/repos/toddlburns/yt-tracker/contents/channels.json', {
+            headers: { 'Authorization': `token ${pat}`, 'Accept': 'application/vnd.github.v3+json' }
+        });
+        let sha = '';
+        if (getRes.ok) {
+            const fileData = await getRes.json();
+            sha = fileData.sha;
+        }
+
+        const putBody = {
+            message: 'Update tracked channels',
+            content: content,
+        };
+        if (sha) putBody.sha = sha;
+
+        const putRes = await fetch('https://api.github.com/repos/toddlburns/yt-tracker/contents/channels.json', {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${pat}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(putBody),
+        });
+
+        if (!putRes.ok) {
+            const err = await putRes.json();
+            throw new Error(err.message || 'API error');
+        }
+        return true;
+    } catch (e) {
+        alert('Failed to sync channels: ' + e.message);
+        return false;
+    }
+}
+
+async function triggerTestEmail() {
+    const pat = getGitHubPAT();
+    if (!pat) return false;
+
+    try {
+        const res = await fetch('https://api.github.com/repos/toddlburns/yt-tracker/actions/workflows/youtube-digest-email.yml/dispatches', {
+            method: 'POST',
+            headers: {
+                'Authorization': `token ${pat}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ ref: 'main' }),
+        });
+        return res.ok || res.status === 204;
+    } catch {
+        return false;
+    }
+}
+
+async function syncAndTestEmail() {
+    const btn = document.getElementById('sync-btn');
+    if (btn) { btn.disabled = true; btn.textContent = 'Syncing...'; }
+
+    const synced = await syncChannelsToGitHub();
+    if (!synced) {
+        if (btn) { btn.disabled = false; btn.textContent = 'Sync & Send Test Email'; }
+        return;
+    }
+
+    if (btn) btn.textContent = 'Triggering email...';
+
+    // Wait a moment for GitHub to process the commit before triggering
+    await new Promise(r => setTimeout(r, 2000));
+
+    const triggered = await triggerTestEmail();
+    if (triggered) {
+        if (btn) btn.textContent = 'Sent! Check your inbox.';
+        sessionAddCount = 0;
+        // Refresh email status after a delay
+        setTimeout(checkEmailStatus, 15000);
+    } else {
+        alert('Channels synced but could not trigger test email. Check your PAT permissions.');
+        if (btn) { btn.disabled = false; btn.textContent = 'Sync & Send Test Email'; }
+    }
+}
 
 // ─── Dismissed Videos (Cloud-synced) ─────────────────────────
 const DISMISSED_API = 'https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/dismissed?key=racine456';

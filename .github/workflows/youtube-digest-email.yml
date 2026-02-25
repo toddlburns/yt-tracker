@@ -1,0 +1,23 @@
+name: YouTube Digest Email
+
+on:
+  schedule:
+    # Weekdays at noon PST = 8pm UTC
+    - cron: '0 20 * * 1-5'
+  workflow_dispatch: # Allow manual trigger (test emails)
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch videos and send digest email
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_ADDRESS: todd.burns@gmail.com
+        run: python .github/scripts/youtube_digest_email.py

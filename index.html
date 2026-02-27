@@ -4538,10 +4538,12 @@ function renderEditorial() {
         </div>`;
     }
 
-    // Build catalog video lookup by month-day (catalog + Ed Sullivan combined)
+    // Build catalog video lookup by month-day (catalog + Ed Sullivan combined), limited to 30 days
     const catalogByDate = {};
     if (typeof CATALOG_VIDEOS !== 'undefined') {
         for (const cv of CATALOG_VIDEOS) {
+            const days = daysUntil(cv.month, cv.day);
+            if (days < 0 || days > 30) continue;
             const key = `${cv.month}-${cv.day}`;
             if (!catalogByDate[key]) catalogByDate[key] = [];
             catalogByDate[key].push(cv);
@@ -4549,6 +4551,8 @@ function renderEditorial() {
     }
     if (typeof ED_SULLIVAN_VIDEOS !== 'undefined') {
         for (const cv of ED_SULLIVAN_VIDEOS) {
+            const days = daysUntil(cv.month, cv.day);
+            if (days < 0 || days > 30) continue;
             const key = `${cv.month}-${cv.day}`;
             if (!catalogByDate[key]) catalogByDate[key] = [];
             catalogByDate[key].push(cv);
@@ -4563,11 +4567,9 @@ function renderEditorial() {
         const [m, d] = k.split('-').map(Number);
         const dateKey = `${m}-${d}`;
         if (!allDateKeys.has(dateKey)) {
-            const today = new Date(); today.setHours(0,0,0,0);
-            const evtDate = new Date(today.getFullYear(), m - 1, d); evtDate.setHours(0,0,0,0);
-            if (evtDate < today) evtDate.setFullYear(evtDate.getFullYear() + 1);
-            const diff = Math.round((evtDate - today) / 86400000);
-            groups[dateKey] = { month: m, day: d, daysUntil: diff, items: [] };
+            const days = daysUntil(m, d);
+            if (days < 0 || days > 30) continue;
+            groups[dateKey] = { month: m, day: d, daysUntil: days, items: [] };
             allDateKeys.add(dateKey);
         }
     }

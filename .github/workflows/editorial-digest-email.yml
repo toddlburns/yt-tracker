@@ -1,0 +1,23 @@
+name: Editorial Digest Email
+
+on:
+  schedule:
+    # 9:00 AM PST = 5:00 PM UTC, weekdays only
+    - cron: '0 17 * * 1-5'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  send-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Send editorial digest email
+        env:
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          GMAIL_ADDRESS: todd.burns@gmail.com
+        run: python .github/scripts/editorial_digest_email.py

@@ -335,6 +335,10 @@ def extract_social_posts():
         if not link or link in ('', 'None'):
             continue
 
+        # Skip rows without a channel (these are planned content, not actual posts)
+        if not channel or channel in ('None', 'Content Channel + Type'):
+            continue
+
         # Skip Sound of Vinyl (SOV) posts
         if 'SOV' in store or 'SOV' in channel:
             continue

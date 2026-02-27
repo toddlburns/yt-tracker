@@ -195,6 +195,10 @@
         }
         .tab-content { display: none; }
         .tab-content.active { display: block; }
+        .dashboard-iframe {
+            width: 100%; height: calc(100vh - 120px); border: none;
+            border-radius: 8px; background: #fff;
+        }
 
         /* Music News Tab */
         .news-filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
@@ -1398,6 +1402,12 @@
         <button class="tab-btn" onclick="switchTab('morbidity')" id="tab-morbidity">
             Morbidity Hub
         </button>
+        <button class="tab-btn" onclick="switchTab('udiscover')" id="tab-udiscover">
+            uDiscover
+        </button>
+        <button class="tab-btn" onclick="switchTab('storemonitor')" id="tab-storemonitor">
+            Store Monitor
+        </button>
     </div>
 
     <!-- YouTube Tab -->
@@ -1504,6 +1514,7 @@
             <button class="editorial-filter-btn" onclick="filterEditorial('chart')">Chart Milestones</button>
             <button class="editorial-filter-btn" onclick="filterEditorial('video')">Videos Available</button>
             <button class="editorial-toggle-done" id="toggle-done-btn" onclick="toggleHideDone()">Show completed</button>
+            <button class="editorial-toggle-done" onclick="resetEditorialChecks()" title="Remove checkmarks that don't have matching social posts">Reset Checkmarks</button>
         </div>
         <div id="editorial-feed"></div>
     </div>
@@ -1540,6 +1551,16 @@
         </div>
         <p style="font-size:0.7rem; color:#7DD3E8; margin-bottom:10px; opacity:0.7;">Click an artist to move them to the active watchlist above.</p>
         <div id="morbidity-consider" class="morb-tags-wrap"></div>
+    </div>
+
+    <!-- uDiscover Inventory Tab -->
+    <div class="tab-content" id="content-udiscover">
+        <iframe id="iframe-udiscover" class="dashboard-iframe" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Store Monitor Tab -->
+    <div class="tab-content" id="content-storemonitor">
+        <iframe id="iframe-storemonitor" class="dashboard-iframe" src="" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -1749,6 +1770,18 @@ function switchTab(tab) {
     }
     if (tab === 'morbidity' && !morbidityRendered) {
         renderMorbidity();
+    }
+    if (tab === 'udiscover') {
+        const iframe = document.getElementById('iframe-udiscover');
+        if (!iframe.src || iframe.src === location.href) {
+            iframe.src = 'https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/dashboard?key=racine456';
+        }
+    }
+    if (tab === 'storemonitor') {
+        const iframe = document.getElementById('iframe-storemonitor');
+        if (!iframe.src || iframe.src === location.href) {
+            iframe.src = 'https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/dashboard?key=racine456&tab=artist';
+        }
     }
 }
 
@@ -3396,6 +3429,8 @@ function editorialItemKey(item) {
     return `${yr}|${item.artist}|${item.month}|${item.day}|${item.description}`;
 }
 
+let editorialCheckedScrubbed = false;
+
 async function loadEditorialChecked() {
     const cached = localStorage.getItem(EDITORIAL_CHECKED_CACHE_KEY);
     if (cached) {
@@ -3414,6 +3449,89 @@ async function loadEditorialChecked() {
             localStorage.setItem(EDITORIAL_CHECKED_CACHE_KEY, JSON.stringify([...editorialCheckedSet]));
         }
     } catch {}
+}
+
+function scrubEditorialChecks() {
+    // Remove checkmarks that don't have matching SOCIAL_POSTS entries.
+    // Only keep a checkmark if there's a real social post for that item.
+    if (typeof SOCIAL_POSTS === 'undefined') return;
+    const yr = String(new Date().getFullYear());
+    const validKeys = new Set();
+    // Build set of keys that have actual social posts from editorial events
+    if (typeof EDITORIAL_EVENTS !== 'undefined') {
+        for (const item of EDITORIAL_EVENTS) {
+            const posts = findSocialPosts(item.artist, item.description, item.type);
+            if (posts.length > 0) {
+                const key = `${yr}|${item.artist}|${item.month}|${item.day}|${item.description}`;
+                validKeys.add(key);
+            }
+        }
+    }
+    // Also check birthdays (dict format)
+    if (typeof ARTIST_BIRTHDAYS !== 'undefined') {
+        for (const [name, info] of Object.entries(ARTIST_BIRTHDAYS)) {
+            const isBandMember = !!info.bandName;
+            const displayArtist = isBandMember ? info.bandName : name;
+            const descLabel = isBandMember ? `${info.memberName} — Birthday` : 'Birthday';
+            const posts = findSocialPosts(displayArtist, descLabel, 'birthday');
+            if (posts.length > 0) {
+                const key = `${yr}|${displayArtist}|${info.month}|${info.day}|${descLabel}`;
+                validKeys.add(key);
+            }
+        }
+    }
+    const before = editorialCheckedSet.size;
+    const removed = [];
+    for (const key of editorialCheckedSet) {
+        if (!validKeys.has(key)) {
+            removed.push(key);
+        }
+    }
+    for (const key of removed) {
+        editorialCheckedSet.delete(key);
+        // Sync removal to backend
+        fetch(EDITORIAL_CHECKED_API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ videoId: key, action: 'undismiss' })
+        }).catch(() => {});
+    }
+    // Also add valid keys that should be checked (social post exists)
+    let added = 0;
+    for (const key of validKeys) {
+        if (!editorialCheckedSet.has(key)) {
+            editorialCheckedSet.add(key);
+            added++;
+            fetch(EDITORIAL_CHECKED_API, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ videoId: key, action: 'dismiss' })
+            }).catch(() => {});
+        }
+    }
+    localStorage.setItem(EDITORIAL_CHECKED_CACHE_KEY, JSON.stringify([...editorialCheckedSet]));
+    console.log(`Scrubbed editorial checks: removed ${removed.length}, added ${added}, kept ${editorialCheckedSet.size} (was ${before})`);
+    editorialCheckedScrubbed = true;
+    return { removed: removed.length, added, total: editorialCheckedSet.size };
+}
+
+function resetEditorialChecks() {
+    if (!confirm('Reset all checkmarks to match only confirmed social posts?')) return;
+    // Clear everything first
+    fetch(EDITORIAL_CHECKED_API, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'clear' })
+    }).then(() => {
+        editorialCheckedSet.clear();
+        localStorage.removeItem(EDITORIAL_CHECKED_CACHE_KEY);
+        const result = scrubEditorialChecks();
+        // Re-render editorial feed
+        if (typeof renderEditorial === 'function') renderEditorial();
+        alert(`Done! Removed false checkmarks. Now showing ${result ? result.total : 0} items with confirmed social posts.`);
+    }).catch(() => {
+        alert('Error clearing checkmarks. Please try again.');
+    });
 }
 
 function saveEditorialChecked(key, action) {
@@ -4132,6 +4250,10 @@ function wikiGo(query, event) {
 
 function renderEditorial() {
     editorialRendered = true;
+    // Auto-scrub checkmarks on first render: only keep checks for items with real social posts
+    if (!editorialCheckedScrubbed) {
+        scrubEditorialChecks();
+    }
     const feed = document.getElementById('editorial-feed');
     const today = new Date();
     today.setHours(0,0,0,0);

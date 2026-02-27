@@ -31260,12 +31260,6 @@ const SOCIAL_POSTS = {
       "liveLink": "https://shop.udiscovermusic.com/products/four-tops-reach-out-lp"
     }
   ],
-  "U2|u2 release 'the unforgettable fire'": [
-    {
-      "channel": "",
-      "liveLink": "'The Unforgettable Fire': U2's Blazing Rock Statement - https://www.udiscovermusic.com/behind-the-albums/u2-the-unforgettable-fire-album/"
-    }
-  ],
   "Sting|sting (the police) born": [
     {
       "channel": "",
@@ -31276,12 +31270,6 @@ const SOCIAL_POSTS = {
       "liveLink": "https://shop.udiscovermusic.com/collections/the-police?oseid=oLQhn1PK5jbM1J4N6T5rwrQG"
     }
   ],
-  "Gwen Stefani|gwen stefani (no doubt) born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-gwen-stefani-songs/"
-    }
-  ],
   "John Mellencamp|john mellencamp born": [
     {
       "channel": "",
@@ -31290,120 +31278,6 @@ const SOCIAL_POSTS = {
     {
       "channel": "uD IG Grid",
       "liveLink": "https://shop.udiscovermusic.com/collections/john-mellencamp?oseid=oLQhn1PK5jbM1J4N6T5rwrQG"
-    }
-  ],
-  "Soundgarden|soundgarden released 'badmotorfinger'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/badmotorfinger-soundgarden-album/"
-    }
-  ],
-  "John Lennon|john lennon born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/playlists/john-lennon-solo-20-songs/"
-    }
-  ],
-  "U2|u2's 'rattle and hum' released": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/behind-the-albums/u2-rattle-and-hum-album/"
-    }
-  ],
-  "The Who|the who record 'my generation' at pye studios in london": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/the-who-my-generation-song/"
-    }
-  ],
-  "Ne-Yo|ne-yo born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-ne-yo-songs/"
-    }
-  ],
-  "Tom Petty|tom petty born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-tom-petty-songs/"
-    }
-  ],
-  "Kendrick Lamar|kendrick lamar released 'good kid, m.a.a.d city'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/kendrick-lamars-good-kid-maad-city/"
-    }
-  ],
-  "Smashing Pumpkins|smashing pumpkins released 'mellon collie and the infinite sadness'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/mellon-collie-and-the-infinite-sadness-pumpkins/"
-    }
-  ],
-  "Drake|drake born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-drake-songs/"
-    }
-  ],
-  "Amy Winehouse|amy winehouse released 'back to black'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/amy-winehouse-cracks-america/"
-    }
-  ],
-  "Rush|rush released 'hemispheres'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/hemispheres-rush-sixth-album-prog/"
-    }
-  ],
-  "Rihanna|rihanna released 'loud'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/rihanna-loud-album/"
-    }
-  ],
-  "Styx|james \"j.y.\" young (styx) born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-styx-songs/"
-    }
-  ],
-  "Coleman Hawkins|coleman hawkins born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-coleman-hawkins-songs/"
-    }
-  ],
-  "The Beatles|the beatles released 'the white album'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/how-the-beatles-wiped-the-slate-clean-with-the-white-album/"
-    }
-  ],
-  "The Beatles|the beatles released 'rubber soul'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/the-beatles-rubber-soul-feature/"
-    }
-  ],
-  "The Who|[d2c sale - deal of the day] the who - who's next": [
-    {
-      "channel": "",
-      "liveLink": "https://lnk.to/EndOfYearSaleIB"
-    }
-  ],
-  "Sam Smith|[d2c sale - deal of the day] sam smith - gloria": [
-    {
-      "channel": "",
-      "liveLink": "https://lnk.to/EndOfYearSaleIB"
-    }
-  ],
-  "Nicki Minaj|nicki minaj born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-nicki-minaj-songs/"
     }
   ],
   "U2|christmas (baby, please come home)": [
@@ -31424,378 +31298,6 @@ const SOCIAL_POSTS = {
       "liveLink": "https://udiscover.lnk.to/rihanna-vinyl-2024"
     }
   ],
-  "Fall Out Boy|news - fall out boy": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/fall-out-boy-dates-2024-north-america/"
-    }
-  ],
-  "Ludacris|birthday": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-ludacris-songs/"
-    }
-  ],
-  "Barry White|birthday": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-barry-white-songs-soul-music/"
-    }
-  ],
-  "Megadeth|dave mustaine - birthday - megadeth in 20 songs": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/megadeth-in-20-songs/"
-    }
-  ],
-  "LL Cool J|iconic hip-hop verses - ll cool j - mama said knock you out": [
-    {
-      "channel": "",
-      "liveLink": "https://udiscover.lnk.to/ll-cool-j-mama-said-knock-you-out"
-    }
-  ],
-  "Amy Winehouse|amy winehouse born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/amy-winehouse-back-to-black-song-feature/"
-    }
-  ],
-  "Bob Marley|catch a fire (50th anniversary)": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/bob-marley-wailers-catch-a-fire-50th-anniversary/"
-    }
-  ],
-  "Heart|story behind the video - huey lewis & the news - heart and soul": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/huey-lewis-news-sports-40th-anniversary-vinyl/"
-    }
-  ],
-  "Janet Jackson|janet jackson released 'rhythm nation 1814'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/rediscovered-gem-rhythm-nation-1814/"
-    }
-  ],
-  "R.E.M.|up (25th anniversary edition) announce": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/rem-up-25th-anniversary-edition/"
-    }
-  ],
-  "Lionel Richie|concert recap - lionel richie": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-lionel-richie-songs/"
-    }
-  ],
-  "Heart|nirvana released 'in utero' / nirvana - heart-shaped box": [
-    {
-      "channel": "",
-      "liveLink": "https://nirvana.lnk.to/InUtero30thPR"
-    }
-  ],
-  "Lil Wayne|lil wayne born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-lil-wayne-songs/"
-    }
-  ],
-  "Mary J. Blige|family affair": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/mary-j-blige-family-affair-feature/"
-    }
-  ],
-  "The Rolling Stones|weekly wednesday - giveaway - the rolling stones": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/competitions/the-rolling-stones-store-giveaway/"
-    }
-  ],
-  "The Cranberries|resurgent - the cranberries - zombie": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/the-cranberries-zombie-song/"
-    }
-  ],
-  "Sheryl Crow|tuesday night music club": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/sheryl-crow-30th-anniversary-edition-tuesday-night-club-music/"
-    }
-  ],
-  "The Who|weekly wednesday - giveaway - the who": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/competitions/the-who-store-giveaway/"
-    }
-  ],
-  "Taylor Swift|taylor swift eras premiere at the grove": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/taylor-swift-the-eras-tour-premiere-the-grove/"
-    }
-  ],
-  "Carpenters|richard carpenter (carpenters) born": [
-    {
-      "channel": "",
-      "liveLink": "Why Carpenters Were Cooler Than You Think - https://www.udiscovermusic.com/stories/carpenters-cooler-than-you-think/"
-    }
-  ],
-  "The Who|who's next / interview": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/pete-townshend-on-the-whos-life-house-box"
-    }
-  ],
-  "Velvet Underground|nico  (the velvet underground) born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-nico-songs-and-velvet-underground/"
-    }
-  ],
-  "Toby Keith|100% songwriter / should've been a cowboy story behind the": [
-    {
-      "channel": "",
-      "liveLink": "https://tobykeith.lnk.to/songwriter"
-    }
-  ],
-  "Eminem|eminem born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-eminem-songs-playlist/"
-    }
-  ],
-  "Nirvana|in utero - unboxing": [
-    {
-      "channel": "",
-      "liveLink": "https://nirvana.lnk.to/InUtero30th"
-    }
-  ],
-  "Kiss|rocktober: best of kiss": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-kiss-songs/"
-    }
-  ],
-  "The Police|synchronicity ii - round number anniversary": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/the-police-synchronicity-album/"
-    }
-  ],
-  "Nirvana|nirvana conan podcast": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/dave-grohl-krist-novoselic-nirvana-conan-podcast/"
-    }
-  ],
-  "Nirvana|rocktober - nirvana thematic": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/nirvana-in-utero-album/"
-    }
-  ],
-  "Katy Perry|katy perry born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-katy-perry-songs-21st-century-pop/"
-    }
-  ],
-  "blink-182|blink-182 setlist": [
-    {
-      "channel": "",
-      "liveLink": "https://shop.udiscovermusic.com/collections/blink-182"
-    }
-  ],
-  "Ariana Grande|replica": [
-    {
-      "channel": "",
-      "liveLink": "https://arianagrande.lnk.to/yourstruly10yr"
-    }
-  ],
-  "Taylor Swift|1989 (taylor\u2019s version) out now": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/1989-taylor-swift-album/"
-    }
-  ],
-  "Queen|queen released 'news of the world'": [
-    {
-      "channel": "",
-      "liveLink": "http://udiscover.lnk.to/NOTW-40thAnniversaryEdition"
-    }
-  ],
-  "Temptations|otis williams (the temptations) born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/the-temptations-otis-williams-home-tour/"
-    }
-  ],
-  "Slick Rick|slick rick released 'the great adventures of slick rick'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/great-adventures-of-slick-rick-album/"
-    }
-  ],
-  "Nelly|nelly born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-nelly-songs/"
-    }
-  ],
-  "The Beatles|now and then documentary": [
-    {
-      "channel": "",
-      "liveLink": "https://www.youtube.com/watch?v=APJAQoSCwuA&ab_channel=TheBeatlesVEVO"
-    }
-  ],
-  "Live|out now (in the uk)": [
-    {
-      "channel": "",
-      "liveLink": "https://direstraits.lnk.to/live78-92"
-    }
-  ],
-  "Bob Marley|catch a fire release date": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/bob-marley-wailers-catch-a-fire-50th-anniversary/"
-    }
-  ],
-  "Shania Twain|shania twain released 'come on over'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/shania-twain-come-on-over-album/"
-    }
-  ],
-  "Johnny Cash|the man comes around": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/last-johnny-cash-album-lifetime/"
-    }
-  ],
-  "Lady Gaga|lady gaga released 'artpop'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/artpop-lady-gaga-third-album/"
-    }
-  ],
-  "Carpenters|carpenters fb page": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/carpenters-please-mr-postman-song/"
-    }
-  ],
-  "Selena|selena ig asset": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/selena-dreaming-of-you-feature/"
-    }
-  ],
-  "Bonnie Raitt|bonnie raitt born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-bonnie-raitt-songs/"
-    }
-  ],
-  "Eve|eve born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-eve-songs/"
-    }
-  ],
-  "Siouxsie And The Banshees|siouxsie and the banshees' released 'the scream' (debut album)": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/rediscover-the-scream/"
-    }
-  ],
-  "Soundgarden|black hole sun - story behind the": [
-    {
-      "channel": "",
-      "liveLink": "https://udiscoverap.lnk.to/Soundgarden"
-    }
-  ],
-  "Amy Winehouse|frank (picture disc) announcement": [
-    {
-      "channel": "",
-      "liveLink": "https://amywinehouse.lnk.to/Frank20PD"
-    }
-  ],
-  "Kenny Rogers|the gambler - story behind the song": [
-    {
-      "channel": "",
-      "liveLink": "https://kennyrogers.lnk.to/TheGambler"
-    }
-  ],
-  "Patsy Cline|patsy cline recorded 'i fall to pieces\"": [
-    {
-      "channel": "",
-      "liveLink": "https://patsycline.lnk.to/GHVinyl"
-    }
-  ],
-  "Frank Zappa|over-nite sensation 50th anniversary release date": [
-    {
-      "channel": "",
-      "liveLink": "https://zappa.lnk.to/OverNiteSensationPR"
-    }
-  ],
-  "Kiss|god gave rock \u2018n\u2019 roll to you ii video -": [
-    {
-      "channel": "",
-      "liveLink": "https://www.youtube.com/watch?v=qrn6GcDMHBY"
-    }
-  ],
-  "U2|u2 released achtung baby": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/behind-the-albums/u2-achtung-baby-album/"
-    }
-  ],
-  "The Killers|day & age anniversary (\"human\" story behind the song)": [
-    {
-      "channel": "",
-      "liveLink": "https://shop.udiscovermusic.com/collections/2000s/products/the-killers-day-age-limited-edition-lp"
-    }
-  ],
-  "Supremes|the supremes became the first all-female group to score a no.1 hit in the uk": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/supremes-give-birth-baby-love/"
-    }
-  ],
-  "Nicki Minaj|nicki minaj released 'pink friday'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-bonnie-raitt-songs/"
-    }
-  ],
-  "Eminem|eminem \u201cmarshall mathers lp 2 announce": [
-    {
-      "channel": "",
-      "liveLink": "https://eminem.lnk.to/MMLP2Expanded"
-    }
-  ],
-  "Ludacris|essentials part 2": [
-    {
-      "channel": "",
-      "liveLink": "https://Ludacris.lnk.to/BestOf"
-    }
-  ],
-  "Paul McCartney|band on the run (50th anniversary edition) announcement": [
-    {
-      "channel": "",
-      "liveLink": "https://paulmccartney.lnk.to/BandOnTheRun50th"
-    }
-  ],
-  "Paul McCartney|band on the run (50th anniversary edition) announcement - mccartney / wings fb page": [
-    {
-      "channel": "",
-      "liveLink": "https://paulmccartney.lnk.to/BandOnTheRun50th"
-    }
-  ],
   "Paul McCartney|wonderful christmastime": [
     {
       "channel": "",
@@ -31812,60 +31314,6 @@ const SOCIAL_POSTS = {
     {
       "channel": "uD YT Shorts",
       "liveLink": "https://youtube.com/shorts/bs6V7cf3HHM?si=N9FzQGhl06QP7Orv"
-    }
-  ],
-  "Nicki Minaj|nicki minaj samples": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/parallel-lines-blondie-album/"
-    }
-  ],
-  "Roger Miller|roger miller born (1936)": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-roger-miller-songs/"
-    }
-  ],
-  "R.E.M.|michael stipe (r.e.m.) born (1960)": [
-    {
-      "channel": "",
-      "liveLink": "https://udiscover.lnk.to/rem-best-of%20%EF%BB%BF - https://udiscover.lnk.to/rem-best-of"
-    }
-  ],
-  "Juvenile|juve the great": [
-    {
-      "channel": "",
-      "liveLink": "https://shop.urbanlegends.com/products/juvenile-juve-the-great-limited-edition-2lp"
-    }
-  ],
-  "Scott Walker|scott engel (aka scott walker) born (1943)": [
-    {
-      "channel": "",
-      "liveLink": "https://udiscover.lnk.to/scott-walker-til-the-band-comes-in-deluxe-vinyl-lp"
-    }
-  ],
-  "Pat Benatar|pat benatar born (1953)": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-pat-benatar-songs/"
-    }
-  ],
-  "Mary J. Blige|mary j. blige born (1971)": [
-    {
-      "channel": "",
-      "liveLink": "https://udiscoverap.lnk.to/mary-j--blige"
-    }
-  ],
-  "Rob Zombie|rob zombie born (1965)": [
-    {
-      "channel": "",
-      "liveLink": "https://udiscover.lnk.to/rob-zombie-best-of%EF%BB%BF"
-    }
-  ],
-  "Robert Palmer|robert palmer born (1949)": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/robert-palmer-a-tribute/"
     }
   ],
   "Queen|queen released 'innuendo' album": [
@@ -31898,7 +31346,7 @@ const SOCIAL_POSTS = {
       "liveLink": "https://www.udiscovermusic.com/news/neil-diamond-i-am-i-said-volkswagen-super-bowl-ad/"
     }
   ],
-  "The Beatles|the beatles perform on \u2018the ed sullivan show\u2019": [
+  "The Beatles|the beatles perform on ‘the ed sullivan show’": [
     {
       "channel": "uD IG Grid",
       "liveLink": "https://thebeatles.lnk.to/RedAndBlue2023PR"
@@ -31940,7 +31388,7 @@ const SOCIAL_POSTS = {
       "liveLink": "https://www.udiscovermusic.com/stories/pink-moon-nick-drake/"
     }
   ],
-  "Eric Dolphy|eric dolphy \u201cout to lunch\u201d released": [
+  "Eric Dolphy|eric dolphy “out to lunch” released": [
     {
       "channel": "uD IG Grid",
       "liveLink": "https://shop.udiscovermusic.com/products/eric-dolphy-out-to-lunch-blue-note-classic-vinyl-series-lp"
@@ -32216,7 +31664,7 @@ const SOCIAL_POSTS = {
       "liveLink": "https://queenonlinestore.com/collections/lp/products/hot-space"
     }
   ],
-  "Marvin Gaye|marvin gaye and tammi terrell's \u2018ain\u2019t no mountain high enough' released": [
+  "Marvin Gaye|marvin gaye and tammi terrell's ‘ain’t no mountain high enough' released": [
     {
       "channel": "uD IG Grid",
       "liveLink": "https://shop.udiscovermusic.com/collections/marvin-gaye"
@@ -33018,7 +32466,7 @@ const SOCIAL_POSTS = {
       "liveLink": "https://store.udiscovermusic.com/search?q=t.+rex"
     }
   ],
-  "Norah Jones|norah jones \u201cdon\u2019t know why\u201d": [
+  "Norah Jones|norah jones “don’t know why”": [
     {
       "channel": "uD IG Grid",
       "liveLink": "https://ume.lnk.to/AutumnJazz"
@@ -33206,7 +32654,7 @@ const SOCIAL_POSTS = {
       "liveLink": "https://stream.lnk.to/Christmas"
     }
   ],
-  "Tom Petty|mary jane\u2019s last dance": [
+  "Tom Petty|mary jane’s last dance": [
     {
       "channel": "uD IG Grid",
       "liveLink": "https://www.instagram.com/p/DDh2_H1y65S/?hl=en"
@@ -33680,7 +33128,7 @@ const SOCIAL_POSTS = {
       "liveLink": "https://shop.udiscovermusic.com/collections/james-brown"
     }
   ],
-  "Dean Martin|ain\u2019t that a kick in the head": [
+  "Dean Martin|ain’t that a kick in the head": [
     {
       "channel": "uD IG Grid",
       "liveLink": "https://www.instagram.com/p/DJXJ8WnyCBs/?hl=en"
@@ -33782,12 +33230,6 @@ const SOCIAL_POSTS = {
       "liveLink": "https://shop.udiscovermusic.com/collections/keith-urban/products/keith-urban-get-closer-lp"
     }
   ],
-  "Bob Seger|bob seger giveaway": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/competitions/bob-seger-giveaway/"
-    }
-  ],
   "The Beach Boys|the beach boys \"do it again\"": [
     {
       "channel": "uD IG Grid",
@@ -33830,12 +33272,6 @@ const SOCIAL_POSTS = {
     {
       "channel": "uD YT Shorts",
       "liveLink": "https://youtube.com/shorts/HumS5pef8jw?si=RSzGIxReXmpaCmbU"
-    }
-  ],
-  "Drake|nick drake giveaway": [
-    {
-      "channel": "",
-      "liveLink": "https://m.facebook.com/story.php?story_fbid=pfbid0d8EoL3ae4uez53aBra3YETqQPL4ZmkcDdGWdKYQ6jRG2PcPknpHtYDu1XBLm78yUl&id=100064742434547"
     }
   ],
   "Supertramp|direct to camera explainer": [
@@ -33962,12 +33398,6 @@ const SOCIAL_POSTS = {
     {
       "channel": "uD YT Shorts",
       "liveLink": "https://youtube.com/shorts/eFPK1zujr_c?si=aDcoDcGKar9TVwX8"
-    }
-  ],
-  "Elton John|rainbow theatre": [
-    {
-      "channel": "",
-      "liveLink": "https://www.instagram.com/reel/DMx2R-iRF1q/?igsh=NTc4MTIwNjQ2YQ=="
     }
   ],
   "Supertramp|dreamer": [
@@ -34454,7 +33884,7 @@ const SOCIAL_POSTS = {
       "liveLink": "https://shop.udiscovermusic.com/collections/the-style-council"
     }
   ],
-  "Mary J. Blige|i\u2019m goin\u2019 down - explainer": [
+  "Mary J. Blige|i’m goin’ down - explainer": [
     {
       "channel": "uD IG Grid",
       "liveLink": "https://www.instagram.com/reel/DTilEKEAQjB/?igsh=NTc4MTIwNjQ2YQ=="
@@ -34564,156 +33994,6 @@ const SOCIAL_POSTS = {
     {
       "channel": "uD IG Grid",
       "liveLink": "https://www.instagram.com/reel/DUJLRiGj1p7/?igsh=NTc4MTIwNjQ2YQ=="
-    }
-  ],
-  "John Lennon|mccartney / wings fb page": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/paul-mccartney-first-meeting-john-lennon-podcast-clip/"
-    }
-  ],
-  "Juice WRLD|juice wrld born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-juice-wrld-songs-feature/"
-    }
-  ],
-  "Taylor Swift|time person of the year": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/news/taylor-swift-time-person-of-the-year/"
-    }
-  ],
-  "Ariana Grande|[d2c sale - deal of the day] ariana grande - thank u, next": [
-    {
-      "channel": "",
-      "liveLink": "https://lnk.to/EndOfYearSaleIB"
-    }
-  ],
-  "John Lennon|[d2c sale - deal of the day] john lennon - imagine": [
-    {
-      "channel": "",
-      "liveLink": "https://lnk.to/EndOfYearSaleIB"
-    }
-  ],
-  "Frank Sinatra|frank sinatra born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/playlists/frank-sinatra-in-20-songs/"
-    }
-  ],
-  "Marvin Gaye|marvin gaye released 'here, my dear' (45th anniversary)": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/marvin-gaye-here-my-dear-album/"
-    }
-  ],
-  "Spice Girls|[d2c sale - deal of the day] spice girls - spice": [
-    {
-      "channel": "",
-      "liveLink": "https://lnk.to/EndOfYearSaleIB"
-    }
-  ],
-  "Nirvana|nirvana's 'mtv unplugged in new york' aired": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/nirvana-mtv-unplugged-in-new-york-album/"
-    }
-  ],
-  "Billie Eilish|billie eilish born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-billie-eilish-songs/"
-    }
-  ],
-  "Frank Zappa|frank zappa born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/frank-zappa-in-20-songs/"
-    }
-  ],
-  "DMX|dmx released 'flesh of my flesh, blood of my blood' (25th anniversary)": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/dmx-flesh-of-my-flesh-blood-of-my-blood/"
-    }
-  ],
-  "Chet Baker|chet baker born": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-chet-baker-pieces/"
-    }
-  ],
-  "Frank Sinatra|frank sinatra recorded 'my way'": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/frank-sinatra-my-way-story-behind-song/"
-    }
-  ],
-  "Donna Summer|donna summer born (75th birthday)": [
-    {
-      "channel": "",
-      "liveLink": "https://www.udiscovermusic.com/stories/best-donna-summer-songs/"
-    }
-  ],
-  "Ja Rule|3:36": [
-    {
-      "channel": "",
-      "liveLink": "https://shop.urbanlegends.com/products/ja-rule-rule-3-36-limited-edition-2lp"
-    }
-  ],
-  "Billy Idol|rebel yell release date": [
-    {
-      "channel": "",
-      "liveLink": "https://billyidol.lnk.to/RebelYellExpanded"
-    }
-  ],
-  "Black Eyed Peas|behind the front (wide + ecomm exclusive lp) announce": [
-    {
-      "channel": "",
-      "liveLink": "https://theblackeyedpeas.lnk.to/Vinyl"
-    }
-  ],
-  "Black Eyed Peas|the e.n.d. (wide + ecomm exclusive lp) announce": [
-    {
-      "channel": "",
-      "liveLink": "https://theblackeyedpeas.lnk.to/Vinyl"
-    }
-  ],
-  "Black Eyed Peas|monkey business (ecomm exclusive lp)  announce": [
-    {
-      "channel": "",
-      "liveLink": "https://theblackeyedpeas.lnk.to/Vinyl"
-    }
-  ],
-  "Black Eyed Peas|elephunk (ecomm exclusive lp) announce": [
-    {
-      "channel": "",
-      "liveLink": "https://theblackeyedpeas.lnk.to/Vinyl"
-    }
-  ],
-  "Black Eyed Peas|monkey business release date": [
-    {
-      "channel": "",
-      "liveLink": "https://theblackeyedpeas.lnk.to/Vinyl"
-    }
-  ],
-  "Black Eyed Peas|the e.n.d. release date": [
-    {
-      "channel": "",
-      "liveLink": "https://theblackeyedpeas.lnk.to/Vinyl"
-    }
-  ],
-  "Black Eyed Peas|elephunk (ecomm exclusive lp) release": [
-    {
-      "channel": "",
-      "liveLink": "https://theblackeyedpeas.lnk.to/Vinyl"
-    }
-  ],
-  "Black Eyed Peas|behind the front release date": [
-    {
-      "channel": "",
-      "liveLink": "https://theblackeyedpeas.lnk.to/Vinyl"
     }
   ]
 };

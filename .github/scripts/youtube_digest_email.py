@@ -26,7 +26,22 @@ MEDIA_NS = 'http://search.yahoo.com/mrss/'
 NS = {'atom': ATOM_NS, 'yt': YT_NS, 'media': MEDIA_NS}
 
 
+CHANNELS_API = os.environ.get('CHANNELS_API', 'https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/channels?key=racine456')
+
+
 def load_channels():
+    # Try loading from cloud API first
+    try:
+        req = Request(CHANNELS_API, headers={'User-Agent': 'YouTubeDigest/1.0'})
+        with urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+        if isinstance(data, list) and len(data) > 0:
+            print(f'  Loaded {len(data)} channels from cloud API')
+            return data
+    except Exception as e:
+        print(f'  Cloud API error: {e}, falling back to channels.json')
+
+    # Fallback to local channels.json
     script_dir = os.path.dirname(os.path.abspath(__file__))
     repo_root = os.path.join(script_dir, '..', '..')
     channels_path = os.path.join(repo_root, 'channels.json')

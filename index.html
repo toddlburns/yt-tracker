@@ -1435,20 +1435,20 @@
 
             <div class="channel-actions" id="channel-actions" style="display:none;">
                 <span class="session-info" id="session-info"></span>
-                <button class="sync-btn" id="sync-btn" onclick="syncAndTestEmail()">Sync & Send Test Email</button>
+                <span style="font-size: 0.75rem; color: #7DD3E8; opacity: 0.7;">(auto-synced)</span>
             </div>
         </div>
 
         <!-- GitHub Connection -->
         <details class="github-setup" id="github-setup">
             <summary>Settings</summary>
-            <p class="setup-desc">Connect to GitHub to sync channel changes and send test emails.</p>
+            <p class="setup-desc">Channel changes sync automatically. Optional: add a GitHub PAT to trigger test digest emails.</p>
             <div class="setup-row">
-                <input type="password" id="github-pat-input" placeholder="GitHub Personal Access Token">
+                <input type="password" id="github-pat-input" placeholder="GitHub PAT (optional - for test emails)">
                 <button class="setup-save-btn" onclick="saveGitHubPAT()">Save</button>
             </div>
             <div class="setup-status" id="github-status"></div>
-            <p class="setup-hint">Create a fine-grained PAT at github.com/settings/tokens with <strong>Contents: Read &amp; Write</strong> and <strong>Actions: Read &amp; Write</strong> for the yt-tracker repo.</p>
+            <button class="sync-btn" id="sync-btn" onclick="syncAndTestEmail()" style="margin-top: 8px;">Send Test Email</button>
         </details>
     </div>
 
@@ -1788,7 +1788,7 @@ function switchTab(tab) {
 // ─── Init ──────────────────────────────────────────────────────
 async function init() {
     loadChannels();
-    await Promise.all([loadDismissed(), loadEditorialChecked()]);
+    await Promise.all([loadDismissed(), loadEditorialChecked(), loadChannelsFromCloud()]);
     renderChannelPills();
     updateSubtitle();
     populateStoreButtons();
@@ -1854,6 +1854,7 @@ function addChannel(name, channelId, type) {
     channels.push({ name, channelId, type: type || 'artist' });
     channels.sort((a, b) => a.name.localeCompare(b.name));
     saveChannels();
+    syncChannelsToCloud();
     renderChannelPills();
     updateSubtitle();
     sessionAddCount++;
@@ -1863,6 +1864,7 @@ function addChannel(name, channelId, type) {
 function removeChannel(channelId) {
     channels = channels.filter(c => c.channelId !== channelId);
     saveChannels();
+    syncChannelsToCloud();
     renderChannelPills();
     updateSubtitle();
     sessionAddCount++;
@@ -2135,53 +2137,44 @@ function getGitHubPAT() {
     return localStorage.getItem('yt_tracker_github_pat') || '';
 }
 
-async function syncChannelsToGitHub() {
-    const pat = getGitHubPAT();
-    if (!pat) {
-        alert('Set up a GitHub Personal Access Token in Settings first.');
-        document.getElementById('github-setup').open = true;
-        return false;
-    }
+const CHANNELS_API = 'https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/channels?key=racine456';
 
-    const channelsJson = JSON.stringify(channels, null, 2) + '\n';
-    const content = btoa(unescape(encodeURIComponent(channelsJson)));
-
-    // Get current file SHA (required for update)
+async function syncChannelsToCloud() {
     try {
-        const getRes = await fetch('https://api.github.com/repos/toddlburns/yt-tracker/contents/channels.json', {
-            headers: { 'Authorization': `token ${pat}`, 'Accept': 'application/vnd.github.v3+json' }
+        const res = await fetch(CHANNELS_API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(channels),
         });
-        let sha = '';
-        if (getRes.ok) {
-            const fileData = await getRes.json();
-            sha = fileData.sha;
-        }
-
-        const putBody = {
-            message: 'Update tracked channels',
-            content: content,
-        };
-        if (sha) putBody.sha = sha;
-
-        const putRes = await fetch('https://api.github.com/repos/toddlburns/yt-tracker/contents/channels.json', {
-            method: 'PUT',
-            headers: {
-                'Authorization': `token ${pat}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(putBody),
-        });
-
-        if (!putRes.ok) {
-            const err = await putRes.json();
-            throw new Error(err.message || 'API error');
-        }
+        if (!res.ok) throw new Error('API error');
         return true;
     } catch (e) {
         alert('Failed to sync channels: ' + e.message);
         return false;
     }
+}
+
+async function loadChannelsFromCloud() {
+    try {
+        const res = await fetch(CHANNELS_API);
+        if (res.ok) {
+            const cloudChannels = await res.json();
+            if (Array.isArray(cloudChannels) && cloudChannels.length > 0) {
+                channels = cloudChannels;
+                // Merge any new defaults
+                const existingIds = new Set(channels.map(c => c.channelId));
+                let added = false;
+                for (const def of DEFAULT_CHANNELS) {
+                    if (!existingIds.has(def.channelId)) {
+                        channels.push(def);
+                        added = true;
+                    }
+                }
+                if (added) channels.sort((a, b) => a.name.localeCompare(b.name));
+                saveChannels();
+            }
+        }
+    } catch {}
 }
 
 async function triggerTestEmail() {
@@ -2208,7 +2201,7 @@ async function syncAndTestEmail() {
     const btn = document.getElementById('sync-btn');
     if (btn) { btn.disabled = true; btn.textContent = 'Syncing...'; }
 
-    const synced = await syncChannelsToGitHub();
+    const synced = await syncChannelsToCloud();
     if (!synced) {
         if (btn) { btn.disabled = false; btn.textContent = 'Sync & Send Test Email'; }
         return;
@@ -2216,18 +2209,20 @@ async function syncAndTestEmail() {
 
     if (btn) btn.textContent = 'Triggering email...';
 
-    // Wait a moment for GitHub to process the commit before triggering
-    await new Promise(r => setTimeout(r, 2000));
-
-    const triggered = await triggerTestEmail();
-    if (triggered) {
-        if (btn) btn.textContent = 'Sent! Check your inbox.';
-        sessionAddCount = 0;
-        // Refresh email status after a delay
-        setTimeout(checkEmailStatus, 15000);
+    const pat = getGitHubPAT();
+    if (pat) {
+        await new Promise(r => setTimeout(r, 2000));
+        const triggered = await triggerTestEmail();
+        if (triggered) {
+            if (btn) btn.textContent = 'Sent! Check your inbox.';
+            sessionAddCount = 0;
+            setTimeout(checkEmailStatus, 15000);
+        } else {
+            if (btn) btn.textContent = 'Synced! (email trigger failed)';
+        }
     } else {
-        alert('Channels synced but could not trigger test email. Check your PAT permissions.');
-        if (btn) { btn.disabled = false; btn.textContent = 'Sync & Send Test Email'; }
+        if (btn) btn.textContent = 'Synced!';
+        sessionAddCount = 0;
     }
 }
 

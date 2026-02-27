@@ -164,8 +164,8 @@ def build_email(channels, cutoff):
         for v in videos:
             if not v['uploaded'] or v['uploaded'] < cutoff:
                 continue
-            # Exclude videos 60 seconds or shorter
-            if v['duration'] > 0 and v['duration'] <= 60:
+            # Exclude videos 60 seconds or shorter (also exclude if duration unknown)
+            if v['duration'] <= 60:
                 continue
             # For omni channels, only include videos mentioning a tracked artist
             if ch.get('type') == 'omni':
@@ -210,7 +210,7 @@ def build_email(channels, cutoff):
     for v in all_videos:
         views_str = format_views(v['views'])
         dur_str = format_duration(v['duration'])
-        dur_badge = f' &middot; {dur_str}' if dur_str else ''
+        dur_line = f'<div style="margin-top: 2px; font-size: 12px; color: #888;">Duration: {dur_str}</div>' if dur_str else ''
         yt_url = f'https://www.youtube.com/watch?v={v["videoId"]}'
         thumb_url = f'https://img.youtube.com/vi/{v["videoId"]}/hqdefault.jpg'
         title_escaped = escape(v['title'])
@@ -223,7 +223,8 @@ def build_email(channels, cutoff):
 </td>
 <td valign="top">
     <a href="{yt_url}" style="color: #1a1a2e; text-decoration: none; font-weight: 600; font-size: 14px; line-height: 1.3;">{title_escaped}</a>
-    <div style="margin-top: 4px; font-size: 12px; color: #666;"><span style="color: #DC143C; font-weight: 600;">{channel_escaped}</span> &middot; {views_str} views{dur_badge}</div>
+    <div style="margin-top: 4px; font-size: 12px; color: #666;"><span style="color: #DC143C; font-weight: 600;">{channel_escaped}</span> &middot; {views_str} views</div>
+    {dur_line}
 </td>
 </tr>
 </table>

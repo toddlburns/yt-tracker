@@ -1482,6 +1482,12 @@
 
     <!-- Music News Tab -->
     <div class="tab-content" id="content-news">
+        <div class="email-status-card" id="news-email-status-card">
+            <div class="email-status-row">
+                <div class="email-status-indicator status-unknown" id="news-email-indicator"></div>
+                <div class="email-status-text" id="news-email-status-text">Checking news email status...</div>
+            </div>
+        </div>
         <div class="feed-header">
             <div class="feed-title">Music News</div>
             <button class="refresh-btn" onclick="refreshNews()">Refresh</button>
@@ -1795,6 +1801,7 @@ async function init() {
     discoverInstances(); // non-blocking, for channel search
     showInitialMessages();
     checkEmailStatus();
+    checkNewsEmailStatus();
     loadGitHubPAT();
     setupChannelSearchAutoComplete();
 }
@@ -2106,6 +2113,56 @@ async function checkEmailStatus() {
         }
     } catch (e) {
         statusEl.innerHTML = 'Could not check email status.';
+        indicatorEl.className = 'email-status-indicator status-unknown';
+    }
+}
+
+async function checkNewsEmailStatus() {
+    const statusEl = document.getElementById('news-email-status-text');
+    const indicatorEl = document.getElementById('news-email-indicator');
+    if (!statusEl || !indicatorEl) return;
+
+    try {
+        const res = await fetch('https://api.github.com/repos/toddlburns/yt-tracker/actions/workflows/daily-news-email.yml/runs?per_page=5');
+        if (!res.ok) {
+            statusEl.innerHTML = 'News email not yet configured.';
+            indicatorEl.className = 'email-status-indicator status-unknown';
+            return;
+        }
+        const data = await res.json();
+        const runs = data.workflow_runs || [];
+
+        if (runs.length === 0) {
+            statusEl.innerHTML = 'No news email runs yet.';
+            indicatorEl.className = 'email-status-indicator status-unknown';
+            return;
+        }
+
+        const lastRun = runs[0];
+        const lastRunTime = new Date(lastRun.updated_at || lastRun.created_at);
+        const now = new Date();
+        const hoursSince = (now - lastRunTime) / (1000 * 60 * 60);
+        const timeAgoStr = hoursSince < 1 ? 'just now' :
+            hoursSince < 24 ? `${Math.floor(hoursSince)}h ago` :
+            `${Math.floor(hoursSince / 24)}d ago`;
+
+        if (lastRun.conclusion === 'success') {
+            if (hoursSince <= 30) {
+                statusEl.innerHTML = `Daily news email sending normally. Last sent: <strong>${timeAgoStr}</strong>`;
+                indicatorEl.className = 'email-status-indicator status-ok';
+            } else {
+                statusEl.innerHTML = `Daily news email may be delayed. Last sent: <strong>${timeAgoStr}</strong>`;
+                indicatorEl.className = 'email-status-indicator status-warn';
+            }
+        } else if (lastRun.status === 'in_progress' || lastRun.status === 'queued') {
+            statusEl.innerHTML = `Daily news email is <strong>running now</strong>...`;
+            indicatorEl.className = 'email-status-indicator status-warn';
+        } else {
+            statusEl.innerHTML = `Daily news email <strong>failed</strong> (${timeAgoStr}). <a href="https://github.com/toddlburns/yt-tracker/actions" target="_blank" style="color:#00FFFF;">Check Actions</a>`;
+            indicatorEl.className = 'email-status-indicator status-error';
+        }
+    } catch {
+        statusEl.innerHTML = 'Could not check news email status.';
         indicatorEl.className = 'email-status-indicator status-unknown';
     }
 }

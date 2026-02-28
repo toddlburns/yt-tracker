@@ -640,6 +640,69 @@
         }
         .email-status-text strong { color: #00FFFF; }
 
+        /* Email Health Dashboard */
+        .email-dash-header {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+            margin-bottom: 24px;
+        }
+        .email-dash-header h2 {
+            font-family: 'Righteous', cursive; font-size: 1.3rem;
+            color: #00FFFF; letter-spacing: 1px; margin: 0;
+        }
+        .email-dash-header p {
+            font-size: 0.8rem; color: #7DD3E8; flex-basis: 100%;
+        }
+        .email-dash-refresh {
+            margin-left: auto;
+            padding: 6px 16px; font-size: 0.75rem; border: 1px solid rgba(0,255,255,0.3);
+            border-radius: 16px; background: rgba(0,20,40,0.6); color: #7DD3E8;
+            cursor: pointer; font-family: 'Inter', sans-serif; text-transform: uppercase;
+            letter-spacing: 0.5px; transition: all 0.3s;
+        }
+        .email-dash-refresh:hover { border-color: #00FFFF; color: #00FFFF; }
+        .email-dash-grid { display: flex; flex-direction: column; gap: 20px; }
+        .email-dash-section-title {
+            font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px;
+            color: #FF69B4; font-weight: 600; margin-bottom: 10px;
+        }
+        .email-dash-card {
+            background: rgba(0, 20, 40, 0.6); border: 2px solid rgba(0,255,255,0.15);
+            border-radius: 12px; padding: 16px 20px; margin-bottom: 10px;
+            backdrop-filter: blur(10px); transition: border-color 0.3s;
+        }
+        .email-dash-card:hover { border-color: rgba(0,255,255,0.35); }
+        .email-dash-card-header {
+            display: flex; align-items: center; gap: 10px; margin-bottom: 8px;
+        }
+        .email-dash-card-title {
+            font-weight: 600; font-size: 0.95rem; color: #E0F7FF;
+        }
+        .email-dash-schedule {
+            margin-left: auto; font-size: 0.7rem; color: #7DD3E8;
+            background: rgba(0,255,255,0.08); padding: 2px 8px; border-radius: 8px;
+        }
+        .email-dash-card-body {
+            font-size: 0.82rem; color: #A0C4D0; line-height: 1.5;
+        }
+        .email-dash-card-body strong { color: #00FFFF; }
+        .email-dash-card-footer {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-top: 10px; padding-top: 8px;
+            border-top: 1px solid rgba(0,255,255,0.1);
+        }
+        .email-dash-card-footer a {
+            font-size: 0.72rem; color: #00FFFF; text-decoration: none;
+            opacity: 0.7; transition: opacity 0.2s;
+        }
+        .email-dash-card-footer a:hover { opacity: 1; }
+        .email-dash-last-run { font-size: 0.7rem; color: #7DD3E8; }
+        .email-dash-summary {
+            margin-top: 20px; padding: 14px 18px;
+            background: rgba(0, 20, 40, 0.4); border-radius: 10px;
+            font-size: 0.8rem; color: #7DD3E8; text-align: center;
+        }
+        .email-dash-summary strong { color: #00FFFF; }
+
         /* Channel Management */
         .channel-mgmt {
             background: rgba(0, 20, 40, 0.6);
@@ -1408,6 +1471,9 @@
         <button class="tab-btn" onclick="switchTab('storemonitor')" id="tab-storemonitor">
             Artist Store Stock Checker Email Dashboard
         </button>
+        <button class="tab-btn" onclick="switchTab('emaildash')" id="tab-emaildash">
+            Email Health
+        </button>
     </div>
 
     <!-- YouTube Tab -->
@@ -1567,6 +1633,94 @@
     <!-- Store Monitor Tab -->
     <div class="tab-content" id="content-storemonitor">
         <iframe id="iframe-storemonitor" class="dashboard-iframe" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Email Health Dashboard Tab -->
+    <div class="tab-content" id="content-emaildash">
+        <div class="email-dash-header">
+            <h2>Email Systems Health</h2>
+            <p>Monitor all automated email systems from one place</p>
+            <button class="email-dash-refresh" onclick="checkAllEmailStatuses()">Refresh All</button>
+        </div>
+
+        <div class="email-dash-grid">
+            <!-- GitHub Actions Workflows -->
+            <div class="email-dash-section">
+                <div class="email-dash-section-title">GitHub Actions Workflows</div>
+
+                <div class="email-dash-card" id="dash-youtube">
+                    <div class="email-dash-card-header">
+                        <div class="email-status-indicator status-unknown" id="dash-youtube-indicator"></div>
+                        <div class="email-dash-card-title">YouTube Digest</div>
+                        <div class="email-dash-schedule">Weekdays @ noon PST</div>
+                    </div>
+                    <div class="email-dash-card-body" id="dash-youtube-body">Checking...</div>
+                    <div class="email-dash-card-footer">
+                        <a href="https://github.com/toddlburns/yt-tracker/actions/workflows/youtube-digest-email.yml" target="_blank">View Runs</a>
+                        <span class="email-dash-last-run" id="dash-youtube-last"></span>
+                    </div>
+                </div>
+
+                <div class="email-dash-card" id="dash-news">
+                    <div class="email-dash-card-header">
+                        <div class="email-status-indicator status-unknown" id="dash-news-indicator"></div>
+                        <div class="email-dash-card-title">Daily Music News</div>
+                        <div class="email-dash-schedule">Daily @ noon PST</div>
+                    </div>
+                    <div class="email-dash-card-body" id="dash-news-body">Checking...</div>
+                    <div class="email-dash-card-footer">
+                        <a href="https://github.com/toddlburns/yt-tracker/actions/workflows/daily-news-email.yml" target="_blank">View Runs</a>
+                        <span class="email-dash-last-run" id="dash-news-last"></span>
+                    </div>
+                </div>
+
+                <div class="email-dash-card" id="dash-editorial">
+                    <div class="email-dash-card-header">
+                        <div class="email-status-indicator status-unknown" id="dash-editorial-indicator"></div>
+                        <div class="email-dash-card-title">Editorial Digest</div>
+                        <div class="email-dash-schedule">Weekdays @ 9am PST</div>
+                    </div>
+                    <div class="email-dash-card-body" id="dash-editorial-body">Checking...</div>
+                    <div class="email-dash-card-footer">
+                        <a href="https://github.com/toddlburns/yt-tracker/actions/workflows/editorial-digest-email.yml" target="_blank">View Runs</a>
+                        <span class="email-dash-last-run" id="dash-editorial-last"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Store Monitors -->
+            <div class="email-dash-section">
+                <div class="email-dash-section-title">Store Monitor Emails</div>
+
+                <div class="email-dash-card" id="dash-artist-store">
+                    <div class="email-dash-card-header">
+                        <div class="email-status-indicator status-unknown" id="dash-artist-store-indicator"></div>
+                        <div class="email-dash-card-title">Artist Store Monitor</div>
+                        <div class="email-dash-schedule">Heartbeat + Alerts</div>
+                    </div>
+                    <div class="email-dash-card-body" id="dash-artist-store-body">Checking...</div>
+                    <div class="email-dash-card-footer">
+                        <a href="https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/dashboard?key=racine456&tab=artist" target="_blank">Full Dashboard</a>
+                        <span class="email-dash-last-run" id="dash-artist-store-last"></span>
+                    </div>
+                </div>
+
+                <div class="email-dash-card" id="dash-udiscover">
+                    <div class="email-dash-card-header">
+                        <div class="email-status-indicator status-unknown" id="dash-udiscover-indicator"></div>
+                        <div class="email-dash-card-title">uDiscover Inventory Monitor</div>
+                        <div class="email-dash-schedule">Hourly (high) / Daily (low)</div>
+                    </div>
+                    <div class="email-dash-card-body" id="dash-udiscover-body">Checking...</div>
+                    <div class="email-dash-card-footer">
+                        <a href="https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/dashboard?key=racine456" target="_blank">Full Dashboard</a>
+                        <span class="email-dash-last-run" id="dash-udiscover-last"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="email-dash-summary" id="email-dash-summary"></div>
     </div>
 </div>
 
@@ -1788,6 +1942,9 @@ function switchTab(tab) {
         if (!iframe.src || iframe.src === location.href) {
             iframe.src = 'https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/dashboard?key=racine456&tab=artist';
         }
+    }
+    if (tab === 'emaildash' && !emailDashLoaded) {
+        checkAllEmailStatuses();
     }
 }
 
@@ -2165,6 +2322,166 @@ async function checkNewsEmailStatus() {
         statusEl.innerHTML = 'Could not check news email status.';
         indicatorEl.className = 'email-status-indicator status-unknown';
     }
+}
+
+// ─── Email Health Dashboard ─────────────────────────────────────
+let emailDashLoaded = false;
+
+async function checkAllEmailStatuses() {
+    emailDashLoaded = true;
+    const results = [];
+
+    // Check all 3 GitHub Actions workflows in parallel
+    const workflows = [
+        { id: 'youtube', file: 'youtube-digest-email.yml', name: 'YouTube Digest', weekdaysOnly: true, maxHoursWeekday: 30 },
+        { id: 'news', file: 'daily-news-email.yml', name: 'Daily Music News', weekdaysOnly: false, maxHoursWeekday: 30 },
+        { id: 'editorial', file: 'editorial-digest-email.yml', name: 'Editorial Digest', weekdaysOnly: true, maxHoursWeekday: 30 },
+    ];
+
+    const ghChecks = workflows.map(w => checkGHWorkflow(w));
+    const storeChecks = [checkStoreMonitorAPI('artist-store'), checkStoreMonitorAPI('udiscover')];
+
+    const allResults = await Promise.allSettled([...ghChecks, ...storeChecks]);
+    allResults.forEach(r => { if (r.status === 'fulfilled') results.push(r.value); });
+
+    // Update summary
+    const ok = results.filter(r => r.status === 'ok').length;
+    const warn = results.filter(r => r.status === 'warn').length;
+    const err = results.filter(r => r.status === 'error').length;
+    const unknown = results.filter(r => r.status === 'unknown').length;
+    const total = results.length;
+    const summaryEl = document.getElementById('email-dash-summary');
+    if (summaryEl) {
+        if (err > 0) {
+            summaryEl.innerHTML = `<strong>${err} system${err > 1 ? 's' : ''} failing</strong> out of ${total} monitored. Check the failed systems above.`;
+        } else if (warn > 0) {
+            summaryEl.innerHTML = `<strong>${warn} system${warn > 1 ? 's' : ''} need${warn === 1 ? 's' : ''} attention</strong>. ${ok} running normally.`;
+        } else if (ok === total) {
+            summaryEl.innerHTML = `All <strong>${total} email systems</strong> are running normally.`;
+        } else {
+            summaryEl.innerHTML = `<strong>${ok}</strong> of ${total} systems checked. ${unknown > 0 ? unknown + ' could not be reached.' : ''}`;
+        }
+    }
+}
+
+async function checkGHWorkflow(w) {
+    const indicatorEl = document.getElementById(`dash-${w.id}-indicator`);
+    const bodyEl = document.getElementById(`dash-${w.id}-body`);
+    const lastEl = document.getElementById(`dash-${w.id}-last`);
+    let result = { id: w.id, status: 'unknown' };
+
+    try {
+        const res = await fetch(`https://api.github.com/repos/toddlburns/yt-tracker/actions/workflows/${w.file}/runs?per_page=5`);
+        if (!res.ok) {
+            bodyEl.textContent = 'Workflow not found or API rate limited.';
+            indicatorEl.className = 'email-status-indicator status-unknown';
+            return result;
+        }
+        const data = await res.json();
+        const runs = data.workflow_runs || [];
+
+        if (runs.length === 0) {
+            bodyEl.textContent = 'No runs yet. Waiting for first scheduled run.';
+            indicatorEl.className = 'email-status-indicator status-unknown';
+            return result;
+        }
+
+        const lastRun = runs[0];
+        const lastRunTime = new Date(lastRun.updated_at || lastRun.created_at);
+        const now = new Date();
+        const hoursSince = (now - lastRunTime) / (1000 * 60 * 60);
+        const timeAgoStr = formatTimeAgo(hoursSince);
+        const localTime = lastRunTime.toLocaleString();
+
+        lastEl.textContent = localTime;
+
+        // Build run history mini-display
+        const historyDots = runs.slice(0, 5).map(r => {
+            if (r.conclusion === 'success') return '<span style="color:#10B981;" title="Success">&#9679;</span>';
+            if (r.conclusion === 'failure') return '<span style="color:#EF4444;" title="Failed">&#9679;</span>';
+            if (r.status === 'in_progress') return '<span style="color:#F59E0B;" title="Running">&#9679;</span>';
+            return '<span style="color:#6B7280;" title="Unknown">&#9679;</span>';
+        }).join(' ');
+
+        if (lastRun.conclusion === 'success') {
+            const dayOfWeek = now.getUTCDay();
+            let maxHours = w.maxHoursWeekday;
+            if (w.weekdaysOnly) {
+                if (dayOfWeek === 0) maxHours = 48;
+                else if (dayOfWeek === 6) maxHours = 30;
+                else if (dayOfWeek === 1) maxHours = 75;
+            }
+
+            if (hoursSince <= maxHours) {
+                bodyEl.innerHTML = `Sending normally. Last: <strong>${timeAgoStr}</strong><br><span style="font-size:0.75rem;">Recent: ${historyDots}</span>`;
+                indicatorEl.className = 'email-status-indicator status-ok';
+                result.status = 'ok';
+            } else {
+                bodyEl.innerHTML = `May be delayed. Last: <strong>${timeAgoStr}</strong><br><span style="font-size:0.75rem;">Recent: ${historyDots}</span>`;
+                indicatorEl.className = 'email-status-indicator status-warn';
+                result.status = 'warn';
+            }
+        } else if (lastRun.status === 'in_progress' || lastRun.status === 'queued') {
+            bodyEl.innerHTML = `<strong>Running now...</strong><br><span style="font-size:0.75rem;">Recent: ${historyDots}</span>`;
+            indicatorEl.className = 'email-status-indicator status-warn';
+            result.status = 'warn';
+        } else {
+            bodyEl.innerHTML = `<strong>Failed</strong> (${timeAgoStr}). Check Actions tab.<br><span style="font-size:0.75rem;">Recent: ${historyDots}</span>`;
+            indicatorEl.className = 'email-status-indicator status-error';
+            result.status = 'error';
+        }
+    } catch (e) {
+        bodyEl.textContent = 'Could not reach GitHub API.';
+        indicatorEl.className = 'email-status-indicator status-unknown';
+    }
+    return result;
+}
+
+async function checkStoreMonitorAPI(type) {
+    const indicatorEl = document.getElementById(`dash-${type}-indicator`);
+    const bodyEl = document.getElementById(`dash-${type}-body`);
+    const lastEl = document.getElementById(`dash-${type}-last`);
+    let result = { id: type, status: 'unknown' };
+
+    const tabParam = type === 'artist-store' ? '&tab=artist' : '';
+    const apiUrl = `https://x5clvswqw7.execute-api.us-east-1.amazonaws.com/prod/dashboard?key=racine456${tabParam}`;
+
+    try {
+        const res = await fetch(apiUrl);
+        if (res.ok) {
+            const html = await res.text();
+            // Parse last check time from the dashboard HTML
+            const lastCheckMatch = html.match(/Last (?:check|scan|run)[:\s]*<[^>]*>([^<]+)</i) ||
+                                   html.match(/(\d{4}-\d{2}-\d{2}[T\s]\d{2}:\d{2})/);
+            const heartbeatMatch = html.match(/heartbeat/i);
+            const errorMatch = html.match(/error|fail/i);
+
+            if (errorMatch && !html.match(/0\s*errors/i)) {
+                bodyEl.innerHTML = 'Dashboard reports errors. <a href="' + apiUrl + '" target="_blank" style="color:#00FFFF;">Check details</a>';
+                indicatorEl.className = 'email-status-indicator status-warn';
+                result.status = 'warn';
+            } else {
+                bodyEl.innerHTML = 'Dashboard reachable and responding.' + (lastCheckMatch ? ' Last activity: <strong>' + lastCheckMatch[1] + '</strong>' : '');
+                indicatorEl.className = 'email-status-indicator status-ok';
+                result.status = 'ok';
+            }
+            if (lastCheckMatch) lastEl.textContent = lastCheckMatch[1];
+        } else {
+            bodyEl.textContent = 'Dashboard returned HTTP ' + res.status;
+            indicatorEl.className = 'email-status-indicator status-warn';
+            result.status = 'warn';
+        }
+    } catch (e) {
+        bodyEl.textContent = 'Could not reach dashboard API. May be a CORS restriction.';
+        indicatorEl.className = 'email-status-indicator status-unknown';
+    }
+    return result;
+}
+
+function formatTimeAgo(hours) {
+    if (hours < 1) return 'just now';
+    if (hours < 24) return Math.floor(hours) + 'h ago';
+    return Math.floor(hours / 24) + 'd ago';
 }
 
 // ─── GitHub API Integration ─────────────────────────────────────

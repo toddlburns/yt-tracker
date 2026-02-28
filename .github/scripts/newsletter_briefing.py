@@ -18,7 +18,7 @@ import json
 GMAIL_ADDRESS = os.environ.get('GMAIL_ADDRESS', 'todd.burns@gmail.com')
 GMAIL_APP_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD', '')
 ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
-GMAIL_LABEL = 'newsletter-summary'
+GMAIL_LABEL = 'Newsletter Summary'
 MAX_NEWSLETTERS = 25
 
 

@@ -156,7 +156,7 @@ def summarize_with_claude(newsletters):
         newsletter_text += nl['body']
         newsletter_text += '\n'
 
-    prompt = f"""You are a music industry briefing assistant. Below are {len(newsletters)} newsletters received today. Your job is to distill them into a concise daily briefing.
+    prompt = f"""Below are {len(newsletters)} newsletters received recently. Your job is to distill them into a concise briefing of the key headlines across all topics.
 
 Create a briefing with ONLY the 5-10 most important headlines/stories. For each item:
 - Write a clear, concise one-line headline
@@ -164,14 +164,14 @@ Create a briefing with ONLY the 5-10 most important headlines/stories. For each 
 - If multiple newsletters cover the same story, merge them into one item and note the convergence
 
 Rules:
-- Focus on what matters: deals, major releases, executive moves, chart milestones, touring news, significant cultural moments
-- Skip: filler content, listicles, "10 songs you need to hear", promotional fluff, podcast ads, subscription upsells
+- Focus on what actually matters: major news, important developments, things worth knowing about
+- Skip: filler content, listicles, promotional fluff, podcast ads, subscription upsells, boilerplate
 - Write in a direct, no-nonsense tone — like a smart colleague giving you the rundown over coffee
 - If there's genuinely nothing important, say so — don't inflate minor stories
 - Group related items together if it makes the briefing cleaner
 
 Format the output as clean HTML for an email. Use this structure:
-<h2 style="color:#333;font-family:Georgia,serif;font-size:20px;margin-bottom:4px;">Daily Music Industry Briefing</h2>
+<h2 style="color:#333;font-family:Georgia,serif;font-size:20px;margin-bottom:4px;">Daily Briefing</h2>
 <p style="color:#888;font-family:Arial,sans-serif;font-size:12px;margin-top:0;">{{date}} &middot; {{count}} newsletters digested</p>
 <hr style="border:none;border-top:1px solid #ddd;margin:16px 0;">
 
@@ -218,7 +218,7 @@ def send_briefing_email(html_content, newsletter_count):
     today = datetime.now(timezone.utc).strftime('%B %d, %Y')
 
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = f'Daily Music Briefing — {today}'
+    msg['Subject'] = f'Daily Briefing — {today}'
     msg['From'] = GMAIL_ADDRESS
     msg['To'] = GMAIL_ADDRESS
 

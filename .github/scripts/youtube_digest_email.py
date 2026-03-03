@@ -179,8 +179,8 @@ def build_email(channels, cutoff):
         for v in videos:
             if not v['uploaded'] or v['uploaded'] < cutoff:
                 continue
-            # Exclude videos 60 seconds or shorter (also exclude if duration unknown)
-            if v['duration'] <= 60:
+            # Exclude videos 60 seconds or shorter (but allow if duration unknown)
+            if v['duration'] > 0 and v['duration'] <= 60:
                 continue
             # For omni channels, only include videos mentioning a tracked artist
             if ch.get('type') == 'omni':
